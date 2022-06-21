@@ -60,12 +60,12 @@ namespace Report_Pro.RPT
 
         private void BtnLogin_Click(object sender, EventArgs e)
         {
-            DataTable dtv = dal.getDataTabl_1(@"SELECT Password FROM  tblPassword  where pass_id ='Virgon' and Password='2000'");
-            if (dtv.Rows.Count == 0)
-            {
-                MessageBox.Show("this vergon not approved");
-                return;
-            }
+            //DataTable dtv = dal.getDataTabl_1(@"SELECT Password FROM  tblPassword  where pass_id ='Virgon' and Password='2000'");
+            //if (dtv.Rows.Count == 0)
+            //{
+            //    MessageBox.Show("this vergon not approved");
+            //    return;
+            //}
 
             DataTable dt = dal.getDataTabl_1(@"SELECT *  FROM wh_USERS  where USER_ID='"+textBox1.Text+"' and PASSWORD='"+ textBox2.Text + "'");
             //DataTable dt_C_ch = dal.getDataTabl_1(@"SELECT *  FROM "+Properties.Settings.Default.Database+ ".dbo.setting_bg_font  where ID='Chiled'");
