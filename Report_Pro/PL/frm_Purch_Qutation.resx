@@ -1,0 +1,3575 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="&gt;&gt;Tot_Price.Type" xml:space="preserve">
+    <value>DevComponents.Editors.DoubleInput, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="labelX10.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="labelX7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>37, 22</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="labelX5.TabIndex" type="System.Int32, mscorlib">
+    <value>137</value>
+  </data>
+  <data name="txt_TotWeight.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt</value>
+  </data>
+  <data name="Btn_DelRow.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="labelX1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="labelX51.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TxtId.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="labelX53.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="btnCancel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>87, 28</value>
+  </data>
+  <data name="labelX25.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="groupPanel7.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="txt_RQ_ser.Location" type="System.Drawing.Point, System.Drawing">
+    <value>249, 135</value>
+  </data>
+  <data name="&gt;&gt;labelX10.Name" xml:space="preserve">
+    <value>labelX10</value>
+  </data>
+  <data name="&gt;&gt;txtUnitWeight.Name" xml:space="preserve">
+    <value>txtUnitWeight</value>
+  </data>
+  <data name="&gt;&gt;txtUnit.Name" xml:space="preserve">
+    <value>txtUnit</value>
+  </data>
+  <data name="buttonX1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="&gt;&gt;RQ_Date.Name" xml:space="preserve">
+    <value>RQ_Date</value>
+  </data>
+  <data name="txt_InvDate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>214, 105</value>
+  </data>
+  <data name="labelX2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="txtMobile.Location" type="System.Drawing.Point, System.Drawing">
+    <value>435, 98</value>
+  </data>
+  <data name="labelX3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="&gt;&gt;txt_MainNote.Parent" xml:space="preserve">
+    <value>tabControlPanel2</value>
+  </data>
+  <data name="&gt;&gt;first_.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelX4.Parent" xml:space="preserve">
+    <value>groupPanel7</value>
+  </data>
+  <data name="panel2.TabIndex" type="System.Int32, mscorlib">
+    <value>108</value>
+  </data>
+  <data name="&gt;&gt;uC_Acc1.Parent" xml:space="preserve">
+    <value>tabControlPanel2</value>
+  </data>
+  <data name="&gt;&gt;labelX51.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.LabelX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;Tot_Price.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="totalWeight.Size" type="System.Drawing.Size, System.Drawing">
+    <value>91, 27</value>
+  </data>
+  <data name="txtPrice.ButtonFreeText.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="next_.Location" type="System.Drawing.Point, System.Drawing">
+    <value>224, 75</value>
+  </data>
+  <data name="&gt;&gt;labelX19.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="txt_Fax.Size" type="System.Drawing.Size, System.Drawing">
+    <value>149, 27</value>
+  </data>
+  <data name="&gt;&gt;txtMobile.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;totalQty.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="txtsearh_2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>224, 27</value>
+  </data>
+  <data name="&gt;&gt;txt_Fax.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="Tot_Price.ButtonCustom.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="groupPanel5.TabIndex" type="System.Int32, mscorlib">
+    <value>109</value>
+  </data>
+  <data name="&gt;&gt;labelX5.Parent" xml:space="preserve">
+    <value>groupPanel7</value>
+  </data>
+  <data name="btnOk_2.Text" xml:space="preserve">
+    <value>بحث</value>
+  </data>
+  <data name="labelX29.Text" xml:space="preserve">
+    <value>الكمية</value>
+  </data>
+  <data name="txt_serNo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>249, 75</value>
+  </data>
+  <data name="&gt;&gt;txtSearch.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="Tot_Price.ButtonFreeText.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="txtsearh_2.ButtonCustom.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="labelX2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 22</value>
+  </data>
+  <data name="first_.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="&gt;&gt;labelX14.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.LabelX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;labelX20.Parent" xml:space="preserve">
+    <value>tabControlPanel2</value>
+  </data>
+  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelX12.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;txt_InvDate.Parent" xml:space="preserve">
+    <value>groupPanel6</value>
+  </data>
+  <data name="&gt;&gt;txtNote.Parent" xml:space="preserve">
+    <value>groupPanel7</value>
+  </data>
+  <data name="txtSearch.ButtonCustom.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtMobile.TabIndex" type="System.Int32, mscorlib">
+    <value>54</value>
+  </data>
+  <data name="&gt;&gt;tabControl1.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="labelX16.Location" type="System.Drawing.Point, System.Drawing">
+    <value>128, 36</value>
+  </data>
+  <data name="&gt;&gt;labelX20.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.LabelX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="BEdit.Text" xml:space="preserve">
+    <value>تعديل</value>
+  </data>
+  <data name="labelX20.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="&gt;&gt;labelX17.Parent" xml:space="preserve">
+    <value>groupPanel7</value>
+  </data>
+  <data name="&gt;&gt;next_.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="labelX20.Location" type="System.Drawing.Point, System.Drawing">
+    <value>366, 171</value>
+  </data>
+  <data name="labelX5.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="labelX24.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="&gt;&gt;labelX9.Parent" xml:space="preserve">
+    <value>tabControlPanel2</value>
+  </data>
+  <data name="&gt;&gt;previous_.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="labelX24.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="&gt;&gt;uC_Acc1.Name" xml:space="preserve">
+    <value>uC_Acc1</value>
+  </data>
+  <data name="uC_Acc1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="&gt;&gt;totalWeight.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="buttonItem1.Text" xml:space="preserve">
+    <value>طباعة</value>
+  </data>
+  <data name="labelX6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>34, 22</value>
+  </data>
+  <data name="&gt;&gt;labelX21.Name" xml:space="preserve">
+    <value>labelX21</value>
+  </data>
+  <data name="buttonX1.Text" xml:space="preserve">
+    <value>بحث عن طلب تسعيرة</value>
+  </data>
+  <data name="&gt;&gt;txt_Rate.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;txt_RQ_ser.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;buttonX2.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="Tot_Price.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="buttonX1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>247, -1</value>
+  </data>
+  <data name="txt_address.Location" type="System.Drawing.Point, System.Drawing">
+    <value>47, 83</value>
+  </data>
+  <data name="&gt;&gt;labelX52.Name" xml:space="preserve">
+    <value>labelX52</value>
+  </data>
+  <data name="&gt;&gt;labelX30.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.LabelX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="dGV_Item.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="labelX17.TabIndex" type="System.Int32, mscorlib">
+    <value>47</value>
+  </data>
+  <data name="labelX53.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="&gt;&gt;labelX11.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.LabelX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;labelX31.Name" xml:space="preserve">
+    <value>labelX31</value>
+  </data>
+  <data name="Tot_Price.ButtonClear.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnCancel_2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 53</value>
+  </data>
+  <data name="&gt;&gt;labelX10.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="labelX19.TabIndex" type="System.Int32, mscorlib">
+    <value>51</value>
+  </data>
+  <data name="labelX31.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1218, 4</value>
+  </data>
+  <data name="labelX51.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 22</value>
+  </data>
+  <data name="txtPrice.ButtonCustom2.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="ribbonBar1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1399, 36</value>
+  </data>
+  <data name="RQ_Date.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 27</value>
+  </data>
+  <data name="&gt;&gt;labelX31.Parent" xml:space="preserve">
+    <value>groupPanel7</value>
+  </data>
+  <data name="&gt;&gt;labelX1.Parent" xml:space="preserve">
+    <value>groupPanel6</value>
+  </data>
+  <data name="txt_Email.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="labelX19.Location" type="System.Drawing.Point, System.Drawing">
+    <value>107, 12</value>
+  </data>
+  <data name="&gt;&gt;labelX30.Name" xml:space="preserve">
+    <value>labelX30</value>
+  </data>
+  <data name="&gt;&gt;buttonX1.ZOrder" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;txt_serNo.Parent" xml:space="preserve">
+    <value>groupPanel6</value>
+  </data>
+  <data name="txtUnitWeight.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="Doc_Name.Text" xml:space="preserve">
+    <value>طلب تسعيرة مواد</value>
+  </data>
+  <data name="&gt;&gt;buttonItem1.Name" xml:space="preserve">
+    <value>buttonItem1</value>
+  </data>
+  <data name="txt_TotWeight.Size" type="System.Drawing.Size, System.Drawing">
+    <value>93, 27</value>
+  </data>
+  <data name="&gt;&gt;TxtId.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="first_.Size" type="System.Drawing.Size, System.Drawing">
+    <value>20, 22</value>
+  </data>
+  <data name="&gt;&gt;labelX20.Name" xml:space="preserve">
+    <value>labelX20</value>
+  </data>
+  <data name="Doc_Name.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 18.25pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;labelX18.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.LabelX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="BNew.Text" xml:space="preserve">
+    <value>جديد</value>
+  </data>
+  <data name="labelX51.Location" type="System.Drawing.Point, System.Drawing">
+    <value>310, 190</value>
+  </data>
+  <data name="&gt;&gt;Btn_DelRow.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="labelX15.TabIndex" type="System.Int32, mscorlib">
+    <value>139</value>
+  </data>
+  <data name="labelX4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>479, 4</value>
+  </data>
+  <data name="labelX23.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;groupPanel7.Parent" xml:space="preserve">
+    <value>groupPanel6</value>
+  </data>
+  <data name="btn_braws.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="labelX14.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="txt_InvDate.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="&gt;&gt;labelX24.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="labelX17.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="&gt;&gt;labelX24.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.LabelX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;labelX12.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.LabelX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;txtBalance.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
+    <value>110</value>
+  </data>
+  <data name="txt_MainNote.Location" type="System.Drawing.Point, System.Drawing">
+    <value>47, 169</value>
+  </data>
+  <data name="txt_serNo.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;txtSearch.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.Controls.TextBoxX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;labelX7.Parent" xml:space="preserve">
+    <value>tabControlPanel2</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>frm_Purch_Qutation</value>
+  </data>
+  <data name="txtE_Fax.Location" type="System.Drawing.Point, System.Drawing">
+    <value>647, 134</value>
+  </data>
+  <data name="&gt;&gt;groupPanel6.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;last_.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="labelX15.Location" type="System.Drawing.Point, System.Drawing">
+    <value>702, 6</value>
+  </data>
+  <data name="txtNote.Size" type="System.Drawing.Size, System.Drawing">
+    <value>404, 27</value>
+  </data>
+  <data name="labelX10.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9pt</value>
+  </data>
+  <data name="labelX4.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="&gt;&gt;groupPanel6.Name" xml:space="preserve">
+    <value>groupPanel6</value>
+  </data>
+  <data name="&gt;&gt;labelX18.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;Uc_Branch.ZOrder" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="&gt;&gt;labelX19.Name" xml:space="preserve">
+    <value>labelX19</value>
+  </data>
+  <data name="&gt;&gt;Doc_Name.Name" xml:space="preserve">
+    <value>Doc_Name</value>
+  </data>
+  <data name="txtE_Fax.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="&gt;&gt;txtPrice.Parent" xml:space="preserve">
+    <value>groupPanel7</value>
+  </data>
+  <data name="&gt;&gt;BExit.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;labelX12.Parent" xml:space="preserve">
+    <value>groupPanel6</value>
+  </data>
+  <data name="&gt;&gt;labelX10.Parent" xml:space="preserve">
+    <value>groupPanel1</value>
+  </data>
+  <data name="&gt;&gt;labelX12.Name" xml:space="preserve">
+    <value>labelX12</value>
+  </data>
+  <data name="txt_TotWeight.Location" type="System.Drawing.Point, System.Drawing">
+    <value>159, 23</value>
+  </data>
+  <data name="TotalPrice.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 27</value>
+  </data>
+  <data name="txtCurrency.TabIndex" type="System.Int32, mscorlib">
+    <value>141</value>
+  </data>
+  <data name="&gt;&gt;labelX15.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.LabelX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;groupPanel5.Name" xml:space="preserve">
+    <value>groupPanel5</value>
+  </data>
+  <data name="&gt;&gt;labelX19.Parent" xml:space="preserve">
+    <value>groupPanel5</value>
+  </data>
+  <data name="txt_Rate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>35, 20</value>
+  </data>
+  <data name="BEdit.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAABt0RVh0U29m
+        dHdhcmUAZ2lmMnBuZyAwLjYgKGJldGEpqt1pkgAAATVJREFUOE+lU8FKw1AQ7P/4C4Kh9aA3v8CjSg/+
+        Rqs3qaG1oPgDggc1FPUknvSgtGgRERG8FqlnM2bGbPqSvEDBgWE3m7fzNrubGoAqFlGM69mCLoVmfwUb
+        3bpI37C+t5h6HoE4jvE2vUfzsIGn6SWGk0iW3D5excndAdZaC8nRDDMBJhM8wMTBR0dsPwbYHQWIXjsS
+        qhIQ+PLoakfWeDHuovUQoD1awvVnmAmkF/4JuLdv9evyDYzdTHpKHrzvZwIpcj3AZm+ZxtR12EcHEvgP
+        ZgK+m0jCKrIKE2SV5wSG36f63tuv0rjUm4JgWYCJ7Da7zu4zZrTpOPALcN6cO+dvu3D27I7vh0bJZE6A
+        m8aNi15C8XwcKpmrzA11Szea4+545X+QIJdMmmMoPhssXqI3OD9R+wWqZCkI/rI13gAAAABJRU5ErkJg
+        gg==
+</value>
+  </data>
+  <data name="&gt;&gt;labelX18.Name" xml:space="preserve">
+    <value>labelX18</value>
+  </data>
+  <data name="btnCancel.Text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="tabControl1.Text" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="labelX3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>804, 68</value>
+  </data>
+  <data name="&gt;&gt;labelX21.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.LabelX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;btnCancel_2.Parent" xml:space="preserve">
+    <value>groupPanel2</value>
+  </data>
+  <data name="txt_Email.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="labelX10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>204, 24</value>
+  </data>
+  <data name="TotalPrice.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="txtsearh_2.ButtonCustom2.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="labelX11.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;txt_Tel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabItem6.Name" xml:space="preserve">
+    <value>tabItem6</value>
+  </data>
+  <data name="buttonX1.TabIndex" type="System.Int32, mscorlib">
+    <value>66</value>
+  </data>
+  <data name="&gt;&gt;buttonItem1.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="labelX18.Size" type="System.Drawing.Size, System.Drawing">
+    <value>84, 18</value>
+  </data>
+  <data name="labelX14.Text" xml:space="preserve">
+    <value>العملة</value>
+  </data>
+  <data name="txtPrice.ButtonCustom.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtNote.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="buttonX1.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="&gt;&gt;BExit.Name" xml:space="preserve">
+    <value>BExit</value>
+  </data>
+  <data name="BtnCalc.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        /9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAIBAQIBAQICAgICAgICAwUDAwMDAwYEBAMFBwYHBwcGBwcI
+        CQsJCAgKCAcHCg0KCgsMDAwMBwkODw0MDgsMDAz/2wBDAQICAgMDAwYDAwYMCAcIDAwMDAwMDAwMDAwM
+        DAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAz/wAARCAAQABADASIAAhEBAxEB/8QA
+        HwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIh
+        MUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVW
+        V1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXG
+        x8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQF
+        BgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAV
+        YnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOE
+        hYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq
+        8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD2H4WRxTeAtBuNR8Ofs/67eapYzajLfa1rWqHU58Sw73ugtk4E
+        ubkF9ruP3UuGOBuZ8UrFLnwDq11p2gfs/eHrrS9Nj1hLvR9a1P8AtJFbz/L+zBrJAZswZXLqNzxZYZJV
+        fhX+0J4R0PwF4a0y/wDEek6bqWk6LLaX9td/EXxJYTW93HLp2FktorcpBLH5Dr5S52mI7NwhizW+JH7U
+        PhJPh74i0Sy13T9Vv9e8M29lZw2PxF8T3byXkkl6rRrbPbCOeZzcLuhlKo28hiPNcVhVlTprnlf8Xu7b
+        IVPD88rRWvr/AJs//9k=
+</value>
+  </data>
+  <data name="tabControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>902, 243</value>
+  </data>
+  <data name="buttonX1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>154, 28</value>
+  </data>
+  <data name="txtCurrency.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="txt_Rate.ButtonClear.DisplayPosition" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;panel2.Name" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="labelX15.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="&gt;&gt;labelX2.Parent" xml:space="preserve">
+    <value>groupPanel6</value>
+  </data>
+  <data name="&gt;&gt;labelX31.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.LabelX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="groupPanel1.TabIndex" type="System.Int32, mscorlib">
+    <value>137</value>
+  </data>
+  <data name="&gt;&gt;BSave.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="labelX6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>588, 100</value>
+  </data>
+  <data name="TxtQty.ButtonCustom.DisplayPosition" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;buttonX2.Parent" xml:space="preserve">
+    <value>tabControlPanel2</value>
+  </data>
+  <data name="&gt;&gt;labelX16.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.LabelX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;txtsearh_2.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.Controls.TextBoxX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="txtsearh_2.ButtonCustom2.DisplayPosition" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="txt_address.Size" type="System.Drawing.Size, System.Drawing">
+    <value>315, 78</value>
+  </data>
+  <data name="&gt;&gt;TxtDesc.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelX16.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="labelX10.Text" xml:space="preserve">
+    <value>Enter Number For Search</value>
+  </data>
+  <data name="&gt;&gt;labelX3.Parent" xml:space="preserve">
+    <value>tabControlPanel2</value>
+  </data>
+  <data name="&gt;&gt;txt_RQ_ser.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="labelX7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>804, 100</value>
+  </data>
+  <data name="uC_Acc1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="&gt;&gt;groupPanel1.Parent" xml:space="preserve">
+    <value>tabControlPanel2</value>
+  </data>
+  <data name="txtPrice.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="txtNote.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="ribbonBar1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9pt</value>
+  </data>
+  <data name="txt_TotWeight.TabIndex" type="System.Int32, mscorlib">
+    <value>138</value>
+  </data>
+  <data name="btnDelete.Text" xml:space="preserve">
+    <value>حذف</value>
+  </data>
+  <data name="Tot_Price.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt</value>
+  </data>
+  <data name="labelX30.TabIndex" type="System.Int32, mscorlib">
+    <value>38</value>
+  </data>
+  <data name="&gt;&gt;txt_Rate.Parent" xml:space="preserve">
+    <value>tabControlPanel2</value>
+  </data>
+  <data name="&gt;&gt;groupPanel2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="btnCancel_2.Text" xml:space="preserve">
+    <value>الغاء</value>
+  </data>
+  <data name="labelX8.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="next_.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="buttonX2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>483, 4</value>
+  </data>
+  <data name="next_.TabIndex" type="System.Int32, mscorlib">
+    <value>115</value>
+  </data>
+  <data name="&gt;&gt;btnOk_2.Name" xml:space="preserve">
+    <value>btnOk_2</value>
+  </data>
+  <data name="labelX19.Size" type="System.Drawing.Size, System.Drawing">
+    <value>97, 22</value>
+  </data>
+  <data name="&gt;&gt;labelX19.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.LabelX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;next_.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="labelX24.Size" type="System.Drawing.Size, System.Drawing">
+    <value>89, 22</value>
+  </data>
+  <data name="&gt;&gt;labelX8.Parent" xml:space="preserve">
+    <value>tabControlPanel2</value>
+  </data>
+  <data name="&gt;&gt;groupPanel2.Name" xml:space="preserve">
+    <value>groupPanel2</value>
+  </data>
+  <data name="&gt;&gt;TotalPrice.Parent" xml:space="preserve">
+    <value>groupPanel5</value>
+  </data>
+  <data name="&gt;&gt;txtE_Fax.Parent" xml:space="preserve">
+    <value>tabControlPanel2</value>
+  </data>
+  <data name="&gt;&gt;tabControl1.Parent" xml:space="preserve">
+    <value>groupPanel6</value>
+  </data>
+  <data name="txt_address.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="&gt;&gt;labelX29.Name" xml:space="preserve">
+    <value>labelX29</value>
+  </data>
+  <data name="TxtQty.ButtonClear.DisplayPosition" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="uC_Acc1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>316, 30</value>
+  </data>
+  <data name="txt_Rate.ButtonCustom2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;labelX25.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.LabelX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;groupPanel7.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.Controls.GroupPanel, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;txtSearch.Parent" xml:space="preserve">
+    <value>groupPanel1</value>
+  </data>
+  <data name="BtnEmail.Text" xml:space="preserve">
+    <value>ارسال بالبريد</value>
+  </data>
+  <data name="&gt;&gt;labelX24.Parent" xml:space="preserve">
+    <value>groupPanel5</value>
+  </data>
+  <data name="&gt;&gt;groupPanel1.Name" xml:space="preserve">
+    <value>groupPanel1</value>
+  </data>
+  <data name="txtE_Fax.TabIndex" type="System.Int32, mscorlib">
+    <value>56</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>9, 19</value>
+  </data>
+  <data name="labelX9.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="&gt;&gt;buttonX1.Name" xml:space="preserve">
+    <value>buttonX1</value>
+  </data>
+  <data name="Btn_DelRow.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="BNew.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        xAAADsQBlSsOGwAAAilJREFUOE+NUUtrU2EQHcHHRhr8Aa4EUYw7oXYnSu2iSVaiiEYEuy6lRCgKii8Q
+        wVLRqIgU26QUY0uitzQgRegiISYXYp6kBAMuFFwkUHLzfhy/mSQYQkAPHOYwM2dm7ncJ/wGjYsCiWWDZ
+        snaoNOcY/xywa+yCXhBe/nbC/+uj8JXSnCtXyn8HaJomHIR58STG4qcw/eM0/Nl3QtacO7t6DjS7NIv9
+        0/uApuquAWfmRzHluoQZz3U4lqdAiwSrbxyeb8+R+RkVsrZ4x0HLBLK9toFuEK5dtcN+xY5DtwiW7SO4
+        HDyOi/5joA8Em3cCq9F57Cgzk7XVe15qNPlsEvRQiQXC3jeEw64DOLpyEOb3JphdJux5q2obhBNBgm9n
+        QciaPhFG18dAzg0nHJ9vYu7LHO5s38aDwF08Dt3Dk6/38VR/BMfKjDTTEuHC5oRQTl8nRPQIKJvOAg31
+        /dUBqveQvHobt9eNEXUReZRRnT3iNmFNW1NF9Rvj8TjK5TKKxaLQMAxhqVSSfKVSAVpA/nse+qaO2FYM
+        IX9IzAwZwE39xn4zs1qtotnk39RBNBrtqu4Abug39sycZ9ZqNWG9XheTrusSGZRIJKQ4bGu/kdlo8KMA
+        kUhEIkMGcHHY1kFju92WGA6HJTLkE7hh2FbO98zpdBqZTAY+n0+u7UEuYLRaLdnQ2zKIXC6HQCCAQqHQ
+        zXRAsVgMPGQYk8mkxFQqhWAwiHw+37X1APwB91tTzV5MFtIAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="&gt;&gt;labelX47.Parent" xml:space="preserve">
+    <value>tabControlPanel2</value>
+  </data>
+  <data name="txtNote.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="txtSearch.ButtonCustom.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;groupPanel6.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.Controls.GroupPanel, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="txtUnit.TabIndex" type="System.Int32, mscorlib">
+    <value>134</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Tot_Price.ButtonCustom.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;btnOk.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="totalQty.Location" type="System.Drawing.Point, System.Drawing">
+    <value>368, 10</value>
+  </data>
+  <data name="txtSearch.ButtonCustom2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="groupPanel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>335, 123</value>
+  </data>
+  <data name="labelX14.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;groupPanel5.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.Controls.GroupPanel, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="Uc_Branch.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="&gt;&gt;BNew.Name" xml:space="preserve">
+    <value>BNew</value>
+  </data>
+  <data name="txtPrice.ButtonDropDown.DisplayPosition" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 660</value>
+  </data>
+  <data name="labelX10.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="labelX6.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="BtnCalc.Text" xml:space="preserve">
+    <value>الحاسبة</value>
+  </data>
+  <data name="labelX21.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="&gt;&gt;labelX14.Parent" xml:space="preserve">
+    <value>tabControlPanel2</value>
+  </data>
+  <data name="txt_Tel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>149, 27</value>
+  </data>
+  <data name="Doc_Name.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="next_.Size" type="System.Drawing.Size, System.Drawing">
+    <value>20, 22</value>
+  </data>
+  <data name="labelX31.Text" xml:space="preserve">
+    <value>رقم الصنف</value>
+  </data>
+  <data name="TxtId.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="Btn_DelRow.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 28</value>
+  </data>
+  <data name="&gt;&gt;BtnAttache.Name" xml:space="preserve">
+    <value>BtnAttache</value>
+  </data>
+  <data name="&gt;&gt;dGV_Item.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txt_TotWeight.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="txtUnitWeight.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="labelX8.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="labelX52.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="txtPrice.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 27</value>
+  </data>
+  <data name="labelX18.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 4</value>
+  </data>
+  <data name="RQ_Date.Location" type="System.Drawing.Point, System.Drawing">
+    <value>214, 162</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>frm_R_Qutaion</value>
+  </data>
+  <data name="labelX4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>62, 18</value>
+  </data>
+  <data name="&gt;&gt;Uc_Branch.Type" xml:space="preserve">
+    <value>Report_Pro.MyControls.UC_Branch, Report_Pro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="labelX6.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="txtBalance.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="labelX7.TabIndex" type="System.Int32, mscorlib">
+    <value>41</value>
+  </data>
+  <data name="&gt;&gt;BEdit.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;labelX29.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.LabelX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;BtnCalc.Name" xml:space="preserve">
+    <value>BtnCalc</value>
+  </data>
+  <data name="txt_transaction_code.TabIndex" type="System.Int32, mscorlib">
+    <value>135</value>
+  </data>
+  <data name="txt_address.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;ribbonBar1.Name" xml:space="preserve">
+    <value>ribbonBar1</value>
+  </data>
+  <data name="txtPrice.ButtonCustom.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;buttonX2.Name" xml:space="preserve">
+    <value>buttonX2</value>
+  </data>
+  <data name="BtnAttache.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        xAAADsQBlSsOGwAAAcxJREFUOE+Nk91r01Achvv3CcLmLkRvvHUToQoqZTfiNgS9kcmuRMELLwp1kzFG
+        rdJ1m5nCcNq02g/ahaaN7exK0zbt0qTp45YcW7e6j+fqvG/4PeeEnPi4IKbeIzyVZmUyQXa5Klq4kMBq
+        9QheitPc67g5HlSRHu+663MFjtUndDlJvWiIxiPsT2GbzvmCd1d+0ii3RRqydF3GbFpnC1auZdE1g+2n
+        GrrqHf+I6IMc0nzOXZ8qCN/Is59vEl/YQ3qSFy1IswXW5tIinSKI3ixQlnVSr2tszHg7HbH9TCM2mxHJ
+        Y0SweaeE+rlGflEnNj0cll9WiM1k0bYarN5OivaE4Mt0hVy4SvGDQfTecDgT3OdjIEM10SZ09ZtoPQaC
+        r3NVkm8qGEWbtbuKaEFZ1Yn409TzB4Qmvot2iCtIvdDZWfjlFkqkjhppuWtto0V4Mk1LMwmNy/Rx3P5f
+        fE63z6bfG/7Lp0cK0kOV97cytH9bvB1PYNu2eHocn9mwST6vizik27HoHcoXx35gGpZoR3FfQQqUDq+s
+        mwfYnT5LYymM2oFo/o8rsK0e0akCLdU7ZrfusDyRQS+NXuGTHPuM8qsy6/cV1gO7gz/vbOAPy43AreFZ
+        CH8AAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="&gt;&gt;txt_MainNote.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Tot_Price.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 27</value>
+  </data>
+  <data name="labelX18.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="&gt;&gt;labelX17.Name" xml:space="preserve">
+    <value>labelX17</value>
+  </data>
+  <data name="&gt;&gt;txt_InvDate.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="btn_braws.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1319, 5</value>
+  </data>
+  <data name="&gt;&gt;btn_braws.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelX4.Name" xml:space="preserve">
+    <value>labelX4</value>
+  </data>
+  <data name="previous_.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="&gt;&gt;RQ_Date.Parent" xml:space="preserve">
+    <value>groupPanel6</value>
+  </data>
+  <data name="TxtQty.ButtonDropDown.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="labelX11.Location" type="System.Drawing.Point, System.Drawing">
+    <value>804, 35</value>
+  </data>
+  <data name="labelX30.Size" type="System.Drawing.Size, System.Drawing">
+    <value>269, 18</value>
+  </data>
+  <data name="&gt;&gt;groupPanel1.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.Controls.GroupPanel, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="Doc_Name.Size" type="System.Drawing.Size, System.Drawing">
+    <value>300, 53</value>
+  </data>
+  <data name="uC_Acc1.TabIndex" type="System.Int32, mscorlib">
+    <value>143</value>
+  </data>
+  <data name="txtNote.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt</value>
+  </data>
+  <data name="labelX6.Text" xml:space="preserve">
+    <value>جوال</value>
+  </data>
+  <data name="txtMobile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>149, 27</value>
+  </data>
+  <data name="labelX51.Text" xml:space="preserve">
+    <value>كود الحركة</value>
+  </data>
+  <data name="&gt;&gt;labelX47.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;labelX5.Name" xml:space="preserve">
+    <value>labelX5</value>
+  </data>
+  <data name="&gt;&gt;txtBalance.Parent" xml:space="preserve">
+    <value>groupPanel7</value>
+  </data>
+  <data name="BExit.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
+        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAIySURBVDhPpZJPaNNgGMY/2sJakHXNRg2D4WGwwcQe
+        NljvW6HsMLohjGEmO2/s6F1BhE3w4sHDxLkKOl3V6ahD8E+cFBEhnUGpSv8cGqm1hx6UpKfw+j5ZF1KY
+        Xvzgl3zf+z7Pky/JJ4jov3Aud4QQd5n7zAMh+reFWGHuMbk2mK+gBw208BwXMP04FFI/xuNGY2HB/L28
+        bP9aWrJ/Kop5MD5uoAfN3wKmn/b0aHVFsX4sLpKhKB2g9n1+3noSDmvQdgSksbVgUK3OzVnfZme5RPQl
+        leoA4+vMDJVSKWurq0uFh0uHARv8fu9GRw19asoRHo0PExMO3nGQTNKrkREDHl4eBqwLsfUpmTTVeJwy
+        g4OOsNVqUb1ep0qlQsVikcrlMt2MRGgzGqXs8LAJjxtwg780P91+MTZGz2Mxut3bS/l8nnRdp0KhQKVS
+        iTbYnG7zcGDAhscNuM4LLZGwnw0NUaavj7ZZ5DVXq1WndsSOLNvwuAHXeDtvYjEzK0mUPcZcq9Wo0Wg4
+        PbAjSSY8bsAaDk40Wt3n9/OaH7EYwNxsNh1e8zodChnwuAFX+Jdc9fvVfVm2dnkXMO+y8H0bzGHG/WU4
+        bK35fCo8bsBlPhQX+XCsBgJaTpKsPQ7RWexlj3nL5lW/X4MWHjcA4xRzlhsXOP1WMGjkurvNz5GIDTBH
+        DT1ooMXwBgSYk8zpfiEmE0JcOidE5jx/aYA5auix5gwjw+MN8DEnmCjDun+CB0HrIyLxB1Ox/3Bktycj
+        AAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="labelX17.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="btnCancel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="txtUnit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 27</value>
+  </data>
+  <data name="totalQty.Size" type="System.Drawing.Size, System.Drawing">
+    <value>81, 27</value>
+  </data>
+  <data name="TxtId.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 27</value>
+  </data>
+  <data name="txtsearh_2.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="TxtQty.ButtonCustom2.DisplayPosition" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="Tot_Price.ButtonDropDown.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;labelX16.Parent" xml:space="preserve">
+    <value>groupPanel2</value>
+  </data>
+  <data name="&gt;&gt;txt_Email.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;labelX51.Name" xml:space="preserve">
+    <value>labelX51</value>
+  </data>
+  <data name="labelX23.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="labelX17.Location" type="System.Drawing.Point, System.Drawing">
+    <value>546, 4</value>
+  </data>
+  <data name="labelX23.Location" type="System.Drawing.Point, System.Drawing">
+    <value>461, 12</value>
+  </data>
+  <data name="labelX3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="labelX52.Text" xml:space="preserve">
+    <value>الرصيد</value>
+  </data>
+  <data name="btnOk.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="&gt;&gt;buttonX1.Parent" xml:space="preserve">
+    <value>tabControlPanel2</value>
+  </data>
+  <data name="dGV_Item.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="&gt;&gt;labelX31.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="labelX6.TabIndex" type="System.Int32, mscorlib">
+    <value>55</value>
+  </data>
+  <data name="&gt;&gt;labelX14.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="labelX21.TabIndex" type="System.Int32, mscorlib">
+    <value>139</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="totalQty.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="labelX24.Text" xml:space="preserve">
+    <value>اجمالي الوزن</value>
+  </data>
+  <data name="labelX19.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="&gt;&gt;txtUnitWeight.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="labelX47.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="labelX53.TabIndex" type="System.Int32, mscorlib">
+    <value>139</value>
+  </data>
+  <data name="labelX52.Location" type="System.Drawing.Point, System.Drawing">
+    <value>255, 4</value>
+  </data>
+  <data name="labelX7.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="txt_Rate.ButtonFreeText.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;btn_braws.Parent" xml:space="preserve">
+    <value>groupPanel7</value>
+  </data>
+  <data name="labelX2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Tot_Price.ButtonCustom2.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="BtnAttache.Text" xml:space="preserve">
+    <value>المرفقات</value>
+  </data>
+  <data name="labelX1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="txt_Email.Size" type="System.Drawing.Size, System.Drawing">
+    <value>361, 27</value>
+  </data>
+  <data name="Uc_Branch.Location" type="System.Drawing.Point, System.Drawing">
+    <value>316, 64</value>
+  </data>
+  <data name="groupPanel6.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="totalWeight.Location" type="System.Drawing.Point, System.Drawing">
+    <value>191, 10</value>
+  </data>
+  <data name="tabControlPanel2.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="labelX53.Text" xml:space="preserve">
+    <value>الوزن الاجمالي</value>
+  </data>
+  <data name="labelX5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 18</value>
+  </data>
+  <data name="RQ_Date.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="next_.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="&gt;&gt;Tot_Price.Name" xml:space="preserve">
+    <value>Tot_Price</value>
+  </data>
+  <data name="Tot_Price.ButtonCustom.DisplayPosition" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="txtBalance.TabIndex" type="System.Int32, mscorlib">
+    <value>53</value>
+  </data>
+  <data name="previous_.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAApNJREFUSEtj
+        GAVkA6/aRYx2xXPSIiYd+BA1ef8F/45NSlAp6gDrlEYWeYeYjnmH7vwrXnnuf/LMwwcCurZSzxLrlCZW
+        oAVdM/ff/m/Suud/xZqL/6MmH7wQ1LuNGaqEMmCd2gy2YMre2/8sOvb/t+rc/69hy/X/EZP2XwieuI9y
+        n1intYAt6N99659d75H/ThOO/LPvO/K/fN2Vf4mzjh2ImH6EMktsgBYoOMZ0de+89d9l0on/HlNO/nef
+        evK/97ST/0vXXfkfMeXQheApB8gPLpv0VqAF0V3t22/985px5r/frLP/gBhMe808869m09WfoRP2nfPv
+        3UmeT2wy2sEWNG+79c9/zoX/QfMu/guedxFMBwKx/5yL/yo3XP0VNeXAPt/2DaRbArOgYeutfyELr/wP
+        X3T1X8Tiq2AahMOAOH/9zb9Z84//lrf084JqIx5YpTWDLajdeud/1LJb/2NW3PofC8QgGoSTV9/+lzlz
+        zzsJA9d6XnE5Mag24oFFYh2rgkN0V9WWu/8SVt/7n7jm3r+kNRA6e+ODf9lLz/+VMHBpFJLXlLPP62OD
+        aiMemMVWgC2o2HLvf+qGR//ToTh3y5P/Wcsv/1e0CZrEKyEv61AwkXTDQcA0ugxsQdkWoGu3Pv+fs/XZ
+        v8JdL/+nLTj9CeRyPgl5Oa+GZeQnU9OoUrAFJVsf/SvY9fp/2b63/7JW3/ovoe8MDBYNOedCMl0OAyYR
+        RWALirc//V956NP/zDV3/yvYBE/iEZGSs01vpcxwEDAOy2dVdIzuzFh771/a0kufxYEu5xaWlLPP6qRO
+        YWcYnMUiqKAbBLRkjqSBSz0ozIG+otzlMGCVWMsopmYoAGTKcQmKiRkGZVHP8FGAAAwMAIXsSZSiclSg
+        AAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="first_.Location" type="System.Drawing.Point, System.Drawing">
+    <value>368, 76</value>
+  </data>
+  <data name="&gt;&gt;txtBalance.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="last_.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="panel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="&gt;&gt;labelX1.Name" xml:space="preserve">
+    <value>labelX1</value>
+  </data>
+  <data name="&gt;&gt;btnOk.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="Doc_Name.TabIndex" type="System.Int32, mscorlib">
+    <value>120</value>
+  </data>
+  <data name="btnCancel_2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="labelX13.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="txtUnitWeight.Location" type="System.Drawing.Point, System.Drawing">
+    <value>404, 23</value>
+  </data>
+  <data name="groupPanel5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 611</value>
+  </data>
+  <data name="&gt;&gt;BtnEmail.Name" xml:space="preserve">
+    <value>BtnEmail</value>
+  </data>
+  <data name="&gt;&gt;btnCancel_2.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1399, 690</value>
+  </data>
+  <data name="groupPanel7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1393, 62</value>
+  </data>
+  <data name="&gt;&gt;labelX9.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.LabelX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="Btn_DelRow.Text" xml:space="preserve">
+    <value>حذف السطر المحدد</value>
+  </data>
+  <data name="&gt;&gt;BEdit.Name" xml:space="preserve">
+    <value>BEdit</value>
+  </data>
+  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1399, 246</value>
+  </data>
+  <data name="&gt;&gt;previous_.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TotalPrice.Name" xml:space="preserve">
+    <value>TotalPrice</value>
+  </data>
+  <data name="&gt;&gt;labelX30.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;dGV_Item.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;btnCancel_2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;Doc_Name.Parent" xml:space="preserve">
+    <value>groupPanel6</value>
+  </data>
+  <data name="&gt;&gt;RQ_Date.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="TxtQty.ButtonCustom2.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;TxtQty.Name" xml:space="preserve">
+    <value>TxtQty</value>
+  </data>
+  <data name="ribbonBar1.TabIndex" type="System.Int32, mscorlib">
+    <value>103</value>
+  </data>
+  <data name="&gt;&gt;totalQty.Name" xml:space="preserve">
+    <value>totalQty</value>
+  </data>
+  <data name="totalQty.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="previous_.Size" type="System.Drawing.Size, System.Drawing">
+    <value>20, 22</value>
+  </data>
+  <data name="labelX18.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="&gt;&gt;labelX21.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="txt_Rate.ButtonClear.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;labelX7.Name" xml:space="preserve">
+    <value>labelX7</value>
+  </data>
+  <data name="txt_RQ_ser.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="totalWeight.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="labelX24.Location" type="System.Drawing.Point, System.Drawing">
+    <value>292, 12</value>
+  </data>
+  <data name="txtsearh_2.ButtonCustom.DisplayPosition" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="txtsearh_2.ButtonCustom2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtUnitWeight.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt</value>
+  </data>
+  <data name="txt_RQ_ser.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="labelX2.Text" xml:space="preserve">
+    <value>التاريخ</value>
+  </data>
+  <data name="txt_Rate.ButtonDropDown.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="tabControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>450, 10</value>
+  </data>
+  <data name="txt_InvDate.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="TxtQty.ButtonDropDown.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;txtUnit.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="labelX47.Text" xml:space="preserve">
+    <value>العنوان</value>
+  </data>
+  <data name="&gt;&gt;txt_Fax.Name" xml:space="preserve">
+    <value>txt_Fax</value>
+  </data>
+  <data name="txtSearch.Size" type="System.Drawing.Size, System.Drawing">
+    <value>307, 27</value>
+  </data>
+  <data name="labelX8.Text" xml:space="preserve">
+    <value>إيميل</value>
+  </data>
+  <data name="txtPrice.ButtonDropDown.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="Tot_Price.ButtonCustom2.DisplayPosition" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="btnOk_2.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;txtCurrency.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btn_braws.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="labelX25.TabIndex" type="System.Int32, mscorlib">
+    <value>44</value>
+  </data>
+  <data name="labelX52.TabIndex" type="System.Int32, mscorlib">
+    <value>54</value>
+  </data>
+  <data name="groupPanel6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1399, 329</value>
+  </data>
+  <data name="txt_Rate.ButtonCustom2.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="dGV_Item.RowHeadersWidth" type="System.Int32, mscorlib">
+    <value>60</value>
+  </data>
+  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 365</value>
+  </data>
+  <data name="Tot_Price.ButtonCustom2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;labelX23.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.LabelX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="Tot_Price.ButtonClear.DisplayPosition" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;dGV_Item.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="txt_transaction_code.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 21</value>
+  </data>
+  <data name="btn_braws.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelX1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>321, 78</value>
+  </data>
+  <data name="&gt;&gt;labelX2.Name" xml:space="preserve">
+    <value>labelX2</value>
+  </data>
+  <data name="labelX9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>103, 22</value>
+  </data>
+  <data name="btnCancel.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="labelX24.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;txtNote.Name" xml:space="preserve">
+    <value>txtNote</value>
+  </data>
+  <data name="&gt;&gt;tabControlPanel2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="TxtQty.ButtonClear.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;ribbonBar1.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.RibbonBar, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="&gt;&gt;first_.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="labelX12.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="labelX1.Text" xml:space="preserve">
+    <value>الرقم</value>
+  </data>
+  <data name="&gt;&gt;txtNote.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="btn_braws.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="Btn_DelRow.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1254, 6</value>
+  </data>
+  <data name="&gt;&gt;labelX3.Name" xml:space="preserve">
+    <value>labelX3</value>
+  </data>
+  <data name="labelX29.TabIndex" type="System.Int32, mscorlib">
+    <value>40</value>
+  </data>
+  <data name="&gt;&gt;uC_Acc1.Type" xml:space="preserve">
+    <value>Report_Pro.MyControls.UC_Acc, Report_Pro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="Doc_Name.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelX16.Text" xml:space="preserve">
+    <value>ادخل الرقم للبحث</value>
+  </data>
+  <data name="labelX9.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="tabControlPanel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 30</value>
+  </data>
+  <data name="&gt;&gt;txt_serNo.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="tabControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>132</value>
+  </data>
+  <data name="labelX10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>132, 42</value>
+  </data>
+  <data name="labelX17.Size" type="System.Drawing.Size, System.Drawing">
+    <value>399, 18</value>
+  </data>
+  <data name="labelX21.Size" type="System.Drawing.Size, System.Drawing">
+    <value>133, 22</value>
+  </data>
+  <data name="&gt;&gt;labelX21.Parent" xml:space="preserve">
+    <value>groupPanel6</value>
+  </data>
+  <data name="TxtId.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt</value>
+  </data>
+  <data name="groupPanel5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1399, 49</value>
+  </data>
+  <data name="&gt;&gt;txtBalance.Name" xml:space="preserve">
+    <value>txtBalance</value>
+  </data>
+  <data name="&gt;&gt;RQ_Date.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="txtPrice.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="last_.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="&gt;&gt;labelX5.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="labelX29.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 18</value>
+  </data>
+  <data name="Uc_Branch.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="&gt;&gt;labelX51.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;ribbonBar1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="labelX18.Text" xml:space="preserve">
+    <value>اجمالي السعر</value>
+  </data>
+  <data name="next_.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAitJREFUSEtj
+        GAU0Az5tm4zjph3579u155FNzgQzqDB1gHf7FqfCxafu16y/9L9g0al/Agp6PlApyoFP51ZjoKEP0haf
+        +e8x8dD/vIWn/gso6AZApSkDIVMPG2cvOPUvY+n5f1Zd+/8FTDv2P3vBSaAPqGBBwMQDTjkLTz3IXH7x
+        n0P/kX9OE478C5518n/mfCpYEDBhr3HmgpMPMldc+u86+cR/j6knwThs7tn/6fNOUhZEft3bjVPmHP2d
+        vfLSb++ZZ//7zTr7D4R9gThqwYX/qXMp8IFX81qnpJmH7xStv/7bf+7Ff0HzLv4HYhANxjGLr/xPnkOm
+        BZaJdcxagYVtdevO/4xfcfN/2KKr/8IXX/0fDqKhOGH5tf+JlFjAyS8ir+KZvqx8zcVfiatu/4tZcet/
+        LBJOXn37f8IcCpKpaUw5Fwe/iKpRRPnWvNVX/6Wtf/A/cc29fzCcvu7+/7jZoIxGQSRbpbVwsnBwmwEt
+        2Va66c7/9A2PgfgRGGdvevQ/dvZpyjOadVorJzC4VFU80laUbX/8L3/Hi385W5/9y9v2/H/M7DOU5wMQ
+        MI+r5AJZYhhZsa1g88N/xXve/Cva9ep/NLUsAAGr5AZwcBlGVm4r3fXyf9n+9/+j55yjXlkEAkaheZzs
+        PALA4EpdUbrzxf+wGaf+Ciro+kOlqQN0vBK42Hn4VRUdo+coOUbP5BAQM4JKUQ/oeCdyAikZEFYwc+MG
+        C44C0gEDAwBoQzAtuVsvQAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="&gt;&gt;labelX23.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="txtsearh_2.ButtonCustom.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="labelX12.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;labelX9.Name" xml:space="preserve">
+    <value>labelX9</value>
+  </data>
+  <data name="&gt;&gt;labelX15.Parent" xml:space="preserve">
+    <value>tabControlPanel2</value>
+  </data>
+  <data name="labelX7.Text" xml:space="preserve">
+    <value>هاتف</value>
+  </data>
+  <data name="labelX17.Text" xml:space="preserve">
+    <value>الوصف</value>
+  </data>
+  <data name="txt_MainNote.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="&gt;&gt;txtMobile.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;txtNote.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="buttonX2.TabIndex" type="System.Int32, mscorlib">
+    <value>66</value>
+  </data>
+  <data name="&gt;&gt;labelX51.Parent" xml:space="preserve">
+    <value>groupPanel6</value>
+  </data>
+  <data name="&gt;&gt;txt_Rate.Name" xml:space="preserve">
+    <value>txt_Rate</value>
+  </data>
+  <data name="&gt;&gt;txtE_Fax.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="previous_.Location" type="System.Drawing.Point, System.Drawing">
+    <value>347, 76</value>
+  </data>
+  <data name="txt_transaction_code.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="txtBalance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt</value>
+  </data>
+  <data name="&gt;&gt;BtnEmail.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="labelX19.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelX14.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 22</value>
+  </data>
+  <data name="labelX21.Text" xml:space="preserve">
+    <value>تاريخ طلب التسعيرة</value>
+  </data>
+  <data name="labelX47.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="labelX10.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="txt_Rate.ButtonDropDown.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;txt_Tel.Parent" xml:space="preserve">
+    <value>tabControlPanel2</value>
+  </data>
+  <data name="&gt;&gt;labelX52.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.LabelX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;Uc_Branch.Parent" xml:space="preserve">
+    <value>tabControlPanel2</value>
+  </data>
+  <data name="Uc_Branch.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;last_.Parent" xml:space="preserve">
+    <value>groupPanel6</value>
+  </data>
+  <data name="&gt;&gt;TxtId.Name" xml:space="preserve">
+    <value>TxtId</value>
+  </data>
+  <data name="previous_.TabIndex" type="System.Int32, mscorlib">
+    <value>114</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.Parent" xml:space="preserve">
+    <value>groupPanel1</value>
+  </data>
+  <data name="txt_Rate.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="&gt;&gt;txtUnitWeight.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="groupPanel2.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="groupPanel6.TabIndex" type="System.Int32, mscorlib">
+    <value>107</value>
+  </data>
+  <data name="labelX2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="labelX25.Text" xml:space="preserve">
+    <value>فاكس</value>
+  </data>
+  <data name="&gt;&gt;txtPrice.Type" xml:space="preserve">
+    <value>DevComponents.Editors.DoubleInput, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="TxtQty.ButtonCustom.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="labelX31.TabIndex" type="System.Int32, mscorlib">
+    <value>37</value>
+  </data>
+  <data name="Btn_DelRow.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="&gt;&gt;btnOk_2.Parent" xml:space="preserve">
+    <value>groupPanel2</value>
+  </data>
+  <data name="labelX3.TabIndex" type="System.Int32, mscorlib">
+    <value>61</value>
+  </data>
+  <data name="txtSearch.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 85</value>
+  </data>
+  <data name="tabControlPanel2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="&gt;&gt;buttonX2.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;labelX15.Name" xml:space="preserve">
+    <value>labelX15</value>
+  </data>
+  <data name="labelX9.TabIndex" type="System.Int32, mscorlib">
+    <value>57</value>
+  </data>
+  <data name="Tot_Price.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="ribbonBar1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="&gt;&gt;TxtDesc.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="BSave.Text" xml:space="preserve">
+    <value>حفظ</value>
+  </data>
+  <data name="labelX8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>804, 171</value>
+  </data>
+  <data name="txt_Rate.ButtonCustom2.DisplayPosition" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="labelX53.Location" type="System.Drawing.Point, System.Drawing">
+    <value>163, 4</value>
+  </data>
+  <data name="btn_braws.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt</value>
+  </data>
+  <data name="&gt;&gt;labelX1.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;btnDelete.Name" xml:space="preserve">
+    <value>btnDelete</value>
+  </data>
+  <data name="groupPanel2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="txt_Fax.Location" type="System.Drawing.Point, System.Drawing">
+    <value>435, 134</value>
+  </data>
+  <data name="&gt;&gt;labelX14.Name" xml:space="preserve">
+    <value>labelX14</value>
+  </data>
+  <data name="&gt;&gt;btn_braws.Name" xml:space="preserve">
+    <value>btn_braws</value>
+  </data>
+  <data name="Btn_DelRow.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="txt_MainNote.TabIndex" type="System.Int32, mscorlib">
+    <value>58</value>
+  </data>
+  <data name="labelX23.Text" xml:space="preserve">
+    <value>اجمالي الكمية</value>
+  </data>
+  <data name="txtUnit.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="txt_address.TabIndex" type="System.Int32, mscorlib">
+    <value>52</value>
+  </data>
+  <data name="txtPrice.TabIndex" type="System.Int32, mscorlib">
+    <value>140</value>
+  </data>
+  <data name="&gt;&gt;BSave.Name" xml:space="preserve">
+    <value>BSave</value>
+  </data>
+  <data name="labelX8.TabIndex" type="System.Int32, mscorlib">
+    <value>42</value>
+  </data>
+  <data name="&gt;&gt;TxtId.Parent" xml:space="preserve">
+    <value>groupPanel7</value>
+  </data>
+  <data name="&gt;&gt;labelX6.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;txt_transaction_code.Name" xml:space="preserve">
+    <value>txt_transaction_code</value>
+  </data>
+  <data name="previous_.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="txtsearh_2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="&gt;&gt;txt_MainNote.Name" xml:space="preserve">
+    <value>txt_MainNote</value>
+  </data>
+  <data name="&gt;&gt;txtsearh_2.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;txtE_Fax.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="groupPanel7.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="labelX31.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="TxtQty.Location" type="System.Drawing.Point, System.Drawing">
+    <value>326, 23</value>
+  </data>
+  <data name="&gt;&gt;txtCurrency.Parent" xml:space="preserve">
+    <value>tabControlPanel2</value>
+  </data>
+  <data name="groupPanel6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 36</value>
+  </data>
+  <data name="&gt;&gt;tabControl1.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.TabControl, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="TxtQty.ButtonCustom.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TotalPrice.Location" type="System.Drawing.Point, System.Drawing">
+    <value>-3, 10</value>
+  </data>
+  <data name="&gt;&gt;labelX53.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;labelX7.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="first_.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;TxtQty.Parent" xml:space="preserve">
+    <value>groupPanel7</value>
+  </data>
+  <data name="&gt;&gt;labelX25.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;BtnAttache.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="tabControl1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="TotalPrice.TabIndex" type="System.Int32, mscorlib">
+    <value>50</value>
+  </data>
+  <data name="TxtDesc.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="txtPrice.ButtonDropDown.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txt_transaction_code.Text" xml:space="preserve">
+    <value>RQT</value>
+  </data>
+  <data name="&gt;&gt;labelX30.Parent" xml:space="preserve">
+    <value>groupPanel7</value>
+  </data>
+  <data name="labelX11.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="txt_TotWeight.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="btn_braws.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;txt_transaction_code.Parent" xml:space="preserve">
+    <value>groupPanel6</value>
+  </data>
+  <data name="labelX14.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="tabControlPanel2.Text" xml:space="preserve">
+    <value>تتتتت</value>
+  </data>
+  <data name="&gt;&gt;txt_Rate.Type" xml:space="preserve">
+    <value>DevComponents.Editors.DoubleInput, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;labelX53.Parent" xml:space="preserve">
+    <value>groupPanel7</value>
+  </data>
+  <data name="labelX5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>407, 4</value>
+  </data>
+  <data name="txtPrice.ButtonClear.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;labelX53.Name" xml:space="preserve">
+    <value>labelX53</value>
+  </data>
+  <data name="&gt;&gt;labelX23.Parent" xml:space="preserve">
+    <value>groupPanel5</value>
+  </data>
+  <data name="txtBalance.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="&gt;&gt;Doc_Name.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1399, 30</value>
+  </data>
+  <data name="txtBalance.Location" type="System.Drawing.Point, System.Drawing">
+    <value>253, 23</value>
+  </data>
+  <data name="labelX3.Text" xml:space="preserve">
+    <value>الفرع</value>
+  </data>
+  <data name="&gt;&gt;txtsearh_2.Name" xml:space="preserve">
+    <value>txtsearh_2</value>
+  </data>
+  <data name="TxtId.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1218, 23</value>
+  </data>
+  <data name="txtMobile.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="Tot_Price.TabIndex" type="System.Int32, mscorlib">
+    <value>142</value>
+  </data>
+  <data name="buttonX2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="&gt;&gt;txtPrice.Name" xml:space="preserve">
+    <value>txtPrice</value>
+  </data>
+  <data name="groupPanel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="labelX2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>321, 108</value>
+  </data>
+  <data name="txtSearch.ButtonCustom.DisplayPosition" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;btn_braws.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="Tot_Price.ButtonClear.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;labelX11.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="labelX30.Text" xml:space="preserve">
+    <value>اسم الصنف</value>
+  </data>
+  <data name="&gt;&gt;txt_RQ_ser.Parent" xml:space="preserve">
+    <value>groupPanel6</value>
+  </data>
+  <data name="txtUnit.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt</value>
+  </data>
+  <data name="Uc_Branch.Size" type="System.Drawing.Size, System.Drawing">
+    <value>480, 29</value>
+  </data>
+  <data name="labelX23.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="&gt;&gt;labelX25.Name" xml:space="preserve">
+    <value>labelX25</value>
+  </data>
+  <data name="btnOk.Size" type="System.Drawing.Size, System.Drawing">
+    <value>87, 28</value>
+  </data>
+  <data name="txt_MainNote.Size" type="System.Drawing.Size, System.Drawing">
+    <value>314, 27</value>
+  </data>
+  <data name="last_.TabIndex" type="System.Int32, mscorlib">
+    <value>116</value>
+  </data>
+  <data name="labelX4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="TxtQty.ButtonClear.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;previous_.Parent" xml:space="preserve">
+    <value>groupPanel6</value>
+  </data>
+  <data name="&gt;&gt;labelX2.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="txt_InvDate.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="txt_RQ_ser.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 27</value>
+  </data>
+  <data name="&gt;&gt;totalQty.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupPanel6.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;txtUnit.Parent" xml:space="preserve">
+    <value>groupPanel7</value>
+  </data>
+  <data name="txtNote.Location" type="System.Drawing.Point, System.Drawing">
+    <value>542, 23</value>
+  </data>
+  <data name="&gt;&gt;labelX24.Name" xml:space="preserve">
+    <value>labelX24</value>
+  </data>
+  <data name="txt_transaction_code.Location" type="System.Drawing.Point, System.Drawing">
+    <value>251, 190</value>
+  </data>
+  <data name="labelX29.Location" type="System.Drawing.Point, System.Drawing">
+    <value>329, 4</value>
+  </data>
+  <data name="&gt;&gt;labelX18.Parent" xml:space="preserve">
+    <value>groupPanel7</value>
+  </data>
+  <data name="txtPrice.ButtonFreeText.DisplayPosition" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;txt_address.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="labelX30.Location" type="System.Drawing.Point, System.Drawing">
+    <value>955, 4</value>
+  </data>
+  <data name="&gt;&gt;labelX3.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="labelX31.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="txt_Rate.ButtonCustom.DisplayPosition" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;groupPanel5.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;last_.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="labelX7.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="&gt;&gt;TotalPrice.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="labelX12.TabIndex" type="System.Int32, mscorlib">
+    <value>137</value>
+  </data>
+  <data name="labelX25.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="&gt;&gt;labelX4.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.LabelX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="panel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="labelX11.TabIndex" type="System.Int32, mscorlib">
+    <value>63</value>
+  </data>
+  <data name="TxtQty.ButtonFreeText.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="labelX20.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="groupPanel5.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="&gt;&gt;btnDelete.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;txtUnit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelX8.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;txt_TotWeight.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Tot_Price.ButtonDropDown.DisplayPosition" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="BtnEmail.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAhJJREFUOE/F
+        k99rklEch4+iUETlICKipIvN7GboLiqtrCjbKliu0UYFYyAjul+7LKi/olg3ixCa/TDSNhw6dQ5zy5bs
+        p3vTV9/XueNrm4PhVhd9OkciCCJXNx144HC+z3M4N4f8/xV3n7eIE92FXLhnWYpsDe6K8e7ClKfZQtLB
+        1sW5wHWg3Aes9TLu1IA5q32Y8XciE2qjJB+9LCDrxEffVXyRbuOrfOuPcCfx2gHIPSjEWimRR88KKDvx
+        KXQFCc9FbGa6GDd/y0a6CxPPmyGOtbEXO1GI2CmR/McEKB0oJx2YHzqHSfcZbKTasZly/EJloR0xlw2L
+        I3bmsgtYkw9YKcl5GwUsXcJq4gJW3tsx7bHgnes4KrMtDHuV9ekWRAeOYt57oupwlzfysJkS8VWDAPEU
+        VuJsyFDGrZh0mTD+xIz1pA1rH04j/LgRU4NmlGLWnx5vpDdGSjJuvYBUEz5HTSiNmbAUbEIxbELymRHh
+        fiNCjwyYfXEESsTMZuwS5nCXN9mXhyhJu/YKmDGgGDQg7zeiFDoMZdQAGmhA7m09pKF6FAOG6pnCZtzh
+        e96Ig/soEQZ2C0jsh+TTozhykHGgBvqqy5v0Ux0lcw+3CZXhnUBUt2W+RevAm4X+7ZR0ntR0eO5ps977
+        Wtn7QCv7asAd7nruarM3bJprRK0iKt0OlWbPrr+jjjVqNVH9+FL/ugj5DvYNI7sYydAiAAAAAElFTkSu
+        QmCC
+</value>
+  </data>
+  <data name="txtSearch.ButtonCustom2.DisplayPosition" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="groupPanel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>265, 123</value>
+  </data>
+  <data name="&gt;&gt;labelX4.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="labelX25.Location" type="System.Drawing.Point, System.Drawing">
+    <value>588, 139</value>
+  </data>
+  <data name="&gt;&gt;Uc_Branch.Name" xml:space="preserve">
+    <value>Uc_Branch</value>
+  </data>
+  <data name="txt_Rate.ButtonFreeText.DisplayPosition" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;labelX5.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.LabelX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;txtMobile.Name" xml:space="preserve">
+    <value>txtMobile</value>
+  </data>
+  <data name="labelX51.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="groupPanel2.TabIndex" type="System.Int32, mscorlib">
+    <value>137</value>
+  </data>
+  <data name="txt_Rate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>135, 27</value>
+  </data>
+  <data name="&gt;&gt;txtSearch.Name" xml:space="preserve">
+    <value>txtSearch</value>
+  </data>
+  <data name="&gt;&gt;labelX9.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="btnCancel_2.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;txt_TotWeight.Name" xml:space="preserve">
+    <value>txt_TotWeight</value>
+  </data>
+  <data name="&gt;&gt;txt_serNo.Name" xml:space="preserve">
+    <value>txt_serNo</value>
+  </data>
+  <data name="last_.Size" type="System.Drawing.Size, System.Drawing">
+    <value>20, 22</value>
+  </data>
+  <data name="totalQty.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="&gt;&gt;btnOk.Name" xml:space="preserve">
+    <value>btnOk</value>
+  </data>
+  <data name="labelX16.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="labelX3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;Btn_DelRow.Parent" xml:space="preserve">
+    <value>groupPanel5</value>
+  </data>
+  <data name="&gt;&gt;labelX25.Parent" xml:space="preserve">
+    <value>tabControlPanel2</value>
+  </data>
+  <data name="BExit.Text" xml:space="preserve">
+    <value>خروج</value>
+  </data>
+  <data name="$this.RightToLeftLayout" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelX23.Size" type="System.Drawing.Size, System.Drawing">
+    <value>98, 22</value>
+  </data>
+  <data name="&gt;&gt;tabControlPanel2.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.TabControlPanel, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;labelX16.Name" xml:space="preserve">
+    <value>labelX16</value>
+  </data>
+  <data name="&gt;&gt;uC_Acc1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;txt_Email.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="labelX1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 22</value>
+  </data>
+  <data name="labelX52.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 18</value>
+  </data>
+  <data name="&gt;&gt;TxtId.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="labelX1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;groupPanel1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btn_braws.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="RQ_Date.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="Btn_DelRow.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;BSearch.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="labelX5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="&gt;&gt;txtMobile.Parent" xml:space="preserve">
+    <value>tabControlPanel2</value>
+  </data>
+  <data name="tabControl1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="&gt;&gt;labelX13.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="txt_Rate.ButtonFreeText.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtPrice.ButtonClear.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="labelX15.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="labelX30.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="txtsearh_2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 85</value>
+  </data>
+  <data name="Tot_Price.ButtonDropDown.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;txt_MainNote.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="groupPanel7.TabIndex" type="System.Int32, mscorlib">
+    <value>109</value>
+  </data>
+  <data name="uC_Acc1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>480, 27</value>
+  </data>
+  <data name="&gt;&gt;txtE_Fax.Name" xml:space="preserve">
+    <value>txtE_Fax</value>
+  </data>
+  <data name="TxtDesc.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="txt_Rate.TabIndex" type="System.Int32, mscorlib">
+    <value>140</value>
+  </data>
+  <data name="labelX6.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="TotalPrice.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="&gt;&gt;txt_transaction_code.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="txtPrice.ButtonCustom.DisplayPosition" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;labelX6.Parent" xml:space="preserve">
+    <value>tabControlPanel2</value>
+  </data>
+  <data name="dGV_Item.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1399, 246</value>
+  </data>
+  <data name="&gt;&gt;labelX8.Name" xml:space="preserve">
+    <value>labelX8</value>
+  </data>
+  <data name="next_.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="&gt;&gt;buttonX1.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="txt_Email.TabIndex" type="System.Int32, mscorlib">
+    <value>39</value>
+  </data>
+  <data name="labelX53.Size" type="System.Drawing.Size, System.Drawing">
+    <value>87, 18</value>
+  </data>
+  <data name="labelX9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>804, 139</value>
+  </data>
+  <data name="last_.Location" type="System.Drawing.Point, System.Drawing">
+    <value>203, 75</value>
+  </data>
+  <data name="&gt;&gt;Tot_Price.Parent" xml:space="preserve">
+    <value>groupPanel7</value>
+  </data>
+  <data name="labelX20.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="first_.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAA+5JREFUSEvt
+        1X9Q02UcB3BKu9PWXQTFjOuCaWoXrgme4DIQTVB+OmBuY4NggJBBuPgVRRZhxn6IOPyFXMDGjxRYHqds
+        U+YY4tdLTWsDEdPbkClg2c+rP7qK59PzfNl5x0Eb/e/77nOf3T3Pntf27Nnz9XqU/52o0qMLIj/oOJJZ
+        T4Gg1qTlKU75uIZmJWKnMjSpps+ZUX8RiQ4O/BbxzsHcGFnNY67hubNyk2ARR6q80HHVCe91fosEtee0
+        PHn3467hGXk6kB1feXIQqc7ZkebiHQiIlFS/Jn53oWt47mDgSU6mkjpkuQ0RKgsojSMQvee0Oq7y+CwE
+        A7wKnQ0Ejd9Aw8AoAZRccdETruG5s/INIYMAdRY7cOUWxFVYkMJ4E5JVRm1KjXHGdhGgvNOGxBobOmxx
+        0MA6kWwegFRJ1fbZYcN+Cm06QKGEI5egTDeIBAfMWlGd6eE3IUBZhxWltQwhtdk+DQh3eQA2ixirMbDP
+        7ICoukuw9fBliD50GZIavoaqnhGIlZ9RC9W9NEKA4hNWyGi/AftM8wRejkrFgIJSmEch7thVlNhwjRQk
+        4B5bfw0quwf/5O83aXifdvl4Y0D2hRVldXyH5GengTDPgJgGqs1jsK3RipKbbCilyQakJ+EubhmaKum0
+        /pWkNGgwkFyIgZyu22jvmWkgdL7AXrMTtmuvI2HLMBK1DgPpQtxT226gitM3/xao+6cwIClot6K8kw5U
+        ZbRD4HwA8iMTYE/fOEiO34K0E7cgHRfppAp0I/8IPuu6+9SSpUIC7Gy3wdunnPCR0YEBsXKt0MMpWh7J
+        x4CcqrJMQmaXA0l1DpSlcwDpsp4x2F795TheOMd/FZdJtuitNhsq6LmHKvSjNLAmJd898FI4j7E6U059
+        0v895HY7Ic9VxcZ7kPH5FcCfXPICJ5y5sbB2IQZ4uW2DsMswCe/r79AAJzHHPbAsPJEGKgd+hHz9BCow
+        TKKS3vvAV/VMkMVZYVueid2tpY8pAXJah1BR7w+oTD9GA6/GZ3kAXk+YBqhfQNb7AJX3/4xSVPoJ7wD2
+        Dn82lxn7YfPDPxoBsluvo1LzT6hUf5cG2HFSD8D6eEYw2aKv/oCKC79DerON3ha/FcHMDfmKGRcZAbLa
+        hqH8/K9QbBingVUxb7oHlnJjGCFSxUCZ6QHwa85OMJgsiX/QOh+udPesyw4D2yRN1imZ4T7K09kRa6NE
+        HrQ13T0QGLZl8fPBm4vw5Ga8QLbfcg5zffbHsxYnWeTtF4LnHWNFSjS4N+L5ya9Ep7m/rkPFJQsYvkue
+        xS8DnlvG9l2bWvSfb8CniUEaLhauF31ZQd4h/EL3D5xHmRkvr38BBkYKo8dFBXkAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="&gt;&gt;tabControl1.Name" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="labelX24.TabIndex" type="System.Int32, mscorlib">
+    <value>49</value>
+  </data>
+  <data name="txt_TotWeight.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="txtMobile.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="&gt;&gt;first_.Name" xml:space="preserve">
+    <value>first_</value>
+  </data>
+  <data name="&gt;&gt;first_.Parent" xml:space="preserve">
+    <value>groupPanel6</value>
+  </data>
+  <data name="txtBalance.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 27</value>
+  </data>
+  <data name="labelX7.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="panel2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="btnDelete.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAABt0RVh0U29m
+        dHdhcmUAZ2lmMnBuZyAwLjYgKGJldGEpqt1pkgAAATVJREFUOE+lU8FKw1AQ7P/4C4Kh9aA3v8CjSg/+
+        Rqs3qaG1oPgDggc1FPUknvSgtGgRERG8FqlnM2bGbPqSvEDBgWE3m7fzNrubGoAqFlGM69mCLoVmfwUb
+        3bpI37C+t5h6HoE4jvE2vUfzsIGn6SWGk0iW3D5excndAdZaC8nRDDMBJhM8wMTBR0dsPwbYHQWIXjsS
+        qhIQ+PLoakfWeDHuovUQoD1awvVnmAmkF/4JuLdv9evyDYzdTHpKHrzvZwIpcj3AZm+ZxtR12EcHEvgP
+        ZgK+m0jCKrIKE2SV5wSG36f63tuv0rjUm4JgWYCJ7Da7zu4zZrTpOPALcN6cO+dvu3D27I7vh0bJZE6A
+        m8aNi15C8XwcKpmrzA11Szea4+545X+QIJdMmmMoPhssXqI3OD9R+wWqZCkI/rI13gAAAABJRU5ErkJg
+        gg==
+</value>
+  </data>
+  <data name="TxtQty.ButtonFreeText.DisplayPosition" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="labelX13.Location" type="System.Drawing.Point, System.Drawing">
+    <value>87, 4</value>
+  </data>
+  <data name="groupPanel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>67, 22</value>
+  </data>
+  <data name="&gt;&gt;labelX13.Name" xml:space="preserve">
+    <value>labelX13</value>
+  </data>
+  <data name="btn_braws.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+        /MRLyNGOEPkAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="txt_Fax.TabIndex" type="System.Int32, mscorlib">
+    <value>43</value>
+  </data>
+  <data name="labelX11.Text" xml:space="preserve">
+    <value>المورد</value>
+  </data>
+  <data name="&gt;&gt;labelX11.Parent" xml:space="preserve">
+    <value>tabControlPanel2</value>
+  </data>
+  <data name="labelX51.TabIndex" type="System.Int32, mscorlib">
+    <value>131</value>
+  </data>
+  <data name="ribbonBar1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="tabControlPanel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>902, 213</value>
+  </data>
+  <data name="txt_Fax.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.Name" xml:space="preserve">
+    <value>btnCancel</value>
+  </data>
+  <data name="TxtDesc.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="&gt;&gt;txt_transaction_code.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.LabelX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;labelX6.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.LabelX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="BSearch.Text" xml:space="preserve">
+    <value>بحث</value>
+  </data>
+  <data name="dGV_Item.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 4, 5, 4</value>
+  </data>
+  <data name="labelX5.Text" xml:space="preserve">
+    <value>وزن الوحدة</value>
+  </data>
+  <data name="labelX16.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;txt_InvDate.Name" xml:space="preserve">
+    <value>txt_InvDate</value>
+  </data>
+  <data name="labelX47.TabIndex" type="System.Int32, mscorlib">
+    <value>53</value>
+  </data>
+  <data name="&gt;&gt;labelX1.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.LabelX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="groupPanel1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="&gt;&gt;labelX29.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;labelX47.Name" xml:space="preserve">
+    <value>labelX47</value>
+  </data>
+  <data name="txt_serNo.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="&gt;&gt;Btn_DelRow.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Tot_Price.ButtonFreeText.DisplayPosition" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="first_.TabIndex" type="System.Int32, mscorlib">
+    <value>113</value>
+  </data>
+  <data name="btnOk_2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="ribbonBar1.Text" xml:space="preserve">
+    <value>ribbonBar1</value>
+  </data>
+  <data name="&gt;&gt;totalWeight.Parent" xml:space="preserve">
+    <value>groupPanel5</value>
+  </data>
+  <data name="labelX29.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="btnOk.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 6</value>
+  </data>
+  <data name="txt_serNo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 27</value>
+  </data>
+  <data name="&gt;&gt;labelX7.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.LabelX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="txtUnitWeight.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 27</value>
+  </data>
+  <data name="&gt;&gt;labelX53.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.LabelX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="txtCurrency.Location" type="System.Drawing.Point, System.Drawing">
+    <value>35, -2</value>
+  </data>
+  <data name="TxtDesc.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt</value>
+  </data>
+  <data name="&gt;&gt;TxtDesc.Name" xml:space="preserve">
+    <value>TxtDesc</value>
+  </data>
+  <data name="&gt;&gt;next_.Parent" xml:space="preserve">
+    <value>groupPanel6</value>
+  </data>
+  <data name="txt_Rate.ButtonDropDown.DisplayPosition" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="labelX4.Text" xml:space="preserve">
+    <value>الوحدة</value>
+  </data>
+  <data name="tabControlPanel2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="labelX11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 22</value>
+  </data>
+  <data name="&gt;&gt;TxtQty.Type" xml:space="preserve">
+    <value>DevComponents.Editors.DoubleInput, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="txtPrice.ButtonFreeText.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="labelX11.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="&gt;&gt;groupPanel2.Parent" xml:space="preserve">
+    <value>groupPanel6</value>
+  </data>
+  <data name="TxtQty.ButtonCustom2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="labelX14.TabIndex" type="System.Int32, mscorlib">
+    <value>139</value>
+  </data>
+  <data name="txt_InvDate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 27</value>
+  </data>
+  <data name="&gt;&gt;TxtQty.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="txt_Tel.TabIndex" type="System.Int32, mscorlib">
+    <value>38</value>
+  </data>
+  <data name="btnCancel_2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 25</value>
+  </data>
+  <data name="tabItem6.Text" xml:space="preserve">
+    <value>عام</value>
+  </data>
+  <data name="labelX52.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="TxtId.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="txtCurrency.Size" type="System.Drawing.Size, System.Drawing">
+    <value>140, 27</value>
+  </data>
+  <data name="txtE_Fax.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="labelX47.Location" type="System.Drawing.Point, System.Drawing">
+    <value>366, 39</value>
+  </data>
+  <data name="txtPrice.ButtonCustom2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Btn_DelRow.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="&gt;&gt;btnOk_2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="previous_.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="txtSearch.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="&gt;&gt;txt_Tel.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="labelX9.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="&gt;&gt;labelX15.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="txt_Tel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="&gt;&gt;BSearch.Name" xml:space="preserve">
+    <value>BSearch</value>
+  </data>
+  <data name="txt_Rate.ButtonCustom.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txt_address.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="labelX20.TabIndex" type="System.Int32, mscorlib">
+    <value>59</value>
+  </data>
+  <data name="&gt;&gt;txt_Fax.Parent" xml:space="preserve">
+    <value>tabControlPanel2</value>
+  </data>
+  <data name="groupPanel6.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="TxtQty.TabIndex" type="System.Int32, mscorlib">
+    <value>133</value>
+  </data>
+  <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="$this.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Yes</value>
+  </data>
+  <data name="btnOk_2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 22</value>
+  </data>
+  <data name="labelX47.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="txtPrice.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt</value>
+  </data>
+  <data name="TxtDesc.Location" type="System.Drawing.Point, System.Drawing">
+    <value>947, 23</value>
+  </data>
+  <data name="labelX12.Size" type="System.Drawing.Size, System.Drawing">
+    <value>126, 22</value>
+  </data>
+  <data name="&gt;&gt;groupPanel5.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="labelX51.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="BSave.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        xAAADsQBlSsOGwAAAjlJREFUOE99k91qE1EUhQ/4FnpTKb5AfQovvAuomKJQNd6rIDatpKXBSWsybTrU
+        ikR6IQgxFbEYLwQlRGMKCaERW6Emae3kb9Ia80cMSZZ7nzRE2tEDax9m77W+mTPMCPCqFdDMbqLwI4Vk
+        MnlMuq7DMAxkMhnkd7eBuiFjvES3rEOMvoG4U8K52xp+GTnskLGv/VIJFosFp4eGMDvjwHn7CsTVt/j5
+        PdEDVNIJCPsBhAcYnQ3IZn+1Ox2537TZcHZkBM98y7AtBiHmKTi2BlQLELXMBgGKhwC/DHS7XbRaLdQb
+        DXlttVpxZngYTzQVNxbXIFQCTBygkqKbS8AkARaA6w+fy0BvtYFOU+pLPIrQuyBq+RRsHr/0ckZmZXEQ
+        YAk4NRXFNc8qLs+9xCVXABeVF7jwwA+r+xWuqK8x5g7gpOOz9HJmAJgmwCNqPibx/reWj6jvoUwPkKbi
+        NHoD+1c629a/ZeedPOydMSCzsrjKOHH3A5BZBypZoLxnLp6l18n7XmYGgLkyxL2wfHGK4oKmaaZSFEV6
+        2MuZAcBNgHEGNOD1evHU54PviLjHM3TrdBQCUKYHSFGZJ8AEAX6XEQ6HEY1GTcUz9ohJAqgE4KwsC9S8
+        /5EeoIRQKIRIJGIqnqFekl7hPQRU6ZsWS1WIqQgN9+F0OqGqqql4xh4xHZGZ6jZl28UdOj81bgWR3Uog
+        m8thj/4+M/FM36QQecX4J7SLu5C/czOXRv7bBuKxOGKx2H/FHvZyBgD+AO6VFHzV6rABAAAAAElFTkSu
+        QmCC
+</value>
+  </data>
+  <data name="totalWeight.TabIndex" type="System.Int32, mscorlib">
+    <value>33</value>
+  </data>
+  <data name="btnOk.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="labelX20.Size" type="System.Drawing.Size, System.Drawing">
+    <value>61, 22</value>
+  </data>
+  <data name="next_.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="previous_.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="buttonX2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="txt_Tel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>647, 98</value>
+  </data>
+  <data name="txt_Tel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="first_.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="&gt;&gt;labelX2.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.LabelX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="labelX19.Text" xml:space="preserve">
+    <value>اجمالي السعر</value>
+  </data>
+  <data name="&gt;&gt;labelX47.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.LabelX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;txt_Email.Name" xml:space="preserve">
+    <value>txt_Email</value>
+  </data>
+  <data name="btnOk.Text" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="labelX9.Text" xml:space="preserve">
+    <value>فاكس الكتروني</value>
+  </data>
+  <data name="&gt;&gt;labelX23.Name" xml:space="preserve">
+    <value>labelX23</value>
+  </data>
+  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;txt_Fax.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Doc_Name.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="groupPanel7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 261</value>
+  </data>
+  <data name="btn_braws.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 43</value>
+  </data>
+  <data name="&gt;&gt;groupPanel7.Name" xml:space="preserve">
+    <value>groupPanel7</value>
+  </data>
+  <data name="&gt;&gt;ribbonBar1.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="btnOk_2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 25</value>
+  </data>
+  <data name="&gt;&gt;txt_InvDate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="txtPrice.ButtonCustom2.DisplayPosition" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;panel2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;TxtDesc.Parent" xml:space="preserve">
+    <value>groupPanel7</value>
+  </data>
+  <data name="labelX12.Text" xml:space="preserve">
+    <value>رقم طلب التسعيرة</value>
+  </data>
+  <data name="labelX25.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 22</value>
+  </data>
+  <data name="&gt;&gt;Btn_DelRow.Name" xml:space="preserve">
+    <value>Btn_DelRow</value>
+  </data>
+  <data name="labelX29.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="&gt;&gt;labelX3.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.LabelX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;labelX13.Parent" xml:space="preserve">
+    <value>groupPanel7</value>
+  </data>
+  <data name="&gt;&gt;labelX13.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.LabelX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="first_.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="&gt;&gt;labelX52.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="labelX13.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 18</value>
+  </data>
+  <data name="&gt;&gt;groupPanel2.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.Controls.GroupPanel, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="txtSearch.ButtonCustom2.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;txtUnitWeight.Parent" xml:space="preserve">
+    <value>groupPanel7</value>
+  </data>
+  <data name="txtUnit.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="labelX21.Location" type="System.Drawing.Point, System.Drawing">
+    <value>321, 166</value>
+  </data>
+  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="labelX14.Location" type="System.Drawing.Point, System.Drawing">
+    <value>194, 1</value>
+  </data>
+  <data name="&gt;&gt;btnOk_2.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="Doc_Name.Location" type="System.Drawing.Point, System.Drawing">
+    <value>143, 10</value>
+  </data>
+  <data name="&gt;&gt;btnCancel_2.Name" xml:space="preserve">
+    <value>btnCancel_2</value>
+  </data>
+  <data name="labelX20.Text" xml:space="preserve">
+    <value>ملاحظات</value>
+  </data>
+  <data name="groupPanel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>717, 4</value>
+  </data>
+  <data name="txt_Rate.ButtonCustom.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;txtPrice.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="TxtQty.ButtonDropDown.DisplayPosition" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;next_.Name" xml:space="preserve">
+    <value>next_</value>
+  </data>
+  <data name="&gt;&gt;labelX8.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.LabelX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;labelX52.Parent" xml:space="preserve">
+    <value>groupPanel7</value>
+  </data>
+  <data name="&gt;&gt;totalWeight.Name" xml:space="preserve">
+    <value>totalWeight</value>
+  </data>
+  <data name="&gt;&gt;btnOk.Parent" xml:space="preserve">
+    <value>groupPanel1</value>
+  </data>
+  <data name="groupPanel5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="labelX18.TabIndex" type="System.Int32, mscorlib">
+    <value>143</value>
+  </data>
+  <data name="&gt;&gt;tabItem6.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.TabItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="labelX13.Text" xml:space="preserve">
+    <value>السعر</value>
+  </data>
+  <data name="labelX8.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="totalWeight.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="ribbonBar1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="&gt;&gt;tabControlPanel2.Name" xml:space="preserve">
+    <value>tabControlPanel2</value>
+  </data>
+  <data name="&gt;&gt;panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txt_TotWeight.Parent" xml:space="preserve">
+    <value>groupPanel7</value>
+  </data>
+  <data name="buttonItem1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
+        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAHGSURBVDhPhZIxayJBGIbnf9xvyC+wsY6jkJVE7ESw
+        E4tTtLjK6gSz25xoYSWCuDnBgIpiLNWI9hK5VgUt3DIKgTffN1mXNSr3wePM+j3vzu7OiEql8p0igStw
+        78Q/uWBKpRKuFfe++2Kz2Th4PB7kcjlbPy/usePOqJ9yufyH+OBmJpOx9fPiHjvkMkV1g0Kh8KNarWK7
+        3cLr9SIWi9n6eXGPHXZrtRooeyPy+fyvyWQCy7KQSCQQiUQQCoUuwj122J3NZqDsb5HNZt92ux3e93sc
+        Dgfs7fGI+5rnR6ydBcr+E/xe8/kcy+USq9XKYb1eX4R77C4WC/VNRDwex2AwwHA4xHg8VoxGI2Joj1+8
+        vo7BrzqdTunxp8rjrIhGo2g2m2i324pOp+PMW62W8x/T6/XQ7/fx8tJHt9sDZ0U4HIZpmmg0GvD7JKT0
+        wecjbgma+6VEwO9HIBDAnXaHYFCjBZ/VopwVmqahXq/DrJvUDCL5Mwld16E/GjDUqNP4CMMwkEqlcH//
+        oBb7+/QEzgopZZGglaXaIn5M3qZLcI+do89Z3gWHdDp9slWXYMedEXS63Nhn7nqx484IOmFuinzi/gM7
+        th8Sn3zWygdB5YtNAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="&gt;&gt;totalQty.Parent" xml:space="preserve">
+    <value>groupPanel5</value>
+  </data>
+  <data name="&gt;&gt;labelX29.Parent" xml:space="preserve">
+    <value>groupPanel7</value>
+  </data>
+  <data name="last_.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelX1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="last_.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="Tot_Price.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 23</value>
+  </data>
+  <data name="txtPrice.Location" type="System.Drawing.Point, System.Drawing">
+    <value>84, 23</value>
+  </data>
+  <data name="labelX2.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="groupPanel1.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="BExit.RibbonWordWrap" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;BNew.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;txt_RQ_ser.Name" xml:space="preserve">
+    <value>txt_RQ_ser</value>
+  </data>
+  <data name="labelX23.TabIndex" type="System.Int32, mscorlib">
+    <value>48</value>
+  </data>
+  <data name="labelX4.TabIndex" type="System.Int32, mscorlib">
+    <value>135</value>
+  </data>
+  <data name="&gt;&gt;labelX6.Name" xml:space="preserve">
+    <value>labelX6</value>
+  </data>
+  <data name="labelX19.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="&gt;&gt;labelX17.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="panel2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="txt_serNo.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="BSearch.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGOfPtRkwAAACBjSFJNAACH
+        DwAAjA8AAP1SAACBQAAAfXkAAOmLAAA85QAAGcxzPIV3AAAKOWlDQ1BQaG90b3Nob3AgSUNDIHByb2Zp
+        bGUAAEjHnZZ3VFTXFofPvXd6oc0wAlKG3rvAANJ7k15FYZgZYCgDDjM0sSGiAhFFRJoiSFDEgNFQJFZE
+        sRAUVLAHJAgoMRhFVCxvRtaLrqy89/Ly++Osb+2z97n77L3PWhcAkqcvl5cGSwGQyhPwgzyc6RGRUXTs
+        AIABHmCAKQBMVka6X7B7CBDJy82FniFyAl8EAfB6WLwCcNPQM4BOB/+fpFnpfIHomAARm7M5GSwRF4g4
+        JUuQLrbPipgalyxmGCVmvihBEcuJOWGRDT77LLKjmNmpPLaIxTmns1PZYu4V8bZMIUfEiK+ICzO5nCwR
+        3xKxRoowlSviN+LYVA4zAwAUSWwXcFiJIjYRMYkfEuQi4uUA4EgJX3HcVyzgZAvEl3JJS8/hcxMSBXQd
+        li7d1NqaQffkZKVwBALDACYrmcln013SUtOZvBwAFu/8WTLi2tJFRbY0tba0NDQzMv2qUP91829K3NtF
+        ehn4uWcQrf+L7a/80hoAYMyJarPziy2uCoDOLQDI3fti0zgAgKSobx3Xv7oPTTwviQJBuo2xcVZWlhGX
+        wzISF/QP/U+Hv6GvvmckPu6P8tBdOfFMYYqALq4bKy0lTcinZ6QzWRy64Z+H+B8H/nUeBkGceA6fwxNF
+        hImmjMtLELWbx+YKuGk8Opf3n5r4D8P+pMW5FonS+BFQY4yA1HUqQH7tBygKESDR+8Vd/6NvvvgwIH55
+        4SqTi3P/7zf9Z8Gl4iWDm/A5ziUohM4S8jMX98TPEqABAUgCKpAHykAd6ABDYAasgC1wBG7AG/iDEBAJ
+        VgMWSASpgA+yQB7YBApBMdgJ9oBqUAcaQTNoBcdBJzgFzoNL4Bq4AW6D+2AUTIBnYBa8BgsQBGEhMkSB
+        5CEVSBPSh8wgBmQPuUG+UBAUCcVCCRAPEkJ50GaoGCqDqqF6qBn6HjoJnYeuQIPQXWgMmoZ+h97BCEyC
+        qbASrAUbwwzYCfaBQ+BVcAK8Bs6FC+AdcCXcAB+FO+Dz8DX4NjwKP4PnEIAQERqiihgiDMQF8UeikHiE
+        j6xHipAKpAFpRbqRPuQmMorMIG9RGBQFRUcZomxRnqhQFAu1BrUeVYKqRh1GdaB6UTdRY6hZ1Ec0Ga2I
+        1kfboL3QEegEdBa6EF2BbkK3oy+ib6Mn0K8xGAwNo42xwnhiIjFJmLWYEsw+TBvmHGYQM46Zw2Kx8lh9
+        rB3WH8vECrCF2CrsUexZ7BB2AvsGR8Sp4Mxw7rgoHA+Xj6vAHcGdwQ3hJnELeCm8Jt4G749n43PwpfhG
+        fDf+On4Cv0CQJmgT7AghhCTCJkIloZVwkfCA8JJIJKoRrYmBRC5xI7GSeIx4mThGfEuSIemRXEjRJCFp
+        B+kQ6RzpLuklmUzWIjuSo8gC8g5yM/kC+RH5jQRFwkjCS4ItsUGiRqJDYkjiuSReUlPSSXK1ZK5kheQJ
+        yeuSM1J4KS0pFymm1HqpGqmTUiNSc9IUaVNpf+lU6RLpI9JXpKdksDJaMm4ybJkCmYMyF2TGKQhFneJC
+        YVE2UxopFykTVAxVm+pFTaIWU7+jDlBnZWVkl8mGyWbL1sielh2lITQtmhcthVZKO04bpr1borTEaQln
+        yfYlrUuGlszLLZVzlOPIFcm1yd2WeydPl3eTT5bfJd8p/1ABpaCnEKiQpbBf4aLCzFLqUtulrKVFS48v
+        vacIK+opBimuVTyo2K84p6Ss5KGUrlSldEFpRpmm7KicpFyufEZ5WoWiYq/CVSlXOavylC5Ld6Kn0Cvp
+        vfRZVUVVT1Whar3qgOqCmrZaqFq+WpvaQ3WCOkM9Xr1cvUd9VkNFw08jT6NF454mXpOhmai5V7NPc15L
+        Wytca6tWp9aUtpy2l3audov2Ax2yjoPOGp0GnVu6GF2GbrLuPt0berCehV6iXo3edX1Y31Kfq79Pf9AA
+        bWBtwDNoMBgxJBk6GWYathiOGdGMfI3yjTqNnhtrGEcZ7zLuM/5oYmGSYtJoct9UxtTbNN+02/R3Mz0z
+        llmN2S1zsrm7+QbzLvMXy/SXcZbtX3bHgmLhZ7HVosfig6WVJd+y1XLaSsMq1qrWaoRBZQQwShiXrdHW
+        ztYbrE9Zv7WxtBHYHLf5zdbQNtn2iO3Ucu3lnOWNy8ft1OyYdvV2o/Z0+1j7A/ajDqoOTIcGh8eO6o5s
+        xybHSSddpySno07PnU2c+c7tzvMuNi7rXM65Iq4erkWuA24ybqFu1W6P3NXcE9xb3Gc9LDzWepzzRHv6
+        eO7yHPFS8mJ5NXvNelt5r/Pu9SH5BPtU+zz21fPl+3b7wX7efrv9HqzQXMFb0ekP/L38d/s/DNAOWBPw
+        YyAmMCCwJvBJkGlQXlBfMCU4JvhI8OsQ55DSkPuhOqHC0J4wybDosOaw+XDX8LLw0QjjiHUR1yIVIrmR
+        XVHYqLCopqi5lW4r96yciLaILoweXqW9KnvVldUKq1NWn46RjGHGnIhFx4bHHol9z/RnNjDn4rziauNm
+        WS6svaxnbEd2OXuaY8cp40zG28WXxU8l2CXsTphOdEisSJzhunCruS+SPJPqkuaT/ZMPJX9KCU9pS8Wl
+        xqae5Mnwknm9acpp2WmD6frphemja2zW7Fkzy/fhN2VAGasyugRU0c9Uv1BHuEU4lmmfWZP5Jiss60S2
+        dDYvuz9HL2d7zmSue+63a1FrWWt78lTzNuWNrXNaV78eWh+3vmeD+oaCDRMbPTYe3kTYlLzpp3yT/LL8
+        V5vDN3cXKBVsLBjf4rGlpVCikF84stV2a9021DbutoHt5turtn8sYhddLTYprih+X8IqufqN6TeV33za
+        Eb9joNSydP9OzE7ezuFdDrsOl0mX5ZaN7/bb3VFOLy8qf7UnZs+VimUVdXsJe4V7Ryt9K7uqNKp2Vr2v
+        Tqy+XeNc01arWLu9dn4fe9/Qfsf9rXVKdcV17w5wD9yp96jvaNBqqDiIOZh58EljWGPft4xvm5sUmoqb
+        PhziHRo9HHS4t9mqufmI4pHSFrhF2DJ9NProje9cv+tqNWytb6O1FR8Dx4THnn4f+/3wcZ/jPScYJ1p/
+        0Pyhtp3SXtQBdeR0zHYmdo52RXYNnvQ+2dNt293+o9GPh06pnqo5LXu69AzhTMGZT2dzz86dSz83cz7h
+        /HhPTM/9CxEXbvUG9g5c9Ll4+ZL7pQt9Tn1nL9tdPnXF5srJq4yrndcsr3X0W/S3/2TxU/uA5UDHdavr
+        XTesb3QPLh88M+QwdP6m681Lt7xuXbu94vbgcOjwnZHokdE77DtTd1PuvriXeW/h/sYH6AdFD6UeVjxS
+        fNTws+7PbaOWo6fHXMf6Hwc/vj/OGn/2S8Yv7ycKnpCfVEyqTDZPmU2dmnafvvF05dOJZ+nPFmYKf5X+
+        tfa5zvMffnP8rX82YnbiBf/Fp99LXsq/PPRq2aueuYC5R69TXy/MF72Rf3P4LeNt37vwd5MLWe+x7ys/
+        6H7o/ujz8cGn1E+f/gUDmPP8usTo0wAAAAlwSFlzAAALEgAACxIB0t1+/AAAAqRJREFUOE99k21IU1EY
+        xw3sW/UhiYogKIIIAqECzSjrm9CXZkLqVubbMpeokCbOvahXUgJ1CZIhLqUs55Y6LZtoaCaJSUaErhdf
+        +iSaL5tbY9fd3X/PWes2Ezzwu/ece+7/dx/OPScMgMSlq+kHiEZikUCQeaKe2EOwdyRYRgrLUjLl9NCR
+        qNIis9yMnNoRqKqHka5vw5VsDRMtJqTdvFzZz28W0CBXlqKEkrOg1DyPd3Ne+PyATxAx9N2Dokd2pOme
+        Ij7lBhMlbxBQ50hydh6v5MwoMS2iacIHp0BTwbbqAwzDXtw2TiNV0wK5Kt9NmX2hgrosXTXUzxZA5YF7
+        5YGuew2aTie0XU7ou10oe+kG1+tGQdMclNoaVgUXKvhW9KAf5S9+obTHhWLzCopMSxtpXyahA7oOBwof
+        vGaC8VCBwJkmUWHzQv18dXM4iKZzBWX0EW3r18CCSoKEtCy+qtOOyj4e5VSq1upEWfcqVeSA3roCLQX1
+        Vgeq+j24a+NRYZlhAvZr/wjir2d+1DS/wcP3PlQN8Kgd4lE/vg7DB+qPe1E34g0souHtOupH/bjTMMIE
+        g5KAOpyKM8Ay44dlWoBxUkA1cf+LgBq7gJYpH1rpzmiz+yHP1TNBQahgN7HMmUZhWxIx7AF6lkV0LPhh
+        /SliwEl7wUHjORH5hi7IkuSQnzl8QRKwCw0uEkKJcRDts37MrItw0cQaMbsmovmziMIGG2S0tRVnj6JR
+        EYFrJyOi/1YQFtyeccR80i01cu61Qd0yCs3jMeTVtEORp0N8YnIgnHoiHH7XWEAiCULYQeQSfcQnYoLo
+        JZSK0wdj1ee2oTh2O55k7IV7yhiQ/C/YkthDu85nnAoPSAZ/TCMmKvLfUd4KaseIaCLu+P6dHJOwcExU
+        JH4DAwN0m2r2AysAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="&gt;&gt;txt_Email.Parent" xml:space="preserve">
+    <value>tabControlPanel2</value>
+  </data>
+  <data name="&gt;&gt;BtnCalc.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;groupPanel7.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;labelX20.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;dGV_Item.Name" xml:space="preserve">
+    <value>dGV_Item</value>
+  </data>
+  <data name="labelX16.Size" type="System.Drawing.Size, System.Drawing">
+    <value>108, 27</value>
+  </data>
+  <data name="&gt;&gt;txt_address.Name" xml:space="preserve">
+    <value>txt_address</value>
+  </data>
+  <data name="&gt;&gt;txt_serNo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;last_.Name" xml:space="preserve">
+    <value>last_</value>
+  </data>
+  <data name="Uc_Branch.TabIndex" type="System.Int32, mscorlib">
+    <value>60</value>
+  </data>
+  <data name="txt_Email.Location" type="System.Drawing.Point, System.Drawing">
+    <value>435, 169</value>
+  </data>
+  <data name="labelX30.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="&gt;&gt;labelX17.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.LabelX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="TxtQty.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="txt_MainNote.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="RQ_Date.TabIndex" type="System.Int32, mscorlib">
+    <value>138</value>
+  </data>
+  <data name="txtUnit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>476, 23</value>
+  </data>
+  <data name="dGV_Item.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="labelX12.Location" type="System.Drawing.Point, System.Drawing">
+    <value>320, 138</value>
+  </data>
+  <data name="&gt;&gt;txt_Tel.Name" xml:space="preserve">
+    <value>txt_Tel</value>
+  </data>
+  <data name="&gt;&gt;tabControlPanel2.Parent" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="txt_transaction_code.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="txt_RQ_ser.TabIndex" type="System.Int32, mscorlib">
+    <value>136</value>
+  </data>
+  <data name="labelX21.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="TxtQty.Size" type="System.Drawing.Size, System.Drawing">
+    <value>78, 27</value>
+  </data>
+  <data name="txtPrice.ButtonClear.DisplayPosition" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="labelX8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>38, 22</value>
+  </data>
+  <data name="txtSearch.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="labelX47.Size" type="System.Drawing.Size, System.Drawing">
+    <value>46, 22</value>
+  </data>
+  <data name="last_.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAABAlJREFUSEvt
+        1X9ME2cYB3BGt8ZBtjBiSF0m0CZEF7NQLAjUIiA0QrfBKD8srcoPQ5EyVCxYfuikCqOlU8m1ZdYI0zk3
+        EpggUgmMUNorM2TOtRtkW5WGMHEwNxfZX/vh++y962UZGWnd/36TJ+8lz+U+eZ+7vg16mv8diZpgpTf1
+        dpVapqDk3BTK1o1581r7wpj2f5KrG+LJjTaXjLA/Sq3rVr7+zkfPMK2182p6/rrYMj054F6C7s8XEIWI
+        DnYlMO1VeaNtgLff4phU995GPY67EJWmaN9e0fos0147GAiJLdU733cugObad7C3ywlJlYbkQsP1YOYW
+        OnkGK6uYsLka+t0Q3zYOFtsdCujYrmx9jrll7WAglAJMDgrwIIXZiRKVHcKCfwEyM8mTmxyuluFvQai3
+        oSSdDZkmfIBI2fZkAEEBQx4kN5MosUIvzNcP0oDM7OCVn5+a1FydQalnnLCz04l2nCbR2c8YoPJd/8Bm
+        Bjhj/wE01+eg2EQCBUh1A8G7iXGWzOhw1V+dAUnXNOwyT0OWaRoyiZtgGPX4gAPtgXfAx8B79nugsXqR
+        zEiiOHlzorjeElN4dvz2saHZ3yWWWyjn/JdUAbVKzt1C7SMeiMbAjipdgB2k+QD95CJobsyjIgzEZFXk
+        iQ8TtsbB2T9yL7hRXo8bSXHl97iBWnMuuNCpGz4gRaV/MqB98j5oRhZoYFNOjVr1wc0/Dw18/7jow1m0
+        mynZ5Vmg1oJLM6jF6gNEVQFGtIkekc7ZZl8CzegiFBpJeCXxzSwOX6ytsow/3N93B+3p9QBVe5lV/rEH
+        jlvv0oAw0Gcak/IWDbTaf4KGsR9RAUEi3k5FCm5Fc/iZ2uorXz2uvjaPyvq9qLzfC9Ra0udFTcNzNJBU
+        fsI/wEuW0MBJ+wNoGF+GfMIJ/OImYXyxet0LERs3ckVSQvXJN1AzfA8qBxfoqsDVMOzFgLxj275G/wA3
+        KZsGtI6H0DTxM5ISThRfekoorusKlhy/zHqRExVJ7UR58YuV2rFleNt6H1XjOmqd9wF7NAGAxCwfQD6C
+        5slfMTCF4ktOCjNqjfQPLaO2kx0etRkjGVpVvweOTvyCDo89QHXWBRpIUNT7B6K37QqNw0DL1G9wjFwB
+        DIBgn1aYVnP6n6MitdrAxuOKjBblE1X9c9DoWAH1yCIN4FH6B6ISxKFby/SOI6PLUDuyhHI7yb+25KgE
+        +AhYddilqDpYoeGcSE5shlZ55euVA596ETddoRMUHfIPRAoynt8Ql3mEm6a4SFe63IznHs60V2Vr4UE2
+        9U428DNP4Id3h0W/Jo2Tqvwf14KiWlZIOGc9vuQy9fKW7FI21Vsr+IHskJciIvBlZERMbFhyabP/P5yn
+        WZ2goL8BRgokxbgLIrAAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="labelX25.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelX3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 22</value>
+  </data>
+  <data name="tabControlPanel2.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="labelX31.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 18</value>
+  </data>
+  <data name="&gt;&gt;totalWeight.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="txtUnitWeight.TabIndex" type="System.Int32, mscorlib">
+    <value>136</value>
+  </data>
+  <data name="labelX13.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="txt_Rate.ButtonClear.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtE_Fax.Size" type="System.Drawing.Size, System.Drawing">
+    <value>149, 27</value>
+  </data>
+  <data name="&gt;&gt;txt_address.Parent" xml:space="preserve">
+    <value>tabControlPanel2</value>
+  </data>
+  <data name="&gt;&gt;previous_.Name" xml:space="preserve">
+    <value>previous_</value>
+  </data>
+  <data name="&gt;&gt;txtCurrency.Name" xml:space="preserve">
+    <value>txtCurrency</value>
+  </data>
+  <data name="&gt;&gt;Doc_Name.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="TxtDesc.Size" type="System.Drawing.Size, System.Drawing">
+    <value>270, 27</value>
+  </data>
+  <data name="Tot_Price.ButtonFreeText.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="TxtQty.ButtonFreeText.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txt_Fax.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="labelX13.TabIndex" type="System.Int32, mscorlib">
+    <value>141</value>
+  </data>
+  <data name="&gt;&gt;txt_address.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="TxtQty.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="&gt;&gt;labelX10.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.LabelX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;TotalPrice.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="labelX21.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="btnCancel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 39</value>
+  </data>
+  <data name="&gt;&gt;labelX11.Name" xml:space="preserve">
+    <value>labelX11</value>
+  </data>
+  <data name="labelX12.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="&gt;&gt;txtsearh_2.Parent" xml:space="preserve">
+    <value>groupPanel2</value>
+  </data>
+  <data name="&gt;&gt;txtCurrency.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>ar</value>
+  </metadata>
+</root>

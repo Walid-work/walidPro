@@ -1,0 +1,57 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="DataSet1" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Table1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="item_no" type="xs:string" minOccurs="0" />
+              <xs:element name="descr" type="xs:string" minOccurs="0" />
+              <xs:element name="Group_ID" type="xs:string" minOccurs="0" />
+              <xs:element name="Group_name" type="xs:string" minOccurs="0" />
+              <xs:element name="xe_" type="xs:string" minOccurs="0" />
+              <xs:element name="Payment_type" type="xs:string" minOccurs="0" />
+              <xs:element name="Payment_name" type="xs:string" minOccurs="0" />
+              <xs:element name="Weight" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Weight_sales" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Value_sales" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Average_Sales" type="xs:decimal" minOccurs="0" />
+              <xs:element name="tax_sal" type="xs:decimal" minOccurs="0" />
+              <xs:element name="qty_sales" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Weight_Purchase" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Value_Purchase" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Average_Purchase" type="xs:decimal" minOccurs="0" />
+              <xs:element name="tax_pur" type="xs:decimal" minOccurs="0" />
+              <xs:element name="qty_Purchase" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Table2">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Column1" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Column2" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Table3">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Cr_Weight_sales" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Cr_Value_sales" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Cr_Average_Sales" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Cr_tax_sal" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Tot_cr_sal" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Cash_Weight_sales" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Cash_Value_sales" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Cash_Average_Sales" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Cash_tax_sal" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Tot_cash_sal" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

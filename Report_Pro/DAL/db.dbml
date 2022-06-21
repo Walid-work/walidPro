@@ -1,0 +1,672 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="main_acc_wh" Class="dbDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=server;Initial Catalog=main_acc_wh;User ID=bilal" SettingsObjectName="Report_Pro.Properties.Settings" SettingsPropertyName="main_acc_whConnectionString1" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.wh_USERS" Member="wh_USERs">
+    <Type Name="wh_USER">
+      <Column Name="USER_ID" Type="System.String" DbType="VarChar(14) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="USER_NAME" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="User_Level" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="Branches_category" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="LANG" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
+      <Column Name="USER_DEP" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PASSWORD" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="user_off" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="AREA_CODE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Title" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Expire_date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CAN_GIVE_PERM" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="WH_TREE" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="ADD_NEW_ACC" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Groups" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="MASTER_DATA" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="cost_PRICE" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="SALE_PRICE" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="PENFIT_RATE" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="CONFIG" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="S_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="L_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="MAIN_USER_ID" Type="System.String" DbType="VarChar(14)" CanBeNull="true" />
+      <Column Name="All_areas" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="area_1" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Column Name="area_2" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Column Name="area_3" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Column Name="area_4" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Column Name="area_5" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Column Name="area_6" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Column Name="area_7" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Column Name="area_8" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Column Name="area_9" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Column Name="startup_area" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="Can_See_Cost" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="Can_Sale_By_Mines" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="Max_Disc_ratio" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="MASTER_GROUP" Type="System.String" DbType="VarChar(8)" CanBeNull="true" />
+      <Column Name="USER_COST_CODE" Type="System.String" DbType="VarChar(8)" CanBeNull="true" />
+      <Column Name="MASTER_USER" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="User_1" Type="System.String" DbType="VarChar(14)" CanBeNull="true" />
+      <Column Name="User_2" Type="System.String" DbType="VarChar(14)" CanBeNull="true" />
+      <Column Name="User_3" Type="System.String" DbType="VarChar(14)" CanBeNull="true" />
+      <Column Name="User_4" Type="System.String" DbType="VarChar(14)" CanBeNull="true" />
+      <Column Name="User_5" Type="System.String" DbType="VarChar(14)" CanBeNull="true" />
+      <Column Name="CAN_SEE_COSTMERS_SUPLIERS_ONLEY" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Receving_Commnication" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Perm_Acc_no1" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="Perm_Acc_no2" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="Perm_Acc_no3" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="OPEN_ONE_BRANCH" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="PAYMENT_UNDER_COST_PASS_WORD" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="PAYMENT_UNDER_LOW_PRICE_PASS_WORD" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Dont_See_cost_Sending_Attransaction" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Dont_See_cost_Reciving_Attransaction" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="MAX_DISCOUNT_AT_INV_BOTTOM" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="CONTROL_DISCOUNT_AT_INV_BOTTOM" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Empl_Id" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Perm_Req" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Perm_code" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PROJECT_NO_1" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="PROJECT_NO_2" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="PROJECT_NO_3" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="APROVE_LEVEL" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="DONT_FEED_DOWEN_DISCOUNT" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="MANGER_PERM" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="SALES_MAN_LIMTED" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="COT_PRINT_DRAFT_ONLEY" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="SALES_MAN" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ALL_SALES_MAN" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="can_edit_sales_inv" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="can_edit_purch_inv" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="CAN_NOT_SEE_ITEMS_BALANCE" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="PO_PERM_PR_MANGER" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="PO_PERM_COST_CONTROOL" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="PO_PERM_OPER_MANGER" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="PO_PERM_ACC" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Perm_Acc_no4" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="CAN_EDIT_aNOTHER_USER_VOICHER" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Ext_Inv_final_trans" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="PUR_PO_TYPE" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Can_Save_Invoices_Arc" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="No_Of_Pr_Copies" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Title_E" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.UserAccessProfile" Member="UserAccessProfiles">
+    <Type Name="UserAccessProfile">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.UserAccessProfileDetails" Member="UserAccessProfileDetails">
+    <Type Name="UserAccessProfileDetail">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ProfileID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ScreeanID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CanShow" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="CanOpen" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="CanAdd" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="CanEdit" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="CanDelete" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="CanPrint" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Wh_Oiner_Comp" Member="Wh_Oiner_Comps">
+    <Type Name="Wh_Oiner_Comp">
+      <Column Name="Company_No" Type="System.String" DbType="VarChar(2) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Company_a_name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Company_e_name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="User_id" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="G_date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Comp_Vat_no" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Comp_AdressA" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="Comp_AdressE" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="Comp_Phone_no" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Comp_Fax" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Comp_Email" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Comp_Web_Site" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Comp_Rc" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="h_pic" Type="System.Data.Linq.Binary" DbType="Image" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="f_pic" Type="System.Data.Linq.Binary" DbType="Image" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="stamp_pic" Type="System.Data.Linq.Binary" DbType="Image" CanBeNull="true" UpdateCheck="Never" />
+      <Association Name="Wh_Oiner_Comp_wh_main_master" Member="wh_main_masters" ThisKey="Company_No" OtherKey="Company_code" Type="wh_main_master" />
+    </Type>
+  </Table>
+  <Table Name="dbo.wh_main_master" Member="wh_main_masters">
+    <Type Name="wh_main_master">
+      <Column Name="item_no" Type="System.String" DbType="VarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Company_code" Type="System.String" DbType="VarChar(2) NOT NULL" CanBeNull="false" />
+      <Column Name="Second_Company_code" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
+      <Column Name="factory_no" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="descr" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Descr_eng" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Memo_field" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="local_cost" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="last_local_cost" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="Oiner_Cost" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="last_forign_cost" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="last_forign_curancy" Type="System.String" DbType="VarChar(6)" CanBeNull="true" />
+      <Column Name="sale_price" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="penfit_ratio" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="wsale_price" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="group_code" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="new_group_code" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="MSize" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Column Name="UnitSize" Type="System.String" DbType="VarChar(6)" CanBeNull="true" />
+      <Column Name="UnitLenth" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="UnitWidth" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="UnitDepth" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="Weight" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="WeightUnit" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="Voltage" Type="System.String" DbType="VarChar(3)" CanBeNull="true" />
+      <Column Name="Unit" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="Color" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Column Name="Supplier_Unit" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="Backege" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="BALANCE" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="MOVMENT_REMARK" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Column Name="STATUS_OF_DESC" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="USER_ID" Type="System.String" DbType="VarChar(14)" CanBeNull="true" />
+      <Column Name="MAX_STOCK" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Min_Stock" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="REORDER_STOCK" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="BonasStock" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Temp1" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="temp2" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="G_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Last_user_id" Type="System.String" DbType="VarChar(14)" CanBeNull="true" />
+      <Column Name="Last_g_date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Holding_balance" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="Min_sale_price" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="Min_wsale_price" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="Editing_Ser" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NonStockItem" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="P1" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="P2" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="item_no2" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Open_Items" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Discontinue" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Avareg_Monthely_Sales_qty" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="Interval_For_Purchasing_by_month" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="Econmical_Purchasing_qty" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="Target_monthely_sales" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Brand" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Opsit_Backege" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="F_Sales_Disc_Ratio" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="S_Sales_Disc_Ratio" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="T_Sales_Disc_Ratio" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="FO_Sales_Disc_Ratio" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="FI_Sales_Disc_Ratio" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="Expire_date_warning_perioud" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="o_balance" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="Main_location" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="DEVISE_TYPE" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="modular_code" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Heat_No" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Area" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="Category" Type="System.String" DbType="VarChar(8)" CanBeNull="true" />
+      <Column Name="ITEM_NO_Componnet" Type="System.String" DbType="VarChar(14)" CanBeNull="true" />
+      <Column Name="Componnet_Base_qty" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="old_item_no" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Oiner_Cost_p_y" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="Dim_category" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="A" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="E" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="X_Y_DIM" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="No_Invintory" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Class_Code" Type="System.String" DbType="VarChar(8)" CanBeNull="true" />
+      <Column Name="C01" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="C02" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="C03" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="C04" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="C05" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="C06" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="C07" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="C08" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="C09" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="C10" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="C11" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="C12" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="P01" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="P02" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="P03" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="P04" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="P05" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="P06" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="P07" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="P08" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="P09" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="P10" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="P11" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="P12" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="PRINTING_ITEM_NO" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="ITEM_NO_01" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="ITEM_NO_02" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="ITEM_NO_03" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="ITEM_NO_04" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="ITEM_NO_05" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="ITEM_NO_01S" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="ITEM_NO_02S" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="ITEM_NO_03S" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="ITEM_NO_04S" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="ITEM_NO_05S" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="ITEM_NO_06S" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="SALES_PRICE_RATIO" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="MIN_SALES_PRICE_RATIO" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="new_cost" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="ITEM_NO_06" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="ITEM_NO_07" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="ITEM_NO_08" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="ITEM_NO_09" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="ITEM_NO_10" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="ITEM_NO_11" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="ITEM_NO_12" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="ITEM_NO_13" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="ITEM_NO_14" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="ITEM_NO_15" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="ITEM_NO_16" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="NON_DISC_ITEM" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="KIT_ITEM" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="KIT_PRICE" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="LOCAL_COST_PREV" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="LAST_INVINTORY" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="MAIN_Machin_No" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="SOURCE_ITEM_NO" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="UNIT3" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="Package3" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="sale_price2" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="sale_price3" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="KM_CODE" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
+      <Column Name="Avr_Cost" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Association Name="Wh_Oiner_Comp_wh_main_master" Member="Wh_Oiner_Comp" ThisKey="Company_code" OtherKey="Company_No" Type="Wh_Oiner_Comp" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Wh_Unit" Member="Wh_Units">
+    <Type Name="Wh_Unit">
+      <Column Name="Wh_Unit" Member="Wh_Unit1" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="unit_Description" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="unit_Description_E" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.wh_BRANCHES" Member="wh_BRANCHes">
+    <Type Name="wh_BRANCH">
+      <Column Name="Branch_code" Type="System.String" DbType="VarChar(8) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="branch_name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="WH_E_NAME" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="wh_short_name" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="wh_stoped" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="ACC_BRANCH" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="ADRESS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Company_code" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
+      <Column Name="Main_Area_code" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
+      <Column Name="Area_code" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
+      <Column Name="Sub_branch_code" Type="System.String" DbType="VarChar(8)" CanBeNull="true" />
+      <Column Name="SALES_ACC_NO" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="PUR_ACC_NO" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="TRANS_TO_ACC" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="Cash_acc_no" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="Costmers_acc_no" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="Suppliers_acc_no" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="Opininig_balance_acc_no" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="MATERIALS_TYPE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CITY_CODE" Type="System.String" DbType="VarChar(8)" CanBeNull="true" />
+      <Column Name="MANEGER_NAME" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PHONE_NO" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="FAX_NO" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="E_MAIL" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="t_final" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="t_level" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="PREV_NO" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="MAIN_NO" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="NOTES" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="G_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="user_id" Type="System.String" DbType="VarChar(14)" CanBeNull="true" />
+      <Column Name="Pur_Expensive_Acc_No" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="Cargo_Expen_No" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="Com_Code" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
+      <Column Name="Invintory_Acc_no" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="Invintory_Running_acc_no" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="Sales_Cost_Acc_no" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="Target_1" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="Target_2" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="Target_3" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="Ratio_1" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="Ratio_2" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="Ratio_3" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="Target_notes" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Target_4" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="Target_5" Type="System.String" DbType="Char(10)" CanBeNull="true" />
+      <Column Name="Ratio_4" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="Ratio_5" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="Target_Type" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="Cash_acc_no2" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="Eshaar_Kasam_acc_no" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="Eshaar_Kasam_mOKTASAB__acc_no" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="LC_ACC_NO" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="DAMMAN_ACC_NO" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="WORK_SHOP_Service_no" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="Bank_Cash_box" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="Expensive_Acc_no" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="Maint_Exp_acc_no" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="Transport_Exp_acc_no" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="Maint_Income_acc_no" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="Transport_Income_acc_no" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="Current_acc_for_Maint" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="Current_acc_for_Transportation" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="Work_Shop_Or_TRansp" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="Under_Collection_Acc_no" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="Maint_Current_Acc_No_At_Maint_DB" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="Transp_Current_Acc_No_At_Transp" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="Bank_Edaa_Acc_No" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="Work_As_Costmer_At_TRansportation" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="Holding_Payment_acc_no" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="Ohad_Acc_No" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="wh_report_date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Current_H_code" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="Pharm_Servuce" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="SALES_FROM_ANOTHER_STORE" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="COST_CENTER" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="Cash_Costmer_Code" Type="System.String" DbType="VarChar(3)" CanBeNull="true" />
+      <Column Name="Sales_price_Increment_ratio" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="PRINTER_FORM" Type="System.String" DbType="VarChar(8)" CanBeNull="true" />
+      <Column Name="GALVANISE_EXPENSIVE" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="Interval_Of_Reciving_Material" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Sales_store" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="K_M_ACC_NO_SALES" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="K_M_ACC_NO_PURCH" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="K_M_ACC_NO" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="COMP_TAX_NO" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="K_M_ACC_NO_Credit" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="PROJECTS_EXP_ACC_NO" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="LONG_ADESS_A" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="LONG_ADESS_E" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="FAB_COST_ACC_NO" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="BANKS_OF_BRANCH" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="Branch_Logo" Type="System.Data.Linq.Binary" DbType="Image" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Branch_Logo_Small" Type="System.Data.Linq.Binary" DbType="Image" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Branch_Logo_A4" Type="System.Data.Linq.Binary" DbType="Image" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Printing_memo" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Printing_Type" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="Printing_Type_Small" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="Qr_Location" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="Contracting_Inv" Type="System.String" DbType="VarChar(4)" CanBeNull="true" />
+      <Column Name="print_item_on_2_line" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="CR" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Website" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Dont_Show_Header_logo" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Dont_Show_Foater_logo" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Foater_Left" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Foater_Right" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Foater_Med" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Street" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Building_no" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Distrrict" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="City" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Country" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Postal_Code" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Additional_no" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Costmer_Disc_Acc_no" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.BRANCHS" Member="BRANCHes">
+    <Type Name="BRANCH">
+      <Column Name="BRANCH_code" Type="System.String" DbType="VarChar(8) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="BRANCH_name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="branch_short_name" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="BRANCH_E_NAME" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DOMAIN_NAME" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DATABASE_NAME" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="CONTACT_PERSON" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="NETWORK_PHONE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CONNECTION_NAME" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="OFFICE_PHONE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="t_final" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="t_level" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="PREV_NO" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="MAIN_NO" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="NOTES" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="user_id" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="K_M_ACC_NO_SALES" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="K_M_ACC_NO_PURCH" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="K_M_ACC_NO_EXP" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="K_M_ACC_NO_BALANCING" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="K_M_ACC_NO_OTHERS" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="V01" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="V02" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="V11" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="V12" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="V13" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="V14" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="V15" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="V21" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="V22" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="V31" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="Current_account" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.BanksTbl" Member="BanksTbls">
+    <Type Name="BanksTbl">
+      <Column Name="BID" Type="System.String" DbType="VarChar(2) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="BNameA" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="BNameE" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Acc_Details_A" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Acc_Details_E" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="BAccNo" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="BTel" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="BFax" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="BEmail" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="BAccept" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="Bfacelty" Type="System.Decimal" DbType="Decimal(18,3)" CanBeNull="true" />
+      <Column Name="Bmargin" Type="System.Decimal" DbType="Decimal(18,3)" CanBeNull="true" />
+      <Column Name="BIban" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Acc_No" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="Loan_Rate" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="BComnication" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="mainLcAccNo" Type="System.String" DbType="NVarChar(9)" CanBeNull="true" />
+      <Column Name="MainLoanAccNo" Type="System.String" DbType="NVarChar(9)" CanBeNull="true" />
+      <Column Name="LoanIntrestAccNo" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.UserSettingsProfileProperties" Member="UserSettingsProfileProperties">
+    <Type Name="UserSettingsProfileProperty">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ProfileID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PropertyName" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="PropertyValue" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+    </Type>
+  </Table>
+  <Table Name="dbo.daily_transaction" Member="daily_transactions">
+    <Type Name="daily_transaction">
+      <Column Name="ACC_YEAR" Type="System.String" DbType="VarChar(2) NOT NULL" CanBeNull="false" />
+      <Column Name="ACC_NO" Type="System.String" DbType="VarChar(15) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="BRANCH_code" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ser_no" Type="System.String" DbType="NVarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="sorting_ser" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="COST_CENTER" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="MAIN_MEZAN" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="MAIN_TRANS_CODE" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="meno" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="loh" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="balance" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="h_date" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="g_date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="sanad_no" Type="System.String" DbType="NVarChar(12)" CanBeNull="true" />
+      <Column Name="SANAD_TYPE" Type="System.String" DbType="VarChar(6)" CanBeNull="true" />
+      <Column Name="sp_ser_no" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="user_name" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="desc2" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="sheek_no" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="sheek_bank" Type="System.String" DbType="NVarChar(40)" CanBeNull="true" />
+      <Column Name="sheek_date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="sheek_or_cash" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="transaction_code" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="IN_NO" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="in_date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="cancel_date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CANCEL_RESON" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="bank_acc_no" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="in_bank_user" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="OMALA_TRAN_CODE" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="NATION_CODE" Type="System.String" DbType="VarChar(4)" CanBeNull="true" />
+      <Column Name="notes" Type="System.String" DbType="NVarChar(120)" CanBeNull="true" />
+      <Column Name="IN_BANK_OR_NO" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="POASTING" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="MENO_BALANCE" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="LOH_BALANCE" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="tem_for_pivot_report" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="CLOASING_OP_SANAD" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="Prev_acc_year" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
+      <Column Name="Currency_Code" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
+      <Column Name="Change_Factor" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="MenoF" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="LohF" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="SOURCE_CODE" Type="System.String" DbType="VarChar(4)" CanBeNull="true" />
+      <Column Name="Wh_Branch_Code" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="First_Cash_Sanad_no" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="LC_NO" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Sp_Inv_No" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="Replic_Ser" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="GROUP_CODE" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Recever_name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Ext_Hewala_No" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Ext_Hewala_Name" Type="System.String" DbType="VarChar(60)" CanBeNull="true" />
+      <Column Name="FA_NO" Type="System.String" DbType="VarChar(14)" CanBeNull="true" />
+      <Column Name="Sheek" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Sheek_Descr" Type="System.String" DbType="VarChar(80)" CanBeNull="true" />
+      <Column Name="Multy_branches" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="Main_BRANCH_CODE" Type="System.String" DbType="VarChar(14)" CanBeNull="true" />
+      <Column Name="CAT_CODE" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="Dafter_no" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Dafter_ser" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="cash_box_report" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="Acc_Type" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="RETAIL_ACC" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="H_CODE" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="Statment_of_acc_no" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Doctor_ID" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="LOCATION_CODE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="replic_ser2" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Cash_flow_type" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
+      <Column Name="PERM_SER" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MAIN_SER_NO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PROJECT_NO" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Reten_acc_no" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="Reten" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="month_closing" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="month_closing_date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="MENO2" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="LOH2" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="ARC_SER" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="COSTMER_NO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="vat_no" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="vat_amont" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="ohda_acc_type" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="inv_date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="SANAD_TYPE2" Type="System.String" DbType="VarChar(4)" CanBeNull="true" />
+      <Column Name="PO_NO" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="inv_no" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="Supplier_Name" Type="System.String" DbType="VarChar(70)" CanBeNull="true" />
+      <Column Name="desc_E" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.wh_Groups" Member="wh_Groups">
+    <Type Name="wh_Group">
+      <Column Name="group_code" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Group_name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Group_E_NAME" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Company_code" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Column Name="Cost_Factor" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="t_final" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="t_level" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="PREV_NO" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="MAIN_NO" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="NOTES" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="user_id" Type="System.String" DbType="VarChar(14)" CanBeNull="true" />
+      <Column Name="g_date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="last_g_date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Last_user_id" Type="System.String" DbType="VarChar(14)" CanBeNull="true" />
+      <Column Name="Invintory_Acc_no" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="Sales_Cost_Acc_no" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="SALES_ACC_NO" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="Sales_REturn_acc_no" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="Commetion_Ratio" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="Ton_Cost_price" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="Ton_sales_price1" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="Ton_sales_price2" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="Ton_sales_price3" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="Ton_sales_price4" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="old_group_code" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="MAIN_GROUP" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Sands_Details" Member="Sands_Details">
+    <Type Name="Sands_Detail">
+      <Column Name="ACC_YEAR" Type="System.String" DbType="VarChar(4) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="BRANCH_code" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ser_no" Type="System.String" DbType="NVarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="SOURCE_CODE" Type="System.String" DbType="VarChar(4) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="g_date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Inv_No" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Inv_Date" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Po_no" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Inv_Amount" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="Returened" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="OldPaid" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="OldBalance" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="CurrentPaid" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="NewBalance" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="main_counter" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Inv_Transaction_Code" Type="System.String" DbType="VarChar(3) NOT NULL" CanBeNull="false" />
+      <Column Name="cyear" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
+      <Column Name="totalPaid" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.serial_no" Member="serial_nos">
+    <Type Name="serial_no">
+      <Column Name="ACC_YEAR" Type="System.String" DbType="VarChar(2) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="BRANCH_CODE" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="bank_ed_ser" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="bank_sarf_ser" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="BOX_ED_SER" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="BOX_SARF_SER" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="daily_sn_ser" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="main_daily_ser" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="EGATHA_SER" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="daily_TRAVEL_SER" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="inv_no" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DELEVIRY_NO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="WhInvoice" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="POASTING" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Fas_Daily_Serial" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Fas_Transaction_Serial" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Ashom_Ser" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="box_ed_ser22" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="box_ed_ser23" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="box_ed_ser24" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="box_ed_ser25" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="box_ed_ser26" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Eshaar_khasm" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Eshaar_Add" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Maint_Cash_recipt" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="GLOBAL_SER" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TRans_inv_no" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Cust_inv_no" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CR" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Medical_Trans_SER" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CON" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="INV" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IOR" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PAY" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CONTRACT_INV" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="HEWALA_sarf_ser" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ESHAR_SER_sal" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ESHAR_SER_pur" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ARC_SER" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DPAY" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="INVO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SHEEK_BANKS_TYPE" Member="SHEEK_BANKS_TYPEs">
+    <Type Name="SHEEK_BANKS_TYPE">
+      <Column Name="BANK_NO" Type="System.String" DbType="VarChar(2) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="BANK_NAME" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="BANK_NAME_E" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

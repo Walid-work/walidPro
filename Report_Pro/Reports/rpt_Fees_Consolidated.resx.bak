@@ -1,0 +1,1050 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="TopMargin.HeightF" type="System.Single, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="BottomMargin.HeightF" type="System.Single, mscorlib">
+    <value>63.8333626</value>
+  </data>
+  <assembly alias="DevExpress.Data.v19.1" name="DevExpress.Data.v19.1, Version=19.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <data name="xrTable1.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v19.1">
+    <value>0, 0</value>
+  </data>
+  <data name="xrTableCell1.Text" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="xrTableCell1.Weight" type="System.Double, mscorlib">
+    <value>1.3835623978950296</value>
+  </data>
+  <data name="xrTableCell2.Text" xml:space="preserve">
+    <value>Trading</value>
+  </data>
+  <data name="xrTableCell2.TextFormatString" xml:space="preserve">
+    <value>{0:n0}</value>
+  </data>
+  <data name="xrTableCell2.Weight" type="System.Double, mscorlib">
+    <value>0.743462610514853</value>
+  </data>
+  <data name="xrTableCell3.Text" xml:space="preserve">
+    <value>Qatar</value>
+  </data>
+  <data name="xrTableCell3.TextFormatString" xml:space="preserve">
+    <value>{0:n0}</value>
+  </data>
+  <data name="xrTableCell3.Weight" type="System.Double, mscorlib">
+    <value>0.743462621305502</value>
+  </data>
+  <data name="xrTableCell13.Text" xml:space="preserve">
+    <value>Kwuait</value>
+  </data>
+  <data name="xrTableCell13.TextFormatString" xml:space="preserve">
+    <value>{0:n0}</value>
+  </data>
+  <data name="xrTableCell13.Weight" type="System.Double, mscorlib">
+    <value>0.743462621305502</value>
+  </data>
+  <data name="xrTableCell14.Text" xml:space="preserve">
+    <value>Bahrain</value>
+  </data>
+  <data name="xrTableCell14.TextFormatString" xml:space="preserve">
+    <value>{0:n0}</value>
+  </data>
+  <data name="xrTableCell14.Weight" type="System.Double, mscorlib">
+    <value>0.74346262130550222</value>
+  </data>
+  <data name="xrTableCell15.Text" xml:space="preserve">
+    <value>Oman</value>
+  </data>
+  <data name="xrTableCell15.TextFormatString" xml:space="preserve">
+    <value>{0:n0}</value>
+  </data>
+  <data name="xrTableCell15.Weight" type="System.Double, mscorlib">
+    <value>0.743462621305502</value>
+  </data>
+  <data name="xrTableCell16.Text" xml:space="preserve">
+    <value>Factory</value>
+  </data>
+  <data name="xrTableCell16.TextFormatString" xml:space="preserve">
+    <value>{0:n0}</value>
+  </data>
+  <data name="xrTableCell16.Weight" type="System.Double, mscorlib">
+    <value>0.74346262130550189</value>
+  </data>
+  <data name="xrTableCell17.Text" xml:space="preserve">
+    <value>Transport</value>
+  </data>
+  <data name="xrTableCell17.TextFormatString" xml:space="preserve">
+    <value>{0:n0}</value>
+  </data>
+  <data name="xrTableCell17.Weight" type="System.Double, mscorlib">
+    <value>0.74346262130550189</value>
+  </data>
+  <data name="xrTableCell18.Text" xml:space="preserve">
+    <value>Total</value>
+  </data>
+  <data name="xrTableCell18.TextFormatString" xml:space="preserve">
+    <value>{0:n0}</value>
+  </data>
+  <data name="xrTableCell18.Weight" type="System.Double, mscorlib">
+    <value>0.82823766235686114</value>
+  </data>
+  <data name="xrTableRow1.Weight" type="System.Double, mscorlib">
+    <value>1</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="xrTable1.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>797.9999, 25</value>
+  </data>
+  <data name="xrTable1.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v19.1">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="Detail.HeightF" type="System.Single, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="xrTable2.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>RoyalBlue</value>
+  </data>
+  <data name="xrTable2.BorderColor" type="System.Drawing.Color, System.Drawing">
+    <value>Black</value>
+  </data>
+  <data name="xrTable2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9.75pt, style=Bold</value>
+  </data>
+  <data name="xrTable2.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>White</value>
+  </data>
+  <data name="xrTable2.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v19.1">
+    <value>0, 0</value>
+  </data>
+  <data name="xrTableCell4.Text" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="xrTableCell4.Weight" type="System.Double, mscorlib">
+    <value>1.3835623978950296</value>
+  </data>
+  <data name="xrTableCell5.Text" xml:space="preserve">
+    <value>Trading</value>
+  </data>
+  <data name="xrTableCell5.Weight" type="System.Double, mscorlib">
+    <value>0.743462610514853</value>
+  </data>
+  <data name="xrTableCell6.Text" xml:space="preserve">
+    <value>Qatar</value>
+  </data>
+  <data name="xrTableCell6.Weight" type="System.Double, mscorlib">
+    <value>0.743462621305502</value>
+  </data>
+  <data name="xrTableCell7.Text" xml:space="preserve">
+    <value>Kwuait</value>
+  </data>
+  <data name="xrTableCell7.Weight" type="System.Double, mscorlib">
+    <value>0.743462621305502</value>
+  </data>
+  <data name="xrTableCell8.Text" xml:space="preserve">
+    <value>Bahrain</value>
+  </data>
+  <data name="xrTableCell8.Weight" type="System.Double, mscorlib">
+    <value>0.74346262130550222</value>
+  </data>
+  <data name="xrTableCell9.Text" xml:space="preserve">
+    <value>Oman</value>
+  </data>
+  <data name="xrTableCell9.Weight" type="System.Double, mscorlib">
+    <value>0.743462621305502</value>
+  </data>
+  <data name="xrTableCell10.Text" xml:space="preserve">
+    <value>Factory</value>
+  </data>
+  <data name="xrTableCell10.Weight" type="System.Double, mscorlib">
+    <value>0.74346262130550189</value>
+  </data>
+  <data name="xrTableCell11.Text" xml:space="preserve">
+    <value>Transport</value>
+  </data>
+  <data name="xrTableCell11.Weight" type="System.Double, mscorlib">
+    <value>0.74346262130550189</value>
+  </data>
+  <data name="xrTableCell12.Text" xml:space="preserve">
+    <value>Total</value>
+  </data>
+  <data name="xrTableCell12.Weight" type="System.Double, mscorlib">
+    <value>0.82823766235686114</value>
+  </data>
+  <data name="xrTableRow2.Weight" type="System.Double, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="xrTable2.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>797.9999, 25</value>
+  </data>
+  <data name="xrTable2.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v19.1">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="PageHeader.HeightF" type="System.Single, mscorlib">
+    <value>25</value>
+  </data>
+  <metadata name="sqlDataSource1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="sqlDataSource1.ResultSchemaSerializable" xml:space="preserve">
+    <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTEiPjxWaWV3IE5hbWU9IlRhYmxlMSI+PEZpZWxkIE5hbWU9IkdyX25hbWUiIFR5cGU9IlVua25vd24iIC8+PEZpZWxkIE5hbWU9IlRfSW5kdXN0IiBUeXBlPSJVbmtub3duIiAvPjxGaWVsZCBOYW1lPSJUX0dBIiBUeXBlPSJVbmtub3duIiAvPjxGaWVsZCBOYW1lPSJRX0dBX1NBUiIgVHlwZT0iVW5rbm93biIgLz48RmllbGQgTmFtZT0iS19HQV9TQVIiIFR5cGU9IlVua25vd24iIC8+PEZpZWxkIE5hbWU9IkJfR0FfU0FSIiBUeXBlPSJVbmtub3duIiAvPjxGaWVsZCBOYW1lPSJPX0dBX1NBUiIgVHlwZT0iVW5rbm93biIgLz48RmllbGQgTmFtZT0iVHJhbnNfU0FSIiBUeXBlPSJVbmtub3duIiAvPjxGaWVsZCBOYW1lPSJQcmV2X25vIiBUeXBlPSJVbmtub3duIiAvPjxGaWVsZCBOYW1lPSJGX0dBIiBUeXBlPSJVbmtub3duIiAvPjxGaWVsZCBOYW1lPSJGX0luZHVzdCIgVHlwZT0iVW5rbm93biIgLz48L1ZpZXc+PFZpZXcgTmFtZT0iVGFibGUyIj48RmllbGQgTmFtZT0iVF9SIiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJRX1IiIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9IktfUiIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0iQl9SIiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJPX1IiIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9IlRyYW5zX1IiIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9IkZfUiIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0iVF9TX1IiIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9IkZfU19SIiBUeXBlPSJEZWNpbWFsIiAvPjwvVmlldz48L0RhdGFTZXQ+</value>
+  </data>
+  <data name="xrLabel1.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>RoyalBlue</value>
+  </data>
+  <data name="xrLabel1.BorderColor" type="System.Drawing.Color, System.Drawing">
+    <value>Black</value>
+  </data>
+  <data name="xrLabel1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 12pt, style=Bold</value>
+  </data>
+  <data name="xrLabel1.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>White</value>
+  </data>
+  <data name="xrLabel1.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v19.1">
+    <value>308.8777, 0</value>
+  </data>
+  <data name="xrLabel1.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>255.208313, 32.10923</value>
+  </data>
+  <data name="xrLabel1.Text" xml:space="preserve">
+    <value>Consolidated expense report</value>
+  </data>
+  <data name="xrLabel1.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v19.1">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="xrTable4.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v19.1">
+    <value>10, 48.7342148</value>
+  </data>
+  <data name="xrTableCell28.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>RoyalBlue</value>
+  </data>
+  <data name="xrTableCell28.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9.75pt, style=Bold</value>
+  </data>
+  <data name="xrTableCell28.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>White</value>
+  </data>
+  <data name="xrTableCell28.Text" xml:space="preserve">
+    <value>Branch</value>
+  </data>
+  <data name="xrTableCell28.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v19.1">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="xrTableCell28.Weight" type="System.Double, mscorlib">
+    <value>1.0915652846541459</value>
+  </data>
+  <data name="lbl_Branch.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v19.1">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="lbl_Branch.Weight" type="System.Double, mscorlib">
+    <value>2.3882273326310388</value>
+  </data>
+  <data name="xrTableRow4.Weight" type="System.Double, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="Group.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>RoyalBlue</value>
+  </data>
+  <data name="Group.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9.75pt, style=Bold</value>
+  </data>
+  <data name="Group.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>White</value>
+  </data>
+  <data name="Group.Text" xml:space="preserve">
+    <value>Account Group</value>
+  </data>
+  <data name="Group.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v19.1">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="Group.Weight" type="System.Double, mscorlib">
+    <value>1.0915652846541459</value>
+  </data>
+  <data name="lbl_Group.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v19.1">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="lbl_Group.Weight" type="System.Double, mscorlib">
+    <value>2.3882273326310388</value>
+  </data>
+  <data name="xrTableRow5.Weight" type="System.Double, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="xrTableCell29.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>RoyalBlue</value>
+  </data>
+  <data name="xrTableCell29.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9.75pt, style=Bold</value>
+  </data>
+  <data name="xrTableCell29.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>White</value>
+  </data>
+  <data name="xrTableCell29.Text" xml:space="preserve">
+    <value>From Date</value>
+  </data>
+  <data name="xrTableCell29.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v19.1">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="xrTableCell29.Weight" type="System.Double, mscorlib">
+    <value>1.0915649602377018</value>
+  </data>
+  <data name="lbl_FromDate.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v19.1">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="lbl_FromDate.Weight" type="System.Double, mscorlib">
+    <value>0.79734507641211416</value>
+  </data>
+  <data name="xrTableCell35.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>RoyalBlue</value>
+  </data>
+  <data name="xrTableCell35.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9.75pt, style=Bold</value>
+  </data>
+  <data name="xrTableCell35.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>White</value>
+  </data>
+  <data name="xrTableCell35.Text" xml:space="preserve">
+    <value>To Date</value>
+  </data>
+  <data name="xrTableCell35.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v19.1">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="xrTableCell35.Weight" type="System.Double, mscorlib">
+    <value>0.66853907164489867</value>
+  </data>
+  <data name="lbl_ToDate.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v19.1">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="lbl_ToDate.Weight" type="System.Double, mscorlib">
+    <value>0.92234350899047035</value>
+  </data>
+  <data name="xrTableRow6.Weight" type="System.Double, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="xrTable4.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>366.72934, 72.34908</value>
+  </data>
+  <data name="xrTable4.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v19.1">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="ReportHeader.HeightF" type="System.Single, mscorlib">
+    <value>131.0833</value>
+  </data>
+  <data name="xrTable5.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>RoyalBlue</value>
+  </data>
+  <data name="xrTable5.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9.75pt, style=Bold</value>
+  </data>
+  <data name="xrTable5.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>White</value>
+  </data>
+  <data name="xrTable5.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v19.1">
+    <value>0, 60.5416946</value>
+  </data>
+  <data name="xrTableCell31.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9.75pt, style=Bold</value>
+  </data>
+  <data name="xrTableCell31.Text" xml:space="preserve">
+    <value>Fees % Revenues</value>
+  </data>
+  <data name="xrTableCell31.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v19.1">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="xrTableCell31.Weight" type="System.Double, mscorlib">
+    <value>1.3835623978950296</value>
+  </data>
+  <data name="xrTableCell32.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="xrTableCell32.Text" xml:space="preserve">
+    <value>Trading</value>
+  </data>
+  <data name="xrTableCell32.TextFormatString" xml:space="preserve">
+    <value>{0:0%}</value>
+  </data>
+  <data name="xrTableCell32.Weight" type="System.Double, mscorlib">
+    <value>0.743462610514853</value>
+  </data>
+  <data name="xrTableCell33.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="xrTableCell33.TextFormatString" xml:space="preserve">
+    <value>{0:0%}</value>
+  </data>
+  <data name="xrTableCell33.Weight" type="System.Double, mscorlib">
+    <value>0.743462621305502</value>
+  </data>
+  <data name="xrTableCell34.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="xrTableCell34.TextFormatString" xml:space="preserve">
+    <value>{0:0%}</value>
+  </data>
+  <data name="xrTableCell34.Weight" type="System.Double, mscorlib">
+    <value>0.743462621305502</value>
+  </data>
+  <data name="xrTableCell36.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="xrTableCell36.TextFormatString" xml:space="preserve">
+    <value>{0:0%}</value>
+  </data>
+  <data name="xrTableCell36.Weight" type="System.Double, mscorlib">
+    <value>0.74346262130550222</value>
+  </data>
+  <data name="xrTableCell37.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="xrTableCell37.TextFormatString" xml:space="preserve">
+    <value>{0:0%}</value>
+  </data>
+  <data name="xrTableCell37.Weight" type="System.Double, mscorlib">
+    <value>0.743462621305502</value>
+  </data>
+  <data name="xrTableCell38.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="xrTableCell38.Text" xml:space="preserve">
+    <value>Factory</value>
+  </data>
+  <data name="xrTableCell38.TextFormatString" xml:space="preserve">
+    <value>{0:0%}</value>
+  </data>
+  <data name="xrTableCell38.Weight" type="System.Double, mscorlib">
+    <value>0.74346262130550189</value>
+  </data>
+  <data name="xrTableCell39.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="xrTableCell39.TextFormatString" xml:space="preserve">
+    <value>{0:0%}</value>
+  </data>
+  <data name="xrTableCell39.Weight" type="System.Double, mscorlib">
+    <value>0.74346262130550189</value>
+  </data>
+  <data name="xrTableCell41.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="xrTableCell41.Text" xml:space="preserve">
+    <value>Total</value>
+  </data>
+  <data name="xrTableCell41.TextFormatString" xml:space="preserve">
+    <value>{0:0%}</value>
+  </data>
+  <data name="xrTableCell41.Weight" type="System.Double, mscorlib">
+    <value>0.82823766235686114</value>
+  </data>
+  <data name="xrTableRow10.Weight" type="System.Double, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="xrTable5.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>797.9999, 25</value>
+  </data>
+  <data name="xrTable5.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v19.1">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="xrTable7.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>RoyalBlue</value>
+  </data>
+  <data name="xrTable7.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9.75pt, style=Bold</value>
+  </data>
+  <data name="xrTable7.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>White</value>
+  </data>
+  <data name="xrTable7.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v19.1">
+    <value>4.0001235, 121.625046</value>
+  </data>
+  <data name="xrTableCell49.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9.75pt, style=Bold</value>
+  </data>
+  <data name="xrTableCell49.Text" xml:space="preserve">
+    <value>Net Revenues</value>
+  </data>
+  <data name="xrTableCell49.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v19.1">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="xrTableCell49.Weight" type="System.Double, mscorlib">
+    <value>1.3835623978950296</value>
+  </data>
+  <data name="xrTableCell50.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="xrTableCell50.Text" xml:space="preserve">
+    <value>Trading</value>
+  </data>
+  <data name="xrTableCell50.TextFormatString" xml:space="preserve">
+    <value>{0:n0}</value>
+  </data>
+  <data name="xrTableCell50.Weight" type="System.Double, mscorlib">
+    <value>0.743462610514853</value>
+  </data>
+  <data name="xrTableCell51.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="xrTableCell51.TextFormatString" xml:space="preserve">
+    <value>{0:n0}</value>
+  </data>
+  <data name="xrTableCell51.Weight" type="System.Double, mscorlib">
+    <value>0.743462621305502</value>
+  </data>
+  <data name="xrTableCell52.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="xrTableCell52.TextFormatString" xml:space="preserve">
+    <value>{0:n0}</value>
+  </data>
+  <data name="xrTableCell52.Weight" type="System.Double, mscorlib">
+    <value>0.743462621305502</value>
+  </data>
+  <data name="xrTableCell53.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="xrTableCell53.TextFormatString" xml:space="preserve">
+    <value>{0:n0}</value>
+  </data>
+  <data name="xrTableCell53.Weight" type="System.Double, mscorlib">
+    <value>0.74346262130550222</value>
+  </data>
+  <data name="xrTableCell54.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="xrTableCell54.TextFormatString" xml:space="preserve">
+    <value>{0:n0}</value>
+  </data>
+  <data name="xrTableCell54.Weight" type="System.Double, mscorlib">
+    <value>0.743462621305502</value>
+  </data>
+  <data name="xrTableCell55.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="xrTableCell55.Text" xml:space="preserve">
+    <value>Factory</value>
+  </data>
+  <data name="xrTableCell55.TextFormatString" xml:space="preserve">
+    <value>{0:n0}</value>
+  </data>
+  <data name="xrTableCell55.Weight" type="System.Double, mscorlib">
+    <value>0.74346262130550189</value>
+  </data>
+  <data name="xrTableCell56.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="xrTableCell56.TextFormatString" xml:space="preserve">
+    <value>{0:n0}</value>
+  </data>
+  <data name="xrTableCell56.Weight" type="System.Double, mscorlib">
+    <value>0.74346262130550189</value>
+  </data>
+  <data name="xrTableCell57.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="xrTableCell57.Text" xml:space="preserve">
+    <value>Total</value>
+  </data>
+  <data name="xrTableCell57.TextFormatString" xml:space="preserve">
+    <value>{0:n0}</value>
+  </data>
+  <data name="xrTableCell57.Weight" type="System.Double, mscorlib">
+    <value>0.82823766235686114</value>
+  </data>
+  <data name="xrTableRow9.Weight" type="System.Double, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="xrTable7.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>797.9999, 25</value>
+  </data>
+  <data name="xrTable7.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v19.1">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="xrTable7.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="table_S_R.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>RoyalBlue</value>
+  </data>
+  <data name="table_S_R.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9.75pt, style=Bold</value>
+  </data>
+  <data name="table_S_R.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>White</value>
+  </data>
+  <data name="table_S_R.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v19.1">
+    <value>4.0001235, 96.6250458</value>
+  </data>
+  <data name="xrTableCell40.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9.75pt, style=Bold</value>
+  </data>
+  <data name="xrTableCell40.Text" xml:space="preserve">
+    <value>Revenues Sister Co.</value>
+  </data>
+  <data name="xrTableCell40.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v19.1">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="xrTableCell40.Weight" type="System.Double, mscorlib">
+    <value>1.3835623978950296</value>
+  </data>
+  <data name="T_S_R.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="T_S_R.Text" xml:space="preserve">
+    <value>Trading</value>
+  </data>
+  <data name="T_S_R.TextFormatString" xml:space="preserve">
+    <value>{0:n0}</value>
+  </data>
+  <data name="T_S_R.Weight" type="System.Double, mscorlib">
+    <value>0.743462610514853</value>
+  </data>
+  <data name="Q_S_R.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="Q_S_R.TextFormatString" xml:space="preserve">
+    <value>{0:n0}</value>
+  </data>
+  <data name="Q_S_R.Weight" type="System.Double, mscorlib">
+    <value>0.743462621305502</value>
+  </data>
+  <data name="K_S_R.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="K_S_R.TextFormatString" xml:space="preserve">
+    <value>{0:n0}</value>
+  </data>
+  <data name="K_S_R.Weight" type="System.Double, mscorlib">
+    <value>0.743462621305502</value>
+  </data>
+  <data name="B_S_R.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="B_S_R.TextFormatString" xml:space="preserve">
+    <value>{0:n0}</value>
+  </data>
+  <data name="B_S_R.Weight" type="System.Double, mscorlib">
+    <value>0.74346262130550222</value>
+  </data>
+  <data name="O_S_R.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="O_S_R.TextFormatString" xml:space="preserve">
+    <value>{0:n0}</value>
+  </data>
+  <data name="O_S_R.Weight" type="System.Double, mscorlib">
+    <value>0.743462621305502</value>
+  </data>
+  <data name="F_S_R.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="F_S_R.Text" xml:space="preserve">
+    <value>Factory</value>
+  </data>
+  <data name="F_S_R.TextFormatString" xml:space="preserve">
+    <value>{0:n0}</value>
+  </data>
+  <data name="F_S_R.Weight" type="System.Double, mscorlib">
+    <value>0.74346262130550189</value>
+  </data>
+  <data name="tans_S_R.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="tans_S_R.TextFormatString" xml:space="preserve">
+    <value>{0:n0}</value>
+  </data>
+  <data name="tans_S_R.Weight" type="System.Double, mscorlib">
+    <value>0.74346262130550189</value>
+  </data>
+  <data name="tot_S_R.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="tot_S_R.Text" xml:space="preserve">
+    <value>Total</value>
+  </data>
+  <data name="tot_S_R.TextFormatString" xml:space="preserve">
+    <value>{0:n0}</value>
+  </data>
+  <data name="tot_S_R.Weight" type="System.Double, mscorlib">
+    <value>0.82823766235686114</value>
+  </data>
+  <data name="xrTableRow8.Weight" type="System.Double, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="table_S_R.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>797.9999, 25</value>
+  </data>
+  <data name="table_S_R.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v19.1">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="table_S_R.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="table_R.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>RoyalBlue</value>
+  </data>
+  <data name="table_R.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9.75pt, style=Bold</value>
+  </data>
+  <data name="table_R.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>White</value>
+  </data>
+  <data name="table_R.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v19.1">
+    <value>0, 35.5416946</value>
+  </data>
+  <data name="xrTableCell30.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9.75pt, style=Bold</value>
+  </data>
+  <data name="xrTableCell30.Text" xml:space="preserve">
+    <value>Revenues</value>
+  </data>
+  <data name="xrTableCell30.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v19.1">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="xrTableCell30.Weight" type="System.Double, mscorlib">
+    <value>1.3835623978950296</value>
+  </data>
+  <data name="T_R.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="T_R.Text" xml:space="preserve">
+    <value>Trading</value>
+  </data>
+  <data name="T_R.TextFormatString" xml:space="preserve">
+    <value>{0:n0}</value>
+  </data>
+  <data name="T_R.Weight" type="System.Double, mscorlib">
+    <value>0.743462610514853</value>
+  </data>
+  <data name="Q_R.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="Q_R.Text" xml:space="preserve">
+    <value>Qatar</value>
+  </data>
+  <data name="Q_R.TextFormatString" xml:space="preserve">
+    <value>{0:n0}</value>
+  </data>
+  <data name="Q_R.Weight" type="System.Double, mscorlib">
+    <value>0.743462621305502</value>
+  </data>
+  <data name="K_R.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="K_R.Text" xml:space="preserve">
+    <value>Kwuait</value>
+  </data>
+  <data name="K_R.TextFormatString" xml:space="preserve">
+    <value>{0:n0}</value>
+  </data>
+  <data name="K_R.Weight" type="System.Double, mscorlib">
+    <value>0.743462621305502</value>
+  </data>
+  <data name="B_R.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="B_R.Text" xml:space="preserve">
+    <value>Bahrain</value>
+  </data>
+  <data name="B_R.TextFormatString" xml:space="preserve">
+    <value>{0:n0}</value>
+  </data>
+  <data name="B_R.Weight" type="System.Double, mscorlib">
+    <value>0.74346262130550222</value>
+  </data>
+  <data name="O_R.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="O_R.Text" xml:space="preserve">
+    <value>Oman</value>
+  </data>
+  <data name="O_R.TextFormatString" xml:space="preserve">
+    <value>{0:n0}</value>
+  </data>
+  <data name="O_R.Weight" type="System.Double, mscorlib">
+    <value>0.743462621305502</value>
+  </data>
+  <data name="F_R.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="F_R.Text" xml:space="preserve">
+    <value>Factory</value>
+  </data>
+  <data name="F_R.TextFormatString" xml:space="preserve">
+    <value>{0:n0}</value>
+  </data>
+  <data name="F_R.Weight" type="System.Double, mscorlib">
+    <value>0.74346262130550189</value>
+  </data>
+  <data name="tans_R.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="tans_R.Text" xml:space="preserve">
+    <value>Transport</value>
+  </data>
+  <data name="tans_R.TextFormatString" xml:space="preserve">
+    <value>{0:n0}</value>
+  </data>
+  <data name="tans_R.Weight" type="System.Double, mscorlib">
+    <value>0.74346262130550189</value>
+  </data>
+  <data name="tot_R.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="tot_R.Text" xml:space="preserve">
+    <value>Total</value>
+  </data>
+  <data name="tot_R.TextFormatString" xml:space="preserve">
+    <value>{0:n0}</value>
+  </data>
+  <data name="tot_R.Weight" type="System.Double, mscorlib">
+    <value>0.82823766235686114</value>
+  </data>
+  <data name="xrTableRow7.Weight" type="System.Double, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="table_R.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>797.9999, 25</value>
+  </data>
+  <data name="table_R.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v19.1">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="xrTable3.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>RoyalBlue</value>
+  </data>
+  <data name="xrTable3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9.75pt, style=Bold</value>
+  </data>
+  <data name="xrTable3.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>White</value>
+  </data>
+  <data name="xrTable3.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v19.1">
+    <value>0, 0</value>
+  </data>
+  <data name="xrTableCell19.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9.75pt, style=Bold</value>
+  </data>
+  <data name="xrTableCell19.Text" xml:space="preserve">
+    <value>Total</value>
+  </data>
+  <data name="xrTableCell19.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v19.1">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="xrTableCell19.Weight" type="System.Double, mscorlib">
+    <value>1.3835623978950296</value>
+  </data>
+  <data name="xrTableCell20.Text" xml:space="preserve">
+    <value>Trading</value>
+  </data>
+  <data name="xrTableCell20.TextFormatString" xml:space="preserve">
+    <value>{0:n0}</value>
+  </data>
+  <data name="xrTableCell20.Weight" type="System.Double, mscorlib">
+    <value>0.743462610514853</value>
+  </data>
+  <data name="xrTableCell21.Text" xml:space="preserve">
+    <value>Qatar</value>
+  </data>
+  <data name="xrTableCell21.TextFormatString" xml:space="preserve">
+    <value>{0:n0}</value>
+  </data>
+  <data name="xrTableCell21.Weight" type="System.Double, mscorlib">
+    <value>0.743462621305502</value>
+  </data>
+  <data name="xrTableCell22.Text" xml:space="preserve">
+    <value>Kwuait</value>
+  </data>
+  <data name="xrTableCell22.TextFormatString" xml:space="preserve">
+    <value>{0:n0}</value>
+  </data>
+  <data name="xrTableCell22.Weight" type="System.Double, mscorlib">
+    <value>0.743462621305502</value>
+  </data>
+  <data name="xrTableCell23.Text" xml:space="preserve">
+    <value>Bahrain</value>
+  </data>
+  <data name="xrTableCell23.TextFormatString" xml:space="preserve">
+    <value>{0:n0}</value>
+  </data>
+  <data name="xrTableCell23.Weight" type="System.Double, mscorlib">
+    <value>0.74346262130550222</value>
+  </data>
+  <data name="xrTableCell24.Text" xml:space="preserve">
+    <value>Oman</value>
+  </data>
+  <data name="xrTableCell24.TextFormatString" xml:space="preserve">
+    <value>{0:n0}</value>
+  </data>
+  <data name="xrTableCell24.Weight" type="System.Double, mscorlib">
+    <value>0.743462621305502</value>
+  </data>
+  <data name="xrTableCell25.Text" xml:space="preserve">
+    <value>Factory</value>
+  </data>
+  <data name="xrTableCell25.TextFormatString" xml:space="preserve">
+    <value>{0:n0}</value>
+  </data>
+  <data name="xrTableCell25.Weight" type="System.Double, mscorlib">
+    <value>0.74346262130550189</value>
+  </data>
+  <data name="xrTableCell26.Text" xml:space="preserve">
+    <value>Transport</value>
+  </data>
+  <data name="xrTableCell26.TextFormatString" xml:space="preserve">
+    <value>{0:n0}</value>
+  </data>
+  <data name="xrTableCell26.Weight" type="System.Double, mscorlib">
+    <value>0.74346262130550189</value>
+  </data>
+  <data name="xrTableCell27.Text" xml:space="preserve">
+    <value>Total</value>
+  </data>
+  <data name="xrTableCell27.TextFormatString" xml:space="preserve">
+    <value>{0:n0}</value>
+  </data>
+  <data name="xrTableCell27.Weight" type="System.Double, mscorlib">
+    <value>0.82823766235686114</value>
+  </data>
+  <data name="xrTableRow3.Weight" type="System.Double, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="xrTable3.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>797.9999, 25</value>
+  </data>
+  <data name="xrTable3.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v19.1">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="ReportFooter.HeightF" type="System.Single, mscorlib">
+    <value>198.416672</value>
+  </data>
+  <metadata name="dateTimeChartRangeControlClient1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 56</value>
+  </metadata>
+  <data name="pram1.Description" xml:space="preserve">
+    <value>pram1</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9.75pt</value>
+  </data>
+  <data name="$this.Margins" type="System.Drawing.Printing.Margins, System.Drawing">
+    <value>22, 26, 24, 64</value>
+  </data>
+</root>

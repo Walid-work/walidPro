@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="xrTableCell1.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>RoyalBlue</value>
+  </data>
+  <data name="xrTableCell1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9.75pt, style=Bold</value>
+  </data>
+  <data name="xrTableCell1.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>White</value>
+  </data>
+  <data name="xrTableCell4.Text" xml:space="preserve">
+    <value>البيــــان</value>
+  </data>
+  <data name="xrTableCell5.Text" xml:space="preserve">
+    <value>التجارية</value>
+  </data>
+  <data name="xrTableCell6.Text" xml:space="preserve">
+    <value>قطر</value>
+  </data>
+  <data name="xrTableCell7.Text" xml:space="preserve">
+    <value>الكويت</value>
+  </data>
+  <data name="xrTableCell8.Text" xml:space="preserve">
+    <value>البحرين</value>
+  </data>
+  <data name="xrTableCell9.Text" xml:space="preserve">
+    <value>عمان</value>
+  </data>
+  <data name="xrTableCell10.Text" xml:space="preserve">
+    <value>الفرن</value>
+  </data>
+  <data name="xrTableCell11.Text" xml:space="preserve">
+    <value>النقليات</value>
+  </data>
+  <data name="xrTableCell12.Text" xml:space="preserve">
+    <value>الاجمالي</value>
+  </data>
+  <data name="sqlDataSource1.ResultSchemaSerializable" xml:space="preserve">
+    <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTEiPjxWaWV3IE5hbWU9IlRhYmxlMSI+PEZpZWxkIE5hbWU9IkdyX25hbWUiIFR5cGU9IlVua25vd24iIC8+PEZpZWxkIE5hbWU9IlRfSW5kdXN0IiBUeXBlPSJVbmtub3duIiAvPjxGaWVsZCBOYW1lPSJUX0dBIiBUeXBlPSJVbmtub3duIiAvPjxGaWVsZCBOYW1lPSJRX0dBX1NBUiIgVHlwZT0iVW5rbm93biIgLz48RmllbGQgTmFtZT0iS19HQV9TQVIiIFR5cGU9IlVua25vd24iIC8+PEZpZWxkIE5hbWU9IkJfR0FfU0FSIiBUeXBlPSJVbmtub3duIiAvPjxGaWVsZCBOYW1lPSJPX0dBX1NBUiIgVHlwZT0iVW5rbm93biIgLz48RmllbGQgTmFtZT0iVHJhbnNfU0FSIiBUeXBlPSJVbmtub3duIiAvPjxGaWVsZCBOYW1lPSJQcmV2X25vIiBUeXBlPSJVbmtub3duIiAvPjxGaWVsZCBOYW1lPSJGX0dBIiBUeXBlPSJVbmtub3duIiAvPjxGaWVsZCBOYW1lPSJGX0luZHVzdCIgVHlwZT0iVW5rbm93biIgLz48RmllbGQgTmFtZT0iVF9SIiBUeXBlPSJVbmtub3duIiAvPjxGaWVsZCBOYW1lPSJRX1IiIFR5cGU9IlVua25vd24iIC8+PEZpZWxkIE5hbWU9IktfUiIgVHlwZT0iVW5rbm93biIgLz48RmllbGQgTmFtZT0iQl9SIiBUeXBlPSJVbmtub3duIiAvPjxGaWVsZCBOYW1lPSJPX1IiIFR5cGU9IlVua25vd24iIC8+PEZpZWxkIE5hbWU9IlRyYW5zX1IiIFR5cGU9IlVua25vd24iIC8+PEZpZWxkIE5hbWU9IkZfUiIgVHlwZT0iVW5rbm93biIgLz48L1ZpZXc+PFZpZXcgTmFtZT0iVGFibGUyIj48RmllbGQgTmFtZT0iVF9SIiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJRX1IiIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9IktfUiIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0iQl9SIiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJPX1IiIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9IlRyYW5zX1IiIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9IkZfUiIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0iVF9TX1IiIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9IkZfU19SIiBUeXBlPSJEZWNpbWFsIiAvPjwvVmlldz48L0RhdGFTZXQ+</value>
+  </data>
+  <data name="xrLabel1.Text" xml:space="preserve">
+    <value>تقرير المصاريف المجمع</value>
+  </data>
+  <assembly alias="DevExpress.Data.v21.2" name="DevExpress.Data.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <data name="xrTable4.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v21.2">
+    <value>10.0000067, 48.7342148</value>
+  </data>
+  <data name="xrTableCell28.Text" xml:space="preserve">
+    <value>الفرع</value>
+  </data>
+  <data name="Group.Text" xml:space="preserve">
+    <value>الحساب المجمع</value>
+  </data>
+  <data name="xrTableCell29.Text" xml:space="preserve">
+    <value>من تاريخ</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lbl_FromDate.Weight" type="System.Double, mscorlib">
+    <value>0.85970030058621738</value>
+  </data>
+  <data name="xrTableCell35.Text" xml:space="preserve">
+    <value>الي تاريخ</value>
+  </data>
+  <data name="xrTableCell35.Weight" type="System.Double, mscorlib">
+    <value>0.62032595171959048</value>
+  </data>
+  <data name="lbl_ToDate.Weight" type="System.Double, mscorlib">
+    <value>0.90820140474167532</value>
+  </data>
+  <data name="xrTable4.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>390.336, 72.34908</value>
+  </data>
+  <data name="xrTable7.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v21.2">
+    <value>0, 123.333389</value>
+  </data>
+  <data name="xrTableCell49.Text" xml:space="preserve">
+    <value>صافي الايرادات</value>
+  </data>
+  <data name="table_S_R.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v21.2">
+    <value>0, 98.33339</value>
+  </data>
+  <data name="xrTableCell40.Text" xml:space="preserve">
+    <value>ايرادات من شركات شقيقة</value>
+  </data>
+  <data name="xrTableCell30.Text" xml:space="preserve">
+    <value>الايرادات</value>
+  </data>
+  <data name="xrTableCell19.Text" xml:space="preserve">
+    <value>الاجمالي</value>
+  </data>
+  <data name="ReportFooter.HeightF" type="System.Single, mscorlib">
+    <value>158.333359</value>
+  </data>
+</root>

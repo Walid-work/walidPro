@@ -1,0 +1,78 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Table1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Ser_no" type="xs:int" minOccurs="0" />
+              <xs:element name="Branch_code" type="xs:string" minOccurs="0" />
+              <xs:element name="Transaction_code" type="xs:string" minOccurs="0" />
+              <xs:element name="Cyear" type="xs:string" minOccurs="0" />
+              <xs:element name="G_date" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ACC_TYPE" type="xs:string" minOccurs="0" />
+              <xs:element name="Acc_no" type="xs:string" minOccurs="0" />
+              <xs:element name="Acc_Branch_code" type="xs:string" minOccurs="0" />
+              <xs:element name="Payment_Type" type="xs:string" minOccurs="0" />
+              <xs:element name="Sales_man_Id" type="xs:string" minOccurs="0" />
+              <xs:element name="User_id" type="xs:string" minOccurs="0" />
+              <xs:element name="LC_NO" type="xs:string" minOccurs="0" />
+              <xs:element name="LC_ACC_NO" type="xs:string" minOccurs="0" />
+              <xs:element name="Perform_invoice" type="xs:string" minOccurs="0" />
+              <xs:element name="Perform_invoice_date" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Cargo_date" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Cargo_port" type="xs:string" minOccurs="0" />
+              <xs:element name="Arrival_port" type="xs:string" minOccurs="0" />
+              <xs:element name="cargo_method" type="xs:string" minOccurs="0" />
+              <xs:element name="Cargo_notes1" type="xs:string" minOccurs="0" />
+              <xs:element name="Cargo_notes2" type="xs:string" minOccurs="0" />
+              <xs:element name="Catgo_Media" type="xs:string" minOccurs="0" />
+              <xs:element name="Estihkak_Dayes" type="xs:short" minOccurs="0" />
+              <xs:element name="Lc_Date" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Paper_Arival_Notes" type="xs:string" minOccurs="0" />
+              <xs:element name="Country" type="xs:string" minOccurs="0" />
+              <xs:element name="Factory" type="xs:string" minOccurs="0" />
+              <xs:element name="LC_EXPIRE_DATE" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="LC_STOPED" type="xs:boolean" minOccurs="0" />
+              <xs:element name="Costmer_No" type="xs:string" minOccurs="0" />
+              <xs:element name="Inv_Notes_1" type="xs:string" minOccurs="0" />
+              <xs:element name="Inv_Notes" type="xs:string" minOccurs="0" />
+              <xs:element name="ITEM_NO" type="xs:string" minOccurs="0" />
+              <xs:element name="QTY_ADD" type="xs:decimal" minOccurs="0" />
+              <xs:element name="QTY_TAKE" type="xs:decimal" minOccurs="0" />
+              <xs:element name="total_disc" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Unit" type="xs:string" minOccurs="0" />
+              <xs:element name="Forign_price" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Local_Price" type="xs:decimal" minOccurs="0" />
+              <xs:element name="FORIN_TYPE" type="xs:string" minOccurs="0" />
+              <xs:element name="Currancy_Change_Factor" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Notes" type="xs:string" minOccurs="0" />
+              <xs:element name="main_counter" type="xs:int" minOccurs="0" />
+              <xs:element name="K_M_TYPE_ITEMS" type="xs:string" minOccurs="0" />
+              <xs:element name="TAX_IN" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TAX_OUT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="balance" type="xs:decimal" minOccurs="0" />
+              <xs:element name="COST_PRICE" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PAYER_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="payer_l_name" type="xs:string" minOccurs="0" />
+              <xs:element name="adress" type="xs:string" minOccurs="0" />
+              <xs:element name="resp_name" type="xs:string" minOccurs="0" />
+              <xs:element name="COSTMER_K_M_NO" type="xs:string" minOccurs="0" />
+              <xs:element name="phone_no" type="xs:string" minOccurs="0" />
+              <xs:element name="E_MAIL" type="xs:string" minOccurs="0" />
+              <xs:element name="branch_name" type="xs:string" minOccurs="0" />
+              <xs:element name="WH_E_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="descr" type="xs:string" minOccurs="0" />
+              <xs:element name="Descr_eng" type="xs:string" minOccurs="0" />
+              <xs:element name="Weight" type="xs:decimal" minOccurs="0" />
+              <xs:element name="USER_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="Currency_Name" type="xs:string" minOccurs="0" />
+              <xs:element name="Payment_name" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
