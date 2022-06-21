@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
-  <asmv1:assemblyIdentity name="Report_Pro.exe" version="1.0.0.2" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
+  <asmv1:assemblyIdentity name="Report_Pro.exe" version="1.0.0.6" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="amd64" type="win32" />
   <description asmv2:iconFile="report_SsV_icon.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
-    <assemblyIdentity name="Report_Pro" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <assemblyIdentity name="Report_Pro" version="1.0.0.0" language="neutral" processorArchitecture="amd64" />
     <commandLine file="Report_Pro.exe" parameters="" />
   </entryPoint>
   <trustInfo>
@@ -2504,13 +2504,13 @@
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Interop.WIA.dll" size="34816">
-      <assemblyIdentity name="Interop.WIA" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <assemblyIdentity name="Interop.WIA" version="1.0.0.0" language="neutral" processorArchitecture="amd64" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>aPkXPhMRm+adVRDafKedhcv0DonBWSaEso0IIzmHrIs=</dsig:DigestValue>
+        <dsig:DigestValue>Dyr7TRmk8S+RmHTxp/XBhKzznXipesn9ZoqCNkhj7F8=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -2611,30 +2611,6 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.ReportViewer.Common.dll" size="3649536">
-      <assemblyIdentity name="Microsoft.ReportViewer.Common" version="9.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
-      <hash>
-        <dsig:Transforms>
-          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-        </dsig:Transforms>
-        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>Di3I2DePRllazIXFiTcirLdgWOvV44wYWrY/Fw7xBGA=</dsig:DigestValue>
-      </hash>
-    </dependentAssembly>
-  </dependency>
-  <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.ReportViewer.WinForms.dll" size="339968">
-      <assemblyIdentity name="Microsoft.ReportViewer.WinForms" version="9.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
-      <hash>
-        <dsig:Transforms>
-          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-        </dsig:Transforms>
-        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>ptekjxm7qY6IVUbCu/Y2FwYI//XcBOQZir33Qt4NU6Q=</dsig:DigestValue>
-      </hash>
-    </dependentAssembly>
-  </dependency>
-  <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Newtonsoft.Json.dll" size="700336">
       <assemblyIdentity name="Newtonsoft.Json" version="12.0.0.0" publicKeyToken="30AD4FE6B2A6AEED" language="neutral" processorArchitecture="msil" />
       <hash>
@@ -2719,134 +2695,134 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Report_Pro.exe" size="44276224">
-      <assemblyIdentity name="Report_Pro" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Report_Pro.exe" size="44275712">
+      <assemblyIdentity name="Report_Pro" version="1.0.0.0" language="neutral" processorArchitecture="amd64" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>XTvsgh7uGNcp9tq4VH6C7JZfibDTM3vI1L9FnyOfAq8=</dsig:DigestValue>
+        <dsig:DigestValue>8juAJhiEXY4+GCW7LQWJ7svC6yvCRIiIU4RwImTFRx0=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="aa\Report_Pro.resources.dll" size="24064">
-      <assemblyIdentity name="Report_Pro.resources" version="1.0.0.0" language="aa" processorArchitecture="msil" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="aa\Report_Pro.resources.dll" size="23552">
+      <assemblyIdentity name="Report_Pro.resources" version="1.0.0.0" language="aa" processorArchitecture="amd64" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>oTrn3CTPgL8J1OldeRd9WNhXiwpyzwjpkfV2PhI6pO8=</dsig:DigestValue>
+        <dsig:DigestValue>HEJU1NRtNvGhur9a7aj/i5/yu57rVvtMUY2WkyAZitM=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="aa-ER\Report_Pro.resources.dll" size="6144">
-      <assemblyIdentity name="Report_Pro.resources" version="1.0.0.0" language="aa-ER" processorArchitecture="msil" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="aa-ER\Report_Pro.resources.dll" size="5632">
+      <assemblyIdentity name="Report_Pro.resources" version="1.0.0.0" language="aa-ER" processorArchitecture="amd64" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>+qPj5jGGHZRJUBEz865MaYIHn1mhLM92Vvb0WAXsmh8=</dsig:DigestValue>
+        <dsig:DigestValue>bZFkG1PifUehsR2lpLW0MEM0hduk8PLuqj9dek/qvZw=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="af-ZA\Report_Pro.resources.dll" size="4096">
-      <assemblyIdentity name="Report_Pro.resources" version="1.0.0.0" language="af-ZA" processorArchitecture="msil" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="af-ZA\Report_Pro.resources.dll" size="3584">
+      <assemblyIdentity name="Report_Pro.resources" version="1.0.0.0" language="af-ZA" processorArchitecture="amd64" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>Z/NGrRLPu/CzXavVEU6xN76gKz4VzddzHBLP4UvROio=</dsig:DigestValue>
+        <dsig:DigestValue>bNsveaOzVzZu41SMKRLJEEm19BnZRaqzf1OKXAUxcAc=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="am-ET\Report_Pro.resources.dll" size="5120">
-      <assemblyIdentity name="Report_Pro.resources" version="1.0.0.0" language="am-ET" processorArchitecture="msil" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="am-ET\Report_Pro.resources.dll" size="4608">
+      <assemblyIdentity name="Report_Pro.resources" version="1.0.0.0" language="am-ET" processorArchitecture="amd64" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>m+k5J8RZZmXSTIsjolG4M1Ih7EpsCxR8hQWw0VGlnnQ=</dsig:DigestValue>
+        <dsig:DigestValue>QmDe9xseL7/DyWyl3C/E7teA8bqtcSNGJAYx4lhu0K4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ar\Report_Pro.resources.dll" size="1698816">
-      <assemblyIdentity name="Report_Pro.resources" version="1.0.0.0" language="ar" processorArchitecture="msil" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ar\Report_Pro.resources.dll" size="1698304">
+      <assemblyIdentity name="Report_Pro.resources" version="1.0.0.0" language="ar" processorArchitecture="amd64" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>qRmjiF4ovy+3Q6xOBRPtYi9/qBvG1VFV2nO9mrkq1C8=</dsig:DigestValue>
+        <dsig:DigestValue>cETSV6x3FgE4GFh+6B2vNaaI8Nq9AUCO6CfwPMkNtxA=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ar-EG\Report_Pro.resources.dll" size="5120">
-      <assemblyIdentity name="Report_Pro.resources" version="1.0.0.0" language="ar-EG" processorArchitecture="msil" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ar-EG\Report_Pro.resources.dll" size="4608">
+      <assemblyIdentity name="Report_Pro.resources" version="1.0.0.0" language="ar-EG" processorArchitecture="amd64" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>E+wgEkI2KyEy36RFWevQB2YlzJmf3ZhgOdx+mTO7Pd8=</dsig:DigestValue>
+        <dsig:DigestValue>JAWA6m75/0hC7PiVgRKmFrutR5kBK4kzbzWfrRWU3Z8=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="en\Report_Pro.resources.dll" size="365056">
-      <assemblyIdentity name="Report_Pro.resources" version="1.0.0.0" language="en" processorArchitecture="msil" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="en\Report_Pro.resources.dll" size="364544">
+      <assemblyIdentity name="Report_Pro.resources" version="1.0.0.0" language="en" processorArchitecture="amd64" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>Y2Y4vjhdRiEbF0YNyj/uRsOne3fOwfw4l3wPtZIy0uk=</dsig:DigestValue>
+        <dsig:DigestValue>l5yIYB8HmlyNH2dshXrCd7KbMsCUXapg83U5WVAVxOk=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="en-US\Report_Pro.resources.dll" size="7168">
-      <assemblyIdentity name="Report_Pro.resources" version="1.0.0.0" language="en-US" processorArchitecture="msil" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="en-US\Report_Pro.resources.dll" size="6144">
+      <assemblyIdentity name="Report_Pro.resources" version="1.0.0.0" language="en-US" processorArchitecture="amd64" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>FS6oEC1hmZJDaycPi4+yueumpcx+xAH25fse1XksLgg=</dsig:DigestValue>
+        <dsig:DigestValue>g+ArUfxMeHxxWRSWjD0p9dUQlP9rKFu6KBiLGN3joCA=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="sq\Report_Pro.resources.dll" size="74240">
-      <assemblyIdentity name="Report_Pro.resources" version="1.0.0.0" language="sq" processorArchitecture="msil" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="sq\Report_Pro.resources.dll" size="73728">
+      <assemblyIdentity name="Report_Pro.resources" version="1.0.0.0" language="sq" processorArchitecture="amd64" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>GFttlOWcjHiMme2HjpC+d3zS9iwXgiNDsge6VLQn/44=</dsig:DigestValue>
+        <dsig:DigestValue>opFc6J2X2lOsqtuADvd5KkA8ajAxUsaKDiw07C3AgDs=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="sq-AL\Report_Pro.resources.dll" size="13312">
-      <assemblyIdentity name="Report_Pro.resources" version="1.0.0.0" language="sq-AL" processorArchitecture="msil" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="sq-AL\Report_Pro.resources.dll" size="12800">
+      <assemblyIdentity name="Report_Pro.resources" version="1.0.0.0" language="sq-AL" processorArchitecture="amd64" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>5rTeaffLIFqF9pQbHKyNuF/EDySQsOiL3Nz10pY7NCQ=</dsig:DigestValue>
+        <dsig:DigestValue>pPXITqJW71Mb7S96CxTw1llj7clTOLgH6qqRjltkS+c=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

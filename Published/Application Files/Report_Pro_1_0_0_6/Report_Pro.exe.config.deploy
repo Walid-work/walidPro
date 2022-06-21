@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <configSections>
+    <sectionGroup name="userSettings" type="System.Configuration.UserSettingsGroup, System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+      <section name="Report_Pro.Properties.Settings" type="System.Configuration.ClientSettingsSection, System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" allowExeDefinition="MachineToLocalUser" requirePermission="false"/>
+    </sectionGroup>
+    <sectionGroup name="applicationSettings" type="System.Configuration.ApplicationSettingsGroup, System">
+      <section name="DevExpress.LookAndFeel.Design.AppSettings" type="System.Configuration.ClientSettingsSection, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" requirePermission="false"/>
+    </sectionGroup>
+
+         
+  </configSections>
+  <applicationSettings>
+    <DevExpress.LookAndFeel.Design.AppSettings>
+    
+      <setting name="DefaultPalette" serializeAs="String">
+        <value></value>
+      </setting>
+      <setting name="TouchUI" serializeAs="String">
+        <value></value>
+      </setting>
+      <setting name="CompactUI" serializeAs="String">
+        <value></value>
+      </setting>
+      <setting name="TouchScaleFactor" serializeAs="String">
+        <value></value>
+      </setting>
+      <setting name="DirectX" serializeAs="String">
+        <value></value>
+      </setting>
+      <setting name="RegisterUserSkins" serializeAs="String">
+        <value></value>
+      </setting>
+      <setting name="RegisterBonusSkins" serializeAs="String">
+        <value>True</value>
+      </setting>
+      <setting name="FontBehavior" serializeAs="String">
+        <value></value>
+      </setting>
+      <setting name="DefaultAppFont" serializeAs="String">
+        <value></value>
+      </setting>
+      <setting name="DPIAwarenessMode" serializeAs="String">
+        <value></value>
+      </setting>
+      <setting name="CustomPaletteCollection" serializeAs="Xml">
+        <value/>
+      </setting>
+    </DevExpress.LookAndFeel.Design.AppSettings>
+  </applicationSettings>
+  <connectionStrings>
+    <add name="schema_rpt" connectionString="XpoProvider=InMemoryDataStore;data source=C:\Report_Pro\Report_Pro\bin\Debug\schema_rpt.xml;read only=True" />
+    <add name="localhost_Connection" connectionString="XpoProvider=MSSqlServer;data source=localhost;integrated security=SSPI;initial catalog=main_acc_wh" />
+    <add name="schema_rpt 1" connectionString="XpoProvider=InMemoryDataStore;data source=&quot;C:\my_program - 11-11-2020\Report_Pro\Report_Pro\bin\Debug\schema_rpt.xml&quot;;read only=True" />
+    <add name="schemaReport" connectionString="XpoProvider=InMemoryDataStore;data source=&quot;C:\my_program - 11-11-2020\Report_Pro\Report_Pro\bin\Debug\schema_rpt.xml&quot;;read only=True" />
+    <add name="schema_New_rpt" connectionString="XpoProvider=InMemoryDataStore;data source=&quot;C:\my_program - 11-11-2020\New Report\Report_Pro\bin\Debug\schema_rpt.xml&quot;;read only=True" />
+    <add name="schema_rpt_New" connectionString="XpoProvider=InMemoryDataStore;data source=&quot;C:\my_program - 11-11-2020\New Report\Report_Pro\bin\Debug\schema_New_rpt.xml&quot;;read only=True" />
+    <add name="Connection" connectionString="xpoprovider=InMemoryDataStore;data source=&quot;C:\my_program - 11-11-2020\Report_Pro\Report_Pro\bin\Debug\schema_rpt.xml&quot;;read only=True" />
+    <add name="Connection 1" connectionString="xpoprovider=InMemoryDataStore;data source=&quot;C:\my_program - 11-11-2020\Report_Pro\Report_Pro\bin\Debug\schema_rpt.xml&quot;;read only=True" />
+    <add name="schema_rpt 2" connectionString="XpoProvider=InMemoryDataStore;data source=C:\Users\walid\Downloads\My-Github\ReportPro\Report_Pro\bin\Debug\schema_rpt.xml;read only=True" />
+    <add name="Report_Schema" connectionString="xpoprovider=InMemoryDataStore;data source=Report_Pro\bin\Debug\schema_rpt.xml;read only=True" />
+    <add name="schema1" connectionString="XpoProvider=InMemoryDataStore;data source=C:\My-Github\ReportProgram\Report_Pro\bin\Debug\schema1.xml;read only=True" />
+    <add name="schema1_1" connectionString="XpoProvider=InMemoryDataStore;data source=D:\MyProgram\ReportProgram\Report_Pro\bin\Debug\schema1.xml;read only=True" />
+    <add name="Connection 2" connectionString="xpoprovider=InMemoryDataStore;data source=D:\MyProgram\ReportProgram\Report_Pro\bin\Debug\schema_rpt.xml;read only=True" />
+    <add name="schema_1" connectionString="XpoProvider=InMemoryDataStore;data source=C:\Report_Program\ReportProgram\Report_Pro\bin\Debug\schema1.xml;read only=True" />
+    <add name="Connection 3" connectionString="XpoProvider=InMemoryDataStore;data source=C:\Report_Program\ReportProgram\Report_Pro\bin\Debug\schema1.xml;read only=True" />
+    <add name="reportpro_schema_rpt" connectionString="XpoProvider=InMemoryDataStore;data source=C:\Report_Program\ReportProgram\Report_Pro\bin\Debug\schema_rpt.xml;read only=True" />
+    <add name="LinqConStr.Properties.Settings.main_acc_whConnectionString2"
+      connectionString="Data Source=.;Initial Catalog=main_acc_wh;User ID=bilal;Password=hassan"
+      providerName="System.Data.SqlClient" />
+    <add name="Report_Pro.Properties.Settings.BahrainConnectionString"
+      connectionString="Data Source=7.48.214.69;Initial Catalog=main_acc_wh;Integrated Security=True"
+      providerName="System.Data.SqlClient" />
+    <add name="Report_Pro.Properties.Settings.main_acc_whConnectionString"
+      connectionString="Data Source=7.48.214.69;Initial Catalog=main_acc_wh;User ID=bilal;Password=hassan"
+      providerName="System.Data.SqlClient" />
+    <add name="reports_" connectionString="xpoprovider=InMemoryDataStore;data source=C:\Report_Program\ReportProgram\Report_Pro\bin\Debug\schema_rpt.xml;read only=True" />
+    <add name="schema_rpt_reports" connectionString="XpoProvider=InMemoryDataStore;data source=C:\Report_Program\ReportProgram\Report_Pro\bin\Debug\schema_rpt.xml;read only=True" />
+    <add name="reports" connectionString="XpoProvider=InMemoryDataStore;data source=C:\Report_Program\ReportProgram\Report_Pro\bin\Debug\reports.xml;read only=True" />
+    <add name="Report_Pro.Properties.Settings.main_acc_whConnectionString1"
+      connectionString="Data Source=server;Initial Catalog=main_acc_wh;User ID=bilal;Password=hassan"
+      providerName="System.Data.SqlClient" />
+    <add name="Report_Pro.Properties.Settings.main_acc_whConnectionString2"
+      connectionString="Data Source=server;Initial Catalog=main_acc_wh;Persist Security Info=True;User ID=bilal;Password=hassan"
+      providerName="System.Data.SqlClient" />
+  </connectionStrings>
+  <userSettings>
+    <Report_Pro.Properties.Settings>
+      <setting name="Database_1" serializeAs="String">
+        <value>main_acc_wh</value>
+      </setting>
+      <setting name="CoId" serializeAs="String">
+        <value />
+      </setting>
+      <setting name="Report_P" serializeAs="String">
+        <value />
+      </setting>
+      <setting name="Invoice_P" serializeAs="String">
+        <value />
+      </setting>
+      <setting name="Server" serializeAs="String">
+        <value>.</value>
+      </setting>
+      <setting name="Database" serializeAs="String">
+        <value>ReportDB</value>
+      </setting>
+      <setting name="Mode" serializeAs="String">
+        <value>sql</value>
+      </setting>
+      <setting name="Id" serializeAs="String">
+        <value>bilal</value>
+      </setting>
+      <setting name="Password" serializeAs="String">
+        <value>hassan</value>
+      </setting>
+      <setting name="digitNo_" serializeAs="String">
+        <value>2</value>
+      </setting>
+      <setting name="head_txt" serializeAs="String">
+        <value>شركة عثمان عبد الرحمن العصيمي وشركاه التجارية</value>
+      </setting>
+      <setting name="lungh" serializeAs="String">
+        <value>0</value>
+      </setting>
+      <setting name="closeAcc" serializeAs="String">
+        <value />
+      </setting>
+      <setting name="head_txt_EN" serializeAs="String">
+        <value />
+      </setting>
+      <setting name="Currency" serializeAs="String">
+        <value>SAR</value>
+      </setting>
+      <setting name="Branch_txt" serializeAs="String">
+        <value />
+      </setting>
+      <setting name="Branch_txt_EN" serializeAs="String">
+        <value />
+      </setting>
+      <setting name="inv_print" serializeAs="String">
+        <value />
+      </setting>
+      <setting name="TRANS_TO_ACC" serializeAs="String">
+        <value />
+      </setting>
+      <setting name="BranchAccID" serializeAs="String">
+        <value />
+      </setting>
+      <setting name="EmailCC" serializeAs="String">
+        <value />
+      </setting>
+      <setting name="DateFormate" serializeAs="String">
+        <value />
+      </setting>
+      <setting name="BranchId" serializeAs="String">
+        <value />
+      </setting>
+      <setting name="Setting" serializeAs="String">
+        <value />
+      </setting>
+      <setting name="font_" serializeAs="String">
+        <value>8</value>
+      </setting>
+      <setting name="password1" serializeAs="String">
+        <value />
+      </setting>
+      <setting name="Barcode_P" serializeAs="String">
+        <value />
+      </setting>
+      <setting name="C_year" serializeAs="String">
+        <value />
+      </setting>
+      <setting name="Scan" serializeAs="String">
+        <value />
+      </setting>
+      <setting name="SalesDBConnectionString" serializeAs="String">
+        <value />
+      </setting>
+      <setting name="A_Main_currancy" serializeAs="String">
+        <value>ريال</value>
+      </setting>
+      <setting name="E_Main_currancy" serializeAs="String">
+        <value>SAR</value>
+      </setting>
+      <setting name="A_sub_currancy" serializeAs="String">
+        <value>هلله</value>
+      </setting>
+      <setting name="e_sub_currancy" serializeAs="String">
+        <value>H</value>
+      </setting>
+    </Report_Pro.Properties.Settings>
+  </userSettings>
+  <startup>
+    <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.7.2"/>
+  </startup>
+  <runtime>
+    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+      <dependentAssembly>
+        <assemblyIdentity name="zxing" publicKeyToken="4e88037ac681fe60" culture="neutral"/>
+        <bindingRedirect oldVersion="0.0.0.0-0.16.8.0" newVersion="0.16.8.0"/>
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="Syncfusion.Licensing" publicKeyToken="632609b4d040f6b4" culture="neutral"/>
+        <bindingRedirect oldVersion="0.0.0.0-20.1451.0.48" newVersion="20.1451.0.48"/>
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="Google.Apis.Auth" publicKeyToken="4b01fa6e34db77ab" culture="neutral"/>
+        <bindingRedirect oldVersion="0.0.0.0-1.51.0.0" newVersion="1.51.0.0"/>
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="Google.Apis" publicKeyToken="4b01fa6e34db77ab" culture="neutral"/>
+        <bindingRedirect oldVersion="0.0.0.0-1.51.0.0" newVersion="1.51.0.0"/>
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="Google.Apis.Core" publicKeyToken="4b01fa6e34db77ab" culture="neutral"/>
+        <bindingRedirect oldVersion="0.0.0.0-1.51.0.0" newVersion="1.51.0.0"/>
+      </dependentAssembly>
+    </assemblyBinding>
+  </runtime>
+</configuration>
