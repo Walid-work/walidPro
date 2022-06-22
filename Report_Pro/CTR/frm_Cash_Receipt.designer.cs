@@ -28,21 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle47 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_Cash_Receipt));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle43 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle44 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle45 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle46 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle48 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle55 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle56 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle49 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle50 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle51 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle52 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle53 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle54 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgv1 = new DevComponents.DotNetBar.Controls.DataGridViewX();
             this._InvNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this._year = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -68,6 +68,8 @@
             this.print_sand = new DevComponents.DotNetBar.ButtonItem();
             this.BExit = new DevComponents.DotNetBar.ButtonItem();
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
+            this.glkp_bank = new DevExpress.XtraEditors.GridLookUpEdit();
+            this.gridLookUpEdit1View = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.txtSpecialNo = new System.Windows.Forms.TextBox();
             this.txtDescr_E = new System.Windows.Forms.TextBox();
             this.txt_sandNo = new Report_Pro.MyControls.textWithButton();
@@ -94,6 +96,7 @@
             this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem7 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem15 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem16 = new DevExpress.XtraLayout.LayoutControlItem();
             this.user_id = new DevComponents.DotNetBar.LabelX();
             this.emptySpaceItem3 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.Btn_NonPayInvoice = new DevExpress.XtraEditors.SimpleButton();
@@ -121,12 +124,12 @@
             this.label5 = new System.Windows.Forms.Label();
             this.txtBalance = new Report_Pro.MyControls.decimalText();
             this.cheuqeOrCash = new DevComponents.DotNetBar.LabelX();
-            this.glkp_bank = new DevExpress.XtraEditors.GridLookUpEdit();
-            this.layoutControlItem16 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.gridLookUpEdit1View = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgv1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.glkp_bank.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridLookUpEdit1View)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_sandDate)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Check_Date)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Root)).BeginInit();
@@ -144,11 +147,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem15)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem16)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.glkp_bank.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem16)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridLookUpEdit1View)).BeginInit();
             this.SuspendLayout();
             // 
             // dgv1
@@ -167,14 +168,14 @@
             this._Paid,
             this._balance,
             this._transaction_Code});
-            dataGridViewCellStyle47.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle47.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle47.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle47.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            dataGridViewCellStyle47.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle47.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            dataGridViewCellStyle47.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv1.DefaultCellStyle = dataGridViewCellStyle47;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv1.DefaultCellStyle = dataGridViewCellStyle5;
             this.dgv1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
             resources.ApplyResources(this.dgv1, "dgv1");
             this.dgv1.Name = "dgv1";
@@ -207,27 +208,27 @@
             // 
             // _amount
             // 
-            dataGridViewCellStyle43.Format = "N3";
-            dataGridViewCellStyle43.NullValue = "0";
-            this._amount.DefaultCellStyle = dataGridViewCellStyle43;
+            dataGridViewCellStyle1.Format = "N3";
+            dataGridViewCellStyle1.NullValue = "0";
+            this._amount.DefaultCellStyle = dataGridViewCellStyle1;
             resources.ApplyResources(this._amount, "_amount");
             this._amount.Name = "_amount";
             this._amount.ReadOnly = true;
             // 
             // _return
             // 
-            dataGridViewCellStyle44.Format = "N3";
-            dataGridViewCellStyle44.NullValue = "0";
-            this._return.DefaultCellStyle = dataGridViewCellStyle44;
+            dataGridViewCellStyle2.Format = "N3";
+            dataGridViewCellStyle2.NullValue = "0";
+            this._return.DefaultCellStyle = dataGridViewCellStyle2;
             resources.ApplyResources(this._return, "_return");
             this._return.Name = "_return";
             this._return.ReadOnly = true;
             // 
             // _Paid
             // 
-            dataGridViewCellStyle45.Format = "N3";
-            dataGridViewCellStyle45.NullValue = "0";
-            this._Paid.DefaultCellStyle = dataGridViewCellStyle45;
+            dataGridViewCellStyle3.Format = "N3";
+            dataGridViewCellStyle3.NullValue = "0";
+            this._Paid.DefaultCellStyle = dataGridViewCellStyle3;
             resources.ApplyResources(this._Paid, "_Paid");
             this._Paid.Name = "_Paid";
             this._Paid.ReadOnly = true;
@@ -235,9 +236,9 @@
             // _balance
             // 
             this._balance.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle46.Format = "N3";
-            dataGridViewCellStyle46.NullValue = "0";
-            this._balance.DefaultCellStyle = dataGridViewCellStyle46;
+            dataGridViewCellStyle4.Format = "N3";
+            dataGridViewCellStyle4.NullValue = "0";
+            this._balance.DefaultCellStyle = dataGridViewCellStyle4;
             resources.ApplyResources(this._balance, "_balance");
             this._balance.Name = "_balance";
             this._balance.ReadOnly = true;
@@ -453,6 +454,25 @@
             this.layoutControl1.OptionsFocus.MoveFocusRightToLeft = false;
             this.layoutControl1.OptionsView.RightToLeftMirroringApplied = true;
             this.layoutControl1.Root = this.Root;
+            // 
+            // glkp_bank
+            // 
+            resources.ApplyResources(this.glkp_bank, "glkp_bank");
+            this.glkp_bank.Name = "glkp_bank";
+            this.glkp_bank.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("glkp_bank.Properties.Buttons")))),
+            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("glkp_bank.Properties.Buttons1"))))});
+            this.glkp_bank.Properties.NullText = resources.GetString("glkp_bank.Properties.NullText");
+            this.glkp_bank.Properties.PopupView = this.gridLookUpEdit1View;
+            this.glkp_bank.StyleController = this.layoutControl1;
+            this.glkp_bank.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.glkp_bank_ButtonClick);
+            // 
+            // gridLookUpEdit1View
+            // 
+            this.gridLookUpEdit1View.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
+            this.gridLookUpEdit1View.Name = "gridLookUpEdit1View";
+            this.gridLookUpEdit1View.OptionsSelection.EnableAppearanceFocusedCell = false;
+            this.gridLookUpEdit1View.OptionsView.ShowGroupPanel = false;
             // 
             // txtSpecialNo
             // 
@@ -872,6 +892,19 @@
             this.layoutControlItem15.TextSize = new System.Drawing.Size(100, 20);
             this.layoutControlItem15.TextToControlDistance = 0;
             // 
+            // layoutControlItem16
+            // 
+            this.layoutControlItem16.AppearanceItemCaption.Options.UseTextOptions = true;
+            this.layoutControlItem16.AppearanceItemCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.layoutControlItem16.Control = this.glkp_bank;
+            this.layoutControlItem16.Location = new System.Drawing.Point(0, 270);
+            this.layoutControlItem16.Name = "layoutControlItem16";
+            this.layoutControlItem16.Size = new System.Drawing.Size(561, 24);
+            resources.ApplyResources(this.layoutControlItem16, "layoutControlItem16");
+            this.layoutControlItem16.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.CustomSize;
+            this.layoutControlItem16.TextSize = new System.Drawing.Size(100, 20);
+            this.layoutControlItem16.TextToControlDistance = 0;
+            // 
             // user_id
             // 
             this.user_id.BackColor = System.Drawing.Color.Transparent;
@@ -917,14 +950,14 @@
             // 
             this.dgv2.AllowUserToAddRows = false;
             this.dgv2.BackgroundColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle48.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle48.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle48.Font = new System.Drawing.Font("Tahoma", 8F);
-            dataGridViewCellStyle48.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle48.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle48.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle48.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle48;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Tahoma", 8F);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.dgv2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.col_invNo,
@@ -939,25 +972,25 @@
             this.col_newBalance,
             this.col_sanadBalance,
             this.col_transactionCode});
-            dataGridViewCellStyle55.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle55.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle55.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle55.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            dataGridViewCellStyle55.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle55.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            dataGridViewCellStyle55.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv2.DefaultCellStyle = dataGridViewCellStyle55;
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle13.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv2.DefaultCellStyle = dataGridViewCellStyle13;
             this.dgv2.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
             resources.ApplyResources(this.dgv2, "dgv2");
             this.dgv2.Name = "dgv2";
-            dataGridViewCellStyle56.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle56.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle56.Font = new System.Drawing.Font("Tahoma", 8F);
-            dataGridViewCellStyle56.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle56.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle56.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle56.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv2.RowHeadersDefaultCellStyle = dataGridViewCellStyle56;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle14.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Tahoma", 8F);
+            dataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv2.RowHeadersDefaultCellStyle = dataGridViewCellStyle14;
             this.dgv2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgv2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv2_CellContentClick);
             this.dgv2.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv2_CellDoubleClick);
@@ -987,54 +1020,54 @@
             // 
             // col_invAmount
             // 
-            dataGridViewCellStyle49.Format = "N3";
-            dataGridViewCellStyle49.NullValue = null;
-            this.col_invAmount.DefaultCellStyle = dataGridViewCellStyle49;
+            dataGridViewCellStyle7.Format = "N3";
+            dataGridViewCellStyle7.NullValue = null;
+            this.col_invAmount.DefaultCellStyle = dataGridViewCellStyle7;
             resources.ApplyResources(this.col_invAmount, "col_invAmount");
             this.col_invAmount.Name = "col_invAmount";
             this.col_invAmount.ReadOnly = true;
             // 
             // col_retruned
             // 
-            dataGridViewCellStyle50.Format = "N3";
-            dataGridViewCellStyle50.NullValue = "0";
-            this.col_retruned.DefaultCellStyle = dataGridViewCellStyle50;
+            dataGridViewCellStyle8.Format = "N3";
+            dataGridViewCellStyle8.NullValue = "0";
+            this.col_retruned.DefaultCellStyle = dataGridViewCellStyle8;
             resources.ApplyResources(this.col_retruned, "col_retruned");
             this.col_retruned.Name = "col_retruned";
             this.col_retruned.ReadOnly = true;
             // 
             // col_oldPaid
             // 
-            dataGridViewCellStyle51.Format = "N3";
-            dataGridViewCellStyle51.NullValue = "0";
-            this.col_oldPaid.DefaultCellStyle = dataGridViewCellStyle51;
+            dataGridViewCellStyle9.Format = "N3";
+            dataGridViewCellStyle9.NullValue = "0";
+            this.col_oldPaid.DefaultCellStyle = dataGridViewCellStyle9;
             resources.ApplyResources(this.col_oldPaid, "col_oldPaid");
             this.col_oldPaid.Name = "col_oldPaid";
             // 
             // col_oldBalance
             // 
             this.col_oldBalance.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle52.Format = "N3";
-            dataGridViewCellStyle52.NullValue = "0";
-            this.col_oldBalance.DefaultCellStyle = dataGridViewCellStyle52;
+            dataGridViewCellStyle10.Format = "N3";
+            dataGridViewCellStyle10.NullValue = "0";
+            this.col_oldBalance.DefaultCellStyle = dataGridViewCellStyle10;
             resources.ApplyResources(this.col_oldBalance, "col_oldBalance");
             this.col_oldBalance.Name = "col_oldBalance";
             this.col_oldBalance.ReadOnly = true;
             // 
             // col_currentPaid
             // 
-            dataGridViewCellStyle53.Format = "N3";
-            dataGridViewCellStyle53.NullValue = "0";
-            this.col_currentPaid.DefaultCellStyle = dataGridViewCellStyle53;
+            dataGridViewCellStyle11.Format = "N3";
+            dataGridViewCellStyle11.NullValue = "0";
+            this.col_currentPaid.DefaultCellStyle = dataGridViewCellStyle11;
             resources.ApplyResources(this.col_currentPaid, "col_currentPaid");
             this.col_currentPaid.Name = "col_currentPaid";
             // 
             // col_newBalance
             // 
             this.col_newBalance.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle54.Format = "N3";
-            dataGridViewCellStyle54.NullValue = "0";
-            this.col_newBalance.DefaultCellStyle = dataGridViewCellStyle54;
+            dataGridViewCellStyle12.Format = "N3";
+            dataGridViewCellStyle12.NullValue = "0";
+            this.col_newBalance.DefaultCellStyle = dataGridViewCellStyle12;
             resources.ApplyResources(this.col_newBalance, "col_newBalance");
             this.col_newBalance.Name = "col_newBalance";
             // 
@@ -1162,37 +1195,10 @@
             resources.ApplyResources(this.cheuqeOrCash, "cheuqeOrCash");
             this.cheuqeOrCash.Name = "cheuqeOrCash";
             // 
-            // glkp_bank
+            // textBox1
             // 
-            resources.ApplyResources(this.glkp_bank, "glkp_bank");
-            this.glkp_bank.Name = "glkp_bank";
-            this.glkp_bank.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("gridLookUpEdit1.Properties.Buttons")))),
-            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("gridLookUpEdit1.Properties.Buttons1"))))});
-            this.glkp_bank.Properties.NullText = resources.GetString("gridLookUpEdit1.Properties.NullText");
-            this.glkp_bank.Properties.PopupView = this.gridLookUpEdit1View;
-            this.glkp_bank.StyleController = this.layoutControl1;
-            this.glkp_bank.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.glkp_bank_ButtonClick);
-            // 
-            // layoutControlItem16
-            // 
-            this.layoutControlItem16.AppearanceItemCaption.Options.UseTextOptions = true;
-            this.layoutControlItem16.AppearanceItemCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.layoutControlItem16.Control = this.glkp_bank;
-            this.layoutControlItem16.Location = new System.Drawing.Point(0, 270);
-            this.layoutControlItem16.Name = "layoutControlItem16";
-            this.layoutControlItem16.Size = new System.Drawing.Size(561, 24);
-            resources.ApplyResources(this.layoutControlItem16, "layoutControlItem16");
-            this.layoutControlItem16.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.CustomSize;
-            this.layoutControlItem16.TextSize = new System.Drawing.Size(100, 20);
-            this.layoutControlItem16.TextToControlDistance = 0;
-            // 
-            // gridLookUpEdit1View
-            // 
-            this.gridLookUpEdit1View.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
-            this.gridLookUpEdit1View.Name = "gridLookUpEdit1View";
-            this.gridLookUpEdit1View.OptionsSelection.EnableAppearanceFocusedCell = false;
-            this.gridLookUpEdit1View.OptionsView.ShowGroupPanel = false;
+            resources.ApplyResources(this.textBox1, "textBox1");
+            this.textBox1.Name = "textBox1";
             // 
             // frm_Cash_Receipt
             // 
@@ -1202,6 +1208,7 @@
             this.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.cheuqeOrCash);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtBalance);
@@ -1249,9 +1256,12 @@
             this.Controls.SetChildIndex(this.txtBalance, 0);
             this.Controls.SetChildIndex(this.label5, 0);
             this.Controls.SetChildIndex(this.cheuqeOrCash, 0);
+            this.Controls.SetChildIndex(this.textBox1, 0);
             ((System.ComponentModel.ISupportInitialize)(this.dgv1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.glkp_bank.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridLookUpEdit1View)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_sandDate)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Check_Date)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Root)).EndInit();
@@ -1269,11 +1279,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem16)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.glkp_bank.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem16)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridLookUpEdit1View)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1361,5 +1369,6 @@
         private DevExpress.XtraEditors.GridLookUpEdit glkp_bank;
         private DevExpress.XtraGrid.Views.Grid.GridView gridLookUpEdit1View;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem16;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing; using System.Linq;
 using System.Data;
-using HijriDate;
+//using HijriDate;
 using System.Text;
 using System.Windows.Forms;
 
@@ -130,9 +130,9 @@ namespace Report_Pro.MyControls
     
         private void HD_ButtonCustomClick(object sender, EventArgs e)
         {
-           HijriDatePicker  hijriDT = new HijriDatePicker();
-           hijriDT.Show();
-           hijriDT.BringToFront();
+           //HijriDatePicker  hijriDT = new HijriDatePicker();
+           //hijriDT.Show();
+           //hijriDT.BringToFront();
         }
 
         private void HD_KeyDown_1(object sender, KeyEventArgs e)

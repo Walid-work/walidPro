@@ -198,7 +198,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;dgv1.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>18</value>
   </data>
   <data name="txt_sanad_type2.Location" type="System.Drawing.Point, System.Drawing">
     <value>398, 893</value>
@@ -219,7 +219,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;txt_sanad_type2.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>13</value>
   </data>
   <data name="Cost.Location" type="System.Drawing.Point, System.Drawing">
     <value>112, 415</value>
@@ -295,7 +295,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;txt_source_code.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>14</value>
   </data>
   <data name="txtStore_ID.Location" type="System.Drawing.Point, System.Drawing">
     <value>398, 933</value>
@@ -316,7 +316,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;txtStore_ID.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>17</value>
   </data>
   <data name="acc_year.Location" type="System.Drawing.Point, System.Drawing">
     <value>398, 953</value>
@@ -337,7 +337,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;acc_year.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>16</value>
   </data>
   <data name="Payment_Type.Location" type="System.Drawing.Point, System.Drawing">
     <value>398, 913</value>
@@ -358,7 +358,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Payment_Type.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>15</value>
   </data>
   <data name="Acc_Cr.Location" type="System.Drawing.Point, System.Drawing">
     <value>112, 147</value>
@@ -512,7 +512,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;ribbonBar1.ZOrder" xml:space="preserve">
-    <value>20</value>
+    <value>21</value>
   </data>
   <data name="glkp_bank.EditValue" xml:space="preserve">
     <value> </value>
@@ -521,13 +521,13 @@
     <value>112, 282</value>
   </data>
   <assembly alias="DevExpress.Utils.v21.2" name="DevExpress.Utils.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-  <data name="gridLookUpEdit1.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v21.2">
+  <data name="glkp_bank.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v21.2">
     <value>Combo</value>
   </data>
-  <data name="gridLookUpEdit1.Properties.Buttons1" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v21.2">
+  <data name="glkp_bank.Properties.Buttons1" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v21.2">
     <value>Plus</value>
   </data>
-  <data name="gridLookUpEdit1.Properties.NullText" xml:space="preserve">
+  <data name="glkp_bank.Properties.NullText" xml:space="preserve">
     <value />
   </data>
   <data name="glkp_bank.Size" type="System.Drawing.Size, System.Drawing">
@@ -546,7 +546,7 @@
     <value>layoutControl1</value>
   </data>
   <data name="&gt;&gt;glkp_bank.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>4</value>
   </data>
   <data name="txtSpecialNo.Location" type="System.Drawing.Point, System.Drawing">
     <value>112, 93</value>
@@ -821,27 +821,6 @@
   <data name="layoutControl1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 24</value>
   </data>
-  <data name="layoutControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>581, 450</value>
-  </data>
-  <data name="layoutControl1.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="layoutControl1.Text" xml:space="preserve">
-    <value>layoutControl1</value>
-  </data>
-  <data name="&gt;&gt;layoutControl1.Name" xml:space="preserve">
-    <value>layoutControl1</value>
-  </data>
-  <data name="&gt;&gt;layoutControl1.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControl, DevExpress.XtraLayout.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;layoutControl1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;layoutControl1.ZOrder" xml:space="preserve">
-    <value>19</value>
-  </data>
   <data name="layoutControlItem3.Text" xml:space="preserve">
     <value>Payment Method</value>
   </data>
@@ -878,6 +857,30 @@
   <data name="layoutControlItem15.Text" xml:space="preserve">
     <value>Special No</value>
   </data>
+  <data name="layoutControlItem16.Text" xml:space="preserve">
+    <value>Bank</value>
+  </data>
+  <data name="layoutControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>581, 450</value>
+  </data>
+  <data name="layoutControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="layoutControl1.Text" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;layoutControl1.Name" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;layoutControl1.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControl, DevExpress.XtraLayout.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControl1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;layoutControl1.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
   <data name="user_id.Location" type="System.Drawing.Point, System.Drawing">
     <value>621, 913</value>
   </data>
@@ -897,7 +900,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;user_id.ZOrder" xml:space="preserve">
-    <value>18</value>
+    <value>19</value>
   </data>
   <data name="Btn_NonPayInvoice.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 10pt, style=Bold</value>
@@ -959,7 +962,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Btn_NonPayInvoice.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>12</value>
   </data>
   <metadata name="col_invNo.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -1073,7 +1076,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;dgv2.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>11</value>
   </data>
   <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
     <value>1186, 617</value>
@@ -1100,7 +1103,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
     <value>1203, 446</value>
@@ -1127,7 +1130,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>21</value>
+    <value>22</value>
   </data>
   <data name="txtTotalChoseInvoices.Location" type="System.Drawing.Point, System.Drawing">
     <value>1296, 617</value>
@@ -1151,7 +1154,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;txtTotalChoseInvoices.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
   </data>
   <data name="txtTotalInvoices.Location" type="System.Drawing.Point, System.Drawing">
     <value>1313, 446</value>
@@ -1175,7 +1178,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;txtTotalInvoices.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>10</value>
   </data>
   <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1205,7 +1208,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="txtNoOfInvoices.Location" type="System.Drawing.Point, System.Drawing">
     <value>1296, 594</value>
@@ -1229,7 +1232,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;txtNoOfInvoices.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="label4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1259,7 +1262,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="txtTotalPaid.Location" type="System.Drawing.Point, System.Drawing">
     <value>1296, 641</value>
@@ -1283,7 +1286,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;txtTotalPaid.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="label5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1313,7 +1316,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="txtBalance.Location" type="System.Drawing.Point, System.Drawing">
     <value>1296, 671</value>
@@ -1337,7 +1340,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;txtBalance.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="cheuqeOrCash.Location" type="System.Drawing.Point, System.Drawing">
     <value>576, 343</value>
@@ -1358,10 +1361,28 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;cheuqeOrCash.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
-  <data name="layoutControlItem16.Text" xml:space="preserve">
-    <value>Bank</value>
+  <data name="textBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>587, 446</value>
+  </data>
+  <data name="textBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 20</value>
+  </data>
+  <data name="textBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>323</value>
+  </data>
+  <data name="&gt;&gt;textBox1.Name" xml:space="preserve">
+    <value>textBox1</value>
+  </data>
+  <data name="&gt;&gt;textBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;textBox1.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -1370,7 +1391,7 @@
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1681, 1068</value>
+    <value>1695, 1068</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>
@@ -1462,6 +1483,12 @@
   <data name="&gt;&gt;BExit.Type" xml:space="preserve">
     <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
   </data>
+  <data name="&gt;&gt;gridLookUpEdit1View.Name" xml:space="preserve">
+    <value>gridLookUpEdit1View</value>
+  </data>
+  <data name="&gt;&gt;gridLookUpEdit1View.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
   <data name="&gt;&gt;Root.Name" xml:space="preserve">
     <value>Root</value>
   </data>
@@ -1552,6 +1579,12 @@
   <data name="&gt;&gt;layoutControlItem15.Type" xml:space="preserve">
     <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
+  <data name="&gt;&gt;layoutControlItem16.Name" xml:space="preserve">
+    <value>layoutControlItem16</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem16.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
   <data name="&gt;&gt;emptySpaceItem3.Name" xml:space="preserve">
     <value>emptySpaceItem3</value>
   </data>
@@ -1629,18 +1662,6 @@
   </data>
   <data name="&gt;&gt;col_transactionCode.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;layoutControlItem16.Name" xml:space="preserve">
-    <value>layoutControlItem16</value>
-  </data>
-  <data name="&gt;&gt;layoutControlItem16.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;gridLookUpEdit1View.Name" xml:space="preserve">
-    <value>gridLookUpEdit1View</value>
-  </data>
-  <data name="&gt;&gt;gridLookUpEdit1View.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>frm_Cash_Receipt</value>
