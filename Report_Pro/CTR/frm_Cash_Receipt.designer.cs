@@ -124,7 +124,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.txtBalance = new Report_Pro.MyControls.decimalText();
             this.cheuqeOrCash = new DevComponents.DotNetBar.LabelX();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgv1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
@@ -1195,11 +1194,6 @@
             resources.ApplyResources(this.cheuqeOrCash, "cheuqeOrCash");
             this.cheuqeOrCash.Name = "cheuqeOrCash";
             // 
-            // textBox1
-            // 
-            resources.ApplyResources(this.textBox1, "textBox1");
-            this.textBox1.Name = "textBox1";
-            // 
             // frm_Cash_Receipt
             // 
             this.Appearance.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
@@ -1208,7 +1202,6 @@
             this.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.cheuqeOrCash);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtBalance);
@@ -1256,7 +1249,6 @@
             this.Controls.SetChildIndex(this.txtBalance, 0);
             this.Controls.SetChildIndex(this.label5, 0);
             this.Controls.SetChildIndex(this.cheuqeOrCash, 0);
-            this.Controls.SetChildIndex(this.textBox1, 0);
             ((System.ComponentModel.ISupportInitialize)(this.dgv1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);
@@ -1369,6 +1361,5 @@
         private DevExpress.XtraEditors.GridLookUpEdit glkp_bank;
         private DevExpress.XtraGrid.Views.Grid.GridView gridLookUpEdit1View;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem16;
-        private System.Windows.Forms.TextBox textBox1;
     }
 }
