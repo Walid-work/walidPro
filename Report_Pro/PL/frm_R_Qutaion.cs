@@ -294,6 +294,7 @@ namespace Report_Pro.PL
         }
 
         private void TxtId_KeyDown(object sender, KeyEventArgs e)
+
         {
             if (e.KeyCode == Keys.Enter && TxtId.Text!="")
             {
@@ -303,18 +304,18 @@ namespace Report_Pro.PL
                 where item_no='"+TxtId.Text+ "' or factory_no='" + TxtId.Text+"'");
                 if (dt.Rows.Count > 0)
                 {
-                    TxtId.Text = dt.Rows[0][0].ToString();
+                    TxtId.Text = dt.Rows[0]["item_no"].ToString();
                     if (Properties.Settings.Default.lungh == "0")
                     {
-                        TxtDesc.Text = dt.Rows[0][2].ToString();
+                        TxtDesc.Text = dt.Rows[0]["descr"].ToString();
                     }
                     else
                     {
-                        TxtDesc.Text = dt.Rows[0][3].ToString();
+                        TxtDesc.Text = dt.Rows[0]["Descr_eng"].ToString();
                     }
-                    txtUnitWeight.Text = dt.Rows[0][4].ToString().ToDecimal().ToString("N3");
-                    txtUnit.Text = dt.Rows[0][5].ToString();
-                    txtBalance.Text = dt.Rows[0][6].ToString().ToDecimal().ToString("N1");
+                    txtUnitWeight.Text = dt.Rows[0]["Weight"].ToString().ToDecimal().ToString("N3");
+                    txtUnit.SelectedValue = dt.Rows[0]["unit"].ToString();
+                    txtBalance.Text = dt.Rows[0]["BALANCE"].ToString().ToDecimal().ToString("N1");
                    
                    
                     txtNote.Focus();
@@ -961,14 +962,19 @@ if (dt_RQ.Rows.Count > 0)
 
         private void txtUnit_SelectedIndexChanged(object sender, EventArgs e)
         {
-            try
+            DataTable dt_ = dal.getDataTabl_1(@"SELECT unit_Weight FROM units_tbl where item_no='" + TxtId.Text + "'  and  unit_code='" + txtUnit.Text + "'");
+            if (dt_.Rows.Count > 0)
             {
-                txtUnitWeight.Text = dal.GetCell_1(@"SELECT unit_Weight FROM units_tbl where item_no='" + TxtId.Text + "'  and  unit_code='" + txtUnit.Text + "'").ToString();
-                clculat_amount();
+            txtUnitWeight.Text = dt_.Rows[0]["unit_Weight"].ToString().ToDecimal().ToString("N3");
             }
-            catch { }
-            }
+            else
+            {
+                txtUnitWeight.Text = "0".ToDecimal().ToString("N3");
 
+            }
+            // clculat_amount();
+
+        }
         private void labelX17_Click(object sender, EventArgs e)
         {
 
