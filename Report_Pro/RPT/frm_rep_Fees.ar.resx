@@ -182,13 +182,13 @@
     <value>Top, Right</value>
   </data>
   <data name="labelX5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>637, 41</value>
+    <value>621, 43</value>
   </data>
   <data name="labelX5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
   </data>
   <data name="labelX5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>79, 17</value>
+    <value>74, 15</value>
   </data>
   <data name="labelX5.Text" xml:space="preserve">
     <value>الحساب المجمع</value>
@@ -197,7 +197,10 @@
     <value>Top, Right</value>
   </data>
   <data name="Acc_Group.Location" type="System.Drawing.Point, System.Drawing">
-    <value>312, 41</value>
+    <value>291, 40</value>
+  </data>
+  <data name="Acc_Group.Size" type="System.Drawing.Size, System.Drawing">
+    <value>320, 20</value>
   </data>
   <data name="groupPanel3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -221,7 +224,7 @@
     <value>الاجماليات</value>
   </data>
   <data name="groupPanel3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>202, 15</value>
+    <value>84, 15</value>
   </data>
   <data name="groupPanel3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
@@ -230,13 +233,13 @@
     <value>Top, Right</value>
   </data>
   <data name="labelX4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>436, 92</value>
+    <value>335, 92</value>
   </data>
   <data name="labelX4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
   </data>
   <data name="labelX4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>47, 17</value>
+    <value>42, 15</value>
   </data>
   <data name="labelX4.Text" xml:space="preserve">
     <value>الي تاريخ</value>
@@ -245,13 +248,13 @@
     <value>Top, Right</value>
   </data>
   <data name="labelX3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>637, 92</value>
+    <value>621, 92</value>
   </data>
   <data name="labelX3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
   </data>
   <data name="labelX3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 17</value>
+    <value>40, 15</value>
   </data>
   <data name="labelX3.Text" xml:space="preserve">
     <value>من تاريخ</value>
@@ -260,13 +263,13 @@
     <value>Top, Right</value>
   </data>
   <data name="labelX2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>637, 67</value>
+    <value>621, 67</value>
   </data>
   <data name="labelX2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
   </data>
   <data name="labelX2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>43, 17</value>
+    <value>38, 15</value>
   </data>
   <data name="labelX2.Text" xml:space="preserve">
     <value>الحساب</value>
@@ -275,13 +278,13 @@
     <value>Top, Right</value>
   </data>
   <data name="labelX1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>637, 19</value>
+    <value>621, 19</value>
   </data>
   <data name="labelX1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
   </data>
   <data name="labelX1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>29, 17</value>
+    <value>24, 15</value>
   </data>
   <data name="labelX1.Text" xml:space="preserve">
     <value>الفرع</value>
@@ -290,7 +293,7 @@
     <value>Top, Right</value>
   </data>
   <data name="toDate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>312, 90</value>
+    <value>211, 90</value>
   </data>
   <data name="toDate.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
@@ -311,7 +314,7 @@
     <value>Top, Right</value>
   </data>
   <data name="fromDate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>513, 90</value>
+    <value>491, 90</value>
   </data>
   <data name="fromDate.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
@@ -332,13 +335,19 @@
     <value>Top, Right</value>
   </data>
   <data name="txtAcc.Location" type="System.Drawing.Point, System.Drawing">
-    <value>312, 65</value>
+    <value>211, 65</value>
+  </data>
+  <data name="txtAcc.Size" type="System.Drawing.Size, System.Drawing">
+    <value>400, 20</value>
   </data>
   <data name="txtBranch.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
   <data name="txtBranch.Location" type="System.Drawing.Point, System.Drawing">
-    <value>312, 17</value>
+    <value>211, 16</value>
+  </data>
+  <data name="txtBranch.Size" type="System.Drawing.Size, System.Drawing">
+    <value>400, 20</value>
   </data>
   <data name="groupPanel2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>

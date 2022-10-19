@@ -13,8 +13,10 @@ namespace Report_Pro.PL
 {
     public partial class frm_SearchAcc : XtraForm
     {
+        public int x_=100, y_=100;
         DAL.DataAccesslayer1 dal = new DAL.DataAccesslayer1();
         string _tFinal = "1";
+        public string branch_search = "";
         public frm_SearchAcc()
         {
             InitializeComponent();
@@ -24,6 +26,7 @@ namespace Report_Pro.PL
 
         private void frm_SearchAcc_Load(object sender, EventArgs e)
         {
+           // this.Location = new Point(x_,y_);
 
         }
 
@@ -60,7 +63,7 @@ namespace Report_Pro.PL
         {
          
              DataTable dt1 = dal.getDataTabl_1(@"select ACC_NO,PAYER_NAME,case when ISNULL(payer_l_name,'')='' then PAYER_NAME else payer_l_name end as payer_l_name  FROM payer2
-            where BRANCH_code like '" + Properties.Settings.Default.BranchAccID + "%' and Acc_No like '" + txtsearchID.Text + "%' and(PAYER_NAME like '%" + txtSearchName.Text + "%' or payer_l_name like '%" + txtSearchName.Text + "%') and t_final like '" + _tFinal + "%' ");
+            where BRANCH_code like '" + branch_search + "%' and Acc_No like '" + txtsearchID.Text + "%' and(PAYER_NAME like '%" + txtSearchName.Text + "%' or payer_l_name like '%" + txtSearchName.Text + "%') and t_final like '" + _tFinal + "%' ");
 
             if (dt1.Rows.Count > 0)
             {

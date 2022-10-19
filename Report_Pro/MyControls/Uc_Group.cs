@@ -28,7 +28,7 @@ namespace Report_Pro.MyControls
         {
             try
             {
-                DataTable dt_ = dal.getDataTabl_1("SELECT group_code,Group_name FROM " + Properties.Settings.Default.Database_1 + ".[dbo].[wh_Groups] where group_code = '" + ID.Text + "' ");
+                DataTable dt_ = dal.getDataTabl_1("SELECT group_code,Group_name FROM wh_Groups where group_code = '" + ID.Text + "' ");
                 if (ID.Text!="" && dt_.Rows.Count > 0)
                 {
                     ID.Text= dt_.Rows[0][0].ToString();
@@ -58,7 +58,7 @@ namespace Report_Pro.MyControls
                 dgv1.Visible = true;
                 this.Height = 130;
                 this.BringToFront();
-                dgv1.DataSource = dal.getDataTabl_1("SELECT group_code,Group_name FROM " + Properties.Settings.Default.Database_1 + ".[dbo].[wh_Groups] where Group_name like '%" + Desc.Text + "'+'%'  ");
+                dgv1.DataSource = dal.getDataTabl_1("SELECT group_code,Group_name FROM [wh_Groups] where Group_name like '%" + Desc.Text + "'+'%'  ");
                 dgv1.Columns[0].Width = 50;
             }
             catch { }

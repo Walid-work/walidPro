@@ -44,7 +44,7 @@
             this.txtSer = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.txtYear = new DevComponents.Editors.IntegerInput();
             this.Transaction = new Report_Pro.MyControls.UC_Transaction();
-            this.Branch = new Report_Pro.MyControls.UC_Branch();
+            this.Branch = new Report_Pro.MyControls.ذ();
             this.groupPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtYear)).BeginInit();
             this.SuspendLayout();
@@ -263,7 +263,7 @@
         #endregion
 
         private DevComponents.DotNetBar.Controls.GroupPanel groupPanel1;
-        private MyControls.UC_Branch Branch;
+        private MyControls.ذ Branch;
         private DevComponents.Editors.IntegerInput txtYear;
         private MyControls.UC_Transaction Transaction;
         private DevComponents.DotNetBar.LabelX labelX3;

@@ -383,27 +383,6 @@ namespace Report_Pro.Properties {
             }
         }
         
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=7.48.214.69;Initial Catalog=main_acc_wh;Integrated Security=True")]
-        public string BahrainConnectionString {
-            get {
-                return ((string)(this["BahrainConnectionString"]));
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=7.48.214.69;Initial Catalog=main_acc_wh;User ID=bilal;Password=hassan" +
-            "")]
-        public string main_acc_whConnectionString {
-            get {
-                return ((string)(this["main_acc_whConnectionString"]));
-            }
-        }
-        
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("ريال")]
@@ -455,21 +434,31 @@ namespace Report_Pro.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=server;Initial Catalog=main_acc_wh;Persist Security Info=True;User ID" +
-            "=bilal;Password=hassan")]
-        public string main_acc_whConnectionString2 {
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=7.48.214.69;Initial Catalog=main_acc_wh;User ID=bilal")]
+        public string main_acc_whConnectionString1 {
             get {
-                return ((string)(this["main_acc_whConnectionString2"]));
+                return ((string)(this["main_acc_whConnectionString1"]));
             }
         }
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=server;Initial Catalog=main_acc_wh;User ID=bilal;Password=hassan")]
-        public string main_acc_whConnectionString1 {
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=7.48.214.69;Initial Catalog=main_acc_wh;Persist Security Info=True;Us" +
+            "er ID=bilal;Password=hassan")]
+        public string main_acc_whConnectionString {
             get {
-                return ((string)(this["main_acc_whConnectionString1"]));
+                return ((string)(this["main_acc_whConnectionString"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=7.48.214.69;Initial Catalog=main_acc_wh;Integrated Security=True")]
+        public string main_acc_whConnectionString2 {
+            get {
+                return ((string)(this["main_acc_whConnectionString2"]));
             }
         }
     }

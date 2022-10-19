@@ -64,6 +64,8 @@
             this.rBtnWithoutS = new System.Windows.Forms.RadioButton();
             this.rBtnAll = new System.Windows.Forms.RadioButton();
             this.groupPanel2 = new DevComponents.DotNetBar.Controls.GroupPanel();
+            this.chB = new DevComponents.DotNetBar.Controls.CheckBoxX();
+            this.chN = new DevComponents.DotNetBar.Controls.CheckBoxX();
             this.chX = new DevComponents.DotNetBar.Controls.CheckBoxX();
             this.chF = new DevComponents.DotNetBar.Controls.CheckBoxX();
             this.chZ = new DevComponents.DotNetBar.Controls.CheckBoxX();
@@ -80,7 +82,7 @@
             this.groupPanel4 = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.label6 = new System.Windows.Forms.Label();
             this.Uc_Group1 = new Report_Pro.MyControls.Uc_Group();
-            this.UC_Branch = new Report_Pro.MyControls.UC_Branch();
+            this.UC_Branch = new Report_Pro.MyControls.ذ();
             this.Items = new Report_Pro.MyControls.UC_Items();
             this.Uc_Group = new Report_Pro.MyControls.Uc_Group();
             this.Uc_Acc = new Report_Pro.MyControls.UC_Acc();
@@ -434,6 +436,8 @@
             this.groupPanel2.BackColor = System.Drawing.Color.Transparent;
             this.groupPanel2.CanvasColor = System.Drawing.Color.Transparent;
             this.groupPanel2.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
+            this.groupPanel2.Controls.Add(this.chB);
+            this.groupPanel2.Controls.Add(this.chN);
             this.groupPanel2.Controls.Add(this.chX);
             this.groupPanel2.Controls.Add(this.chF);
             this.groupPanel2.Controls.Add(this.chZ);
@@ -463,11 +467,28 @@
             this.groupPanel2.Style.TextColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
             this.groupPanel2.Style.TextLineAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Near;
             // 
+            // chB
+            // 
+            resources.ApplyResources(this.chB, "chB");
+            this.chB.BackColor = System.Drawing.Color.Transparent;
+            this.chB.Checked = true;
+            this.chB.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chB.CheckValue = "Y";
+            this.chB.Name = "chB";
+            // 
+            // chN
+            // 
+            resources.ApplyResources(this.chN, "chN");
+            this.chN.BackColor = System.Drawing.Color.Transparent;
+            this.chN.Checked = true;
+            this.chN.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chN.CheckValue = "Y";
+            this.chN.Name = "chN";
+            // 
             // chX
             // 
             resources.ApplyResources(this.chX, "chX");
             this.chX.BackColor = System.Drawing.Color.Transparent;
-            this.chX.CheckBoxPosition = DevComponents.DotNetBar.eCheckBoxPosition.Right;
             this.chX.Checked = true;
             this.chX.CheckState = System.Windows.Forms.CheckState.Checked;
             this.chX.CheckValue = "Y";
@@ -477,7 +498,6 @@
             // 
             resources.ApplyResources(this.chF, "chF");
             this.chF.BackColor = System.Drawing.Color.Transparent;
-            this.chF.CheckBoxPosition = DevComponents.DotNetBar.eCheckBoxPosition.Right;
             this.chF.Checked = true;
             this.chF.CheckState = System.Windows.Forms.CheckState.Checked;
             this.chF.CheckValue = "Y";
@@ -487,7 +507,6 @@
             // 
             resources.ApplyResources(this.chZ, "chZ");
             this.chZ.BackColor = System.Drawing.Color.Transparent;
-            this.chZ.CheckBoxPosition = DevComponents.DotNetBar.eCheckBoxPosition.Right;
             this.chZ.Checked = true;
             this.chZ.CheckState = System.Windows.Forms.CheckState.Checked;
             this.chZ.CheckValue = "Y";
@@ -497,7 +516,6 @@
             // 
             resources.ApplyResources(this.chR, "chR");
             this.chR.BackColor = System.Drawing.Color.Transparent;
-            this.chR.CheckBoxPosition = DevComponents.DotNetBar.eCheckBoxPosition.Right;
             this.chR.Checked = true;
             this.chR.CheckState = System.Windows.Forms.CheckState.Checked;
             this.chR.CheckValue = "Y";
@@ -507,7 +525,6 @@
             // 
             resources.ApplyResources(this.chP, "chP");
             this.chP.BackColor = System.Drawing.Color.Transparent;
-            this.chP.CheckBoxPosition = DevComponents.DotNetBar.eCheckBoxPosition.Right;
             this.chP.Checked = true;
             this.chP.CheckState = System.Windows.Forms.CheckState.Checked;
             this.chP.CheckValue = "Y";
@@ -517,7 +534,6 @@
             // 
             resources.ApplyResources(this.chC, "chC");
             this.chC.BackColor = System.Drawing.Color.Transparent;
-            this.chC.CheckBoxPosition = DevComponents.DotNetBar.eCheckBoxPosition.Right;
             this.chC.Checked = true;
             this.chC.CheckState = System.Windows.Forms.CheckState.Checked;
             this.chC.CheckValue = "Y";
@@ -527,7 +543,6 @@
             // 
             resources.ApplyResources(this.chS, "chS");
             this.chS.BackColor = System.Drawing.Color.Transparent;
-            this.chS.CheckBoxPosition = DevComponents.DotNetBar.eCheckBoxPosition.Right;
             this.chS.Checked = true;
             this.chS.CheckState = System.Windows.Forms.CheckState.Checked;
             this.chS.CheckValue = "Y";
@@ -647,21 +662,21 @@
             // Uc_Group1
             // 
             resources.ApplyResources(this.Uc_Group1, "Uc_Group1");
-            this.Uc_Group1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Uc_Group1.CausesValidation = false;
             this.Uc_Group1.Name = "Uc_Group1";
             // 
             // UC_Branch
             // 
             resources.ApplyResources(this.UC_Branch, "UC_Branch");
             this.UC_Branch.BackColor = System.Drawing.Color.Transparent;
-            this.UC_Branch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.UC_Branch.CausesValidation = false;
             this.UC_Branch.Cursor = System.Windows.Forms.Cursors.Default;
             this.UC_Branch.Name = "UC_Branch";
             // 
             // Items
             // 
             resources.ApplyResources(this.Items, "Items");
-            this.Items.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Items.CausesValidation = false;
             this.Items.Name = "Items";
             this.Items.Load += new System.EventHandler(this.Items_Load);
             this.Items.Click += new System.EventHandler(this.Items_Click);
@@ -669,17 +684,17 @@
             // Uc_Group
             // 
             resources.ApplyResources(this.Uc_Group, "Uc_Group");
-            this.Uc_Group.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Uc_Group.CausesValidation = false;
             this.Uc_Group.Name = "Uc_Group";
             // 
             // Uc_Acc
             // 
             resources.ApplyResources(this.Uc_Acc, "Uc_Acc");
             this.Uc_Acc.BackColor = System.Drawing.Color.Transparent;
-            this.Uc_Acc.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Uc_Acc.CausesValidation = false;
             this.Uc_Acc.Name = "Uc_Acc";
             // 
-            // frm_rpt_Sales_by_Br
+            // frm_rpt_Sales_Group
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -687,7 +702,7 @@
             this.Controls.Add(this.crystalReportViewer1);
             this.Controls.Add(this.panel1);
             this.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.Name = "frm_rpt_Sales_by_Br";
+            this.Name = "frm_rpt_Sales_Group";
             this.Load += new System.EventHandler(this.frm_rpt_Sales_by_Br_Load);
             this.panel1.ResumeLayout(false);
             this.groupPanel3.ResumeLayout(false);
@@ -721,7 +736,7 @@
         private System.Windows.Forms.NumericUpDown thick_2;
         private System.Windows.Forms.NumericUpDown thick_1;
         private System.Windows.Forms.Label label7;
-        private MyControls.UC_Branch UC_Branch;
+        private MyControls.ذ UC_Branch;
         private System.Windows.Forms.Label label9;
         private MyControls.UC_Acc Uc_Acc;
         private System.Windows.Forms.Label label11;
@@ -761,5 +776,7 @@
         private DevComponents.DotNetBar.ButtonX buttonX3;
         private System.Windows.Forms.Label label6;
         private MyControls.Uc_Group Uc_Group1;
+        private DevComponents.DotNetBar.Controls.CheckBoxX chB;
+        private DevComponents.DotNetBar.Controls.CheckBoxX chN;
     }
 }

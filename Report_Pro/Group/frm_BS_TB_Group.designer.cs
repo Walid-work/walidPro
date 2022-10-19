@@ -82,9 +82,8 @@
             this.Uc_BS_Acc = new Report_Pro.MyControls.Uc_BS_Acc();
             this.UC_Catogry = new Report_Pro.MyControls.UC_Catogry();
             this.UC_cost = new Report_Pro.MyControls.UC_cost();
-            this.UC_Branch = new Report_Pro.MyControls.UC_Branch();
+            this.UC_Branch = new Report_Pro.MyControls.ذ();
             this.UC_Acc = new Report_Pro.MyControls.UC_Acc();
-            this.labelX6 = new DevComponents.DotNetBar.LabelX();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridView1)).BeginInit();
@@ -344,7 +343,7 @@
             this.labelX9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelX9.AutoSize = true;
             this.labelX9.BackColor = System.Drawing.Color.Transparent;
-            this.labelX9.Location = new System.Drawing.Point(216, 66);
+            this.labelX9.Location = new System.Drawing.Point(624, 171);
             this.labelX9.Name = "labelX9";
             this.labelX9.Size = new System.Drawing.Size(56, 15);
             this.labelX9.TabIndex = 299;
@@ -356,7 +355,7 @@
             this.labelX8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelX8.AutoSize = true;
             this.labelX8.BackColor = System.Drawing.Color.Transparent;
-            this.labelX8.Location = new System.Drawing.Point(216, 90);
+            this.labelX8.Location = new System.Drawing.Point(624, 195);
             this.labelX8.Name = "labelX8";
             this.labelX8.Size = new System.Drawing.Size(37, 15);
             this.labelX8.TabIndex = 300;
@@ -693,11 +692,10 @@
             this.groupPanel1.Controls.Add(this.labelX8);
             this.groupPanel1.Controls.Add(this.labelX9);
             this.groupPanel1.Controls.Add(this.labelX1);
-            this.groupPanel1.Controls.Add(this.labelX6);
             this.groupPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupPanel1.Location = new System.Drawing.Point(0, 49);
             this.groupPanel1.Name = "groupPanel1";
-            this.groupPanel1.Size = new System.Drawing.Size(1172, 178);
+            this.groupPanel1.Size = new System.Drawing.Size(1172, 239);
             // 
             // 
             // 
@@ -745,22 +743,22 @@
             // UC_Catogry
             // 
             this.UC_Catogry.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.UC_Catogry.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.UC_Catogry.Location = new System.Drawing.Point(3, 89);
+            this.UC_Catogry.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.UC_Catogry.Location = new System.Drawing.Point(294, 188);
             this.UC_Catogry.Margin = new System.Windows.Forms.Padding(0);
             this.UC_Catogry.Name = "UC_Catogry";
-            this.UC_Catogry.Size = new System.Drawing.Size(200, 23);
+            this.UC_Catogry.Size = new System.Drawing.Size(322, 23);
             this.UC_Catogry.TabIndex = 305;
             this.UC_Catogry.Visible = false;
             // 
             // UC_cost
             // 
             this.UC_cost.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.UC_cost.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.UC_cost.Location = new System.Drawing.Point(3, 64);
+            this.UC_cost.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.UC_cost.Location = new System.Drawing.Point(294, 163);
             this.UC_cost.Margin = new System.Windows.Forms.Padding(0);
             this.UC_cost.Name = "UC_cost";
-            this.UC_cost.Size = new System.Drawing.Size(200, 23);
+            this.UC_cost.Size = new System.Drawing.Size(322, 23);
             this.UC_cost.TabIndex = 304;
             this.UC_cost.Visible = false;
             // 
@@ -780,26 +778,13 @@
             // 
             this.UC_Acc.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.UC_Acc.BackColor = System.Drawing.Color.Transparent;
-            this.UC_Acc.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.UC_Acc.Location = new System.Drawing.Point(3, 40);
+            this.UC_Acc.Location = new System.Drawing.Point(218, 139);
             this.UC_Acc.Margin = new System.Windows.Forms.Padding(0);
             this.UC_Acc.Name = "UC_Acc";
             this.UC_Acc.Padding = new System.Windows.Forms.Padding(1);
-            this.UC_Acc.Size = new System.Drawing.Size(200, 23);
+            this.UC_Acc.Size = new System.Drawing.Size(500, 21);
             this.UC_Acc.TabIndex = 302;
             this.UC_Acc.Visible = false;
-            // 
-            // labelX6
-            // 
-            this.labelX6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelX6.AutoSize = true;
-            this.labelX6.BackColor = System.Drawing.Color.Transparent;
-            this.labelX6.Location = new System.Drawing.Point(217, 40);
-            this.labelX6.Name = "labelX6";
-            this.labelX6.Size = new System.Drawing.Size(38, 15);
-            this.labelX6.TabIndex = 281;
-            this.labelX6.Text = "الحساب";
-            this.labelX6.Visible = false;
             // 
             // frm_BS_TB_Group
             // 
@@ -879,12 +864,11 @@
         internal System.Windows.Forms.RadioButton RB_M_Acc;
         private DevComponents.DotNetBar.Controls.GroupPanel groupPanel1;
         internal System.Windows.Forms.RadioButton RB_All_Acc;
-        private MyControls.UC_Branch UC_Branch;
+        private MyControls.ذ UC_Branch;
         private MyControls.UC_cost UC_cost;
        
         private MyControls.UC_Catogry UC_Catogry;
         private MyControls.UC_Acc UC_Acc;
-        private DevComponents.DotNetBar.LabelX labelX6;
         private DevComponents.DotNetBar.LabelX labelX3;
         private MyControls.Uc_BS_Acc Uc_BS_Acc;
         private DevComponents.DotNetBar.ButtonX btnReport;

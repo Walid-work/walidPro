@@ -31,7 +31,9 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_search_items));
             this.panel1 = new System.Windows.Forms.Panel();
             this.groupPanel1 = new DevComponents.DotNetBar.Controls.GroupPanel();
-            this.checkBoxX1 = new DevComponents.DotNetBar.Controls.CheckBoxX();
+            this.ts1 = new System.Windows.Forms.Label();
+            this.ts2 = new System.Windows.Forms.Label();
+            this.chSaveSearchData = new DevComponents.DotNetBar.Controls.CheckBoxX();
             this.btnSrch = new DevComponents.DotNetBar.ButtonX();
             this.txtserch_4 = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -62,7 +64,9 @@
             // 
             this.groupPanel1.CanvasColor = System.Drawing.SystemColors.Control;
             this.groupPanel1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
-            this.groupPanel1.Controls.Add(this.checkBoxX1);
+            this.groupPanel1.Controls.Add(this.ts1);
+            this.groupPanel1.Controls.Add(this.ts2);
+            this.groupPanel1.Controls.Add(this.chSaveSearchData);
             this.groupPanel1.Controls.Add(this.btnSrch);
             this.groupPanel1.Controls.Add(this.txtserch_4);
             this.groupPanel1.Controls.Add(this.panel3);
@@ -95,11 +99,23 @@
             this.groupPanel1.Style.TextColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
             this.groupPanel1.Style.TextLineAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Near;
             // 
-            // checkBoxX1
+            // ts1
             // 
-            this.checkBoxX1.BackColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.checkBoxX1, "checkBoxX1");
-            this.checkBoxX1.Name = "checkBoxX1";
+            resources.ApplyResources(this.ts1, "ts1");
+            this.ts1.BackColor = System.Drawing.Color.Transparent;
+            this.ts1.Name = "ts1";
+            // 
+            // ts2
+            // 
+            resources.ApplyResources(this.ts2, "ts2");
+            this.ts2.BackColor = System.Drawing.Color.Transparent;
+            this.ts2.Name = "ts2";
+            // 
+            // chSaveSearchData
+            // 
+            this.chSaveSearchData.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.chSaveSearchData, "chSaveSearchData");
+            this.chSaveSearchData.Name = "chSaveSearchData";
             // 
             // btnSrch
             // 
@@ -239,6 +255,8 @@
         private System.Windows.Forms.TextBox txtserch_4;
         private DevComponents.DotNetBar.Controls.GroupPanel groupPanel1;
         private DevComponents.DotNetBar.ButtonX btnSrch;
-        private DevComponents.DotNetBar.Controls.CheckBoxX checkBoxX1;
+        private DevComponents.DotNetBar.Controls.CheckBoxX chSaveSearchData;
+        private System.Windows.Forms.Label ts1;
+        private System.Windows.Forms.Label ts2;
     }
 }

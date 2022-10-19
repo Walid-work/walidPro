@@ -13,9 +13,18 @@ namespace Report_Pro.PL
 {
     public partial class frmSerachItem : XtraForm
     {
+
+        public int clos_;
+
+        private void uc_SearchItem1_Load(object sender, EventArgs e)
+        {
+
+        }
+
         public frmSerachItem()
         {
             InitializeComponent();
+            
         }
 
         private void frmSerachItem_Load(object sender, EventArgs e)
@@ -24,6 +33,13 @@ namespace Report_Pro.PL
         }
 
         private void uc_SearchItem1_DoubleClick(object sender, EventArgs e)
+        {
+            clos_ = 1;
+          this.Close();
+            
+        }
+
+        private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
         }

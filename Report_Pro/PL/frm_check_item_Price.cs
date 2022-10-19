@@ -189,17 +189,7 @@ namespace Report_Pro.PL
         {
             if(Uc_Items.ID.Text.Trim()!= string.Empty)
             {
-                txtCost.Text = Uc_Items.txtCost.Value.ToString().ToDecimal().ToString();
-                txtLong.Text = Uc_Items.txtLenth.Value.ToString().ToDecimal().ToString();
-                txtWidth.Text = Uc_Items.txtWidth.Value.ToString().ToDecimal().ToString();
-                txtThickness.Text = Uc_Items.txtDepth.Value.ToString().ToDecimal().ToString();
-                txtWeight.Text = Uc_Items.itemWeight.Value.ToString().ToDecimal().ToString();
-                txtTonCost.Text = Math.Round(Uc_Items.txtCost.Value.ToString().ToDecimal() / Uc_Items.itemWeight.Value.ToString().ToDecimal() * 1000,0).ToString();
-                txtUnit.SelectedValue = Uc_Items.itemUnit.Text;
-                txtCost_1.Value = txtCost.Value * (1 + mRrate.Value / 100);
-                txtTonCost_1.Value = txtTonCost.Value * (1 + mRrate.Value / 100);
-                unit_price.Value = 0;
-                ton_price.Value = 0;
+                getItemData();
                 get_balance();
                 get_last_Purch(Uc_Items.ID.Text);
                 get_last_Sales(Uc_Items.ID.Text);

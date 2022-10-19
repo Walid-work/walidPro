@@ -121,8 +121,8 @@
   <data name="txtAccBranch.Size" type="System.Drawing.Size, System.Drawing">
     <value>97, 20</value>
   </data>
-  <data name="ID.ButtonCustom2.Text" xml:space="preserve">
-    <value />
+  <data name="&gt;&gt;layoutControl1.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="txtAccBranch.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
@@ -134,120 +134,147 @@
   <data name="&gt;&gt;txtTfinal.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;Desc.Name" xml:space="preserve">
-    <value>Desc</value>
-  </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="layoutControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
   <data name="txtTfinal.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
-  <data name="&gt;&gt;ID.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.Controls.TextBoxX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  <data name="layoutControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="dgv2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 23</value>
+  </data>
+  <data name="&gt;&gt;layoutControl1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;dgv2.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="Desc.TabIndex" type="System.Int32, mscorlib">
-    <value>23</value>
+    <value>0</value>
   </data>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 13</value>
   </data>
-  <data name="ID.ButtonCustom2.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="dgv2.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem2.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;dgv1.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>0</value>
   </data>
   <data name="&gt;&gt;btn1.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>6</value>
   </data>
   <data name="&gt;&gt;dgv1.Type" xml:space="preserve">
     <value>DevComponents.DotNetBar.Controls.DataGridViewX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
   </data>
+  <data name="txtAccBranch.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
   <data name="btn1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>27, 20</value>
+    <value>30, 20</value>
   </data>
   <data name="&gt;&gt;dgv1.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="ID.ButtonCustom2.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
   <data name="&gt;&gt;dgv1.Name" xml:space="preserve">
     <value>dgv1</value>
   </data>
-  <data name="Desc.ButtonCustom.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="layoutControl1.Text" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;layoutControl1.Name" xml:space="preserve">
+    <value>layoutControl1</value>
   </data>
   <data name="ID.Size" type="System.Drawing.Size, System.Drawing">
-    <value>67, 20</value>
+    <value>80, 20</value>
   </data>
-  <data name="Desc.ButtonCustom2.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="&gt;&gt;txtTfinal.Type" xml:space="preserve">
+  <data name="&gt;&gt;txtAccBranch.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="dgv1.TabIndex" type="System.Int32, mscorlib">
-    <value>24</value>
+  <data name="btn1.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>30, 20</value>
   </data>
-  <data name="btn1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
+  <data name="&gt;&gt;Root.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="txtAccBranch.TabIndex" type="System.Int32, mscorlib">
-    <value>26</value>
+  <data name="&gt;&gt;layoutControlItem3.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="dgv1.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
+  <data name="&gt;&gt;layoutControlItem4.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;dgv2.Name" xml:space="preserve">
+    <value>dgv2</value>
   </data>
   <data name="&gt;&gt;txtAccBranch.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="Desc.ButtonCustom2.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
   <data name="Desc.Location" type="System.Drawing.Point, System.Drawing">
-    <value>94, 0</value>
+    <value>110, 0</value>
   </data>
-  <data name="ID.ButtonCustom.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="Desc.ButtonCustom2.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+  <data name="Desc.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
   </data>
   <data name="&gt;&gt;btn1.Name" xml:space="preserve">
     <value>btn1</value>
   </data>
   <data name="btn1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>67, 0</value>
+    <value>80, 0</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>ذ</value>
   </data>
   <data name="&gt;&gt;ID.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>layoutControl1</value>
   </data>
-  <data name="ID.ButtonCustom.Text" xml:space="preserve">
-    <value />
+  <data name="&gt;&gt;layoutControl1.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControl, DevExpress.XtraLayout.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="txtAccBranch.Location" type="System.Drawing.Point, System.Drawing">
-    <value>165, 30</value>
+  <data name="btn1.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>30, 20</value>
   </data>
-  <data name="Desc.ButtonCustom.Text" xml:space="preserve">
-    <value />
+  <data name="dgv2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>400, 150</value>
   </data>
-  <data name="Desc.ButtonCustom.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+  <data name="ID.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>80, 20</value>
+  </data>
+  <data name="&gt;&gt;txtAccBranch.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;Root.Name" xml:space="preserve">
+    <value>Root</value>
+  </data>
+  <data name="&gt;&gt;txtTfinal.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="layoutControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="&gt;&gt;btn1.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
   </data>
   <data name="ID.TabIndex" type="System.Int32, mscorlib">
-    <value>21</value>
+    <value>5</value>
   </data>
   <data name="ID.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
     <value>Center</value>
   </data>
-  <data name="&gt;&gt;txtAccBranch.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;layoutControlItem2.Name" xml:space="preserve">
+    <value>layoutControlItem2</value>
   </data>
-  <data name="dgv1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
+  <data name="ID.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>80, 20</value>
   </data>
   <data name="&gt;&gt;ID.Name" xml:space="preserve">
     <value>ID</value>
@@ -261,14 +288,17 @@
   <data name="txtTfinal.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
   </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>UC_Branch</value>
+  <data name="layoutControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>400, 20</value>
   </data>
-  <data name="dgv1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>320, 106</value>
+  <data name="&gt;&gt;Desc.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
   </data>
   <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
-    <value>321, 20</value>
+    <value>400, 20</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem3.Name" xml:space="preserve">
+    <value>layoutControlItem3</value>
   </data>
   <data name="btn1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -333,7 +363,7 @@
 </value>
   </data>
   <data name="dgv1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 24</value>
+    <value>0, 23</value>
   </data>
   <data name="&gt;&gt;ID.ZOrder" xml:space="preserve">
     <value>5</value>
@@ -341,14 +371,20 @@
   <data name="&gt;&gt;txtAccBranch.Name" xml:space="preserve">
     <value>txtAccBranch</value>
   </data>
-  <data name="&gt;&gt;txtAccBranch.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="btn1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
   </data>
   <data name="txtTfinal.Location" type="System.Drawing.Point, System.Drawing">
-    <value>67, 30</value>
+    <value>117, 38</value>
+  </data>
+  <data name="&gt;&gt;Desc.Name" xml:space="preserve">
+    <value>Desc</value>
   </data>
   <data name="Desc.Size" type="System.Drawing.Size, System.Drawing">
-    <value>227, 20</value>
+    <value>290, 20</value>
+  </data>
+  <data name="dgv1.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
   </data>
   <data name="Desc.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
@@ -357,31 +393,37 @@
     <value>False</value>
   </data>
   <data name="&gt;&gt;Desc.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.Controls.TextBoxX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dgv2.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;Desc.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
-  <data name="&gt;&gt;Desc.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="txtAccBranch.Location" type="System.Drawing.Point, System.Drawing">
+    <value>215, 38</value>
   </data>
   <data name="btn1.TabIndex" type="System.Int32, mscorlib">
     <value>22</value>
   </data>
-  <data name="txtTfinal.Size" type="System.Drawing.Size, System.Drawing">
-    <value>97, 20</value>
+  <data name="&gt;&gt;layoutControlItem4.Name" xml:space="preserve">
+    <value>layoutControlItem4</value>
   </data>
-  <data name="ID.ButtonCustom.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="&gt;&gt;dgv2.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.Controls.DataGridViewX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
   </data>
   <data name="&gt;&gt;btn1.Type" xml:space="preserve">
     <value>DevComponents.DotNetBar.ButtonX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
   </data>
-  <data name="&gt;&gt;txtTfinal.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="txtTfinal.Size" type="System.Drawing.Size, System.Drawing">
+    <value>97, 20</value>
   </data>
-  <data name="&gt;&gt;btn1.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;txtTfinal.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ID.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="txtTfinal.TabIndex" type="System.Int32, mscorlib">
     <value>25</value>
@@ -391,5 +433,8 @@
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>ar</value>
   </metadata>
 </root>

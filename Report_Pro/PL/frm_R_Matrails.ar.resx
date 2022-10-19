@@ -112,10 +112,10 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-   <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="BNew.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -301,68 +301,83 @@
         AAAAAElFTkSuQmCC
 </value>
   </data>
+  <data name="ribbonBar1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 24</value>
+  </data>
+  <data name="ribbonBar1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1079, 29</value>
+  </data>
+  <data name="labelX10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>137, 17</value>
+  </data>
+  <data name="groupPanel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>446, 5</value>
+  </data>
+  <data name="txt_transaction_code.Location" type="System.Drawing.Point, System.Drawing">
+    <value>78, 113</value>
+  </data>
   <data name="txtUnit.Location" type="System.Drawing.Point, System.Drawing">
-    <value>291, 19</value>
+    <value>305, 19</value>
   </data>
   <data name="labelX53.Location" type="System.Drawing.Point, System.Drawing">
-    <value>23, 3</value>
+    <value>37, 3</value>
   </data>
   <data name="txt_TotWeight.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 19</value>
+    <value>34, 19</value>
   </data>
   <data name="labelX5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>232, 3</value>
+    <value>246, 3</value>
   </data>
   <data name="txtUnitWeight.Location" type="System.Drawing.Point, System.Drawing">
-    <value>230, 19</value>
+    <value>244, 19</value>
   </data>
   <data name="labelX4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>294, 3</value>
+    <value>308, 3</value>
   </data>
   <data name="TxtQty.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8.25pt</value>
   </data>
   <data name="TxtQty.Location" type="System.Drawing.Point, System.Drawing">
-    <value>163, 19</value>
+    <value>177, 19</value>
   </data>
   <data name="TxtQty.Size" type="System.Drawing.Size, System.Drawing">
     <value>67, 21</value>
   </data>
   <data name="labelX52.Location" type="System.Drawing.Point, System.Drawing">
-    <value>102, 3</value>
+    <value>116, 3</value>
   </data>
   <data name="txtBalance.Location" type="System.Drawing.Point, System.Drawing">
-    <value>100, 19</value>
+    <value>114, 19</value>
   </data>
   <data name="labelX17.Location" type="System.Drawing.Point, System.Drawing">
-    <value>351, 4</value>
+    <value>365, 4</value>
   </data>
   <data name="labelX17.Size" type="System.Drawing.Size, System.Drawing">
     <value>252, 14</value>
   </data>
   <data name="txtNote.Location" type="System.Drawing.Point, System.Drawing">
-    <value>348, 19</value>
+    <value>362, 19</value>
   </data>
   <data name="txtNote.Size" type="System.Drawing.Size, System.Drawing">
     <value>255, 21</value>
   </data>
   <data name="labelX29.Location" type="System.Drawing.Point, System.Drawing">
-    <value>165, 3</value>
+    <value>179, 3</value>
   </data>
   <data name="labelX30.Location" type="System.Drawing.Point, System.Drawing">
-    <value>603, 4</value>
+    <value>617, 4</value>
   </data>
   <data name="labelX30.Size" type="System.Drawing.Size, System.Drawing">
     <value>322, 14</value>
   </data>
   <data name="labelX31.Location" type="System.Drawing.Point, System.Drawing">
-    <value>930, 3</value>
+    <value>944, 3</value>
   </data>
   <data name="labelX31.Size" type="System.Drawing.Size, System.Drawing">
     <value>79, 15</value>
   </data>
   <data name="TxtDesc.Location" type="System.Drawing.Point, System.Drawing">
-    <value>603, 19</value>
+    <value>617, 19</value>
   </data>
   <data name="TxtDesc.Size" type="System.Drawing.Size, System.Drawing">
     <value>324, 21</value>
@@ -632,13 +647,16 @@
 </value>
   </data>
   <data name="btn_braws.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1014, 4</value>
+    <value>1028, 4</value>
   </data>
   <data name="btn_braws.Size" type="System.Drawing.Size, System.Drawing">
     <value>38, 35</value>
   </data>
   <data name="TxtId.Location" type="System.Drawing.Point, System.Drawing">
-    <value>927, 19</value>
+    <value>941, 19</value>
+  </data>
+  <data name="groupPanel7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1073, 50</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="Spacil_Chb.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
@@ -656,11 +674,35 @@
   <data name="labelX20.Location" type="System.Drawing.Point, System.Drawing">
     <value>280, 65</value>
   </data>
+  <data name="labelX20.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 15</value>
+  </data>
   <data name="txt_MainNote.Location" type="System.Drawing.Point, System.Drawing">
     <value>20, 63</value>
   </data>
+  <data name="labelX12.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 15</value>
+  </data>
+  <data name="labelX14.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 15</value>
+  </data>
+  <data name="labelX15.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 15</value>
+  </data>
+  <data name="labelX16.Size" type="System.Drawing.Size, System.Drawing">
+    <value>58, 15</value>
+  </data>
+  <data name="labelX11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>28, 15</value>
+  </data>
+  <data name="labelX3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 15</value>
+  </data>
   <data name="Uc_Branch.Location" type="System.Drawing.Point, System.Drawing">
-    <value>372, 1</value>
+    <value>383, 2</value>
+  </data>
+  <data name="Uc_Branch.Size" type="System.Drawing.Size, System.Drawing">
+    <value>400, 23</value>
   </data>
   <data name="txtMobile.Location" type="System.Drawing.Point, System.Drawing">
     <value>362, 6</value>
@@ -672,11 +714,17 @@
   <data name="labelX6.Location" type="System.Drawing.Point, System.Drawing">
     <value>495, 8</value>
   </data>
+  <data name="labelX6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 15</value>
+  </data>
   <data name="labelX6.TabIndex" type="System.Int32, mscorlib">
     <value>69</value>
   </data>
   <data name="labelX9.Location" type="System.Drawing.Point, System.Drawing">
     <value>680, 30</value>
+  </data>
+  <data name="labelX9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 15</value>
   </data>
   <data name="labelX9.TabIndex" type="System.Int32, mscorlib">
     <value>71</value>
@@ -702,6 +750,9 @@
   <data name="labelX7.Location" type="System.Drawing.Point, System.Drawing">
     <value>680, 8</value>
   </data>
+  <data name="labelX7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>25, 15</value>
+  </data>
   <data name="labelX7.TabIndex" type="System.Int32, mscorlib">
     <value>62</value>
   </data>
@@ -714,17 +765,26 @@
   <data name="labelX8.Location" type="System.Drawing.Point, System.Drawing">
     <value>681, 52</value>
   </data>
+  <data name="labelX8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>26, 15</value>
+  </data>
   <data name="labelX8.TabIndex" type="System.Int32, mscorlib">
     <value>63</value>
   </data>
   <data name="labelX25.Location" type="System.Drawing.Point, System.Drawing">
     <value>495, 30</value>
   </data>
+  <data name="labelX25.Size" type="System.Drawing.Size, System.Drawing">
+    <value>29, 15</value>
+  </data>
   <data name="labelX25.TabIndex" type="System.Int32, mscorlib">
     <value>65</value>
   </data>
   <data name="labelX47.Location" type="System.Drawing.Point, System.Drawing">
     <value>295, 6</value>
+  </data>
+  <data name="labelX47.Size" type="System.Drawing.Size, System.Drawing">
+    <value>31, 15</value>
   </data>
   <data name="labelX47.TabIndex" type="System.Int32, mscorlib">
     <value>67</value>
@@ -738,8 +798,17 @@
   <data name="tabControlPanel1.Size" type="System.Drawing.Size, System.Drawing">
     <value>773, 168</value>
   </data>
+  <data name="tabControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>290, 8</value>
+  </data>
+  <data name="labelX51.Location" type="System.Drawing.Point, System.Drawing">
+    <value>124, 113</value>
+  </data>
+  <data name="labelX51.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 15</value>
+  </data>
   <data name="Doc_Name.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 7</value>
+    <value>29, 7</value>
   </data>
   <data name="Doc_Name.Size" type="System.Drawing.Size, System.Drawing">
     <value>156, 43</value>
@@ -759,6 +828,21 @@
         C44C0gEDAwBoQzAtuVsvQAAAAABJRU5ErkJggg==
 </value>
   </data>
+  <data name="next_.Location" type="System.Drawing.Point, System.Drawing">
+    <value>46, 61</value>
+  </data>
+  <data name="labelX1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>124, 63</value>
+  </data>
+  <data name="labelX1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 15</value>
+  </data>
+  <data name="labelX2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>124, 88</value>
+  </data>
+  <data name="labelX2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>29, 15</value>
+  </data>
   <data name="previous_.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAApNJREFUSEtj
@@ -775,6 +859,9 @@
         YWcYnMUiqKAbBLRkjqSBSz0ozIG+otzlMGCVWMsopmYoAGTKcQmKiRkGZVHP8FGAAAwMAIXsSZSiclSg
         AAAAAElFTkSuQmCC
 </value>
+  </data>
+  <data name="previous_.Location" type="System.Drawing.Point, System.Drawing">
+    <value>152, 62</value>
   </data>
   <data name="first_.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -797,6 +884,12 @@
         HrQ13T0QGLZl8fPBm4vw5Ga8QLbfcg5zffbHsxYnWeTtF4LnHWNFSjS4N+L5ya9Ep7m/rkPFJQsYvkue
         xS8DnlvG9l2bWvSfb8CniUEaLhauF31ZQd4h/EL3D5xHmRkvr38BBkYKo8dFBXkAAAAASUVORK5CYII=
 </value>
+  </data>
+  <data name="first_.Location" type="System.Drawing.Point, System.Drawing">
+    <value>170, 62</value>
+  </data>
+  <data name="txt_InvDate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>38, 85</value>
   </data>
   <data name="last_.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -821,6 +914,51 @@
         WZ2goL8BRgokxbgLIrAAAAAASUVORK5CYII=
 </value>
   </data>
+  <data name="last_.Location" type="System.Drawing.Point, System.Drawing">
+    <value>28, 61</value>
+  </data>
+  <data name="txt_serNo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>68, 61</value>
+  </data>
+  <data name="groupPanel6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 53</value>
+  </data>
+  <data name="groupPanel6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1079, 218</value>
+  </data>
+  <data name="labelX24.Location" type="System.Drawing.Point, System.Drawing">
+    <value>108, 8</value>
+  </data>
+  <data name="labelX24.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 15</value>
+  </data>
+  <data name="labelX23.Location" type="System.Drawing.Point, System.Drawing">
+    <value>257, 8</value>
+  </data>
+  <data name="labelX23.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 15</value>
+  </data>
+  <data name="Btn_DelRow.Location" type="System.Drawing.Point, System.Drawing">
+    <value>979, 5</value>
+  </data>
+  <data name="totalWeight.Location" type="System.Drawing.Point, System.Drawing">
+    <value>27, 6</value>
+  </data>
+  <data name="totalQty.Location" type="System.Drawing.Point, System.Drawing">
+    <value>179, 6</value>
+  </data>
+  <data name="groupPanel5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 503</value>
+  </data>
+  <data name="groupPanel5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1079, 40</value>
+  </data>
+  <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 543</value>
+  </data>
+  <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1079, 25</value>
+  </data>
   <data name="dGV_Item.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left</value>
   </data>
@@ -831,7 +969,7 @@
     <value>0, 0</value>
   </data>
   <data name="dGV_Item.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1065, 249</value>
+    <value>1079, 232</value>
   </data>
   <data name="panel1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left</value>
@@ -840,12 +978,12 @@
     <value>Fill</value>
   </data>
   <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 247</value>
+    <value>0, 271</value>
   </data>
   <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1065, 249</value>
+    <value>1079, 232</value>
   </data>
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1079, 568</value>
   </data>
 </root>

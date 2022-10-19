@@ -29,111 +29,65 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_statment_Rpt));
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.buttonX2 = new DevComponents.DotNetBar.ButtonX();
-            this.buttonX1 = new DevComponents.DotNetBar.ButtonX();
-            this.buttonX5 = new DevComponents.DotNetBar.ButtonX();
-            this.Report_btn = new DevComponents.DotNetBar.ButtonX();
-            this.buttonX6 = new DevComponents.DotNetBar.ButtonX();
             this.crystalReportViewer1 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
             this.groupPanel1 = new DevComponents.DotNetBar.Controls.GroupPanel();
-            this.AccBranch_2 = new Report_Pro.MyControls.UC_AccBranch();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
+            this.rdo_Main = new System.Windows.Forms.RadioButton();
+            this.rdo_Sub = new System.Windows.Forms.RadioButton();
+            this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.rdo_All = new System.Windows.Forms.RadioButton();
+            this.rdo_Due = new System.Windows.Forms.RadioButton();
+            this.rdo_NonPaid = new System.Windows.Forms.RadioButton();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.UC_Acc1 = new Report_Pro.MyControls.UC_Acc();
             this.UC_Branch = new Report_Pro.MyControls.UC_AccBranch();
             this.UC_Catogry1 = new Report_Pro.MyControls.UC_Catogry();
             this.UC_cost1 = new Report_Pro.MyControls.UC_cost();
-            this.UC_Acc1 = new Report_Pro.MyControls.UC_Acc();
-            this.labelX5 = new DevComponents.DotNetBar.LabelX();
-            this.labelX4 = new DevComponents.DotNetBar.LabelX();
-            this.labelX3 = new DevComponents.DotNetBar.LabelX();
-            this.labelX6 = new DevComponents.DotNetBar.LabelX();
             this.ToDate = new System.Windows.Forms.DateTimePicker();
             this.FromDate = new System.Windows.Forms.DateTimePicker();
-            this.labelX2 = new DevComponents.DotNetBar.LabelX();
-            this.labelX1 = new DevComponents.DotNetBar.LabelX();
             this.chB_1 = new DevComponents.DotNetBar.Controls.CheckBoxX();
-            this.panel2.SuspendLayout();
             this.groupPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
+            this.groupControl2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
+            this.groupControl1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // panel2
-            // 
-            resources.ApplyResources(this.panel2, "panel2");
-            this.panel2.BackColor = System.Drawing.Color.Transparent;
-            this.panel2.Controls.Add(this.buttonX2);
-            this.panel2.Controls.Add(this.buttonX1);
-            this.panel2.Controls.Add(this.buttonX5);
-            this.panel2.Controls.Add(this.Report_btn);
-            this.panel2.Controls.Add(this.buttonX6);
-            this.panel2.Name = "panel2";
-            // 
-            // buttonX2
-            // 
-            resources.ApplyResources(this.buttonX2, "buttonX2");
-            this.buttonX2.AccessibleRole = System.Windows.Forms.AccessibleRole.CheckButton;
-            this.buttonX2.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.buttonX2.Name = "buttonX2";
-            // 
-            // buttonX1
-            // 
-            resources.ApplyResources(this.buttonX1, "buttonX1");
-            this.buttonX1.AccessibleRole = System.Windows.Forms.AccessibleRole.CheckButton;
-            this.buttonX1.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.buttonX1.Name = "buttonX1";
-            this.buttonX1.Click += new System.EventHandler(this.buttonX1_Click_1);
-            // 
-            // buttonX5
-            // 
-            resources.ApplyResources(this.buttonX5, "buttonX5");
-            this.buttonX5.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.buttonX5.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.buttonX5.Name = "buttonX5";
-            this.buttonX5.Click += new System.EventHandler(this.buttonX5_Click);
-            // 
-            // Report_btn
-            // 
-            resources.ApplyResources(this.Report_btn, "Report_btn");
-            this.Report_btn.AccessibleRole = System.Windows.Forms.AccessibleRole.CheckButton;
-            this.Report_btn.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.Report_btn.Name = "Report_btn";
-            this.Report_btn.Click += new System.EventHandler(this.Report_btn_Click);
-            // 
-            // buttonX6
-            // 
-            resources.ApplyResources(this.buttonX6, "buttonX6");
-            this.buttonX6.AccessibleRole = System.Windows.Forms.AccessibleRole.CheckButton;
-            this.buttonX6.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.buttonX6.Name = "buttonX6";
-            this.buttonX6.Click += new System.EventHandler(this.buttonX6_Click);
             // 
             // crystalReportViewer1
             // 
-            resources.ApplyResources(this.crystalReportViewer1, "crystalReportViewer1");
             this.crystalReportViewer1.ActiveViewIndex = -1;
             this.crystalReportViewer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.crystalReportViewer1.Cursor = System.Windows.Forms.Cursors.Default;
+            resources.ApplyResources(this.crystalReportViewer1, "crystalReportViewer1");
             this.crystalReportViewer1.Name = "crystalReportViewer1";
             this.crystalReportViewer1.SelectionFormula = "";
             this.crystalReportViewer1.ViewTimeSelectionFormula = "";
             // 
             // groupPanel1
             // 
-            resources.ApplyResources(this.groupPanel1, "groupPanel1");
             this.groupPanel1.CanvasColor = System.Drawing.SystemColors.Control;
             this.groupPanel1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
-            this.groupPanel1.Controls.Add(this.AccBranch_2);
+            this.groupPanel1.Controls.Add(this.label4);
+            this.groupPanel1.Controls.Add(this.label3);
+            this.groupPanel1.Controls.Add(this.groupControl2);
+            this.groupPanel1.Controls.Add(this.groupControl1);
+            this.groupPanel1.Controls.Add(this.label6);
+            this.groupPanel1.Controls.Add(this.label5);
+            this.groupPanel1.Controls.Add(this.label2);
+            this.groupPanel1.Controls.Add(this.label1);
+            this.groupPanel1.Controls.Add(this.UC_Acc1);
             this.groupPanel1.Controls.Add(this.UC_Branch);
             this.groupPanel1.Controls.Add(this.UC_Catogry1);
             this.groupPanel1.Controls.Add(this.UC_cost1);
-            this.groupPanel1.Controls.Add(this.UC_Acc1);
-            this.groupPanel1.Controls.Add(this.labelX5);
-            this.groupPanel1.Controls.Add(this.labelX4);
-            this.groupPanel1.Controls.Add(this.labelX3);
-            this.groupPanel1.Controls.Add(this.labelX6);
             this.groupPanel1.Controls.Add(this.ToDate);
             this.groupPanel1.Controls.Add(this.FromDate);
-            this.groupPanel1.Controls.Add(this.labelX2);
-            this.groupPanel1.Controls.Add(this.labelX1);
             this.groupPanel1.Controls.Add(this.chB_1);
+            resources.ApplyResources(this.groupPanel1, "groupPanel1");
             this.groupPanel1.Name = "groupPanel1";
             // 
             // 
@@ -157,61 +111,121 @@
             this.groupPanel1.Style.TextLineAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Near;
             this.groupPanel1.Click += new System.EventHandler(this.groupPanel1_Click);
             // 
-            // AccBranch_2
+            // label4
             // 
-            resources.ApplyResources(this.AccBranch_2, "AccBranch_2");
-            this.AccBranch_2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.AccBranch_2.Name = "AccBranch_2";
+            this.label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.label4, "label4");
+            this.label4.Name = "label4";
+            // 
+            // label3
+            // 
+            this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.label3, "label3");
+            this.label3.Name = "label3";
+            // 
+            // groupControl2
+            // 
+            this.groupControl2.Appearance.BorderColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Success;
+            this.groupControl2.Appearance.Options.UseBorderColor = true;
+            this.groupControl2.Controls.Add(this.rdo_Main);
+            this.groupControl2.Controls.Add(this.rdo_Sub);
+            resources.ApplyResources(this.groupControl2, "groupControl2");
+            this.groupControl2.Name = "groupControl2";
+            // 
+            // rdo_Main
+            // 
+            resources.ApplyResources(this.rdo_Main, "rdo_Main");
+            this.rdo_Main.BackColor = System.Drawing.Color.Transparent;
+            this.rdo_Main.Name = "rdo_Main";
+            this.rdo_Main.UseVisualStyleBackColor = false;
+            // 
+            // rdo_Sub
+            // 
+            resources.ApplyResources(this.rdo_Sub, "rdo_Sub");
+            this.rdo_Sub.BackColor = System.Drawing.Color.Transparent;
+            this.rdo_Sub.Checked = true;
+            this.rdo_Sub.Name = "rdo_Sub";
+            this.rdo_Sub.TabStop = true;
+            this.rdo_Sub.UseVisualStyleBackColor = false;
+            // 
+            // groupControl1
+            // 
+            this.groupControl1.Appearance.BorderColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Warning;
+            this.groupControl1.Appearance.Options.UseBorderColor = true;
+            this.groupControl1.Controls.Add(this.rdo_All);
+            this.groupControl1.Controls.Add(this.rdo_Due);
+            this.groupControl1.Controls.Add(this.rdo_NonPaid);
+            resources.ApplyResources(this.groupControl1, "groupControl1");
+            this.groupControl1.Name = "groupControl1";
+            // 
+            // rdo_All
+            // 
+            resources.ApplyResources(this.rdo_All, "rdo_All");
+            this.rdo_All.BackColor = System.Drawing.Color.Transparent;
+            this.rdo_All.Checked = true;
+            this.rdo_All.Name = "rdo_All";
+            this.rdo_All.TabStop = true;
+            this.rdo_All.UseVisualStyleBackColor = false;
+            // 
+            // rdo_Due
+            // 
+            resources.ApplyResources(this.rdo_Due, "rdo_Due");
+            this.rdo_Due.BackColor = System.Drawing.Color.Transparent;
+            this.rdo_Due.Name = "rdo_Due";
+            this.rdo_Due.UseVisualStyleBackColor = false;
+            // 
+            // rdo_NonPaid
+            // 
+            resources.ApplyResources(this.rdo_NonPaid, "rdo_NonPaid");
+            this.rdo_NonPaid.BackColor = System.Drawing.Color.Transparent;
+            this.rdo_NonPaid.Name = "rdo_NonPaid";
+            this.rdo_NonPaid.UseVisualStyleBackColor = false;
+            // 
+            // label6
+            // 
+            this.label6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.label6, "label6");
+            this.label6.Name = "label6";
+            // 
+            // label5
+            // 
+            this.label5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.label5, "label5");
+            this.label5.Name = "label5";
+            // 
+            // label2
+            // 
+            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.label2, "label2");
+            this.label2.Name = "label2";
+            // 
+            // label1
+            // 
+            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.label1, "label1");
+            this.label1.Name = "label1";
+            // 
+            // UC_Acc1
+            // 
+            this.UC_Acc1.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.UC_Acc1, "UC_Acc1");
+            this.UC_Acc1.Name = "UC_Acc1";
             // 
             // UC_Branch
             // 
             resources.ApplyResources(this.UC_Branch, "UC_Branch");
-            this.UC_Branch.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.UC_Branch.Name = "UC_Branch";
             this.UC_Branch.Load += new System.EventHandler(this.UC_Branch_Load);
             // 
             // UC_Catogry1
             // 
             resources.ApplyResources(this.UC_Catogry1, "UC_Catogry1");
-            this.UC_Catogry1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.UC_Catogry1.Name = "UC_Catogry1";
             // 
             // UC_cost1
             // 
             resources.ApplyResources(this.UC_cost1, "UC_cost1");
-            this.UC_cost1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.UC_cost1.Name = "UC_cost1";
-            // 
-            // UC_Acc1
-            // 
-            resources.ApplyResources(this.UC_Acc1, "UC_Acc1");
-            this.UC_Acc1.BackColor = System.Drawing.Color.Transparent;
-            this.UC_Acc1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.UC_Acc1.Name = "UC_Acc1";
-            // 
-            // labelX5
-            // 
-            resources.ApplyResources(this.labelX5, "labelX5");
-            this.labelX5.BackColor = System.Drawing.Color.Transparent;
-            this.labelX5.Name = "labelX5";
-            // 
-            // labelX4
-            // 
-            resources.ApplyResources(this.labelX4, "labelX4");
-            this.labelX4.BackColor = System.Drawing.Color.Transparent;
-            this.labelX4.Name = "labelX4";
-            // 
-            // labelX3
-            // 
-            resources.ApplyResources(this.labelX3, "labelX3");
-            this.labelX3.BackColor = System.Drawing.Color.Transparent;
-            this.labelX3.Name = "labelX3";
-            // 
-            // labelX6
-            // 
-            resources.ApplyResources(this.labelX6, "labelX6");
-            this.labelX6.BackColor = System.Drawing.Color.Transparent;
-            this.labelX6.Name = "labelX6";
             // 
             // ToDate
             // 
@@ -224,75 +238,64 @@
             resources.ApplyResources(this.FromDate, "FromDate");
             this.FromDate.Name = "FromDate";
             // 
-            // labelX2
-            // 
-            resources.ApplyResources(this.labelX2, "labelX2");
-            this.labelX2.BackColor = System.Drawing.Color.Transparent;
-            this.labelX2.Name = "labelX2";
-            // 
-            // labelX1
-            // 
-            resources.ApplyResources(this.labelX1, "labelX1");
-            this.labelX1.BackColor = System.Drawing.Color.Transparent;
-            this.labelX1.Name = "labelX1";
-            // 
             // chB_1
             // 
-            resources.ApplyResources(this.chB_1, "chB_1");
             this.chB_1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            resources.ApplyResources(this.chB_1, "chB_1");
             this.chB_1.Name = "chB_1";
             this.chB_1.CheckedChanged += new System.EventHandler(this.chB_1_CheckedChanged);
             // 
             // frm_statment_Rpt
             // 
-            resources.ApplyResources(this, "$this");
             this.Appearance.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.Appearance.Options.UseBackColor = true;
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.groupPanel1);
             this.Controls.Add(this.crystalReportViewer1);
-            this.Controls.Add(this.panel2);
             this.Name = "frm_statment_Rpt";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frm_statment_Rpt_Load);
-            this.Controls.SetChildIndex(this.panel2, 0);
             this.Controls.SetChildIndex(this.crystalReportViewer1, 0);
             this.Controls.SetChildIndex(this.groupPanel1, 0);
-            this.panel2.ResumeLayout(false);
             this.groupPanel1.ResumeLayout(false);
-            this.groupPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).EndInit();
+            this.groupControl2.ResumeLayout(false);
+            this.groupControl2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
+            this.groupControl1.ResumeLayout(false);
+            this.groupControl1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel panel2;
-        private DevComponents.DotNetBar.ButtonX buttonX5;
-        private DevComponents.DotNetBar.ButtonX buttonX6;
         private CrystalDecisions.Windows.Forms.CrystalReportViewer crystalReportViewer1;
         private DevComponents.DotNetBar.Controls.GroupPanel groupPanel1;
-        private DevComponents.DotNetBar.LabelX labelX4;
-        private DevComponents.DotNetBar.LabelX labelX3;
-        private DevComponents.DotNetBar.LabelX labelX6;
-        private DevComponents.DotNetBar.LabelX labelX2;
-        private DevComponents.DotNetBar.LabelX labelX1;
-        private DevComponents.DotNetBar.Controls.CheckBoxX chB_1;
-        private DevComponents.DotNetBar.ButtonX buttonX1;
         private MyControls.UC_cost uC_cost;
         public MyControls.UC_Acc UC_Acc;
-        private MyControls.UC_Branch uC_Branch1;
-        private DevComponents.DotNetBar.LabelX labelX5;
+        private MyControls.ذ uC_Branch1;
         private MyControls.UC_Catogry uC_Catogry;
-        private MyControls.UC_Catogry UC_Catogry1;
-        private MyControls.UC_cost UC_cost1;
-        public MyControls.UC_Acc UC_Acc1;
-        public DevComponents.DotNetBar.ButtonX Report_btn;
         private MyControls.UC_AccBranch UC_Branch;
-        public DevComponents.DotNetBar.ButtonX buttonX2;
-        private MyControls.UC_AccBranch AccBranch_2;
         public System.Windows.Forms.DateTimePicker FromDate;
         public System.Windows.Forms.DateTimePicker ToDate;
+        public MyControls.UC_Acc UC_Acc1;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        public DevComponents.DotNetBar.Controls.CheckBoxX chB_1;
+        public MyControls.UC_Catogry UC_Catogry1;
+        public MyControls.UC_cost UC_cost1;
+        private System.Windows.Forms.RadioButton rdo_Due;
+        private System.Windows.Forms.RadioButton rdo_NonPaid;
+        private System.Windows.Forms.RadioButton rdo_All;
+        private DevExpress.XtraEditors.GroupControl groupControl2;
+        private System.Windows.Forms.RadioButton rdo_Main;
+        private System.Windows.Forms.RadioButton rdo_Sub;
+        private DevExpress.XtraEditors.GroupControl groupControl1;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
     }
 }

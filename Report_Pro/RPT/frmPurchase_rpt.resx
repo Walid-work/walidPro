@@ -123,7 +123,7 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="buttonX3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>498, 8</value>
+    <value>498, 7</value>
   </data>
   <data name="buttonX3.Size" type="System.Drawing.Size, System.Drawing">
     <value>109, 31</value>
@@ -154,7 +154,7 @@
     <value>Top, Right</value>
   </data>
   <data name="buttonX2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>613, 8</value>
+    <value>613, 7</value>
   </data>
   <data name="buttonX2.Size" type="System.Drawing.Size, System.Drawing">
     <value>109, 31</value>
@@ -184,7 +184,7 @@
     <value>Top, Right</value>
   </data>
   <data name="buttonX1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>285, 11</value>
+    <value>285, 7</value>
   </data>
   <data name="buttonX1.Size" type="System.Drawing.Size, System.Drawing">
     <value>109, 31</value>
@@ -217,7 +217,7 @@
     <value>Top, Right</value>
   </data>
   <data name="btn_1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>856, 8</value>
+    <value>856, 7</value>
   </data>
   <data name="btn_1.Size" type="System.Drawing.Size, System.Drawing">
     <value>83, 31</value>
@@ -247,7 +247,7 @@
     <value>Top, Right</value>
   </data>
   <data name="Report_btn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>728, 8</value>
+    <value>728, 7</value>
   </data>
   <data name="Report_btn.Size" type="System.Drawing.Size, System.Drawing">
     <value>109, 31</value>
@@ -301,13 +301,13 @@
     <value>Top, Right</value>
   </data>
   <data name="UC_PayType.Location" type="System.Drawing.Point, System.Drawing">
-    <value>539, 86</value>
+    <value>534, 86</value>
   </data>
   <data name="UC_PayType.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="UC_PayType.Size" type="System.Drawing.Size, System.Drawing">
-    <value>321, 22</value>
+    <value>322, 20</value>
   </data>
   <data name="UC_PayType.TabIndex" type="System.Int32, mscorlib">
     <value>303</value>
@@ -328,16 +328,13 @@
     <value>Top, Right</value>
   </data>
   <data name="UC_Acc.Location" type="System.Drawing.Point, System.Drawing">
-    <value>539, 62</value>
+    <value>483, 62</value>
   </data>
   <data name="UC_Acc.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
-  <data name="UC_Acc.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>1, 1, 1, 1</value>
-  </data>
   <data name="UC_Acc.Size" type="System.Drawing.Size, System.Drawing">
-    <value>321, 22</value>
+    <value>373, 20</value>
   </data>
   <data name="UC_Acc.TabIndex" type="System.Int32, mscorlib">
     <value>302</value>
@@ -358,13 +355,13 @@
     <value>Top, Right</value>
   </data>
   <data name="UC_Branch.Location" type="System.Drawing.Point, System.Drawing">
-    <value>539, 37</value>
+    <value>483, 37</value>
   </data>
   <data name="UC_Branch.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="UC_Branch.Size" type="System.Drawing.Size, System.Drawing">
-    <value>321, 22</value>
+    <value>373, 20</value>
   </data>
   <data name="UC_Branch.TabIndex" type="System.Int32, mscorlib">
     <value>301</value>
@@ -373,7 +370,7 @@
     <value>UC_Branch</value>
   </data>
   <data name="&gt;&gt;UC_Branch.Type" xml:space="preserve">
-    <value>Report_Pro.MyControls.UC_Branch, Report_Pro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Report_Pro.MyControls.ذ, Report_Pro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;UC_Branch.Parent" xml:space="preserve">
     <value>groupPanel1</value>
@@ -388,10 +385,10 @@
     <value>True</value>
   </data>
   <data name="labelX6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>866, 90</value>
+    <value>863, 89</value>
   </data>
   <data name="labelX6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>59, 17</value>
+    <value>54, 15</value>
   </data>
   <data name="labelX6.TabIndex" type="System.Int32, mscorlib">
     <value>300</value>
@@ -418,10 +415,10 @@
     <value>True</value>
   </data>
   <data name="labelX5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>866, 64</value>
+    <value>863, 65</value>
   </data>
   <data name="labelX5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>43, 17</value>
+    <value>38, 15</value>
   </data>
   <data name="labelX5.TabIndex" type="System.Int32, mscorlib">
     <value>298</value>
@@ -448,10 +445,10 @@
     <value>True</value>
   </data>
   <data name="labelX4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>866, 37</value>
+    <value>863, 40</value>
   </data>
   <data name="labelX4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>29, 17</value>
+    <value>24, 15</value>
   </data>
   <data name="labelX4.TabIndex" type="System.Int32, mscorlib">
     <value>296</value>
@@ -478,10 +475,10 @@
     <value>True</value>
   </data>
   <data name="labelX3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>866, 13</value>
+    <value>863, 16</value>
   </data>
   <data name="labelX3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>72, 17</value>
+    <value>66, 15</value>
   </data>
   <data name="labelX3.TabIndex" type="System.Int32, mscorlib">
     <value>294</value>
@@ -514,10 +511,10 @@
     <value>الجميع</value>
   </data>
   <data name="comboBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>699, 12</value>
+    <value>691, 13</value>
   </data>
   <data name="comboBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>162, 21</value>
+    <value>165, 21</value>
   </data>
   <data name="comboBox1.TabIndex" type="System.Int32, mscorlib">
     <value>293</value>
@@ -592,7 +589,7 @@
     <value>426, 35</value>
   </data>
   <data name="labelX2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>47, 17</value>
+    <value>42, 15</value>
   </data>
   <data name="labelX2.TabIndex" type="System.Int32, mscorlib">
     <value>268</value>
@@ -622,7 +619,7 @@
     <value>424, 11</value>
   </data>
   <data name="labelX1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 17</value>
+    <value>40, 15</value>
   </data>
   <data name="labelX1.TabIndex" type="System.Int32, mscorlib">
     <value>267</value>

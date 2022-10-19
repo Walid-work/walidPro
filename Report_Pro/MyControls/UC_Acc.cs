@@ -20,7 +20,10 @@ namespace Report_Pro.MyControls
             InitializeComponent();
         }
 
-       
+
+
+     
+
 
         private void ID_TextChanged(object sender, EventArgs e)
         {
@@ -89,23 +92,26 @@ namespace Report_Pro.MyControls
         
         private void btn1_Click(object sender, EventArgs e)
         {
-            OnClick(e);
+            //OnClick(e);
 
-            PL.frm_SearchAcc frm = new PL.frm_SearchAcc();
-            if (Properties.Settings.Default.lungh == "0")
-            {
-                frm.Location = new Point(x-frm.Width, y);
-            }
-            else
-            {
-                frm.Location = new Point(x, y);
-            }
+            //PL.frm_SearchAcc frm = new PL.frm_SearchAcc();
 
-            frm.ShowDialog();
+            //if (Properties.Settings.Default.lungh == "0")
+            //{
 
-            ID.Text =frm.DGV1.CurrentRow.Cells[0].Value.ToString();
+            //    frm.Location = new Point(x- frm.Width, y);
+            //}
+            //else
+            //{
+            //    frm.Location = new Point(x, y);
+            //}
+            //frm.branch_search = branchID.Text;
+            //frm.ShowDialog();
 
-            ID.Focus();
+            search_();
+            //ID.Text = frm.DGV1.CurrentRow.Cells[0].Value.ToString();
+
+            //ID.Focus();
         }
 
         private void search_()
@@ -223,6 +229,11 @@ namespace Report_Pro.MyControls
         private void ID_KeyDown(object sender, KeyEventArgs e)
         {
             OnKeyDown(e);
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

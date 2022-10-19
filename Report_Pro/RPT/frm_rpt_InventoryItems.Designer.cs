@@ -59,7 +59,7 @@
             this.labelX8 = new DevComponents.DotNetBar.LabelX();
             this.labelX7 = new DevComponents.DotNetBar.LabelX();
             this.labelX6 = new DevComponents.DotNetBar.LabelX();
-            this.Branch = new Report_Pro.MyControls.UC_Branch();
+            this.Branch = new Report_Pro.MyControls.ذ();
             this.labelX3 = new DevComponents.DotNetBar.LabelX();
             this.labelX2 = new DevComponents.DotNetBar.LabelX();
             this.Item = new Report_Pro.MyControls.UC_Items();
@@ -685,7 +685,7 @@
         private System.Windows.Forms.Button btn_print;
         public MyControls.Uc_Group Group1;
         public MyControls.UC_Transaction Uc_Transaction;
-        public MyControls.UC_Branch Branch;
+        public MyControls.ذ Branch;
         public MyControls.UC_Items Item;
         public MyControls.Uc_Group Group;
         public System.Windows.Forms.ComboBox cmb_DimCategory;

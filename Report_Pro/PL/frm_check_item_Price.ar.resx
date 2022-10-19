@@ -262,6 +262,9 @@
   <data name="labelX21.Text" xml:space="preserve">
     <value>اخر مبيعات</value>
   </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 21</value>
+  </data>
   <data name="label1.Text" xml:space="preserve">
     <value>الفرع</value>
   </data>

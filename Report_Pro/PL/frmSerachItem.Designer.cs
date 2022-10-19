@@ -28,28 +28,53 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmSerachItem));
             this.uc_SearchItem1 = new Report_Pro.MyControls.Uc_SearchItem();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // uc_SearchItem1
             // 
-            this.uc_SearchItem1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.uc_SearchItem1.Location = new System.Drawing.Point(0, 0);
+            resources.ApplyResources(this.uc_SearchItem1, "uc_SearchItem1");
             this.uc_SearchItem1.Name = "uc_SearchItem1";
-            this.uc_SearchItem1.Size = new System.Drawing.Size(1131, 510);
-            this.uc_SearchItem1.TabIndex = 0;
+            this.uc_SearchItem1.Load += new System.EventHandler(this.uc_SearchItem1_Load);
             this.uc_SearchItem1.DoubleClick += new System.EventHandler(this.uc_SearchItem1_DoubleClick);
+            // 
+            // panel1
+            // 
+            resources.ApplyResources(this.panel1, "panel1");
+            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Name = "panel1";
+            // 
+            // button1
+            // 
+            resources.ApplyResources(this.button1, "button1");
+            this.button1.BackgroundImage = global::Report_Pro.Properties.Resources.Exit_icon;
+            this.button1.Name = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // label1
+            // 
+            resources.ApplyResources(this.label1, "label1");
+            this.label1.BackColor = System.Drawing.Color.Teal;
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Name = "label1";
             // 
             // frmSerachItem
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1131, 510);
             this.Controls.Add(this.uc_SearchItem1);
+            this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmSerachItem";
-            this.Text = "frmSerachItem";
             this.Load += new System.EventHandler(this.frmSerachItem_Load);
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -57,5 +82,8 @@
         #endregion
 
         public MyControls.Uc_SearchItem uc_SearchItem1;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label1;
     }
 }

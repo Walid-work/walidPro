@@ -19,7 +19,7 @@ namespace Report_Pro.MyControls
 
         private void UC_Catogry_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void ID_KeyUp(object sender, KeyEventArgs e)
@@ -75,7 +75,7 @@ namespace Report_Pro.MyControls
         private void ID_Enter(object sender, EventArgs e)
         {
             dgv1.Visible = false;
-            this.Height = 28;
+            this.Height = 21;
             this.SendToBack();
         }
 
@@ -88,7 +88,7 @@ namespace Report_Pro.MyControls
             Desc.Text = dgv1.Rows[ii].Cells[1].Value.ToString();
 
             dgv1.Visible = false;
-            this.Height = 28;
+            this.Height = 21;
             this.SendToBack();
 
         }
@@ -110,15 +110,12 @@ namespace Report_Pro.MyControls
 
         }
 
-        private void Desc_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+      
 
         private void UC_Catogry_Leave(object sender, EventArgs e)
         {
             dgv1.Visible = false;
-            this.Height = 28;
+            this.Height = 21;
             this.SendToBack();
         }
     }

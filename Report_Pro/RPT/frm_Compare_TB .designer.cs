@@ -80,7 +80,7 @@
             this.groupPanel1 = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.UC_Catogry = new Report_Pro.MyControls.UC_Catogry();
             this.UC_cost = new Report_Pro.MyControls.UC_cost();
-            this.UC_Branch = new Report_Pro.MyControls.UC_Branch();
+            this.UC_Branch = new Report_Pro.MyControls.ذ();
             this.UC_Acc = new Report_Pro.MyControls.UC_Acc();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -853,7 +853,7 @@
         private DevComponents.DotNetBar.Controls.GroupPanel groupPanel1;
         internal System.Windows.Forms.RadioButton RB_All_Acc;
         private MyControls.UC_Acc UC_Acc;
-        private MyControls.UC_Branch UC_Branch;
+        private MyControls.ذ UC_Branch;
         private MyControls.UC_cost UC_cost;
       
         private MyControls.UC_Catogry UC_Catogry;

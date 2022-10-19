@@ -60,7 +60,7 @@
             this.labelX1 = new DevComponents.DotNetBar.LabelX();
             this.Group = new Report_Pro.MyControls.Uc_Group();
             this.Items = new Report_Pro.MyControls.UC_Items();
-            this.Branch = new Report_Pro.MyControls.UC_Branch();
+            this.Branch = new Report_Pro.MyControls.ذ();
             this.Acc = new Report_Pro.MyControls.UC_Acc();
             this.panelEx1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.fromDate)).BeginInit();
@@ -930,7 +930,7 @@
         private DevComponents.Editors.DateTimeAdv.DateTimeInput fromDate;
         private DevComponents.Editors.DateTimeAdv.DateTimeInput toDate;
         private DevComponents.DotNetBar.Controls.GroupPanel groupPanel1;
-        private MyControls.UC_Branch Branch;
+        private MyControls.ذ Branch;
         private MyControls.UC_Acc Acc;
         private MyControls.UC_Items Items;
         private MyControls.Uc_Group Group;

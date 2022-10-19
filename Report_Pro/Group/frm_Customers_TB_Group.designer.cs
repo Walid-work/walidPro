@@ -74,7 +74,7 @@
             this.RS1 = new System.Windows.Forms.RadioButton();
             this.UC_Catogry = new Report_Pro.MyControls.UC_Catogry();
             this.UC_cost = new Report_Pro.MyControls.UC_cost();
-            this.UC_Branch = new Report_Pro.MyControls.UC_Branch();
+            this.UC_Branch = new Report_Pro.MyControls.ذ();
             this.UC_Acc = new Report_Pro.MyControls.UC_Acc();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -828,7 +828,7 @@
         private System.Windows.Forms.DataGridView DGV3;
         private DevComponents.DotNetBar.Controls.GroupPanel groupPanel1;
         private MyControls.UC_Acc UC_Acc;
-        private MyControls.UC_Branch UC_Branch;
+        private MyControls.ذ UC_Branch;
         private MyControls.UC_cost UC_cost;
         private MyControls.UC_Catogry UC_Catogry;
         internal System.Windows.Forms.GroupBox groupBox1;

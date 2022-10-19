@@ -167,5 +167,10 @@ namespace Report_Pro.MyControls
         {
 
         }
+
+        private void UC_AccBranch_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

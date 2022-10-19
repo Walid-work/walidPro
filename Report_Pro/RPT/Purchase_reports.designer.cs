@@ -30,6 +30,7 @@
         {
             System.Windows.Forms.RadioButton rdo_byVendor;
             this.panel1 = new System.Windows.Forms.Panel();
+            this.buttonX2 = new DevComponents.DotNetBar.ButtonX();
             this.buttonX1 = new DevComponents.DotNetBar.ButtonX();
             this.btn_1 = new DevComponents.DotNetBar.ButtonX();
             this.Report_btn = new DevComponents.DotNetBar.ButtonX();
@@ -54,12 +55,11 @@
             this.labelX2 = new DevComponents.DotNetBar.LabelX();
             this.UC_Acc = new Report_Pro.MyControls.UC_Acc();
             this.labelX4 = new DevComponents.DotNetBar.LabelX();
-            this.UC_Branch = new Report_Pro.MyControls.UC_Branch();
+            this.UC_Branch = new Report_Pro.MyControls.ذ();
             this.ToDate_ = new System.Windows.Forms.DateTimePicker();
             this.FromDate_ = new System.Windows.Forms.DateTimePicker();
             this.labelX7 = new DevComponents.DotNetBar.LabelX();
             this.labelX8 = new DevComponents.DotNetBar.LabelX();
-            this.buttonX2 = new DevComponents.DotNetBar.ButtonX();
             rdo_byVendor = new System.Windows.Forms.RadioButton();
             this.panel1.SuspendLayout();
             this.groupPanel1.SuspendLayout();
@@ -90,16 +90,29 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(778, 43);
+            this.panel1.Size = new System.Drawing.Size(897, 43);
             this.panel1.TabIndex = 5;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // buttonX2
+            // 
+            this.buttonX2.AccessibleRole = System.Windows.Forms.AccessibleRole.CheckButton;
+            this.buttonX2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonX2.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.buttonX2.Location = new System.Drawing.Point(397, 6);
+            this.buttonX2.Name = "buttonX2";
+            this.buttonX2.Size = new System.Drawing.Size(110, 31);
+            this.buttonX2.TabIndex = 293;
+            this.buttonX2.Text = "التقرير";
+            this.buttonX2.Tooltip = "<font color=\"#ED1C24\">التقرير</font><b></b>";
+            this.buttonX2.Click += new System.EventHandler(this.buttonX2_Click);
             // 
             // buttonX1
             // 
             this.buttonX1.AccessibleRole = System.Windows.Forms.AccessibleRole.CheckButton;
             this.buttonX1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonX1.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.buttonX1.Location = new System.Drawing.Point(394, 6);
+            this.buttonX1.Location = new System.Drawing.Point(513, 6);
             this.buttonX1.Name = "buttonX1";
             this.buttonX1.Size = new System.Drawing.Size(117, 31);
             this.buttonX1.TabIndex = 292;
@@ -112,7 +125,7 @@
             this.btn_1.AccessibleRole = System.Windows.Forms.AccessibleRole.CheckButton;
             this.btn_1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_1.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btn_1.Location = new System.Drawing.Point(675, 6);
+            this.btn_1.Location = new System.Drawing.Point(794, 6);
             this.btn_1.Name = "btn_1";
             this.btn_1.Size = new System.Drawing.Size(89, 31);
             this.btn_1.TabIndex = 291;
@@ -125,7 +138,7 @@
             this.Report_btn.AccessibleRole = System.Windows.Forms.AccessibleRole.CheckButton;
             this.Report_btn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Report_btn.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.Report_btn.Location = new System.Drawing.Point(560, 6);
+            this.Report_btn.Location = new System.Drawing.Point(679, 6);
             this.Report_btn.Name = "Report_btn";
             this.Report_btn.Size = new System.Drawing.Size(110, 31);
             this.Report_btn.TabIndex = 290;
@@ -210,7 +223,7 @@
             this.crystalReportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.crystalReportViewer1.Location = new System.Drawing.Point(0, 43);
             this.crystalReportViewer1.Name = "crystalReportViewer1";
-            this.crystalReportViewer1.Size = new System.Drawing.Size(778, 407);
+            this.crystalReportViewer1.Size = new System.Drawing.Size(897, 407);
             this.crystalReportViewer1.TabIndex = 6;
             this.crystalReportViewer1.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None;
             this.crystalReportViewer1.ToolPanelWidth = 300;
@@ -284,7 +297,7 @@
             this.groupPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupPanel1.Location = new System.Drawing.Point(0, 43);
             this.groupPanel1.Name = "groupPanel1";
-            this.groupPanel1.Size = new System.Drawing.Size(778, 245);
+            this.groupPanel1.Size = new System.Drawing.Size(897, 245);
             // 
             // 
             // 
@@ -313,7 +326,7 @@
             this.groupBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox3.Controls.Add(rdo_byVendor);
             this.groupBox3.Controls.Add(this.rdo_byItem);
-            this.groupBox3.Location = new System.Drawing.Point(380, 125);
+            this.groupBox3.Location = new System.Drawing.Point(499, 125);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(321, 49);
             this.groupBox3.TabIndex = 311;
@@ -340,7 +353,7 @@
             this.labelX6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelX6.AutoSize = true;
             this.labelX6.BackColor = System.Drawing.Color.Transparent;
-            this.labelX6.Location = new System.Drawing.Point(705, 64);
+            this.labelX6.Location = new System.Drawing.Point(824, 64);
             this.labelX6.Name = "labelX6";
             this.labelX6.Size = new System.Drawing.Size(45, 15);
             this.labelX6.TabIndex = 310;
@@ -349,21 +362,19 @@
             // Uc_Group
             // 
             this.Uc_Group.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Uc_Group.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Uc_Group.Location = new System.Drawing.Point(380, 60);
+            this.Uc_Group.Location = new System.Drawing.Point(411, 63);
             this.Uc_Group.Margin = new System.Windows.Forms.Padding(0);
             this.Uc_Group.Name = "Uc_Group";
-            this.Uc_Group.Size = new System.Drawing.Size(321, 22);
+            this.Uc_Group.Size = new System.Drawing.Size(400, 20);
             this.Uc_Group.TabIndex = 309;
             // 
             // UC_Items
             // 
             this.UC_Items.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.UC_Items.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.UC_Items.Location = new System.Drawing.Point(380, 86);
+            this.UC_Items.Location = new System.Drawing.Point(411, 89);
             this.UC_Items.Margin = new System.Windows.Forms.Padding(0);
             this.UC_Items.Name = "UC_Items";
-            this.UC_Items.Size = new System.Drawing.Size(321, 22);
+            this.UC_Items.Size = new System.Drawing.Size(400, 20);
             this.UC_Items.TabIndex = 308;
             // 
             // labelX3
@@ -371,7 +382,7 @@
             this.labelX3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelX3.AutoSize = true;
             this.labelX3.BackColor = System.Drawing.Color.Transparent;
-            this.labelX3.Location = new System.Drawing.Point(705, 90);
+            this.labelX3.Location = new System.Drawing.Point(824, 90);
             this.labelX3.Name = "labelX3";
             this.labelX3.Size = new System.Drawing.Size(30, 15);
             this.labelX3.TabIndex = 303;
@@ -382,7 +393,7 @@
             this.labelX2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelX2.AutoSize = true;
             this.labelX2.BackColor = System.Drawing.Color.Transparent;
-            this.labelX2.Location = new System.Drawing.Point(705, 38);
+            this.labelX2.Location = new System.Drawing.Point(824, 38);
             this.labelX2.Name = "labelX2";
             this.labelX2.Size = new System.Drawing.Size(28, 15);
             this.labelX2.TabIndex = 298;
@@ -392,12 +403,10 @@
             // 
             this.UC_Acc.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.UC_Acc.BackColor = System.Drawing.Color.Transparent;
-            this.UC_Acc.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.UC_Acc.Location = new System.Drawing.Point(380, 34);
+            this.UC_Acc.Location = new System.Drawing.Point(411, 37);
             this.UC_Acc.Margin = new System.Windows.Forms.Padding(0);
             this.UC_Acc.Name = "UC_Acc";
-            this.UC_Acc.Padding = new System.Windows.Forms.Padding(1);
-            this.UC_Acc.Size = new System.Drawing.Size(321, 22);
+            this.UC_Acc.Size = new System.Drawing.Size(400, 20);
             this.UC_Acc.TabIndex = 306;
             // 
             // labelX4
@@ -405,7 +414,7 @@
             this.labelX4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelX4.AutoSize = true;
             this.labelX4.BackColor = System.Drawing.Color.Transparent;
-            this.labelX4.Location = new System.Drawing.Point(705, 11);
+            this.labelX4.Location = new System.Drawing.Point(824, 11);
             this.labelX4.Name = "labelX4";
             this.labelX4.Size = new System.Drawing.Size(24, 15);
             this.labelX4.TabIndex = 296;
@@ -415,18 +424,17 @@
             // 
             this.UC_Branch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.UC_Branch.BackColor = System.Drawing.Color.Transparent;
-            this.UC_Branch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.UC_Branch.Cursor = System.Windows.Forms.Cursors.Default;
-            this.UC_Branch.Location = new System.Drawing.Point(380, 8);
+            this.UC_Branch.Location = new System.Drawing.Point(411, 11);
             this.UC_Branch.Margin = new System.Windows.Forms.Padding(0);
             this.UC_Branch.Name = "UC_Branch";
-            this.UC_Branch.Size = new System.Drawing.Size(321, 22);
+            this.UC_Branch.Size = new System.Drawing.Size(400, 20);
             this.UC_Branch.TabIndex = 305;
             // 
             // ToDate_
             // 
             this.ToDate_.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.ToDate_.Location = new System.Drawing.Point(148, 35);
+            this.ToDate_.Location = new System.Drawing.Point(128, 44);
             this.ToDate_.Name = "ToDate_";
             this.ToDate_.Size = new System.Drawing.Size(97, 20);
             this.ToDate_.TabIndex = 292;
@@ -434,7 +442,7 @@
             // FromDate_
             // 
             this.FromDate_.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.FromDate_.Location = new System.Drawing.Point(148, 11);
+            this.FromDate_.Location = new System.Drawing.Point(128, 20);
             this.FromDate_.Name = "FromDate_";
             this.FromDate_.Size = new System.Drawing.Size(97, 20);
             this.FromDate_.TabIndex = 291;
@@ -444,7 +452,7 @@
             this.labelX7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelX7.AutoSize = true;
             this.labelX7.BackColor = System.Drawing.Color.Transparent;
-            this.labelX7.Location = new System.Drawing.Point(245, 37);
+            this.labelX7.Location = new System.Drawing.Point(225, 46);
             this.labelX7.Name = "labelX7";
             this.labelX7.Size = new System.Drawing.Size(42, 15);
             this.labelX7.TabIndex = 268;
@@ -455,30 +463,17 @@
             this.labelX8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelX8.AutoSize = true;
             this.labelX8.BackColor = System.Drawing.Color.Transparent;
-            this.labelX8.Location = new System.Drawing.Point(243, 13);
+            this.labelX8.Location = new System.Drawing.Point(223, 22);
             this.labelX8.Name = "labelX8";
             this.labelX8.Size = new System.Drawing.Size(40, 15);
             this.labelX8.TabIndex = 267;
             this.labelX8.Text = "من تاريخ";
             // 
-            // buttonX2
-            // 
-            this.buttonX2.AccessibleRole = System.Windows.Forms.AccessibleRole.CheckButton;
-            this.buttonX2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonX2.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.buttonX2.Location = new System.Drawing.Point(278, 6);
-            this.buttonX2.Name = "buttonX2";
-            this.buttonX2.Size = new System.Drawing.Size(110, 31);
-            this.buttonX2.TabIndex = 293;
-            this.buttonX2.Text = "التقرير";
-            this.buttonX2.Tooltip = "<font color=\"#ED1C24\">التقرير</font><b></b>";
-            this.buttonX2.Click += new System.EventHandler(this.buttonX2_Click);
-            // 
             // Purchase_reports
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(778, 450);
+            this.ClientSize = new System.Drawing.Size(897, 450);
             this.Controls.Add(this.groupPanel1);
             this.Controls.Add(this.crystalReportViewer1);
             this.Controls.Add(this.panel1);
@@ -524,7 +519,7 @@
         private DevComponents.DotNetBar.LabelX labelX3;
         private MyControls.UC_Items UC_Items;
         private MyControls.UC_Acc UC_Acc;
-        private MyControls.UC_Branch UC_Branch;
+        private MyControls.ذ UC_Branch;
         private DevComponents.DotNetBar.ButtonX buttonX1;
         private DevComponents.DotNetBar.LabelX labelX6;
         private Report_Pro.MyControls.Uc_Group Uc_Group;

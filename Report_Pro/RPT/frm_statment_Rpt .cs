@@ -13,18 +13,80 @@ namespace Report_Pro.RPT
     {
         string db1 = Properties.Settings.Default.Database_1;
         string btn_name;
+
+        public Boolean canChangeAcc;
         List<CurrencyInfo> currencies = new List<CurrencyInfo>();
         int currencyNo = 2;
         DAL.DataAccesslayer1 dal = new DAL.DataAccesslayer1();
         public frm_statment_Rpt()
         {
             InitializeComponent();
+
+            if(canChangeAcc == false)
+            {
+                UC_Acc1.Enabled = false;
+                UC_cost1.Enabled = false;
+                UC_Catogry1.Enabled = false;
+                chB_1.Enabled = false;
+            }
+            else
+            {
+                UC_Acc1.Enabled = true;
+                UC_cost1.Enabled = true;
+                UC_Catogry1.Enabled = true;
+                chB_1.Enabled = true;
+            }
         }
 
         private void buttonX6_Click(object sender, EventArgs e)
         {
             groupPanel1.Visible = true;
         }
+
+        public override void preview()
+        {
+            base.preview();
+            if (rdo_Sub.Checked)
+            {
+                if (dal.getDataTabl_1(@" SELECT PAYER_NAME  FROM payer2  where ACC_NO = '" +UC_Acc1.ID.Text + "' and BRANCH_code like '" + UC_Branch.ID.Text +"%' and t_final=1").Rows.Count <= 0) 
+                {
+                    MessageBox.Show("لم يتم اختيار حساب", "خطأ", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                if (Properties.Settings.Default.lungh == "0")
+                {
+                    print_acc_A();
+                }
+                else
+                {
+                    print_acc_E();
+                }
+
+            }
+            else
+            {
+                if (dal.getDataTabl_1(@" SELECT PAYER_NAME  FROM payer2  where ACC_NO = '" + UC_Acc1.ID.Text + "' and BRANCH_code like '" + UC_Branch.ID.Text + "%'").Rows.Count <= 0)
+                {
+                    MessageBox.Show("لم يتم اختيار حساب", "خطأ", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                if (Properties.Settings.Default.lungh == "0")
+                {
+                    print_acc_all_A();
+                }
+                else
+                {
+                    print_all_E();
+                }
+
+            }
+        }
+
+
+
+        
 
         public override void Report()
         {
@@ -54,6 +116,7 @@ namespace Report_Pro.RPT
                 case "DR":
                     currencyNo = 1;
                     break;
+
             }
 
 
@@ -208,15 +271,28 @@ namespace Report_Pro.RPT
             DataTable dt1 = new DataTable();
             DataTable dt2 = new DataTable();
 
+           
+                dt1 = dal.getDataTabl_1(@"select A.ser_no,A.BRANCH_code,A.COST_CENTER,A.g_date,A.meno,A.loh,A.CAT_CODE,A.desc2
+                ,ISNULL(A.desc_E,A.desc2) AS desc_E,P.PAYER_NAME,P.payer_l_name,B.branch_name
+                ,ISNULL(B.WH_E_NAME,B.branch_name) AS WH_E_NAME,C.CAT_NAME,S.COST_name
+                ,ISNULL(S.COST_E_NAME,s.COST_name) AS COST_E_NAME
+                from daily_transaction as A
+                inner join  payer2 as P on P.ACC_NO = A.ACC_NO and P.BRANCH_code=A.BRANCH_code
+                inner join  wh_BRANCHES as B on  B.BRANCH_code=A.BRANCH_code
+                left join  CATEGORY As C on  C.CAT_CODE=A.CAT_CODE
+                left join  COST_CENTER as S on S.COST_CODE=A.COST_CENTER
+                where cast(A.g_date as date) between '"+FromDate.Value.ToString("yyyy-MM-dd")+"' AND '"+ToDate.Value.ToString("yyyy-MM-dd")+
+                "'and  A.ACC_NO = '"+UC_Acc1.ID.Text+"' and ISNULL(A.COST_CENTER,'') like '"+UC_cost1.ID.Text +
+                "%'and ISNULL(A.CAT_CODE,'')  like '"+UC_Catogry1.ID.Text + "%' and  A.BRANCH_code like (CASE WHEN (select t_final  from BRANCHS where BRANCH_code='"+UC_Branch.ID.Text+
+                "')='1' then '"+UC_Branch.ID.Text+ "' else  '" + UC_Branch.ID.Text + "%' end) order by A.G_date ");
             if (chB_1.Checked == true)
             {
-                dt1 = (dal.getDataTabl("acc_statment_", FromDate.Value.Date, ToDate.Value.Date, UC_Acc1.ID.Text, UC_cost1.ID.Text, UC_Catogry1.ID.Text, UC_Branch.ID.Text, db1));
                 dt2 = (dal.getDataTabl("begin_statment_balance_", FromDate.Value.Date, ToDate.Value.Date, UC_Acc1.ID.Text, UC_cost1.ID.Text, UC_Catogry1.ID.Text, FromDate.Value.Date, UC_Branch.ID.Text, db1, Properties.Settings.Default.Currency));
                 rpt.DataDefinition.FormulaFields["OB_studs"].Text = "'" + chB_1.Text + "'";
+
             }
             else
             {
-                dt1 = (dal.getDataTabl("acc_statment_", FromDate.Value.Date, ToDate.Value.Date, UC_Acc1.ID.Text, UC_cost1.ID.Text, UC_Catogry1.ID.Text, UC_Branch.ID.Text, db1));
                 dt2 = (dal.getDataTabl("begin_statment_balance_", FromDate.Value.Date, ToDate.Value.Date, UC_Acc1.ID.Text, UC_cost1.ID.Text, UC_Catogry1.ID.Text, FromDate.MinDate, UC_Branch.ID.Text, db1, Properties.Settings.Default.Currency));
                 rpt.DataDefinition.FormulaFields["OB_studs"].Text = "";
             }
@@ -224,7 +300,7 @@ namespace Report_Pro.RPT
             ds.Tables.Add(dt1);
             ds.Tables.Add(dt2);
 
-            //ds.WriteXmlSchema("schema1.xml");
+            ds.WriteXmlSchema("schema1.xml");
 
             rpt.SetDataSource(ds);
             crystalReportViewer1.ReportSource = rpt;
@@ -232,18 +308,26 @@ namespace Report_Pro.RPT
             rpt.DataDefinition.FormulaFields["From_date"].Text = "'" + FromDate.Value.ToString("dd/MM/yyyy") + "'";
             rpt.DataDefinition.FormulaFields["To_Date"].Text = "'" + ToDate.Value.ToString("dd/MM/yyyy") + "'";
             rpt.DataDefinition.FormulaFields["Acc_No"].Text = " '" + UC_Acc1.ID.Text + "'";
-            rpt.DataDefinition.FormulaFields["Acc_name"].Text = " '" + UC_Acc1.ID.Text + "'+' - '+'" + UC_Acc1.Desc.Text + "'";
+            rpt.DataDefinition.FormulaFields["Acc_name"].Text = "'" + UC_Acc1.Desc.Text + "'";
             rpt.DataDefinition.FormulaFields["Cost_No"].Text = "'" + UC_cost1.ID.Text + "'";
-            rpt.DataDefinition.FormulaFields["Cost_name"].Text = "'" + UC_cost1.ID.Text + "'+' - '+'" + UC_cost1.Desc.Text + "'";
+            rpt.DataDefinition.FormulaFields["Cost_name"].Text = "'" + UC_cost1.Desc.Text + "'";
             rpt.DataDefinition.FormulaFields["Cat_NO"].Text = "'" + UC_Catogry1.ID.Text + "'";
             rpt.DataDefinition.FormulaFields["Cat_Name"].Text = "'" + UC_Catogry1.Desc.Text + "'";
             rpt.DataDefinition.FormulaFields["company_name"].Text = "'" + Properties.Settings.Default.head_txt_EN + "'";
             rpt.DataDefinition.FormulaFields["branch_name"].Text = "'" + Properties.Settings.Default.Branch_txt_EN + "'";
             rpt.DataDefinition.FormulaFields["dgits_"].Text = "'" + dal.digits_ + "'";
+            if (dt2.Rows.Count > 0)
+            {
+                ToWord toWord = new ToWord(Math.Abs(Math.Round(dt2.Rows[0][1].ToString().ToDecimal(), dal.digits_)), currencies[currencyNo]);
+                rpt.DataDefinition.FormulaFields["NuToText_A"].Text = "'" + toWord.ConvertToEnglish().ToString() + "'";
+            }
+            else
+            {
 
-            ToWord toWord = new ToWord(Math.Abs(Math.Round(dt2.Rows[0][1].ToString().ToDecimal(), dal.digits_)), currencies[currencyNo]);
+            ToWord toWord = new ToWord(Math.Abs(Math.Round("0".ToDecimal(), dal.digits_)), currencies[currencyNo]);
             rpt.DataDefinition.FormulaFields["NuToText_A"].Text = "'" + toWord.ConvertToEnglish().ToString() + "'";
 
+            }
             groupPanel1.Visible = false;
 
         }
@@ -472,7 +556,7 @@ namespace Report_Pro.RPT
             if (dt2.Rows.Count > 0)
             {
                 ToWord toWord = new ToWord(Math.Abs(Math.Round(dt2.Rows[0][2].ToString().ToDecimal(), dal.digits_)), currencies[currencyNo]);
-                rpt.DataDefinition.FormulaFields["NuToText_A"].Text = "'" + toWord.ConvertToArabic().ToString() + "'";
+               // rpt.DataDefinition.FormulaFields["NuToText_A"].Text = "'" + toWord.ConvertToArabic().ToString() + "'";
             }
             //rpt.PrintOptions.PrinterName = Properties.Settings.Default.Report_P;
             //rpt.PrintToPrinter(1, false, 0, 15);
@@ -492,6 +576,24 @@ namespace Report_Pro.RPT
 
         private void frm_statment_Rpt_Load(object sender, EventArgs e)
         {
+            
+           
+
+            if ( canEdit == 1)
+            {
+                UC_Acc1.Enabled = true;
+                UC_cost1.Enabled = true;
+                UC_Catogry1.Enabled = true;
+                chB_1.Enabled = true;
+            }
+            else
+            {
+                UC_Acc1.Enabled = false;
+                UC_cost1.Enabled = false;
+                UC_Catogry1.Enabled = false;
+                chB_1.Enabled = false;
+            }
+
             FromDate.Value = new DateTime(DateTime.Now.Year, 1, 1);
             ToDate.Value = DateTime.Today;
 
@@ -959,5 +1061,9 @@ namespace Report_Pro.RPT
             groupPanel1.Visible = true;
         }
 
+        private void btn_preview_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

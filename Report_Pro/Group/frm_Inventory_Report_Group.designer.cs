@@ -58,7 +58,7 @@
             this.thick_2 = new System.Windows.Forms.NumericUpDown();
             this.thick_1 = new System.Windows.Forms.NumericUpDown();
             this.labelX6 = new DevComponents.DotNetBar.LabelX();
-            this.Branch = new Report_Pro.MyControls.UC_Branch();
+            this.Branch = new Report_Pro.MyControls.ذ();
             this.labelX5 = new DevComponents.DotNetBar.LabelX();
             this.cmb_DimCategory = new System.Windows.Forms.ComboBox();
             this.labelX3 = new DevComponents.DotNetBar.LabelX();
@@ -606,7 +606,7 @@
         private DevComponents.DotNetBar.LabelX labelX5;
         private System.Windows.Forms.ComboBox cmb_DimCategory;
         private DevComponents.DotNetBar.LabelX labelX6;
-        private MyControls.UC_Branch Branch;
+        private MyControls.ذ Branch;
         private System.Windows.Forms.NumericUpDown thick_2;
         private System.Windows.Forms.NumericUpDown thick_1;
         private DevComponents.DotNetBar.LabelX labelX8;

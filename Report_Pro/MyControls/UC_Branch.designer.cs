@@ -1,6 +1,6 @@
 ﻿namespace Report_Pro.MyControls
 {
-    partial class UC_Branch
+    partial class ذ
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,15 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_Branch));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ذ));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgv1 = new DevComponents.DotNetBar.Controls.DataGridViewX();
-            this.Desc = new DevComponents.DotNetBar.Controls.TextBoxX();
-            this.ID = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.btn1 = new DevComponents.DotNetBar.ButtonX();
             this.txtTfinal = new System.Windows.Forms.TextBox();
             this.txtAccBranch = new System.Windows.Forms.TextBox();
+            this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
+            this.Desc = new System.Windows.Forms.TextBox();
+            this.ID = new System.Windows.Forms.TextBox();
+            this.Root = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
             ((System.ComponentModel.ISupportInitialize)(this.dgv1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
+            this.layoutControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Root)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).BeginInit();
             this.SuspendLayout();
             // 
             // dgv1
@@ -49,14 +60,14 @@
             this.dgv1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgv1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv1.ColumnHeadersVisible = false;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv1.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv1.DefaultCellStyle = dataGridViewCellStyle1;
             this.dgv1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
             this.dgv1.Name = "dgv1";
             this.dgv1.ReadOnly = true;
@@ -64,42 +75,6 @@
             this.dgv1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgv1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv1_CellContentClick_1);
             this.dgv1.DoubleClick += new System.EventHandler(this.dgv1_DoubleClick);
-            // 
-            // Desc
-            // 
-            resources.ApplyResources(this.Desc, "Desc");
-            // 
-            // 
-            // 
-            this.Desc.Border.Class = "TextBoxBorder";
-            this.Desc.ButtonCustom.DisplayPosition = ((int)(resources.GetObject("Desc.ButtonCustom.DisplayPosition")));
-            this.Desc.ButtonCustom.Image = ((System.Drawing.Image)(resources.GetObject("Desc.ButtonCustom.Image")));
-            this.Desc.ButtonCustom.Text = resources.GetString("Desc.ButtonCustom.Text");
-            this.Desc.ButtonCustom2.DisplayPosition = ((int)(resources.GetObject("Desc.ButtonCustom2.DisplayPosition")));
-            this.Desc.ButtonCustom2.Image = ((System.Drawing.Image)(resources.GetObject("Desc.ButtonCustom2.Image")));
-            this.Desc.ButtonCustom2.Text = resources.GetString("Desc.ButtonCustom2.Text");
-            this.Desc.Name = "Desc";
-            this.Desc.TextChanged += new System.EventHandler(this.Desc_TextChanged);
-            this.Desc.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Desc_KeyUp);
-            // 
-            // ID
-            // 
-            resources.ApplyResources(this.ID, "ID");
-            // 
-            // 
-            // 
-            this.ID.Border.Class = "TextBoxBorder";
-            this.ID.ButtonCustom.DisplayPosition = ((int)(resources.GetObject("ID.ButtonCustom.DisplayPosition")));
-            this.ID.ButtonCustom.Image = ((System.Drawing.Image)(resources.GetObject("ID.ButtonCustom.Image")));
-            this.ID.ButtonCustom.Text = resources.GetString("ID.ButtonCustom.Text");
-            this.ID.ButtonCustom2.DisplayPosition = ((int)(resources.GetObject("ID.ButtonCustom2.DisplayPosition")));
-            this.ID.ButtonCustom2.Image = ((System.Drawing.Image)(resources.GetObject("ID.ButtonCustom2.Image")));
-            this.ID.ButtonCustom2.Text = resources.GetString("ID.ButtonCustom2.Text");
-            this.ID.Name = "ID";
-            this.ID.TextChanged += new System.EventHandler(this.ID_TextChanged);
-            this.ID.Enter += new System.EventHandler(this.ID_Enter);
-            this.ID.KeyUp += new System.Windows.Forms.KeyEventHandler(this.ID_KeyUp);
-            this.ID.Leave += new System.EventHandler(this.ID_Leave);
             // 
             // btn1
             // 
@@ -120,24 +95,104 @@
             resources.ApplyResources(this.txtAccBranch, "txtAccBranch");
             this.txtAccBranch.Name = "txtAccBranch";
             // 
-            // UC_Branch
+            // layoutControl1
+            // 
+            resources.ApplyResources(this.layoutControl1, "layoutControl1");
+            this.layoutControl1.Controls.Add(this.Desc);
+            this.layoutControl1.Controls.Add(this.ID);
+            this.layoutControl1.Controls.Add(this.btn1);
+            this.layoutControl1.Name = "layoutControl1";
+            this.layoutControl1.Root = this.Root;
+            // 
+            // Desc
+            // 
+            resources.ApplyResources(this.Desc, "Desc");
+            this.Desc.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Desc.Name = "Desc";
+            this.Desc.TextAlignChanged += new System.EventHandler(this.Desc_TextChanged);
+            this.Desc.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Desc_KeyUp);
+            // 
+            // ID
+            // 
+            resources.ApplyResources(this.ID, "ID");
+            this.ID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ID.Name = "ID";
+            this.ID.TextChanged += new System.EventHandler(this.ID_TextChanged);
+            this.ID.Enter += new System.EventHandler(this.ID_Enter);
+            this.ID.KeyUp += new System.Windows.Forms.KeyEventHandler(this.ID_KeyUp);
+            this.ID.Leave += new System.EventHandler(this.ID_Leave);
+            // 
+            // Root
+            // 
+            resources.ApplyResources(this.Root, "Root");
+            this.Root.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
+            this.Root.GroupBordersVisible = false;
+            this.Root.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.layoutControlItem2,
+            this.layoutControlItem4,
+            this.layoutControlItem3});
+            this.Root.Name = "Root";
+            this.Root.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
+            this.Root.Size = new System.Drawing.Size(400, 20);
+            this.Root.TextVisible = false;
+            // 
+            // layoutControlItem2
+            // 
+            resources.ApplyResources(this.layoutControlItem2, "layoutControlItem2");
+            this.layoutControlItem2.Control = this.ID;
+            this.layoutControlItem2.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlItem2.Name = "layoutControlItem2";
+            this.layoutControlItem2.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
+            this.layoutControlItem2.Size = new System.Drawing.Size(80, 20);
+            this.layoutControlItem2.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem2.TextVisible = false;
+            // 
+            // layoutControlItem4
+            // 
+            resources.ApplyResources(this.layoutControlItem4, "layoutControlItem4");
+            this.layoutControlItem4.Control = this.Desc;
+            this.layoutControlItem4.Location = new System.Drawing.Point(110, 0);
+            this.layoutControlItem4.Name = "layoutControlItem4";
+            this.layoutControlItem4.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
+            this.layoutControlItem4.Size = new System.Drawing.Size(290, 20);
+            this.layoutControlItem4.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem4.TextVisible = false;
+            // 
+            // layoutControlItem3
+            // 
+            resources.ApplyResources(this.layoutControlItem3, "layoutControlItem3");
+            this.layoutControlItem3.Control = this.btn1;
+            this.layoutControlItem3.Location = new System.Drawing.Point(80, 0);
+            this.layoutControlItem3.MaxSize = new System.Drawing.Size(30, 20);
+            this.layoutControlItem3.MinSize = new System.Drawing.Size(30, 20);
+            this.layoutControlItem3.Name = "layoutControlItem3";
+            this.layoutControlItem3.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
+            this.layoutControlItem3.Size = new System.Drawing.Size(30, 20);
+            this.layoutControlItem3.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            this.layoutControlItem3.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem3.TextVisible = false;
+            // 
+            // ذ
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Transparent;
-            this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Controls.Add(this.dgv1);
+            this.Controls.Add(this.layoutControl1);
             this.Controls.Add(this.txtAccBranch);
             this.Controls.Add(this.txtTfinal);
-            this.Controls.Add(this.dgv1);
-            this.Controls.Add(this.Desc);
-            this.Controls.Add(this.btn1);
-            this.Controls.Add(this.ID);
             this.Cursor = System.Windows.Forms.Cursors.Default;
             this.DoubleBuffered = true;
-            this.Name = "UC_Branch";
+            this.Name = "ذ";
             this.Load += new System.EventHandler(this.UC_Branch_Load);
             this.Leave += new System.EventHandler(this.UC_Branch_Leave);
             ((System.ComponentModel.ISupportInitialize)(this.dgv1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
+            this.layoutControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.Root)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -146,10 +201,15 @@
         #endregion
 
         private DevComponents.DotNetBar.Controls.DataGridViewX dgv1;
-        public DevComponents.DotNetBar.Controls.TextBoxX Desc;
         private DevComponents.DotNetBar.ButtonX btn1;
-        public DevComponents.DotNetBar.Controls.TextBoxX ID;
         public System.Windows.Forms.TextBox txtTfinal;
         public System.Windows.Forms.TextBox txtAccBranch;
+        private DevExpress.XtraLayout.LayoutControl layoutControl1;
+        private DevExpress.XtraLayout.LayoutControlGroup Root;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem2;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem3;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem4;
+        public System.Windows.Forms.TextBox ID;
+        public System.Windows.Forms.TextBox Desc;
     }
 }

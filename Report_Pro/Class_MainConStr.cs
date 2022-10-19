@@ -10,7 +10,7 @@ namespace Report_Pro
     {
         public static String UDF_MainCnStr()
         {
-            return Properties.Settings.Default.BahrainConnectionString.ToString().Trim();
+            return "server=" + Properties.Settings.Default.Server + " ;database= " + Convert.ToString(Properties.Settings.Default.Database_1) + " ;integrated security=false; user id = " + Properties.Settings.Default.Id + "; password = " + Properties.Settings.Default.Password + ";timeout=60".ToString().Trim();
         }
     }
 }

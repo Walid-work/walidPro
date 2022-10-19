@@ -111,9 +111,9 @@ namespace Report_Pro.Classes
                     {
                         _products = new BindingList<DAL.wh_main_master>(db.wh_main_masters.ToList());
                     }
-                    //DataBaseWatcher.Products = new TableDependency.SqlClient.SqlTableDependency<DAL.wh_main_master>(Properties.Settings.Default.SalesDBConnectionString);
-                    //DataBaseWatcher.Products.OnChanged += DataBaseWatcher.Products_Changed;
-                    //DataBaseWatcher.Products.Start();
+                    DataBaseWatcher.Products = new TableDependency.SqlClient.SqlTableDependency<DAL.wh_main_master>("server=" + Properties.Settings.Default.Server + " ;database= " + Convert.ToString(Properties.Settings.Default.Database_1) + " ;integrated security=false; user id = " + Properties.Settings.Default.Id + "; password = " + Properties.Settings.Default.Password + ";timeout=60");
+                    DataBaseWatcher.Products.OnChanged += DataBaseWatcher.Products_Changed;
+                    DataBaseWatcher.Products.Start();
                 }
                 return _products;
             }
@@ -258,6 +258,28 @@ namespace Report_Pro.Classes
         //    }
         //}
 
+
+        private static BindingList<DAL.SHEEK_BANKS_TYPE> _cheuqeBanks;
+        public static BindingList<DAL.SHEEK_BANKS_TYPE> CheuqeBanks
+        {
+            get
+            {
+                if (_cheuqeBanks == null)
+                {
+                    using (var db = new DAL.dbDataContext())
+                    {
+                        _cheuqeBanks = new BindingList<DAL.SHEEK_BANKS_TYPE>(db.SHEEK_BANKS_TYPEs.ToList());
+                    }
+                    DataBaseWatcher.ChequeBanks = new TableDependency.SqlClient.SqlTableDependency<SHEEK_BANKS_TYPE>("server = " + Properties.Settings.Default.Server + " ; database = " + Convert.ToString(Properties.Settings.Default.Database_1) + "; integrated security = false; user id = " + Properties.Settings.Default.Id + "; password = " + Properties.Settings.Default.Password + "; timeout = 60");
+                    DataBaseWatcher.ChequeBanks.OnChanged += DataBaseWatcher.ChequeBanksChanged;
+                    DataBaseWatcher.ChequeBanks.Start();
+                }
+                return _cheuqeBanks;
+            }
+        }
+
+
+
         //private static BindingList<DAL.Drawer> _drawer;
         //public static BindingList<DAL.Drawer> Drawer
         //{
@@ -371,6 +393,36 @@ namespace Report_Pro.Classes
             }  
 
 
+        }
+
+        public static string itemSearch_1;
+        public static string itemSearch1 {
+            get { return itemSearch_1; }
+            set {itemSearch_1 = value; } }
+
+        public static string itemSearch_2;
+        public static string itemSearch2
+        {
+            get { return itemSearch_2; }
+            set { itemSearch_2 = value; }
+        }
+        public static string itemSearch_3;
+        public static string itemSearch3
+        {
+            get { return itemSearch_3; }
+            set { itemSearch_3 = value; }
+        }
+        public static string itemSearch_4;
+        public static string itemSearch4
+        {
+            get { return itemSearch_4; }
+            set { itemSearch_4 = value; }
+        }
+        public static string itemSearch_5;
+        public static string itemSearch5
+        {
+            get { return itemSearch_5; }
+            set { itemSearch_5 = value; }
         }
     }
 }

@@ -32,7 +32,6 @@
             this.dGV_pro_list = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
             this.groupPanel1 = new DevComponents.DotNetBar.Controls.GroupPanel();
-            this.buttonX1 = new DevComponents.DotNetBar.ButtonX();
             this.ch_SaveSearch = new DevComponents.DotNetBar.Controls.CheckBoxX();
             this.btnSrch = new DevComponents.DotNetBar.ButtonX();
             this.txtserch_4 = new System.Windows.Forms.TextBox();
@@ -77,7 +76,6 @@
             // 
             this.groupPanel1.CanvasColor = System.Drawing.SystemColors.Control;
             this.groupPanel1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.VS2005;
-            this.groupPanel1.Controls.Add(this.buttonX1);
             this.groupPanel1.Controls.Add(this.ch_SaveSearch);
             this.groupPanel1.Controls.Add(this.btnSrch);
             this.groupPanel1.Controls.Add(this.txtserch_4);
@@ -112,37 +110,24 @@
             this.groupPanel1.Style.TextLineAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Near;
             this.groupPanel1.Click += new System.EventHandler(this.groupPanel1_Click);
             // 
-            // buttonX1
-            // 
-            this.buttonX1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            resources.ApplyResources(this.buttonX1, "buttonX1");
-            this.buttonX1.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.buttonX1.Image = global::Report_Pro.Properties.Resources.Exit_icon;
-            this.buttonX1.ImageFixedSize = new System.Drawing.Size(32, 32);
-            this.buttonX1.Name = "buttonX1";
-            this.buttonX1.Click += new System.EventHandler(this.buttonX1_Click);
-            // 
             // ch_SaveSearch
             // 
             resources.ApplyResources(this.ch_SaveSearch, "ch_SaveSearch");
             this.ch_SaveSearch.BackColor = System.Drawing.Color.Transparent;
-            this.ch_SaveSearch.Checked = true;
-            this.ch_SaveSearch.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.ch_SaveSearch.CheckValue = "Y";
             this.ch_SaveSearch.Name = "ch_SaveSearch";
             // 
             // btnSrch
             // 
             this.btnSrch.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnSrch.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btnSrch.Image = global::Report_Pro.Properties.Resources.search;
-            this.btnSrch.ImageFixedSize = new System.Drawing.Size(32, 32);
+            this.btnSrch.Image = global::Report_Pro.Properties.Resources.Search_icon1;
             resources.ApplyResources(this.btnSrch, "btnSrch");
             this.btnSrch.Name = "btnSrch";
             this.btnSrch.Click += new System.EventHandler(this.btnSrch_Click);
             // 
             // txtserch_4
             // 
+            this.txtserch_4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             resources.ApplyResources(this.txtserch_4, "txtserch_4");
             this.txtserch_4.Name = "txtserch_4";
             this.txtserch_4.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtserch_4_KeyDown);
@@ -164,6 +149,7 @@
             this.radioAll.Name = "radioAll";
             this.radioAll.TabStop = true;
             this.radioAll.UseVisualStyleBackColor = true;
+            this.radioAll.CheckedChanged += new System.EventHandler(this.radioAll_CheckedChanged);
             // 
             // radiobalance
             // 
@@ -179,6 +165,7 @@
             // 
             // txtSrch
             // 
+            this.txtSrch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             resources.ApplyResources(this.txtSrch, "txtSrch");
             this.txtSrch.Name = "txtSrch";
             this.txtSrch.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtSrch_KeyDown);
@@ -192,6 +179,7 @@
             // 
             // txtsrch_1
             // 
+            this.txtsrch_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             resources.ApplyResources(this.txtsrch_1, "txtsrch_1");
             this.txtsrch_1.Name = "txtsrch_1";
             this.txtsrch_1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtsrch_1_KeyDown);
@@ -199,6 +187,7 @@
             // 
             // txtSrch_3
             // 
+            this.txtSrch_3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             resources.ApplyResources(this.txtSrch_3, "txtSrch_3");
             this.txtSrch_3.Name = "txtSrch_3";
             this.txtSrch_3.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtSrch_3_KeyDown);
@@ -206,6 +195,7 @@
             // 
             // txtserch_2
             // 
+            this.txtserch_2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             resources.ApplyResources(this.txtserch_2, "txtserch_2");
             this.txtserch_2.Name = "txtserch_2";
             this.txtserch_2.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtserch_2_KeyDown);
@@ -241,18 +231,17 @@
         private System.Windows.Forms.Panel panel1;
         private DevComponents.DotNetBar.Controls.GroupPanel groupPanel1;
         private DevComponents.DotNetBar.ButtonX btnSrch;
-        private System.Windows.Forms.TextBox txtserch_4;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.RadioButton radioAll;
         private System.Windows.Forms.RadioButton radiobalance;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtSrch;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtsrch_1;
-        private System.Windows.Forms.TextBox txtSrch_3;
-        private System.Windows.Forms.TextBox txtserch_2;
         private System.Windows.Forms.Button button1;
-        private DevComponents.DotNetBar.ButtonX buttonX1;
         public DevComponents.DotNetBar.Controls.CheckBoxX ch_SaveSearch;
+        public System.Windows.Forms.TextBox txtserch_4;
+        public System.Windows.Forms.TextBox txtSrch;
+        public System.Windows.Forms.TextBox txtsrch_1;
+        public System.Windows.Forms.TextBox txtSrch_3;
+        public System.Windows.Forms.TextBox txtserch_2;
     }
 }

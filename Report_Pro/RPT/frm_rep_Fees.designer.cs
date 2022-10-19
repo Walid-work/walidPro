@@ -167,7 +167,7 @@
             // 
             resources.ApplyResources(this.Acc_Group, "Acc_Group");
             this.Acc_Group.BackColor = System.Drawing.Color.Transparent;
-            this.Acc_Group.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.Acc_Group.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Acc_Group.Name = "Acc_Group";
             // 
             // groupPanel3
@@ -367,13 +367,11 @@
             // 
             resources.ApplyResources(this.txtAcc, "txtAcc");
             this.txtAcc.BackColor = System.Drawing.Color.Transparent;
-            this.txtAcc.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.txtAcc.Name = "txtAcc";
             // 
             // txtBranch
             // 
             resources.ApplyResources(this.txtBranch, "txtBranch");
-            this.txtBranch.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.txtBranch.Name = "txtBranch";
             // 
             // frm_rep_Fees

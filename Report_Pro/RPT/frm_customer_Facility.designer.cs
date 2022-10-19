@@ -43,7 +43,7 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.RS2 = new System.Windows.Forms.RadioButton();
             this.RS1 = new System.Windows.Forms.RadioButton();
-            this.Uc_Branch = new Report_Pro.MyControls.UC_Branch();
+            this.Uc_Branch = new Report_Pro.MyControls.ذ();
             this.Uc_Acc = new Report_Pro.MyControls.UC_Acc();
             this.panel1.SuspendLayout();
             this.groupPanel1.SuspendLayout();
@@ -337,7 +337,7 @@
         private DevComponents.DotNetBar.ButtonX btn_1;
         private CrystalDecisions.Windows.Forms.CrystalReportViewer crystalReportViewer1;
         private DevComponents.DotNetBar.Controls.GroupPanel groupPanel1;
-        private MyControls.UC_Branch Uc_Branch;
+        private MyControls.ذ Uc_Branch;
         private MyControls.UC_Acc Uc_Acc;
         private DevComponents.DotNetBar.LabelX labelX2;
         private DevComponents.DotNetBar.LabelX labelX1;

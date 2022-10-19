@@ -43,7 +43,7 @@
             this.label9 = new System.Windows.Forms.Label();
             this.Uc_Acc = new Report_Pro.MyControls.UC_Acc();
             this.label7 = new System.Windows.Forms.Label();
-            this.UC_Branch = new Report_Pro.MyControls.UC_Branch();
+            this.UC_Branch = new Report_Pro.MyControls.ذ();
             this.groupPanel1.SuspendLayout();
             this.groupPanel2.SuspendLayout();
             this.SuspendLayout();
@@ -335,7 +335,7 @@
         private System.Windows.Forms.Label label9;
         private MyControls.UC_Acc Uc_Acc;
         private System.Windows.Forms.Label label7;
-        private MyControls.UC_Branch UC_Branch;
+        private MyControls.ذ UC_Branch;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DateTimePicker dTP1;

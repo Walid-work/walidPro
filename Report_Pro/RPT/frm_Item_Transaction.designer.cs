@@ -55,7 +55,7 @@
             this.labelX2 = new DevComponents.DotNetBar.LabelX();
             this.UC_Acc = new Report_Pro.MyControls.UC_Acc();
             this.labelX4 = new DevComponents.DotNetBar.LabelX();
-            this.UC_Branch = new Report_Pro.MyControls.UC_Branch();
+            this.UC_Branch = new Report_Pro.MyControls.ذ();
             this.ToDate_ = new System.Windows.Forms.DateTimePicker();
             this.FromDate_ = new System.Windows.Forms.DateTimePicker();
             this.labelX7 = new DevComponents.DotNetBar.LabelX();
@@ -330,18 +330,18 @@
             this.labelX9.BackColor = System.Drawing.Color.Transparent;
             this.labelX9.Location = new System.Drawing.Point(915, 116);
             this.labelX9.Name = "labelX9";
-            this.labelX9.Size = new System.Drawing.Size(50, 17);
+            this.labelX9.Size = new System.Drawing.Size(45, 15);
             this.labelX9.TabIndex = 313;
             this.labelX9.Text = "المجموعة";
             // 
             // Uc_Group1
             // 
             this.Uc_Group1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Uc_Group1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.Uc_Group1.Location = new System.Drawing.Point(598, 113);
+            this.Uc_Group1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Uc_Group1.Location = new System.Drawing.Point(586, 113);
             this.Uc_Group1.Margin = new System.Windows.Forms.Padding(0);
             this.Uc_Group1.Name = "Uc_Group1";
-            this.Uc_Group1.Size = new System.Drawing.Size(310, 23);
+            this.Uc_Group1.Size = new System.Drawing.Size(322, 23);
             this.Uc_Group1.TabIndex = 311;
             // 
             // labelX6
@@ -351,28 +351,27 @@
             this.labelX6.BackColor = System.Drawing.Color.Transparent;
             this.labelX6.Location = new System.Drawing.Point(915, 92);
             this.labelX6.Name = "labelX6";
-            this.labelX6.Size = new System.Drawing.Size(53, 17);
+            this.labelX6.Size = new System.Drawing.Size(49, 15);
             this.labelX6.TabIndex = 310;
             this.labelX6.Text = "نوع الحركة";
             // 
             // UC_Transaction
             // 
             this.UC_Transaction.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.UC_Transaction.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.UC_Transaction.Location = new System.Drawing.Point(598, 88);
+            this.UC_Transaction.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.UC_Transaction.Location = new System.Drawing.Point(586, 88);
             this.UC_Transaction.Margin = new System.Windows.Forms.Padding(0);
             this.UC_Transaction.Name = "UC_Transaction";
-            this.UC_Transaction.Size = new System.Drawing.Size(310, 23);
+            this.UC_Transaction.Size = new System.Drawing.Size(322, 23);
             this.UC_Transaction.TabIndex = 309;
             // 
             // UC_Items
             // 
             this.UC_Items.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.UC_Items.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.UC_Items.Location = new System.Drawing.Point(598, 62);
+            this.UC_Items.Location = new System.Drawing.Point(524, 62);
             this.UC_Items.Margin = new System.Windows.Forms.Padding(0);
             this.UC_Items.Name = "UC_Items";
-            this.UC_Items.Size = new System.Drawing.Size(310, 23);
+            this.UC_Items.Size = new System.Drawing.Size(384, 23);
             this.UC_Items.TabIndex = 308;
             // 
             // labelX3
@@ -382,7 +381,7 @@
             this.labelX3.BackColor = System.Drawing.Color.Transparent;
             this.labelX3.Location = new System.Drawing.Point(915, 65);
             this.labelX3.Name = "labelX3";
-            this.labelX3.Size = new System.Drawing.Size(34, 17);
+            this.labelX3.Size = new System.Drawing.Size(30, 15);
             this.labelX3.TabIndex = 303;
             this.labelX3.Text = "الصنف";
             // 
@@ -393,7 +392,7 @@
             this.labelX2.BackColor = System.Drawing.Color.Transparent;
             this.labelX2.Location = new System.Drawing.Point(915, 39);
             this.labelX2.Name = "labelX2";
-            this.labelX2.Size = new System.Drawing.Size(32, 17);
+            this.labelX2.Size = new System.Drawing.Size(28, 15);
             this.labelX2.TabIndex = 298;
             this.labelX2.Text = "المورد";
             // 
@@ -401,12 +400,11 @@
             // 
             this.UC_Acc.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.UC_Acc.BackColor = System.Drawing.Color.Transparent;
-            this.UC_Acc.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.UC_Acc.Location = new System.Drawing.Point(598, 35);
+            this.UC_Acc.Location = new System.Drawing.Point(524, 35);
             this.UC_Acc.Margin = new System.Windows.Forms.Padding(0);
             this.UC_Acc.Name = "UC_Acc";
             this.UC_Acc.Padding = new System.Windows.Forms.Padding(1);
-            this.UC_Acc.Size = new System.Drawing.Size(310, 25);
+            this.UC_Acc.Size = new System.Drawing.Size(384, 25);
             this.UC_Acc.TabIndex = 306;
             // 
             // labelX4
@@ -416,7 +414,7 @@
             this.labelX4.BackColor = System.Drawing.Color.Transparent;
             this.labelX4.Location = new System.Drawing.Point(915, 11);
             this.labelX4.Name = "labelX4";
-            this.labelX4.Size = new System.Drawing.Size(29, 17);
+            this.labelX4.Size = new System.Drawing.Size(24, 15);
             this.labelX4.TabIndex = 296;
             this.labelX4.Text = "الفرع";
             // 
@@ -424,18 +422,17 @@
             // 
             this.UC_Branch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.UC_Branch.BackColor = System.Drawing.Color.Transparent;
-            this.UC_Branch.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.UC_Branch.Cursor = System.Windows.Forms.Cursors.Default;
-            this.UC_Branch.Location = new System.Drawing.Point(598, 7);
+            this.UC_Branch.Location = new System.Drawing.Point(524, 5);
             this.UC_Branch.Margin = new System.Windows.Forms.Padding(0);
             this.UC_Branch.Name = "UC_Branch";
-            this.UC_Branch.Size = new System.Drawing.Size(310, 24);
+            this.UC_Branch.Size = new System.Drawing.Size(384, 24);
             this.UC_Branch.TabIndex = 305;
             // 
             // ToDate_
             // 
             this.ToDate_.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.ToDate_.Location = new System.Drawing.Point(415, 37);
+            this.ToDate_.Location = new System.Drawing.Point(327, 33);
             this.ToDate_.Name = "ToDate_";
             this.ToDate_.Size = new System.Drawing.Size(104, 20);
             this.ToDate_.TabIndex = 292;
@@ -443,7 +440,7 @@
             // FromDate_
             // 
             this.FromDate_.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.FromDate_.Location = new System.Drawing.Point(415, 9);
+            this.FromDate_.Location = new System.Drawing.Point(327, 5);
             this.FromDate_.Name = "FromDate_";
             this.FromDate_.Size = new System.Drawing.Size(104, 20);
             this.FromDate_.TabIndex = 291;
@@ -453,9 +450,9 @@
             this.labelX7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelX7.AutoSize = true;
             this.labelX7.BackColor = System.Drawing.Color.Transparent;
-            this.labelX7.Location = new System.Drawing.Point(527, 39);
+            this.labelX7.Location = new System.Drawing.Point(439, 35);
             this.labelX7.Name = "labelX7";
-            this.labelX7.Size = new System.Drawing.Size(47, 17);
+            this.labelX7.Size = new System.Drawing.Size(42, 15);
             this.labelX7.TabIndex = 268;
             this.labelX7.Text = "الي تاريخ";
             // 
@@ -464,9 +461,9 @@
             this.labelX8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelX8.AutoSize = true;
             this.labelX8.BackColor = System.Drawing.Color.Transparent;
-            this.labelX8.Location = new System.Drawing.Point(527, 11);
+            this.labelX8.Location = new System.Drawing.Point(439, 7);
             this.labelX8.Name = "labelX8";
-            this.labelX8.Size = new System.Drawing.Size(44, 17);
+            this.labelX8.Size = new System.Drawing.Size(40, 15);
             this.labelX8.TabIndex = 267;
             this.labelX8.Text = "من تاريخ";
             // 
@@ -522,7 +519,7 @@
         public System.Windows.Forms.DateTimePicker FromDate_;
         public MyControls.UC_Items UC_Items;
         public MyControls.UC_Acc UC_Acc;
-        public MyControls.UC_Branch UC_Branch;
+        public MyControls.ذ UC_Branch;
         public MyControls.UC_Transaction UC_Transaction;
         public MyControls.Uc_Group Uc_Group1;
         public CrystalDecisions.Windows.Forms.CrystalReportViewer crystalReportViewer1;

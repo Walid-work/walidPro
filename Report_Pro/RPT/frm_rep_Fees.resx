@@ -186,9 +186,6 @@
   <data name="btnReport_1.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
   </data>
-  <data name="&gt;&gt;txtAcc.Type" xml:space="preserve">
-    <value>Report_Pro.MyControls.UC_Acc, Report_Pro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
   <data name="labelX3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -240,8 +237,8 @@
   <data name="toDate.ButtonCustom2.Text" xml:space="preserve">
     <value />
   </data>
-  <data name="&gt;&gt;buttonX1.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="toDate.MonthCalendar.Text" xml:space="preserve">
+    <value />
   </data>
   <data name="&gt;&gt;labelX5.Type" xml:space="preserve">
     <value>DevComponents.DotNetBar.LabelX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
@@ -258,8 +255,8 @@
   <data name="&gt;&gt;fromDate.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
-  <data name="toDate.MonthCalendar.Text" xml:space="preserve">
-    <value />
+  <data name="&gt;&gt;labelX3.Name" xml:space="preserve">
+    <value>labelX3</value>
   </data>
   <data name="&gt;&gt;groupPanel1.ZOrder" xml:space="preserve">
     <value>2</value>
@@ -324,6 +321,9 @@
   <data name="labelX1.Size" type="System.Drawing.Size, System.Drawing">
     <value>42, 16</value>
   </data>
+  <data name="toDate.ButtonDropDown.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
   <data name="labelX1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
@@ -345,8 +345,8 @@
   <data name="labelX4.Size" type="System.Drawing.Size, System.Drawing">
     <value>46, 16</value>
   </data>
-  <data name="&gt;&gt;rdo1.Parent" xml:space="preserve">
-    <value>groupPanel3</value>
+  <data name="&gt;&gt;txtAcc.Type" xml:space="preserve">
+    <value>Report_Pro.MyControls.UC_Acc, Report_Pro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;groupPanel2.Type" xml:space="preserve">
     <value>DevComponents.DotNetBar.Controls.GroupPanel, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
@@ -356,9 +356,6 @@
   </data>
   <data name="txtAcc.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
-  </data>
-  <data name="fromDate.MonthCalendar.MonthlyMarkedDates" mimetype="application/x-microsoft.net.object.binary.base64">
-    <value>AAEAAAD/////AQAAAAAAAAAPAQAAAAAAAAANCw==</value>
   </data>
   <data name="fromDate.ButtonCustom2.DisplayPosition" type="System.Int32, mscorlib">
     <value>0</value>
@@ -480,6 +477,9 @@
   <data name="labelX5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
+  <data name="&gt;&gt;buttonX1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="fromDate.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
@@ -519,9 +519,6 @@
   <data name="&gt;&gt;rdo1.Name" xml:space="preserve">
     <value>rdo1</value>
   </data>
-  <data name="fromDate.ButtonCustom2.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
   <data name="rdo2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -536,6 +533,9 @@
   </data>
   <data name="fromDate.MonthCalendar.Tooltip" xml:space="preserve">
     <value />
+  </data>
+  <data name="fromDate.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
   </data>
   <data name="fromDate.ButtonCustom.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -552,8 +552,8 @@
   <data name="txtBranch.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="toDate.ButtonDropDown.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+  <data name="&gt;&gt;labelX1.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.LabelX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
   </data>
   <data name="labelX2.Size" type="System.Drawing.Size, System.Drawing">
     <value>47, 16</value>
@@ -578,6 +578,9 @@
   </data>
   <data name="crystalReportViewer1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
+  </data>
+  <data name="&gt;&gt;btnReport_1.Parent" xml:space="preserve">
+    <value>groupPanel1</value>
   </data>
   <data name="rdo1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -606,14 +609,11 @@
   <data name="crystalReportViewer1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 47</value>
   </data>
-  <data name="&gt;&gt;btnReport_1.Parent" xml:space="preserve">
-    <value>groupPanel1</value>
+  <data name="fromDate.MonthCalendar.MonthlyMarkedDates" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAPAQAAAAAAAAANCw==</value>
   </data>
   <data name="&gt;&gt;buttonX1.Type" xml:space="preserve">
     <value>DevComponents.DotNetBar.ButtonX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="rdo1.Text" xml:space="preserve">
-    <value>Total</value>
   </data>
   <data name="crystalReportViewer1.Size" type="System.Drawing.Size, System.Drawing">
     <value>720, 329</value>
@@ -717,8 +717,8 @@
   <data name="labelX3.Location" type="System.Drawing.Point, System.Drawing">
     <value>24, 83</value>
   </data>
-  <data name="fromDate.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+  <data name="fromDate.ButtonCustom2.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
   </data>
   <data name="fromDate.ButtonClear.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -753,8 +753,8 @@
   <data name="&gt;&gt;txtBranch.Parent" xml:space="preserve">
     <value>groupPanel2</value>
   </data>
-  <data name="&gt;&gt;labelX3.Name" xml:space="preserve">
-    <value>labelX3</value>
+  <data name="&gt;&gt;rdo1.Parent" xml:space="preserve">
+    <value>groupPanel3</value>
   </data>
   <data name="btnReport_2.Text" xml:space="preserve">
     <value>Total Report</value>
@@ -807,8 +807,8 @@
   <data name="&gt;&gt;crystalReportViewer1.Type" xml:space="preserve">
     <value>CrystalDecisions.Windows.Forms.CrystalReportViewer, CrystalDecisions.Windows.Forms, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304</value>
   </data>
-  <data name="&gt;&gt;labelX1.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.LabelX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  <data name="rdo1.Text" xml:space="preserve">
+    <value>Total</value>
   </data>
   <data name="labelX5.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>

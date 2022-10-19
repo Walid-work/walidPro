@@ -289,10 +289,10 @@
     <value>Bottom</value>
   </data>
   <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 487</value>
+    <value>0, 664</value>
   </data>
   <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1283, 25</value>
+    <value>1400, 25</value>
   </data>
   <data name="panel2.TabIndex" type="System.Int32, mscorlib">
     <value>40</value>
@@ -307,7 +307,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>5</value>
   </data>
   <data name="Lbl_position.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -319,7 +319,7 @@
     <value>NoControl</value>
   </data>
   <data name="Lbl_position.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1657, 16</value>
+    <value>1690, 16</value>
   </data>
   <data name="Lbl_position.Size" type="System.Drawing.Size, System.Drawing">
     <value>0, 13</value>
@@ -337,7 +337,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Lbl_position.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>4</value>
   </data>
   <data name="ribbonBar1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
@@ -576,10 +576,10 @@
     <value>طباعة السند</value>
   </data>
   <data name="ribbonBar1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
+    <value>0, 24</value>
   </data>
   <data name="ribbonBar1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1283, 29</value>
+    <value>1400, 29</value>
   </data>
   <data name="ribbonBar1.TabIndex" type="System.Int32, mscorlib">
     <value>102</value>
@@ -597,7 +597,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;ribbonBar1.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>3</value>
   </data>
   <data name="Btn_DelRow.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -609,7 +609,7 @@
     <value>NoControl</value>
   </data>
   <data name="Btn_DelRow.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1189, 3</value>
+    <value>1306, 3</value>
   </data>
   <data name="Btn_DelRow.Size" type="System.Drawing.Size, System.Drawing">
     <value>81, 23</value>
@@ -639,7 +639,7 @@
     <value>Top, Right</value>
   </data>
   <data name="TxtTotal.Location" type="System.Drawing.Point, System.Drawing">
-    <value>229, 6</value>
+    <value>346, 6</value>
   </data>
   <data name="TxtTotal.Size" type="System.Drawing.Size, System.Drawing">
     <value>96, 20</value>
@@ -663,7 +663,7 @@
     <value>Top, Right</value>
   </data>
   <data name="txtDiscount.Location" type="System.Drawing.Point, System.Drawing">
-    <value>229, 52</value>
+    <value>346, 52</value>
   </data>
   <data name="txtDiscount.Size" type="System.Drawing.Size, System.Drawing">
     <value>96, 20</value>
@@ -687,7 +687,7 @@
     <value>Top, Right</value>
   </data>
   <data name="txtNetTotal.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 6</value>
+    <value>126, 6</value>
   </data>
   <data name="txtNetTotal.Size" type="System.Drawing.Size, System.Drawing">
     <value>96, 20</value>
@@ -711,7 +711,7 @@
     <value>Top, Right</value>
   </data>
   <data name="paied_amount.Location" type="System.Drawing.Point, System.Drawing">
-    <value>410, 6</value>
+    <value>527, 6</value>
   </data>
   <data name="paied_amount.Size" type="System.Drawing.Size, System.Drawing">
     <value>96, 20</value>
@@ -735,7 +735,7 @@
     <value>Top, Right</value>
   </data>
   <data name="balance_amount.Location" type="System.Drawing.Point, System.Drawing">
-    <value>410, 29</value>
+    <value>527, 29</value>
   </data>
   <data name="balance_amount.Size" type="System.Drawing.Size, System.Drawing">
     <value>96, 20</value>
@@ -762,7 +762,7 @@
     <value>True</value>
   </data>
   <data name="labelX36.Location" type="System.Drawing.Point, System.Drawing">
-    <value>509, 54</value>
+    <value>626, 54</value>
   </data>
   <data name="labelX36.Size" type="System.Drawing.Size, System.Drawing">
     <value>101, 15</value>
@@ -792,7 +792,7 @@
     <value>Top, Right</value>
   </data>
   <data name="disc_Rate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>410, 52</value>
+    <value>527, 52</value>
   </data>
   <data name="disc_Rate.Size" type="System.Drawing.Size, System.Drawing">
     <value>96, 20</value>
@@ -822,7 +822,7 @@
     <value>True</value>
   </data>
   <data name="labelX35.Location" type="System.Drawing.Point, System.Drawing">
-    <value>109, 54</value>
+    <value>226, 54</value>
   </data>
   <data name="labelX35.Size" type="System.Drawing.Size, System.Drawing">
     <value>86, 15</value>
@@ -849,7 +849,7 @@
     <value>Top, Right</value>
   </data>
   <data name="NetValue.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 52</value>
+    <value>126, 52</value>
   </data>
   <data name="NetValue.Size" type="System.Drawing.Size, System.Drawing">
     <value>96, 20</value>
@@ -876,7 +876,7 @@
     <value>True</value>
   </data>
   <data name="labelX34.Location" type="System.Drawing.Point, System.Drawing">
-    <value>327, 31</value>
+    <value>444, 31</value>
   </data>
   <data name="labelX34.Size" type="System.Drawing.Size, System.Drawing">
     <value>62, 15</value>
@@ -903,7 +903,7 @@
     <value>Top, Right</value>
   </data>
   <data name="txtDiscount_1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>229, 29</value>
+    <value>346, 29</value>
   </data>
   <data name="txtDiscount_1.Size" type="System.Drawing.Size, System.Drawing">
     <value>96, 20</value>
@@ -930,7 +930,7 @@
     <value>True</value>
   </data>
   <data name="labelX32.Location" type="System.Drawing.Point, System.Drawing">
-    <value>109, 31</value>
+    <value>226, 31</value>
   </data>
   <data name="labelX32.Size" type="System.Drawing.Size, System.Drawing">
     <value>34, 15</value>
@@ -960,7 +960,7 @@
     <value>True</value>
   </data>
   <data name="labelX24.Location" type="System.Drawing.Point, System.Drawing">
-    <value>509, 31</value>
+    <value>626, 31</value>
   </data>
   <data name="labelX24.Size" type="System.Drawing.Size, System.Drawing">
     <value>30, 15</value>
@@ -987,7 +987,7 @@
     <value>Top, Right</value>
   </data>
   <data name="Net_Vat.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 29</value>
+    <value>126, 29</value>
   </data>
   <data name="Net_Vat.Size" type="System.Drawing.Size, System.Drawing">
     <value>96, 20</value>
@@ -1014,7 +1014,7 @@
     <value>True</value>
   </data>
   <data name="labelX23.Location" type="System.Drawing.Point, System.Drawing">
-    <value>509, 8</value>
+    <value>626, 8</value>
   </data>
   <data name="labelX23.Size" type="System.Drawing.Size, System.Drawing">
     <value>37, 15</value>
@@ -1044,7 +1044,7 @@
     <value>True</value>
   </data>
   <data name="labelX22.Location" type="System.Drawing.Point, System.Drawing">
-    <value>109, 8</value>
+    <value>226, 8</value>
   </data>
   <data name="labelX22.Size" type="System.Drawing.Size, System.Drawing">
     <value>88, 15</value>
@@ -1074,7 +1074,7 @@
     <value>True</value>
   </data>
   <data name="labelX21.Location" type="System.Drawing.Point, System.Drawing">
-    <value>327, 8</value>
+    <value>444, 8</value>
   </data>
   <data name="labelX21.Size" type="System.Drawing.Size, System.Drawing">
     <value>42, 15</value>
@@ -1104,7 +1104,7 @@
     <value>True</value>
   </data>
   <data name="labelX20.Location" type="System.Drawing.Point, System.Drawing">
-    <value>327, 54</value>
+    <value>444, 54</value>
   </data>
   <data name="labelX20.Size" type="System.Drawing.Size, System.Drawing">
     <value>31, 15</value>
@@ -1131,10 +1131,10 @@
     <value>Bottom</value>
   </data>
   <data name="groupPanel5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 406</value>
+    <value>0, 583</value>
   </data>
   <data name="groupPanel5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1283, 81</value>
+    <value>1400, 81</value>
   </data>
   <data name="groupPanel5.TabIndex" type="System.Int32, mscorlib">
     <value>105</value>
@@ -1149,19 +1149,19 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;groupPanel5.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>2</value>
   </data>
   <data name="dGV_Item.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
   <data name="dGV_Item.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 286</value>
+    <value>0, 322</value>
   </data>
   <data name="dGV_Item.RowHeadersWidth" type="System.Int32, mscorlib">
     <value>55</value>
   </data>
   <data name="dGV_Item.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1283, 120</value>
+    <value>1400, 261</value>
   </data>
   <data name="dGV_Item.TabIndex" type="System.Int32, mscorlib">
     <value>112</value>
@@ -1176,7 +1176,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;dGV_Item.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>0</value>
   </data>
   <data name="labelX7.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -1185,7 +1185,7 @@
     <value>True</value>
   </data>
   <data name="labelX7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>925, 16</value>
+    <value>1028, 16</value>
   </data>
   <data name="labelX7.Size" type="System.Drawing.Size, System.Drawing">
     <value>25, 15</value>
@@ -1212,7 +1212,7 @@
     <value>Top, Right</value>
   </data>
   <data name="txt_CustEmail.Location" type="System.Drawing.Point, System.Drawing">
-    <value>661, 38</value>
+    <value>764, 38</value>
   </data>
   <data name="txt_CustEmail.Size" type="System.Drawing.Size, System.Drawing">
     <value>246, 20</value>
@@ -1236,7 +1236,7 @@
     <value>Top, Right</value>
   </data>
   <data name="txt_custTel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>808, 17</value>
+    <value>911, 17</value>
   </data>
   <data name="txt_custTel.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 20</value>
@@ -1263,7 +1263,7 @@
     <value>True</value>
   </data>
   <data name="labelX8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>917, 38</value>
+    <value>1020, 38</value>
   </data>
   <data name="labelX8.Size" type="System.Drawing.Size, System.Drawing">
     <value>26, 15</value>
@@ -1293,7 +1293,7 @@
     <value>True</value>
   </data>
   <data name="labelX25.Location" type="System.Drawing.Point, System.Drawing">
-    <value>768, 19</value>
+    <value>871, 19</value>
   </data>
   <data name="labelX25.Size" type="System.Drawing.Size, System.Drawing">
     <value>29, 15</value>
@@ -1320,7 +1320,7 @@
     <value>Top, Right</value>
   </data>
   <data name="txt_custFax.Location" type="System.Drawing.Point, System.Drawing">
-    <value>661, 17</value>
+    <value>764, 17</value>
   </data>
   <data name="txt_custFax.Size" type="System.Drawing.Size, System.Drawing">
     <value>105, 20</value>
@@ -1344,7 +1344,7 @@
     <value>Top, Right</value>
   </data>
   <data name="Cust_Vat_No.Location" type="System.Drawing.Point, System.Drawing">
-    <value>773, 83</value>
+    <value>876, 83</value>
   </data>
   <data name="Cust_Vat_No.Size" type="System.Drawing.Size, System.Drawing">
     <value>109, 20</value>
@@ -1371,7 +1371,7 @@
     <value>True</value>
   </data>
   <data name="labelX37.Location" type="System.Drawing.Point, System.Drawing">
-    <value>886, 81</value>
+    <value>989, 81</value>
   </data>
   <data name="labelX37.Size" type="System.Drawing.Size, System.Drawing">
     <value>63, 15</value>
@@ -1398,7 +1398,7 @@
     <value>Top, Right</value>
   </data>
   <data name="Vat_Class.Location" type="System.Drawing.Point, System.Drawing">
-    <value>853, 61</value>
+    <value>956, 61</value>
   </data>
   <data name="Vat_Class.Size" type="System.Drawing.Size, System.Drawing">
     <value>30, 20</value>
@@ -1425,7 +1425,7 @@
     <value>True</value>
   </data>
   <data name="labelX38.Location" type="System.Drawing.Point, System.Drawing">
-    <value>885, 60</value>
+    <value>988, 60</value>
   </data>
   <data name="labelX38.Size" type="System.Drawing.Size, System.Drawing">
     <value>65, 15</value>
@@ -1452,7 +1452,7 @@
     <value>Top, Right</value>
   </data>
   <data name="Cust_Vat_Rate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>808, 105</value>
+    <value>911, 105</value>
   </data>
   <data name="Cust_Vat_Rate.Size" type="System.Drawing.Size, System.Drawing">
     <value>44, 20</value>
@@ -1479,7 +1479,7 @@
     <value>True</value>
   </data>
   <data name="labelX39.Location" type="System.Drawing.Point, System.Drawing">
-    <value>891, 104</value>
+    <value>994, 104</value>
   </data>
   <data name="labelX39.Size" type="System.Drawing.Size, System.Drawing">
     <value>61, 15</value>
@@ -1506,7 +1506,7 @@
     <value>Top, Right</value>
   </data>
   <data name="Vat_Class_Desc.Location" type="System.Drawing.Point, System.Drawing">
-    <value>661, 61</value>
+    <value>764, 61</value>
   </data>
   <data name="Vat_Class_Desc.Size" type="System.Drawing.Size, System.Drawing">
     <value>190, 20</value>
@@ -1530,7 +1530,7 @@
     <value>Top, Right</value>
   </data>
   <data name="txt_address.Location" type="System.Drawing.Point, System.Drawing">
-    <value>417, 29</value>
+    <value>520, 29</value>
   </data>
   <data name="txt_address.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1560,7 +1560,7 @@
     <value>True</value>
   </data>
   <data name="labelX47.Location" type="System.Drawing.Point, System.Drawing">
-    <value>618, 29</value>
+    <value>721, 29</value>
   </data>
   <data name="labelX47.Size" type="System.Drawing.Size, System.Drawing">
     <value>31, 15</value>
@@ -1590,7 +1590,7 @@
     <value>True</value>
   </data>
   <data name="labelX48.Location" type="System.Drawing.Point, System.Drawing">
-    <value>587, 8</value>
+    <value>690, 8</value>
   </data>
   <data name="labelX48.Size" type="System.Drawing.Size, System.Drawing">
     <value>58, 15</value>
@@ -1617,7 +1617,7 @@
     <value>Top, Right</value>
   </data>
   <data name="txt_area_code.Location" type="System.Drawing.Point, System.Drawing">
-    <value>513, 6</value>
+    <value>616, 6</value>
   </data>
   <data name="txt_area_code.Size" type="System.Drawing.Size, System.Drawing">
     <value>72, 20</value>
@@ -1644,7 +1644,7 @@
     <value>True</value>
   </data>
   <data name="labelX49.Location" type="System.Drawing.Point, System.Drawing">
-    <value>466, 8</value>
+    <value>569, 8</value>
   </data>
   <data name="labelX49.Size" type="System.Drawing.Size, System.Drawing">
     <value>30, 15</value>
@@ -1671,7 +1671,7 @@
     <value>Top, Right</value>
   </data>
   <data name="txt_BoBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>417, 6</value>
+    <value>520, 6</value>
   </data>
   <data name="txt_BoBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>49, 20</value>
@@ -1704,7 +1704,7 @@
     <value>Top, Right</value>
   </data>
   <data name="txtKmCode.Location" type="System.Drawing.Point, System.Drawing">
-    <value>853, 105</value>
+    <value>956, 105</value>
   </data>
   <data name="txtKmCode.Size" type="System.Drawing.Size, System.Drawing">
     <value>30, 20</value>
@@ -1734,7 +1734,7 @@
     <value>1, 1, 1, 1</value>
   </data>
   <data name="tabControlPanel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>966, 181</value>
+    <value>1069, 181</value>
   </data>
   <data name="tabControlPanel2.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -1752,10 +1752,139 @@
     <value>tabControl1</value>
   </data>
   <data name="&gt;&gt;tabControlPanel2.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="tabControl1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
+  </data>
+  <data name="txt_Rate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>482, 82</value>
+  </data>
+  <data name="txt_Rate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>89, 20</value>
+  </data>
+  <data name="txt_Rate.TabIndex" type="System.Int32, mscorlib">
+    <value>341</value>
+  </data>
+  <data name="&gt;&gt;txt_Rate.Name" xml:space="preserve">
+    <value>txt_Rate</value>
+  </data>
+  <data name="&gt;&gt;txt_Rate.Type" xml:space="preserve">
+    <value>Report_Pro.MyControls.decimalText, Report_Pro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;txt_Rate.Parent" xml:space="preserve">
+    <value>tabControlPanel1</value>
+  </data>
+  <data name="&gt;&gt;txt_Rate.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="Uc_Cost.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="Uc_Cost.Location" type="System.Drawing.Point, System.Drawing">
+    <value>610, 151</value>
+  </data>
+  <data name="Uc_Cost.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="Uc_Cost.Size" type="System.Drawing.Size, System.Drawing">
+    <value>371, 20</value>
+  </data>
+  <data name="Uc_Cost.TabIndex" type="System.Int32, mscorlib">
+    <value>340</value>
+  </data>
+  <data name="&gt;&gt;Uc_Cost.Name" xml:space="preserve">
+    <value>Uc_Cost</value>
+  </data>
+  <data name="&gt;&gt;Uc_Cost.Type" xml:space="preserve">
+    <value>Report_Pro.MyControls.UC_cost, Report_Pro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;Uc_Cost.Parent" xml:space="preserve">
+    <value>tabControlPanel1</value>
+  </data>
+  <data name="&gt;&gt;Uc_Cost.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="Authorized_Persson.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="Authorized_Persson.Location" type="System.Drawing.Point, System.Drawing">
+    <value>610, 127</value>
+  </data>
+  <data name="Authorized_Persson.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="Authorized_Persson.Size" type="System.Drawing.Size, System.Drawing">
+    <value>371, 20</value>
+  </data>
+  <data name="Authorized_Persson.TabIndex" type="System.Int32, mscorlib">
+    <value>339</value>
+  </data>
+  <data name="&gt;&gt;Authorized_Persson.Name" xml:space="preserve">
+    <value>Authorized_Persson</value>
+  </data>
+  <data name="&gt;&gt;Authorized_Persson.Type" xml:space="preserve">
+    <value>Report_Pro.MyControls.UC_Catogry, Report_Pro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;Authorized_Persson.Parent" xml:space="preserve">
+    <value>tabControlPanel1</value>
+  </data>
+  <data name="&gt;&gt;Authorized_Persson.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="Confirm_Persson.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="Confirm_Persson.Location" type="System.Drawing.Point, System.Drawing">
+    <value>610, 103</value>
+  </data>
+  <data name="Confirm_Persson.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="Confirm_Persson.Size" type="System.Drawing.Size, System.Drawing">
+    <value>371, 20</value>
+  </data>
+  <data name="Confirm_Persson.TabIndex" type="System.Int32, mscorlib">
+    <value>338</value>
+  </data>
+  <data name="&gt;&gt;Confirm_Persson.Name" xml:space="preserve">
+    <value>Confirm_Persson</value>
+  </data>
+  <data name="&gt;&gt;Confirm_Persson.Type" xml:space="preserve">
+    <value>Report_Pro.MyControls.UC_Catogry, Report_Pro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;Confirm_Persson.Parent" xml:space="preserve">
+    <value>tabControlPanel1</value>
+  </data>
+  <data name="&gt;&gt;Confirm_Persson.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="Requst_Persson.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="Requst_Persson.Location" type="System.Drawing.Point, System.Drawing">
+    <value>610, 79</value>
+  </data>
+  <data name="Requst_Persson.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="Requst_Persson.Size" type="System.Drawing.Size, System.Drawing">
+    <value>371, 20</value>
+  </data>
+  <data name="Requst_Persson.TabIndex" type="System.Int32, mscorlib">
+    <value>337</value>
+  </data>
+  <data name="&gt;&gt;Requst_Persson.Name" xml:space="preserve">
+    <value>Requst_Persson</value>
+  </data>
+  <data name="&gt;&gt;Requst_Persson.Type" xml:space="preserve">
+    <value>Report_Pro.MyControls.UC_Catogry, Report_Pro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;Requst_Persson.Parent" xml:space="preserve">
+    <value>tabControlPanel1</value>
+  </data>
+  <data name="&gt;&gt;Requst_Persson.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
   <data name="Validty_Date.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -1764,7 +1893,7 @@
     <value>Tahoma, 8pt</value>
   </data>
   <data name="Validty_Date.Location" type="System.Drawing.Point, System.Drawing">
-    <value>172, 118</value>
+    <value>231, 134</value>
   </data>
   <data name="Validty_Date.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -1785,7 +1914,7 @@
     <value>tabControlPanel1</value>
   </data>
   <data name="&gt;&gt;Validty_Date.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>5</value>
   </data>
   <data name="ValidtyDays.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -1794,13 +1923,13 @@
     <value>Tahoma, 8pt</value>
   </data>
   <data name="ValidtyDays.Location" type="System.Drawing.Point, System.Drawing">
-    <value>277, 118</value>
+    <value>329, 134</value>
   </data>
   <data name="ValidtyDays.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
   <data name="ValidtyDays.Size" type="System.Drawing.Size, System.Drawing">
-    <value>33, 20</value>
+    <value>46, 20</value>
   </data>
   <data name="ValidtyDays.TabIndex" type="System.Int32, mscorlib">
     <value>335</value>
@@ -1815,7 +1944,7 @@
     <value>tabControlPanel1</value>
   </data>
   <data name="&gt;&gt;ValidtyDays.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>6</value>
   </data>
   <data name="labelX10.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -1827,7 +1956,7 @@
     <value>Tahoma, 8pt</value>
   </data>
   <data name="labelX10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>315, 120</value>
+    <value>380, 136</value>
   </data>
   <data name="labelX10.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -1851,7 +1980,7 @@
     <value>tabControlPanel1</value>
   </data>
   <data name="&gt;&gt;labelX10.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>7</value>
   </data>
   <data name="labelX51.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -1863,7 +1992,7 @@
     <value>Tahoma, 8pt</value>
   </data>
   <data name="labelX51.Location" type="System.Drawing.Point, System.Drawing">
-    <value>315, 99</value>
+    <value>380, 111</value>
   </data>
   <data name="labelX51.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -1887,7 +2016,7 @@
     <value>tabControlPanel1</value>
   </data>
   <data name="&gt;&gt;labelX51.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>8</value>
   </data>
   <data name="DelevryTearms.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -1896,13 +2025,13 @@
     <value>Tahoma, 8pt</value>
   </data>
   <data name="DelevryTearms.Location" type="System.Drawing.Point, System.Drawing">
-    <value>59, 97</value>
+    <value>38, 109</value>
   </data>
   <data name="DelevryTearms.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
   <data name="DelevryTearms.Size" type="System.Drawing.Size, System.Drawing">
-    <value>253, 21</value>
+    <value>337, 21</value>
   </data>
   <data name="DelevryTearms.TabIndex" type="System.Int32, mscorlib">
     <value>330</value>
@@ -1917,7 +2046,7 @@
     <value>tabControlPanel1</value>
   </data>
   <data name="&gt;&gt;DelevryTearms.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>9</value>
   </data>
   <data name="labelX62.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -1929,7 +2058,7 @@
     <value>Tahoma, 8pt</value>
   </data>
   <data name="labelX62.Location" type="System.Drawing.Point, System.Drawing">
-    <value>315, 74</value>
+    <value>380, 86</value>
   </data>
   <data name="labelX62.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -1953,7 +2082,7 @@
     <value>tabControlPanel1</value>
   </data>
   <data name="&gt;&gt;labelX62.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>10</value>
   </data>
   <data name="PaymentTearms.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -1962,13 +2091,13 @@
     <value>Tahoma, 8pt</value>
   </data>
   <data name="PaymentTearms.Location" type="System.Drawing.Point, System.Drawing">
-    <value>59, 73</value>
+    <value>38, 85</value>
   </data>
   <data name="PaymentTearms.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
   <data name="PaymentTearms.Size" type="System.Drawing.Size, System.Drawing">
-    <value>253, 21</value>
+    <value>337, 21</value>
   </data>
   <data name="PaymentTearms.TabIndex" type="System.Int32, mscorlib">
     <value>328</value>
@@ -1983,7 +2112,7 @@
     <value>tabControlPanel1</value>
   </data>
   <data name="&gt;&gt;PaymentTearms.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>11</value>
   </data>
   <data name="btnAddDelevery.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -2147,7 +2276,7 @@
 </value>
   </data>
   <data name="btnAddDelevery.Location" type="System.Drawing.Point, System.Drawing">
-    <value>38, 98</value>
+    <value>14, 112</value>
   </data>
   <data name="btnAddDelevery.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -2168,7 +2297,7 @@
     <value>tabControlPanel1</value>
   </data>
   <data name="&gt;&gt;btnAddDelevery.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>12</value>
   </data>
   <data name="btnAddPayment.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -2332,7 +2461,7 @@
 </value>
   </data>
   <data name="btnAddPayment.Location" type="System.Drawing.Point, System.Drawing">
-    <value>38, 73</value>
+    <value>14, 87</value>
   </data>
   <data name="btnAddPayment.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -2353,7 +2482,7 @@
     <value>tabControlPanel1</value>
   </data>
   <data name="&gt;&gt;btnAddPayment.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>13</value>
   </data>
   <data name="labelX44.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -2362,7 +2491,7 @@
     <value>True</value>
   </data>
   <data name="labelX44.Location" type="System.Drawing.Point, System.Drawing">
-    <value>903, 133</value>
+    <value>987, 133</value>
   </data>
   <data name="labelX44.Size" type="System.Drawing.Size, System.Drawing">
     <value>58, 15</value>
@@ -2383,7 +2512,7 @@
     <value>tabControlPanel1</value>
   </data>
   <data name="&gt;&gt;labelX44.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>14</value>
   </data>
   <data name="labelX26.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -2392,7 +2521,7 @@
     <value>True</value>
   </data>
   <data name="labelX26.Location" type="System.Drawing.Point, System.Drawing">
-    <value>903, 107</value>
+    <value>987, 107</value>
   </data>
   <data name="labelX26.Size" type="System.Drawing.Size, System.Drawing">
     <value>52, 15</value>
@@ -2413,16 +2542,16 @@
     <value>tabControlPanel1</value>
   </data>
   <data name="&gt;&gt;labelX26.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>15</value>
   </data>
   <data name="txtSuppContact.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
   <data name="txtSuppContact.Location" type="System.Drawing.Point, System.Drawing">
-    <value>575, 32</value>
+    <value>610, 31</value>
   </data>
   <data name="txtSuppContact.Size" type="System.Drawing.Size, System.Drawing">
-    <value>321, 20</value>
+    <value>371, 20</value>
   </data>
   <data name="txtSuppContact.TabIndex" type="System.Int32, mscorlib">
     <value>318</value>
@@ -2437,7 +2566,7 @@
     <value>tabControlPanel1</value>
   </data>
   <data name="&gt;&gt;txtSuppContact.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>16</value>
   </data>
   <data name="labelX43.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -2446,7 +2575,7 @@
     <value>True</value>
   </data>
   <data name="labelX43.Location" type="System.Drawing.Point, System.Drawing">
-    <value>903, 35</value>
+    <value>987, 34</value>
   </data>
   <data name="labelX43.Size" type="System.Drawing.Size, System.Drawing">
     <value>41, 15</value>
@@ -2467,7 +2596,7 @@
     <value>tabControlPanel1</value>
   </data>
   <data name="&gt;&gt;labelX43.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>17</value>
   </data>
   <data name="labelX42.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -2476,7 +2605,7 @@
     <value>True</value>
   </data>
   <data name="labelX42.Location" type="System.Drawing.Point, System.Drawing">
-    <value>903, 57</value>
+    <value>987, 57</value>
   </data>
   <data name="labelX42.Size" type="System.Drawing.Size, System.Drawing">
     <value>24, 15</value>
@@ -2497,7 +2626,7 @@
     <value>tabControlPanel1</value>
   </data>
   <data name="&gt;&gt;labelX42.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>18</value>
   </data>
   <data name="labelX41.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -2506,7 +2635,7 @@
     <value>True</value>
   </data>
   <data name="labelX41.Location" type="System.Drawing.Point, System.Drawing">
-    <value>503, 85</value>
+    <value>544, 85</value>
   </data>
   <data name="labelX41.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 3, 2, 3</value>
@@ -2530,13 +2659,13 @@
     <value>tabControlPanel1</value>
   </data>
   <data name="&gt;&gt;labelX41.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>19</value>
   </data>
   <data name="txtcurrency.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
   <data name="txtcurrency.Location" type="System.Drawing.Point, System.Drawing">
-    <value>411, 57</value>
+    <value>451, 57</value>
   </data>
   <data name="txtcurrency.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 3, 2, 3</value>
@@ -2557,34 +2686,7 @@
     <value>tabControlPanel1</value>
   </data>
   <data name="&gt;&gt;txtcurrency.ZOrder" xml:space="preserve">
-    <value>15</value>
-  </data>
-  <data name="txt_Rate.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="txt_Rate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>414, 82</value>
-  </data>
-  <data name="txt_Rate.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
-  </data>
-  <data name="txt_Rate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>87, 20</value>
-  </data>
-  <data name="txt_Rate.TabIndex" type="System.Int32, mscorlib">
-    <value>311</value>
-  </data>
-  <data name="&gt;&gt;txt_Rate.Name" xml:space="preserve">
-    <value>txt_Rate</value>
-  </data>
-  <data name="&gt;&gt;txt_Rate.Type" xml:space="preserve">
-    <value>DevComponents.Editors.DoubleInput, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="&gt;&gt;txt_Rate.Parent" xml:space="preserve">
-    <value>tabControlPanel1</value>
-  </data>
-  <data name="&gt;&gt;txt_Rate.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>20</value>
   </data>
   <data name="labelX59.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -2593,7 +2695,7 @@
     <value>True</value>
   </data>
   <data name="labelX59.Location" type="System.Drawing.Point, System.Drawing">
-    <value>503, 59</value>
+    <value>544, 59</value>
   </data>
   <data name="labelX59.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 3, 2, 3</value>
@@ -2617,7 +2719,7 @@
     <value>tabControlPanel1</value>
   </data>
   <data name="&gt;&gt;labelX59.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>21</value>
   </data>
   <data name="labelX3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -2626,7 +2728,7 @@
     <value>True</value>
   </data>
   <data name="labelX3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>903, 10</value>
+    <value>987, 10</value>
   </data>
   <data name="labelX3.Size" type="System.Drawing.Size, System.Drawing">
     <value>28, 15</value>
@@ -2647,13 +2749,13 @@
     <value>tabControlPanel1</value>
   </data>
   <data name="&gt;&gt;labelX3.ZOrder" xml:space="preserve">
-    <value>18</value>
+    <value>22</value>
   </data>
   <data name="Payment_Type.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
   <data name="Payment_Type.Location" type="System.Drawing.Point, System.Drawing">
-    <value>411, 8</value>
+    <value>451, 8</value>
   </data>
   <data name="Payment_Type.Size" type="System.Drawing.Size, System.Drawing">
     <value>89, 21</value>
@@ -2671,7 +2773,7 @@
     <value>tabControlPanel1</value>
   </data>
   <data name="&gt;&gt;Payment_Type.ZOrder" xml:space="preserve">
-    <value>19</value>
+    <value>23</value>
   </data>
   <data name="labelX4.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -2680,7 +2782,7 @@
     <value>True</value>
   </data>
   <data name="labelX4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>315, 11</value>
+    <value>380, 11</value>
   </data>
   <data name="labelX4.Size" type="System.Drawing.Size, System.Drawing">
     <value>42, 15</value>
@@ -2701,7 +2803,7 @@
     <value>tabControlPanel1</value>
   </data>
   <data name="&gt;&gt;labelX4.ZOrder" xml:space="preserve">
-    <value>20</value>
+    <value>24</value>
   </data>
   <data name="labelX45.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -2710,16 +2812,16 @@
     <value>True</value>
   </data>
   <data name="labelX45.Location" type="System.Drawing.Point, System.Drawing">
-    <value>903, 82</value>
+    <value>987, 82</value>
   </data>
   <data name="labelX45.Size" type="System.Drawing.Size, System.Drawing">
-    <value>47, 15</value>
+    <value>72, 15</value>
   </data>
   <data name="labelX45.TabIndex" type="System.Int32, mscorlib">
     <value>61</value>
   </data>
   <data name="labelX45.Text" xml:space="preserve">
-    <value>أعد الطلب</value>
+    <value>الشخص الطالب</value>
   </data>
   <data name="&gt;&gt;labelX45.Name" xml:space="preserve">
     <value>labelX45</value>
@@ -2731,7 +2833,7 @@
     <value>tabControlPanel1</value>
   </data>
   <data name="&gt;&gt;labelX45.ZOrder" xml:space="preserve">
-    <value>21</value>
+    <value>25</value>
   </data>
   <data name="labelX6.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -2740,7 +2842,7 @@
     <value>True</value>
   </data>
   <data name="labelX6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>503, 10</value>
+    <value>544, 10</value>
   </data>
   <data name="labelX6.Size" type="System.Drawing.Size, System.Drawing">
     <value>54, 15</value>
@@ -2761,7 +2863,7 @@
     <value>tabControlPanel1</value>
   </data>
   <data name="&gt;&gt;labelX6.ZOrder" xml:space="preserve">
-    <value>22</value>
+    <value>26</value>
   </data>
   <data name="labelX9.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -2770,7 +2872,7 @@
     <value>True</value>
   </data>
   <data name="labelX9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>503, 35</value>
+    <value>544, 35</value>
   </data>
   <data name="labelX9.Size" type="System.Drawing.Size, System.Drawing">
     <value>55, 15</value>
@@ -2791,13 +2893,13 @@
     <value>tabControlPanel1</value>
   </data>
   <data name="&gt;&gt;labelX9.ZOrder" xml:space="preserve">
-    <value>23</value>
+    <value>27</value>
   </data>
   <data name="txtRefrance.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
   <data name="txtRefrance.Location" type="System.Drawing.Point, System.Drawing">
-    <value>411, 33</value>
+    <value>451, 33</value>
   </data>
   <data name="txtRefrance.Size" type="System.Drawing.Size, System.Drawing">
     <value>89, 20</value>
@@ -2815,22 +2917,27 @@
     <value>tabControlPanel1</value>
   </data>
   <data name="&gt;&gt;txtRefrance.ZOrder" xml:space="preserve">
-    <value>24</value>
+    <value>28</value>
   </data>
   <data name="txt_InvNot.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
   <data name="txt_InvNot.Location" type="System.Drawing.Point, System.Drawing">
-    <value>34, 11</value>
+    <value>14, 11</value>
   </data>
   <data name="txt_InvNot.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="txt_InvNot.Size" type="System.Drawing.Size, System.Drawing">
-    <value>278, 55</value>
+    <value>361, 69</value>
   </data>
   <data name="txt_InvNot.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
+  </data>
+  <data name="txt_InvNot.Text" xml:space="preserve">
+    <value>- The delivery should be as per the prescriped and agreed time
+-Alwyes mention P.O.# in your delivery note and invoice
+</value>
   </data>
   <data name="&gt;&gt;txt_InvNot.Name" xml:space="preserve">
     <value>txt_InvNot</value>
@@ -2842,73 +2949,19 @@
     <value>tabControlPanel1</value>
   </data>
   <data name="&gt;&gt;txt_InvNot.ZOrder" xml:space="preserve">
-    <value>25</value>
-  </data>
-  <data name="txtApproveBY.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="txtApproveBY.Location" type="System.Drawing.Point, System.Drawing">
-    <value>575, 129</value>
-  </data>
-  <data name="txtApproveBY.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="txtApproveBY.Size" type="System.Drawing.Size, System.Drawing">
-    <value>321, 20</value>
-  </data>
-  <data name="txtApproveBY.TabIndex" type="System.Int32, mscorlib">
-    <value>323</value>
-  </data>
-  <data name="&gt;&gt;txtApproveBY.Name" xml:space="preserve">
-    <value>txtApproveBY</value>
-  </data>
-  <data name="&gt;&gt;txtApproveBY.Type" xml:space="preserve">
-    <value>Report_Pro.MyControls.UC_cost, Report_Pro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;txtApproveBY.Parent" xml:space="preserve">
-    <value>tabControlPanel1</value>
-  </data>
-  <data name="&gt;&gt;txtApproveBY.ZOrder" xml:space="preserve">
-    <value>26</value>
-  </data>
-  <data name="txtAauditBY.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="txtAauditBY.Location" type="System.Drawing.Point, System.Drawing">
-    <value>575, 104</value>
-  </data>
-  <data name="txtAauditBY.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="txtAauditBY.Size" type="System.Drawing.Size, System.Drawing">
-    <value>321, 20</value>
-  </data>
-  <data name="txtAauditBY.TabIndex" type="System.Int32, mscorlib">
-    <value>321</value>
-  </data>
-  <data name="&gt;&gt;txtAauditBY.Name" xml:space="preserve">
-    <value>txtAauditBY</value>
-  </data>
-  <data name="&gt;&gt;txtAauditBY.Type" xml:space="preserve">
-    <value>Report_Pro.MyControls.UC_cost, Report_Pro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;txtAauditBY.Parent" xml:space="preserve">
-    <value>tabControlPanel1</value>
-  </data>
-  <data name="&gt;&gt;txtAauditBY.ZOrder" xml:space="preserve">
-    <value>27</value>
+    <value>29</value>
   </data>
   <data name="txtBranch.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
   <data name="txtBranch.Location" type="System.Drawing.Point, System.Drawing">
-    <value>575, 54</value>
+    <value>610, 55</value>
   </data>
   <data name="txtBranch.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="txtBranch.Size" type="System.Drawing.Size, System.Drawing">
-    <value>321, 20</value>
+    <value>371, 20</value>
   </data>
   <data name="txtBranch.TabIndex" type="System.Int32, mscorlib">
     <value>316</value>
@@ -2917,28 +2970,25 @@
     <value>txtBranch</value>
   </data>
   <data name="&gt;&gt;txtBranch.Type" xml:space="preserve">
-    <value>Report_Pro.MyControls.UC_Branch, Report_Pro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Report_Pro.MyControls.ذ, Report_Pro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;txtBranch.Parent" xml:space="preserve">
     <value>tabControlPanel1</value>
   </data>
   <data name="&gt;&gt;txtBranch.ZOrder" xml:space="preserve">
-    <value>28</value>
+    <value>30</value>
   </data>
   <data name="txtSupplier.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
   <data name="txtSupplier.Location" type="System.Drawing.Point, System.Drawing">
-    <value>575, 7</value>
+    <value>610, 7</value>
   </data>
   <data name="txtSupplier.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
-  <data name="txtSupplier.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>1, 1, 1, 1</value>
-  </data>
   <data name="txtSupplier.Size" type="System.Drawing.Size, System.Drawing">
-    <value>321, 20</value>
+    <value>371, 20</value>
   </data>
   <data name="txtSupplier.TabIndex" type="System.Int32, mscorlib">
     <value>307</value>
@@ -2953,34 +3003,7 @@
     <value>tabControlPanel1</value>
   </data>
   <data name="&gt;&gt;txtSupplier.ZOrder" xml:space="preserve">
-    <value>29</value>
-  </data>
-  <data name="Uc_Cost.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="Uc_Cost.Location" type="System.Drawing.Point, System.Drawing">
-    <value>575, 79</value>
-  </data>
-  <data name="Uc_Cost.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="Uc_Cost.Size" type="System.Drawing.Size, System.Drawing">
-    <value>321, 20</value>
-  </data>
-  <data name="Uc_Cost.TabIndex" type="System.Int32, mscorlib">
-    <value>304</value>
-  </data>
-  <data name="&gt;&gt;Uc_Cost.Name" xml:space="preserve">
-    <value>Uc_Cost</value>
-  </data>
-  <data name="&gt;&gt;Uc_Cost.Type" xml:space="preserve">
-    <value>Report_Pro.MyControls.UC_cost, Report_Pro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;Uc_Cost.Parent" xml:space="preserve">
-    <value>tabControlPanel1</value>
-  </data>
-  <data name="&gt;&gt;Uc_Cost.ZOrder" xml:space="preserve">
-    <value>30</value>
+    <value>31</value>
   </data>
   <data name="tabControlPanel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -2992,7 +3015,7 @@
     <value>1, 1, 1, 1</value>
   </data>
   <data name="tabControlPanel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>966, 181</value>
+    <value>1069, 181</value>
   </data>
   <data name="tabControlPanel1.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -3016,7 +3039,7 @@
     <value>Top, Right</value>
   </data>
   <data name="Vat_acc_Desc.Location" type="System.Drawing.Point, System.Drawing">
-    <value>565, 73</value>
+    <value>668, 73</value>
   </data>
   <data name="Vat_acc_Desc.Size" type="System.Drawing.Size, System.Drawing">
     <value>238, 18</value>
@@ -3040,7 +3063,7 @@
     <value>Top, Right</value>
   </data>
   <data name="txtAcc2_Desc.Location" type="System.Drawing.Point, System.Drawing">
-    <value>565, 10</value>
+    <value>668, 10</value>
   </data>
   <data name="txtAcc2_Desc.Size" type="System.Drawing.Size, System.Drawing">
     <value>238, 18</value>
@@ -3064,7 +3087,7 @@
     <value>Top, Right</value>
   </data>
   <data name="txt_CustAcc_Desc.Location" type="System.Drawing.Point, System.Drawing">
-    <value>565, 52</value>
+    <value>668, 52</value>
   </data>
   <data name="txt_CustAcc_Desc.Size" type="System.Drawing.Size, System.Drawing">
     <value>238, 18</value>
@@ -3091,7 +3114,7 @@
     <value>True</value>
   </data>
   <data name="labelX11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>875, 11</value>
+    <value>978, 11</value>
   </data>
   <data name="labelX11.Size" type="System.Drawing.Size, System.Drawing">
     <value>72, 15</value>
@@ -3118,7 +3141,7 @@
     <value>Top, Right</value>
   </data>
   <data name="txt_CustAcc_ID.Location" type="System.Drawing.Point, System.Drawing">
-    <value>806, 52</value>
+    <value>909, 52</value>
   </data>
   <data name="txt_CustAcc_ID.Size" type="System.Drawing.Size, System.Drawing">
     <value>67, 18</value>
@@ -3145,7 +3168,7 @@
     <value>True</value>
   </data>
   <data name="labelX12.Location" type="System.Drawing.Point, System.Drawing">
-    <value>875, 32</value>
+    <value>978, 32</value>
   </data>
   <data name="labelX12.Size" type="System.Drawing.Size, System.Drawing">
     <value>66, 15</value>
@@ -3172,7 +3195,7 @@
     <value>Top, Right</value>
   </data>
   <data name="txt_CashAcc_Desc.Location" type="System.Drawing.Point, System.Drawing">
-    <value>565, 31</value>
+    <value>668, 31</value>
   </data>
   <data name="txt_CashAcc_Desc.Size" type="System.Drawing.Size, System.Drawing">
     <value>238, 18</value>
@@ -3199,7 +3222,7 @@
     <value>True</value>
   </data>
   <data name="labelX13.Location" type="System.Drawing.Point, System.Drawing">
-    <value>875, 53</value>
+    <value>978, 53</value>
   </data>
   <data name="labelX13.Size" type="System.Drawing.Size, System.Drawing">
     <value>65, 15</value>
@@ -3226,7 +3249,7 @@
     <value>Top, Right</value>
   </data>
   <data name="txt_CashAcc_ID.Location" type="System.Drawing.Point, System.Drawing">
-    <value>806, 31</value>
+    <value>909, 31</value>
   </data>
   <data name="txt_CashAcc_ID.Size" type="System.Drawing.Size, System.Drawing">
     <value>67, 18</value>
@@ -3253,7 +3276,7 @@
     <value>True</value>
   </data>
   <data name="labelX14.Location" type="System.Drawing.Point, System.Drawing">
-    <value>875, 75</value>
+    <value>978, 75</value>
   </data>
   <data name="labelX14.Size" type="System.Drawing.Size, System.Drawing">
     <value>67, 15</value>
@@ -3280,7 +3303,7 @@
     <value>Top, Right</value>
   </data>
   <data name="Vat_acc.Location" type="System.Drawing.Point, System.Drawing">
-    <value>806, 73</value>
+    <value>909, 73</value>
   </data>
   <data name="Vat_acc.Size" type="System.Drawing.Size, System.Drawing">
     <value>67, 18</value>
@@ -3304,7 +3327,7 @@
     <value>Top, Right</value>
   </data>
   <data name="txtAcc2_ID.Location" type="System.Drawing.Point, System.Drawing">
-    <value>806, 10</value>
+    <value>909, 10</value>
   </data>
   <data name="txtAcc2_ID.Size" type="System.Drawing.Size, System.Drawing">
     <value>67, 18</value>
@@ -3334,7 +3357,7 @@
     <value>1, 1, 1, 1</value>
   </data>
   <data name="tabControlPanel3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>966, 181</value>
+    <value>1069, 181</value>
   </data>
   <data name="tabControlPanel3.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -3352,13 +3375,13 @@
     <value>tabControl1</value>
   </data>
   <data name="&gt;&gt;tabControlPanel3.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>1</value>
   </data>
   <data name="tabControl1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>301, 3</value>
+    <value>324, 3</value>
   </data>
   <data name="tabControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>966, 207</value>
+    <value>1069, 207</value>
   </data>
   <data name="tabControl1.TabIndex" type="System.Int32, mscorlib">
     <value>132</value>
@@ -3376,13 +3399,13 @@
     <value>groupPanel6</value>
   </data>
   <data name="&gt;&gt;tabControl1.ZOrder" xml:space="preserve">
-    <value>26</value>
+    <value>27</value>
   </data>
   <data name="txt_InvDate.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
   <data name="txt_InvDate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 95</value>
+    <value>25, 95</value>
   </data>
   <data name="txt_InvDate.Size" type="System.Drawing.Size, System.Drawing">
     <value>88, 20</value>
@@ -3400,7 +3423,7 @@
     <value>groupPanel6</value>
   </data>
   <data name="&gt;&gt;txt_InvDate.ZOrder" xml:space="preserve">
-    <value>25</value>
+    <value>26</value>
   </data>
   <data name="last_.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -3432,7 +3455,7 @@
     <value>NoControl</value>
   </data>
   <data name="last_.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 44</value>
+    <value>17, 44</value>
   </data>
   <data name="last_.Size" type="System.Drawing.Size, System.Drawing">
     <value>22, 22</value>
@@ -3453,7 +3476,7 @@
     <value>groupPanel6</value>
   </data>
   <data name="&gt;&gt;last_.ZOrder" xml:space="preserve">
-    <value>24</value>
+    <value>25</value>
   </data>
   <data name="labelX2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -3462,7 +3485,7 @@
     <value>True</value>
   </data>
   <data name="labelX2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>107, 99</value>
+    <value>115, 99</value>
   </data>
   <data name="labelX2.Size" type="System.Drawing.Size, System.Drawing">
     <value>29, 15</value>
@@ -3483,7 +3506,7 @@
     <value>groupPanel6</value>
   </data>
   <data name="&gt;&gt;labelX2.ZOrder" xml:space="preserve">
-    <value>23</value>
+    <value>24</value>
   </data>
   <data name="next_.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -3507,7 +3530,7 @@
     <value>NoControl</value>
   </data>
   <data name="next_.Location" type="System.Drawing.Point, System.Drawing">
-    <value>30, 44</value>
+    <value>38, 44</value>
   </data>
   <data name="next_.Size" type="System.Drawing.Size, System.Drawing">
     <value>22, 22</value>
@@ -3528,7 +3551,7 @@
     <value>groupPanel6</value>
   </data>
   <data name="&gt;&gt;next_.ZOrder" xml:space="preserve">
-    <value>22</value>
+    <value>23</value>
   </data>
   <data name="labelX1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -3537,7 +3560,7 @@
     <value>True</value>
   </data>
   <data name="labelX1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>107, 47</value>
+    <value>115, 47</value>
   </data>
   <data name="labelX1.Size" type="System.Drawing.Size, System.Drawing">
     <value>24, 15</value>
@@ -3558,7 +3581,7 @@
     <value>groupPanel6</value>
   </data>
   <data name="&gt;&gt;labelX1.ZOrder" xml:space="preserve">
-    <value>21</value>
+    <value>22</value>
   </data>
   <data name="first_.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -3589,7 +3612,7 @@
     <value>NoControl</value>
   </data>
   <data name="first_.Location" type="System.Drawing.Point, System.Drawing">
-    <value>153, 44</value>
+    <value>161, 44</value>
   </data>
   <data name="first_.Size" type="System.Drawing.Size, System.Drawing">
     <value>22, 22</value>
@@ -3610,13 +3633,13 @@
     <value>groupPanel6</value>
   </data>
   <data name="&gt;&gt;first_.ZOrder" xml:space="preserve">
-    <value>20</value>
+    <value>21</value>
   </data>
   <data name="txt_InvNu.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
   <data name="txt_InvNu.Location" type="System.Drawing.Point, System.Drawing">
-    <value>51, 45</value>
+    <value>59, 45</value>
   </data>
   <data name="txt_InvNu.Size" type="System.Drawing.Size, System.Drawing">
     <value>52, 20</value>
@@ -3634,7 +3657,7 @@
     <value>groupPanel6</value>
   </data>
   <data name="&gt;&gt;txt_InvNu.ZOrder" xml:space="preserve">
-    <value>19</value>
+    <value>20</value>
   </data>
   <data name="previous_.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -3660,7 +3683,7 @@
     <value>NoControl</value>
   </data>
   <data name="previous_.Location" type="System.Drawing.Point, System.Drawing">
-    <value>133, 44</value>
+    <value>141, 44</value>
   </data>
   <data name="previous_.Size" type="System.Drawing.Size, System.Drawing">
     <value>22, 22</value>
@@ -3681,7 +3704,7 @@
     <value>groupPanel6</value>
   </data>
   <data name="&gt;&gt;previous_.ZOrder" xml:space="preserve">
-    <value>18</value>
+    <value>19</value>
   </data>
   <data name="labelX5.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -3690,7 +3713,7 @@
     <value>True</value>
   </data>
   <data name="labelX5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>187, 147</value>
+    <value>195, 147</value>
   </data>
   <data name="labelX5.Size" type="System.Drawing.Size, System.Drawing">
     <value>37, 15</value>
@@ -3711,7 +3734,7 @@
     <value>groupPanel6</value>
   </data>
   <data name="&gt;&gt;labelX5.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>18</value>
   </data>
   <data name="Doc_Name.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -3723,7 +3746,7 @@
     <value>NoControl</value>
   </data>
   <data name="Doc_Name.Location" type="System.Drawing.Point, System.Drawing">
-    <value>19, 5</value>
+    <value>62, 5</value>
   </data>
   <data name="Doc_Name.Size" type="System.Drawing.Size, System.Drawing">
     <value>118, 31</value>
@@ -3747,7 +3770,7 @@
     <value>groupPanel6</value>
   </data>
   <data name="&gt;&gt;Doc_Name.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>17</value>
   </data>
   <data name="labelX15.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -3756,7 +3779,7 @@
     <value>True</value>
   </data>
   <data name="labelX15.Location" type="System.Drawing.Point, System.Drawing">
-    <value>389, -2</value>
+    <value>237, 98</value>
   </data>
   <data name="labelX15.Size" type="System.Drawing.Size, System.Drawing">
     <value>51, 15</value>
@@ -3777,7 +3800,7 @@
     <value>groupPanel6</value>
   </data>
   <data name="&gt;&gt;labelX15.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>16</value>
   </data>
   <data name="labelX50.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -3786,7 +3809,7 @@
     <value>True</value>
   </data>
   <data name="labelX50.Location" type="System.Drawing.Point, System.Drawing">
-    <value>289, -3</value>
+    <value>237, 73</value>
   </data>
   <data name="labelX50.Size" type="System.Drawing.Size, System.Drawing">
     <value>43, 15</value>
@@ -3807,13 +3830,13 @@
     <value>groupPanel6</value>
   </data>
   <data name="&gt;&gt;labelX50.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>15</value>
   </data>
   <data name="txtStore_ID.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
   <data name="txtStore_ID.Location" type="System.Drawing.Point, System.Drawing">
-    <value>342, -2</value>
+    <value>190, 98</value>
   </data>
   <data name="txtStore_ID.Size" type="System.Drawing.Size, System.Drawing">
     <value>42, 16</value>
@@ -3831,13 +3854,13 @@
     <value>groupPanel6</value>
   </data>
   <data name="&gt;&gt;txtStore_ID.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>14</value>
   </data>
   <data name="txtBranch_Id.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
   <data name="txtBranch_Id.Location" type="System.Drawing.Point, System.Drawing">
-    <value>243, -3</value>
+    <value>190, 72</value>
   </data>
   <data name="txtBranch_Id.Size" type="System.Drawing.Size, System.Drawing">
     <value>42, 16</value>
@@ -3855,13 +3878,13 @@
     <value>groupPanel6</value>
   </data>
   <data name="&gt;&gt;txtBranch_Id.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>13</value>
   </data>
   <data name="txt_InvSM.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
   <data name="txt_InvSM.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 146</value>
+    <value>25, 146</value>
   </data>
   <data name="txt_InvSM.Size" type="System.Drawing.Size, System.Drawing">
     <value>134, 16</value>
@@ -3879,13 +3902,13 @@
     <value>groupPanel6</value>
   </data>
   <data name="&gt;&gt;txt_InvSM.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>12</value>
   </data>
   <data name="acc_year.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
   <data name="acc_year.Location" type="System.Drawing.Point, System.Drawing">
-    <value>177, -2</value>
+    <value>258, 2</value>
   </data>
   <data name="acc_year.Size" type="System.Drawing.Size, System.Drawing">
     <value>29, 16</value>
@@ -3906,13 +3929,13 @@
     <value>groupPanel6</value>
   </data>
   <data name="&gt;&gt;acc_year.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>11</value>
   </data>
   <data name="labelX57.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
   <data name="labelX57.Location" type="System.Drawing.Point, System.Drawing">
-    <value>29, 3</value>
+    <value>146, 3</value>
   </data>
   <data name="labelX57.Size" type="System.Drawing.Size, System.Drawing">
     <value>65, 15</value>
@@ -3939,7 +3962,7 @@
     <value>Top, Right</value>
   </data>
   <data name="txtUnit.Location" type="System.Drawing.Point, System.Drawing">
-    <value>645, 19</value>
+    <value>763, 23</value>
   </data>
   <data name="txtUnit.Size" type="System.Drawing.Size, System.Drawing">
     <value>54, 20</value>
@@ -3963,7 +3986,7 @@
     <value>Top, Right</value>
   </data>
   <data name="Price_ton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>409, 19</value>
+    <value>526, 23</value>
   </data>
   <data name="Price_ton.Size" type="System.Drawing.Size, System.Drawing">
     <value>54, 20</value>
@@ -3987,7 +4010,7 @@
     <value>Top, Right</value>
   </data>
   <data name="totWeight.Location" type="System.Drawing.Point, System.Drawing">
-    <value>29, 19</value>
+    <value>146, 23</value>
   </data>
   <data name="totWeight.Size" type="System.Drawing.Size, System.Drawing">
     <value>65, 20</value>
@@ -4011,7 +4034,7 @@
     <value>Top, Right</value>
   </data>
   <data name="labelX56.Location" type="System.Drawing.Point, System.Drawing">
-    <value>409, 2</value>
+    <value>526, 2</value>
   </data>
   <data name="labelX56.Size" type="System.Drawing.Size, System.Drawing">
     <value>54, 15</value>
@@ -4038,7 +4061,7 @@
     <value>Top, Right</value>
   </data>
   <data name="Weight_.Location" type="System.Drawing.Point, System.Drawing">
-    <value>591, 19</value>
+    <value>708, 23</value>
   </data>
   <data name="Weight_.Size" type="System.Drawing.Size, System.Drawing">
     <value>55, 20</value>
@@ -4062,7 +4085,7 @@
     <value>Top, Right</value>
   </data>
   <data name="labelX55.Location" type="System.Drawing.Point, System.Drawing">
-    <value>591, 3</value>
+    <value>708, 3</value>
   </data>
   <data name="labelX55.Size" type="System.Drawing.Size, System.Drawing">
     <value>55, 15</value>
@@ -4089,7 +4112,7 @@
     <value>Top, Right</value>
   </data>
   <data name="labelX54.Location" type="System.Drawing.Point, System.Drawing">
-    <value>645, 3</value>
+    <value>762, 3</value>
   </data>
   <data name="labelX54.Size" type="System.Drawing.Size, System.Drawing">
     <value>54, 15</value>
@@ -4116,7 +4139,7 @@
     <value>Top, Right</value>
   </data>
   <data name="TxtDisc.Location" type="System.Drawing.Point, System.Drawing">
-    <value>273, 19</value>
+    <value>390, 23</value>
   </data>
   <data name="TxtDisc.Size" type="System.Drawing.Size, System.Drawing">
     <value>57, 20</value>
@@ -4140,7 +4163,7 @@
     <value>Top, Right</value>
   </data>
   <data name="TxtPrice.Location" type="System.Drawing.Point, System.Drawing">
-    <value>463, 19</value>
+    <value>580, 23</value>
   </data>
   <data name="TxtPrice.Size" type="System.Drawing.Size, System.Drawing">
     <value>65, 20</value>
@@ -4164,7 +4187,7 @@
     <value>Top, Right</value>
   </data>
   <data name="TxtQty.Location" type="System.Drawing.Point, System.Drawing">
-    <value>528, 19</value>
+    <value>645, 23</value>
   </data>
   <data name="TxtQty.Size" type="System.Drawing.Size, System.Drawing">
     <value>63, 20</value>
@@ -4188,7 +4211,7 @@
     <value>Top, Right</value>
   </data>
   <data name="labelX53.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-69, 3</value>
+    <value>48, 3</value>
   </data>
   <data name="labelX53.Size" type="System.Drawing.Size, System.Drawing">
     <value>41, 15</value>
@@ -4215,7 +4238,7 @@
     <value>Top, Right</value>
   </data>
   <data name="labelX52.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-24, 3</value>
+    <value>93, 3</value>
   </data>
   <data name="labelX52.Size" type="System.Drawing.Size, System.Drawing">
     <value>53, 15</value>
@@ -4242,7 +4265,7 @@
     <value>Top, Right</value>
   </data>
   <data name="txtBalance.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-24, 19</value>
+    <value>93, 23</value>
   </data>
   <data name="txtBalance.Size" type="System.Drawing.Size, System.Drawing">
     <value>53, 20</value>
@@ -4265,14 +4288,11 @@
   <data name="txtCost.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
-  <data name="txtCost.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 8.25pt</value>
-  </data>
   <data name="txtCost.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-73, 18</value>
+    <value>44, 23</value>
   </data>
   <data name="txtCost.Size" type="System.Drawing.Size, System.Drawing">
-    <value>49, 21</value>
+    <value>49, 20</value>
   </data>
   <data name="txtCost.TabIndex" type="System.Int32, mscorlib">
     <value>52</value>
@@ -4293,7 +4313,7 @@
     <value>Top, Right</value>
   </data>
   <data name="labelX33.Location" type="System.Drawing.Point, System.Drawing">
-    <value>329, 3</value>
+    <value>446, 3</value>
   </data>
   <data name="labelX33.Size" type="System.Drawing.Size, System.Drawing">
     <value>79, 15</value>
@@ -4320,7 +4340,7 @@
     <value>Top, Right</value>
   </data>
   <data name="txt_subTOt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>329, 19</value>
+    <value>447, 23</value>
   </data>
   <data name="txt_subTOt.Size" type="System.Drawing.Size, System.Drawing">
     <value>79, 20</value>
@@ -4344,7 +4364,7 @@
     <value>Top, Right</value>
   </data>
   <data name="labelX16.Location" type="System.Drawing.Point, System.Drawing">
-    <value>148, 3</value>
+    <value>265, 3</value>
   </data>
   <data name="labelX16.Size" type="System.Drawing.Size, System.Drawing">
     <value>47, 15</value>
@@ -4371,7 +4391,7 @@
     <value>Top, Right</value>
   </data>
   <data name="VatRate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>152, 19</value>
+    <value>269, 23</value>
   </data>
   <data name="VatRate.Size" type="System.Drawing.Size, System.Drawing">
     <value>42, 20</value>
@@ -4395,7 +4415,7 @@
     <value>Top, Right</value>
   </data>
   <data name="labelX17.Location" type="System.Drawing.Point, System.Drawing">
-    <value>700, 3</value>
+    <value>817, 3</value>
   </data>
   <data name="labelX17.Size" type="System.Drawing.Size, System.Drawing">
     <value>197, 15</value>
@@ -4422,7 +4442,7 @@
     <value>Top, Right</value>
   </data>
   <data name="txtNote.Location" type="System.Drawing.Point, System.Drawing">
-    <value>700, 19</value>
+    <value>817, 23</value>
   </data>
   <data name="txtNote.Size" type="System.Drawing.Size, System.Drawing">
     <value>197, 20</value>
@@ -4446,7 +4466,7 @@
     <value>Top, Right</value>
   </data>
   <data name="labelX19.Location" type="System.Drawing.Point, System.Drawing">
-    <value>93, 3</value>
+    <value>210, 3</value>
   </data>
   <data name="labelX19.Size" type="System.Drawing.Size, System.Drawing">
     <value>58, 15</value>
@@ -4473,7 +4493,7 @@
     <value>Top, Right</value>
   </data>
   <data name="labelX18.Location" type="System.Drawing.Point, System.Drawing">
-    <value>273, 3</value>
+    <value>390, 3</value>
   </data>
   <data name="labelX18.Size" type="System.Drawing.Size, System.Drawing">
     <value>57, 15</value>
@@ -4500,7 +4520,7 @@
     <value>Top, Right</value>
   </data>
   <data name="VatValue.Location" type="System.Drawing.Point, System.Drawing">
-    <value>93, 19</value>
+    <value>211, 23</value>
   </data>
   <data name="VatValue.Size" type="System.Drawing.Size, System.Drawing">
     <value>58, 20</value>
@@ -4524,7 +4544,7 @@
     <value>Top, Right</value>
   </data>
   <data name="labelX27.Location" type="System.Drawing.Point, System.Drawing">
-    <value>193, 3</value>
+    <value>310, 3</value>
   </data>
   <data name="labelX27.Size" type="System.Drawing.Size, System.Drawing">
     <value>79, 15</value>
@@ -4551,7 +4571,7 @@
     <value>Top, Right</value>
   </data>
   <data name="labelX28.Location" type="System.Drawing.Point, System.Drawing">
-    <value>463, 3</value>
+    <value>580, 3</value>
   </data>
   <data name="labelX28.Size" type="System.Drawing.Size, System.Drawing">
     <value>65, 15</value>
@@ -4578,7 +4598,7 @@
     <value>Top, Right</value>
   </data>
   <data name="Txtvalue.Location" type="System.Drawing.Point, System.Drawing">
-    <value>193, 19</value>
+    <value>311, 23</value>
   </data>
   <data name="Txtvalue.Size" type="System.Drawing.Size, System.Drawing">
     <value>79, 20</value>
@@ -4602,7 +4622,7 @@
     <value>Top, Right</value>
   </data>
   <data name="labelX29.Location" type="System.Drawing.Point, System.Drawing">
-    <value>528, 3</value>
+    <value>645, 3</value>
   </data>
   <data name="labelX29.Size" type="System.Drawing.Size, System.Drawing">
     <value>63, 15</value>
@@ -4629,7 +4649,7 @@
     <value>Top, Right</value>
   </data>
   <data name="labelX30.Location" type="System.Drawing.Point, System.Drawing">
-    <value>897, 3</value>
+    <value>1014, 3</value>
   </data>
   <data name="labelX30.Size" type="System.Drawing.Size, System.Drawing">
     <value>263, 15</value>
@@ -4656,7 +4676,7 @@
     <value>Top, Right</value>
   </data>
   <data name="labelX31.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1160, 3</value>
+    <value>1277, 3</value>
   </data>
   <data name="labelX31.Size" type="System.Drawing.Size, System.Drawing">
     <value>61, 15</value>
@@ -4683,7 +4703,7 @@
     <value>Top, Right</value>
   </data>
   <data name="TxtDesc.Location" type="System.Drawing.Point, System.Drawing">
-    <value>897, 19</value>
+    <value>1014, 23</value>
   </data>
   <data name="TxtDesc.Size" type="System.Drawing.Size, System.Drawing">
     <value>263, 20</value>
@@ -4983,7 +5003,7 @@
     <value>NoControl</value>
   </data>
   <data name="btn_braws.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1221, 3</value>
+    <value>1338, 3</value>
   </data>
   <data name="btn_braws.Size" type="System.Drawing.Size, System.Drawing">
     <value>39, 36</value>
@@ -5007,7 +5027,7 @@
     <value>Top, Right</value>
   </data>
   <data name="TxtId.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1160, 19</value>
+    <value>1277, 23</value>
   </data>
   <data name="TxtId.Size" type="System.Drawing.Size, System.Drawing">
     <value>61, 20</value>
@@ -5031,10 +5051,10 @@
     <value>Bottom</value>
   </data>
   <data name="groupPanel7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 205</value>
+    <value>0, 211</value>
   </data>
   <data name="groupPanel7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1277, 46</value>
+    <value>1394, 52</value>
   </data>
   <data name="groupPanel7.TabIndex" type="System.Int32, mscorlib">
     <value>109</value>
@@ -5049,13 +5069,13 @@
     <value>groupPanel6</value>
   </data>
   <data name="&gt;&gt;groupPanel7.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>10</value>
   </data>
   <data name="KM_TYPE_ITEMS.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
   <data name="KM_TYPE_ITEMS.Location" type="System.Drawing.Point, System.Drawing">
-    <value>202, 185</value>
+    <value>210, 185</value>
   </data>
   <data name="KM_TYPE_ITEMS.Size" type="System.Drawing.Size, System.Drawing">
     <value>56, 20</value>
@@ -5073,13 +5093,13 @@
     <value>groupPanel6</value>
   </data>
   <data name="&gt;&gt;KM_TYPE_ITEMS.ZOrder" xml:space="preserve">
-    <value>27</value>
+    <value>28</value>
   </data>
   <data name="txtSer_code.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
   <data name="txtSer_code.Location" type="System.Drawing.Point, System.Drawing">
-    <value>211, -2</value>
+    <value>227, 2</value>
   </data>
   <data name="txtSer_code.Size" type="System.Drawing.Size, System.Drawing">
     <value>23, 16</value>
@@ -5100,13 +5120,13 @@
     <value>groupPanel6</value>
   </data>
   <data name="&gt;&gt;txtSer_code.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
   </data>
   <data name="userID.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
   <data name="userID.Location" type="System.Drawing.Point, System.Drawing">
-    <value>155, 146</value>
+    <value>163, 146</value>
   </data>
   <data name="userID.Size" type="System.Drawing.Size, System.Drawing">
     <value>30, 16</value>
@@ -5124,13 +5144,13 @@
     <value>groupPanel6</value>
   </data>
   <data name="&gt;&gt;userID.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="txtMainSer.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
   <data name="txtMainSer.Location" type="System.Drawing.Point, System.Drawing">
-    <value>51, 70</value>
+    <value>59, 70</value>
   </data>
   <data name="txtMainSer.Size" type="System.Drawing.Size, System.Drawing">
     <value>52, 20</value>
@@ -5148,7 +5168,7 @@
     <value>groupPanel6</value>
   </data>
   <data name="&gt;&gt;txtMainSer.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="chVAT.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -5160,7 +5180,7 @@
     <value>NoControl</value>
   </data>
   <data name="chVAT.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 184</value>
+    <value>25, 184</value>
   </data>
   <data name="chVAT.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -5184,7 +5204,7 @@
     <value>groupPanel6</value>
   </data>
   <data name="&gt;&gt;chVAT.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="chStop.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -5196,7 +5216,7 @@
     <value>NoControl</value>
   </data>
   <data name="chStop.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 164</value>
+    <value>25, 164</value>
   </data>
   <data name="chStop.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -5220,13 +5240,37 @@
     <value>groupPanel6</value>
   </data>
   <data name="&gt;&gt;chStop.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
+  </data>
+  <data name="txt_Cyear.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="txt_Cyear.Location" type="System.Drawing.Point, System.Drawing">
+    <value>177, 2</value>
+  </data>
+  <data name="txt_Cyear.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 16</value>
+  </data>
+  <data name="txt_Cyear.TabIndex" type="System.Int32, mscorlib">
+    <value>323</value>
+  </data>
+  <data name="&gt;&gt;txt_Cyear.Name" xml:space="preserve">
+    <value>txt_Cyear</value>
+  </data>
+  <data name="&gt;&gt;txt_Cyear.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.LabelX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;txt_Cyear.Parent" xml:space="preserve">
+    <value>groupPanel6</value>
+  </data>
+  <data name="&gt;&gt;txt_Cyear.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="txt_transaction_code.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
   <data name="txt_transaction_code.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 120</value>
+    <value>25, 120</value>
   </data>
   <data name="txt_transaction_code.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 3, 2, 3</value>
@@ -5250,7 +5294,7 @@
     <value>groupPanel6</value>
   </data>
   <data name="&gt;&gt;txt_transaction_code.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="labelX61.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -5259,7 +5303,7 @@
     <value>True</value>
   </data>
   <data name="labelX61.Location" type="System.Drawing.Point, System.Drawing">
-    <value>107, 120</value>
+    <value>115, 120</value>
   </data>
   <data name="labelX61.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 3, 2, 3</value>
@@ -5283,7 +5327,7 @@
     <value>groupPanel6</value>
   </data>
   <data name="&gt;&gt;labelX61.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="groupBox1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -5448,7 +5492,7 @@
     <value>4</value>
   </data>
   <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>773, 2</value>
+    <value>890, 2</value>
   </data>
   <data name="groupBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -5475,7 +5519,7 @@
     <value>groupPanel6</value>
   </data>
   <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="labelX46.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -5484,7 +5528,7 @@
     <value>True</value>
   </data>
   <data name="labelX46.Location" type="System.Drawing.Point, System.Drawing">
-    <value>107, 74</value>
+    <value>115, 74</value>
   </data>
   <data name="labelX46.Size" type="System.Drawing.Size, System.Drawing">
     <value>48, 15</value>
@@ -5505,16 +5549,16 @@
     <value>groupPanel6</value>
   </data>
   <data name="&gt;&gt;labelX46.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="groupPanel6.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
   </data>
   <data name="groupPanel6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 29</value>
+    <value>0, 53</value>
   </data>
   <data name="groupPanel6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1283, 257</value>
+    <value>1400, 269</value>
   </data>
   <data name="groupPanel6.TabIndex" type="System.Int32, mscorlib">
     <value>106</value>
@@ -5529,7 +5573,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;groupPanel6.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>1</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -5541,7 +5585,7 @@
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1283, 512</value>
+    <value>1400, 689</value>
   </data>
   <data name="$this.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
     <value>Yes</value>
@@ -5679,6 +5723,6 @@
     <value>frm_PurchaseOrder</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>Report_Pro.frm_Master, Report_Pro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
 </root>

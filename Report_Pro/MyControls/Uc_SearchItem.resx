@@ -144,33 +144,6 @@
   <data name="&gt;&gt;dGV_pro_list.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="buttonX1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="buttonX1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>964, 1</value>
-  </data>
-  <data name="buttonX1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>77, 30</value>
-  </data>
-  <data name="buttonX1.TabIndex" type="System.Int32, mscorlib">
-    <value>31</value>
-  </data>
-  <data name="buttonX1.Text" xml:space="preserve">
-    <value>Close</value>
-  </data>
-  <data name="&gt;&gt;buttonX1.Name" xml:space="preserve">
-    <value>buttonX1</value>
-  </data>
-  <data name="&gt;&gt;buttonX1.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="&gt;&gt;buttonX1.Parent" xml:space="preserve">
-    <value>groupPanel1</value>
-  </data>
-  <data name="&gt;&gt;buttonX1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <data name="ch_SaveSearch.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -196,13 +169,13 @@
     <value>groupPanel1</value>
   </data>
   <data name="&gt;&gt;ch_SaveSearch.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>0</value>
   </data>
   <data name="btnSrch.Location" type="System.Drawing.Point, System.Drawing">
-    <value>822, 18</value>
+    <value>809, 29</value>
   </data>
   <data name="btnSrch.Size" type="System.Drawing.Size, System.Drawing">
-    <value>93, 37</value>
+    <value>94, 29</value>
   </data>
   <data name="btnSrch.TabIndex" type="System.Int32, mscorlib">
     <value>29</value>
@@ -220,13 +193,13 @@
     <value>groupPanel1</value>
   </data>
   <data name="&gt;&gt;btnSrch.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>1</value>
   </data>
   <data name="txtserch_4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>653, 35</value>
+    <value>631, 35</value>
   </data>
   <data name="txtserch_4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>163, 20</value>
+    <value>161, 20</value>
   </data>
   <data name="txtserch_4.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -241,7 +214,7 @@
     <value>groupPanel1</value>
   </data>
   <data name="&gt;&gt;txtserch_4.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>2</value>
   </data>
   <data name="radioAll.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -304,7 +277,7 @@
     <value>1</value>
   </data>
   <data name="panel3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>131, 62</value>
+    <value>133, 62</value>
   </data>
   <data name="panel3.Size" type="System.Drawing.Size, System.Drawing">
     <value>250, 33</value>
@@ -322,7 +295,7 @@
     <value>groupPanel1</value>
   </data>
   <data name="&gt;&gt;panel3.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>3</value>
   </data>
   <data name="label4.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -352,7 +325,7 @@
     <value>groupPanel1</value>
   </data>
   <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>4</value>
   </data>
   <data name="txtSrch.Location" type="System.Drawing.Point, System.Drawing">
     <value>136, 8</value>
@@ -373,7 +346,7 @@
     <value>groupPanel1</value>
   </data>
   <data name="&gt;&gt;txtSrch.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>5</value>
   </data>
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -403,13 +376,13 @@
     <value>groupPanel1</value>
   </data>
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>6</value>
   </data>
   <data name="txtsrch_1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>136, 35</value>
+    <value>134, 35</value>
   </data>
   <data name="txtsrch_1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>163, 20</value>
+    <value>161, 20</value>
   </data>
   <data name="txtsrch_1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -424,13 +397,13 @@
     <value>groupPanel1</value>
   </data>
   <data name="&gt;&gt;txtsrch_1.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>7</value>
   </data>
   <data name="txtSrch_3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>482, 35</value>
+    <value>466, 35</value>
   </data>
   <data name="txtSrch_3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>163, 20</value>
+    <value>161, 20</value>
   </data>
   <data name="txtSrch_3.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -445,10 +418,10 @@
     <value>groupPanel1</value>
   </data>
   <data name="&gt;&gt;txtSrch_3.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>8</value>
   </data>
   <data name="txtserch_2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>311, 35</value>
+    <value>299, 35</value>
   </data>
   <data name="txtserch_2.Size" type="System.Drawing.Size, System.Drawing">
     <value>163, 20</value>
@@ -466,7 +439,7 @@
     <value>groupPanel1</value>
   </data>
   <data name="&gt;&gt;txtserch_2.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>9</value>
   </data>
   <data name="groupPanel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>

@@ -41,7 +41,7 @@
             this.labelX2 = new DevComponents.DotNetBar.LabelX();
             this.cashCustomer1 = new Report_Pro.MyControls.CashCustomer();
             this.UC_PayType = new Report_Pro.MyControls.UC_PayType();
-            this.UC_Branch = new Report_Pro.MyControls.UC_Branch();
+            this.UC_Branch = new Report_Pro.MyControls.ذ();
             this.labelX1 = new DevComponents.DotNetBar.LabelX();
             this.labelX4 = new DevComponents.DotNetBar.LabelX();
             this.UC_Acc = new Report_Pro.MyControls.UC_Acc();
@@ -314,7 +314,7 @@
         private DevComponents.DotNetBar.Controls.GroupPanel groupPanel1;
         private MyControls.UC_Acc UC_Acc;
         private MyControls.UC_PayType UC_PayType;
-        private MyControls.UC_Branch UC_Branch;
+        private MyControls.ذ UC_Branch;
         private DevComponents.DotNetBar.LabelX labelX1;
         private DevComponents.DotNetBar.LabelX labelX4;
         private System.Windows.Forms.Button button4;

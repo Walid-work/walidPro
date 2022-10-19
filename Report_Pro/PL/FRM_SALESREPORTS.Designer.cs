@@ -42,7 +42,7 @@
             this.PN_SALESREPORTS.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PN_SALESREPORTS.Location = new System.Drawing.Point(0, 0);
             this.PN_SALESREPORTS.Name = "PN_SALESREPORTS";
-            this.PN_SALESREPORTS.Size = new System.Drawing.Size(1682, 1160);
+            this.PN_SALESREPORTS.Size = new System.Drawing.Size(1386, 788);
             this.PN_SALESREPORTS.TabIndex = 0;
             // 
             // flowLayoutPanel1
@@ -53,7 +53,7 @@
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Padding = new System.Windows.Forms.Padding(10);
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1682, 1160);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1386, 788);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
             // Btn_SalesReports
@@ -87,7 +87,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
-            this.ClientSize = new System.Drawing.Size(1682, 1160);
+            this.ClientSize = new System.Drawing.Size(1386, 788);
             this.Controls.Add(this.PN_SALESREPORTS);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FRM_SALESREPORTS";

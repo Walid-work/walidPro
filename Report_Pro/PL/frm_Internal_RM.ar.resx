@@ -309,15 +309,6 @@
   <data name="tabControl1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
-  <data name="labelX4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>440, 69</value>
-  </data>
-  <data name="labelX4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>83, 15</value>
-  </data>
-  <data name="labelX4.Text" xml:space="preserve">
-    <value>الفرع المطلوب منه</value>
-  </data>
   <data name="labelX13.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
@@ -360,20 +351,11 @@
   <data name="labelX11.Text" xml:space="preserve">
     <value>مركز التكلفة</value>
   </data>
-  <data name="labelX3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="labelX3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>440, 12</value>
-  </data>
-  <data name="labelX3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>57, 15</value>
-  </data>
-  <data name="labelX3.Text" xml:space="preserve">
-    <value>الفرع الطالب</value>
-  </data>
   <data name="Supply_Branch.Location" type="System.Drawing.Point, System.Drawing">
-    <value>109, 65</value>
+    <value>29, 65</value>
+  </data>
+  <data name="Supply_Branch.Size" type="System.Drawing.Size, System.Drawing">
+    <value>500, 22</value>
   </data>
   <data name="txtRequst_p.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -391,7 +373,10 @@
     <value>Top, Right</value>
   </data>
   <data name="Uc_Branch.Location" type="System.Drawing.Point, System.Drawing">
-    <value>109, 7</value>
+    <value>29, 7</value>
+  </data>
+  <data name="Uc_Branch.Size" type="System.Drawing.Size, System.Drawing">
+    <value>500, 22</value>
   </data>
   <data name="tabControlPanel2.Size" type="System.Drawing.Size, System.Drawing">
     <value>554, 197</value>
@@ -565,9 +550,6 @@
   </data>
   <data name="delivry_Grid1.Size" type="System.Drawing.Size, System.Drawing">
     <value>1314, 401</value>
-  </data>
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
   <data name="$this.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
     <value>Yes</value>

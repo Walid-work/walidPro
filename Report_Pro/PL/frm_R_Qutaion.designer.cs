@@ -90,7 +90,7 @@
             this.labelX25 = new DevComponents.DotNetBar.LabelX();
             this.labelX47 = new DevComponents.DotNetBar.LabelX();
             this.txt_Fax = new System.Windows.Forms.TextBox();
-            this.Uc_Branch = new Report_Pro.MyControls.UC_Branch();
+            this.Uc_Branch = new Report_Pro.MyControls.ذ();
             this.tabItem6 = new DevComponents.DotNetBar.TabItem(this.components);
             this.labelX51 = new DevComponents.DotNetBar.LabelX();
             this.Doc_Name = new System.Windows.Forms.Label();
@@ -422,6 +422,7 @@
             // 
             resources.ApplyResources(this.txt_TotWeight, "txt_TotWeight");
             this.txt_TotWeight.BackColor = System.Drawing.SystemColors.Info;
+            this.txt_TotWeight.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_TotWeight.Name = "txt_TotWeight";
             this.txt_TotWeight.ReadOnly = true;
             this.txt_TotWeight.TabStop = false;
@@ -438,6 +439,7 @@
             // 
             resources.ApplyResources(this.txtUnitWeight, "txtUnitWeight");
             this.txtUnitWeight.BackColor = System.Drawing.SystemColors.Info;
+            this.txtUnitWeight.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtUnitWeight.Name = "txtUnitWeight";
             this.txtUnitWeight.ReadOnly = true;
             this.txtUnitWeight.TabStop = false;
@@ -498,6 +500,7 @@
             // 
             resources.ApplyResources(this.txtBalance, "txtBalance");
             this.txtBalance.BackColor = System.Drawing.SystemColors.Info;
+            this.txtBalance.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtBalance.Name = "txtBalance";
             this.txtBalance.ReadOnly = true;
             this.txtBalance.TabStop = false;
@@ -515,6 +518,7 @@
             // 
             resources.ApplyResources(this.txtNote, "txtNote");
             this.txtNote.BackColor = System.Drawing.SystemColors.Info;
+            this.txtNote.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtNote.Name = "txtNote";
             this.txtNote.TextChanged += new System.EventHandler(this.txtNote_TextChanged);
             this.txtNote.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtNote_KeyDown);
@@ -545,6 +549,7 @@
             // 
             resources.ApplyResources(this.TxtDesc, "TxtDesc");
             this.TxtDesc.BackColor = System.Drawing.SystemColors.Info;
+            this.TxtDesc.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TxtDesc.Name = "TxtDesc";
             this.TxtDesc.ReadOnly = true;
             this.TxtDesc.TabStop = false;
@@ -562,6 +567,7 @@
             // 
             resources.ApplyResources(this.TxtId, "TxtId");
             this.TxtId.BackColor = System.Drawing.SystemColors.Info;
+            this.TxtId.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TxtId.Name = "TxtId";
             this.TxtId.TextChanged += new System.EventHandler(this.TxtId_TextChanged);
             this.TxtId.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TxtId_KeyDown);
@@ -745,7 +751,6 @@
             // 
             resources.ApplyResources(this.Uc_Branch, "Uc_Branch");
             this.Uc_Branch.BackColor = System.Drawing.Color.Transparent;
-            this.Uc_Branch.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.Uc_Branch.Cursor = System.Windows.Forms.Cursors.Default;
             this.Uc_Branch.Name = "Uc_Branch";
             this.Uc_Branch.Load += new System.EventHandler(this.Uc_Branch_Load);
@@ -1050,7 +1055,7 @@
         private DevComponents.DotNetBar.LabelX txt_transaction_code;
         private DevComponents.DotNetBar.LabelX labelX20;
         private System.Windows.Forms.TextBox txt_MainNote;
-        private MyControls.UC_Branch Uc_Branch;
+        private MyControls.ذ Uc_Branch;
         private DevComponents.DotNetBar.LabelX labelX53;
         private System.Windows.Forms.TextBox txt_TotWeight;
         private DevComponents.DotNetBar.LabelX labelX5;

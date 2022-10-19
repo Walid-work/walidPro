@@ -49,7 +49,24 @@ namespace Report_Pro.RPT
 
 
             RPT.AgeReport rpt = new RPT.AgeReport();
-            rpt.SetDataSource(dal.getDataTabl("AgeReport_",FromDate.Value.Date,ToDate.Value.Date,Uc_Acc.ID.Text,Uc_Cost.ID.Text,Uc_Catogry.ID.Text,Uc_Branch.ID.Text,dal.db1));
+
+            DataTable dt_age = dal.getDataTabl_1(@"use main_acc_wh select a.acc_no,b.PAYER_NAME,a.BRANCH_code,c.BRANCH_name
+		,SUM(CASE WHEN cast(A.g_date as date) <= '" + ToDate.Value.ToString("yyyy-MM-dd") + "' THEN meno - loh ELSE 0 END) AS Ending_balance " +
+        ", SUM(CASE WHEN  DATEDIFF(Day,CAST(g_date as date ),'" + ToDate.Value.ToString("yyyy-MM-dd")+"')>=0 and DATEDIFF(Day,CAST(g_date as date ),'"+ ToDate.Value.ToString("yyyy-MM-dd")+"')<=30  THEN meno    ELSE 0 END) AS '1-30' "+
+		",SUM(CASE WHEN  DATEDIFF(Day,CAST(g_date as date ),'"+ ToDate.Value.ToString("yyyy-MM-dd")+"')>=31 and DATEDIFF(Day,CAST(g_date as date ),'"+ ToDate.Value.ToString("yyyy-MM-dd")+ "')<=60  THEN meno    ELSE 0 END) AS '31-60' " +
+        ",SUM(CASE WHEN  DATEDIFF(Day,CAST(g_date as date ),'" + ToDate.Value.ToString("yyyy-MM-dd")+"')>=61 and DATEDIFF(Day,CAST(g_date as date ),'"+ ToDate.Value.ToString("yyyy-MM-dd")+ "')<=90  THEN meno    ELSE 0 END) AS '61-90' " +
+        ",SUM(CASE WHEN  DATEDIFF(Day,CAST(g_date as date ),'" + ToDate.Value.ToString("yyyy-MM-dd")+"')>=91 and DATEDIFF(Day,CAST(g_date as date ),'"+ ToDate.Value.ToString("yyyy-MM-dd")+ "')<=120  THEN meno    ELSE 0 END) AS '91-120' " +
+        ",SUM(CASE WHEN  DATEDIFF(Day,CAST(g_date as date ),'" + ToDate.Value.ToString("yyyy-MM-dd")+"')>=121 and DATEDIFF(Day,CAST(g_date as date ),'"+ ToDate.Value.ToString("yyyy-MM-dd")+ "')<=150  THEN meno    ELSE 0 END) AS '121-250' " +
+        ",SUM(CASE WHEN  DATEDIFF(Day,CAST(g_date as date ),'" + ToDate.Value.ToString("yyyy-MM-dd")+"')>=151 and DATEDIFF(Day,CAST(g_date as date ),'"+ ToDate.Value.ToString("yyyy-MM-dd")+ "')<=180  THEN meno    ELSE 0 END) AS '151-180' " +
+        ",SUM(CASE WHEN  DATEDIFF(Day,CAST(g_date as date ),'" + ToDate.Value.ToString("yyyy-MM-dd")+"')>=181  THEN meno    ELSE 0 END) AS more180    " +
+  "from daily_transaction as A  " +
+      "inner join payer2 as B on A.ACC_NO=b.ACC_NO and a.BRANCH_code=b.BRANCH_code " +
+      "inner join BRANCHS as C on A.BRANCH_code=c.BRANCH_code " +
+      "where A.ACC_NO like '123%' and ISNULL(A.COST_CENTER,'') like '%'  and a.BRANCH_code like '%' " +
+      "group by a.ACC_NO,b.PAYER_NAME,a.BRANCH_code,c.BRANCH_name");
+
+            rpt.SetDataSource (dt_age);
+           // rpt.SetDataSource(dal.getDataTabl("AgeReport_",FromDate.Value.Date,ToDate.Value.Date,Uc_Acc.ID.Text,Uc_Cost.ID.Text,Uc_Catogry.ID.Text,Uc_Branch.ID.Text,dal.db1));
             crystalReportViewer1.ReportSource = rpt;
             rpt.DataDefinition.FormulaFields["M_"].Text = "'"+M_than+"'";
             rpt.DataDefinition.FormulaFields["company_name"].Text = "'" + Properties.Settings.Default.head_txt + "'";

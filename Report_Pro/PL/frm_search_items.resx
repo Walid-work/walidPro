@@ -117,31 +117,92 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="checkBoxX1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>78, 16</value>
-  </data>
-  <data name="checkBoxX1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>123, 23</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="ts1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="checkBoxX1.TabIndex" type="System.Int32, mscorlib">
-    <value>30</value>
+  <data name="ts1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="checkBoxX1.Text" xml:space="preserve">
-    <value>عدم مسح بيانات البحث</value>
+  <data name="ts1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="&gt;&gt;checkBoxX1.Name" xml:space="preserve">
-    <value>checkBoxX1</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="ts1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>442, 70</value>
   </data>
-  <data name="&gt;&gt;checkBoxX1.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.Controls.CheckBoxX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  <data name="ts1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 13</value>
   </data>
-  <data name="&gt;&gt;checkBoxX1.Parent" xml:space="preserve">
+  <data name="ts1.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="&gt;&gt;ts1.Name" xml:space="preserve">
+    <value>ts1</value>
+  </data>
+  <data name="&gt;&gt;ts1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ts1.Parent" xml:space="preserve">
     <value>groupPanel1</value>
   </data>
-  <data name="&gt;&gt;checkBoxX1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;ts1.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="ts2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="ts2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ts2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="ts2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>498, 98</value>
+  </data>
+  <data name="ts2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 13</value>
+  </data>
+  <data name="ts2.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="&gt;&gt;ts2.Name" xml:space="preserve">
+    <value>ts2</value>
+  </data>
+  <data name="&gt;&gt;ts2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ts2.Parent" xml:space="preserve">
+    <value>groupPanel1</value>
+  </data>
+  <data name="&gt;&gt;ts2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="chSaveSearchData.Location" type="System.Drawing.Point, System.Drawing">
+    <value>78, 16</value>
+  </data>
+  <data name="chSaveSearchData.Size" type="System.Drawing.Size, System.Drawing">
+    <value>123, 23</value>
+  </data>
+  <data name="chSaveSearchData.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="chSaveSearchData.Text" xml:space="preserve">
+    <value>عدم مسح بيانات البحث</value>
+  </data>
+  <data name="&gt;&gt;chSaveSearchData.Name" xml:space="preserve">
+    <value>chSaveSearchData</value>
+  </data>
+  <data name="&gt;&gt;chSaveSearchData.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.Controls.CheckBoxX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;chSaveSearchData.Parent" xml:space="preserve">
+    <value>groupPanel1</value>
+  </data>
+  <data name="&gt;&gt;chSaveSearchData.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="btnSrch.Location" type="System.Drawing.Point, System.Drawing">
     <value>442, 16</value>
@@ -165,9 +226,8 @@
     <value>groupPanel1</value>
   </data>
   <data name="&gt;&gt;btnSrch.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>3</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="txtserch_4.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
@@ -190,7 +250,7 @@
     <value>groupPanel1</value>
   </data>
   <data name="&gt;&gt;txtserch_4.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>4</value>
   </data>
   <data name="panel3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -205,7 +265,7 @@
     <value>51, 4</value>
   </data>
   <data name="radioAll.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 17</value>
+    <value>55, 17</value>
   </data>
   <data name="radioAll.TabIndex" type="System.Int32, mscorlib">
     <value>24</value>
@@ -235,7 +295,7 @@
     <value>12, 29</value>
   </data>
   <data name="radiobalance.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 17</value>
+    <value>95, 17</value>
   </data>
   <data name="radiobalance.TabIndex" type="System.Int32, mscorlib">
     <value>23</value>
@@ -274,7 +334,7 @@
     <value>groupPanel1</value>
   </data>
   <data name="&gt;&gt;panel3.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>5</value>
   </data>
   <data name="label4.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -289,7 +349,7 @@
     <value>859, 13</value>
   </data>
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>105, 13</value>
+    <value>107, 13</value>
   </data>
   <data name="label4.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
@@ -307,7 +367,7 @@
     <value>groupPanel1</value>
   </data>
   <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>6</value>
   </data>
   <data name="txtSrch.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -331,7 +391,7 @@
     <value>groupPanel1</value>
   </data>
   <data name="&gt;&gt;txtSrch.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>7</value>
   </data>
   <data name="label2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -364,7 +424,7 @@
     <value>groupPanel1</value>
   </data>
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>8</value>
   </data>
   <data name="txtsrch_1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -388,7 +448,7 @@
     <value>groupPanel1</value>
   </data>
   <data name="&gt;&gt;txtsrch_1.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>9</value>
   </data>
   <data name="txtSrch_3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -412,7 +472,7 @@
     <value>groupPanel1</value>
   </data>
   <data name="&gt;&gt;txtSrch_3.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>10</value>
   </data>
   <data name="txtserch_2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -436,7 +496,7 @@
     <value>groupPanel1</value>
   </data>
   <data name="&gt;&gt;txtserch_2.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>11</value>
   </data>
   <data name="groupPanel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -445,7 +505,7 @@
     <value>0, 0</value>
   </data>
   <data name="groupPanel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1008, 80</value>
+    <value>1008, 125</value>
   </data>
   <data name="groupPanel1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -502,7 +562,7 @@
     <value>0, 0</value>
   </data>
   <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1008, 80</value>
+    <value>1008, 125</value>
   </data>
   <data name="panel1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -523,10 +583,10 @@
     <value>Fill</value>
   </data>
   <data name="dGV_pro_list.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 80</value>
+    <value>0, 125</value>
   </data>
   <data name="dGV_pro_list.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1008, 370</value>
+    <value>1008, 325</value>
   </data>
   <data name="dGV_pro_list.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>

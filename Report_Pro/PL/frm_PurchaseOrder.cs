@@ -50,25 +50,6 @@ namespace Report_Pro.PL
             resizeDG();
 
 
-
-            txt_InvSM.Text = Program.salesman;
-            txtStore_ID.Text = Properties.Settings.Default.BranchId;
-            txtBranch_Id.Text = Properties.Settings.Default.BranchAccID;
-            userID.Text = Program.userID;
-          
-            Payment_Type.DataSource = dal.getDataTabl_1("SELECT * FROM wh_Payment_type");
-
-            if (Properties.Settings.Default.lungh == "0")
-            {
-                Payment_Type.DisplayMember = "Payment_name";
-            }
-            else
-            {
-                Payment_Type.DisplayMember = "Payment_name";
-            }
-            Payment_Type.ValueMember = "Payment_type";
-            Payment_Type.SelectedIndex = -1;
-
             
 
           
@@ -141,8 +122,8 @@ namespace Report_Pro.PL
         {
             //try
             //{
-                txtMainSer.Text = dal.getDataTabl_1(@"select isnull(PS+1,1) from wh_Serial_MAIN where  Cyear='" + txt_InvDate.Value.Date.ToString("yy") + "'").Rows[0][0].ToString();
-               txt_InvNu.Text = dal.getDataTabl_1(@"select isnull(PS+1,1) from wh_Serial where Branch_code= '" + txtStore_ID.Text + "' and Cyear='" + txt_InvDate.Value.Date.ToString("yy") + "'").Rows[0][0].ToString();
+                txtMainSer.Text = dal.getDataTabl_1(@"select isnull(PS+1,1) from wh_Serial_MAIN where  Cyear=(select Cyear from Wh_Configration)").Rows[0][0].ToString();
+               txt_InvNu.Text = dal.getDataTabl_1(@"select isnull(PS+1,1) from wh_Serial where Branch_code= '" + txtStore_ID.Text + "' and Cyear=(select Cyear from Wh_Configration)").Rows[0][0].ToString();
                
             //}
             //catch { }
@@ -266,7 +247,7 @@ namespace Report_Pro.PL
             ,TermsOfPayment,Validity,DelevryE,requist_no,FORIN_TYPE
             ,PRINTING_SECURTY,TERMofCONDATION,PREPAREDby,RECEVEDby,TO_BRANCH
             ,CANCELED,aprovedBY,K_M_ACC_NO,K_M_Credit_TAX,K_M_Debit_TAX
-            ,COSTMER_K_M_NO,K_M_SER,KM_CODE_ACC,MAIN_KM_CODE,OPEN_VAT)
+            ,COSTMER_K_M_NO,K_M_SER,KM_CODE_ACC,MAIN_KM_CODE,OPEN_VAT,requstedBy)
 values
      ('" + txt_InvNu.Text +
      "', '" + txtStore_ID.Text +
@@ -291,17 +272,17 @@ values
     "','"+ Convert.ToString(DelevryTearms.SelectedValue)+
     "','0','"+Convert.ToString(txtcurrency.SelectedValue)+
     "','1','" + Convert.ToString(PaymentTearms.SelectedValue) +
-    "','" + Uc_Cost.ID.Text +
-    "','" + txtAauditBY.ID.Text +
+    "','" + userID.Text +
+    "','" + Confirm_Persson.ID.Text +
     "','" +txtBranch.ID.Text +
     "','" + (chStop.Checked ? "C" : "") +
-    "','"+ txtApproveBY.ID.Text +
+    "','"+ Authorized_Persson.ID.Text +
     "', '" + Vat_acc.Text + 
     "','0','" +Net_Vat.Text.ToDecimal() +
     "', '" + Cust_Vat_No.Text +
     "', '1','" + txtKmCode.Text +
     "','" + Vat_Class.Text +
-    "','" + (chVAT.Checked ? "1" : "0") + "')");
+    "','" + (chVAT.Checked ? "1" : "0") + "','"+Requst_Persson.ID.Text+"')");
 
                }
 
@@ -320,7 +301,7 @@ values
                     (SER_NO,Branch_code,TRANSACTION_CODE,Cyear,SANAD_NO
                     ,ITEM_NO,QTY_ADD,QTY_TAKE,COST_PRICE,total_disc
                     ,DISC_R,DISC_R2,DISC_R3,G_DATE,Unit,Local_Price,FORIN_TYPE
-                    ,USER_ID,main_counter,balance,K_M_TYPE_ITEMS,TAX_IN,TAX_OUT) 
+                    ,USER_ID,main_counter,balance,K_M_TYPE_ITEMS,TAX_IN,TAX_OUT,DETAILS) 
            values( '" + txt_InvNu.Text 
                     + "', '" + txtStore_ID.Text
                     + "', '" + txt_transaction_code.Text 
@@ -340,7 +321,8 @@ values
                     + "','" + dGV_Item.Rows[i].Index 
                     + "', '" + dGV_Item.Rows[i].Cells[4].Value.ToString().ToDecimal() 
                     + "','" + dGV_Item.Rows[i].Cells[16].Value.ToString() 
-                    + "' ,'0','" + dGV_Item.Rows[i].Cells[12].Value.ToString().ToDecimal() + "')");
+                    + "' ,'0','" + dGV_Item.Rows[i].Cells[12].Value.ToString().ToDecimal() 
+                    + "','" + dGV_Item.Rows[i].Cells[2].Value.ToString()+"')");
 
 
                 }
@@ -412,7 +394,7 @@ values
                 DataSet ds = new DataSet();
                 getQuotation(txt_InvNu.Text, txtStore_ID.Text, txt_transaction_code.Text, txt_InvDate.Value.ToString("yy"));
                 ds.Tables.Add(dt_Q);
-                //ds.WriteXmlSchema("schema_rpt.xml");
+                ds.WriteXmlSchema("schema_rpt.xml");
                 reportInv.SetDataSource(ds);
                 //reportInv.SetDataSource(dal.getDataTabl("get_invDetails", txt_InvNu.Text, txt_transaction_code.Text, txt_InvDate.Value.Year.ToString()));
                 frminv.crystalReportViewer1.ReportSource = reportInv;
@@ -987,6 +969,41 @@ values
 
         private void frm_PurchaseOrder_Load(object sender, EventArgs e)
         {
+            PaymentTearms.DataSource = dal.getDataTabl_1("select * from Sal_Pyment_type");
+            PaymentTearms.ValueMember = "Payment_type";
+            PaymentTearms.DisplayMember = "Payment_name";
+            PaymentTearms.SelectedIndex = -1;
+
+            DelevryTearms.DataSource = dal.getDataTabl_1("select * from sales_delevry");
+            DelevryTearms.ValueMember = "D_CODE";
+            DelevryTearms.DisplayMember = "D_Name";
+            DelevryTearms.SelectedIndex = -1;
+
+
+
+            txt_InvSM.Text = Program.salesman;
+            txtStore_ID.Text = Properties.Settings.Default.BranchId;
+            txtBranch_Id.Text = Properties.Settings.Default.BranchAccID;
+            userID.Text = Program.userID;
+            txt_Cyear.Text = Properties.Settings.Default.C_year;
+
+            Payment_Type.DataSource = dal.getDataTabl_1("SELECT * FROM wh_Payment_type");
+
+            if (Properties.Settings.Default.lungh == "0")
+            {
+                Payment_Type.DisplayMember = "Payment_name";
+            }
+            else
+            {
+                Payment_Type.DisplayMember = "Payment_name";
+            }
+            Payment_Type.ValueMember = "Payment_type";
+            Payment_Type.SelectedIndex = -1;
+
+            
+
+
+
             get_invSer();
             txtSupplier.txtMainAcc.Text = "234";
             txtSupplier.txtFinal.Text = "1";
@@ -995,21 +1012,21 @@ values
             DataTable Dt_1 = dal.getDataTabl_1(@"SELECT B.SALES_ACC_NO , PAYER_NAME FROM wh_BRANCHES AS B inner join payer2 AS P on B.SALES_ACC_NO=P.ACC_NO and B.ACC_BRANCH=P.BRANCH_code where B.BRANCH_code= '" + Properties.Settings.Default.BranchId + "'");
             if (Dt_1.Rows.Count > 0)
             {
-                txtAcc2_ID.Text = Dt_1.Rows[0][0].ToString();
-                txtAcc2_Desc.Text = Dt_1.Rows[0][1].ToString();
+                txtAcc2_ID.Text = Dt_1.Rows[0]["SALES_ACC_NO"].ToString();
+                txtAcc2_Desc.Text = Dt_1.Rows[0]["PAYER_NAME"].ToString();
             }
             DataTable Dt_2 = dal.getDataTabl_1(@"SELECT B.Cash_acc_no , PAYER_NAME FROM wh_BRANCHES AS B inner join payer2 AS P on B.Cash_acc_no=P.ACC_NO and B.ACC_BRANCH=P.BRANCH_code where B.BRANCH_code= '" + Properties.Settings.Default.BranchId + "'");
             if (Dt_2.Rows.Count > 0)
             {
-                txt_CashAcc_ID.Text = Dt_2.Rows[0][0].ToString();
-                txt_CashAcc_Desc.Text = Dt_2.Rows[0][1].ToString();
+                txt_CashAcc_ID.Text = Dt_2.Rows[0]["Cash_acc_no"].ToString();
+                txt_CashAcc_Desc.Text = Dt_2.Rows[0]["PAYER_NAME"].ToString();
             }
 
             DataTable Dt_3 = dal.getDataTabl_1(@"SELECT B.K_M_ACC_NO_SALES , PAYER_NAME FROM wh_BRANCHES AS B inner join payer2 AS P on B.K_M_ACC_NO_SALES=P.ACC_NO and B.ACC_BRANCH=P.BRANCH_code where B.BRANCH_code= '" + Properties.Settings.Default.BranchId + "'");
             if (Dt_3.Rows.Count > 0)
             {
-                Vat_acc.Text = Dt_3.Rows[0][0].ToString();
-                Vat_acc_Desc.Text = Dt_3.Rows[0][1].ToString();
+                Vat_acc.Text = Dt_3.Rows[0]["K_M_ACC_NO_SALES"].ToString();
+                Vat_acc_Desc.Text = Dt_3.Rows[0]["PAYER_NAME"].ToString();
             }
 
         }
@@ -1020,8 +1037,8 @@ values
             DataTable dt_M = dal.getDataTabl_1(@"select Costmers_acc_no,Suppliers_acc_no,Cash_acc_no FROM wh_BRANCHES where BRANCH_code like '" + Properties.Settings.Default.BranchId + "%'");
             if (dt_M.Rows.Count > 0)
             {
-                string Acc_main = dt_M.Rows[0][0].ToString();
-                string Acc_cash = dt_M.Rows[0][2].ToString();
+                string Acc_main = dt_M.Rows[0]["Suppliers_acc_no"].ToString();
+                string Acc_cash = dt_M.Rows[0]["Cash_acc_no"].ToString();
                 DataTable dt_cust = dal.getDataTabl_1(@"select P.*,A.MAIN_KM_CODE,a.MAIN_KM_DESC,b.KM_RATIO,b.KM_CODE FROM payer2 As P left join KM_MAIN_ACC_CODE as A on  ISNULL(NULLIF(P.KM_CODE_Sales, ''), 11) = A.MAIN_KM_CODE
                 left join  KM_ACC_CODE as b on b.KM_CODE = a.KM_CODE where P.BRANCH_code like '" + Properties.Settings.Default.BranchId + "%' and P.ACC_NO = '" + txtSupplier.ID.Text + "' and(P.ACC_NO like '" + Acc_main + "%' or P.ACC_NO like '" + Acc_cash + "%') and P.t_final ='1'");
                 txtBranch_Id.Text = Properties.Settings.Default.BranchId;
@@ -1032,38 +1049,39 @@ values
                        
                         Payment_Type.SelectedValue = "11";
                         Payment_Type.Enabled = false;
-                        Vat_Class.Text = dt_cust.Rows[0][68].ToString();
-                        Vat_Class_Desc.Text = dt_cust.Rows[0][69].ToString();
-                        if (dt_cust.Rows[0][70].ToString() == string.Empty)
-                        { Cust_Vat_Rate.Text = "0.05"; }
+                        Vat_Class.Text = dt_cust.Rows[0]["MAIN_KM_CODE"].ToString();
+                        Vat_Class_Desc.Text = dt_cust.Rows[0]["MAIN_KM_DESC"].ToString();
+                        if (dt_cust.Rows[0]["KM_RATIO"].ToString() == string.Empty)
+                        { Cust_Vat_Rate.Text = "0.15"; }
                         else
                         {
-                            Cust_Vat_Rate.Text = dt_cust.Rows[0][70].ToString().ToDecimal().ToString("N2");
+                            Cust_Vat_Rate.Text = dt_cust.Rows[0]["KM_RATIO"].ToString().ToDecimal().ToString("N2");
                         }
-                        txtKmCode.Text = dt_cust.Rows[0][71].ToString();
-                    }
+                        txtKmCode.Text = dt_cust.Rows[0]["KM_CODE"].ToString();
+                    
+                }
                     else
                     {
                         
                         Payment_Type.SelectedValue = "2";
                         Payment_Type.Enabled = true;
 
-                        txt_custTel.Text = dt_cust.Rows[0][14].ToString();
-                        txt_address.Text = dt_cust.Rows[0][11].ToString();
-                        txt_custFax.Text = dt_cust.Rows[0][16].ToString();
-                        txt_CustEmail.Text = dt_cust.Rows[0][15].ToString();
-                        txt_BoBox.Text = dt_cust.Rows[0][12].ToString();
-                        txt_area_code.Text = dt_cust.Rows[0][19].ToString();
-                        Cust_Vat_No.Text = dt_cust.Rows[0][60].ToString();
-                        Vat_Class.Text = dt_cust.Rows[0][68].ToString();
-                        Vat_Class_Desc.Text = dt_cust.Rows[0][69].ToString();
-                        if (dt_cust.Rows[0][70].ToString() == string.Empty)
-                        { Cust_Vat_Rate.Text = "0.05"; }
+                        txt_custTel.Text = dt_cust.Rows[0]["phone_no"].ToString();
+                        txt_address.Text = dt_cust.Rows[0]["adress"].ToString();
+                        txt_custFax.Text = dt_cust.Rows[0]["fax_no"].ToString();
+                        txt_CustEmail.Text = dt_cust.Rows[0]["E_MAIL"].ToString();
+                        txt_BoBox.Text = dt_cust.Rows[0]["b_o_box"].ToString();
+                        txt_area_code.Text = dt_cust.Rows[0]["area_code"].ToString();
+                        Cust_Vat_No.Text = dt_cust.Rows[0]["COSTMER_K_M_NO"].ToString();
+                        Vat_Class.Text = dt_cust.Rows[0]["MAIN_KM_CODE"].ToString();
+                        Vat_Class_Desc.Text = dt_cust.Rows[0]["MAIN_KM_DESC"].ToString();
+                        if (dt_cust.Rows[0]["KM_RATIO"].ToString() == string.Empty)
+                        { Cust_Vat_Rate.Text = "0.15"; }
                         else
                         {
-                            Cust_Vat_Rate.Text = dt_cust.Rows[0][70].ToString().ToDecimal().ToString("N2");
+                            Cust_Vat_Rate.Text = dt_cust.Rows[0]["KM_RATIO"].ToString().ToDecimal().ToString("N2");
                         }
-                        txtKmCode.Text = dt_cust.Rows[0][71].ToString();
+                        txtKmCode.Text = dt_cust.Rows[0]["KM_CODE"].ToString();
                     }
                 }
                 else
@@ -1134,6 +1152,136 @@ values
 
         }
 
+        private void BEdit_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+            if (txtSupplier.ID.Text == string.Empty)
+            {
+                MessageBox.Show("فضلا.. تاكد من اختيار العميل ", "تنبية !!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            if (dGV_Item.Rows.Count < 1)
+            {
+                MessageBox.Show("فضلا.. تاكد من اختيار الاصناف", "تنبية !!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+
+            if (Payment_Type.SelectedIndex < 0)
+            {
+                MessageBox.Show("فضلا.. تاكد من نوع الفاتورة", "تنبية !!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (txtNetTotal.Text.ToDecimal() <= 0)
+            {
+                MessageBox.Show("لايمكن حفظ فاتورة بقيمة اقل من او ياو", "خطأ !!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+
+
+
+
+
+                //           get_invSer();
+
+                dal.Execute_1(@"Delete from wh_Po_Cot_MATERIAL_TRANSACTION  where Ser_no ='"+ txt_InvNu.Text+ "' and Branch_code ='" + txtStore_ID.Text + "' and Cyear='"+txt_Cyear.Text+"' and Transaction_code ='PS'");
+                dal.Execute_1(@"Delete from wh_Po_Cot_inv_data where Ser_no ='" + txt_InvNu.Text + "' and Branch_code ='"+txtStore_ID.Text+ "' and Cyear='" + txt_Cyear.Text + "' and Transaction_code ='PS'");
+            AddInv();
+            AddInvDetails();
+
+    //        dal.Execute_1(@"UPDATE  wh_Serial SET " + txt_transaction_code.Text + " = '" + txt_InvNu.Text + "' WHERE Branch_code = '" + txtStore_ID.Text + "' and Cyear='" + txt_InvDate.Value.ToString("yy") + "' ");
+
+
+            MessageBox.Show("تم الحفظ بنجاح", "حفظ ", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            tabControlPanel1.Enabled = false;
+            tabControlPanel2.Enabled = false;
+            tabControlPanel3.Enabled = false;
+            groupPanel7.Enabled = false;
+
+            BSave.Enabled = false;
+        }
+
+
+
+            catch (System.Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                return;
+
+            }
+
+}
+
+        private void ribbonBar1_ItemClick(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_InvNot_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ValidtyDays_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAddDelevery_Click(object sender, EventArgs e)
+        {
+            PL.frmAddDelevryTearms frm = new PL.frmAddDelevryTearms();
+            frm.ShowDialog();
+        }
+
+        private void btnAddPayment_Click(object sender, EventArgs e)
+        {
+            PL.frmAddPaymentTearms frm = new PL.frmAddPaymentTearms();
+            frm.ShowDialog();
+        }
+
+        private void txtApproveBY_Load(object sender, EventArgs e)
+        {
+                    }
+
+        private void Requst_Persson_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Confirm_Persson_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Authorized_Persson_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Uc_Cost_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabControl1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtSer_code_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelX15_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void btn_Srearch_Click(object sender, EventArgs e)
         {
             //txt_InvNu.Text = txtsearch.Text;
@@ -1166,7 +1314,7 @@ values
             // DataTable dt_Q = dal.getDataTabl("Get_Po_Cot", txtSearch.Text, txtStore_ID.Text, Doc_Type.Text, txt_InvDate.Value.ToString("yy"),0,"");
             if (dt_Q.Rows.Count > 0)
                 {
-                   
+                    txt_Cyear.Text = dt_Q.Rows[0]["Cyear"].ToString();
                     txt_InvDate.Text = dt_Q.Rows[0]["G_date"].ToString();
                     txtSupplier.ID.Text = dt_Q.Rows[0]["Acc_no"].ToString();
                     Payment_Type.SelectedValue = dt_Q.Rows[0]["Payment_Type"].ToString();
@@ -1184,7 +1332,7 @@ values
                     Cust_Vat_No.Text = dt_Q.Rows[0]["COSTMER_K_M_NO"].ToString();
                     txtKmCode.Text = dt_Q.Rows[0]["KM_CODE_ACC"].ToString();
                     Vat_Class.Text = dt_Q.Rows[0]["MAIN_KM_CODE"].ToString();
-                    txtSuppContact.Text = dt_Q.Rows[0]["Costomer_Notes"].ToString();
+                    txtSuppContact.Text = dt_Q.Rows[0]["Cash_costomer_name"].ToString();
                     if (dt_Q.Rows[0]["VAT_RATIO"].ToString() == string.Empty)
                     { Cust_Vat_Rate.Text = "0.15"; }
                     else
@@ -1193,8 +1341,11 @@ values
                     }
                     Validty_Date.Value = txt_InvDate.Value.AddDays(ValidtyDays.Value);
                     txt_InvNu.Text = dt_Q.Rows[0]["Ser_no"].ToString();
-                txtMainSer.Text = dt_Q.Rows[0]["Sanad_no"].ToString();
-
+                    txtMainSer.Text = dt_Q.Rows[0]["Sanad_no"].ToString();
+                    txt_InvNot.Text = dt_Q.Rows[0]["Costomer_Notes"].ToString();
+                Requst_Persson.ID.Text = dt_Q.Rows[0]["requstedBy"].ToString();
+                Authorized_Persson.ID.Text = dt_Q.Rows[0]["aprovedBY"].ToString();
+                Confirm_Persson.ID.Text = dt_Q.Rows[0]["RECEVEDby"].ToString();
 
                 dt.Clear();
                     int i = 0;
@@ -1214,18 +1365,21 @@ values
                         }
                         row[2] = dt_Q.Rows[i]["DETAILS"].ToString();
                         row[3] = dt_Q.Rows[i]["Unit"].ToString();
-                        row[4] = dt_Q.Rows[i]["Weight"].ToString();
+                        row[4] = dt_Q.Rows[i]["Weight"].ToString().ToDecimal().ToString("N3");
                         row[5] = dt_Q.Rows[i]["QTY_TAKE"].ToString().ToDecimal().ToString("N2");
                         row[6] = dt_Q.Rows[i]["Local_Price"].ToString().ToDecimal().ToString("N" + dal.digits_);
+                    if (dt_Q.Rows[i]["Weight"].ToString().ToDecimal() > 0)
+                    {
                         row[7] = (dt_Q.Rows[i]["Local_Price"].ToString().ToDecimal() / dt_Q.Rows[i]["Weight"].ToString().ToDecimal() * 1000).ToString("N0");
-                        row[8] = (dt_Q.Rows[i]["Local_Price"].ToString().ToDecimal() * dt_Q.Rows[i]["QTY_TAKE"].ToString().ToDecimal()).ToString("N" + dal.digits_); ;
-                        row[9] = dt_Q.Rows[i]["KM_RATIO"].ToString().ToDecimal().ToString("N2");
-                        row[10] = dt_Q.Rows[i]["TAX_OUT"].ToString().ToDecimal().ToString("N" + dal.digits_); ;
-                        row[11] = (dt_Q.Rows[i]["QTY_TAKE"].ToString().ToDecimal() * dt_Q.Rows[i]["Weight"].ToString().ToDecimal()).ToString("n3");
-                        row[12] = dt_Q.Rows[i]["BALANCE"].ToString().ToDecimal().ToString("N0");
-                        row[13] = dt_Q.Rows[i]["Pice_Total_Cost"].ToString().ToDecimal().ToString("N" + dal.digits_);
-                        row[14] = dt_Q.Rows[i]["K_M_TYPE_ITEMS"].ToString();
-                        dt.Rows.Add(row);
+                    }
+                    row[8] = (dt_Q.Rows[i]["Local_Price"].ToString().ToDecimal() * dt_Q.Rows[i]["QTY_TAKE"].ToString().ToDecimal()).ToString("N" + dal.digits_);
+                        row[9] = "0".ToDecimal().ToString("N"+dal.digits_);
+                        row[10] = (dt_Q.Rows[i]["Local_Price"].ToString().ToDecimal() * dt_Q.Rows[i]["QTY_TAKE"].ToString().ToDecimal()).ToString("N" + dal.digits_);
+                        row[11] = dt_Q.Rows[i]["VatRatio"].ToString().ToDecimal().ToString("N0");
+                        row[12] = dt_Q.Rows[i]["TAX_OUT"].ToString().ToDecimal().ToString("N"+dal.digits_);
+                        row[13] = (dt_Q.Rows[i]["QTY_TAKE"].ToString().ToDecimal() * dt_Q.Rows[i]["Weight"].ToString().ToDecimal()).ToString("n3"); 
+                        row[14] = dt_Q.Rows[i]["BALANCE"].ToString().ToDecimal().ToString("N0");
+                    dt.Rows.Add(row);
                         i = i + 1;
                     }
                     dGV_Item.DataSource = dt;
@@ -1274,7 +1428,12 @@ values
             ,M.descr,M.Descr_eng,m.Weight,m.BALANCE ,K.KM_RATIO,
             SP.Payment_name,SP.Notes,
             DP.DeLEVRY_Name,DP.DELEVER_NAME_E,U.USER_NAME
-			,P.PAYER_NAME,P.payer_l_name
+			,P.PAYER_NAME,P.payer_l_name,BR.LONG_ADESS_A,Br.LONG_ADESS_E,BR.ADRESS,BR.PHONE_NO,BR.FAX_NO,Br.branch_name ,br.WH_E_NAME
+            ,B.DETAILS,A.aprovedBY,A.RECEVEDby,A.requstedBy
+  			,C1.CAT_NAME as confirm_A ,C1.CAT_NAME_E as confirm_E
+			,C2.CAT_NAME as auth_A,C2.CAT_NAME_E as auth_E
+			,C3.CAT_NAME as Requst_A,C3.CAT_NAME_E as Requst_E
+            ,C3.Mobile,C3.Email
             ,(select top 1 vat_ratio from VAT_RATIO_MASTER where cast(A.G_date as date ) between date_of_vat and '" + DateTime.Today.ToString("yyyy-MM-dd") + "' order by date_of_vat desc) as VatRatio " +
             "from wh_Po_Cot_inv_data As A " +
             "Inner join wh_Po_Cot_MATERIAL_TRANSACTION As B " +
@@ -1286,6 +1445,9 @@ values
             "inner join wh_USERS As U on U.USER_ID = A.USER_ID " +
             "inner join wh_BRANCHES as BR on A.Branch_code = BR.Branch_code " +
             "inner join payer2 as P on P.acc_no = A.acc_no and p.BRANCH_code = BR.ACC_BRANCH " +
+            "Left join CATEGORY as C1 on C1.CAT_CODE = A.RECEVEDby "+
+            "Left join CATEGORY as C2 on C2.CAT_CODE = A.aprovedBY "+
+            "Left join CATEGORY as C3 on C3.CAT_CODE = A.requstedBy "+
             "where A.Ser_no = '" + ser_ + "'  and A.Branch_code = '" + branch_ + "'  and A.transaction_code = '" + transaction_ + "'  and A.cyear = '" + cyear_ + "'");
             //}
             //catch (Exception ex) { MessageBox.Show(ex.Message); }

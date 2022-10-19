@@ -100,6 +100,10 @@
             this.tabItem6 = new DevComponents.DotNetBar.TabItem(this.components);
             this.tabControl1 = new DevComponents.DotNetBar.TabControl();
             this.tabControlPanel1 = new DevComponents.DotNetBar.TabControlPanel();
+            this.Uc_Cost = new Report_Pro.MyControls.UC_cost();
+            this.Authorized_Persson = new Report_Pro.MyControls.UC_Catogry();
+            this.Confirm_Persson = new Report_Pro.MyControls.UC_Catogry();
+            this.Requst_Persson = new Report_Pro.MyControls.UC_Catogry();
             this.Validty_Date = new System.Windows.Forms.DateTimePicker();
             this.ValidtyDays = new DevComponents.Editors.IntegerInput();
             this.labelX10 = new DevComponents.DotNetBar.LabelX();
@@ -116,7 +120,6 @@
             this.labelX42 = new DevComponents.DotNetBar.LabelX();
             this.labelX41 = new DevComponents.DotNetBar.LabelX();
             this.txtcurrency = new System.Windows.Forms.ComboBox();
-            this.txt_Rate = new DevComponents.Editors.DoubleInput();
             this.labelX59 = new DevComponents.DotNetBar.LabelX();
             this.labelX3 = new DevComponents.DotNetBar.LabelX();
             this.Payment_Type = new System.Windows.Forms.ComboBox();
@@ -126,11 +129,8 @@
             this.labelX9 = new DevComponents.DotNetBar.LabelX();
             this.txtRefrance = new System.Windows.Forms.TextBox();
             this.txt_InvNot = new System.Windows.Forms.TextBox();
-            this.txtApproveBY = new Report_Pro.MyControls.UC_cost();
-            this.txtAauditBY = new Report_Pro.MyControls.UC_cost();
-            this.txtBranch = new Report_Pro.MyControls.UC_Branch();
+            this.txtBranch = new Report_Pro.MyControls.ذ();
             this.txtSupplier = new Report_Pro.MyControls.UC_Acc();
-            this.Uc_Cost = new Report_Pro.MyControls.UC_cost();
             this.tabItem5 = new DevComponents.DotNetBar.TabItem(this.components);
             this.tabControlPanel3 = new DevComponents.DotNetBar.TabControlPanel();
             this.Vat_acc_Desc = new DevComponents.DotNetBar.LabelX();
@@ -203,6 +203,7 @@
             this.chVAT = new System.Windows.Forms.CheckBox();
             this.chStop = new System.Windows.Forms.CheckBox();
             this.groupPanel6 = new DevComponents.DotNetBar.Controls.GroupPanel();
+            this.txt_Cyear = new DevComponents.DotNetBar.LabelX();
             this.txt_transaction_code = new DevComponents.DotNetBar.LabelX();
             this.labelX61 = new DevComponents.DotNetBar.LabelX();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -212,6 +213,7 @@
             this.btn_Srearch = new System.Windows.Forms.Button();
             this.btn_Cancl = new System.Windows.Forms.Button();
             this.labelX46 = new DevComponents.DotNetBar.LabelX();
+            this.txt_Rate = new Report_Pro.MyControls.decimalText();
             this.contextMenuStrip1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.groupPanel5.SuspendLayout();
@@ -221,7 +223,6 @@
             this.tabControl1.SuspendLayout();
             this.tabControlPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ValidtyDays)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txt_Rate)).BeginInit();
             this.tabControlPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.last_)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.next_)).BeginInit();
@@ -330,6 +331,7 @@
             this.ribbonBar1.Name = "ribbonBar1";
             this.ribbonBar1.Style = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
             this.ribbonBar1.TitleVisible = false;
+            this.ribbonBar1.ItemClick += new System.EventHandler(this.ribbonBar1_ItemClick);
             // 
             // BNew
             // 
@@ -361,6 +363,7 @@
             this.BEdit.Name = "BEdit";
             this.BEdit.SubItemsExpandWidth = 14;
             resources.ApplyResources(this.BEdit, "BEdit");
+            this.BEdit.Click += new System.EventHandler(this.BEdit_Click);
             // 
             // BSearch
             // 
@@ -832,10 +835,11 @@
             // tabControl1
             // 
             resources.ApplyResources(this.tabControl1, "tabControl1");
+            this.tabControl1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.tabControl1.CanReorderTabs = true;
             this.tabControl1.Controls.Add(this.tabControlPanel1);
-            this.tabControl1.Controls.Add(this.tabControlPanel2);
             this.tabControl1.Controls.Add(this.tabControlPanel3);
+            this.tabControl1.Controls.Add(this.tabControlPanel2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedTabFont = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
             this.tabControl1.SelectedTabIndex = 0;
@@ -843,10 +847,16 @@
             this.tabControl1.Tabs.Add(this.tabItem5);
             this.tabControl1.Tabs.Add(this.tabItem6);
             this.tabControl1.Tabs.Add(this.tabItem7);
+            this.tabControl1.Click += new System.EventHandler(this.tabControl1_Click);
             // 
             // tabControlPanel1
             // 
             this.tabControlPanel1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
+            this.tabControlPanel1.Controls.Add(this.txt_Rate);
+            this.tabControlPanel1.Controls.Add(this.Uc_Cost);
+            this.tabControlPanel1.Controls.Add(this.Authorized_Persson);
+            this.tabControlPanel1.Controls.Add(this.Confirm_Persson);
+            this.tabControlPanel1.Controls.Add(this.Requst_Persson);
             this.tabControlPanel1.Controls.Add(this.Validty_Date);
             this.tabControlPanel1.Controls.Add(this.ValidtyDays);
             this.tabControlPanel1.Controls.Add(this.labelX10);
@@ -863,7 +873,6 @@
             this.tabControlPanel1.Controls.Add(this.labelX42);
             this.tabControlPanel1.Controls.Add(this.labelX41);
             this.tabControlPanel1.Controls.Add(this.txtcurrency);
-            this.tabControlPanel1.Controls.Add(this.txt_Rate);
             this.tabControlPanel1.Controls.Add(this.labelX59);
             this.tabControlPanel1.Controls.Add(this.labelX3);
             this.tabControlPanel1.Controls.Add(this.Payment_Type);
@@ -873,11 +882,8 @@
             this.tabControlPanel1.Controls.Add(this.labelX9);
             this.tabControlPanel1.Controls.Add(this.txtRefrance);
             this.tabControlPanel1.Controls.Add(this.txt_InvNot);
-            this.tabControlPanel1.Controls.Add(this.txtApproveBY);
-            this.tabControlPanel1.Controls.Add(this.txtAauditBY);
             this.tabControlPanel1.Controls.Add(this.txtBranch);
             this.tabControlPanel1.Controls.Add(this.txtSupplier);
-            this.tabControlPanel1.Controls.Add(this.Uc_Cost);
             resources.ApplyResources(this.tabControlPanel1, "tabControlPanel1");
             this.tabControlPanel1.Name = "tabControlPanel1";
             this.tabControlPanel1.Style.BackColor1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(179)))), ((int)(((byte)(231)))));
@@ -889,6 +895,30 @@
             this.tabControlPanel1.Style.GradientAngle = 90;
             this.tabControlPanel1.TabItem = this.tabItem5;
             this.tabControlPanel1.Click += new System.EventHandler(this.tabControlPanel1_Click_1);
+            // 
+            // Uc_Cost
+            // 
+            resources.ApplyResources(this.Uc_Cost, "Uc_Cost");
+            this.Uc_Cost.Name = "Uc_Cost";
+            this.Uc_Cost.Load += new System.EventHandler(this.Uc_Cost_Load);
+            // 
+            // Authorized_Persson
+            // 
+            resources.ApplyResources(this.Authorized_Persson, "Authorized_Persson");
+            this.Authorized_Persson.Name = "Authorized_Persson";
+            this.Authorized_Persson.Load += new System.EventHandler(this.Authorized_Persson_Load);
+            // 
+            // Confirm_Persson
+            // 
+            resources.ApplyResources(this.Confirm_Persson, "Confirm_Persson");
+            this.Confirm_Persson.Name = "Confirm_Persson";
+            this.Confirm_Persson.Load += new System.EventHandler(this.Confirm_Persson_Load);
+            // 
+            // Requst_Persson
+            // 
+            resources.ApplyResources(this.Requst_Persson, "Requst_Persson");
+            this.Requst_Persson.Name = "Requst_Persson";
+            this.Requst_Persson.Load += new System.EventHandler(this.Requst_Persson_Load);
             // 
             // Validty_Date
             // 
@@ -908,6 +938,7 @@
             this.ValidtyDays.Name = "ValidtyDays";
             this.ValidtyDays.ShowUpDown = true;
             this.ValidtyDays.Value = 3;
+            this.ValidtyDays.ValueChanged += new System.EventHandler(this.ValidtyDays_ValueChanged);
             // 
             // labelX10
             // 
@@ -947,6 +978,7 @@
             this.btnAddDelevery.Image = ((System.Drawing.Image)(resources.GetObject("btnAddDelevery.Image")));
             this.btnAddDelevery.ImageFixedSize = new System.Drawing.Size(30, 20);
             this.btnAddDelevery.Name = "btnAddDelevery";
+            this.btnAddDelevery.Click += new System.EventHandler(this.btnAddDelevery_Click);
             // 
             // btnAddPayment
             // 
@@ -956,6 +988,7 @@
             this.btnAddPayment.Image = ((System.Drawing.Image)(resources.GetObject("btnAddPayment.Image")));
             this.btnAddPayment.ImageFixedSize = new System.Drawing.Size(30, 20);
             this.btnAddPayment.Name = "btnAddPayment";
+            this.btnAddPayment.Click += new System.EventHandler(this.btnAddPayment_Click);
             // 
             // labelX44
             // 
@@ -1000,18 +1033,6 @@
             this.txtcurrency.FormattingEnabled = true;
             this.txtcurrency.Name = "txtcurrency";
             this.txtcurrency.SelectedIndexChanged += new System.EventHandler(this.txtcurrency_SelectedIndexChanged);
-            // 
-            // txt_Rate
-            // 
-            resources.ApplyResources(this.txt_Rate, "txt_Rate");
-            // 
-            // 
-            // 
-            this.txt_Rate.BackgroundStyle.Class = "DateTimeInputBackground";
-            this.txt_Rate.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
-            this.txt_Rate.DisplayFormat = "#,##0.000";
-            this.txt_Rate.Increment = 1D;
-            this.txt_Rate.Name = "txt_Rate";
             // 
             // labelX59
             // 
@@ -1059,31 +1080,21 @@
             // txtRefrance
             // 
             resources.ApplyResources(this.txtRefrance, "txtRefrance");
+            this.txtRefrance.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtRefrance.Name = "txtRefrance";
             // 
             // txt_InvNot
             // 
             resources.ApplyResources(this.txt_InvNot, "txt_InvNot");
+            this.txt_InvNot.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_InvNot.Name = "txt_InvNot";
+            this.txt_InvNot.TextChanged += new System.EventHandler(this.txt_InvNot_TextChanged);
             this.txt_InvNot.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_InvNot_KeyDown);
-            // 
-            // txtApproveBY
-            // 
-            resources.ApplyResources(this.txtApproveBY, "txtApproveBY");
-            this.txtApproveBY.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtApproveBY.Name = "txtApproveBY";
-            // 
-            // txtAauditBY
-            // 
-            resources.ApplyResources(this.txtAauditBY, "txtAauditBY");
-            this.txtAauditBY.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtAauditBY.Name = "txtAauditBY";
             // 
             // txtBranch
             // 
             resources.ApplyResources(this.txtBranch, "txtBranch");
             this.txtBranch.BackColor = System.Drawing.Color.Transparent;
-            this.txtBranch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtBranch.Cursor = System.Windows.Forms.Cursors.Default;
             this.txtBranch.Name = "txtBranch";
             // 
@@ -1091,15 +1102,8 @@
             // 
             resources.ApplyResources(this.txtSupplier, "txtSupplier");
             this.txtSupplier.BackColor = System.Drawing.Color.Transparent;
-            this.txtSupplier.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSupplier.Name = "txtSupplier";
             this.txtSupplier.Load += new System.EventHandler(this.Uc_Customer_Load);
-            // 
-            // Uc_Cost
-            // 
-            resources.ApplyResources(this.Uc_Cost, "Uc_Cost");
-            this.Uc_Cost.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Uc_Cost.Name = "Uc_Cost";
             // 
             // tabItem5
             // 
@@ -1285,6 +1289,7 @@
             resources.ApplyResources(this.labelX15, "labelX15");
             this.labelX15.BackColor = System.Drawing.Color.Transparent;
             this.labelX15.Name = "labelX15";
+            this.labelX15.Click += new System.EventHandler(this.labelX15_Click);
             // 
             // labelX50
             // 
@@ -1387,6 +1392,7 @@
             // 
             resources.ApplyResources(this.txtUnit, "txtUnit");
             this.txtUnit.BackColor = System.Drawing.SystemColors.Info;
+            this.txtUnit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtUnit.Name = "txtUnit";
             // 
             // Price_ton
@@ -1411,6 +1417,7 @@
             // 
             resources.ApplyResources(this.totWeight, "totWeight");
             this.totWeight.BackColor = System.Drawing.SystemColors.Info;
+            this.totWeight.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.totWeight.Name = "totWeight";
             this.totWeight.ReadOnly = true;
             this.totWeight.TabStop = false;
@@ -1529,6 +1536,7 @@
             // 
             resources.ApplyResources(this.txtBalance, "txtBalance");
             this.txtBalance.BackColor = System.Drawing.SystemColors.Info;
+            this.txtBalance.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtBalance.Name = "txtBalance";
             this.txtBalance.ReadOnly = true;
             this.txtBalance.TabStop = false;
@@ -1537,6 +1545,7 @@
             // 
             resources.ApplyResources(this.txtCost, "txtCost");
             this.txtCost.BackColor = System.Drawing.SystemColors.Info;
+            this.txtCost.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtCost.Name = "txtCost";
             this.txtCost.ReadOnly = true;
             this.txtCost.TabStop = false;
@@ -1552,6 +1561,7 @@
             // 
             resources.ApplyResources(this.txt_subTOt, "txt_subTOt");
             this.txt_subTOt.BackColor = System.Drawing.SystemColors.Info;
+            this.txt_subTOt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_subTOt.Name = "txt_subTOt";
             this.txt_subTOt.ReadOnly = true;
             this.txt_subTOt.TabStop = false;
@@ -1567,6 +1577,7 @@
             // 
             resources.ApplyResources(this.VatRate, "VatRate");
             this.VatRate.BackColor = System.Drawing.SystemColors.Info;
+            this.VatRate.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.VatRate.Name = "VatRate";
             this.VatRate.ReadOnly = true;
             this.VatRate.TabStop = false;
@@ -1582,6 +1593,7 @@
             // 
             resources.ApplyResources(this.txtNote, "txtNote");
             this.txtNote.BackColor = System.Drawing.SystemColors.Info;
+            this.txtNote.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtNote.Name = "txtNote";
             this.txtNote.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtNote_KeyDown);
             // 
@@ -1603,6 +1615,7 @@
             // 
             resources.ApplyResources(this.VatValue, "VatValue");
             this.VatValue.BackColor = System.Drawing.SystemColors.Info;
+            this.VatValue.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.VatValue.Name = "VatValue";
             this.VatValue.ReadOnly = true;
             this.VatValue.TabStop = false;
@@ -1625,6 +1638,7 @@
             // 
             resources.ApplyResources(this.Txtvalue, "Txtvalue");
             this.Txtvalue.BackColor = System.Drawing.SystemColors.Info;
+            this.Txtvalue.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Txtvalue.Name = "Txtvalue";
             this.Txtvalue.ReadOnly = true;
             this.Txtvalue.TabStop = false;
@@ -1654,6 +1668,7 @@
             // 
             resources.ApplyResources(this.TxtDesc, "TxtDesc");
             this.TxtDesc.BackColor = System.Drawing.SystemColors.Info;
+            this.TxtDesc.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TxtDesc.Name = "TxtDesc";
             this.TxtDesc.ReadOnly = true;
             this.TxtDesc.TabStop = false;
@@ -1670,6 +1685,7 @@
             // 
             resources.ApplyResources(this.TxtId, "TxtId");
             this.TxtId.BackColor = System.Drawing.SystemColors.Info;
+            this.TxtId.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TxtId.Name = "TxtId";
             this.TxtId.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TxtId_KeyDown);
             // 
@@ -1687,6 +1703,7 @@
             resources.ApplyResources(this.txtSer_code, "txtSer_code");
             this.txtSer_code.BackColor = System.Drawing.Color.MistyRose;
             this.txtSer_code.Name = "txtSer_code";
+            this.txtSer_code.Click += new System.EventHandler(this.txtSer_code_Click);
             // 
             // userID
             // 
@@ -1721,6 +1738,7 @@
             // 
             this.groupPanel6.CanvasColor = System.Drawing.SystemColors.Control;
             this.groupPanel6.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
+            this.groupPanel6.Controls.Add(this.txt_Cyear);
             this.groupPanel6.Controls.Add(this.txt_transaction_code);
             this.groupPanel6.Controls.Add(this.labelX61);
             this.groupPanel6.Controls.Add(this.groupBox1);
@@ -1771,6 +1789,12 @@
             this.groupPanel6.Style.TextAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Center;
             this.groupPanel6.Style.TextColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
             this.groupPanel6.Style.TextLineAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Near;
+            // 
+            // txt_Cyear
+            // 
+            resources.ApplyResources(this.txt_Cyear, "txt_Cyear");
+            this.txt_Cyear.BackColor = System.Drawing.Color.MistyRose;
+            this.txt_Cyear.Name = "txt_Cyear";
             // 
             // txt_transaction_code
             // 
@@ -1839,12 +1863,27 @@
             this.labelX46.BackColor = System.Drawing.Color.Transparent;
             this.labelX46.Name = "labelX46";
             // 
+            // txt_Rate
+            // 
+            this.txt_Rate.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_Rate.DicemalDigits = 0;
+            resources.ApplyResources(this.txt_Rate, "txt_Rate");
+            this.txt_Rate.maxmumNumber = 0D;
+            this.txt_Rate.minimumNumber = 0D;
+            this.txt_Rate.Name = "txt_Rate";
+            this.txt_Rate.ProgramDigits = false;
+            this.txt_Rate.Value = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
+            // 
             // frm_PurchaseOrder
             // 
+            this.Appearance.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.Appearance.Options.UseBackColor = true;
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Control;
-            this.ControlBox = false;
             this.Controls.Add(this.dGV_Item);
             this.Controls.Add(this.groupPanel6);
             this.Controls.Add(this.groupPanel5);
@@ -1855,6 +1894,12 @@
             this.Name = "frm_PurchaseOrder";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frm_PurchaseOrder_Load);
+            this.Controls.SetChildIndex(this.panel2, 0);
+            this.Controls.SetChildIndex(this.Lbl_position, 0);
+            this.Controls.SetChildIndex(this.ribbonBar1, 0);
+            this.Controls.SetChildIndex(this.groupPanel5, 0);
+            this.Controls.SetChildIndex(this.groupPanel6, 0);
+            this.Controls.SetChildIndex(this.dGV_Item, 0);
             this.contextMenuStrip1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.groupPanel5.ResumeLayout(false);
@@ -1867,7 +1912,6 @@
             this.tabControlPanel1.ResumeLayout(false);
             this.tabControlPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ValidtyDays)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txt_Rate)).EndInit();
             this.tabControlPanel3.ResumeLayout(false);
             this.tabControlPanel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.last_)).EndInit();
@@ -1961,7 +2005,6 @@
         private DevComponents.DotNetBar.TabItem tabItem6;
         private DevComponents.DotNetBar.TabControl tabControl1;
         private DevComponents.DotNetBar.TabControlPanel tabControlPanel1;
-        private MyControls.UC_cost txtApproveBY;
         private DevComponents.DotNetBar.LabelX labelX44;
         private DevComponents.DotNetBar.LabelX labelX26;
         private System.Windows.Forms.TextBox txtSuppContact;
@@ -1969,7 +2012,6 @@
         private DevComponents.DotNetBar.LabelX labelX42;
         private DevComponents.DotNetBar.LabelX labelX41;
         private System.Windows.Forms.ComboBox txtcurrency;
-        private DevComponents.Editors.DoubleInput txt_Rate;
         private DevComponents.DotNetBar.LabelX labelX59;
         private DevComponents.DotNetBar.LabelX labelX3;
         private System.Windows.Forms.ComboBox Payment_Type;
@@ -1979,10 +2021,8 @@
         private DevComponents.DotNetBar.LabelX labelX9;
         private System.Windows.Forms.TextBox txtRefrance;
         private System.Windows.Forms.TextBox txt_InvNot;
-        private MyControls.UC_cost txtAauditBY;
-        private MyControls.UC_Branch txtBranch;
+        private MyControls.ذ txtBranch;
         private MyControls.UC_Acc txtSupplier;
-        private MyControls.UC_cost Uc_Cost;
         private DevComponents.DotNetBar.TabItem tabItem5;
         private DevComponents.DotNetBar.TabControlPanel tabControlPanel3;
         private DevComponents.DotNetBar.LabelX Vat_acc_Desc;
@@ -2073,5 +2113,11 @@
         private DevComponents.Editors.IntegerInput ValidtyDays;
         private DevComponents.DotNetBar.LabelX labelX10;
         private System.Windows.Forms.DateTimePicker Validty_Date;
+        private DevComponents.DotNetBar.LabelX txt_Cyear;
+        private MyControls.UC_Catogry Confirm_Persson;
+        private MyControls.UC_Catogry Requst_Persson;
+        private MyControls.UC_Catogry Authorized_Persson;
+        private MyControls.UC_cost Uc_Cost;
+        private MyControls.decimalText txt_Rate;
     }
 }

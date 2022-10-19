@@ -44,7 +44,7 @@
             this.UC_Items = new Report_Pro.MyControls.UC_Items();
             this.UC_Cost = new Report_Pro.MyControls.UC_cost();
             this.UC_Acc = new Report_Pro.MyControls.UC_Acc();
-            this.UC_Branch = new Report_Pro.MyControls.UC_Branch();
+            this.UC_Branch = new Report_Pro.MyControls.ذ();
             this.labelX2 = new DevComponents.DotNetBar.LabelX();
             this.panel1.SuspendLayout();
             this.groupPanel1.SuspendLayout();
@@ -334,7 +334,7 @@
         private DevComponents.DotNetBar.ButtonX btn_Report;
         private DevComponents.DotNetBar.ButtonX buttonX6;
         private DevComponents.DotNetBar.ButtonX buttonX1;
-        private MyControls.UC_Branch UC_Branch;
+        private MyControls.ذ UC_Branch;
         private MyControls.UC_Acc UC_Acc;
         private DevComponents.DotNetBar.LabelX labelX4;
         private MyControls.UC_Items UC_Items;

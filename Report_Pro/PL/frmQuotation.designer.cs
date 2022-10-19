@@ -1032,6 +1032,7 @@
             this.btnAddDelevery.Image = ((System.Drawing.Image)(resources.GetObject("btnAddDelevery.Image")));
             this.btnAddDelevery.ImageFixedSize = new System.Drawing.Size(30, 20);
             this.btnAddDelevery.Name = "btnAddDelevery";
+            this.btnAddDelevery.Click += new System.EventHandler(this.btnAddDelevery_Click);
             // 
             // btnAddPayment
             // 
@@ -1041,6 +1042,7 @@
             this.btnAddPayment.Image = ((System.Drawing.Image)(resources.GetObject("btnAddPayment.Image")));
             this.btnAddPayment.ImageFixedSize = new System.Drawing.Size(30, 20);
             this.btnAddPayment.Name = "btnAddPayment";
+            this.btnAddPayment.Click += new System.EventHandler(this.btnAddPayment_Click);
             // 
             // Uc_cost
             // 
@@ -1146,6 +1148,7 @@
             this.MinimizeBox = false;
             this.Name = "frmQuotation";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.frmQuotation_Load);
             this.contextMenuStrip1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.groupPanel6.ResumeLayout(false);

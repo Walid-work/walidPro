@@ -117,18 +117,16 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="dgv1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="dgv1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 26</value>
+    <value>0, 21</value>
   </data>
   <data name="dgv1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>480, 117</value>
-  </data>
-  <data name="Desc.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="Desc.Size" type="System.Drawing.Size, System.Drawing">
-    <value>340, 27</value>
+    <value>500, 207</value>
   </data>
   <data name="btn1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -191,27 +189,5 @@
         JZSK0wdj1ee2oTh2O55k7IV7yhiQ/C/YkthDu85nnAoPSAZ/TCMmKvLfUd4KaseIaCLu+P6dHJOwcExU
         JH4DAwN0m2r2AysAAAAASUVORK5CYII=
 </value>
-  </data>
-  <data name="btn1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>340, 1</value>
-  </data>
-  <data name="btn1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>40, 26</value>
-  </data>
-  <data name="ID.Location" type="System.Drawing.Point, System.Drawing">
-    <value>380, 0</value>
-  </data>
-  <data name="ID.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 27</value>
-  </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>9, 19</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="$this.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
-    <value>Yes</value>
-  </data>
-  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
-    <value>476, 28</value>
   </data>
 </root>

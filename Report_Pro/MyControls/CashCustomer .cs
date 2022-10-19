@@ -35,7 +35,7 @@ namespace Report_Pro.MyControls
         {
             try
             {
-                DataTable dt_ = dal.getDataTabl_1("select Costmer_Name from " + Properties.Settings.Default.Database_1+ ".dbo.Wh_Cash_Costmers where Costmer_No= '" + ID.Text + "' and BRANCH_code like '" + branchID.Text + "'+'%'  ");
+                DataTable dt_ = dal.getDataTabl_1("select Costmer_Name from Wh_Cash_Costmers where Costmer_No= '" + ID.Text + "' and BRANCH_code like '" + branchID.Text + "'+'%'  ");
                 if (dt_.Rows.Count > 0)
                 {
                     Desc.Text = dt_.Rows[0][0].ToString();
@@ -62,7 +62,7 @@ namespace Report_Pro.MyControls
                 dgv1.Visible = true;
                 this.Height = 130;
                 this.BringToFront();
-                dgv1.DataSource = dal.getDataTabl_1("select Costmer_No,Costmer_Name,Adress from  " + Properties.Settings.Default.Database_1 + ".dbo.Wh_Cash_Costmers where Costmer_Name like '%" + Desc.Text + "%' and BRANCH_code like '" + branchID.Text + "'+'%' ORDER BY Costmer_No ");
+                dgv1.DataSource = dal.getDataTabl_1("select Costmer_No,Costmer_Name,Adress from  Wh_Cash_Costmers where Costmer_Name like '%" + Desc.Text + "%' and BRANCH_code like '" + branchID.Text + "'+'%' ORDER BY Costmer_No ");
                 dgv1.Columns[0].Width = 50;
             }
             catch { }

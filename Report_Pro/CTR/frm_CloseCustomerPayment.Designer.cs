@@ -28,390 +28,1011 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_CloseCustomerPayment));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle33 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle29 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle30 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle31 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle32 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle34 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle41 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle42 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle35 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle36 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle37 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle38 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle39 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle40 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgv1 = new DevComponents.DotNetBar.Controls.DataGridViewX();
             this._InvNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this._year = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this._Date = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this._Po = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this._amount = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this._Paid = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this._return = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this._Paid = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this._balance = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv2 = new DevComponents.DotNetBar.Controls.DataGridViewX();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Acc_Cr = new Report_Pro.MyControls.UC_Acc();
-            this.txtStore_ID = new DevComponents.DotNetBar.LabelX();
+            this._transaction_Code = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Cost = new Report_Pro.MyControls.UC_cost();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.txtSpecialNo = new System.Windows.Forms.TextBox();
+            this.txtDescr_E = new System.Windows.Forms.TextBox();
+            this.txt_sandNo = new Report_Pro.MyControls.textWithButton();
             this.Btn_NonPayInvoice = new DevExpress.XtraEditors.SimpleButton();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtTotalInvoices = new Report_Pro.MyControls.decimalText();
-            this.txtTotalClosed = new Report_Pro.MyControls.decimalText();
-            this.label2 = new System.Windows.Forms.Label();
+            this.AccSer_No = new Report_Pro.MyControls.textWithButton();
+            this.txtDescr = new System.Windows.Forms.TextBox();
+            this.txtCust = new System.Windows.Forms.TextBox();
+            this.txt_sandDate = new DevComponents.Editors.DateTimeAdv.DateTimeInput();
+            this.Check_Date = new DevComponents.Editors.DateTimeAdv.DateTimeInput();
+            this.txt_Check = new System.Windows.Forms.TextBox();
+            this.cmb_Pay = new System.Windows.Forms.ComboBox();
+            this.paied_amount = new Report_Pro.MyControls.decimalText();
+            this.emptySpaceItem3 = new DevExpress.XtraLayout.EmptySpaceItem();
+            this.dgv2 = new DevComponents.DotNetBar.Controls.DataGridViewX();
+            this.col_invNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col_year = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col_invDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col_poNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col_invAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col_retruned = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col_oldPaid = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col_oldBalance = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col_currentPaid = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col_newBalance = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col_sanadBalance = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col_transactionCode = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtTotalChoseInvoices = new Report_Pro.MyControls.decimalText();
+            this.txtTotalInvoices = new Report_Pro.MyControls.decimalText();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtNoOfInvoices = new Report_Pro.MyControls.decimalText();
             this.label4 = new System.Windows.Forms.Label();
-            this.txtAcountBal = new Report_Pro.MyControls.decimalText();
+            this.txtTotalPaid = new Report_Pro.MyControls.decimalText();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtBalance = new Report_Pro.MyControls.decimalText();
+            this.cheuqeOrCash = new DevComponents.DotNetBar.LabelX();
+            this.Account = new Report_Pro.MyControls.UC_Acc();
+            this.CashAcc = new Report_Pro.MyControls.UC_Acc();
+            this.acc_year = new System.Windows.Forms.Label();
+            this.txt_sanad_type2 = new System.Windows.Forms.Label();
+            this.Payment_Type = new System.Windows.Forms.Label();
+            this.txtStore_ID = new System.Windows.Forms.Label();
+            this.txt_source_code = new System.Windows.Forms.Label();
+            this.user_id = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.CustBank = new Report_Pro.MyControls.UC_CustBank();
+            this.label18 = new System.Windows.Forms.Label();
+            this.accountBalance = new Report_Pro.MyControls.decimalText();
+            this.label19 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.dgv1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_sandDate)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Check_Date)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv2)).BeginInit();
             this.SuspendLayout();
             // 
             // dgv1
             // 
+            resources.ApplyResources(this.dgv1, "dgv1");
             this.dgv1.AllowUserToAddRows = false;
             this.dgv1.AllowUserToDeleteRows = false;
             this.dgv1.BackgroundColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Tahoma", 8F);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgv1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this._InvNo,
+            this._year,
             this._Date,
             this._Po,
             this._amount,
-            this._Paid,
             this._return,
-            this._balance});
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv1.DefaultCellStyle = dataGridViewCellStyle2;
+            this._Paid,
+            this._balance,
+            this._transaction_Code});
+            dataGridViewCellStyle33.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle33.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle33.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle33.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            dataGridViewCellStyle33.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle33.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            dataGridViewCellStyle33.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv1.DefaultCellStyle = dataGridViewCellStyle33;
             this.dgv1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
-            this.dgv1.Location = new System.Drawing.Point(12, 183);
             this.dgv1.Name = "dgv1";
             this.dgv1.ReadOnly = true;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Tahoma", 8F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv1.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            this.dgv1.Size = new System.Drawing.Size(747, 424);
-            this.dgv1.TabIndex = 302;
             this.dgv1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv1_CellDoubleClick);
-            this.dgv1.DoubleClick += new System.EventHandler(this.dgv1_DoubleClick);
             // 
             // _InvNo
             // 
-            this._InvNo.HeaderText = "Invoice No";
+            resources.ApplyResources(this._InvNo, "_InvNo");
             this._InvNo.Name = "_InvNo";
             this._InvNo.ReadOnly = true;
             // 
+            // _year
+            // 
+            resources.ApplyResources(this._year, "_year");
+            this._year.Name = "_year";
+            this._year.ReadOnly = true;
+            // 
             // _Date
             // 
-            this._Date.HeaderText = "Date";
+            resources.ApplyResources(this._Date, "_Date");
             this._Date.Name = "_Date";
             this._Date.ReadOnly = true;
             // 
             // _Po
             // 
-            this._Po.HeaderText = "PO N0";
+            resources.ApplyResources(this._Po, "_Po");
             this._Po.Name = "_Po";
             this._Po.ReadOnly = true;
             // 
             // _amount
             // 
-            this._amount.HeaderText = "Amount";
+            dataGridViewCellStyle29.Format = "N3";
+            dataGridViewCellStyle29.NullValue = "0";
+            this._amount.DefaultCellStyle = dataGridViewCellStyle29;
+            resources.ApplyResources(this._amount, "_amount");
             this._amount.Name = "_amount";
             this._amount.ReadOnly = true;
             // 
-            // _Paid
-            // 
-            this._Paid.HeaderText = "Paid";
-            this._Paid.Name = "_Paid";
-            this._Paid.ReadOnly = true;
-            // 
             // _return
             // 
-            this._return.HeaderText = "Return";
+            dataGridViewCellStyle30.Format = "N3";
+            dataGridViewCellStyle30.NullValue = "0";
+            this._return.DefaultCellStyle = dataGridViewCellStyle30;
+            resources.ApplyResources(this._return, "_return");
             this._return.Name = "_return";
             this._return.ReadOnly = true;
             // 
+            // _Paid
+            // 
+            dataGridViewCellStyle31.Format = "N3";
+            dataGridViewCellStyle31.NullValue = "0";
+            this._Paid.DefaultCellStyle = dataGridViewCellStyle31;
+            resources.ApplyResources(this._Paid, "_Paid");
+            this._Paid.Name = "_Paid";
+            this._Paid.ReadOnly = true;
+            // 
             // _balance
             // 
-            this._balance.HeaderText = "Balance";
+            this._balance.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            dataGridViewCellStyle32.Format = "N3";
+            dataGridViewCellStyle32.NullValue = "0";
+            this._balance.DefaultCellStyle = dataGridViewCellStyle32;
+            resources.ApplyResources(this._balance, "_balance");
             this._balance.Name = "_balance";
             this._balance.ReadOnly = true;
             // 
-            // dgv2
+            // _transaction_Code
             // 
-            this.dgv2.AllowUserToAddRows = false;
-            this.dgv2.AllowUserToDeleteRows = false;
-            this.dgv2.BackgroundColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Tahoma", 8F);
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
-            this.dgv2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4,
-            this.dataGridViewTextBoxColumn5,
-            this.dataGridViewTextBoxColumn6,
-            this.dataGridViewTextBoxColumn7});
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv2.DefaultCellStyle = dataGridViewCellStyle5;
-            this.dgv2.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
-            this.dgv2.Location = new System.Drawing.Point(786, 183);
-            this.dgv2.Name = "dgv2";
-            this.dgv2.ReadOnly = true;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Tahoma", 8F);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv2.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
-            this.dgv2.Size = new System.Drawing.Size(747, 424);
-            this.dgv2.TabIndex = 303;
+            resources.ApplyResources(this._transaction_Code, "_transaction_Code");
+            this._transaction_Code.Name = "_transaction_Code";
+            this._transaction_Code.ReadOnly = true;
             // 
-            // dataGridViewTextBoxColumn1
+            // Cost
             // 
-            this.dataGridViewTextBoxColumn1.HeaderText = "Invoice No";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            resources.ApplyResources(this.Cost, "Cost");
+            this.Cost.Name = "Cost";
             // 
-            // dataGridViewTextBoxColumn2
+            // label17
             // 
-            this.dataGridViewTextBoxColumn2.HeaderText = "Date";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            resources.ApplyResources(this.label17, "label17");
+            this.label17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label17.Name = "label17";
             // 
-            // dataGridViewTextBoxColumn3
+            // label16
             // 
-            this.dataGridViewTextBoxColumn3.HeaderText = "PO N0";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.ReadOnly = true;
+            resources.ApplyResources(this.label16, "label16");
+            this.label16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label16.Name = "label16";
             // 
-            // dataGridViewTextBoxColumn4
+            // label15
             // 
-            this.dataGridViewTextBoxColumn4.HeaderText = "Amount";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.ReadOnly = true;
+            resources.ApplyResources(this.label15, "label15");
+            this.label15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label15.Name = "label15";
             // 
-            // dataGridViewTextBoxColumn5
+            // label14
             // 
-            this.dataGridViewTextBoxColumn5.HeaderText = "Paid";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            this.dataGridViewTextBoxColumn5.ReadOnly = true;
+            resources.ApplyResources(this.label14, "label14");
+            this.label14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label14.Name = "label14";
             // 
-            // dataGridViewTextBoxColumn6
+            // label13
             // 
-            this.dataGridViewTextBoxColumn6.HeaderText = "Return";
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            this.dataGridViewTextBoxColumn6.ReadOnly = true;
+            resources.ApplyResources(this.label13, "label13");
+            this.label13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label13.Name = "label13";
             // 
-            // dataGridViewTextBoxColumn7
+            // label12
             // 
-            this.dataGridViewTextBoxColumn7.HeaderText = "Balance";
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            this.dataGridViewTextBoxColumn7.ReadOnly = true;
+            resources.ApplyResources(this.label12, "label12");
+            this.label12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label12.Name = "label12";
             // 
-            // Acc_Cr
+            // label10
             // 
-            this.Acc_Cr.BackColor = System.Drawing.Color.Transparent;
-            this.Acc_Cr.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Acc_Cr.Location = new System.Drawing.Point(138, 61);
-            this.Acc_Cr.Margin = new System.Windows.Forms.Padding(0);
-            this.Acc_Cr.MaximumSize = new System.Drawing.Size(400, 24);
-            this.Acc_Cr.MinimumSize = new System.Drawing.Size(400, 24);
-            this.Acc_Cr.Name = "Acc_Cr";
-            this.Acc_Cr.Padding = new System.Windows.Forms.Padding(1);
-            this.Acc_Cr.Size = new System.Drawing.Size(400, 24);
-            this.Acc_Cr.TabIndex = 304;
+            resources.ApplyResources(this.label10, "label10");
+            this.label10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label10.Name = "label10";
             // 
-            // txtStore_ID
+            // label9
             // 
-            this.txtStore_ID.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.label9, "label9");
+            this.label9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label9.Name = "label9";
             // 
+            // label8
             // 
+            resources.ApplyResources(this.label8, "label8");
+            this.label8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label8.Name = "label8";
             // 
-            this.txtStore_ID.BackgroundStyle.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.txtStore_ID.BackgroundStyle.BorderBottomWidth = 1;
-            this.txtStore_ID.BackgroundStyle.BorderColor = System.Drawing.SystemColors.ActiveCaption;
-            this.txtStore_ID.BackgroundStyle.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.txtStore_ID.BackgroundStyle.BorderLeftWidth = 1;
-            this.txtStore_ID.BackgroundStyle.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.txtStore_ID.BackgroundStyle.BorderRightWidth = 1;
-            this.txtStore_ID.BackgroundStyle.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.txtStore_ID.BackgroundStyle.BorderTopWidth = 1;
-            this.txtStore_ID.ForeColor = System.Drawing.Color.Black;
-            this.txtStore_ID.Location = new System.Drawing.Point(108, 30);
-            this.txtStore_ID.Name = "txtStore_ID";
-            this.txtStore_ID.Size = new System.Drawing.Size(136, 24);
-            this.txtStore_ID.TabIndex = 305;
+            // label7
+            // 
+            resources.ApplyResources(this.label7, "label7");
+            this.label7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label7.Name = "label7";
+            // 
+            // label6
+            // 
+            resources.ApplyResources(this.label6, "label6");
+            this.label6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label6.Name = "label6";
+            // 
+            // label11
+            // 
+            resources.ApplyResources(this.label11, "label11");
+            this.label11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label11.Name = "label11";
+            // 
+            // txtSpecialNo
+            // 
+            resources.ApplyResources(this.txtSpecialNo, "txtSpecialNo");
+            this.txtSpecialNo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtSpecialNo.Name = "txtSpecialNo";
+            // 
+            // txtDescr_E
+            // 
+            resources.ApplyResources(this.txtDescr_E, "txtDescr_E");
+            this.txtDescr_E.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtDescr_E.Name = "txtDescr_E";
+            // 
+            // txt_sandNo
+            // 
+            resources.ApplyResources(this.txt_sandNo, "txt_sandNo");
+            this.txt_sandNo.buttonImage = global::Report_Pro.Properties.Resources.find_32x32;
+            this.txt_sandNo.buttonVisable = true;
+            this.txt_sandNo.LabelAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.txt_sandNo.LabelBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.txt_sandNo.LabelColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.txt_sandNo.LabelFont = new System.Drawing.Font("Tahoma", 8F);
+            this.txt_sandNo.LabelSize = new System.Drawing.Size(100, 20);
+            this.txt_sandNo.LabelText = "Sanad No رقم";
+            this.txt_sandNo.labelVisable = true;
+            this.txt_sandNo.Name = "txt_sandNo";
+            this.txt_sandNo.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt_sandNo.TextBackColor = System.Drawing.SystemColors.Window;
+            this.txt_sandNo.TextColor = System.Drawing.SystemColors.WindowText;
+            this.txt_sandNo.TextlFont = new System.Drawing.Font("Tahoma", 8F);
+            this.txt_sandNo.TextS = "";
+            this.txt_sandNo.TextSize = new System.Drawing.Size(170, 20);
+            this.txt_sandNo.Click += new System.EventHandler(this.search_1_Click);
+            this.txt_sandNo.Paint += new System.Windows.Forms.PaintEventHandler(this.txt_sandNo_Paint);
             // 
             // Btn_NonPayInvoice
             // 
-            this.Btn_NonPayInvoice.Appearance.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
-            this.Btn_NonPayInvoice.Appearance.FontStyleDelta = System.Drawing.FontStyle.Bold;
+            resources.ApplyResources(this.Btn_NonPayInvoice, "Btn_NonPayInvoice");
+            this.Btn_NonPayInvoice.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("Btn_NonPayInvoice.Appearance.Font")));
+            this.Btn_NonPayInvoice.Appearance.FontStyleDelta = ((System.Drawing.FontStyle)(resources.GetObject("Btn_NonPayInvoice.Appearance.FontStyleDelta")));
             this.Btn_NonPayInvoice.Appearance.Options.UseFont = true;
+            this.Btn_NonPayInvoice.Appearance.Options.UseTextOptions = true;
+            this.Btn_NonPayInvoice.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
             this.Btn_NonPayInvoice.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.BottomCenter;
             this.Btn_NonPayInvoice.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("Btn_NonPayInvoice.ImageOptions.SvgImage")));
             this.Btn_NonPayInvoice.ImageOptions.SvgImageSize = new System.Drawing.Size(50, 50);
-            this.Btn_NonPayInvoice.Location = new System.Drawing.Point(556, 41);
             this.Btn_NonPayInvoice.Name = "Btn_NonPayInvoice";
-            this.Btn_NonPayInvoice.Size = new System.Drawing.Size(146, 84);
-            this.Btn_NonPayInvoice.TabIndex = 306;
-            this.Btn_NonPayInvoice.Text = "Non Paid Invoices";
             this.Btn_NonPayInvoice.Click += new System.EventHandler(this.Btn_NonPayInvoice_Click);
             // 
-            // label1
+            // AccSer_No
             // 
-            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label1.Location = new System.Drawing.Point(45, 61);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(93, 24);
-            this.label1.TabIndex = 307;
-            this.label1.Text = "Customer";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            resources.ApplyResources(this.AccSer_No, "AccSer_No");
+            this.AccSer_No.buttonImage = global::Report_Pro.Properties.Resources.find_32x32;
+            this.AccSer_No.buttonVisable = true;
+            this.AccSer_No.LabelAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.AccSer_No.LabelBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.AccSer_No.LabelColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.AccSer_No.LabelFont = new System.Drawing.Font("Tahoma", 8F);
+            this.AccSer_No.LabelSize = new System.Drawing.Size(100, 20);
+            this.AccSer_No.LabelText = "Jornal No";
+            this.AccSer_No.labelVisable = true;
+            this.AccSer_No.Name = "AccSer_No";
+            this.AccSer_No.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            this.AccSer_No.TextBackColor = System.Drawing.SystemColors.Window;
+            this.AccSer_No.TextColor = System.Drawing.SystemColors.WindowText;
+            this.AccSer_No.TextlFont = new System.Drawing.Font("Tahoma", 8F);
+            this.AccSer_No.TextS = "";
+            this.AccSer_No.TextSize = new System.Drawing.Size(170, 20);
+            this.AccSer_No.Click += new System.EventHandler(this.search_2_Click);
+            // 
+            // txtDescr
+            // 
+            resources.ApplyResources(this.txtDescr, "txtDescr");
+            this.txtDescr.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtDescr.Name = "txtDescr";
+            // 
+            // txtCust
+            // 
+            resources.ApplyResources(this.txtCust, "txtCust");
+            this.txtCust.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtCust.Name = "txtCust";
+            // 
+            // txt_sandDate
+            // 
+            resources.ApplyResources(this.txt_sandDate, "txt_sandDate");
+            // 
+            // 
+            // 
+            this.txt_sandDate.BackgroundStyle.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.txt_sandDate.BackgroundStyle.BorderBottomWidth = 1;
+            this.txt_sandDate.BackgroundStyle.BorderColor = System.Drawing.SystemColors.WindowFrame;
+            this.txt_sandDate.BackgroundStyle.BorderColor2 = System.Drawing.SystemColors.WindowFrame;
+            this.txt_sandDate.BackgroundStyle.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.txt_sandDate.BackgroundStyle.BorderLeftWidth = 1;
+            this.txt_sandDate.BackgroundStyle.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.txt_sandDate.BackgroundStyle.BorderRightWidth = 1;
+            this.txt_sandDate.BackgroundStyle.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.txt_sandDate.BackgroundStyle.BorderTopWidth = 1;
+            this.txt_sandDate.BackgroundStyle.Class = "DateTimeInputBackground";
+            this.txt_sandDate.ButtonClear.DisplayPosition = ((int)(resources.GetObject("txt_sandDate.ButtonClear.DisplayPosition")));
+            this.txt_sandDate.ButtonClear.Image = ((System.Drawing.Image)(resources.GetObject("txt_sandDate.ButtonClear.Image")));
+            this.txt_sandDate.ButtonClear.Text = resources.GetString("txt_sandDate.ButtonClear.Text");
+            this.txt_sandDate.ButtonCustom.DisplayPosition = ((int)(resources.GetObject("txt_sandDate.ButtonCustom.DisplayPosition")));
+            this.txt_sandDate.ButtonCustom.Image = ((System.Drawing.Image)(resources.GetObject("txt_sandDate.ButtonCustom.Image")));
+            this.txt_sandDate.ButtonCustom.Text = resources.GetString("txt_sandDate.ButtonCustom.Text");
+            this.txt_sandDate.ButtonCustom2.DisplayPosition = ((int)(resources.GetObject("txt_sandDate.ButtonCustom2.DisplayPosition")));
+            this.txt_sandDate.ButtonCustom2.Image = ((System.Drawing.Image)(resources.GetObject("txt_sandDate.ButtonCustom2.Image")));
+            this.txt_sandDate.ButtonCustom2.Text = resources.GetString("txt_sandDate.ButtonCustom2.Text");
+            this.txt_sandDate.ButtonDropDown.DisplayPosition = ((int)(resources.GetObject("txt_sandDate.ButtonDropDown.DisplayPosition")));
+            this.txt_sandDate.ButtonDropDown.Image = ((System.Drawing.Image)(resources.GetObject("txt_sandDate.ButtonDropDown.Image")));
+            this.txt_sandDate.ButtonDropDown.Shortcut = DevComponents.DotNetBar.eShortcut.AltDown;
+            this.txt_sandDate.ButtonDropDown.Text = resources.GetString("txt_sandDate.ButtonDropDown.Text");
+            this.txt_sandDate.ButtonDropDown.Visible = true;
+            this.txt_sandDate.ButtonFreeText.DisplayPosition = ((int)(resources.GetObject("txt_sandDate.ButtonFreeText.DisplayPosition")));
+            this.txt_sandDate.ButtonFreeText.Image = ((System.Drawing.Image)(resources.GetObject("txt_sandDate.ButtonFreeText.Image")));
+            this.txt_sandDate.ButtonFreeText.Text = resources.GetString("txt_sandDate.ButtonFreeText.Text");
+            // 
+            // 
+            // 
+            this.txt_sandDate.MonthCalendar.AnnuallyMarkedDates = ((System.DateTime[])(resources.GetObject("txt_sandDate.MonthCalendar.AnnuallyMarkedDates")));
+            // 
+            // 
+            // 
+            this.txt_sandDate.MonthCalendar.BackgroundStyle.BackColor = System.Drawing.SystemColors.Window;
+            this.txt_sandDate.MonthCalendar.Category = resources.GetString("txt_sandDate.MonthCalendar.Category");
+            this.txt_sandDate.MonthCalendar.ClearButtonVisible = true;
+            this.txt_sandDate.MonthCalendar.CommandParameter = ((object)(resources.GetObject("txt_sandDate.MonthCalendar.CommandParameter")));
+            // 
+            // 
+            // 
+            this.txt_sandDate.MonthCalendar.CommandsBackgroundStyle.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.BarBackground2;
+            this.txt_sandDate.MonthCalendar.CommandsBackgroundStyle.BackColorGradientAngle = 90;
+            this.txt_sandDate.MonthCalendar.CommandsBackgroundStyle.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.BarBackground;
+            this.txt_sandDate.MonthCalendar.CommandsBackgroundStyle.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.txt_sandDate.MonthCalendar.CommandsBackgroundStyle.BorderTopColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.BarDockedBorder;
+            this.txt_sandDate.MonthCalendar.CommandsBackgroundStyle.BorderTopWidth = 1;
+            this.txt_sandDate.MonthCalendar.DayNames = ((string[])(resources.GetObject("txt_sandDate.MonthCalendar.DayNames")));
+            this.txt_sandDate.MonthCalendar.Description = resources.GetString("txt_sandDate.MonthCalendar.Description");
+            this.txt_sandDate.MonthCalendar.DisplayMonth = new System.DateTime(2022, 5, 1, 0, 0, 0, 0);
+            this.txt_sandDate.MonthCalendar.MarkedDates = ((System.DateTime[])(resources.GetObject("txt_sandDate.MonthCalendar.MarkedDates")));
+            this.txt_sandDate.MonthCalendar.MonthlyMarkedDates = ((System.DateTime[])(resources.GetObject("txt_sandDate.MonthCalendar.MonthlyMarkedDates")));
+            // 
+            // 
+            // 
+            this.txt_sandDate.MonthCalendar.NavigationBackgroundStyle.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
+            this.txt_sandDate.MonthCalendar.NavigationBackgroundStyle.BackColorGradientAngle = 90;
+            this.txt_sandDate.MonthCalendar.NavigationBackgroundStyle.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
+            this.txt_sandDate.MonthCalendar.Tag = resources.GetString("txt_sandDate.MonthCalendar.Tag");
+            this.txt_sandDate.MonthCalendar.Text = resources.GetString("txt_sandDate.MonthCalendar.Text");
+            this.txt_sandDate.MonthCalendar.TodayButtonVisible = true;
+            this.txt_sandDate.MonthCalendar.Tooltip = resources.GetString("txt_sandDate.MonthCalendar.Tooltip");
+            this.txt_sandDate.MonthCalendar.WeeklyMarkedDays = ((System.DayOfWeek[])(resources.GetObject("txt_sandDate.MonthCalendar.WeeklyMarkedDays")));
+            this.txt_sandDate.Name = "txt_sandDate";
+            // 
+            // Check_Date
+            // 
+            resources.ApplyResources(this.Check_Date, "Check_Date");
+            // 
+            // 
+            // 
+            this.Check_Date.BackgroundStyle.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.Check_Date.BackgroundStyle.BorderColor = System.Drawing.SystemColors.WindowFrame;
+            this.Check_Date.BackgroundStyle.BorderColor2 = System.Drawing.SystemColors.WindowFrame;
+            this.Check_Date.BackgroundStyle.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.Check_Date.BackgroundStyle.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.Check_Date.BackgroundStyle.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.Check_Date.BackgroundStyle.Class = "DateTimeInputBackground";
+            this.Check_Date.ButtonClear.DisplayPosition = ((int)(resources.GetObject("Check_Date.ButtonClear.DisplayPosition")));
+            this.Check_Date.ButtonClear.Image = ((System.Drawing.Image)(resources.GetObject("Check_Date.ButtonClear.Image")));
+            this.Check_Date.ButtonClear.Text = resources.GetString("Check_Date.ButtonClear.Text");
+            this.Check_Date.ButtonCustom.DisplayPosition = ((int)(resources.GetObject("Check_Date.ButtonCustom.DisplayPosition")));
+            this.Check_Date.ButtonCustom.Image = ((System.Drawing.Image)(resources.GetObject("Check_Date.ButtonCustom.Image")));
+            this.Check_Date.ButtonCustom.Text = resources.GetString("Check_Date.ButtonCustom.Text");
+            this.Check_Date.ButtonCustom2.DisplayPosition = ((int)(resources.GetObject("Check_Date.ButtonCustom2.DisplayPosition")));
+            this.Check_Date.ButtonCustom2.Image = ((System.Drawing.Image)(resources.GetObject("Check_Date.ButtonCustom2.Image")));
+            this.Check_Date.ButtonCustom2.Text = resources.GetString("Check_Date.ButtonCustom2.Text");
+            this.Check_Date.ButtonDropDown.DisplayPosition = ((int)(resources.GetObject("Check_Date.ButtonDropDown.DisplayPosition")));
+            this.Check_Date.ButtonDropDown.Image = ((System.Drawing.Image)(resources.GetObject("Check_Date.ButtonDropDown.Image")));
+            this.Check_Date.ButtonDropDown.Shortcut = DevComponents.DotNetBar.eShortcut.AltDown;
+            this.Check_Date.ButtonDropDown.Text = resources.GetString("Check_Date.ButtonDropDown.Text");
+            this.Check_Date.ButtonDropDown.Visible = true;
+            this.Check_Date.ButtonFreeText.DisplayPosition = ((int)(resources.GetObject("Check_Date.ButtonFreeText.DisplayPosition")));
+            this.Check_Date.ButtonFreeText.Image = ((System.Drawing.Image)(resources.GetObject("Check_Date.ButtonFreeText.Image")));
+            this.Check_Date.ButtonFreeText.Text = resources.GetString("Check_Date.ButtonFreeText.Text");
+            // 
+            // 
+            // 
+            this.Check_Date.MonthCalendar.AnnuallyMarkedDates = ((System.DateTime[])(resources.GetObject("Check_Date.MonthCalendar.AnnuallyMarkedDates")));
+            // 
+            // 
+            // 
+            this.Check_Date.MonthCalendar.BackgroundStyle.BackColor = System.Drawing.SystemColors.Window;
+            this.Check_Date.MonthCalendar.Category = resources.GetString("Check_Date.MonthCalendar.Category");
+            this.Check_Date.MonthCalendar.ClearButtonVisible = true;
+            this.Check_Date.MonthCalendar.CommandParameter = ((object)(resources.GetObject("Check_Date.MonthCalendar.CommandParameter")));
+            // 
+            // 
+            // 
+            this.Check_Date.MonthCalendar.CommandsBackgroundStyle.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.BarBackground2;
+            this.Check_Date.MonthCalendar.CommandsBackgroundStyle.BackColorGradientAngle = 90;
+            this.Check_Date.MonthCalendar.CommandsBackgroundStyle.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.BarBackground;
+            this.Check_Date.MonthCalendar.CommandsBackgroundStyle.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.Check_Date.MonthCalendar.CommandsBackgroundStyle.BorderTopColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.BarDockedBorder;
+            this.Check_Date.MonthCalendar.CommandsBackgroundStyle.BorderTopWidth = 1;
+            this.Check_Date.MonthCalendar.DayNames = ((string[])(resources.GetObject("Check_Date.MonthCalendar.DayNames")));
+            this.Check_Date.MonthCalendar.Description = resources.GetString("Check_Date.MonthCalendar.Description");
+            this.Check_Date.MonthCalendar.DisplayMonth = new System.DateTime(2022, 5, 1, 0, 0, 0, 0);
+            this.Check_Date.MonthCalendar.MarkedDates = ((System.DateTime[])(resources.GetObject("Check_Date.MonthCalendar.MarkedDates")));
+            this.Check_Date.MonthCalendar.MonthlyMarkedDates = ((System.DateTime[])(resources.GetObject("Check_Date.MonthCalendar.MonthlyMarkedDates")));
+            // 
+            // 
+            // 
+            this.Check_Date.MonthCalendar.NavigationBackgroundStyle.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
+            this.Check_Date.MonthCalendar.NavigationBackgroundStyle.BackColorGradientAngle = 90;
+            this.Check_Date.MonthCalendar.NavigationBackgroundStyle.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
+            this.Check_Date.MonthCalendar.Tag = resources.GetString("Check_Date.MonthCalendar.Tag");
+            this.Check_Date.MonthCalendar.Text = resources.GetString("Check_Date.MonthCalendar.Text");
+            this.Check_Date.MonthCalendar.TodayButtonVisible = true;
+            this.Check_Date.MonthCalendar.Tooltip = resources.GetString("Check_Date.MonthCalendar.Tooltip");
+            this.Check_Date.MonthCalendar.WeeklyMarkedDays = ((System.DayOfWeek[])(resources.GetObject("Check_Date.MonthCalendar.WeeklyMarkedDays")));
+            this.Check_Date.Name = "Check_Date";
+            // 
+            // txt_Check
+            // 
+            resources.ApplyResources(this.txt_Check, "txt_Check");
+            this.txt_Check.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_Check.Name = "txt_Check";
+            // 
+            // cmb_Pay
+            // 
+            resources.ApplyResources(this.cmb_Pay, "cmb_Pay");
+            this.cmb_Pay.FormattingEnabled = true;
+            this.cmb_Pay.Name = "cmb_Pay";
+            this.cmb_Pay.SelectedIndexChanged += new System.EventHandler(this.cmb_Pay_SelectedIndexChanged);
+            // 
+            // paied_amount
+            // 
+            resources.ApplyResources(this.paied_amount, "paied_amount");
+            this.paied_amount.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.paied_amount.DicemalDigits = 0;
+            this.paied_amount.Name = "paied_amount";
+            this.paied_amount.ProgramDigits = true;
+            this.paied_amount.Value = new decimal(new int[] {
+            0,
+            0,
+            0,
+            131072});
+            this.paied_amount.Leave += new System.EventHandler(this.paied_amount_Leave);
+            // 
+            // emptySpaceItem3
+            // 
+            resources.ApplyResources(this.emptySpaceItem3, "emptySpaceItem3");
+            this.emptySpaceItem3.AllowHotTrack = false;
+            this.emptySpaceItem3.Location = new System.Drawing.Point(0, 150);
+            this.emptySpaceItem3.Name = "emptySpaceItem3";
+            this.emptySpaceItem3.Size = new System.Drawing.Size(533, 27);
+            this.emptySpaceItem3.TextSize = new System.Drawing.Size(0, 0);
+            // 
+            // dgv2
+            // 
+            resources.ApplyResources(this.dgv2, "dgv2");
+            this.dgv2.AllowUserToAddRows = false;
+            this.dgv2.BackgroundColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle34.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle34.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle34.Font = new System.Drawing.Font("Tahoma", 8F);
+            dataGridViewCellStyle34.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle34.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle34.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle34.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle34;
+            this.dgv2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.col_invNo,
+            this.col_year,
+            this.col_invDate,
+            this.col_poNo,
+            this.col_invAmount,
+            this.col_retruned,
+            this.col_oldPaid,
+            this.col_oldBalance,
+            this.col_currentPaid,
+            this.col_newBalance,
+            this.col_sanadBalance,
+            this.col_transactionCode});
+            dataGridViewCellStyle41.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle41.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle41.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle41.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            dataGridViewCellStyle41.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle41.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            dataGridViewCellStyle41.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv2.DefaultCellStyle = dataGridViewCellStyle41;
+            this.dgv2.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
+            this.dgv2.Name = "dgv2";
+            dataGridViewCellStyle42.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle42.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle42.Font = new System.Drawing.Font("Tahoma", 8F);
+            dataGridViewCellStyle42.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle42.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle42.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle42.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv2.RowHeadersDefaultCellStyle = dataGridViewCellStyle42;
+            this.dgv2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgv2.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv2_CellDoubleClick);
+            // 
+            // col_invNo
+            // 
+            resources.ApplyResources(this.col_invNo, "col_invNo");
+            this.col_invNo.Name = "col_invNo";
+            this.col_invNo.ReadOnly = true;
+            // 
+            // col_year
+            // 
+            resources.ApplyResources(this.col_year, "col_year");
+            this.col_year.Name = "col_year";
+            // 
+            // col_invDate
+            // 
+            resources.ApplyResources(this.col_invDate, "col_invDate");
+            this.col_invDate.Name = "col_invDate";
+            this.col_invDate.ReadOnly = true;
+            // 
+            // col_poNo
+            // 
+            resources.ApplyResources(this.col_poNo, "col_poNo");
+            this.col_poNo.Name = "col_poNo";
+            this.col_poNo.ReadOnly = true;
+            // 
+            // col_invAmount
+            // 
+            dataGridViewCellStyle35.Format = "N3";
+            dataGridViewCellStyle35.NullValue = null;
+            this.col_invAmount.DefaultCellStyle = dataGridViewCellStyle35;
+            resources.ApplyResources(this.col_invAmount, "col_invAmount");
+            this.col_invAmount.Name = "col_invAmount";
+            this.col_invAmount.ReadOnly = true;
+            // 
+            // col_retruned
+            // 
+            dataGridViewCellStyle36.Format = "N3";
+            dataGridViewCellStyle36.NullValue = "0";
+            this.col_retruned.DefaultCellStyle = dataGridViewCellStyle36;
+            resources.ApplyResources(this.col_retruned, "col_retruned");
+            this.col_retruned.Name = "col_retruned";
+            this.col_retruned.ReadOnly = true;
+            // 
+            // col_oldPaid
+            // 
+            dataGridViewCellStyle37.Format = "N3";
+            dataGridViewCellStyle37.NullValue = "0";
+            this.col_oldPaid.DefaultCellStyle = dataGridViewCellStyle37;
+            resources.ApplyResources(this.col_oldPaid, "col_oldPaid");
+            this.col_oldPaid.Name = "col_oldPaid";
+            // 
+            // col_oldBalance
+            // 
+            this.col_oldBalance.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            dataGridViewCellStyle38.Format = "N3";
+            dataGridViewCellStyle38.NullValue = "0";
+            this.col_oldBalance.DefaultCellStyle = dataGridViewCellStyle38;
+            resources.ApplyResources(this.col_oldBalance, "col_oldBalance");
+            this.col_oldBalance.Name = "col_oldBalance";
+            this.col_oldBalance.ReadOnly = true;
+            // 
+            // col_currentPaid
+            // 
+            dataGridViewCellStyle39.Format = "N3";
+            dataGridViewCellStyle39.NullValue = "0";
+            this.col_currentPaid.DefaultCellStyle = dataGridViewCellStyle39;
+            resources.ApplyResources(this.col_currentPaid, "col_currentPaid");
+            this.col_currentPaid.Name = "col_currentPaid";
+            // 
+            // col_newBalance
+            // 
+            this.col_newBalance.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            dataGridViewCellStyle40.Format = "N3";
+            dataGridViewCellStyle40.NullValue = "0";
+            this.col_newBalance.DefaultCellStyle = dataGridViewCellStyle40;
+            resources.ApplyResources(this.col_newBalance, "col_newBalance");
+            this.col_newBalance.Name = "col_newBalance";
+            // 
+            // col_sanadBalance
+            // 
+            resources.ApplyResources(this.col_sanadBalance, "col_sanadBalance");
+            this.col_sanadBalance.Name = "col_sanadBalance";
+            // 
+            // col_transactionCode
+            // 
+            resources.ApplyResources(this.col_transactionCode, "col_transactionCode");
+            this.col_transactionCode.Name = "col_transactionCode";
+            // 
+            // label3
+            // 
+            resources.ApplyResources(this.label3, "label3");
+            this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label3.Name = "label3";
+            // 
+            // label2
+            // 
+            resources.ApplyResources(this.label2, "label2");
+            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label2.Name = "label2";
+            // 
+            // txtTotalChoseInvoices
+            // 
+            resources.ApplyResources(this.txtTotalChoseInvoices, "txtTotalChoseInvoices");
+            this.txtTotalChoseInvoices.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtTotalChoseInvoices.DicemalDigits = 0;
+            this.txtTotalChoseInvoices.Name = "txtTotalChoseInvoices";
+            this.txtTotalChoseInvoices.ProgramDigits = false;
+            this.txtTotalChoseInvoices.Value = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
             // 
             // txtTotalInvoices
             // 
+            resources.ApplyResources(this.txtTotalInvoices, "txtTotalInvoices");
             this.txtTotalInvoices.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtTotalInvoices.DicemalDigits = 0;
-            this.txtTotalInvoices.Location = new System.Drawing.Point(629, 619);
             this.txtTotalInvoices.Name = "txtTotalInvoices";
             this.txtTotalInvoices.ProgramDigits = false;
-            this.txtTotalInvoices.Size = new System.Drawing.Size(122, 20);
-            this.txtTotalInvoices.TabIndex = 308;
-            this.txtTotalInvoices.Text = "0";
             this.txtTotalInvoices.Value = new decimal(new int[] {
             0,
             0,
             0,
             0});
             // 
-            // txtTotalClosed
+            // label1
             // 
-            this.txtTotalClosed.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtTotalClosed.DicemalDigits = 0;
-            this.txtTotalClosed.Location = new System.Drawing.Point(1408, 619);
-            this.txtTotalClosed.Name = "txtTotalClosed";
-            this.txtTotalClosed.ProgramDigits = false;
-            this.txtTotalClosed.Size = new System.Drawing.Size(122, 20);
-            this.txtTotalClosed.TabIndex = 309;
-            this.txtTotalClosed.Text = "0";
-            this.txtTotalClosed.Value = new decimal(new int[] {
+            resources.ApplyResources(this.label1, "label1");
+            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label1.Name = "label1";
+            // 
+            // txtNoOfInvoices
+            // 
+            resources.ApplyResources(this.txtNoOfInvoices, "txtNoOfInvoices");
+            this.txtNoOfInvoices.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtNoOfInvoices.DicemalDigits = 0;
+            this.txtNoOfInvoices.Name = "txtNoOfInvoices";
+            this.txtNoOfInvoices.ProgramDigits = false;
+            this.txtNoOfInvoices.Value = new decimal(new int[] {
             0,
             0,
             0,
             0});
-            // 
-            // label2
-            // 
-            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label2.Location = new System.Drawing.Point(542, 619);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(87, 20);
-            this.label2.TabIndex = 310;
-            this.label2.Text = "Total";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label3
-            // 
-            this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label3.Location = new System.Drawing.Point(1321, 619);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(87, 20);
-            this.label3.TabIndex = 311;
-            this.label3.Text = "Total";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label4
             // 
+            resources.ApplyResources(this.label4, "label4");
             this.label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label4.Location = new System.Drawing.Point(45, 101);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(93, 20);
-            this.label4.TabIndex = 313;
-            this.label4.Text = "Account Balance";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // txtAcountBal
+            // txtTotalPaid
             // 
-            this.txtAcountBal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtAcountBal.DicemalDigits = 0;
-            this.txtAcountBal.Location = new System.Drawing.Point(138, 101);
-            this.txtAcountBal.Name = "txtAcountBal";
-            this.txtAcountBal.ProgramDigits = false;
-            this.txtAcountBal.Size = new System.Drawing.Size(122, 20);
-            this.txtAcountBal.TabIndex = 312;
-            this.txtAcountBal.Text = "0";
-            this.txtAcountBal.Value = new decimal(new int[] {
+            resources.ApplyResources(this.txtTotalPaid, "txtTotalPaid");
+            this.txtTotalPaid.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtTotalPaid.DicemalDigits = 0;
+            this.txtTotalPaid.Name = "txtTotalPaid";
+            this.txtTotalPaid.ProgramDigits = false;
+            this.txtTotalPaid.Value = new decimal(new int[] {
             0,
             0,
             0,
             0});
             // 
+            // label5
+            // 
+            resources.ApplyResources(this.label5, "label5");
+            this.label5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label5.Name = "label5";
+            // 
+            // txtBalance
+            // 
+            resources.ApplyResources(this.txtBalance, "txtBalance");
+            this.txtBalance.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtBalance.DicemalDigits = 0;
+            this.txtBalance.Name = "txtBalance";
+            this.txtBalance.ProgramDigits = false;
+            this.txtBalance.Value = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
+            // 
+            // cheuqeOrCash
+            // 
+            resources.ApplyResources(this.cheuqeOrCash, "cheuqeOrCash");
+            this.cheuqeOrCash.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.cheuqeOrCash.BackgroundStyle.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.cheuqeOrCash.BackgroundStyle.BorderBottomWidth = 1;
+            this.cheuqeOrCash.BackgroundStyle.BorderColor = System.Drawing.SystemColors.ActiveCaption;
+            this.cheuqeOrCash.BackgroundStyle.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.cheuqeOrCash.BackgroundStyle.BorderLeftWidth = 1;
+            this.cheuqeOrCash.BackgroundStyle.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.cheuqeOrCash.BackgroundStyle.BorderRightWidth = 1;
+            this.cheuqeOrCash.BackgroundStyle.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.cheuqeOrCash.BackgroundStyle.BorderTopWidth = 1;
+            this.cheuqeOrCash.ForeColor = System.Drawing.Color.Black;
+            this.cheuqeOrCash.Name = "cheuqeOrCash";
+            // 
+            // Account
+            // 
+            resources.ApplyResources(this.Account, "Account");
+            this.Account.BackColor = System.Drawing.Color.Transparent;
+            this.Account.Name = "Account";
+            this.Account.Load += new System.EventHandler(this.Account_Load);
+            // 
+            // CashAcc
+            // 
+            resources.ApplyResources(this.CashAcc, "CashAcc");
+            this.CashAcc.BackColor = System.Drawing.Color.Transparent;
+            this.CashAcc.Name = "CashAcc";
+            // 
+            // acc_year
+            // 
+            resources.ApplyResources(this.acc_year, "acc_year");
+            this.acc_year.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.acc_year.Name = "acc_year";
+            // 
+            // txt_sanad_type2
+            // 
+            resources.ApplyResources(this.txt_sanad_type2, "txt_sanad_type2");
+            this.txt_sanad_type2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_sanad_type2.Name = "txt_sanad_type2";
+            // 
+            // Payment_Type
+            // 
+            resources.ApplyResources(this.Payment_Type, "Payment_Type");
+            this.Payment_Type.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Payment_Type.Name = "Payment_Type";
+            // 
+            // txtStore_ID
+            // 
+            resources.ApplyResources(this.txtStore_ID, "txtStore_ID");
+            this.txtStore_ID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtStore_ID.Name = "txtStore_ID";
+            // 
+            // txt_source_code
+            // 
+            resources.ApplyResources(this.txt_source_code, "txt_source_code");
+            this.txt_source_code.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_source_code.Name = "txt_source_code";
+            // 
+            // user_id
+            // 
+            resources.ApplyResources(this.user_id, "user_id");
+            this.user_id.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.user_id.Name = "user_id";
+            // 
+            // button1
+            // 
+            resources.ApplyResources(this.button1, "button1");
+            this.button1.Image = global::Report_Pro.Properties.Resources.Add_Icon3;
+            this.button1.Name = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // CustBank
+            // 
+            resources.ApplyResources(this.CustBank, "CustBank");
+            this.CustBank.Name = "CustBank";
+            // 
+            // label18
+            // 
+            resources.ApplyResources(this.label18, "label18");
+            this.label18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label18.Name = "label18";
+            // 
+            // accountBalance
+            // 
+            resources.ApplyResources(this.accountBalance, "accountBalance");
+            this.accountBalance.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.accountBalance.DicemalDigits = 0;
+            this.accountBalance.Name = "accountBalance";
+            this.accountBalance.ProgramDigits = false;
+            this.accountBalance.Value = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
+            // 
+            // label19
+            // 
+            resources.ApplyResources(this.label19, "label19");
+            this.label19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label19.Name = "label19";
+            // 
+            // textBox1
+            // 
+            resources.ApplyResources(this.textBox1, "textBox1");
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox1_KeyDown);
+            // 
+            // simpleButton1
+            // 
+            resources.ApplyResources(this.simpleButton1, "simpleButton1");
+            this.simpleButton1.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("simpleButton1.Appearance.Font")));
+            this.simpleButton1.Appearance.FontStyleDelta = ((System.Drawing.FontStyle)(resources.GetObject("simpleButton1.Appearance.FontStyleDelta")));
+            this.simpleButton1.Appearance.Options.UseFont = true;
+            this.simpleButton1.Appearance.Options.UseTextOptions = true;
+            this.simpleButton1.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
+            this.simpleButton1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
+            this.simpleButton1.ImageOptions.SvgImageSize = new System.Drawing.Size(50, 50);
+            this.simpleButton1.Name = "simpleButton1";
+            this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
+            // 
             // frm_CloseCustomerPayment
             // 
+            resources.ApplyResources(this, "$this");
             this.Appearance.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.Appearance.Options.UseBackColor = true;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.Appearance.Options.UseTextOptions = true;
+            this.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1627, 694);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.txtAcountBal);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.txtTotalClosed);
-            this.Controls.Add(this.txtTotalInvoices);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.Btn_NonPayInvoice);
+            this.Controls.Add(this.simpleButton1);
+            this.Controls.Add(this.label19);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label18);
+            this.Controls.Add(this.accountBalance);
+            this.Controls.Add(this.user_id);
+            this.Controls.Add(this.txt_source_code);
             this.Controls.Add(this.txtStore_ID);
-            this.Controls.Add(this.Acc_Cr);
-            this.Controls.Add(this.dgv2);
+            this.Controls.Add(this.Payment_Type);
+            this.Controls.Add(this.txt_sanad_type2);
+            this.Controls.Add(this.acc_year);
+            this.Controls.Add(this.Account);
             this.Controls.Add(this.dgv1);
+            this.Controls.Add(this.Btn_NonPayInvoice);
+            this.Controls.Add(this.cheuqeOrCash);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.txtBalance);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.txtTotalPaid);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.txtNoOfInvoices);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.txtTotalChoseInvoices);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.txtTotalInvoices);
+            this.Controls.Add(this.dgv2);
+            this.Controls.Add(this.txtSpecialNo);
+            this.Controls.Add(this.txt_sandNo);
+            this.Controls.Add(this.AccSer_No);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.paied_amount);
+            this.Controls.Add(this.txt_sandDate);
+            this.Controls.Add(this.CustBank);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.CashAcc);
+            this.Controls.Add(this.Cost);
+            this.Controls.Add(this.label17);
+            this.Controls.Add(this.label16);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label15);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.txtDescr_E);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.txtDescr);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.Check_Date);
+            this.Controls.Add(this.txt_Check);
+            this.Controls.Add(this.txtCust);
+            this.Controls.Add(this.cmb_Pay);
             this.Name = "frm_CloseCustomerPayment";
-            this.Text = "frm_CloseCustomerPayment";
-            this.Controls.SetChildIndex(this.dgv1, 0);
-            this.Controls.SetChildIndex(this.dgv2, 0);
-            this.Controls.SetChildIndex(this.Acc_Cr, 0);
-            this.Controls.SetChildIndex(this.txtStore_ID, 0);
-            this.Controls.SetChildIndex(this.Btn_NonPayInvoice, 0);
-            this.Controls.SetChildIndex(this.label1, 0);
-            this.Controls.SetChildIndex(this.txtTotalInvoices, 0);
-            this.Controls.SetChildIndex(this.txtTotalClosed, 0);
+            this.Tag = "";
+            this.Load += new System.EventHandler(this.frm_recet_Load);
+            this.Resize += new System.EventHandler(this.frm_Cash_Receipt_Resize);
+            this.Controls.SetChildIndex(this.cmb_Pay, 0);
+            this.Controls.SetChildIndex(this.txtCust, 0);
+            this.Controls.SetChildIndex(this.txt_Check, 0);
+            this.Controls.SetChildIndex(this.Check_Date, 0);
+            this.Controls.SetChildIndex(this.label10, 0);
+            this.Controls.SetChildIndex(this.label12, 0);
+            this.Controls.SetChildIndex(this.txtDescr, 0);
+            this.Controls.SetChildIndex(this.label13, 0);
+            this.Controls.SetChildIndex(this.txtDescr_E, 0);
+            this.Controls.SetChildIndex(this.label14, 0);
+            this.Controls.SetChildIndex(this.label15, 0);
+            this.Controls.SetChildIndex(this.label6, 0);
+            this.Controls.SetChildIndex(this.label16, 0);
+            this.Controls.SetChildIndex(this.label17, 0);
+            this.Controls.SetChildIndex(this.Cost, 0);
+            this.Controls.SetChildIndex(this.CashAcc, 0);
+            this.Controls.SetChildIndex(this.button1, 0);
+            this.Controls.SetChildIndex(this.CustBank, 0);
+            this.Controls.SetChildIndex(this.txt_sandDate, 0);
+            this.Controls.SetChildIndex(this.paied_amount, 0);
             this.Controls.SetChildIndex(this.label2, 0);
+            this.Controls.SetChildIndex(this.AccSer_No, 0);
+            this.Controls.SetChildIndex(this.txt_sandNo, 0);
+            this.Controls.SetChildIndex(this.txtSpecialNo, 0);
+            this.Controls.SetChildIndex(this.dgv2, 0);
+            this.Controls.SetChildIndex(this.txtTotalInvoices, 0);
+            this.Controls.SetChildIndex(this.label7, 0);
+            this.Controls.SetChildIndex(this.txtTotalChoseInvoices, 0);
+            this.Controls.SetChildIndex(this.label11, 0);
+            this.Controls.SetChildIndex(this.label8, 0);
             this.Controls.SetChildIndex(this.label3, 0);
-            this.Controls.SetChildIndex(this.txtAcountBal, 0);
+            this.Controls.SetChildIndex(this.label9, 0);
+            this.Controls.SetChildIndex(this.txtNoOfInvoices, 0);
+            this.Controls.SetChildIndex(this.label1, 0);
+            this.Controls.SetChildIndex(this.txtTotalPaid, 0);
             this.Controls.SetChildIndex(this.label4, 0);
+            this.Controls.SetChildIndex(this.txtBalance, 0);
+            this.Controls.SetChildIndex(this.label5, 0);
+            this.Controls.SetChildIndex(this.cheuqeOrCash, 0);
+            this.Controls.SetChildIndex(this.Btn_NonPayInvoice, 0);
+            this.Controls.SetChildIndex(this.dgv1, 0);
+            this.Controls.SetChildIndex(this.Account, 0);
+            this.Controls.SetChildIndex(this.acc_year, 0);
+            this.Controls.SetChildIndex(this.txt_sanad_type2, 0);
+            this.Controls.SetChildIndex(this.Payment_Type, 0);
+            this.Controls.SetChildIndex(this.txtStore_ID, 0);
+            this.Controls.SetChildIndex(this.txt_source_code, 0);
+            this.Controls.SetChildIndex(this.user_id, 0);
+            this.Controls.SetChildIndex(this.accountBalance, 0);
+            this.Controls.SetChildIndex(this.label18, 0);
+            this.Controls.SetChildIndex(this.textBox1, 0);
+            this.Controls.SetChildIndex(this.label19, 0);
+            this.Controls.SetChildIndex(this.simpleButton1, 0);
             ((System.ComponentModel.ISupportInitialize)(this.dgv1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_sandDate)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Check_Date)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -419,32 +1040,80 @@
         }
 
         #endregion
-
+        private MyControls.UC_cost Cost;
         private DevComponents.DotNetBar.Controls.DataGridViewX dgv1;
+        private DevComponents.Editors.DateTimeAdv.DateTimeInput Check_Date;
+        private System.Windows.Forms.TextBox txt_Check;
+        private System.Windows.Forms.ComboBox cmb_Pay;
+        private MyControls.decimalText paied_amount;
+        private DevComponents.Editors.DateTimeAdv.DateTimeInput txt_sandDate;
+        private System.Windows.Forms.TextBox txtDescr;
+        private System.Windows.Forms.TextBox txtCust;
+        private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem3;
+        private MyControls.textWithButton AccSer_No;
+        private MyControls.textWithButton txt_sandNo;
+        private DevExpress.XtraEditors.SimpleButton Btn_NonPayInvoice;
+        private DevComponents.DotNetBar.Controls.DataGridViewX dgv2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private MyControls.decimalText txtTotalChoseInvoices;
+        private MyControls.decimalText txtTotalInvoices;
+        private System.Windows.Forms.Label label1;
+        private MyControls.decimalText txtNoOfInvoices;
+        private System.Windows.Forms.Label label4;
+        private MyControls.decimalText txtTotalPaid;
+        private System.Windows.Forms.Label label5;
+        private MyControls.decimalText txtBalance;
+        private System.Windows.Forms.TextBox txtDescr_E;
+        private DevComponents.DotNetBar.LabelX cheuqeOrCash;
+        private System.Windows.Forms.DataGridViewTextBoxColumn col_invNo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn col_year;
+        private System.Windows.Forms.DataGridViewTextBoxColumn col_invDate;
+        private System.Windows.Forms.DataGridViewTextBoxColumn col_poNo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn col_invAmount;
+        private System.Windows.Forms.DataGridViewTextBoxColumn col_retruned;
+        private System.Windows.Forms.DataGridViewTextBoxColumn col_oldPaid;
+        private System.Windows.Forms.DataGridViewTextBoxColumn col_oldBalance;
+        private System.Windows.Forms.DataGridViewTextBoxColumn col_currentPaid;
+        private System.Windows.Forms.DataGridViewTextBoxColumn col_newBalance;
+        private System.Windows.Forms.DataGridViewTextBoxColumn col_sanadBalance;
+        private System.Windows.Forms.DataGridViewTextBoxColumn col_transactionCode;
+        private System.Windows.Forms.TextBox txtSpecialNo;
+        public System.Windows.Forms.Label label6;
+        public System.Windows.Forms.Label label11;
+        public System.Windows.Forms.Label label17;
+        public System.Windows.Forms.Label label16;
+        public System.Windows.Forms.Label label15;
+        public System.Windows.Forms.Label label14;
+        public System.Windows.Forms.Label label13;
+        public System.Windows.Forms.Label label12;
+        public System.Windows.Forms.Label label10;
+        public System.Windows.Forms.Label label9;
+        public System.Windows.Forms.Label label8;
+        public System.Windows.Forms.Label label7;
+        private MyControls.UC_Acc Account;
+        private MyControls.UC_Acc CashAcc;
+        private System.Windows.Forms.Label acc_year;
+        private System.Windows.Forms.Label txt_sanad_type2;
+        private System.Windows.Forms.Label Payment_Type;
+        private System.Windows.Forms.Label txtStore_ID;
+        private System.Windows.Forms.Label txt_source_code;
+        private System.Windows.Forms.Label user_id;
+        private System.Windows.Forms.Button button1;
+        private MyControls.UC_CustBank CustBank;
         private System.Windows.Forms.DataGridViewTextBoxColumn _InvNo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn _year;
         private System.Windows.Forms.DataGridViewTextBoxColumn _Date;
         private System.Windows.Forms.DataGridViewTextBoxColumn _Po;
         private System.Windows.Forms.DataGridViewTextBoxColumn _amount;
-        private System.Windows.Forms.DataGridViewTextBoxColumn _Paid;
         private System.Windows.Forms.DataGridViewTextBoxColumn _return;
+        private System.Windows.Forms.DataGridViewTextBoxColumn _Paid;
         private System.Windows.Forms.DataGridViewTextBoxColumn _balance;
-        private DevComponents.DotNetBar.Controls.DataGridViewX dgv2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
-        private MyControls.UC_Acc Acc_Cr;
-        public DevComponents.DotNetBar.LabelX txtStore_ID;
-        private DevExpress.XtraEditors.SimpleButton Btn_NonPayInvoice;
-        private System.Windows.Forms.Label label1;
-        private MyControls.decimalText txtTotalInvoices;
-        private MyControls.decimalText txtTotalClosed;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private MyControls.decimalText txtAcountBal;
+        private System.Windows.Forms.DataGridViewTextBoxColumn _transaction_Code;
+        public System.Windows.Forms.Label label18;
+        private MyControls.decimalText accountBalance;
+        public System.Windows.Forms.Label label19;
+        private System.Windows.Forms.TextBox textBox1;
+        private DevExpress.XtraEditors.SimpleButton simpleButton1;
     }
 }

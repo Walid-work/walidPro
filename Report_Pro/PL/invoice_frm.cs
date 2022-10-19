@@ -12,7 +12,7 @@ using CrystalDecisions.CrystalReports.Engine;
 
 namespace Report_Pro.PL
 {
-    public partial class invoice_frm : Form
+    public partial class invoice_frm : frm_Master
     {
         string btntype = "0";
         Int32 m;
@@ -33,16 +33,9 @@ namespace Report_Pro.PL
             InitializeComponent();
 
 
-            foreach (DataGridViewRow row in this.dGV_Item.Rows)
-            {
-                row.HeaderCell.Value = string.Format("{0}", row.Index + 1);
-                dGV_Item.EnableHeadersVisualStyles = false;
-            }
-
             
-
-            creatDattable();
-            resizeDG();
+           // creatDattable();
+           
 
 
 
@@ -50,21 +43,23 @@ namespace Report_Pro.PL
             txtStore_ID.Text = Properties.Settings.Default.BranchId;
             txtBranch_Id.Text = Properties.Settings.Default.BranchAccID;
             userID.Text = Program.userID;
-          
-            Payment_Type.DataSource = dal.getDataTabl_1("SELECT * FROM wh_Payment_type");
+
+
+            PayType.DataSource = dal.getDataTabl_1("SELECT * FROM wh_Payment_type");
 
             if (Properties.Settings.Default.lungh == "0")
             {
-                Payment_Type.DisplayMember = "Payment_name";
+                PayType.DisplayMember = "Payment_name";
             }
             else
             {
-                Payment_Type.DisplayMember = "Payment_name";
+                PayType.DisplayMember = "Payment_name";
             }
-            Payment_Type.ValueMember = "Payment_type";
-            Payment_Type.SelectedIndex = -1;
+            PayType.ValueMember = "Payment_type";
+            PayType.SelectedIndex = -1;
 
-            
+
+
 
             cmb_Pay.DataSource = dal.getDataTabl_1("SELECT * FROM pay_method");
             if (Properties.Settings.Default.lungh == "0")
@@ -102,77 +97,41 @@ namespace Report_Pro.PL
 
 
 
-
-
-  
-
-
-        private void dGV_Item_RowsRemoved(object sender, DataGridViewRowsRemovedEventArgs e)
+        public override void GoFrist()
         {
-            total_inv();
-        }
-
-
-
-
-        private void حذفالسطرالحاليToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                dGV_Item.Rows.RemoveAt(dGV_Item.CurrentRow.Index);
-            }
-            catch
-            {
-                return;
-            }
-        }
-
-        private void حذفالكلToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                dt.Clear();
-                dGV_Item.Refresh();
-            }
-            catch
-            {
-                return;
-            }
+            MessageBox.Show("frist");
+            base.GoFrist();
         }
 
 
 
 
 
-        private void txt_InvNot_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Enter)
-            {
-
-
-                //Btn_srch_cust.Focus();
-            }
-        }
 
 
 
 
-        private void txtDiscount_KeyUp(object sender, KeyEventArgs e)
-        {
-            total_inv();
-        }
+
+
+
+
+
+
+
+
+
 
         private void get_invSer()
         {
             try
             {
                 txtMainSer.Text = dal.getDataTabl_1(@"select isnull(XS+1,1) from wh_Serial where Branch_code= '" + txtStore_ID.Text + "' and Cyear='" + txt_InvDate.Value.Date.ToString("yy") + "'").Rows[0][0].ToString();
-                if (Convert.ToString(Payment_Type.SelectedValue) == "2")
+                if (txt_PayType.ID.Text == "2")
                 {
                     Doc_Type.Text = "XSD";
                     this.txt_InvNu.Text = dal.getDataTabl_1(@"select isnull(XSD+1,1) from wh_Serial where Branch_code= '" + txtStore_ID.Text + "' and Cyear='" + txt_InvDate.Value.Date.ToString("yy") + "'").Rows[0][0].ToString();
                 }
-                else if (Convert.ToString(Payment_Type.SelectedValue) == "11" || Convert.ToString(Payment_Type.SelectedValue) == "12")
+                else if (txt_PayType.ID.Text == "11" || txt_PayType.ID.Text == "12")
                 {
                     Doc_Type.Text = "XSC";
                     this.txt_InvNu.Text = dal.getDataTabl_1(@"select isnull(XSC+1,1) from wh_Serial where Branch_code= '" + txtStore_ID.Text + "' and Cyear='" + txt_InvDate.Value.Date.ToString("yy") + "'").Rows[0][0].ToString();
@@ -187,7 +146,7 @@ namespace Report_Pro.PL
         private void Payment_Type_SelectedIndexChanged(object sender, EventArgs e)
         {
             get_invSer();
-            total_inv();
+            gridInvoice1.total_inv();
         }
 
         private void paied_amount_KeyUp(object sender, KeyEventArgs e)
@@ -212,12 +171,12 @@ namespace Report_Pro.PL
             tabControlPanel1.Enabled = true;
             tabControlPanel2.Enabled = true;
             tabControlPanel3.Enabled = true;
-            groupPanel7.Enabled = true;
+            gridInvoice1.Enabled = true;
 
             dt.Clear();
-            dGV_Item.DataSource = null;
-            dGV_Item.Refresh();
-            dGV_Item.Rows.Clear();
+            gridInvoice1.dgv1.DataSource = null;
+            gridInvoice1.dgv1.Refresh();
+            gridInvoice1.dgv1.Rows.Clear();
 
 
             BSave.Enabled = true;
@@ -236,14 +195,14 @@ namespace Report_Pro.PL
                     MessageBox.Show("فضلا.. تاكد من اختيار العميل ", "تنبية !!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
-                if (dGV_Item.Rows.Count < 1)
+                if (gridInvoice1.dgv1.Rows.Count < 1)
                 {
                     MessageBox.Show("فضلا.. تاكد من اختيار الاصناف", "تنبية !!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
 
 
-                if (Payment_Type.SelectedIndex < 0)
+                if (txt_PayType.ID.Text.Trim() =="")
                 {
                     MessageBox.Show("فضلا.. تاكد من نوع الفاتورة", "تنبية !!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
@@ -257,7 +216,7 @@ namespace Report_Pro.PL
 
                
 
-                if (Convert.ToString(Payment_Type.SelectedValue) == "11")
+                if (txt_PayType.ID.Text.Trim() == "11" || txt_PayType.ID.Text.Trim() == "12")
                 {
                     if (cmb_Pay.SelectedIndex < 0)
                     {
@@ -275,12 +234,12 @@ namespace Report_Pro.PL
                 }
                  try
             {
-                if (Convert.ToString(Payment_Type.SelectedValue) == "2")
+                if (txt_PayType.ID.Text.Trim()== "2")
                 {
                     Doc_Type.Text = "XSD";
                     this.txt_InvNu.Text = dal.getDataTabl_1(@"select isnull(XSD+1,1) from wh_Serial where Branch_code= '"+txtStore_ID.Text+"' and Cyear='"+ txt_InvDate.Value.Date.ToString("yy")+"'").Rows[0][0].ToString();
                 }
-                else if (Convert.ToString(Payment_Type.SelectedValue) == "11" || Convert.ToString(Payment_Type.SelectedValue) == "12")
+                else if (txt_PayType.ID.Text.Trim() == "11" || txt_PayType.ID.Text.Trim() == "12")
                 {
                     Doc_Type.Text = "XSC";
                     this.txt_InvNu.Text = dal.getDataTabl_1(@"select isnull(XSC+1,1) from wh_Serial where Branch_code= '" + txtStore_ID.Text + "' and Cyear='" + txt_InvDate.Value.Date.ToString("yy") + "'").Rows[0][0].ToString();
@@ -312,7 +271,7 @@ namespace Report_Pro.PL
                 tabControlPanel1.Enabled = false;
                 tabControlPanel2.Enabled = false;
                 tabControlPanel3.Enabled = false;
-                groupPanel7.Enabled = false;
+                gridInvoice1.Enabled = false;
 
                 BSave.Enabled = false;
             }
@@ -338,11 +297,11 @@ namespace Report_Pro.PL
                         values('" + txt_InvNu.Text + "', '" + txtStore_ID.Text + "', '" + Doc_Type.Text +
                         "', '" + txt_InvDate.Value.ToString("yy") + "' ,'" + txtMainSer.Text +
                         "', '" + txt_InvDate.Value.ToString("yyyy-MM-dd HH:mm:ss") + "','A', '" + txt_Acc.ID.Text +
-                        "', '" + txtBranch_Id.Text + "', '" + Convert.ToString(Payment_Type.SelectedValue) +
+                        "', '" + txtBranch_Id.Text + "', '" + txt_PayType.ID.Text +
                         "', '" + Uc_Cost.ID.Text + "', '" + AccSer_No.Text + "', '" + Po_No.Text + "' , '" + userID.Text +
                         "', '" + txtNetTotal.Text.ToDecimal() + "', '" + paied_amount.Text.ToDecimal() +
                         "', '" +cashCustomer.Desc.Text + "', '0', '" + txt_InvNot.Text + "', '" + cashCustomer.ID.Text +
-                        "', '" + txt_custTel.Text + "', '" + txt_address.Text + "', '" + Vat_acc.Text + "', '" + Net_Vat.Text.ToDecimal() +
+                        "', '" + txt_custTel.Text + "', '" + txt_address.Text + "', '" + txt_vatAcc.Text + "', '" + Net_Vat.Text.ToDecimal() +
                         "', '0', '" + Cust_Vat_No.Text + "', '0','" + txtKmCode.Text+"','" + Vat_Class.Text + "')");
 
                }
@@ -358,13 +317,13 @@ namespace Report_Pro.PL
             dal.Execute_1(@"Insert into Sands_tbl values( '" + acc_year.Text + "', '" + txt_Acc.ID.Text + "','"
              + txtBranch_Id.Text + "', '" + AccSer_No.Text + "','"+ Uc_Cost.ID.Text +"',0, '" + txtNetTotal.Text + "','"
              + txt_InvDate.Value.Date.ToString("yyyy/MM/dd") + "' , '" + txt_sandNo.Text + "','" 
-             + Convert.ToString(Payment_Type.SelectedValue) + "','" + userID.Text + "',  'سداد فاتورة مبيعات ' +'" 
-             + Payment_Type.Text + "' + ' رقم ' + '" + txt_InvNu.Text + "', '" + txt_Check.Text + "' ,'" 
+             + txt_PayType.ID.Text + "','" + userID.Text + "',  'سداد فاتورة مبيعات ' +'" 
+             + txt_PayType.Desc.Text + "' + ' رقم ' + '" + txt_InvNu.Text + "', '" + txt_Check.Text + "' ,'" 
              + Convert.ToString(cmb_Bank.SelectedValue) + "','" + (Check_Date.Value > Check_Date.MinDate ? 
              Check_Date.Value.Date.ToString("yyyy/MM/dd") : Check_Date.MinDate.Date.ToString("yyyy/MM/dd")) + "','" 
              + Convert.ToString(cmb_Pay.SelectedValue) + "','','" + txt_InvNot.Text + "','CR','" + txtStore_ID.Text 
-             + "','" +Net_Vat.Text.ToDecimal() + "','" + txt_CashAcc_ID.Text + "','" + txt_InvNu.Text + "','" 
-             + paied_amount.Text + "','"+ cashCustomer.Desc.Text +"','','','','','','','','','','','','','')");
+             + "','" +Net_Vat.Text.ToDecimal() + "','" + txt_CashAcc.ID.Text + "','" + txt_InvNu.Text + "','" 
+             + paied_amount.Text + "','"+ cashCustomer.Desc.Text +"')");
 
 
             DataTable dt_ = dal.getDataTabl_1("Select * from Serails_tbl where Baranch_ID= '" + txtStore_ID.Text + "' and Cyear='" + acc_year.Text
@@ -391,65 +350,30 @@ namespace Report_Pro.PL
 
         private void AddInvDetails()
         {
-            for (int i = 0; i <= dGV_Item.Rows.Count - 1; i++)
+            for (int i = 0; i <= gridInvoice1.dgv1.Rows.Count - 1; i++)
             {
-                if (dGV_Item.Rows[i].Cells[0].Value != null && dGV_Item.Rows[i].Cells[5].Value.ToString().ToDecimal() > 0)
+                if (gridInvoice1.dgv1.Rows[i].Cells[0].Value != null && gridInvoice1.dgv1.Rows[i].Cells[5].Value.ToString().ToDecimal() > 0)
                     //&& dGV_Item.Rows[i].Cells[6].Value.ToString().ToDecimal() > 0)
                 {
             dal.Execute_1(@" insert into wh_material_transaction (SER_NO,Branch_code,TRANSACTION_CODE,Cyear,SANAD_NO,ITEM_NO,QTY_ADD,QTY_TAKE,COST_PRICE,total_disc,DISC_R,DISC_R2,DISC_R3,
             G_DATE,Unit,Local_Price,USER_ID,main_counter,balance,Store_Code,Weight,K_M_TYPE_ITEMS,TAX_IN,TAX_OUT) 
            values( '" + txt_InvNu.Text + "', '" + txtStore_ID.Text + "', '" + Doc_Type.Text + "', '" + txt_InvDate.Value.ToString("yy") +
-            "' ,'" + txtMainSer.Text + "','" + dGV_Item.Rows[i].Cells[0].Value.ToString() + "' ,'0','" +
-            dGV_Item.Rows[i].Cells[5].Value.ToString().ToDecimal() + "','" + dGV_Item.Rows[i].Cells[15].Value.ToString().ToDecimal() +
-            "','" + ((dGV_Item.Rows[i].Cells[9].Value.ToString().ToDecimal()/  dGV_Item.Rows[i].Cells[8].Value.ToString().ToDecimal()) + disc_Rate.Text.ToDecimal())*100 +
-            "' ,'" + (dGV_Item.Rows[i].Cells[9].Value.ToString().ToDecimal() / dGV_Item.Rows[i].Cells[8].Value.ToString().ToDecimal())*100 + "' ,'0','" + (disc_Rate.Text.ToDecimal())*100 +
-            "', '" + txt_InvDate.Value.ToString("yyyy-MM-dd HH:mm:ss") + "','" + dGV_Item.Rows[i].Cells[3].Value.ToString()+
-            "' ,'" + dGV_Item.Rows[i].Cells[6].Value.ToString().ToDecimal() + "' , '" + userID.Text + "','"+
-            dGV_Item.Rows[i].Index+"', '" +dGV_Item.Rows[i].Cells[4].Value.ToString().ToDecimal() + "', '" + txtStore_ID.Text +
-            "','" + dGV_Item.Rows[i].Cells[5].Value.ToString().ToDecimal() + "','" + dGV_Item.Rows[i].Cells[16].Value.ToString() +
-            "' ,'0','" + dGV_Item.Rows[i].Cells[12].Value.ToString().ToDecimal() + "')");
+            "' ,'" + txtMainSer.Text + "','" + gridInvoice1.dgv1.Rows[i].Cells[0].Value.ToString() + "' ,'0','" +
+            gridInvoice1.dgv1.Rows[i].Cells[5].Value.ToString().ToDecimal() + "','" + gridInvoice1.dgv1.Rows[i].Cells[15].Value.ToString().ToDecimal() +
+            "','" + ((gridInvoice1.dgv1.Rows[i].Cells[9].Value.ToString().ToDecimal()/ gridInvoice1.dgv1.Rows[i].Cells[8].Value.ToString().ToDecimal()) + disc_Rate.Text.ToDecimal())*100 +
+            "' ,'" + (gridInvoice1.dgv1.Rows[i].Cells[9].Value.ToString().ToDecimal() / gridInvoice1.dgv1.Rows[i].Cells[8].Value.ToString().ToDecimal())*100 + "' ,'0','" + (disc_Rate.Text.ToDecimal())*100 +
+            "', '" + txt_InvDate.Value.ToString("yyyy-MM-dd HH:mm:ss") + "','" + gridInvoice1.dgv1.Rows[i].Cells[3].Value.ToString()+
+            "' ,'" + gridInvoice1.dgv1.Rows[i].Cells[6].Value.ToString().ToDecimal() + "' , '" + userID.Text + "','"+
+            gridInvoice1.dgv1.Rows[i].Index+"', '" + gridInvoice1.dgv1.Rows[i].Cells[4].Value.ToString().ToDecimal() + "', '" + txtStore_ID.Text +
+            "','" + gridInvoice1.dgv1.Rows[i].Cells[5].Value.ToString().ToDecimal() + "','" + gridInvoice1.dgv1.Rows[i].Cells[16].Value.ToString() +
+            "' ,'0','" + gridInvoice1.dgv1.Rows[i].Cells[12].Value.ToString().ToDecimal() + "')");
 
                 }
             }
         }
 
 
-        private void get_ItemData(string item_No)
-        {
-            DataTable dt = dal.getDataTabl_1(@"SELECT item_no,factory_no,descr,Descr_eng,Weight,unit,
-                BALANCE,local_cost,K.KM_RATIO,K.KM_Code
-                FROM wh_main_master as A 
-                inner join wh_Groups As B on A.group_code = B.group_code 
-                left join KM_MATERIAL_CODE As K on  ISNULL(NULLIF(a.KM_CODE, ''), 1) = K.KM_CODE
-                 where item_no = '" + item_No + "' or factory_no = '" + item_No + "'");
-            if (dt.Rows.Count > 0)
-            {
-                TxtId.Text = dt.Rows[0][0].ToString();
-                if (Properties.Settings.Default.lungh == "0")
-                {
-                    TxtDesc.Text = dt.Rows[0][2].ToString();
-                }
-                else
-                {
-                    TxtDesc.Text = dt.Rows[0][3].ToString();
-                }
-                Weight_.Text = dt.Rows[0][4].ToString().ToDecimal().ToString("N3");
-                txtUnit.Text = dt.Rows[0][5].ToString();
-                txtBalance.Text = dt.Rows[0][6].ToString().ToDecimal().ToString("N1");
-                txtCost.Text = dt.Rows[0][7].ToString().ToDecimal().ToString("N3");
-                VatRate.Text = dt.Rows[0][8].ToString().ToDecimal().ToString("N2");
-                KM_TYPE_ITEMS.Text = dt.Rows[0][9].ToString();
-
-                txtNote.Focus();
-
-
-            }
-            else
-            {
-                btn_braws.PerformClick();
-            }
-        }
-
+      
         private void Add_Main_transaction()
         {
 
@@ -529,7 +453,7 @@ namespace Report_Pro.PL
             txtDiscount.Text = dtMain_.Rows[0][5].ToString();
             txtNetTotal.Text = dtMain_.Rows[0][6].ToString();
             txtStore_ID.Text = dtMain_.Rows[0][7].ToString();
-            Payment_Type.SelectedValue = dtMain_.Rows[0][11].ToString();
+            txt_PayType.ID.Text = dtMain_.Rows[0][11].ToString();
             // txt_Attn.Text = dtMain_.Rows[0][12].ToString();
             txt_custTel.Text = dtMain_.Rows[0][13].ToString();
             txt_custFax.Text = dtMain_.Rows[0][15].ToString();
@@ -569,7 +493,7 @@ namespace Report_Pro.PL
                 i = i + 1;
             }
 
-            dGV_Item.DataSource = dt;
+            gridInvoice1.dgv1.DataSource = dt;
             //resizeDG();
 
         }
@@ -898,7 +822,7 @@ namespace Report_Pro.PL
 
         private void invoice_frm_Load(object sender, EventArgs e)
         {
-
+            btn_search.Visibility = DevExpress.XtraBars.BarItemVisibility.Always;
             txt_Acc.txtMainAcc.Text = "123";
             txt_Acc.txtFinal.Text = "1";
             txt_Acc.branchID.Text = Properties.Settings.Default.BranchAccID;
@@ -906,23 +830,20 @@ namespace Report_Pro.PL
             DataTable Dt_1 = dal.getDataTabl_1(@"SELECT B.SALES_ACC_NO , PAYER_NAME FROM wh_BRANCHES AS B inner join payer2 AS P on B.SALES_ACC_NO=P.ACC_NO and B.ACC_BRANCH=P.BRANCH_code where B.BRANCH_code= '" + Properties.Settings.Default.BranchId+"'");
             if (Dt_1.Rows.Count > 0)
             {
-                txtAcc2_ID.Text = Dt_1.Rows[0][0].ToString();
-                txtAcc2_Desc.Text = Dt_1.Rows[0][1].ToString();
+                txtAcc2.ID.Text = Dt_1.Rows[0][0].ToString();
             }
             DataTable Dt_2 = dal.getDataTabl_1(@"SELECT B.Cash_acc_no , PAYER_NAME FROM wh_BRANCHES AS B inner join payer2 AS P on B.Cash_acc_no=P.ACC_NO and B.ACC_BRANCH=P.BRANCH_code where B.BRANCH_code= '" + Properties.Settings.Default.BranchId + "'");
             if (Dt_2.Rows.Count > 0)
             {
-                txt_CashAcc_ID.Text = Dt_2.Rows[0][0].ToString();
-                txt_CashAcc_Desc.Text = Dt_2.Rows[0][1].ToString();
+                txt_CashAcc.ID.Text = Dt_2.Rows[0][0].ToString();
             }
 
             DataTable Dt_3 = dal.getDataTabl_1(@"SELECT B.K_M_ACC_NO_SALES , PAYER_NAME FROM wh_BRANCHES AS B inner join payer2 AS P on B.K_M_ACC_NO_SALES=P.ACC_NO and B.ACC_BRANCH=P.BRANCH_code where B.BRANCH_code= '" + Properties.Settings.Default.BranchId + "'");
             if (Dt_3.Rows.Count>0)
             {
-                Vat_acc.Text = Dt_3.Rows[0][0].ToString();
-                Vat_acc_Desc.Text = Dt_3.Rows[0][1].ToString();
+                txt_vatAcc.ID.Text = Dt_3.Rows[0][0].ToString();
             }
-
+            txt_cyear.Text = Properties.Settings.Default.C_year;
             //txt_CashAcc.ID.Text = dal.getDataTabl_1("SELECT* FROM wh_BRANCHES where  Branch_code='" + Properties.Settings.Default.BranchId + "'").Rows[0][14].ToString();
            // Vat_acc.Text = dal.getDataTabl_1("SELECT* FROM wh_BRANCHES where  Branch_code='" + Properties.Settings.Default.BranchId + "'").Rows[0][87].ToString();
         }
@@ -945,24 +866,24 @@ namespace Report_Pro.PL
             Values('" + acc_year.Text+"', '"+txt_Acc.ID.Text+"', '"+ txtBranch_Id.Text + "','" + AccSer_No.Text + "','" + 
             Uc_Cost.ID.Text + "','" + NetValue.Text + "','" + 0 + "','" + NetValue.Text + "','" + H_Date + "','" + 
             txt_InvDate.Value.ToString("yyyy-MM-dd HH:mm:ss") + "','" + txt_InvNu.Text + "','" + Doc_Type.Text + "','" + Doc_Type.Text + txt_InvNu.Text + "','" + 
-            userID.Text + "','" + "فاتورة مبيعات " + Payment_Type.Text + " رقم " + txt_InvNu.Text + "','0','" + Doc_Type.Text + "','" + 
+            userID.Text + "','" + "فاتورة مبيعات " + txt_PayType.Desc.Text + " رقم " + txt_InvNu.Text + "','0','" + Doc_Type.Text + "','" + 
             txtStore_ID.Text + "','" + AccSer_No.Text + "')");
 
 
             dal.Execute_1(@"INSERT INTO daily_transaction ( ACC_YEAR, ACC_NO, BRANCH_code, ser_no, COST_CENTER, meno, loh,
             balance, h_date,g_date,sanad_no, SANAD_TYPE, sp_ser_no, user_name, desc2,POASTING, SOURCE_CODE, Wh_Branch_Code, MAIN_SER_NO )
-            Values('" + acc_year.Text + "', '" + txtAcc2_ID.Text + "', '" + txtBranch_Id.Text + "','" + AccSer_No.Text + "','" +
+            Values('" + acc_year.Text + "', '" + txtAcc2.ID.Text + "', '" + txtBranch_Id.Text + "','" + AccSer_No.Text + "','" +
             Uc_Cost.ID.Text + "','" + 0 + "','" + txtNetTotal.Text.ToDecimal() + "','" + -txtNetTotal.Text.ToDecimal() + "','" + H_Date + "','" +
             txt_InvDate.Value.ToString("yyyy-MM-dd HH:mm:ss") + "','" + txt_InvNu.Text + "','" + Doc_Type.Text + "','" + Doc_Type.Text + txt_InvNu.Text + "','" +
-            userID.Text + "','" + "فاتورة مبيعات " + Payment_Type.Text + " رقم " + txt_InvNu.Text + "','0','" + Doc_Type.Text + "','" +
+            userID.Text + "','" + "فاتورة مبيعات " + txt_PayType.Desc.Text + " رقم " + txt_InvNu.Text + "','0','" + Doc_Type.Text + "','" +
             txtStore_ID.Text + "','" + AccSer_No.Text + "')");
 
             dal.Execute_1(@"INSERT INTO daily_transaction ( ACC_YEAR, ACC_NO, BRANCH_code, ser_no, COST_CENTER, meno, loh,
             balance, h_date,g_date,sanad_no, SANAD_TYPE, sp_ser_no, user_name, desc2,POASTING, SOURCE_CODE, Wh_Branch_Code, MAIN_SER_NO )
-            Values('" + acc_year.Text + "', '" + Vat_acc.Text + "', '" + txtBranch_Id.Text + "','" + AccSer_No.Text + "','" +
+            Values('" + acc_year.Text + "', '" + txt_vatAcc.ID.Text + "', '" + txtBranch_Id.Text + "','" + AccSer_No.Text + "','" +
             Uc_Cost.ID.Text + "','" + 0 + "','" + Net_Vat.Text.ToDecimal() + "','" + -Net_Vat.Text.ToDecimal() + "','" + H_Date + "','" +
             txt_InvDate.Value.ToString("yyyy-MM-dd HH:mm:ss") + "','" + txt_InvNu.Text + "','" + Doc_Type.Text + "','" + Doc_Type.Text + txt_InvNu.Text + "','" +
-            userID.Text + "','" + "ضريبة فاتورة مبيعات " + Payment_Type.Text + " رقم " + txt_InvNu.Text + "','0','" + Doc_Type.Text + "','" +
+            userID.Text + "','" + "ضريبة فاتورة مبيعات " + txt_PayType.Desc.Text + " رقم " + txt_InvNu.Text + "','0','" + Doc_Type.Text + "','" +
             txtStore_ID.Text + "','" + AccSer_No.Text + "')");
 
 
@@ -984,7 +905,7 @@ namespace Report_Pro.PL
             txt_Acc.ID.Text = dtMain_.Rows[0][8].ToString();
             txt_InvNot.Text = dtMain_.Rows[0]["Costomer_Notes"].ToString();
             txtStore_ID.Text = dtMain_.Rows[0]["Branch_code"].ToString();
-            Payment_Type.SelectedValue = dtMain_.Rows[0]["Payment_Type"].ToString();
+            txt_PayType.ID.Text = dtMain_.Rows[0]["Payment_Type"].ToString();
             txt_custTel.Text = dtMain_.Rows[0]["Costomer_Phone"].ToString();
             txt_custFax.Text = dtMain_.Rows[0]["Costmer_fax"].ToString();
             txt_CustEmail.Text = dtMain_.Rows[0]["E_mail"].ToString();
@@ -1027,8 +948,8 @@ namespace Report_Pro.PL
                 i = i + 1;
             }
 
-            dGV_Item.DataSource = dt;
-            total_inv();
+            gridInvoice1.dgv1.DataSource = dt;
+            gridInvoice1.total_inv();
 
         }
 
@@ -1044,26 +965,26 @@ namespace Report_Pro.PL
 
         private void txtStore_ID_TextChanged(object sender, EventArgs e)
         {
-            try
-            {
+            //try
+            //{
 
-                DataTable dt = dal.getDataTabl("GetStores", txtStore_ID.Text.ToString());
-                if (dt.Rows.Count > 0)
-                {
-                    // txtStore_Desc.Text = dt.Rows[0][2].ToString();
-                    txtAcc2_ID.Text = dt.Rows[0][9].ToString();
-                    txt_CashAcc_ID.Text = dt.Rows[0][12].ToString();
-                    txt_CustAcc_ID.Text = dt.Rows[0][13].ToString();
-                }
-                else
-                {
-                    // txtStore_Desc.Text = "";
-                }
-            }
-            catch
-            {
+            //    DataTable dt = dal.getDataTabl("GetStores", txtStore_ID.Text.ToString());
+            //    if (dt.Rows.Count > 0)
+            //    {
+            //        // txtStore_Desc.Text = dt.Rows[0][2].ToString();
+            //        txtAcc2_ID.Text = dt.Rows[0][9].ToString();
+            //        txt_CashAcc_ID.Text = dt.Rows[0][12].ToString();
+            //        txt_CustAcc_ID.Text = dt.Rows[0][13].ToString();
+            //    }
+            //    else
+            //    {
+            //        // txtStore_Desc.Text = "";
+            //    }
+            //}
+            //catch
+            //{
 
-            }
+            //}
         }
 
         private void tabControlPanel1_Click(object sender, EventArgs e)
@@ -1073,221 +994,51 @@ namespace Report_Pro.PL
 
         private void TxtDisc_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Enter)
-            {
-                clculat_amount();
+            //if (e.KeyCode == Keys.Enter)
+            //{
+            //    clculat_amount();
 
-                if (btntype == "0")
-                {
-                    if (chb1.Checked == false) {
-                        if (TxtPrice.Value <= 0)
-                        {
-                            MessageBox.Show("تأكد من السعر", "تنبية !!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                            return;
-                        }
-                        for (int i = 0; i <= dGV_Item.Rows.Count - 1; i++)
-                        {
-                            if (dGV_Item.Rows[i].Cells[0].Value.ToString() == TxtId.Text)
-                            {
-                                MessageBox.Show("هذا الصنف مضاف من قبل", "تنبية !!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                                return;
-                            }
-                        }
-                    }
-                    addrow_new();
-                    btntype = "0";
+            //    if (btntype == "0")
+            //    {
+            //        if (chb1.Checked == false) {
+            //            if (TxtPrice.Value <= 0)
+            //            {
+            //                MessageBox.Show("تأكد من السعر", "تنبية !!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            //                return;
+            //            }
+            //            for (int i = 0; i <= dGV_Item.Rows.Count - 1; i++)
+            //            {
+            //                if (dGV_Item.Rows[i].Cells[0].Value.ToString() == TxtId.Text)
+            //                {
+            //                    MessageBox.Show("هذا الصنف مضاف من قبل", "تنبية !!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            //                    return;
+            //                }
+            //            }
+            //        }
+            //        addrow_new();
+            //        btntype = "0";
 
 
-                }
-                else if (btntype == "1")
-                {
-                    editrow();
-                    btntype = "0";
+            //    }
+            //    else if (btntype == "1")
+            //    {
+            //        editrow();
+            //        btntype = "0";
 
-                }
-                chb1.Checked = false;
-            }
+            //    }
+            //    chb1.Checked = false;
+            //}
         }
 
 
        
       
 
-        void clculat_amount()
-        {
-            try
-            {
-                txt_subTOt.Text = (TxtQty.Text.ToDecimal() * TxtPrice.Text.ToDecimal()).ToString("N" + dal.digits_);
-                Txtvalue.Text = (TxtQty.Text.ToDecimal() * TxtPrice.Text.ToDecimal() - TxtDisc.Text.ToDecimal()).ToString("N" + dal.digits_);
-                VatValue.Text = (Txtvalue.Text.ToDecimal() * VatRate.Text.ToDecimal()).ToString("N" + dal.digits_);
-                totWeight.Text = (TxtQty.Text.ToDecimal() * Weight_.Text.ToDecimal()).ToString("N3");
-            }
-            catch
-            {
-                return;
-            }
-        }
-        void addrow_new()
-        {
-            DataRow r = dt.NewRow();
-            r[0] = TxtId.Text;
-            r[1] = TxtDesc.Text;
-            r[2] = txtNote.Text;
-            r[3] = txtUnit.Text;
-            r[4] = Weight_.Text.ToDecimal().ToString("N3");
-            r[5] = TxtQty.Text.ToDecimal().ToString("N0");
-            r[6] = TxtPrice.Text.ToDecimal().ToString("N" + dal.digits_);
-            r[7] = Price_ton.Text.ToDecimal().ToString("N0");
-            r[8] = txt_subTOt.Text.ToDecimal().ToString("N" + dal.digits_); ;
-            r[9] = TxtDisc.Text.ToDecimal().ToString("N" + dal.digits_); ;
-            r[10] = Txtvalue.Text.ToDecimal().ToString("N" + dal.digits_); ;
-            r[11] = VatRate.Text.ToDecimal().ToString("N2"); ;
-            r[12] = VatValue.Text.ToDecimal().ToString("N" + dal.digits_); ;
-            r[13] = totWeight.Text.ToDecimal().ToString("N3"); ;
-            r[14] = txtBalance.Text.ToDecimal().ToString("N0"); ;
-            r[15] = txtCost.Text.ToDecimal().ToString("N" + dal.digits_); ;
-            r[16] = KM_TYPE_ITEMS.Text;
-         
-
-            dt.Rows.Add(r);
-            dGV_Item.DataSource = dt;
-            clear_texts();
-            btn_braws.Focus();
-            total_inv();
-            resizeDG();
-        }
-
-        void editrow()
-        {
-            dGV_Item.Rows[m].Cells[0].Value = TxtId.Text;
-            dGV_Item.Rows[m].Cells[1].Value = TxtDesc.Text;
-            dGV_Item.Rows[m].Cells[2].Value = txtNote.Text;
-            dGV_Item.Rows[m].Cells[3].Value = txtUnit.Text;
-            dGV_Item.Rows[m].Cells[4].Value = Weight_.Text.ToDecimal().ToString("N3");
-            dGV_Item.Rows[m].Cells[5].Value = TxtQty.Text.ToDecimal().ToString("N0");
-            dGV_Item.Rows[m].Cells[6].Value = TxtPrice.Text.ToDecimal().ToString("N" + dal.digits_);
-            dGV_Item.Rows[m].Cells[7].Value = Price_ton.Text.ToDecimal().ToString("N0");
-            dGV_Item.Rows[m].Cells[8].Value = txt_subTOt.Text.ToDecimal().ToString("N" + dal.digits_);
-            dGV_Item.Rows[m].Cells[9].Value = TxtDisc.Text.ToDecimal().ToString("N" + dal.digits_);
-            dGV_Item.Rows[m].Cells[10].Value = Txtvalue.Text.ToDecimal().ToString("N" + dal.digits_);
-            dGV_Item.Rows[m].Cells[11].Value = VatRate.Text.ToDecimal().ToString("N2");
-            dGV_Item.Rows[m].Cells[12].Value = VatValue.Text.ToDecimal().ToString("N" + dal.digits_); 
-            dGV_Item.Rows[m].Cells[13].Value = totWeight.Text.ToDecimal().ToString("N3");
-            dGV_Item.Rows[m].Cells[14].Value = txtBalance.Text.ToDecimal().ToString("N0");
-            dGV_Item.Rows[m].Cells[15].Value = txtCost.Text.ToDecimal().ToString("N" + dal.digits_);
-            dGV_Item.Rows[m].Cells[16].Value = KM_TYPE_ITEMS.Text;
 
 
-            total_inv();
-            clear_texts();
-            btn_braws.Focus();
-            resizeDG();
+   
 
-        }
-
-
-
-        private void total_inv()
-        {
-
-            TxtTotal.Text =
-               (from DataGridViewRow row in dGV_Item.Rows
-                where row.Cells[8].FormattedValue.ToString() != string.Empty
-                select Convert.ToDouble(row.Cells[8].FormattedValue)).Sum().ToString();
-            txtDiscount_1.Text =
-                (from DataGridViewRow row in dGV_Item.Rows
-                 where row.Cells[9].FormattedValue.ToString() != string.Empty
-                 select Convert.ToDouble(row.Cells[9].FormattedValue)).Sum().ToString();
-
-
-
-
-            if (TxtTotal.Text.ToDecimal() > 0)
-            {
-                ////disc_Rate.Text = (txtDiscount.Text.ToDecimal() /NetValue.Text.ToDecimal()).ToString();
-                disc_Rate.Text = ((txtDiscount.Text.ToDecimal() / 1.05.ToString().ToDecimal()) / (TxtTotal.Text.ToDecimal() - txtDiscount_1.Text.ToDecimal())).ToString();
-                
-            }
-            txtNetTotal.Text = (TxtTotal.Text.ToDecimal() - txtDiscount_1.Text.ToDecimal() - (txtDiscount.Text.ToDecimal() / 1.05.ToString().ToDecimal())).ToString("N"+dal.digits_);
-
-
-            for (int i = 0; i <= dGV_Item.Rows.Count - 1; i++)
-            {
-                if (dGV_Item.Rows[i].Cells[0].Value != null && dGV_Item.Rows[i].Cells[4].Value.ToString().ToDecimal() > 0
-                   && dGV_Item.Rows[i].Cells[5].Value.ToString().ToDecimal() > 0)
-                {
-                    if (dGV_Item.Rows[i].Cells[11].Value.ToString().ToDecimal() > Cust_Vat_Rate.Text.ToDecimal())
-                    {
-                        dGV_Item.Rows[i].Cells[12].Value = Math.Round((dGV_Item.Rows[i].Cells[10].Value.ToString().ToDecimal() * Cust_Vat_Rate.Text.ToDecimal() * (1 - disc_Rate.Text.ToDecimal())), 3);
-                    }
-                    else
-                    {
-                        dGV_Item.Rows[i].Cells[12].Value = Math.Round((dGV_Item.Rows[i].Cells[10].Value.ToString().ToDecimal() * dGV_Item.Rows[i].Cells[11].Value.ToString().ToDecimal() * (1 - disc_Rate.Text.ToDecimal())), 3);
-                    }
-                }
-            }
-            Net_Vat.Text =
-                (from DataGridViewRow row in dGV_Item.Rows
-                 where row.Cells[12].FormattedValue.ToString() != string.Empty
-                 select Convert.ToDouble(row.Cells[12].FormattedValue)).Sum().ToString("N" + dal.digits_);
-
-            NetValue.Text = (txtNetTotal.Text.ToDecimal() + Net_Vat.Text.ToDecimal()).ToString("N" + dal.digits_);
-
-            if (Convert.ToString(Payment_Type.SelectedValue) == "2")
-            {
-                paied_amount.Text = "0";
-            }
-            else if (Convert.ToString(Payment_Type.SelectedValue) == "11" || Convert.ToString(Payment_Type.SelectedValue) == "12")
-            {
-                paied_amount.Text = NetValue.Text;
-            }
-
-            balance_amount.Text = (NetValue.Text.ToDecimal() - paied_amount.Text.ToDecimal()).ToString();
-
-
-        }
-        void clear_texts()
-        {
-            TxtId.Clear();
-            TxtDesc.Clear();
-            txtNote.Clear();
-            txtUnit.Clear();
-            TxtQty.Value=0;
-            TxtPrice.Value = 0;
-            txt_subTOt.Clear();
-            TxtDisc.Value = 0;
-            Txtvalue.Clear();
-            VatRate.Clear();
-            VatValue.Clear();
-            txtBalance.Clear();
-            txtCost.Clear();
-
-        }
-
-        void resizeDG()
-        {
-
-            this.dGV_Item.Columns[0].Width = this.TxtId.Width;
-            this.dGV_Item.Columns[1].Width = this.TxtDesc.Width;
-            this.dGV_Item.Columns[2].Width = this.txtNote.Width;
-            this.dGV_Item.Columns[3].Width = this.txtUnit.Width;
-            this.dGV_Item.Columns[4].Width = this.Weight_.Width;
-            this.dGV_Item.Columns[5].Width = this.TxtQty.Width;
-            this.dGV_Item.Columns[6].Width = this.TxtPrice.Width;
-            this.dGV_Item.Columns[7].Width = this.Price_ton.Width;
-            this.dGV_Item.Columns[8].Width = this.txt_subTOt.Width;
-            this.dGV_Item.Columns[9].Width = this.TxtDisc.Width;
-            this.dGV_Item.Columns[10].Width = this.Txtvalue.Width;
-            this.dGV_Item.Columns[11].Width = this.VatRate.Width;
-            this.dGV_Item.Columns[12].Width = this.VatValue.Width;
-            this.dGV_Item.Columns[13].Width = this.totWeight.Width;
-            this.dGV_Item.Columns[14].Width = this.txtBalance.Width;
-            this.dGV_Item.Columns[15].Width = this.txtCost.Width;
-            this.dGV_Item.Columns[16].Visible = false;
-
-
-        }
-
+     
         void creatDattable()
         {
             dt.Columns.Add("رقم الصنف");
@@ -1307,221 +1058,11 @@ namespace Report_Pro.PL
             dt.Columns.Add("الرصيد");
             dt.Columns.Add("التكلفة");
             dt.Columns.Add("كود القيمة المضافة");
-            dGV_Item.DataSource = dt;
+            gridInvoice1.dgv1.DataSource = dt;
         }
 
-        private void TxtQty_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Enter && TxtQty.Value > 0)
-            {
-
-                TxtPrice.Focus();
-            }
-        }
-
-        private void TxtQty_KeyUp(object sender, KeyEventArgs e)
-        {
-            clculat_amount();
+    
         
-        }
-
-        private void TxtPrice_KeyUp(object sender, KeyEventArgs e)
-        {
-            clculat_amount();
-            //get_B_C();
-        }
-
-        private void TxtDisc_KeyUp(object sender, KeyEventArgs e)
-        {
-           
-            clculat_amount();
-            //get_B_C();
-        }
-
-        private void TxtPrice_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Enter && TxtPrice.Text != string.Empty)
-            {
-                TxtDisc.Focus();
-            }
-
-            if (e.KeyCode == Keys.F1)
-            {
-                PL.list_H_price item_h_price = new PL.list_H_price();
-                item_h_price.dataGridView1.DataSource = dal.getDataTabl("item_H_prices_sales", TxtId.Text, txt_Acc.ID.Text);
-                item_h_price.ShowDialog();
-
-
-            }
-
-            if (e.KeyCode == Keys.F2)
-            {
-               
-
-                PL.list_H_price item_h_price = new PL.list_H_price();
-                item_h_price.dataGridView1.DataSource = dal.getDataTabl("item_H_prices_sales", TxtId.Text,"%");
-                item_h_price.ShowDialog();
-
-
-
-            }
-
-        }
-
-        private void TxtId_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Enter && TxtId.Text != "")
-            {
-
-                get_ItemData(TxtId.Text);
-
-            }
-            //if (e.KeyCode == Keys.Enter && TxtId.Text != string.Empty)
-            //{
-            //    DataTable dt = dal.getDataTabl("get_product_name", TxtId.Text, Properties.Settings.Default.StoreID);
-            //    if (dt.Rows.Count > 0)
-            //    {
-            //        if (Properties.Settings.Default.lungh == "0")
-            //        {
-            //            TxtId.Text = dt.Rows[0][0].ToString();
-            //            TxtDesc.Text = dt.Rows[0][2].ToString();
-            //            VatRate.Text = dt.Rows[0][13].ToString();
-            //            cmb_unit.SelectedValue = dt.Rows[0][8].ToString();
-
-            //        }
-            //        else
-            //        {
-
-            //            TxtId.Text = dt.Rows[0][0].ToString();
-            //            TxtDesc.Text = dt.Rows[0][3].ToString();
-            //            VatRate.Text = dt.Rows[0][13].ToString();
-            //            cmb_unit.SelectedValue = dt.Rows[0][8].ToString();
-
-            //        }
-            //        get_B_C();
-            //        txtNote.Focus();
-
-
-            //    }
-            //    else
-            //    {
-            //        btn_braws.PerformClick();
-            //    }
-
-
-            //}
-        }
-
-        private void get_B_C()
-        {
-            string StockItem = dal.getDataTabl_1("select stock_Kind from Product_Tbl where Id_Pro='" + TxtId.Text + "'").Rows[0][0].ToString();
-            if (StockItem == "01")
-            {
-                DataTable dt_B_c = new DataTable();
-                dt_B_c = dal.getDataTabl("getBalnceAndCost", TxtId.Text, txtStore_ID.Text);
-                if (dt_B_c.Rows.Count > 0)
-                {
-                    txtBalance.Text = dt_B_c.Rows[0][0].ToString().ToDecimal().ToString("N" + Properties.Settings.Default.digitNo_);
-                    txtCost.Text = dt_B_c.Rows[0][1].ToString().ToDecimal().ToString("N" + Properties.Settings.Default.digitNo_);
-                    old_balance = Convert.ToDecimal(dt_B_c.Rows[0][0].ToString().ToDecimal().ToString("N" + Properties.Settings.Default.digitNo_));
-                    old_cost = Convert.ToDecimal(dt_B_c.Rows[0][1].ToString().ToDecimal().ToString("N" + Properties.Settings.Default.digitNo_));
-                }
-                else
-                {
-                    txtBalance.Text = "0".ToDecimal().ToString("N" + Properties.Settings.Default.digitNo_);
-                    txtCost.Text = "0".ToDecimal().ToString("N" + Properties.Settings.Default.digitNo_);
-                    old_balance = Convert.ToDecimal("0".ToDecimal().ToString("N" + Properties.Settings.Default.digitNo_));
-                    old_cost = Convert.ToDecimal("0".ToDecimal().ToString("N" + Properties.Settings.Default.digitNo_));
-                }
-                new_balance = old_balance - TxtQty.Text.ToDecimal();
-                new_cost = old_cost;
-                txtBalance.Text = new_balance.ToString("N" + Properties.Settings.Default.digitNo_);
-                txtCost.Text = new_cost.ToString("N" + Properties.Settings.Default.digitNo_);
-            }
-            else 
-            {
-                txtBalance.Text = "0".ToDecimal().ToString("N" + Properties.Settings.Default.digitNo_);
-                txtCost.Text = "0".ToDecimal().ToString("N" + Properties.Settings.Default.digitNo_);
-
-            }  
-        }
-
-
-        private void btn_braws_Click(object sender, EventArgs e)
-        {
-
-            try
-            {
-                clear_texts();
-
-                PL.frm_search_items frm = new PL.frm_search_items();
-                frm.ShowDialog();
-                get_ItemData(frm.dGV_pro_list.CurrentRow.Cells[0].Value.ToString());
-            }
-            catch
-            {
-                return;
-            }
-
-            ////try
-            ////{
-            //clear_texts();
-            //product_list_frm frm = new product_list_frm();
-            //frm.ShowDialog();
-            //this.TxtId.Text = frm.dGV_pro_list.CurrentRow.Cells[0].Value.ToString();
-            //this.TxtDesc.Text = frm.dGV_pro_list.CurrentRow.Cells[2].Value.ToString();
-            //this.txtUnit.Text = frm.dGV_pro_list.CurrentRow.Cells[8].Value.ToString();
-            //this.VatRate.Text = frm.dGV_pro_list.CurrentRow.Cells[11].Value.ToString();
-            
-            //get_B_C();
-            //txtNote.Focus();
-           
-        }
-
-        private void dGV_Item_DoubleClick(object sender, EventArgs e)
-        {
-
-            btntype = "1";
-            m = dGV_Item.CurrentRow.Index;
-            //try
-            //{
-                //DataTable itemdata_ = dal.getDataTabl("get_product_name", dGV_Item.CurrentRow.Cells[0].Value.ToString(), Properties.Settings.Default.CoId);
-                TxtId.Text = dGV_Item.CurrentRow.Cells[0].Value.ToString();
-                TxtDesc.Text = dGV_Item.CurrentRow.Cells[1].Value.ToString();
-                txtNote.Text = dGV_Item.CurrentRow.Cells[2].Value.ToString();
-                txtUnit.Text = dGV_Item.CurrentRow.Cells[3].Value.ToString();
-                Weight_.Text = dGV_Item.CurrentRow.Cells[4].Value.ToString();
-                TxtQty.Text = dGV_Item.CurrentRow.Cells[5].Value.ToString();
-                TxtPrice.Text = dGV_Item.CurrentRow.Cells[6].Value.ToString();
-                Price_ton.Text = dGV_Item.CurrentRow.Cells[7].Value.ToString().ToDecimal().ToString("N0");
-                txt_subTOt.Text = dGV_Item.CurrentRow.Cells[8].Value.ToString();
-                TxtDisc.Text = dGV_Item.CurrentRow.Cells[9].Value.ToString().ToDecimal().ToString("N"+dal.digits_); ;
-                Txtvalue.Text = dGV_Item.CurrentRow.Cells[10].Value.ToString();
-                VatRate.Text = dGV_Item.CurrentRow.Cells[11].Value.ToString();
-                VatValue.Text = dGV_Item.CurrentRow.Cells[12].Value.ToString();
-                totWeight.Text = dGV_Item.CurrentRow.Cells[13].Value.ToString();
-                txtBalance.Text = dGV_Item.CurrentRow.Cells[14].Value.ToString();
-                txtCost.Text = dGV_Item.CurrentRow.Cells[15].Value.ToString();
-                KM_TYPE_ITEMS.Text = dGV_Item.CurrentRow.Cells[16].Value.ToString();
-                TxtId.Focus();
-            //}
-            //catch
-            //{
-            //    return;
-            //}
-        }
-
-
-        private void txtNote_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Enter)
-            {
-
-                TxtQty.Focus();
-            }
-        }
-
-      
         private void print_sand_Click(object sender, EventArgs e)
         {
             try
@@ -1599,42 +1140,44 @@ namespace Report_Pro.PL
 
         }
 
+        private void groupPanel6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_Srearch_Click(object sender, EventArgs e)
+        {
+            DataTable dt_search = dal.getDataTabl_1(@"select Ser_no ,Branch_code ,Transaction_code ,Cyear ,G_date ,ACC_TYPE,Acc_no ,Acc_Branch_code,Payment_Type,Sales_man_Id
+            ,Inv_no,Inv_date,acc_serial_no,User_id,NetAmount,PanyedAmount,Cash_costomer_name ,total_cost,Inv_Notes,Costmer_No
+            ,K_M_ACC_NO,K_M_Credit_TAX,K_M_Debit_TAX,COSTMER_K_M_NO,KM_CODE_ACC,MAIN_KM_CODE  
+            from wh_inv_data where Cyear ='"+txt_cyear.Text+"' and Transaction_code = '"+searchTransaction.Text +"' and Branch_code ='"+txtStore_ID.Text+"'  and  Ser_no = '"+txtsearch.Text.Trim()+"'");
+
+            if(dt_search.Rows.Count > 0)
+            {
+                txt_InvNot.Text = dt_search.Rows[0]["Ser_no"].ToString();
+                txt_InvDate.Text = dt_search.Rows[0]["G_date"].ToString();
+                Doc_Type.Text = dt_search.Rows[0]["Transaction_code"].ToString();
+                txt_PayType.ID.Text = dt_search.Rows[0]["Payment_Type"].ToString();
+            }
+            groupBox1.Visible = false;
+        }
+
         private void BtnAttache_Click(object sender, EventArgs e)
         {
             ////string date = Program.ConvertDateCalendar(txt_InvDate.Value, "Hijri", "en-US");
             //MessageBox.Show(date);
         }
 
-        private void Price_ton_KeyUp(object sender, KeyEventArgs e)
+        private void PayType_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (e.KeyCode != Keys.Enter)
+            if (Convert.ToString(PayType.SelectedValue).StartsWith("1") )
             {
-                if (Weight_.Value > 0)
-                {
-                    TxtPrice.Value = Price_ton.Value * Weight_.Value / 1000;
-                }
-                else
-                {
-
-                    MessageBox.Show("فضلا.. تاكد من الوزن ", "خطأ !!", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    Price_ton.PerformClick(); ;
-                }
+                searchTransaction.Text = "xsc";
             }
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Net_Vat_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
+            else if (Convert.ToString(PayType.SelectedValue) == "2")
+            {
+                searchTransaction.Text = "xsd";
+            }
         }
 
         private void Uc_Customer_Load(object sender, EventArgs e)
@@ -1653,8 +1196,8 @@ namespace Report_Pro.PL
                     if (txt_Acc.ID.Text == Acc_cash)
                     {
                         cashCustomer.Enabled = true;
-                        Payment_Type.SelectedValue = "11";
-                        Payment_Type.Enabled = false;
+                        txt_PayType.ID.Text = "11";
+                        txt_PayType.Enabled = false;
                         Vat_Class.Text = dt_cust.Rows[0][68].ToString();
                         Vat_Class_Desc.Text = dt_cust.Rows[0][69].ToString();
                         if (dt_cust.Rows[0][70].ToString() == string.Empty)
@@ -1668,8 +1211,8 @@ namespace Report_Pro.PL
                     else
                     {
                         cashCustomer.Enabled = false;
-                        Payment_Type.SelectedValue = "2";
-                        Payment_Type.Enabled = true;
+                        txt_PayType.ID.Text = "2";
+                        txt_PayType.Enabled = true;
 
                         txt_custTel.Text = dt_cust.Rows[0][14].ToString();
                         txt_address.Text = dt_cust.Rows[0][11].ToString();
@@ -1705,7 +1248,7 @@ namespace Report_Pro.PL
 
 
                 }
-                total_inv();
+                gridInvoice1.total_inv();
             }
         }
 
@@ -1735,32 +1278,14 @@ namespace Report_Pro.PL
             //BranchId.Text = Properties.Settings.Default.BranchId;
         }
 
-      
-
-     
-       
-        private void Btn_DelRow_Click(object sender, EventArgs e)
+        public override void Search()
         {
-            if (this.dGV_Item.SelectedRows.Count > 0)
-            {
-                dGV_Item.Rows.RemoveAt(this.dGV_Item.SelectedRows[0].Index);
-                total_inv();
-                foreach (DataGridViewRow row in this.dGV_Item.Rows)
-                {
-                    row.HeaderCell.Value = string.Format("{0}", row.Index + 1);
-                }
-            }
+            groupBox1.Visible = true;
+
+            base.Search();
         }
 
-     
 
-      
-
-       
-      
-
-      
-        
     }
 }
 

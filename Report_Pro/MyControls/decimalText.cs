@@ -9,13 +9,13 @@ using System.Windows.Forms;
 
 namespace Report_Pro.MyControls
 {
-    public class decimalText : TextBox
+    public class decimalText :TextBox
     {
         //DAL.DataAccesslayer1 dal = new DAL.DataAccesslayer1();
         //[Browsable(true)]
         //[Category("Extended Properties")]
         //[Description("Set TextBox border Color")]
-       
+        int proDigits = Properties.Settings.Default.digitNo_;
 
       
 
@@ -43,6 +43,30 @@ namespace Report_Pro.MyControls
                
             }
         }
+
+        public double _mini;
+        public double minimumNumber
+        {
+            get { return _mini; }
+            set
+            {
+                _mini = value;
+
+            }
+        }
+
+        public double _max;
+        public double maxmumNumber
+        {
+            get { return _max; }
+            set
+            {
+                _max = value;
+
+            }
+        }
+
+
 
 
         private Boolean ProDigits;
@@ -73,8 +97,8 @@ namespace Report_Pro.MyControls
             int nd = 0;
              if (ProDigits == true)
             {
-               nd = _digit;
-    }
+               nd = proDigits;
+           }
             else
             {
                nd = _digit;
@@ -98,12 +122,15 @@ namespace Report_Pro.MyControls
 
         private void UserControl1_KeyPress(object sender, KeyPressEventArgs e)
         {
+
+
+            
             string senderText = (sender as TextBox).Text;
             string senderName = (sender as TextBox).Name;
             string[] splitByDecimal = senderText.Split('.');
             int cursorPosition = (sender as TextBox).SelectionStart;
 
-
+            
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) &&
            (e.KeyChar != '.'))
             {

@@ -272,6 +272,8 @@ namespace Report_Pro.DAL
         }
 
 
+      
+
         public void Execute_1_test(string sp)
         {
            
@@ -325,7 +327,7 @@ namespace Report_Pro.DAL
             throw new NotImplementedException();
         }
 
-
+        public string btnType;
 
         public  int digits_ = Properties.Settings.Default.digitNo_;
      

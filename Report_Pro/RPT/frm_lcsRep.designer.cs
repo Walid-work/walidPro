@@ -38,6 +38,8 @@ namespace Report_Pro.RPT
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_lcsRep));
             this.groupPanel1 = new DevComponents.DotNetBar.Controls.GroupPanel();
+            this.btnReport_ = new DevComponents.DotNetBar.ButtonX();
+            this.btnOption_ = new DevComponents.DotNetBar.ButtonX();
             this.crystalReportViewer1 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
             this.groupPanel2 = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.comb1 = new DevComponents.DotNetBar.Controls.ComboBoxEx();
@@ -52,8 +54,6 @@ namespace Report_Pro.RPT
             this.fromDate = new DevComponents.Editors.DateTimeAdv.DateTimeInput();
             this.labelX2 = new DevComponents.DotNetBar.LabelX();
             this.labelX1 = new DevComponents.DotNetBar.LabelX();
-            this.btnReport = new DevComponents.DotNetBar.ButtonX();
-            this.btnOption = new DevComponents.DotNetBar.ButtonX();
             this.groupPanel1.SuspendLayout();
             this.groupPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.toDate)).BeginInit();
@@ -62,11 +62,11 @@ namespace Report_Pro.RPT
             // 
             // groupPanel1
             // 
-            resources.ApplyResources(this.groupPanel1, "groupPanel1");
             this.groupPanel1.CanvasColor = System.Drawing.SystemColors.Control;
             this.groupPanel1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
-            this.groupPanel1.Controls.Add(this.btnReport);
-            this.groupPanel1.Controls.Add(this.btnOption);
+            this.groupPanel1.Controls.Add(this.btnReport_);
+            this.groupPanel1.Controls.Add(this.btnOption_);
+            resources.ApplyResources(this.groupPanel1, "groupPanel1");
             this.groupPanel1.Name = "groupPanel1";
             // 
             // 
@@ -89,17 +89,36 @@ namespace Report_Pro.RPT
             this.groupPanel1.Style.TextColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
             this.groupPanel1.Style.TextLineAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Near;
             // 
+            // btnReport_
+            // 
+            this.btnReport_.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnReport_.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnReport_.Image = global::Report_Pro.Properties.Resources.Reports1;
+            this.btnReport_.ImageFixedSize = new System.Drawing.Size(24, 24);
+            resources.ApplyResources(this.btnReport_, "btnReport_");
+            this.btnReport_.Name = "btnReport_";
+            this.btnReport_.Click += new System.EventHandler(this.btnReport_Click);
+            // 
+            // btnOption_
+            // 
+            this.btnOption_.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnOption_.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnOption_.Image = global::Report_Pro.Properties.Resources.choose;
+            this.btnOption_.ImageFixedSize = new System.Drawing.Size(24, 24);
+            resources.ApplyResources(this.btnOption_, "btnOption_");
+            this.btnOption_.Name = "btnOption_";
+            this.btnOption_.Click += new System.EventHandler(this.btnOption_Click);
+            // 
             // crystalReportViewer1
             // 
-            resources.ApplyResources(this.crystalReportViewer1, "crystalReportViewer1");
             this.crystalReportViewer1.ActiveViewIndex = -1;
             this.crystalReportViewer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.crystalReportViewer1.Cursor = System.Windows.Forms.Cursors.Default;
+            resources.ApplyResources(this.crystalReportViewer1, "crystalReportViewer1");
             this.crystalReportViewer1.Name = "crystalReportViewer1";
             // 
             // groupPanel2
             // 
-            resources.ApplyResources(this.groupPanel2, "groupPanel2");
             this.groupPanel2.BackColor = System.Drawing.Color.Transparent;
             this.groupPanel2.CanvasColor = System.Drawing.SystemColors.Control;
             this.groupPanel2.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
@@ -112,6 +131,7 @@ namespace Report_Pro.RPT
             this.groupPanel2.Controls.Add(this.fromDate);
             this.groupPanel2.Controls.Add(this.labelX2);
             this.groupPanel2.Controls.Add(this.labelX1);
+            resources.ApplyResources(this.groupPanel2, "groupPanel2");
             this.groupPanel2.Name = "groupPanel2";
             // 
             // 
@@ -137,10 +157,10 @@ namespace Report_Pro.RPT
             // 
             // comb1
             // 
-            resources.ApplyResources(this.comb1, "comb1");
             this.comb1.DisplayMember = "Text";
             this.comb1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.comb1.FormattingEnabled = true;
+            resources.ApplyResources(this.comb1, "comb1");
             this.comb1.Items.AddRange(new object[] {
             this.comboItem1,
             this.comboItem2,
@@ -171,42 +191,25 @@ namespace Report_Pro.RPT
             // 
             // txtSupplier
             // 
-            resources.ApplyResources(this.txtSupplier, "txtSupplier");
             this.txtSupplier.BackColor = System.Drawing.Color.Transparent;
-            this.txtSupplier.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            resources.ApplyResources(this.txtSupplier, "txtSupplier");
             this.txtSupplier.Name = "txtSupplier";
             // 
             // txtBank
             // 
-            resources.ApplyResources(this.txtBank, "txtBank");
             this.txtBank.BackColor = System.Drawing.Color.Transparent;
-            this.txtBank.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            resources.ApplyResources(this.txtBank, "txtBank");
             this.txtBank.Name = "txtBank";
             // 
             // toDate
             // 
-            resources.ApplyResources(this.toDate, "toDate");
             // 
             // 
             // 
             this.toDate.BackgroundStyle.Class = "DateTimeInputBackground";
-            this.toDate.ButtonClear.DisplayPosition = ((int)(resources.GetObject("toDate.ButtonClear.DisplayPosition")));
-            this.toDate.ButtonClear.Image = ((System.Drawing.Image)(resources.GetObject("toDate.ButtonClear.Image")));
-            this.toDate.ButtonClear.Text = resources.GetString("toDate.ButtonClear.Text");
-            this.toDate.ButtonCustom.DisplayPosition = ((int)(resources.GetObject("toDate.ButtonCustom.DisplayPosition")));
-            this.toDate.ButtonCustom.Image = ((System.Drawing.Image)(resources.GetObject("toDate.ButtonCustom.Image")));
-            this.toDate.ButtonCustom.Text = resources.GetString("toDate.ButtonCustom.Text");
-            this.toDate.ButtonCustom2.DisplayPosition = ((int)(resources.GetObject("toDate.ButtonCustom2.DisplayPosition")));
-            this.toDate.ButtonCustom2.Image = ((System.Drawing.Image)(resources.GetObject("toDate.ButtonCustom2.Image")));
-            this.toDate.ButtonCustom2.Text = resources.GetString("toDate.ButtonCustom2.Text");
-            this.toDate.ButtonDropDown.DisplayPosition = ((int)(resources.GetObject("toDate.ButtonDropDown.DisplayPosition")));
-            this.toDate.ButtonDropDown.Image = ((System.Drawing.Image)(resources.GetObject("toDate.ButtonDropDown.Image")));
             this.toDate.ButtonDropDown.Shortcut = DevComponents.DotNetBar.eShortcut.AltDown;
-            this.toDate.ButtonDropDown.Text = resources.GetString("toDate.ButtonDropDown.Text");
             this.toDate.ButtonDropDown.Visible = true;
-            this.toDate.ButtonFreeText.DisplayPosition = ((int)(resources.GetObject("toDate.ButtonFreeText.DisplayPosition")));
-            this.toDate.ButtonFreeText.Image = ((System.Drawing.Image)(resources.GetObject("toDate.ButtonFreeText.Image")));
-            this.toDate.ButtonFreeText.Text = resources.GetString("toDate.ButtonFreeText.Text");
+            resources.ApplyResources(this.toDate, "toDate");
             // 
             // 
             // 
@@ -215,9 +218,7 @@ namespace Report_Pro.RPT
             // 
             // 
             this.toDate.MonthCalendar.BackgroundStyle.BackColor = System.Drawing.SystemColors.Window;
-            this.toDate.MonthCalendar.Category = resources.GetString("toDate.MonthCalendar.Category");
             this.toDate.MonthCalendar.ClearButtonVisible = true;
-            this.toDate.MonthCalendar.CommandParameter = ((object)(resources.GetObject("toDate.MonthCalendar.CommandParameter")));
             // 
             // 
             // 
@@ -227,8 +228,6 @@ namespace Report_Pro.RPT
             this.toDate.MonthCalendar.CommandsBackgroundStyle.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
             this.toDate.MonthCalendar.CommandsBackgroundStyle.BorderTopColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.BarDockedBorder;
             this.toDate.MonthCalendar.CommandsBackgroundStyle.BorderTopWidth = 1;
-            this.toDate.MonthCalendar.DayNames = ((string[])(resources.GetObject("toDate.MonthCalendar.DayNames")));
-            this.toDate.MonthCalendar.Description = resources.GetString("toDate.MonthCalendar.Description");
             this.toDate.MonthCalendar.DisplayMonth = new System.DateTime(2020, 8, 1, 0, 0, 0, 0);
             this.toDate.MonthCalendar.MarkedDates = ((System.DateTime[])(resources.GetObject("toDate.MonthCalendar.MarkedDates")));
             this.toDate.MonthCalendar.MonthlyMarkedDates = ((System.DateTime[])(resources.GetObject("toDate.MonthCalendar.MonthlyMarkedDates")));
@@ -238,37 +237,19 @@ namespace Report_Pro.RPT
             this.toDate.MonthCalendar.NavigationBackgroundStyle.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
             this.toDate.MonthCalendar.NavigationBackgroundStyle.BackColorGradientAngle = 90;
             this.toDate.MonthCalendar.NavigationBackgroundStyle.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
-            this.toDate.MonthCalendar.Tag = resources.GetString("toDate.MonthCalendar.Tag");
-            this.toDate.MonthCalendar.Text = resources.GetString("toDate.MonthCalendar.Text");
             this.toDate.MonthCalendar.TodayButtonVisible = true;
-            this.toDate.MonthCalendar.Tooltip = resources.GetString("toDate.MonthCalendar.Tooltip");
             this.toDate.MonthCalendar.WeeklyMarkedDays = ((System.DayOfWeek[])(resources.GetObject("toDate.MonthCalendar.WeeklyMarkedDays")));
             this.toDate.Name = "toDate";
             // 
             // fromDate
             // 
-            resources.ApplyResources(this.fromDate, "fromDate");
             // 
             // 
             // 
             this.fromDate.BackgroundStyle.Class = "DateTimeInputBackground";
-            this.fromDate.ButtonClear.DisplayPosition = ((int)(resources.GetObject("fromDate.ButtonClear.DisplayPosition")));
-            this.fromDate.ButtonClear.Image = ((System.Drawing.Image)(resources.GetObject("fromDate.ButtonClear.Image")));
-            this.fromDate.ButtonClear.Text = resources.GetString("fromDate.ButtonClear.Text");
-            this.fromDate.ButtonCustom.DisplayPosition = ((int)(resources.GetObject("fromDate.ButtonCustom.DisplayPosition")));
-            this.fromDate.ButtonCustom.Image = ((System.Drawing.Image)(resources.GetObject("fromDate.ButtonCustom.Image")));
-            this.fromDate.ButtonCustom.Text = resources.GetString("fromDate.ButtonCustom.Text");
-            this.fromDate.ButtonCustom2.DisplayPosition = ((int)(resources.GetObject("fromDate.ButtonCustom2.DisplayPosition")));
-            this.fromDate.ButtonCustom2.Image = ((System.Drawing.Image)(resources.GetObject("fromDate.ButtonCustom2.Image")));
-            this.fromDate.ButtonCustom2.Text = resources.GetString("fromDate.ButtonCustom2.Text");
-            this.fromDate.ButtonDropDown.DisplayPosition = ((int)(resources.GetObject("fromDate.ButtonDropDown.DisplayPosition")));
-            this.fromDate.ButtonDropDown.Image = ((System.Drawing.Image)(resources.GetObject("fromDate.ButtonDropDown.Image")));
             this.fromDate.ButtonDropDown.Shortcut = DevComponents.DotNetBar.eShortcut.AltDown;
-            this.fromDate.ButtonDropDown.Text = resources.GetString("fromDate.ButtonDropDown.Text");
             this.fromDate.ButtonDropDown.Visible = true;
-            this.fromDate.ButtonFreeText.DisplayPosition = ((int)(resources.GetObject("fromDate.ButtonFreeText.DisplayPosition")));
-            this.fromDate.ButtonFreeText.Image = ((System.Drawing.Image)(resources.GetObject("fromDate.ButtonFreeText.Image")));
-            this.fromDate.ButtonFreeText.Text = resources.GetString("fromDate.ButtonFreeText.Text");
+            resources.ApplyResources(this.fromDate, "fromDate");
             // 
             // 
             // 
@@ -277,9 +258,7 @@ namespace Report_Pro.RPT
             // 
             // 
             this.fromDate.MonthCalendar.BackgroundStyle.BackColor = System.Drawing.SystemColors.Window;
-            this.fromDate.MonthCalendar.Category = resources.GetString("fromDate.MonthCalendar.Category");
             this.fromDate.MonthCalendar.ClearButtonVisible = true;
-            this.fromDate.MonthCalendar.CommandParameter = ((object)(resources.GetObject("fromDate.MonthCalendar.CommandParameter")));
             // 
             // 
             // 
@@ -289,8 +268,6 @@ namespace Report_Pro.RPT
             this.fromDate.MonthCalendar.CommandsBackgroundStyle.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
             this.fromDate.MonthCalendar.CommandsBackgroundStyle.BorderTopColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.BarDockedBorder;
             this.fromDate.MonthCalendar.CommandsBackgroundStyle.BorderTopWidth = 1;
-            this.fromDate.MonthCalendar.DayNames = ((string[])(resources.GetObject("fromDate.MonthCalendar.DayNames")));
-            this.fromDate.MonthCalendar.Description = resources.GetString("fromDate.MonthCalendar.Description");
             this.fromDate.MonthCalendar.DisplayMonth = new System.DateTime(2020, 8, 1, 0, 0, 0, 0);
             this.fromDate.MonthCalendar.MarkedDates = ((System.DateTime[])(resources.GetObject("fromDate.MonthCalendar.MarkedDates")));
             this.fromDate.MonthCalendar.MonthlyMarkedDates = ((System.DateTime[])(resources.GetObject("fromDate.MonthCalendar.MonthlyMarkedDates")));
@@ -300,10 +277,7 @@ namespace Report_Pro.RPT
             this.fromDate.MonthCalendar.NavigationBackgroundStyle.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
             this.fromDate.MonthCalendar.NavigationBackgroundStyle.BackColorGradientAngle = 90;
             this.fromDate.MonthCalendar.NavigationBackgroundStyle.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
-            this.fromDate.MonthCalendar.Tag = resources.GetString("fromDate.MonthCalendar.Tag");
-            this.fromDate.MonthCalendar.Text = resources.GetString("fromDate.MonthCalendar.Text");
             this.fromDate.MonthCalendar.TodayButtonVisible = true;
-            this.fromDate.MonthCalendar.Tooltip = resources.GetString("fromDate.MonthCalendar.Tooltip");
             this.fromDate.MonthCalendar.WeeklyMarkedDays = ((System.DayOfWeek[])(resources.GetObject("fromDate.MonthCalendar.WeeklyMarkedDays")));
             this.fromDate.Name = "fromDate";
             // 
@@ -316,26 +290,6 @@ namespace Report_Pro.RPT
             // 
             resources.ApplyResources(this.labelX1, "labelX1");
             this.labelX1.Name = "labelX1";
-            // 
-            // btnReport
-            // 
-            resources.ApplyResources(this.btnReport, "btnReport");
-            this.btnReport.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btnReport.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btnReport.Image = global::Report_Pro.Properties.Resources.Reports1;
-            this.btnReport.ImageFixedSize = new System.Drawing.Size(24, 24);
-            this.btnReport.Name = "btnReport";
-            this.btnReport.Click += new System.EventHandler(this.btnReport_Click);
-            // 
-            // btnOption
-            // 
-            resources.ApplyResources(this.btnOption, "btnOption");
-            this.btnOption.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btnOption.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btnOption.Image = global::Report_Pro.Properties.Resources.choose;
-            this.btnOption.ImageFixedSize = new System.Drawing.Size(24, 24);
-            this.btnOption.Name = "btnOption";
-            this.btnOption.Click += new System.EventHandler(this.btnOption_Click);
             // 
             // frm_lcsRep
             // 
@@ -360,8 +314,8 @@ namespace Report_Pro.RPT
         
       //  private IContainer components = (IContainer)null;
         private GroupPanel groupPanel1;
-        private ButtonX btnReport;
-        private ButtonX btnOption;
+        private ButtonX btnReport_;
+        private ButtonX btnOption_;
         private CrystalReportViewer crystalReportViewer1;
         private GroupPanel groupPanel2;
         private DateTimeInput toDate;

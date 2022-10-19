@@ -29,9 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_Items));
-            this.Desc = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.btn1 = new DevComponents.DotNetBar.ButtonX();
-            this.ID = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.itemPrice = new DevComponents.Editors.DoubleInput();
             this.itemWeight = new DevComponents.Editors.DoubleInput();
             this.itemUnit = new DevComponents.DotNetBar.Controls.TextBoxX();
@@ -39,7 +37,14 @@
             this.txtWidth = new DevComponents.Editors.DoubleInput();
             this.txtCost = new DevComponents.Editors.DoubleInput();
             this.txtDepth = new DevComponents.Editors.DoubleInput();
-            this.uc_SearchItem1 = new Report_Pro.MyControls.Uc_SearchItem();
+            this.txt_s1 = new System.Windows.Forms.TextBox();
+            this.txt_s2 = new System.Windows.Forms.TextBox();
+            this.txt_s3 = new System.Windows.Forms.TextBox();
+            this.txt_s4 = new System.Windows.Forms.TextBox();
+            this.txt_s5 = new System.Windows.Forms.TextBox();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.Desc = new System.Windows.Forms.TextBox();
+            this.ID = new System.Windows.Forms.TextBox();
             this.txtItemVat = new Report_Pro.MyControls.decimalText();
             this.txtKmItem = new Report_Pro.MyControls.decimalText();
             ((System.ComponentModel.ISupportInitialize)(this.itemPrice)).BeginInit();
@@ -48,41 +53,17 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtWidth)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCost)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDepth)).BeginInit();
+            this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // Desc
-            // 
-            // 
-            // 
-            // 
-            this.Desc.Border.Class = "TextBoxBorder";
-            resources.ApplyResources(this.Desc, "Desc");
-            this.Desc.Name = "Desc";
-            this.Desc.ReadOnly = true;
-            this.Desc.TextChanged += new System.EventHandler(this.Desc_TextChanged);
             // 
             // btn1
             // 
             this.btn1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btn1.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btn1.Image = global::Report_Pro.Properties.Resources.search_16;
             resources.ApplyResources(this.btn1, "btn1");
+            this.btn1.Image = global::Report_Pro.Properties.Resources.search_16;
             this.btn1.Name = "btn1";
             this.btn1.Click += new System.EventHandler(this.btn1_Click);
-            // 
-            // ID
-            // 
-            // 
-            // 
-            // 
-            this.ID.Border.Class = "TextBoxBorder";
-            resources.ApplyResources(this.ID, "ID");
-            this.ID.Name = "ID";
-            this.ID.TextChanged += new System.EventHandler(this.ID_TextChanged);
-            this.ID.KeyDown += new System.Windows.Forms.KeyEventHandler(this.ID_KeyDown);
-            this.ID.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ID_KeyPress);
-            this.ID.KeyUp += new System.Windows.Forms.KeyEventHandler(this.ID_KeyUp);
-            this.ID.Leave += new System.EventHandler(this.ID_Leave);
             // 
             // itemPrice
             // 
@@ -165,19 +146,62 @@
             this.txtDepth.Name = "txtDepth";
             this.txtDepth.ShowUpDown = true;
             // 
-            // uc_SearchItem1
+            // txt_s1
             // 
-            resources.ApplyResources(this.uc_SearchItem1, "uc_SearchItem1");
-            this.uc_SearchItem1.Name = "uc_SearchItem1";
-            this.uc_SearchItem1.Load += new System.EventHandler(this.uc_SearchItem1_Load);
-            this.uc_SearchItem1.Click += new System.EventHandler(this.uc_SearchItem1_Click);
-            this.uc_SearchItem1.DoubleClick += new System.EventHandler(this.uc_SearchItem1_DoubleClick);
+            resources.ApplyResources(this.txt_s1, "txt_s1");
+            this.txt_s1.Name = "txt_s1";
+            // 
+            // txt_s2
+            // 
+            resources.ApplyResources(this.txt_s2, "txt_s2");
+            this.txt_s2.Name = "txt_s2";
+            // 
+            // txt_s3
+            // 
+            resources.ApplyResources(this.txt_s3, "txt_s3");
+            this.txt_s3.Name = "txt_s3";
+            // 
+            // txt_s4
+            // 
+            resources.ApplyResources(this.txt_s4, "txt_s4");
+            this.txt_s4.Name = "txt_s4";
+            // 
+            // txt_s5
+            // 
+            resources.ApplyResources(this.txt_s5, "txt_s5");
+            this.txt_s5.Name = "txt_s5";
+            // 
+            // tableLayoutPanel1
+            // 
+            resources.ApplyResources(this.tableLayoutPanel1, "tableLayoutPanel1");
+            this.tableLayoutPanel1.Controls.Add(this.Desc, 2, 0);
+            this.tableLayoutPanel1.Controls.Add(this.btn1, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.ID, 0, 0);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            // 
+            // Desc
+            // 
+            resources.ApplyResources(this.Desc, "Desc");
+            this.Desc.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Desc.Name = "Desc";
+            // 
+            // ID
+            // 
+            this.ID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.ID, "ID");
+            this.ID.Name = "ID";
+            this.ID.TextChanged += new System.EventHandler(this.ID_TextChanged);
+            this.ID.KeyDown += new System.Windows.Forms.KeyEventHandler(this.ID_KeyDown);
+            this.ID.KeyUp += new System.Windows.Forms.KeyEventHandler(this.ID_KeyUp);
+            this.ID.Leave += new System.EventHandler(this.ID_Leave);
             // 
             // txtItemVat
             // 
             this.txtItemVat.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtItemVat.DicemalDigits = 0;
             resources.ApplyResources(this.txtItemVat, "txtItemVat");
+            this.txtItemVat.maxmumNumber = 0D;
+            this.txtItemVat.minimumNumber = 0D;
             this.txtItemVat.Name = "txtItemVat";
             this.txtItemVat.ProgramDigits = false;
             this.txtItemVat.Value = new decimal(new int[] {
@@ -191,6 +215,8 @@
             this.txtKmItem.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtKmItem.DicemalDigits = 0;
             resources.ApplyResources(this.txtKmItem, "txtKmItem");
+            this.txtKmItem.maxmumNumber = 0D;
+            this.txtKmItem.minimumNumber = 0D;
             this.txtKmItem.Name = "txtKmItem";
             this.txtKmItem.ProgramDigits = false;
             this.txtKmItem.Value = new decimal(new int[] {
@@ -203,8 +229,12 @@
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Controls.Add(this.uc_SearchItem1);
+            this.Controls.Add(this.tableLayoutPanel1);
+            this.Controls.Add(this.txt_s5);
+            this.Controls.Add(this.txt_s4);
+            this.Controls.Add(this.txt_s3);
+            this.Controls.Add(this.txt_s2);
+            this.Controls.Add(this.txt_s1);
             this.Controls.Add(this.txtCost);
             this.Controls.Add(this.txtDepth);
             this.Controls.Add(this.txtLenth);
@@ -212,9 +242,6 @@
             this.Controls.Add(this.itemUnit);
             this.Controls.Add(this.itemWeight);
             this.Controls.Add(this.itemPrice);
-            this.Controls.Add(this.Desc);
-            this.Controls.Add(this.btn1);
-            this.Controls.Add(this.ID);
             this.Controls.Add(this.txtItemVat);
             this.Controls.Add(this.txtKmItem);
             this.Name = "UC_Items";
@@ -225,15 +252,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtWidth)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCost)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDepth)).EndInit();
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        public DevComponents.DotNetBar.Controls.TextBoxX Desc;
         private DevComponents.DotNetBar.ButtonX btn1;
-        public DevComponents.DotNetBar.Controls.TextBoxX ID;
         public DevComponents.Editors.DoubleInput itemPrice;
         public DevComponents.Editors.DoubleInput itemWeight;
         public DevComponents.DotNetBar.Controls.TextBoxX itemUnit;
@@ -241,8 +268,15 @@
         public DevComponents.Editors.DoubleInput txtWidth;
         public DevComponents.Editors.DoubleInput txtCost;
         public DevComponents.Editors.DoubleInput txtDepth;
-        private Uc_SearchItem uc_SearchItem1;
         public decimalText txtItemVat;
         public decimalText txtKmItem;
+        private System.Windows.Forms.TextBox txt_s1;
+        private System.Windows.Forms.TextBox txt_s2;
+        private System.Windows.Forms.TextBox txt_s3;
+        private System.Windows.Forms.TextBox txt_s4;
+        private System.Windows.Forms.TextBox txt_s5;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        public System.Windows.Forms.TextBox Desc;
+        public System.Windows.Forms.TextBox ID;
     }
 }

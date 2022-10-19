@@ -648,11 +648,35 @@
   <data name="groupPanel2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
+  <data name="chB.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="chB.Location" type="System.Drawing.Point, System.Drawing">
+    <value>105, 70</value>
+  </data>
+  <data name="chB.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 15</value>
+  </data>
+  <data name="chB.Text" xml:space="preserve">
+    <value>الانشاءات</value>
+  </data>
+  <data name="chN.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="chN.Location" type="System.Drawing.Point, System.Drawing">
+    <value>26, 70</value>
+  </data>
+  <data name="chN.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 15</value>
+  </data>
+  <data name="chN.Text" xml:space="preserve">
+    <value>الايجارات</value>
+  </data>
   <data name="chX.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
   <data name="chX.Location" type="System.Drawing.Point, System.Drawing">
-    <value>209, 63</value>
+    <value>214, 70</value>
   </data>
   <data name="chX.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>5, 4, 5, 4</value>
@@ -667,7 +691,7 @@
     <value>Top, Right</value>
   </data>
   <data name="chF.Location" type="System.Drawing.Point, System.Drawing">
-    <value>95, 5</value>
+    <value>97, 17</value>
   </data>
   <data name="chF.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>5, 5, 5, 5</value>
@@ -682,7 +706,7 @@
     <value>Top, Right</value>
   </data>
   <data name="chZ.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 33</value>
+    <value>40, 42</value>
   </data>
   <data name="chZ.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>5, 5, 5, 5</value>
@@ -697,7 +721,7 @@
     <value>Top, Right</value>
   </data>
   <data name="chR.Location" type="System.Drawing.Point, System.Drawing">
-    <value>186, 4</value>
+    <value>196, 17</value>
   </data>
   <data name="chR.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>5, 5, 5, 5</value>
@@ -712,7 +736,7 @@
     <value>Top, Right</value>
   </data>
   <data name="chP.Location" type="System.Drawing.Point, System.Drawing">
-    <value>108, 34</value>
+    <value>108, 42</value>
   </data>
   <data name="chP.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>5, 5, 5, 5</value>
@@ -727,7 +751,7 @@
     <value>Top, Right</value>
   </data>
   <data name="chC.Location" type="System.Drawing.Point, System.Drawing">
-    <value>16, 4</value>
+    <value>37, 17</value>
   </data>
   <data name="chC.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>5, 5, 5, 5</value>
@@ -742,7 +766,7 @@
     <value>Top, Right</value>
   </data>
   <data name="chS.Location" type="System.Drawing.Point, System.Drawing">
-    <value>189, 33</value>
+    <value>198, 42</value>
   </data>
   <data name="chS.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>5, 5, 5, 5</value>
@@ -871,49 +895,40 @@
     <value>Top, Right</value>
   </data>
   <data name="Uc_Group1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>949, 114</value>
+    <value>957, 114</value>
   </data>
   <data name="UC_Branch.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
-  <data name="UC_Branch.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 8pt</value>
-  </data>
   <data name="UC_Branch.Location" type="System.Drawing.Point, System.Drawing">
-    <value>950, 27</value>
+    <value>916, 27</value>
   </data>
   <data name="UC_Branch.Size" type="System.Drawing.Size, System.Drawing">
-    <value>322, 22</value>
+    <value>364, 20</value>
   </data>
   <data name="Items.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
   <data name="Items.Location" type="System.Drawing.Point, System.Drawing">
-    <value>950, 141</value>
+    <value>916, 141</value>
   </data>
   <data name="Items.Size" type="System.Drawing.Size, System.Drawing">
-    <value>322, 22</value>
+    <value>364, 20</value>
   </data>
   <data name="Uc_Group.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
   <data name="Uc_Group.Location" type="System.Drawing.Point, System.Drawing">
-    <value>950, 87</value>
-  </data>
-  <data name="Uc_Group.Size" type="System.Drawing.Size, System.Drawing">
-    <value>322, 22</value>
+    <value>957, 87</value>
   </data>
   <data name="Uc_Acc.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
-  <data name="Uc_Acc.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 8pt</value>
-  </data>
   <data name="Uc_Acc.Location" type="System.Drawing.Point, System.Drawing">
-    <value>950, 58</value>
+    <value>916, 58</value>
   </data>
   <data name="Uc_Acc.Size" type="System.Drawing.Size, System.Drawing">
-    <value>322, 22</value>
+    <value>364, 20</value>
   </data>
   <data name="groupPanel4.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 59</value>

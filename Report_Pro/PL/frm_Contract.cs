@@ -950,7 +950,7 @@ private void BSave_Click(object sender, EventArgs e)
             ,A.Lc_Date,A.Paper_Arival_Notes,A.Country,A.Factory,A.LC_EXPIRE_DATE,A.LC_STOPED,A.Costmer_No,A.Inv_Notes_1,A.Inv_Notes
             ,B.ITEM_NO,B.QTY_ADD,B.QTY_TAKE,B.total_disc,B.Unit,B.Forign_price,B.Local_Price,B.FORIN_TYPE,B.Currancy_Change_Factor,B.Notes,B.main_counter,B.K_M_TYPE_ITEMS,B.TAX_IN,B.TAX_OUT,B.balance,B.COST_PRICE
 			,C.PAYER_NAME,C.payer_l_name,C.adress,C.resp_name,C.COSTMER_K_M_NO,C.phone_no,C.E_MAIL,D.branch_name,D.WH_E_NAME,E.descr
-            ,E.Descr_eng,E.Weight,F.USER_NAME,H.Currency_Name,K.Payment_name
+            ,E.Descr_eng,E.Weight,F.USER_NAME,H.Currency_Name,K.Payment_name,D.Branch_Logo_A4
             FROM wh_inv_data_PO_Contract As A 
 			inner join wh_MATERIAL_TRANSACTION_PO_Contract As B
             on  A.SER_NO=B.SER_NO and A.Branch_code=B.Branch_code and A.TRANSACTION_CODE=B.TRANSACTION_CODE and A.Cyear=B.Cyear
@@ -1085,7 +1085,7 @@ private void BSave_Click(object sender, EventArgs e)
             get_data(txtId.Text, txtBranch.ID.Text, comboBox1.Text.Substring(comboBox1.Text.Length - 2), "PER");
 
             ds.Tables.Add(dt_P);
-            ////ds.WriteXmlSchema("schema_rpt.xml");
+            ds.WriteXmlSchema("schema_rpt.xml");
             RPT.Form1 frm = new RPT.Form1();
             RPT.rpt_Preform_Print_Ton rpt_P = new RPT.rpt_Preform_Print_Ton();
             rpt_P.SetDataSource(ds);

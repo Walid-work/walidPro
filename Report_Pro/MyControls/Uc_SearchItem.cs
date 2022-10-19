@@ -15,53 +15,56 @@ namespace Report_Pro.MyControls
     {
         DAL.DataAccesslayer1 dal = new DAL.DataAccesslayer1();
         DataTable dt = new DataTable();
+
+        string strBalance = "2";
+
         public Uc_SearchItem()
         {
+           
+            
             InitializeComponent();
 
+            if (radiobalance.Checked)
+            {
+                strBalance = "1";
+            }
+            else
+            {
+                strBalance = "2";
+            }
 
-            dt = dal.getDataTabl_1(@"SELECT item_no,factory_no,descr,Descr_eng,Weight,Group_name,unit,BALANCE
+            dt = dal.getDataTabl_1(@"SELECT item_no,factory_no,descr,Descr_eng,BALANCE,Weight,Group_name,unit
             FROM wh_main_master as A
             inner join wh_Groups as B
-            on A.group_code = B.group_code");
-
-
+            on A.group_code = B.group_code
+            where BALANCE > (CASE WHEN '" + strBalance + "'= 1 then 0 else '"+int.MinValue+"' end)");
             dGV_pro_list.DataSource = dt;
-            resizeDG();
+            
         }
 
 
         private void search_product()
         {
-            // bs.Filter = string.Format("descr LIKE '%{0}%'", txtsrch_1.Text);
-
-            string strBalance = radiobalance.Checked ? "1" : "2";
-            //  dGV_pro_list.DataSource
-            //dt = dal.getDataTabl_1(@"SELECT item_no,factory_no,descr,Descr_eng,Weight,Group_name,unit,BALANCE
-            //FROM wh_main_master as A
-            //inner join wh_Groups as B
-            //on A.group_code = B.group_code");
-            //where BALANCE <> case when '" + strBalance + "'= 1  then  0 else 1000000000  end and " +
-            //" descr + Descr_eng + Group_name like '%" + txtsrch_1.Text
-            //+ "%' and descr + Descr_eng + Group_name like  '%" + txtserch_2.Text
-            //+ "%' and descr + Descr_eng + Group_name like '%" + txtSrch_3.Text
-            //+ "%' and descr + Descr_eng + Group_name like '%" + txtserch_4.Text
-            //+ "%' and ( item_no like '" + txtSrch.Text + "%' or factory_no like '" + txtSrch.Text + "%')");
-            ////, txtSrch.Text, txtsrch_1.Text, txtserch_2.Text, txtSrch_3.Text,txtserch_4.Text, (radiobalance.Checked ? "1" : "2"),dal.db1);
-
-            //   dt.DefaultView.RowFilter = string.Format("descr + Descr_eng + Group_name  LIKE '%{0}%'", txtsrch_1.Text + txtserch_2.Text);
-            try
+            
+            if (dGV_pro_list.Columns.Count == 0)
             {
+
+                dGV_pro_list.DataSource = dt;
+            }
+
+            //try
+            //{
                 dt.DefaultView.RowFilter = "descr + Descr_eng Like '%" + txtsrch_1.Text.Trim() + "%' and descr + Descr_eng  Like '%" + txtserch_2.Text +
                           "%' and descr + Descr_eng  Like '%" + txtSrch_3.Text.Trim() + "%' and descr +Descr_eng  Like '%" + txtserch_4.Text +
-                          "%' and ( item_no like '" + txtSrch.Text + "%' or factory_no like '" + txtSrch.Text + "%')";
+                          "%' and ( item_no like '" + txtSrch.Text + "%' or factory_no like '" + txtSrch.Text +"%')";
+              
 
-            }
-            catch
-            {
+            //}
+            //catch
+            //{
 
                
-            }
+            //}
 
       
 
@@ -75,10 +78,11 @@ namespace Report_Pro.MyControls
                 dGV_pro_list.Columns[1].HeaderText = "الكود الاضافي";
                 dGV_pro_list.Columns[2].HeaderText = "الوصف";
                 dGV_pro_list.Columns[3].HeaderText = "الوصف لاتيني";
-                dGV_pro_list.Columns[4].HeaderText = "الوزن";
-                dGV_pro_list.Columns[5].HeaderText = "المجموعة";
-                dGV_pro_list.Columns[6].HeaderText = "الوحدة";
-                dGV_pro_list.Columns[7].HeaderText = "الرصيد";
+                dGV_pro_list.Columns[4].HeaderText = "الرصيد";
+                dGV_pro_list.Columns[5].HeaderText = "الوزن";
+                dGV_pro_list.Columns[6].HeaderText = "المجموعة";
+                dGV_pro_list.Columns[7].HeaderText = "الوحدة";
+                
             }
             else
             {
@@ -86,10 +90,11 @@ namespace Report_Pro.MyControls
                 dGV_pro_list.Columns[1].HeaderText = "Factory No";
                 dGV_pro_list.Columns[2].HeaderText = "Description";
                 dGV_pro_list.Columns[3].HeaderText = "Description English";
-                dGV_pro_list.Columns[4].HeaderText = "Weight";
-                dGV_pro_list.Columns[5].HeaderText = "Group";
-                dGV_pro_list.Columns[6].HeaderText = "Unit";
-                dGV_pro_list.Columns[7].HeaderText = "Balance";
+                dGV_pro_list.Columns[4].HeaderText = "Balance";
+                dGV_pro_list.Columns[5].HeaderText = "Weight";
+                dGV_pro_list.Columns[6].HeaderText = "Group";
+                dGV_pro_list.Columns[7].HeaderText = "Unit";
+               
             }
             dGV_pro_list.Columns[0].Width = 100;
             dGV_pro_list.Columns[1].Width = 100;
@@ -123,15 +128,11 @@ namespace Report_Pro.MyControls
 
         private void buttonX1_Click(object sender, EventArgs e)
         {
-            if (ch_SaveSearch.Checked == true)
+            if (ch_SaveSearch.Checked == false)
             {
-                this.Visible = false;
+                dal.ClearTextBoxes_uc(this);
             }
-            else
-            {
-               dal.ClearTextBoxes_uc(this);
-                this.Visible = false;
-            }
+            Visible = false;
             OnClick(e);
         }
 
@@ -205,14 +206,30 @@ namespace Report_Pro.MyControls
 
         private void Uc_SearchItem_Load(object sender, EventArgs e)
         {
-           
-            //dt = dal.getDataTabl_1(@"SELECT item_no,factory_no,descr,Descr_eng,Weight,Group_name,unit,BALANCE
-            //FROM wh_main_master as A
-            //inner join wh_Groups as B
-            //on A.group_code = B.group_code");
+            search_product();
 
+        }
 
-            //dGV_pro_list.DataSource = dt;
+        private void radioAll_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radiobalance.Checked)
+            {
+                strBalance = "1";
+            }
+            else
+            {
+                strBalance = "2";
+            }
+
+            dt = dal.getDataTabl_1(@"SELECT item_no,factory_no,descr,Descr_eng,BALANCE,Weight,Group_name,unit
+            FROM wh_main_master as A
+            inner join wh_Groups as B
+            on A.group_code = B.group_code
+            where BALANCE > (CASE WHEN '" + strBalance + "'= 1 then 0 else '"+int.MinValue+"' end)");
+            dGV_pro_list.DataSource = dt;
+            search_product();
+            resizeDG();
+
         }
     }
 }

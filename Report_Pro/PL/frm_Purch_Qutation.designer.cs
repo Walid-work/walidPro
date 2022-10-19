@@ -106,7 +106,7 @@
             this.buttonX2 = new DevComponents.DotNetBar.ButtonX();
             this.txt_Fax = new System.Windows.Forms.TextBox();
             this.buttonX1 = new DevComponents.DotNetBar.ButtonX();
-            this.Uc_Branch = new Report_Pro.MyControls.UC_Branch();
+            this.Uc_Branch = new Report_Pro.MyControls.ذ();
             this.tabItem6 = new DevComponents.DotNetBar.TabItem(this.components);
             this.labelX51 = new DevComponents.DotNetBar.LabelX();
             this.Doc_Name = new System.Windows.Forms.Label();
@@ -1333,7 +1333,7 @@
         private DevComponents.DotNetBar.LabelX txt_transaction_code;
         private DevComponents.DotNetBar.LabelX labelX20;
         private System.Windows.Forms.TextBox txt_MainNote;
-        private MyControls.UC_Branch Uc_Branch;
+        private MyControls.ذ Uc_Branch;
         private DevComponents.DotNetBar.LabelX labelX53;
         private System.Windows.Forms.TextBox txt_TotWeight;
         private DevComponents.DotNetBar.LabelX labelX5;

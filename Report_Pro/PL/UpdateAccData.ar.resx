@@ -112,143 +112,249 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-   <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Desc.ButtonCustom.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Desc.ButtonCustom.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+  <data name="buttonX1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
   </data>
-  <data name="Desc.ButtonCustom.Text" xml:space="preserve">
-    <value />
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="buttonX1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>358, 226</value>
   </data>
-  <data name="Desc.ButtonCustom2.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="buttonX1.Text" xml:space="preserve">
+    <value>حفظ</value>
   </data>
-  <data name="Desc.ButtonCustom2.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+  <data name="labelX1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
   </data>
-  <data name="Desc.ButtonCustom2.Text" xml:space="preserve">
-    <value />
+  <data name="labelX1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>674, 22</value>
   </data>
-  <data name="adress.ButtonCustom.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="labelX1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>38, 15</value>
   </data>
-  <data name="adress.ButtonCustom.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+  <data name="labelX1.Text" xml:space="preserve">
+    <value>الحساب</value>
   </data>
-  <data name="adress.ButtonCustom.Text" xml:space="preserve">
-    <value />
+  <data name="labelX2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
   </data>
-  <data name="adress.ButtonCustom2.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="labelX2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>674, 99</value>
   </data>
-  <data name="adress.ButtonCustom2.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+  <data name="labelX2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>31, 15</value>
   </data>
-  <data name="adress.ButtonCustom2.Text" xml:space="preserve">
-    <value />
+  <data name="labelX2.Text" xml:space="preserve">
+    <value>العنوان</value>
   </data>
-  <data name="Desc_L.ButtonCustom.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="labelX3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
   </data>
-  <data name="Desc_L.ButtonCustom.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+  <data name="labelX3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>674, 203</value>
   </data>
-  <data name="Desc_L.ButtonCustom.Text" xml:space="preserve">
-    <value />
+  <data name="labelX3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>74, 15</value>
   </data>
-  <data name="Desc_L.ButtonCustom2.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="labelX3.Text" xml:space="preserve">
+    <value>مسئول الحساب</value>
   </data>
-  <data name="Desc_L.ButtonCustom2.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+  <data name="labelX4.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
   </data>
-  <data name="Desc_L.ButtonCustom2.Text" xml:space="preserve">
-    <value />
+  <data name="labelX4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>674, 49</value>
   </data>
-  <data name="txt_Building.ButtonCustom.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="labelX4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>57, 15</value>
   </data>
-  <data name="txt_Building.ButtonCustom.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+  <data name="labelX4.Text" xml:space="preserve">
+    <value>الاسم عربي</value>
   </data>
-  <data name="txt_Building.ButtonCustom.Text" xml:space="preserve">
-    <value />
+  <data name="labelX5.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
   </data>
-  <data name="txt_Building.ButtonCustom2.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="labelX5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>674, 75</value>
   </data>
-  <data name="txt_Building.ButtonCustom2.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+  <data name="labelX5.Text" xml:space="preserve">
+    <value>الاسم انجليزي</value>
   </data>
-  <data name="txt_Building.ButtonCustom2.Text" xml:space="preserve">
-    <value />
+  <data name="ch_facility.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
   </data>
-  <data name="txt_Block.ButtonCustom.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="ch_facility.Location" type="System.Drawing.Point, System.Drawing">
+    <value>595, 226</value>
   </data>
-  <data name="txt_Block.ButtonCustom.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+  <data name="ch_facility.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 17</value>
   </data>
-  <data name="txt_Block.ButtonCustom.Text" xml:space="preserve">
-    <value />
+  <data name="ch_facility.Text" xml:space="preserve">
+    <value>التسهيلات</value>
   </data>
-  <data name="txt_Block.ButtonCustom2.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="lbl_Building.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
   </data>
-  <data name="txt_Block.ButtonCustom2.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+  <data name="lbl_Building.Location" type="System.Drawing.Point, System.Drawing">
+    <value>130, 101</value>
   </data>
-  <data name="txt_Block.ButtonCustom2.Text" xml:space="preserve">
-    <value />
+  <data name="lbl_Building.Size" type="System.Drawing.Size, System.Drawing">
+    <value>33, 15</value>
   </data>
-  <data name="txt_Road.ButtonCustom.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="lbl_Building.Text" xml:space="preserve">
+    <value>المبني</value>
   </data>
-  <data name="txt_Road.ButtonCustom.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+  <data name="txt_Building.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
   </data>
-  <data name="txt_Road.ButtonCustom.Text" xml:space="preserve">
-    <value />
+  <data name="txt_Building.Location" type="System.Drawing.Point, System.Drawing">
+    <value>49, 100</value>
   </data>
-  <data name="txt_Road.ButtonCustom2.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="txt_Block.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
   </data>
-  <data name="txt_Road.ButtonCustom2.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+  <data name="txt_Block.Location" type="System.Drawing.Point, System.Drawing">
+    <value>162, 123</value>
   </data>
-  <data name="txt_Road.ButtonCustom2.Text" xml:space="preserve">
-    <value />
+  <data name="lbl_Block.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
   </data>
-  <data name="txt_Area.ButtonCustom.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="lbl_Block.Location" type="System.Drawing.Point, System.Drawing">
+    <value>248, 124</value>
   </data>
-  <data name="txt_Area.ButtonCustom.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+  <data name="lbl_Block.Size" type="System.Drawing.Size, System.Drawing">
+    <value>28, 15</value>
   </data>
-  <data name="txt_Area.ButtonCustom.Text" xml:space="preserve">
-    <value />
+  <data name="lbl_Block.Text" xml:space="preserve">
+    <value>البلوك</value>
   </data>
-  <data name="txt_Area.ButtonCustom2.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="txt_Road.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
   </data>
-  <data name="txt_Area.ButtonCustom2.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+  <data name="txt_Road.Location" type="System.Drawing.Point, System.Drawing">
+    <value>169, 100</value>
   </data>
-  <data name="txt_Area.ButtonCustom2.Text" xml:space="preserve">
-    <value />
+  <data name="lbl_Road.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="lbl_Road.Location" type="System.Drawing.Point, System.Drawing">
+    <value>244, 101</value>
+  </data>
+  <data name="lbl_Road.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 15</value>
+  </data>
+  <data name="lbl_Road.Text" xml:space="preserve">
+    <value>الطريق</value>
+  </data>
+  <data name="txt_Area.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="txt_Area.Location" type="System.Drawing.Point, System.Drawing">
+    <value>47, 123</value>
+  </data>
+  <data name="txtResponsaple.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="txtResponsaple.Location" type="System.Drawing.Point, System.Drawing">
+    <value>288, 200</value>
+  </data>
+  <data name="txt_VatNo.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="txt_VatNo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>493, 174</value>
+  </data>
+  <data name="txt_VatNo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>177, 20</value>
+  </data>
+  <data name="txtTel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="txtTel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>288, 173</value>
+  </data>
+  <data name="txtEmail.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="txtEmail.Location" type="System.Drawing.Point, System.Drawing">
+    <value>288, 148</value>
+  </data>
+  <data name="adress.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="adress.Location" type="System.Drawing.Point, System.Drawing">
+    <value>288, 100</value>
+  </data>
+  <data name="Desc_L.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="Desc_L.Location" type="System.Drawing.Point, System.Drawing">
+    <value>288, 72</value>
+  </data>
+  <data name="Desc.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="Desc.Location" type="System.Drawing.Point, System.Drawing">
+    <value>288, 46</value>
+  </data>
+  <data name="labelX8.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="labelX8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>674, 178</value>
+  </data>
+  <data name="labelX8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>63, 15</value>
+  </data>
+  <data name="labelX8.Text" xml:space="preserve">
+    <value>الرقم الضريبي</value>
+  </data>
+  <data name="labelX7.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="labelX7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>434, 176</value>
+  </data>
+  <data name="labelX7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 15</value>
+  </data>
+  <data name="labelX7.Text" xml:space="preserve">
+    <value>الهاتف</value>
+  </data>
+  <data name="labelX6.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="labelX6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>674, 151</value>
+  </data>
+  <data name="labelX6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 15</value>
+  </data>
+  <data name="labelX6.Text" xml:space="preserve">
+    <value>البريد الالكتروني</value>
+  </data>
+  <data name="UC_Acc.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="UC_Acc.Location" type="System.Drawing.Point, System.Drawing">
+    <value>288, 18</value>
   </data>
   <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>Inherit</value>
+    <value>NoControl</value>
   </data>
-  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
-    <value>CenterParent</value>
+  <data name="$this.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Yes</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="$this.RightToLeftLayout" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>تحديث بيانات العملاء</value>
   </data>
 </root>

@@ -45,6 +45,22 @@ namespace Report_Pro.Classes
         }
 
 
+        public static bool IsEditValueValidAndNotZero(this LookUpEditBase lkp)
+        {
+            if (lkp.IsEditValueOfTypeInt() == false || Convert.ToInt32(lkp.EditValue) == 0)
+            {
+                lkp.ErrorText = frm_Master.ErrorText;
+                return false;
+            }
+            return true;
+        }
+
+        public static bool IsEditValueOfTypeInt(this LookUpEditBase edit)
+        {
+            var val = edit.EditValue;
+            return (val is int || val is byte);
+        }
+
         //public static void IntializeData(this LookUpEdit lkp, object dataSource)
         //{
         //    lkp.IntializeData(dataSource, "Name", "ID");
@@ -104,6 +120,18 @@ namespace Report_Pro.Classes
 
         };
 
+        public enum WarningLevels
+        {
+            DoNotEnteript = 1,
+            ShowWarning,
+            Prevent,
+        }
+
+        public enum PayMethods
+        {
+            Cash = 1,
+            Credit,
+        }
     }
 
 }

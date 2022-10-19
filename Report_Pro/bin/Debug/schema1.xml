@@ -1,123 +1,21 @@
 <?xml version="1.0" standalone="yes"?>
-<xs:schema id="DataSet1" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
-  <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+<xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         <xs:element name="Table1">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="ACC_YEAR" type="xs:string" minOccurs="0" />
-              <xs:element name="ACC_NO" type="xs:string" minOccurs="0" />
-              <xs:element name="BRANCH_code" type="xs:string" minOccurs="0" />
-              <xs:element name="ser_no" type="xs:string" minOccurs="0" />
-              <xs:element name="sorting_ser" type="xs:int" minOccurs="0" />
-              <xs:element name="COST_CENTER" type="xs:string" minOccurs="0" />
-              <xs:element name="MAIN_MEZAN" type="xs:string" minOccurs="0" />
-              <xs:element name="MAIN_TRANS_CODE" type="xs:string" minOccurs="0" />
-              <xs:element name="meno" type="xs:decimal" minOccurs="0" />
-              <xs:element name="loh" type="xs:decimal" minOccurs="0" />
-              <xs:element name="balance" type="xs:decimal" minOccurs="0" />
-              <xs:element name="h_date" type="xs:string" minOccurs="0" />
-              <xs:element name="g_date" type="xs:dateTime" minOccurs="0" />
-              <xs:element name="sanad_no" type="xs:string" minOccurs="0" />
-              <xs:element name="SANAD_TYPE" type="xs:string" minOccurs="0" />
-              <xs:element name="sp_ser_no" type="xs:string" minOccurs="0" />
-              <xs:element name="user_name" type="xs:string" minOccurs="0" />
-              <xs:element name="desc2" type="xs:string" minOccurs="0" />
-              <xs:element name="sheek_no" type="xs:string" minOccurs="0" />
-              <xs:element name="sheek_bank" type="xs:string" minOccurs="0" />
-              <xs:element name="sheek_date" type="xs:dateTime" minOccurs="0" />
-              <xs:element name="sheek_or_cash" type="xs:string" minOccurs="0" />
-              <xs:element name="transaction_code" type="xs:short" minOccurs="0" />
-              <xs:element name="IN_NO" type="xs:string" minOccurs="0" />
-              <xs:element name="in_date" type="xs:dateTime" minOccurs="0" />
-              <xs:element name="cancel_date" type="xs:dateTime" minOccurs="0" />
-              <xs:element name="CANCEL_RESON" type="xs:string" minOccurs="0" />
-              <xs:element name="bank_acc_no" type="xs:string" minOccurs="0" />
-              <xs:element name="in_bank_user" type="xs:string" minOccurs="0" />
-              <xs:element name="OMALA_TRAN_CODE" type="xs:short" minOccurs="0" />
-              <xs:element name="NATION_CODE" type="xs:string" minOccurs="0" />
-              <xs:element name="notes" type="xs:string" minOccurs="0" />
-              <xs:element name="IN_BANK_OR_NO" type="xs:string" minOccurs="0" />
-              <xs:element name="POASTING" type="xs:boolean" minOccurs="0" />
-              <xs:element name="MENO_BALANCE" type="xs:decimal" minOccurs="0" />
-              <xs:element name="LOH_BALANCE" type="xs:decimal" minOccurs="0" />
-              <xs:element name="tem_for_pivot_report" type="xs:short" minOccurs="0" />
-              <xs:element name="CLOASING_OP_SANAD" type="xs:string" minOccurs="0" />
-              <xs:element name="Prev_acc_year" type="xs:string" minOccurs="0" />
-              <xs:element name="Currency_Code" type="xs:string" minOccurs="0" />
-              <xs:element name="Change_Factor" type="xs:decimal" minOccurs="0" />
-              <xs:element name="MenoF" type="xs:decimal" minOccurs="0" />
-              <xs:element name="LohF" type="xs:decimal" minOccurs="0" />
-              <xs:element name="SOURCE_CODE" type="xs:string" minOccurs="0" />
-              <xs:element name="Wh_Branch_Code" type="xs:string" minOccurs="0" />
-              <xs:element name="First_Cash_Sanad_no" type="xs:string" minOccurs="0" />
-              <xs:element name="LC_NO" type="xs:string" minOccurs="0" />
-              <xs:element name="Sp_Inv_No" type="xs:string" minOccurs="0" />
-              <xs:element name="Replic_Ser" type="xs:int" minOccurs="0" />
-              <xs:element name="GROUP_CODE" type="xs:string" minOccurs="0" />
-              <xs:element name="Recever_name" type="xs:string" minOccurs="0" />
-              <xs:element name="Ext_Hewala_No" type="xs:string" minOccurs="0" />
-              <xs:element name="Ext_Hewala_Name" type="xs:string" minOccurs="0" />
-              <xs:element name="FA_NO" type="xs:string" minOccurs="0" />
-              <xs:element name="Sheek" type="xs:string" minOccurs="0" />
-              <xs:element name="Sheek_Descr" type="xs:string" minOccurs="0" />
-              <xs:element name="Multy_branches" type="xs:string" minOccurs="0" />
-              <xs:element name="Main_BRANCH_CODE" type="xs:string" minOccurs="0" />
-              <xs:element name="CAT_CODE" type="xs:string" minOccurs="0" />
-              <xs:element name="Dafter_no" type="xs:string" minOccurs="0" />
-              <xs:element name="Dafter_ser" type="xs:int" minOccurs="0" />
-              <xs:element name="cash_box_report" type="xs:string" minOccurs="0" />
-              <xs:element name="Acc_Type" type="xs:string" minOccurs="0" />
-              <xs:element name="RETAIL_ACC" type="xs:string" minOccurs="0" />
-              <xs:element name="H_CODE" type="xs:string" minOccurs="0" />
-              <xs:element name="Statment_of_acc_no" type="xs:int" minOccurs="0" />
-              <xs:element name="Doctor_ID" type="xs:string" minOccurs="0" />
-              <xs:element name="LOCATION_CODE" type="xs:string" minOccurs="0" />
-              <xs:element name="replic_ser2" type="xs:int" minOccurs="0" />
-              <xs:element name="Cash_flow_type" type="xs:string" minOccurs="0" />
-              <xs:element name="PERM_SER" type="xs:int" minOccurs="0" />
-              <xs:element name="MAIN_SER_NO" type="xs:int" minOccurs="0" />
-              <xs:element name="PROJECT_NO" type="xs:string" minOccurs="0" />
-              <xs:element name="Reten_acc_no" type="xs:string" minOccurs="0" />
-              <xs:element name="Reten" type="xs:string" minOccurs="0" />
-              <xs:element name="month_closing" type="xs:string" minOccurs="0" />
-              <xs:element name="month_closing_date" type="xs:dateTime" minOccurs="0" />
-              <xs:element name="MENO2" type="xs:decimal" minOccurs="0" />
-              <xs:element name="LOH2" type="xs:decimal" minOccurs="0" />
-              <xs:element name="ARC_SER" type="xs:int" minOccurs="0" />
-              <xs:element name="COSTMER_NO" type="xs:int" minOccurs="0" />
-              <xs:element name="vat_no" type="xs:string" minOccurs="0" />
-              <xs:element name="vat_amont" type="xs:decimal" minOccurs="0" />
-              <xs:element name="ohda_acc_type" type="xs:string" minOccurs="0" />
-              <xs:element name="inv_date" type="xs:dateTime" minOccurs="0" />
-              <xs:element name="SANAD_TYPE2" type="xs:string" minOccurs="0" />
-              <xs:element name="PO_NO" type="xs:string" minOccurs="0" />
-              <xs:element name="inv_no" type="xs:string" minOccurs="0" />
-              <xs:element name="Supplier_Name" type="xs:string" minOccurs="0" />
-              <xs:element name="PAYER_NAME" type="xs:string" minOccurs="0" />
-              <xs:element name="payer_l_name" type="xs:string" minOccurs="0" />
-              <xs:element name="branch_name" type="xs:string" minOccurs="0" />
-              <xs:element name="CAT_NAME" type="xs:string" minOccurs="0" />
-              <xs:element name="COST_name" type="xs:string" minOccurs="0" />
-              <xs:element name="COST_E_NAME" type="xs:string" minOccurs="0" />
-            </xs:sequence>
-          </xs:complexType>
-        </xs:element>
-        <xs:element name="Table2">
-          <xs:complexType>
-            <xs:sequence>
-              <xs:element name="acc_no" type="xs:string" minOccurs="0" />
-              <xs:element name="Begining_balance" type="xs:decimal" minOccurs="0" />
-              <xs:element name="Ending_balance" type="xs:decimal" minOccurs="0" />
-              <xs:element name="_x0031_-30" type="xs:decimal" minOccurs="0" />
-              <xs:element name="_x0033_1-60" type="xs:decimal" minOccurs="0" />
-              <xs:element name="_x0036_1-90" type="xs:decimal" minOccurs="0" />
-              <xs:element name="_x0039_1-120" type="xs:decimal" minOccurs="0" />
-              <xs:element name="_x0031_21-250" type="xs:decimal" minOccurs="0" />
-              <xs:element name="_x0031_51-180" type="xs:decimal" minOccurs="0" />
-              <xs:element name="more180" type="xs:decimal" minOccurs="0" />
-              <xs:element name="Column1" type="xs:string" minOccurs="0" />
+              <xs:element name="Gr_Code" type="xs:string" minOccurs="0" />
+              <xs:element name="Gr_name" type="xs:string" minOccurs="0" />
+              <xs:element name="GA_" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Sal_" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Indust_" type="xs:decimal" minOccurs="0" />
+              <xs:element name="prev_GA_" type="xs:decimal" minOccurs="0" />
+              <xs:element name="prev_Sal_" type="xs:decimal" minOccurs="0" />
+              <xs:element name="prev_Indust_" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Prev_no" type="xs:string" minOccurs="0" />
+              <xs:element name="Gr_name1" type="xs:string" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>

@@ -1103,7 +1103,6 @@
             this.buttonItem7,
             this.buttonItem8});
             this.buttonItem6.SubItemsExpandWidth = 14;
-            this.buttonItem6.Visible = false;
             this.buttonItem6.Click += new System.EventHandler(this.buttonItem6_Click_1);
             // 
             // btnUpdatetables
@@ -1196,7 +1195,6 @@
             this.btn_Cut_off,
             this.btn_Group_Daliy_rpt});
             this.btn_Group_Report.SubItemsExpandWidth = 14;
-            this.btn_Group_Report.Visible = false;
             this.btn_Group_Report.Click += new System.EventHandler(this.btn_Group_Report_Click);
             // 
             // btn_Element_Entry

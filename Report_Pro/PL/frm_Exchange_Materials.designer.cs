@@ -84,10 +84,10 @@
             this.txt_serNo = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.delivry_Grid1 = new Report_Pro.MyControls.Delivry_Grid();
-            this.Branch = new Report_Pro.MyControls.UC_Branch();
+            this.Branch = new Report_Pro.MyControls.ذ();
             this.txtStoreMan = new Report_Pro.MyControls.UC_cost();
             this.Cost_Center = new Report_Pro.MyControls.UC_cost();
-            this.requset_Branch = new Report_Pro.MyControls.UC_Branch();
+            this.requset_Branch = new Report_Pro.MyControls.ذ();
             this.groupPanel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tabControl1)).BeginInit();
             this.tabControl1.SuspendLayout();
@@ -676,7 +676,7 @@
         private DevComponents.DotNetBar.TabControlPanel tabControlPanel2;
         private DevComponents.DotNetBar.TabItem tabItem6;
         private DevComponents.DotNetBar.LabelX txt_transaction_code;
-        private MyControls.UC_Branch requset_Branch;
+        private MyControls.ذ requset_Branch;
         private DevComponents.DotNetBar.LabelX labelX3;
         private System.Windows.Forms.Panel panel2;
         private DevComponents.DotNetBar.LabelX labelX11;
@@ -689,7 +689,7 @@
         private DevComponents.DotNetBar.LabelX txt_InvSM;
         private DevComponents.DotNetBar.LabelX labelX5;
         private DevComponents.DotNetBar.LabelX labelX4;
-        private MyControls.UC_Branch Branch;
+        private MyControls.ذ Branch;
         private MyControls.Delivry_Grid delivry_Grid1;
         private System.Windows.Forms.TextBox AccSer_No;
         private DevComponents.DotNetBar.LabelX labelX8;

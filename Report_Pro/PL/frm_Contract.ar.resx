@@ -194,6 +194,36 @@
   <data name="ribbonBar1.Size" type="System.Drawing.Size, System.Drawing">
     <value>1603, 33</value>
   </data>
+  <data name="txtsearch.Location" type="System.Drawing.Point, System.Drawing">
+    <value>90, 17</value>
+  </data>
+  <data name="label27.Location" type="System.Drawing.Point, System.Drawing">
+    <value>185, 17</value>
+  </data>
+  <data name="label27.Text" xml:space="preserve">
+    <value>الرقم</value>
+  </data>
+  <data name="label28.Location" type="System.Drawing.Point, System.Drawing">
+    <value>185, 44</value>
+  </data>
+  <data name="label28.Text" xml:space="preserve">
+    <value>السنة</value>
+  </data>
+  <data name="btn_Cancl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 44</value>
+  </data>
+  <data name="btn_Cancl.Text" xml:space="preserve">
+    <value>الغاء</value>
+  </data>
+  <data name="btn_Srearch.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 17</value>
+  </data>
+  <data name="btn_Srearch.Text" xml:space="preserve">
+    <value>بحث</value>
+  </data>
+  <data name="comboBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>89, 44</value>
+  </data>
   <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
     <value>453, 5</value>
   </data>

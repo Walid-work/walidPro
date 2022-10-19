@@ -37,18 +37,20 @@
             this.crystalReportViewer1 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
             this.groupPanel1 = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.label3 = new System.Windows.Forms.Label();
-            this.Acc = new Report_Pro.MyControls.UC_Acc();
             this.التصنيف = new System.Windows.Forms.Label();
             this.الفرع = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.dTP2 = new System.Windows.Forms.DateTimePicker();
             this.dTP1 = new System.Windows.Forms.DateTimePicker();
+            this.Acc = new Report_Pro.MyControls.UC_Acc();
             this.Catogry = new Report_Pro.MyControls.UC_Catogry();
             this.AccBranch = new Report_Pro.MyControls.UC_AccBranch();
+            this.radioGroup1 = new DevExpress.XtraEditors.RadioGroup();
             this.panelEx1.SuspendLayout();
             this.groupPanel2.SuspendLayout();
             this.groupPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.radioGroup1.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // panelEx1
@@ -57,9 +59,8 @@
             this.panelEx1.Controls.Add(this.groupPanel2);
             this.panelEx1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelEx1.Location = new System.Drawing.Point(0, 0);
-            this.panelEx1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelEx1.Name = "panelEx1";
-            this.panelEx1.Size = new System.Drawing.Size(1200, 66);
+            this.panelEx1.Size = new System.Drawing.Size(800, 45);
             this.panelEx1.Style.Alignment = System.Drawing.StringAlignment.Center;
             this.panelEx1.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
             this.panelEx1.Style.BackColor2.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
@@ -79,9 +80,8 @@
             this.groupPanel2.Controls.Add(this.btnOption);
             this.groupPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupPanel2.Location = new System.Drawing.Point(0, 0);
-            this.groupPanel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupPanel2.Name = "groupPanel2";
-            this.groupPanel2.Size = new System.Drawing.Size(1200, 66);
+            this.groupPanel2.Size = new System.Drawing.Size(800, 45);
             // 
             // 
             // 
@@ -109,10 +109,9 @@
             this.buttonX2.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.buttonX2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonX2.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.buttonX2.Location = new System.Drawing.Point(622, 13);
-            this.buttonX2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonX2.Location = new System.Drawing.Point(415, 9);
             this.buttonX2.Name = "buttonX2";
-            this.buttonX2.Size = new System.Drawing.Size(156, 34);
+            this.buttonX2.Size = new System.Drawing.Size(104, 23);
             this.buttonX2.TabIndex = 3;
             this.buttonX2.Text = "تقرير الحديد والصلب";
             this.buttonX2.Click += new System.EventHandler(this.buttonX2_Click);
@@ -122,10 +121,9 @@
             this.buttonX1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.buttonX1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonX1.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.buttonX1.Location = new System.Drawing.Point(788, 13);
-            this.buttonX1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonX1.Location = new System.Drawing.Point(525, 9);
             this.buttonX1.Name = "buttonX1";
-            this.buttonX1.Size = new System.Drawing.Size(112, 34);
+            this.buttonX1.Size = new System.Drawing.Size(75, 23);
             this.buttonX1.TabIndex = 2;
             this.buttonX1.Text = "تقرير النقليات";
             this.buttonX1.Click += new System.EventHandler(this.buttonX1_Click);
@@ -135,10 +133,9 @@
             this.btnReport.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnReport.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnReport.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btnReport.Location = new System.Drawing.Point(938, 13);
-            this.btnReport.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnReport.Location = new System.Drawing.Point(625, 9);
             this.btnReport.Name = "btnReport";
-            this.btnReport.Size = new System.Drawing.Size(112, 34);
+            this.btnReport.Size = new System.Drawing.Size(75, 23);
             this.btnReport.TabIndex = 1;
             this.btnReport.Text = "التقرير";
             this.btnReport.Click += new System.EventHandler(this.btnReport_Click);
@@ -148,10 +145,9 @@
             this.btnOption.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnOption.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnOption.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btnOption.Location = new System.Drawing.Point(1059, 13);
-            this.btnOption.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnOption.Location = new System.Drawing.Point(706, 9);
             this.btnOption.Name = "btnOption";
-            this.btnOption.Size = new System.Drawing.Size(112, 34);
+            this.btnOption.Size = new System.Drawing.Size(75, 23);
             this.btnOption.TabIndex = 0;
             this.btnOption.Text = "خيارات";
             this.btnOption.Click += new System.EventHandler(this.btnOption_Click);
@@ -162,10 +158,9 @@
             this.crystalReportViewer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.crystalReportViewer1.Cursor = System.Windows.Forms.Cursors.Default;
             this.crystalReportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.crystalReportViewer1.Location = new System.Drawing.Point(0, 66);
-            this.crystalReportViewer1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.crystalReportViewer1.Location = new System.Drawing.Point(0, 45);
             this.crystalReportViewer1.Name = "crystalReportViewer1";
-            this.crystalReportViewer1.Size = new System.Drawing.Size(1200, 592);
+            this.crystalReportViewer1.Size = new System.Drawing.Size(800, 405);
             this.crystalReportViewer1.TabIndex = 1;
             this.crystalReportViewer1.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None;
             this.crystalReportViewer1.ToolPanelWidth = 300;
@@ -174,6 +169,7 @@
             // 
             this.groupPanel1.CanvasColor = System.Drawing.SystemColors.Control;
             this.groupPanel1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
+            this.groupPanel1.Controls.Add(this.radioGroup1);
             this.groupPanel1.Controls.Add(this.label3);
             this.groupPanel1.Controls.Add(this.Acc);
             this.groupPanel1.Controls.Add(this.التصنيف);
@@ -185,10 +181,9 @@
             this.groupPanel1.Controls.Add(this.Catogry);
             this.groupPanel1.Controls.Add(this.AccBranch);
             this.groupPanel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.groupPanel1.Location = new System.Drawing.Point(0, 66);
-            this.groupPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupPanel1.Location = new System.Drawing.Point(0, 45);
             this.groupPanel1.Name = "groupPanel1";
-            this.groupPanel1.Size = new System.Drawing.Size(1200, 177);
+            this.groupPanel1.Size = new System.Drawing.Size(800, 121);
             // 
             // 
             // 
@@ -217,34 +212,20 @@
             this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Location = new System.Drawing.Point(1092, 54);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(728, 37);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(64, 19);
+            this.label3.Size = new System.Drawing.Size(44, 13);
             this.label3.TabIndex = 12;
             this.label3.Text = "الحساب";
-            // 
-            // Acc
-            // 
-            this.Acc.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Acc.BackColor = System.Drawing.Color.Transparent;
-            this.Acc.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.Acc.Location = new System.Drawing.Point(622, 45);
-            this.Acc.Margin = new System.Windows.Forms.Padding(0);
-            this.Acc.Name = "Acc";
-            this.Acc.Padding = new System.Windows.Forms.Padding(2, 1, 2, 1);
-            this.Acc.Size = new System.Drawing.Size(463, 32);
-            this.Acc.TabIndex = 11;
             // 
             // التصنيف
             // 
             this.التصنيف.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.التصنيف.AutoSize = true;
             this.التصنيف.BackColor = System.Drawing.Color.Transparent;
-            this.التصنيف.Location = new System.Drawing.Point(1092, 92);
-            this.التصنيف.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.التصنيف.Location = new System.Drawing.Point(728, 63);
             this.التصنيف.Name = "التصنيف";
-            this.التصنيف.Size = new System.Drawing.Size(63, 19);
+            this.التصنيف.Size = new System.Drawing.Size(44, 13);
             this.التصنيف.TabIndex = 10;
             this.التصنيف.Text = "التصنيف";
             // 
@@ -253,10 +234,9 @@
             this.الفرع.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.الفرع.AutoSize = true;
             this.الفرع.BackColor = System.Drawing.Color.Transparent;
-            this.الفرع.Location = new System.Drawing.Point(1092, 13);
-            this.الفرع.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.الفرع.Location = new System.Drawing.Point(728, 9);
             this.الفرع.Name = "الفرع";
-            this.الفرع.Size = new System.Drawing.Size(43, 19);
+            this.الفرع.Size = new System.Drawing.Size(31, 13);
             this.الفرع.TabIndex = 9;
             this.الفرع.Text = "الفرع";
             this.الفرع.Click += new System.EventHandler(this.الفرع_Click);
@@ -266,10 +246,9 @@
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Location = new System.Drawing.Point(788, 130);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(443, 86);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(69, 19);
+            this.label2.Size = new System.Drawing.Size(48, 13);
             this.label2.TabIndex = 7;
             this.label2.Text = "الي تاريخ";
             // 
@@ -278,60 +257,78 @@
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(1092, 130);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(728, 89);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(64, 19);
+            this.label1.Size = new System.Drawing.Size(45, 13);
             this.label1.TabIndex = 6;
             this.label1.Text = "من تاريخ";
             // 
             // dTP2
             // 
             this.dTP2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.dTP2.Location = new System.Drawing.Point(622, 124);
-            this.dTP2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dTP2.Location = new System.Drawing.Point(333, 82);
             this.dTP2.Name = "dTP2";
-            this.dTP2.Size = new System.Drawing.Size(154, 27);
+            this.dTP2.Size = new System.Drawing.Size(104, 20);
             this.dTP2.TabIndex = 5;
             // 
             // dTP1
             // 
             this.dTP1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.dTP1.Location = new System.Drawing.Point(932, 124);
-            this.dTP1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dTP1.Location = new System.Drawing.Point(621, 85);
             this.dTP1.Name = "dTP1";
-            this.dTP1.Size = new System.Drawing.Size(154, 27);
+            this.dTP1.Size = new System.Drawing.Size(104, 20);
             this.dTP1.TabIndex = 4;
+            // 
+            // Acc
+            // 
+            this.Acc.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Acc.BackColor = System.Drawing.Color.Transparent;
+            this.Acc.Location = new System.Drawing.Point(333, 31);
+            this.Acc.Margin = new System.Windows.Forms.Padding(0);
+            this.Acc.Name = "Acc";
+            this.Acc.Padding = new System.Windows.Forms.Padding(1);
+            this.Acc.Size = new System.Drawing.Size(392, 20);
+            this.Acc.TabIndex = 11;
             // 
             // Catogry
             // 
             this.Catogry.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Catogry.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.Catogry.Location = new System.Drawing.Point(622, 85);
+            this.Catogry.Location = new System.Drawing.Point(333, 58);
             this.Catogry.Margin = new System.Windows.Forms.Padding(0);
             this.Catogry.Name = "Catogry";
-            this.Catogry.Size = new System.Drawing.Size(463, 32);
+            this.Catogry.Size = new System.Drawing.Size(392, 20);
             this.Catogry.TabIndex = 2;
             // 
             // AccBranch
             // 
             this.AccBranch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.AccBranch.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.AccBranch.Location = new System.Drawing.Point(622, 6);
+            this.AccBranch.Location = new System.Drawing.Point(333, 4);
             this.AccBranch.Margin = new System.Windows.Forms.Padding(0);
             this.AccBranch.Name = "AccBranch";
-            this.AccBranch.Size = new System.Drawing.Size(463, 32);
+            this.AccBranch.Size = new System.Drawing.Size(392, 20);
             this.AccBranch.TabIndex = 1;
+            // 
+            // radioGroup1
+            // 
+            this.radioGroup1.EditValue = "0";
+            this.radioGroup1.Location = new System.Drawing.Point(165, 9);
+            this.radioGroup1.Name = "radioGroup1";
+            this.radioGroup1.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.radioGroup1.Properties.Appearance.Options.UseBackColor = true;
+            this.radioGroup1.Properties.Items.AddRange(new DevExpress.XtraEditors.Controls.RadioGroupItem[] {
+            new DevExpress.XtraEditors.Controls.RadioGroupItem("0", "تفصيلي"),
+            new DevExpress.XtraEditors.Controls.RadioGroupItem("1", "اجمالي بالموظفين")});
+            this.radioGroup1.Size = new System.Drawing.Size(133, 85);
+            this.radioGroup1.TabIndex = 13;
             // 
             // frm_rpt_salary
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1200, 658);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.groupPanel1);
             this.Controls.Add(this.crystalReportViewer1);
             this.Controls.Add(this.panelEx1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frm_rpt_salary";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.RightToLeftLayout = true;
@@ -340,6 +337,7 @@
             this.groupPanel2.ResumeLayout(false);
             this.groupPanel1.ResumeLayout(false);
             this.groupPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.radioGroup1.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -364,5 +362,6 @@
         private MyControls.UC_Acc Acc;
         private DevComponents.DotNetBar.ButtonX buttonX1;
         private DevComponents.DotNetBar.ButtonX buttonX2;
+        private DevExpress.XtraEditors.RadioGroup radioGroup1;
     }
 }

@@ -79,22 +79,72 @@ namespace Report_Pro.MyControls
 
         private void btn1_Click(object sender, EventArgs e)
         {
-            uc_SearchItem1.Visible = true;
-            uc_SearchItem1.Dock = DockStyle.Fill;
-            this.Dock = DockStyle.Fill;
-            this.BringToFront();
-         
-                // OnClick(e);
+            PL.frmSerachItem frm = new PL.frmSerachItem();
+
+            frm.uc_SearchItem1.txtSrch.Text = txt_s1.Text;
+            frm.uc_SearchItem1.txtsrch_1.Text = txt_s2.Text;
+            frm.uc_SearchItem1.txtserch_2.Text = txt_s3.Text;
+            frm.uc_SearchItem1.txtSrch_3.Text = txt_s4.Text;
+            frm.uc_SearchItem1.txtserch_4.Text = txt_s5.Text;
+
+
+
+
+
+            frm.ShowDialog();
+
+            // if (Properties.Settings.Default.lungh == "0")
+            //  {
+
+            //      frm.Location = new Point(x - frm.Width, y);
+            //  }
+            //  else
+            //  {
+            //      frm.Location = new Point(x, y);
+            //  }
+            ////  frm.branch_search = branchID.Text;
+            //  frm.ShowDialog();
+            if (frm.clos_ == 1)
+            {
+
+                ID.Text = frm.uc_SearchItem1.dGV_pro_list.CurrentRow.Cells[0].Value.ToString();
+                if (frm.uc_SearchItem1.ch_SaveSearch.Checked)
+                {
+                    txt_s1.Text = frm.uc_SearchItem1.txtSrch.Text;
+                    txt_s2.Text = frm.uc_SearchItem1.txtsrch_1.Text;
+                    txt_s3.Text = frm.uc_SearchItem1.txtserch_2.Text;
+                    txt_s4.Text = frm.uc_SearchItem1.txtSrch_3.Text;
+                    txt_s5.Text = frm.uc_SearchItem1.txtserch_4.Text;
+                }
+                else
+                {
+                    txt_s1.Clear();
+                    txt_s2.Clear();
+                    txt_s3.Clear();
+                    txt_s4.Clear();
+                    txt_s5.Clear();
+                }
+            }
+            ID.Focus();
+
+
+
+            //uc_SearchItem1.Visible = true;
+            //uc_SearchItem1.Dock = DockStyle.Fill;
+            //this.Dock = DockStyle.Fill;
+            //this.BringToFront();
+
+            //  OnClick(e);
 
         }
 
-       
-       
 
-      
 
-       
-      
+
+
+
+
+
 
         private void ID_TextChanged(object sender, EventArgs e)
         {
@@ -118,52 +168,8 @@ namespace Report_Pro.MyControls
              
         }
 
-        private void Desc_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ID_KeyPress(object sender, KeyPressEventArgs e)
-        {
-
-        }
-
-        private void uc_SearchItem1_Load(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void uc_SearchItem1_DoubleClick(object sender, EventArgs e)
-        {
-
-            if (uc_SearchItem1.dGV_pro_list.SelectedRows.Count > 0)
-            {
-                if (uc_SearchItem1.ch_SaveSearch.Checked == true)
-                {
-                    ID.Text = uc_SearchItem1.dGV_pro_list.CurrentRow.Cells[0].Value.ToString();
-
-                }
-                else
-                {
-                    ID.Text = uc_SearchItem1.dGV_pro_list.CurrentRow.Cells[0].Value.ToString();
-                    dal.ClearTextBoxes_uc(uc_SearchItem1);
-
-                }
-                uc_SearchItem1.Visible = false;
-
-
-                if (Properties.Settings.Default.lungh == "0")
-                {
-                    this.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-                }
-                else
-                {
-                    this.Anchor = AnchorStyles.Top | AnchorStyles.Left;
-                }
-                this.Dock = DockStyle.None;
-            }
-        }
-
+        
+     
         private void uc_SearchItem1_Click(object sender, EventArgs e)
         {
 
@@ -185,6 +191,11 @@ namespace Report_Pro.MyControls
             get_desc();
             }
                           
+        }
+
+        private void Desc_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

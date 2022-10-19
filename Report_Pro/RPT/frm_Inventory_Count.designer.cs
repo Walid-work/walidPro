@@ -56,7 +56,7 @@
             this.labelX2 = new DevComponents.DotNetBar.LabelX();
             this.UC_Acc = new Report_Pro.MyControls.UC_Acc();
             this.labelX4 = new DevComponents.DotNetBar.LabelX();
-            this.UC_Branch = new Report_Pro.MyControls.UC_Branch();
+            this.UC_Branch = new Report_Pro.MyControls.ذ();
             this.ToDate_ = new System.Windows.Forms.DateTimePicker();
             this.FromDate_ = new System.Windows.Forms.DateTimePicker();
             this.labelX7 = new DevComponents.DotNetBar.LabelX();
@@ -548,7 +548,7 @@
         private DevComponents.DotNetBar.LabelX labelX3;
         private MyControls.UC_Items UC_Items;
         private MyControls.UC_Acc UC_Acc;
-        private MyControls.UC_Branch UC_Branch;
+        private MyControls.ذ UC_Branch;
         private DevComponents.DotNetBar.ButtonX btn_stock_count;
         private DevComponents.DotNetBar.LabelX labelX9;
         private MyControls.Uc_Group Uc_Group1;

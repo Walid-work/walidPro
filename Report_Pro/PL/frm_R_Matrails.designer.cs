@@ -43,7 +43,6 @@
             this.BtnCalc = new DevComponents.DotNetBar.ButtonItem();
             this.BExit = new DevComponents.DotNetBar.ButtonItem();
             this.groupPanel6 = new DevComponents.DotNetBar.Controls.GroupPanel();
-            this.Spacil_Chb = new System.Windows.Forms.CheckBox();
             this.groupPanel1 = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.labelX10 = new DevComponents.DotNetBar.LabelX();
             this.btnCancel = new DevComponents.DotNetBar.ButtonX();
@@ -70,6 +69,7 @@
             this.TxtId = new System.Windows.Forms.TextBox();
             this.tabControl1 = new DevComponents.DotNetBar.TabControl();
             this.tabControlPanel2 = new DevComponents.DotNetBar.TabControlPanel();
+            this.Spacil_Chb = new System.Windows.Forms.CheckBox();
             this.labelX20 = new DevComponents.DotNetBar.LabelX();
             this.txt_MainNote = new System.Windows.Forms.TextBox();
             this.supp_address = new System.Windows.Forms.TextBox();
@@ -81,7 +81,8 @@
             this.labelX16 = new DevComponents.DotNetBar.LabelX();
             this.supp_fax = new System.Windows.Forms.TextBox();
             this.labelX11 = new DevComponents.DotNetBar.LabelX();
-            this.labelX3 = new DevComponents.DotNetBar.LabelX();
+            this.uc_Supplier1 = new Report_Pro.MyControls.Uc_Supplier();
+            this.Uc_Branch = new Report_Pro.MyControls.ذ();
             this.tabItem6 = new DevComponents.DotNetBar.TabItem(this.components);
             this.tabControlPanel1 = new DevComponents.DotNetBar.TabControlPanel();
             this.txtMobile = new System.Windows.Forms.TextBox();
@@ -116,8 +117,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.dGV_Item = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.uc_Supplier1 = new Report_Pro.MyControls.Uc_Supplier();
-            this.Uc_Branch = new Report_Pro.MyControls.UC_Branch();
+            this.labelX3 = new DevComponents.DotNetBar.LabelX();
             this.groupPanel6.SuspendLayout();
             this.groupPanel1.SuspendLayout();
             this.groupPanel7.SuspendLayout();
@@ -288,14 +288,6 @@
             this.groupPanel6.Style.TextColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
             this.groupPanel6.Style.TextLineAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Near;
             this.groupPanel6.Click += new System.EventHandler(this.groupPanel6_Click);
-            // 
-            // Spacil_Chb
-            // 
-            resources.ApplyResources(this.Spacil_Chb, "Spacil_Chb");
-            this.Spacil_Chb.BackColor = System.Drawing.Color.Transparent;
-            this.Spacil_Chb.Name = "Spacil_Chb";
-            this.Spacil_Chb.UseVisualStyleBackColor = false;
-            this.Spacil_Chb.CheckedChanged += new System.EventHandler(this.Spacil_Chb_CheckedChanged);
             // 
             // groupPanel1
             // 
@@ -576,6 +568,7 @@
             // tabControl1
             // 
             resources.ApplyResources(this.tabControl1, "tabControl1");
+            this.tabControl1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.tabControl1.CanReorderTabs = true;
             this.tabControl1.CloseButtonPosition = DevComponents.DotNetBar.eTabCloseButtonPosition.Right;
             this.tabControl1.Controls.Add(this.tabControlPanel2);
@@ -616,6 +609,14 @@
             this.tabControlPanel2.Style.GradientAngle = 90;
             this.tabControlPanel2.TabItem = this.tabItem6;
             this.tabControlPanel2.Click += new System.EventHandler(this.tabControlPanel2_Click);
+            // 
+            // Spacil_Chb
+            // 
+            resources.ApplyResources(this.Spacil_Chb, "Spacil_Chb");
+            this.Spacil_Chb.BackColor = System.Drawing.Color.Transparent;
+            this.Spacil_Chb.Name = "Spacil_Chb";
+            this.Spacil_Chb.UseVisualStyleBackColor = false;
+            this.Spacil_Chb.CheckedChanged += new System.EventHandler(this.Spacil_Chb_CheckedChanged);
             // 
             // labelX20
             // 
@@ -689,12 +690,22 @@
             this.labelX11.Name = "labelX11";
             this.labelX11.Click += new System.EventHandler(this.labelX11_Click);
             // 
-            // labelX3
+            // uc_Supplier1
             // 
-            resources.ApplyResources(this.labelX3, "labelX3");
-            this.labelX3.BackColor = System.Drawing.Color.Transparent;
-            this.labelX3.Name = "labelX3";
-            this.labelX3.Click += new System.EventHandler(this.labelX3_Click);
+            resources.ApplyResources(this.uc_Supplier1, "uc_Supplier1");
+            this.uc_Supplier1.BackColor = System.Drawing.Color.Transparent;
+            this.uc_Supplier1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.uc_Supplier1.Name = "uc_Supplier1";
+            // 
+            // Uc_Branch
+            // 
+            resources.ApplyResources(this.Uc_Branch, "Uc_Branch");
+            this.Uc_Branch.BackColor = System.Drawing.Color.Transparent;
+            this.Uc_Branch.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.Uc_Branch.Cursor = System.Windows.Forms.Cursors.Default;
+            this.Uc_Branch.Name = "Uc_Branch";
+            this.Uc_Branch.Load += new System.EventHandler(this.Uc_Branch_Load);
+            this.Uc_Branch.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Uc_Branch_KeyUp);
             // 
             // tabItem6
             // 
@@ -969,7 +980,7 @@
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.Cornsilk;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 9F);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
@@ -997,25 +1008,18 @@
             this.panel1.Controls.Add(this.dGV_Item);
             this.panel1.Name = "panel1";
             // 
-            // uc_Supplier1
+            // labelX3
             // 
-            resources.ApplyResources(this.uc_Supplier1, "uc_Supplier1");
-            this.uc_Supplier1.BackColor = System.Drawing.Color.Transparent;
-            this.uc_Supplier1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.uc_Supplier1.Name = "uc_Supplier1";
-            // 
-            // Uc_Branch
-            // 
-            resources.ApplyResources(this.Uc_Branch, "Uc_Branch");
-            this.Uc_Branch.BackColor = System.Drawing.Color.Transparent;
-            this.Uc_Branch.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.Uc_Branch.Name = "Uc_Branch";
-            this.Uc_Branch.Load += new System.EventHandler(this.Uc_Branch_Load);
-            this.Uc_Branch.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Uc_Branch_KeyUp);
+            resources.ApplyResources(this.labelX3, "labelX3");
+            this.labelX3.BackColor = System.Drawing.Color.Transparent;
+            this.labelX3.Name = "labelX3";
+            this.labelX3.Click += new System.EventHandler(this.labelX3_Click);
             // 
             // frm_R_Matrails
             // 
             resources.ApplyResources(this, "$this");
+            this.Appearance.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.Appearance.Options.UseBackColor = true;
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupPanel5);
@@ -1026,6 +1030,11 @@
             this.KeyPreview = true;
             this.Name = "frm_R_Matrails";
             this.Load += new System.EventHandler(this.frm_R_Qutaion_Load);
+            this.Controls.SetChildIndex(this.ribbonBar1, 0);
+            this.Controls.SetChildIndex(this.groupPanel6, 0);
+            this.Controls.SetChildIndex(this.panel2, 0);
+            this.Controls.SetChildIndex(this.groupPanel5, 0);
+            this.Controls.SetChildIndex(this.panel1, 0);
             this.groupPanel6.ResumeLayout(false);
             this.groupPanel6.PerformLayout();
             this.groupPanel1.ResumeLayout(false);
@@ -1048,6 +1057,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dGV_Item)).EndInit();
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -1089,13 +1099,12 @@
         private DevComponents.DotNetBar.TabControlPanel tabControlPanel2;
         private DevComponents.DotNetBar.TabItem tabItem6;
         private DevComponents.DotNetBar.LabelX txt_transaction_code;
-        private MyControls.UC_Branch Uc_Branch;
+        private MyControls.ذ Uc_Branch;
         private DevComponents.DotNetBar.LabelX labelX53;
         private System.Windows.Forms.TextBox txt_TotWeight;
         private DevComponents.DotNetBar.LabelX labelX5;
         private System.Windows.Forms.TextBox txtUnitWeight;
         private DevComponents.DotNetBar.LabelX labelX4;
-        private DevComponents.DotNetBar.LabelX labelX3;
         private DevComponents.DotNetBar.Controls.GroupPanel groupPanel5;
         private DevComponents.DotNetBar.LabelX labelX24;
         private DevComponents.DotNetBar.LabelX labelX23;
@@ -1139,5 +1148,6 @@
         private System.Windows.Forms.CheckBox Spacil_Chb;
         private DevComponents.DotNetBar.LabelX labelX20;
         private System.Windows.Forms.TextBox txt_MainNote;
+        private DevComponents.DotNetBar.LabelX labelX3;
     }
 }

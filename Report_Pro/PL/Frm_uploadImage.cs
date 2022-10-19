@@ -212,7 +212,7 @@ namespace Report_Pro.PL
                     row.CreateCells(dgv2, p.ToString(), Path.GetFileNameWithoutExtension(p), Path.GetExtension(p), p_id);
                     dgv2.Rows.Add(row);
                     tabControl1.SelectedTab = tabItem3;
-
+                }
                     // ListViewItem itm = new ListViewItem(p);
                     // itm.SubItems.Add(Path.GetFileNameWithoutExtension(p));
                     // itm.SubItems.Add(Path.GetExtension(p));
@@ -225,7 +225,7 @@ namespace Report_Pro.PL
                     //txtFileName.Text= Path.GetFileNameWithoutExtension(p);
                     //txtFileType.Text=Path.GetExtension(p);
                     //txtDeviceID.Text =p_id;
-                }
+                
             }
         }
 

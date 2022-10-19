@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace Report_Pro.RPT
 {
-    public partial class frm_rpt_Po : XtraForm
+    public partial class frm_rpt_Po :frm_ReportMaster
     {
-
+      
         DAL.DataAccesslayer1 dal = new DAL.DataAccesslayer1();
         string languh = Properties.Settings.Default.lungh;
         DataTable dt = new DataTable();
@@ -133,6 +133,73 @@ namespace Report_Pro.RPT
             dgvPO.Rows.Clear();
         }
 
+        public override void Option()
+        {
+            base.Option();
+            
+           // dgvPO.Dock = DockStyle.None;
+            dgvPO.Rows.Clear();
+            dgvPO.Visible = false;
+            groupControl2.Visible = true;
+        }
+
+        public override void Report()
+        {
+            base.Report();
+            groupControl2.Visible = false;
+            dgvPO.Visible = true;
+           // dgvPO.Dock = DockStyle.Fill;
+
+
+            getData();
+            dgvPO.Rows.Clear();
+            if (dt.Rows.Count > 0)
+            {
+                int B_rowscount = dt.Rows.Count;
+
+
+                dgvPO.Rows.Add(B_rowscount + 1);
+                for (int i = 1; i <= (B_rowscount); i++)
+                {
+
+
+                    dgvPO.Rows[i].Cells[0].Value = dt.Rows[i - 1]["ser_no"];
+                    if (languh == "0")
+                    {
+                        dgvPO.Rows[i].Cells[1].Value = dt.Rows[i - 1]["branch_name"];
+                        dgvPO.Rows[i].Cells[3].Value = dt.Rows[i - 1]["payer_name"];
+                        dgvPO.Rows[i].Cells[5].Value = dt.Rows[i - 1]["descr"];
+
+                    }
+                    else
+                    {
+                        dgvPO.Rows[i].Cells[1].Value = dt.Rows[i - 1]["WH_E_NAME"];
+                        dgvPO.Rows[i].Cells[3].Value = dt.Rows[i - 1]["payer_l_name"];
+                        dgvPO.Rows[i].Cells[5].Value = dt.Rows[i - 1]["Descr_eng"];
+                    }
+
+                    dgvPO.Rows[i].Cells[2].Value = Convert.ToDateTime(dt.Rows[i - 1]["G_Date"]).ToString("yyyy/MM/dd");
+                    dgvPO.Rows[i].Cells[4].Value = dt.Rows[i - 1]["item_no"];
+                    dgvPO.Rows[i].Cells[6].Value = dt.Rows[i - 1]["Unit"];
+                    dgvPO.Rows[i].Cells[7].Value = dt.Rows[i - 1]["qty_take"].ToString().ToDecimal();
+                    dgvPO.Rows[i].Cells[8].Value = dt.Rows[i - 1]["qty_Add"].ToString().ToDecimal();
+                    dgvPO.Rows[i].Cells[9].Value = dt.Rows[i - 1]["Po_balance"].ToString().ToDecimal();
+                    dgvPO.Rows[i].Cells[10].Value = dt.Rows[i - 1]["Local_Price"].ToString().ToDecimal();
+                    dgvPO.Rows[i].Cells[11].Value = dt.Rows[i - 1]["TonPrice"].ToString().ToDecimal();
+
+                    dgvPO.Rows[i].Cells[12].Value = dt.Rows[i - 1]["branch_code"];
+                    dgvPO.Rows[i].Cells[13].Value = dt.Rows[i - 1]["Acc_no"];
+                    dgvPO.Rows[i].Cells[14].Value = dt.Rows[i - 1]["cyear"];
+
+                }
+                FreezeBand(dgvPO.Rows[0]);
+                total_();
+            }
+            Cursor.Current = Cursors.Default;
+
+
+        }
+
         private DataTable getData()
         {
             double T1, T2;
@@ -164,7 +231,10 @@ namespace Report_Pro.RPT
            "and X.Acc_no Like '"+txtAcc.ID.Text +"%' and x.item_no like '" + txtItem.ID.Text
            + "%' and ISNULL(D.UnitDepth, '') BETWEEN '" + T1 + "' AND '" + T2 +
            "' and( isnull(Y.qty_Add,0)>0 and  (X.qty_take-isnull(Y.qty_Add,0)) > case when '" + radioGroup1.EditValue + "'=1 then 0  end  " +
-          "or (X.qty_take-isnull(Y.qty_Add,0))=case when '" + radioGroup1.EditValue + "'=2 then 0 end or isnull(Y.qty_Add,0)= case when '" + radioGroup1.EditValue + "'=3 then 0 end or X.qty_take > case when '" + radioGroup1.EditValue + "'=0 then 0 end) " +
+          "or (X.qty_take-isnull(Y.qty_Add,0))=case when '" + radioGroup1.EditValue + "'=2 then 0 end " +
+          "or isnull(Y.qty_Add,0)= case when '" + radioGroup1.EditValue + "'=3 then 0 end " +
+          "or X.qty_take > case when '" + radioGroup1.EditValue + "'=0 then 0 end) " +
+         " or (X.qty_take - isnull(Y.qty_Add, 0)) > case when '" + radioGroup1.EditValue + "' = 4 then 0  end "+
           "order by X.branch_code,x.ser_no");
 
             return dt;
@@ -210,7 +280,7 @@ namespace Report_Pro.RPT
                    // frm.UC_Items.ID.Text = dgvPO.CurrentRow.Cells[4].Value.ToString();
                     frm.FromDate.Text = txtFromDate.Text;
                     frm.ToDate.Text = txtToDate.Text;
-                    frm.Report_btn.PerformClick();
+                   // frm.Report_btn.PerformClick();
                     frm.ShowDialog();
 
                 Cursor.Current = Cursors.Default;
@@ -282,7 +352,7 @@ namespace Report_Pro.RPT
 
         private void frm_rpt_Po_Load(object sender, EventArgs e)
         {
-
+           
         }
 
         private void dgvPO_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -326,5 +396,7 @@ namespace Report_Pro.RPT
         {
 
         }
+
+       
     }
 }

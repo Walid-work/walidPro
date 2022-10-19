@@ -36,7 +36,7 @@
             this.UC_Catogry = new Report_Pro.MyControls.UC_Catogry();
             this.UC_cost = new Report_Pro.MyControls.UC_cost();
             this.UC_Acc = new Report_Pro.MyControls.UC_Acc();
-            this.UC_Branch = new Report_Pro.MyControls.UC_Branch();
+            this.UC_Branch = new Report_Pro.MyControls.ذ();
             this.labelX5 = new DevComponents.DotNetBar.LabelX();
             this.labelX4 = new DevComponents.DotNetBar.LabelX();
             this.labelX3 = new DevComponents.DotNetBar.LabelX();
@@ -316,7 +316,7 @@
         private DevComponents.DotNetBar.LabelX labelX1;
         private CrystalDecisions.Windows.Forms.CrystalReportViewer crystalReportViewer1;
         private MyControls.UC_Acc UC_Acc;
-        private MyControls.UC_Branch UC_Branch;
+        private MyControls.ذ UC_Branch;
         private MyControls.UC_Catogry UC_Catogry;
         private MyControls.UC_cost UC_cost;
     }

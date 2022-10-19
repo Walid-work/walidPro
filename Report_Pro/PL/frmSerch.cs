@@ -35,5 +35,14 @@ namespace Report_Pro.PL
             Close_Type = 1;
             this.Close();
         }
+
+        private void txtSearch_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter && txtSearch.t.Text.Trim() != "" )
+            {
+                btnOk.Focus();
+
+            }
+        }
     }
 }

@@ -120,7 +120,7 @@
             this.Bank_ = new Report_Pro.MyControls.UC_Acc();
             this.Cost_ = new Report_Pro.MyControls.UC_cost();
             this.txtLcAcc = new Report_Pro.MyControls.UC_Acc();
-            this.txtBranch = new Report_Pro.MyControls.UC_Branch();
+            this.txtBranch = new Report_Pro.MyControls.ذ();
             this.txtSupplier = new Report_Pro.MyControls.UC_Acc();
             this.tabGenral = new DevComponents.DotNetBar.TabItem(this.components);
             this.tabControlPanel2 = new DevComponents.DotNetBar.TabControlPanel();
@@ -1787,7 +1787,7 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label17;
-        private MyControls.UC_Branch txtBranch;
+        private MyControls.ذ txtBranch;
         private MyControls.UC_Acc txtLcAcc;
         private DevComponents.DotNetBar.TabControl tabcontrol1;
         private DevComponents.DotNetBar.TabControlPanel tabControlPanel3;

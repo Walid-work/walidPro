@@ -46,12 +46,14 @@
             this.txt_transaction_code = new DevComponents.DotNetBar.LabelX();
             this.tabControl1 = new DevComponents.DotNetBar.TabControl();
             this.tabControlPanel2 = new DevComponents.DotNetBar.TabControlPanel();
-            this.labelX4 = new DevComponents.DotNetBar.LabelX();
             this.labelX13 = new DevComponents.DotNetBar.LabelX();
             this.labelX20 = new DevComponents.DotNetBar.LabelX();
             this.txt_MainNote = new System.Windows.Forms.TextBox();
             this.labelX11 = new DevComponents.DotNetBar.LabelX();
-            this.labelX3 = new DevComponents.DotNetBar.LabelX();
+            this.Supply_Branch = new Report_Pro.MyControls.ذ();
+            this.txtRequst_p = new Report_Pro.MyControls.UC_cost();
+            this.uC_cost1 = new Report_Pro.MyControls.UC_cost();
+            this.Uc_Branch = new Report_Pro.MyControls.ذ();
             this.tabItem6 = new DevComponents.DotNetBar.TabItem(this.components);
             this.labelX51 = new DevComponents.DotNetBar.LabelX();
             this.Doc_Name = new System.Windows.Forms.Label();
@@ -65,10 +67,6 @@
             this.txt_serNo = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.delivry_Grid1 = new Report_Pro.MyControls.Delivry_Grid();
-            this.Supply_Branch = new Report_Pro.MyControls.UC_Branch();
-            this.txtRequst_p = new Report_Pro.MyControls.UC_cost();
-            this.uC_cost1 = new Report_Pro.MyControls.UC_cost();
-            this.Uc_Branch = new Report_Pro.MyControls.UC_Branch();
             this.groupPanel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tabControl1)).BeginInit();
             this.tabControl1.SuspendLayout();
@@ -262,12 +260,10 @@
             // tabControlPanel2
             // 
             resources.ApplyResources(this.tabControlPanel2, "tabControlPanel2");
-            this.tabControlPanel2.Controls.Add(this.labelX4);
             this.tabControlPanel2.Controls.Add(this.labelX13);
             this.tabControlPanel2.Controls.Add(this.labelX20);
             this.tabControlPanel2.Controls.Add(this.txt_MainNote);
             this.tabControlPanel2.Controls.Add(this.labelX11);
-            this.tabControlPanel2.Controls.Add(this.labelX3);
             this.tabControlPanel2.Controls.Add(this.Supply_Branch);
             this.tabControlPanel2.Controls.Add(this.txtRequst_p);
             this.tabControlPanel2.Controls.Add(this.uC_cost1);
@@ -282,12 +278,6 @@
             this.tabControlPanel2.Style.GradientAngle = 90;
             this.tabControlPanel2.TabItem = this.tabItem6;
             this.tabControlPanel2.Click += new System.EventHandler(this.tabControlPanel2_Click);
-            // 
-            // labelX4
-            // 
-            resources.ApplyResources(this.labelX4, "labelX4");
-            this.labelX4.BackColor = System.Drawing.Color.Transparent;
-            this.labelX4.Name = "labelX4";
             // 
             // labelX13
             // 
@@ -313,11 +303,34 @@
             this.labelX11.BackColor = System.Drawing.Color.Transparent;
             this.labelX11.Name = "labelX11";
             // 
-            // labelX3
+            // Supply_Branch
             // 
-            resources.ApplyResources(this.labelX3, "labelX3");
-            this.labelX3.BackColor = System.Drawing.Color.Transparent;
-            this.labelX3.Name = "labelX3";
+            resources.ApplyResources(this.Supply_Branch, "Supply_Branch");
+            this.Supply_Branch.BackColor = System.Drawing.Color.Transparent;
+            this.Supply_Branch.Cursor = System.Windows.Forms.Cursors.Default;
+            this.Supply_Branch.Name = "Supply_Branch";
+            this.Supply_Branch.Load += new System.EventHandler(this.Supply_Branch_Load);
+            // 
+            // txtRequst_p
+            // 
+            resources.ApplyResources(this.txtRequst_p, "txtRequst_p");
+            this.txtRequst_p.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtRequst_p.Name = "txtRequst_p";
+            // 
+            // uC_cost1
+            // 
+            resources.ApplyResources(this.uC_cost1, "uC_cost1");
+            this.uC_cost1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.uC_cost1.Name = "uC_cost1";
+            // 
+            // Uc_Branch
+            // 
+            resources.ApplyResources(this.Uc_Branch, "Uc_Branch");
+            this.Uc_Branch.BackColor = System.Drawing.Color.Transparent;
+            this.Uc_Branch.Cursor = System.Windows.Forms.Cursors.Default;
+            this.Uc_Branch.Name = "Uc_Branch";
+            this.Uc_Branch.Load += new System.EventHandler(this.Uc_Branch_Load);
+            this.Uc_Branch.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Uc_Branch_KeyUp);
             // 
             // tabItem6
             // 
@@ -408,37 +421,6 @@
             resources.ApplyResources(this.delivry_Grid1, "delivry_Grid1");
             this.delivry_Grid1.Name = "delivry_Grid1";
             // 
-            // Supply_Branch
-            // 
-            resources.ApplyResources(this.Supply_Branch, "Supply_Branch");
-            this.Supply_Branch.BackColor = System.Drawing.Color.Transparent;
-            this.Supply_Branch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Supply_Branch.Cursor = System.Windows.Forms.Cursors.Default;
-            this.Supply_Branch.Name = "Supply_Branch";
-            this.Supply_Branch.Load += new System.EventHandler(this.Supply_Branch_Load);
-            // 
-            // txtRequst_p
-            // 
-            resources.ApplyResources(this.txtRequst_p, "txtRequst_p");
-            this.txtRequst_p.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtRequst_p.Name = "txtRequst_p";
-            // 
-            // uC_cost1
-            // 
-            resources.ApplyResources(this.uC_cost1, "uC_cost1");
-            this.uC_cost1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.uC_cost1.Name = "uC_cost1";
-            // 
-            // Uc_Branch
-            // 
-            resources.ApplyResources(this.Uc_Branch, "Uc_Branch");
-            this.Uc_Branch.BackColor = System.Drawing.Color.Transparent;
-            this.Uc_Branch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Uc_Branch.Cursor = System.Windows.Forms.Cursors.Default;
-            this.Uc_Branch.Name = "Uc_Branch";
-            this.Uc_Branch.Load += new System.EventHandler(this.Uc_Branch_Load);
-            this.Uc_Branch.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Uc_Branch_KeyUp);
-            // 
             // frm_Internal_RM
             // 
             resources.ApplyResources(this, "$this");
@@ -493,8 +475,7 @@
         private DevComponents.DotNetBar.TabControlPanel tabControlPanel2;
         private DevComponents.DotNetBar.TabItem tabItem6;
         private DevComponents.DotNetBar.LabelX txt_transaction_code;
-        private MyControls.UC_Branch Uc_Branch;
-        private DevComponents.DotNetBar.LabelX labelX3;
+        private MyControls.ذ Uc_Branch;
         private System.Windows.Forms.Panel panel2;
         private DevComponents.DotNetBar.LabelX labelX11;
         private DevComponents.DotNetBar.LabelX labelX20;
@@ -505,8 +486,7 @@
         private DevComponents.DotNetBar.LabelX userID;
         private DevComponents.DotNetBar.LabelX txt_InvSM;
         private DevComponents.DotNetBar.LabelX labelX5;
-        private DevComponents.DotNetBar.LabelX labelX4;
-        private MyControls.UC_Branch Supply_Branch;
+        private MyControls.ذ Supply_Branch;
         private MyControls.Delivry_Grid delivry_Grid1;
         private DevComponents.DotNetBar.ButtonX buttonX1;
     }

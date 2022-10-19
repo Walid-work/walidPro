@@ -1,0 +1,41 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Table1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Ser_no" type="xs:int" minOccurs="0" />
+              <xs:element name="Cyear" type="xs:string" minOccurs="0" />
+              <xs:element name="Branch_code" type="xs:string" minOccurs="0" />
+              <xs:element name="Transaction_code" type="xs:string" minOccurs="0" />
+              <xs:element name="G_date" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Acc_no" type="xs:string" minOccurs="0" />
+              <xs:element name="Acc_Branch_code" type="xs:string" minOccurs="0" />
+              <xs:element name="Payment_Type" type="xs:string" minOccurs="0" />
+              <xs:element name="Inv_no" type="xs:string" minOccurs="0" />
+              <xs:element name="Inv_date" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Po_no" type="xs:string" minOccurs="0" />
+              <xs:element name="Inv_Notes" type="xs:string" minOccurs="0" />
+              <xs:element name="NetAmount" type="xs:decimal" minOccurs="0" />
+              <xs:element name="K_M_Credit_TAX" type="xs:decimal" minOccurs="0" />
+              <xs:element name="paidAmount" type="xs:decimal" minOccurs="0" />
+              <xs:element name="InvoiceAmount" type="xs:decimal" minOccurs="0" />
+              <xs:element name="returnAmount" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Balance" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PAYER_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="payer_l_name" type="xs:string" minOccurs="0" />
+              <xs:element name="CREDIT_AGE" type="xs:int" minOccurs="0" />
+              <xs:element name="E_MAIL" type="xs:string" minOccurs="0" />
+              <xs:element name="phone_no" type="xs:string" minOccurs="0" />
+              <xs:element name="resp_name" type="xs:string" minOccurs="0" />
+              <xs:element name="resp_name_E" type="xs:string" minOccurs="0" />
+              <xs:element name="RESP_PHONE" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

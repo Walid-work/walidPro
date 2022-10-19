@@ -1,0 +1,31 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+ALquhaliLibrary
+</name>
+</assembly>
+<members>
+<member name="M:ALquhaliLibrary.AlquhaliClass.Save_Multiple_Images_2PDF(System.Windows.Forms.ListBox,System.String)">
+	<summary>
+ هذه الداله تعمل على حفظ مجموعه الصور الى ملف بي دي اف 
+ </summary>
+	<param name="list"> هنا يعوض بإسم قائمة الليست بوكس الذي ستحوي اسماء الصور بداخلها</param>
+	<param name="PDFName"> هنا يعوض باسم التكست بوكس الذي ستكتب اسم الملف بداخلة</param>
+	<remarks></remarks>
+</member><member name="P:ALquhaliLibrary.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:ALquhaliLibrary.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:ALquhaliLibrary.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+</members>
+</doc>

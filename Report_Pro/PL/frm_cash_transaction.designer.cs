@@ -31,7 +31,7 @@
             this.groupPanel1 = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.buttonX2 = new DevComponents.DotNetBar.ButtonX();
             this.label3 = new System.Windows.Forms.Label();
-            this.Branch = new Report_Pro.MyControls.UC_Branch();
+            this.Branch = new Report_Pro.MyControls.ذ();
             this.buttonX1 = new DevComponents.DotNetBar.ButtonX();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -270,7 +270,7 @@
         private System.Windows.Forms.Label label1;
         private DevComponents.DotNetBar.ButtonX buttonX1;
         private System.Windows.Forms.Label label3;
-        private MyControls.UC_Branch Branch;
+        private MyControls.ذ Branch;
         private DevComponents.DotNetBar.ButtonX buttonX2;
     }
 }

@@ -48,20 +48,20 @@ namespace Report_Pro.PL
             try
             {
                 clear_txtBoxs();
-                PL.frm_search_items frm = new PL.frm_search_items();
+                PL.frmSerachItem frm = new PL.frmSerachItem();
                 frm.ShowDialog();
-                this.TxtId.Text = frm.dGV_pro_list.CurrentRow.Cells[0].Value.ToString();
+                this.TxtId.Text = frm.uc_SearchItem1.dGV_pro_list.CurrentRow.Cells[0].Value.ToString();
                 if (Properties.Settings.Default.lungh == "0")
                 {
-                    this.TxtDesc.Text = frm.dGV_pro_list.CurrentRow.Cells[2].Value.ToString();
+                    this.TxtDesc.Text = frm.uc_SearchItem1.dGV_pro_list.CurrentRow.Cells[2].Value.ToString();
                 }
                 else
                 {
-                    this.TxtDesc.Text = frm.dGV_pro_list.CurrentRow.Cells[3].Value.ToString();
+                    this.TxtDesc.Text = frm.uc_SearchItem1.dGV_pro_list.CurrentRow.Cells[3].Value.ToString();
                 }
-                this.txtUnit.Text = frm.dGV_pro_list.CurrentRow.Cells[6].Value.ToString();
-                this.txtUnitWeight.Text = frm.dGV_pro_list.CurrentRow.Cells[4].Value.ToString().ToDecimal().ToString("n3");
-                this.txtBalance.Text = frm.dGV_pro_list.CurrentRow.Cells[5].Value.ToString().ToDecimal().ToString("n1");
+                this.txtUnit.Text = frm.uc_SearchItem1.dGV_pro_list.CurrentRow.Cells[6].Value.ToString();
+                this.txtUnitWeight.Text = frm.uc_SearchItem1.dGV_pro_list.CurrentRow.Cells[4].Value.ToString().ToDecimal().ToString("n3");
+                this.txtBalance.Text = frm.uc_SearchItem1.dGV_pro_list.CurrentRow.Cells[5].Value.ToString().ToDecimal().ToString("n1");
                 //this.txtBalance.Text = (dal.getDataTabl("get_item_balance_", TxtId.Text, "", "0", dal.db1)).Rows[0][0].ToString().ToDecimal().ToString("n2");
 
                 txtNote.Focus();

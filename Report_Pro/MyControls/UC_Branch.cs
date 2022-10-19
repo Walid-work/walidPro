@@ -9,10 +9,12 @@ using System.Windows.Forms;
 
 namespace Report_Pro.MyControls
 {
-    public partial class UC_Branch : UserControl
+    public partial class ذ : UserControl
     {
         DAL.DataAccesslayer1 dal = new DAL.DataAccesslayer1();
-        public UC_Branch()
+        public int _x, _y,_width;
+       
+        public ذ()
         {
             InitializeComponent();
         }
@@ -26,9 +28,11 @@ namespace Report_Pro.MyControls
         private void ID_KeyUp(object sender, KeyEventArgs e)
         {
             get_desc();
-            OnKeyUp(e);
+           // OnKeyUp(e);
         }
-        
+
+      
+
         private void get_desc()
         {
             try
@@ -71,20 +75,27 @@ namespace Report_Pro.MyControls
 
         private void btn1_Click(object sender, EventArgs e)
         {
-                    search_();
+            search_();
+          //  OnClick(e);
 
         }
 
+
+
+
         private void search_()
         {
-            try
-            {
-                dgv1.Visible = true;
-                this.Height = 150;
-                this.BringToFront();
-                if (Properties.Settings.Default.lungh == "0")
+            //try
+            //{
+            dgv1.Visible = true;
+            this.Height = 150;
+            this.BringToFront();
+
+            if (Properties.Settings.Default.lungh == "0")
                 {
-                    if (Program.userID.ToLower() == "administrator")
+               
+
+                if (Program.userID.ToLower() == "administrator")
                     {
                         dgv1.DataSource = dal.getDataTabl_1(@"select Branch_code,branch_name from  wh_BRANCHES 
                         where  t_final like '" + txtTfinal.Text + "%' and branch_name like '%" + Desc.Text + "%'");
@@ -114,8 +125,8 @@ namespace Report_Pro.MyControls
                     }
                 }
                     dgv1.Columns[0].Width = 72;
-            }
-            catch { }
+            //}
+            //catch { }
 
         }
 
@@ -123,15 +134,15 @@ namespace Report_Pro.MyControls
         {
            
             search_();
-            //OnLoad(e);
+           // OnKeyUp(e);
         }
 
         private void ID_Enter(object sender, EventArgs e)
         {
             dgv1.Visible = false;
-            this.Height = 26;
+           this.Height = 20;
             this.SendToBack();
-            this.BackColor = Color.Red;
+            //this.BackColor = Color.Red;
         }
 
         private void dgv1_DoubleClick(object sender, EventArgs e)
@@ -144,7 +155,7 @@ namespace Report_Pro.MyControls
             get_desc();
 
             dgv1.Visible = false;
-            this.Height = 26;
+            this.Height = 20;
             this.SendToBack();
 
         }
@@ -162,7 +173,7 @@ namespace Report_Pro.MyControls
         private void ID_TextChanged(object sender, EventArgs e)
         {
             get_desc();
-            OnLoad(e);
+          //  OnLoad(e);
 
         }
 
@@ -174,9 +185,9 @@ namespace Report_Pro.MyControls
         private void UC_Branch_Leave(object sender, EventArgs e)
         {
             dgv1.Visible = false;
-            this.Height = 26;
+             this.Height = 20;
             this.SendToBack();
-            this.BackColor = Color.Transparent;
+            //  this.BackColor = Color.Transparent;
         }
 
         private void ID_Leave(object sender, EventArgs e)

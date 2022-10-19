@@ -117,42 +117,21 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="Desc.Location" type="System.Drawing.Point, System.Drawing">
-    <value>94, 0</value>
-  </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Desc.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
+  <data name="btn1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
   </data>
-  <data name="Desc.Size" type="System.Drawing.Size, System.Drawing">
-    <value>227, 20</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Desc.TabIndex" type="System.Int32, mscorlib">
-    <value>19</value>
-  </data>
-  <data name="&gt;&gt;Desc.Name" xml:space="preserve">
-    <value>Desc</value>
-  </data>
-  <data name="&gt;&gt;Desc.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.Controls.TextBoxX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="&gt;&gt;Desc.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;Desc.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="btn1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>67, 0</value>
+    <value>80, 0</value>
   </data>
   <data name="btn1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="btn1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>27, 20</value>
+    <value>30, 21</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="btn1.TabIndex" type="System.Int32, mscorlib">
     <value>18</value>
   </data>
@@ -163,37 +142,13 @@
     <value>DevComponents.DotNetBar.ButtonX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
   </data>
   <data name="&gt;&gt;btn1.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>tableLayoutPanel1</value>
   </data>
   <data name="&gt;&gt;btn1.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="ID.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="ID.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="ID.Size" type="System.Drawing.Size, System.Drawing">
-    <value>67, 20</value>
-  </data>
-  <data name="ID.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
-  </data>
-  <data name="&gt;&gt;ID.Name" xml:space="preserve">
-    <value>ID</value>
-  </data>
-  <data name="&gt;&gt;ID.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.Controls.TextBoxX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="&gt;&gt;ID.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;ID.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>1</value>
   </data>
   <data name="itemPrice.Location" type="System.Drawing.Point, System.Drawing">
-    <value>109, 25</value>
+    <value>118, 36</value>
   </data>
   <data name="itemPrice.Size" type="System.Drawing.Size, System.Drawing">
     <value>80, 20</value>
@@ -211,10 +166,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;itemPrice.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>12</value>
   </data>
   <data name="itemWeight.Location" type="System.Drawing.Point, System.Drawing">
-    <value>209, 24</value>
+    <value>218, 35</value>
   </data>
   <data name="itemWeight.Size" type="System.Drawing.Size, System.Drawing">
     <value>80, 20</value>
@@ -232,10 +187,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;itemWeight.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>11</value>
   </data>
   <data name="itemUnit.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 24</value>
+    <value>12, 35</value>
   </data>
   <data name="itemUnit.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 20</value>
@@ -253,10 +208,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;itemUnit.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>10</value>
   </data>
   <data name="txtLenth.Location" type="System.Drawing.Point, System.Drawing">
-    <value>103, 49</value>
+    <value>112, 60</value>
   </data>
   <data name="txtLenth.Size" type="System.Drawing.Size, System.Drawing">
     <value>80, 20</value>
@@ -274,10 +229,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;txtLenth.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>8</value>
   </data>
   <data name="txtWidth.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 50</value>
+    <value>12, 61</value>
   </data>
   <data name="txtWidth.Size" type="System.Drawing.Size, System.Drawing">
     <value>80, 20</value>
@@ -295,10 +250,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;txtWidth.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>9</value>
   </data>
   <data name="txtCost.Location" type="System.Drawing.Point, System.Drawing">
-    <value>103, 75</value>
+    <value>112, 86</value>
   </data>
   <data name="txtCost.Size" type="System.Drawing.Size, System.Drawing">
     <value>80, 20</value>
@@ -316,10 +271,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;txtCost.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>6</value>
   </data>
   <data name="txtDepth.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 76</value>
+    <value>12, 87</value>
   </data>
   <data name="txtDepth.Size" type="System.Drawing.Size, System.Drawing">
     <value>80, 20</value>
@@ -337,31 +292,214 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;txtDepth.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>7</value>
   </data>
-  <data name="uc_SearchItem1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-1, 23</value>
+  <data name="txt_s1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 113</value>
   </data>
-  <data name="uc_SearchItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>990, 546</value>
+  <data name="txt_s1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 20</value>
   </data>
-  <data name="uc_SearchItem1.TabIndex" type="System.Int32, mscorlib">
-    <value>28</value>
+  <data name="txt_s1.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
   </data>
-  <data name="&gt;&gt;uc_SearchItem1.Name" xml:space="preserve">
-    <value>uc_SearchItem1</value>
+  <data name="&gt;&gt;txt_s1.Name" xml:space="preserve">
+    <value>txt_s1</value>
   </data>
-  <data name="&gt;&gt;uc_SearchItem1.Type" xml:space="preserve">
-    <value>Report_Pro.MyControls.Uc_SearchItem, Report_Pro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  <data name="&gt;&gt;txt_s1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;uc_SearchItem1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;txt_s1.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;uc_SearchItem1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;txt_s1.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="txt_s2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>118, 113</value>
+  </data>
+  <data name="txt_s2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 20</value>
+  </data>
+  <data name="txt_s2.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="&gt;&gt;txt_s2.Name" xml:space="preserve">
+    <value>txt_s2</value>
+  </data>
+  <data name="&gt;&gt;txt_s2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txt_s2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txt_s2.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="txt_s3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>224, 113</value>
+  </data>
+  <data name="txt_s3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 20</value>
+  </data>
+  <data name="txt_s3.TabIndex" type="System.Int32, mscorlib">
+    <value>33</value>
+  </data>
+  <data name="&gt;&gt;txt_s3.Name" xml:space="preserve">
+    <value>txt_s3</value>
+  </data>
+  <data name="&gt;&gt;txt_s3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txt_s3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txt_s3.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="txt_s4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 139</value>
+  </data>
+  <data name="txt_s4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 20</value>
+  </data>
+  <data name="txt_s4.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
+  </data>
+  <data name="&gt;&gt;txt_s4.Name" xml:space="preserve">
+    <value>txt_s4</value>
+  </data>
+  <data name="&gt;&gt;txt_s4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txt_s4.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txt_s4.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="txt_s5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>118, 140</value>
+  </data>
+  <data name="txt_s5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 20</value>
+  </data>
+  <data name="txt_s5.TabIndex" type="System.Int32, mscorlib">
+    <value>35</value>
+  </data>
+  <data name="&gt;&gt;txt_s5.Name" xml:space="preserve">
+    <value>txt_s5</value>
+  </data>
+  <data name="&gt;&gt;txt_s5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txt_s5.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txt_s5.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="tableLayoutPanel1.ColumnCount" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="Desc.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left, Right</value>
+  </data>
+  <data name="Desc.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8pt</value>
+  </data>
+  <data name="Desc.Location" type="System.Drawing.Point, System.Drawing">
+    <value>110, 0</value>
+  </data>
+  <data name="Desc.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="Desc.Size" type="System.Drawing.Size, System.Drawing">
+    <value>330, 20</value>
+  </data>
+  <data name="Desc.TabIndex" type="System.Int32, mscorlib">
+    <value>37</value>
+  </data>
+  <data name="&gt;&gt;Desc.Name" xml:space="preserve">
+    <value>Desc</value>
+  </data>
+  <data name="&gt;&gt;Desc.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Desc.Parent" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;Desc.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="ID.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="ID.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8pt</value>
+  </data>
+  <data name="ID.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="ID.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="ID.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 20</value>
+  </data>
+  <data name="ID.TabIndex" type="System.Int32, mscorlib">
+    <value>37</value>
+  </data>
+  <data name="&gt;&gt;ID.Name" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="&gt;&gt;ID.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ID.Parent" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;ID.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="tableLayoutPanel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="tableLayoutPanel1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt</value>
+  </data>
+  <data name="tableLayoutPanel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="tableLayoutPanel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="tableLayoutPanel1.RowCount" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tableLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>440, 21</value>
+  </data>
+  <data name="tableLayoutPanel1.TabIndex" type="System.Int32, mscorlib">
+    <value>36</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel1.Name" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tableLayoutPanel1.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="Desc" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="btn1" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="ID" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Absolute,80,Absolute,30,Percent,100" /&gt;&lt;Rows Styles="Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
   <data name="txtItemVat.Location" type="System.Drawing.Point, System.Drawing">
-    <value>209, 49</value>
+    <value>218, 60</value>
   </data>
   <data name="txtItemVat.Size" type="System.Drawing.Size, System.Drawing">
     <value>82, 20</value>
@@ -385,10 +523,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;txtItemVat.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>13</value>
   </data>
   <data name="txtKmItem.Location" type="System.Drawing.Point, System.Drawing">
-    <value>209, 76</value>
+    <value>218, 87</value>
   </data>
   <data name="txtKmItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>82, 20</value>
@@ -412,7 +550,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;txtKmItem.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>14</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -424,7 +562,7 @@
     <value>0, 0, 0, 0</value>
   </data>
   <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
-    <value>319, 184</value>
+    <value>440, 20</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>UC_Items</value>

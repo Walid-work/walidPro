@@ -835,7 +835,7 @@ namespace Report_Pro.PL
 
         private void buttonItem5_Click(object sender, EventArgs e)
         {
-            openForm(new PL.frm_cash_transaction(), FormWindowState.Maximized, 0);
+            openForm(new CTR.frm_cash_transaction(), FormWindowState.Maximized, 0);
         }
 
         private void M64_Click(object sender, EventArgs e)
@@ -851,7 +851,7 @@ namespace Report_Pro.PL
         private void buttonItem6_Click_1(object sender, EventArgs e)
         {
             // openForm(new PL.frmTest(), FormWindowState.Maximized, 0);
-            frmTest frm = new frmTest();
+            Form3 frm = new Form3();
             frm.Show();
         }
 
@@ -1339,7 +1339,7 @@ namespace Report_Pro.PL
 
         private void M717_Click(object sender, EventArgs e)
         {
-            openForm(new RPT.frm_rep_Fees_Consolidated(), FormWindowState.Maximized, 0);
+            openForm(new Group.frm_rep_Fees_Consolidated(), FormWindowState.Maximized, 0);
 
         }
 

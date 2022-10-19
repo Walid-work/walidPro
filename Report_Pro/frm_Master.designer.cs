@@ -22,17 +22,24 @@
 
         private DevExpress.XtraBars.BarManager barManager1;
         private DevExpress.XtraBars.Bar bar2;
-        private DevExpress.XtraBars.BarButtonItem btn_Save;
         private DevExpress.XtraBars.BarButtonItem btn_New;
-        private DevExpress.XtraBars.BarButtonItem btn_Delete;
         private DevExpress.XtraBars.BarDockControl barDockControlTop;
         private DevExpress.XtraBars.BarDockControl barDockControlBottom;
         private DevExpress.XtraBars.BarDockControl barDockControlLeft;
         private DevExpress.XtraBars.BarDockControl barDockControlRight;
         public DevExpress.XtraBars.BarButtonItem btn_Print;
         private DevExpress.XtraBars.BarButtonItem btn_close;
-        private DevExpress.XtraBars.BarButtonItem btn_search;
         private DevExpress.XtraBars.BarButtonItem btn_Min;
         private DevExpress.XtraBars.BarButtonItem btn_Max;
+        public DevExpress.XtraBars.BarButtonItem btn_search;
+        public DevExpress.XtraBars.BarButtonItem btn_statment;
+        private DevExpress.XtraBars.BarStaticItem barStaticItem1;
+        private DevExpress.XtraBars.BarButtonItem btn_GoFrist;
+        private DevExpress.XtraBars.BarButtonItem btn_GoPrevious;
+        private DevExpress.XtraBars.BarStaticItem barStaticItem2;
+        private DevExpress.XtraBars.BarButtonItem btn_GoNext;
+        private DevExpress.XtraBars.BarButtonItem btnGoLast;
+        public DevExpress.XtraBars.BarButtonItem btn_Save;
+        public DevExpress.XtraBars.BarButtonItem btn_Delete;
     }
 }

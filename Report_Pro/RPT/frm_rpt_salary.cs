@@ -25,7 +25,7 @@ namespace Report_Pro.RPT
         private void btnReport_Click(object sender, EventArgs e)
         {
             DataSet1 ds = new DataSet1();
-            RPT.rpt_salary rpt = new RPT.rpt_salary();
+            
                       
            DataTable dt_rpt=dal.getDataTabl_1(@"SELECT MONTH(D.g_date) as month
         ,isnull(D.CAT_CODE, 0) as cat_code,c.CAT_NAME,D.BRANCH_code,B.BRANCH_name
@@ -36,6 +36,10 @@ namespace Report_Pro.RPT
         , SUM(CASE WHEN  D.ACC_NO in ('32105', '32205', '34204')  THEN D.meno - D.loh  ELSE 0 END) AS transport
         , SUM(CASE WHEN  D.ACC_NO in ('32106', '32206', '34207')  THEN D.meno - D.loh  ELSE 0 END) AS sakan
         , SUM(CASE WHEN  D.ACC_NO in ('32169', '32269', '34236')  THEN D.meno - D.loh  ELSE 0 END) AS schoolFess
+        , SUM(CASE WHEN  D.ACC_NO in ('32177', '32277', '34242')  THEN D.meno - D.loh  ELSE 0 END) AS insurance
+        , SUM(CASE WHEN  D.ACC_NO in ('32107', '32207', '34208')  THEN D.meno - D.loh  ELSE 0 END) AS vacation  
+        , SUM(CASE WHEN  D.ACC_NO in ('32108', '32208', '34209')  THEN D.meno - D.loh  ELSE 0 END) AS tickets 
+        , SUM(CASE WHEN  D.ACC_NO in ('32176', '32276', '34276')  THEN D.meno - D.loh  ELSE 0 END) AS Morafiqen
         , SUM(CASE WHEN  D.ACC_NO in ('23309')  THEN D.meno - D.loh  ELSE 0 END) AS T_bank
         , SUM(CASE WHEN  D.ACC_NO like '127021%' and loh between 1 and 2000 THEN D.loh  ELSE 0 END) AS loans
         FROM daily_transaction as D
@@ -46,13 +50,30 @@ namespace Report_Pro.RPT
         "%' and D.ACC_NO like '" + Acc.ID.Text +"%' group by MONTH(D.g_date),isnull(D.CAT_CODE, 0),c.CAT_NAME,d.BRANCH_code,B.BRANCH_name " +
         "order by MONTH(D.g_date),cat_code");
         ds.Tables.Add(dt_rpt);
-        //ds.WriteXmlSchema("schema1.xml");
-        rpt.SetDataSource(ds);
-        crystalReportViewer1.ReportSource = rpt;
-            rpt.DataDefinition.FormulaFields["From_date"].Text = "'" + dTP1.Value.ToString("yyyy/MM/dd") + "'";
-            rpt.DataDefinition.FormulaFields["To_date"].Text = "'" + dTP2.Value.ToString("yyyy/MM/dd") + "'";
-            rpt.DataDefinition.FormulaFields["Branch_"].Text = "'" + AccBranch.Desc.Text+ "'";
-            
+        ds.WriteXmlSchema("schema1.xml");
+      
+
+           if(radioGroup1.EditValue.Equals("0"))
+            {
+                RPT.rpt_salary rpt = new RPT.rpt_salary();
+                rpt.SetDataSource(ds);
+                crystalReportViewer1.ReportSource = rpt;
+                rpt.DataDefinition.FormulaFields["From_date"].Text = "'" + dTP1.Value.ToString("yyyy/MM/dd") + "'";
+                rpt.DataDefinition.FormulaFields["To_date"].Text = "'" + dTP2.Value.ToString("yyyy/MM/dd") + "'";
+                rpt.DataDefinition.FormulaFields["Branch_"].Text = "'" + AccBranch.Desc.Text + "'";
+
+            }
+           else if (radioGroup1.EditValue.Equals("1"))
+            {
+                RPT.rpt_salary_ByEmp rpt = new RPT.rpt_salary_ByEmp();
+                rpt.SetDataSource(ds);
+                crystalReportViewer1.ReportSource = rpt;
+                rpt.DataDefinition.FormulaFields["From_date"].Text = "'" + dTP1.Value.ToString("yyyy/MM/dd") + "'";
+                rpt.DataDefinition.FormulaFields["To_date"].Text = "'" + dTP2.Value.ToString("yyyy/MM/dd") + "'";
+                rpt.DataDefinition.FormulaFields["Branch_"].Text = "'" + AccBranch.Desc.Text + "'";
+
+            }
+
             groupPanel1.Visible = false;
 
 

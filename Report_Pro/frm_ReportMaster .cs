@@ -15,6 +15,7 @@ namespace Report_Pro
     public partial class frm_ReportMaster : XtraForm
     {
        bool IsNew;
+
         public static string ErrorText
         {
             get
@@ -34,13 +35,19 @@ namespace Report_Pro
         
         }
 
+
        
         public virtual void Report()
         {
 
         }
 
-       
+        public virtual void preview()
+        {
+
+        }
+
+        public int canEdit=1 ;
 
         public virtual void CloseForm(Form frm)
         {
@@ -169,21 +176,15 @@ namespace Report_Pro
             this.btn_Min = new DevExpress.XtraBars.BarButtonItem();
             this.btn_Max = new DevExpress.XtraBars.BarButtonItem();
             this.btn_close = new DevExpress.XtraBars.BarButtonItem();
+            this.btn_Option = new DevExpress.XtraBars.BarButtonItem();
+            this.btn_Report = new DevExpress.XtraBars.BarButtonItem();
+            this.btn_preview = new DevExpress.XtraBars.BarButtonItem();
             this.barDockControlTop = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
-            this.btn_Save = new DevExpress.XtraBars.BarButtonItem();
-            this.btn_New = new DevExpress.XtraBars.BarButtonItem();
-            this.btn_Delete = new DevExpress.XtraBars.BarButtonItem();
-            this.btn_Print = new DevExpress.XtraBars.BarButtonItem();
-            this.btn_search = new DevExpress.XtraBars.BarButtonItem();
             this.skinDropDownButtonItem1 = new DevExpress.XtraBars.SkinDropDownButtonItem();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.btn_Report = new DevExpress.XtraEditors.SimpleButton();
-            this.btn_Option = new DevExpress.XtraEditors.SimpleButton();
-            ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
-            this.panel1.SuspendLayout();
+                    ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
             this.SuspendLayout();
             // 
             // barManager1
@@ -196,17 +197,15 @@ namespace Report_Pro
             this.barManager1.DockControls.Add(this.barDockControlRight);
             this.barManager1.Form = this;
             this.barManager1.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
-            this.btn_Save,
-            this.btn_New,
-            this.btn_Delete,
-            this.btn_Print,
             this.btn_close,
-            this.btn_search,
             this.btn_Max,
             this.btn_Min,
-            this.skinDropDownButtonItem1});
+            this.skinDropDownButtonItem1,
+            this.btn_Option,
+            this.btn_Report,
+            this.btn_preview});
             this.barManager1.MainMenu = this.bar2;
-            this.barManager1.MaxItemId = 9;
+            this.barManager1.MaxItemId = 16;
             // 
             // bar2
             // 
@@ -215,42 +214,60 @@ namespace Report_Pro
             this.bar2.DockCol = 0;
             this.bar2.DockRow = 0;
             this.bar2.DockStyle = DevExpress.XtraBars.BarDockStyle.Top;
+            this.bar2.FloatLocation = new System.Drawing.Point(922, 141);
             this.bar2.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
             new DevExpress.XtraBars.LinkPersistInfo(this.btn_Min),
             new DevExpress.XtraBars.LinkPersistInfo(this.btn_Max),
-            new DevExpress.XtraBars.LinkPersistInfo(this.btn_close)});
+            new DevExpress.XtraBars.LinkPersistInfo(this.btn_close),
+            new DevExpress.XtraBars.LinkPersistInfo(this.btn_Option),
+            new DevExpress.XtraBars.LinkPersistInfo(this.btn_Report),
+            new DevExpress.XtraBars.LinkPersistInfo(this.btn_preview)});
             this.bar2.OptionsBar.AllowQuickCustomization = false;
             this.bar2.OptionsBar.AutoPopupMode = DevExpress.XtraBars.BarAutoPopupMode.None;
             this.bar2.OptionsBar.DisableClose = true;
             this.bar2.OptionsBar.DisableCustomization = true;
+            this.bar2.OptionsBar.MinHeight = 35;
             this.bar2.OptionsBar.MultiLine = true;
             this.bar2.OptionsBar.UseWholeRow = true;
             resources.ApplyResources(this.bar2, "bar2");
             // 
             // btn_Min
             // 
+            resources.ApplyResources(this.btn_Min, "btn_Min");
             this.btn_Min.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
             this.btn_Min.Id = 7;
-            this.btn_Min.ImageOptions.Image = global::Report_Pro.Properties.Resources.minimize;
+            this.btn_Min.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_Min.ImageOptions.Image")));
+            this.btn_Min.ImageOptions.ImageIndex = ((int)(resources.GetObject("btn_Min.ImageOptions.ImageIndex")));
             this.btn_Min.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btn_Min.ImageOptions.LargeImage")));
+            this.btn_Min.ImageOptions.LargeImageIndex = ((int)(resources.GetObject("btn_Min.ImageOptions.LargeImageIndex")));
+            this.btn_Min.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Min.ImageOptions.SvgImage")));
             this.btn_Min.Name = "btn_Min";
             this.btn_Min.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             this.btn_Min.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_Min_ItemClick);
             // 
             // btn_Max
             // 
+            resources.ApplyResources(this.btn_Max, "btn_Max");
             this.btn_Max.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
             this.btn_Max.Id = 6;
-            this.btn_Max.ImageOptions.Image = global::Report_Pro.Properties.Resources.squares;
+            this.btn_Max.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_Max.ImageOptions.Image")));
+            this.btn_Max.ImageOptions.ImageIndex = ((int)(resources.GetObject("btn_Max.ImageOptions.ImageIndex")));
             this.btn_Max.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btn_Max.ImageOptions.LargeImage")));
+            this.btn_Max.ImageOptions.LargeImageIndex = ((int)(resources.GetObject("btn_Max.ImageOptions.LargeImageIndex")));
+            this.btn_Max.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Max.ImageOptions.SvgImage")));
             this.btn_Max.Name = "btn_Max";
             this.btn_Max.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_Max_ItemClick);
             // 
             // btn_close
             // 
-            this.btn_close.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
             resources.ApplyResources(this.btn_close, "btn_close");
+            this.btn_close.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
             this.btn_close.Id = 4;
+            this.btn_close.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_close.ImageOptions.Image")));
+            this.btn_close.ImageOptions.ImageIndex = ((int)(resources.GetObject("btn_close.ImageOptions.ImageIndex")));
+            this.btn_close.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btn_close.ImageOptions.LargeImage")));
+            this.btn_close.ImageOptions.LargeImageIndex = ((int)(resources.GetObject("btn_close.ImageOptions.LargeImageIndex")));
+            this.btn_close.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_close.ImageOptions.SvgImage")));
             this.btn_close.ItemAppearance.Hovered.BackColor = System.Drawing.Color.Red;
             this.btn_close.ItemAppearance.Hovered.Font = ((System.Drawing.Font)(resources.GetObject("btn_close.ItemAppearance.Hovered.Font")));
             this.btn_close.ItemAppearance.Hovered.ForeColor = System.Drawing.Color.White;
@@ -260,121 +277,91 @@ namespace Report_Pro
             this.btn_close.ItemAppearance.Normal.Font = ((System.Drawing.Font)(resources.GetObject("btn_close.ItemAppearance.Normal.Font")));
             this.btn_close.ItemAppearance.Normal.Options.UseFont = true;
             this.btn_close.Name = "btn_close";
-            this.btn_close.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.Caption;
             this.btn_close.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_close_ItemClick);
+            // 
+            // btn_Option
+            // 
+            resources.ApplyResources(this.btn_Option, "btn_Option");
+            this.btn_Option.Id = 9;
+            this.btn_Option.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_Option.ImageOptions.Image")));
+            this.btn_Option.ImageOptions.ImageIndex = ((int)(resources.GetObject("btn_Option.ImageOptions.ImageIndex")));
+            this.btn_Option.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btn_Option.ImageOptions.LargeImage")));
+            this.btn_Option.ImageOptions.LargeImageIndex = ((int)(resources.GetObject("btn_Option.ImageOptions.LargeImageIndex")));
+            this.btn_Option.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Option.ImageOptions.SvgImage")));
+            this.btn_Option.Name = "btn_Option";
+            this.btn_Option.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
+            this.btn_Option.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_Option_ItemClick);
+            // 
+            // btn_Report
+            // 
+            resources.ApplyResources(this.btn_Report, "btn_Report");
+            this.btn_Report.Id = 14;
+            this.btn_Report.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_Report.ImageOptions.Image")));
+            this.btn_Report.ImageOptions.ImageIndex = ((int)(resources.GetObject("btn_Report.ImageOptions.ImageIndex")));
+            this.btn_Report.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btn_Report.ImageOptions.LargeImage")));
+            this.btn_Report.ImageOptions.LargeImageIndex = ((int)(resources.GetObject("btn_Report.ImageOptions.LargeImageIndex")));
+            this.btn_Report.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Report.ImageOptions.SvgImage")));
+            this.btn_Report.Name = "btn_Report";
+            this.btn_Report.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
+            this.btn_Report.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_Report_ItemClick);
+            // 
+            // btn_preview
+            // 
+            resources.ApplyResources(this.btn_preview, "btn_preview");
+            this.btn_preview.Id = 15;
+            this.btn_preview.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_preview.ImageOptions.Image")));
+            this.btn_preview.ImageOptions.ImageIndex = ((int)(resources.GetObject("btn_preview.ImageOptions.ImageIndex")));
+            this.btn_preview.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btn_preview.ImageOptions.LargeImage")));
+            this.btn_preview.ImageOptions.LargeImageIndex = ((int)(resources.GetObject("btn_preview.ImageOptions.LargeImageIndex")));
+            this.btn_preview.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_preview.ImageOptions.SvgImage")));
+            this.btn_preview.Name = "btn_preview";
+            this.btn_preview.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
+            this.btn_preview.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_preview_ItemClick);
             // 
             // barDockControlTop
             // 
-            this.barDockControlTop.CausesValidation = false;
             resources.ApplyResources(this.barDockControlTop, "barDockControlTop");
+            this.barDockControlTop.CausesValidation = false;
             this.barDockControlTop.Manager = this.barManager1;
             // 
             // barDockControlBottom
             // 
-            this.barDockControlBottom.CausesValidation = false;
             resources.ApplyResources(this.barDockControlBottom, "barDockControlBottom");
+            this.barDockControlBottom.CausesValidation = false;
             this.barDockControlBottom.Manager = this.barManager1;
             // 
             // barDockControlLeft
             // 
-            this.barDockControlLeft.CausesValidation = false;
             resources.ApplyResources(this.barDockControlLeft, "barDockControlLeft");
+            this.barDockControlLeft.CausesValidation = false;
             this.barDockControlLeft.Manager = this.barManager1;
             // 
             // barDockControlRight
             // 
-            this.barDockControlRight.CausesValidation = false;
             resources.ApplyResources(this.barDockControlRight, "barDockControlRight");
+            this.barDockControlRight.CausesValidation = false;
             this.barDockControlRight.Manager = this.barManager1;
-            // 
-            // btn_Save
-            // 
-            resources.ApplyResources(this.btn_Save, "btn_Save");
-            this.btn_Save.Id = 0;
-            this.btn_Save.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Save.ImageOptions.SvgImage")));
-            this.btn_Save.Name = "btn_Save";
-            this.btn_Save.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
-            this.btn_Save.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_Save_ItemClick);
-            // 
-            // btn_New
-            // 
-            resources.ApplyResources(this.btn_New, "btn_New");
-            this.btn_New.Id = 1;
-            this.btn_New.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_New.ImageOptions.SvgImage")));
-            this.btn_New.Name = "btn_New";
-            this.btn_New.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
-            // 
-            // btn_Delete
-            // 
-            resources.ApplyResources(this.btn_Delete, "btn_Delete");
-            this.btn_Delete.Id = 2;
-            this.btn_Delete.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Delete.ImageOptions.SvgImage")));
-            this.btn_Delete.Name = "btn_Delete";
-            this.btn_Delete.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
-            // 
-            // btn_Print
-            // 
-            resources.ApplyResources(this.btn_Print, "btn_Print");
-            this.btn_Print.Id = 3;
-            this.btn_Print.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Print.ImageOptions.SvgImage")));
-            this.btn_Print.Name = "btn_Print";
-            this.btn_Print.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
-            this.btn_Print.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
-            this.btn_Print.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_Print_ItemClick);
-            // 
-            // btn_search
-            // 
-            resources.ApplyResources(this.btn_search, "btn_search");
-            this.btn_search.Id = 5;
-            this.btn_search.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_search.ImageOptions.SvgImage")));
-            this.btn_search.Name = "btn_search";
-            this.btn_search.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             // 
             // skinDropDownButtonItem1
             // 
+            resources.ApplyResources(this.skinDropDownButtonItem1, "skinDropDownButtonItem1");
             this.skinDropDownButtonItem1.Id = 8;
             this.skinDropDownButtonItem1.Name = "skinDropDownButtonItem1";
             // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.btn_Report);
-            this.panel1.Controls.Add(this.btn_Option);
-            resources.ApplyResources(this.panel1, "panel1");
-            this.panel1.Name = "panel1";
-            // 
-            // btn_Report
-            // 
-            this.btn_Report.ImageOptions.Image = global::Report_Pro.Properties.Resources.business_report_32;
-            resources.ApplyResources(this.btn_Report, "btn_Report");
-            this.btn_Report.Name = "btn_Report";
-            this.btn_Report.Click += new System.EventHandler(this.btn_Report_Click_1);
-            // 
-            // btn_Option
-            // 
-            this.btn_Option.AppearanceHovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.btn_Option.AppearanceHovered.BackColor2 = ((System.Drawing.Color)(resources.GetObject("btn_Option.AppearanceHovered.BackColor2")));
-            this.btn_Option.AppearanceHovered.Options.UseBackColor = true;
-            this.btn_Option.ImageOptions.Image = global::Report_Pro.Properties.Resources.multiple;
-            resources.ApplyResources(this.btn_Option, "btn_Option");
-            this.btn_Option.Name = "btn_Option";
-            this.btn_Option.Click += new System.EventHandler(this.btn_Option_Click_1);
-            // 
+          
             // frm_ReportMaster
             // 
+            resources.ApplyResources(this, "$this");
             this.Appearance.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.Appearance.Options.UseBackColor = true;
-            resources.ApplyResources(this, "$this");
             this.ControlBox = false;
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.barDockControlLeft);
             this.Controls.Add(this.barDockControlRight);
             this.Controls.Add(this.barDockControlBottom);
             this.Controls.Add(this.barDockControlTop);
             this.Name = "frm_ReportMaster";
+            this.Load += new System.EventHandler(this.frm_ReportMaster_Load);
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).EndInit();
-            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -411,24 +398,36 @@ namespace Report_Pro
         {
                     }
 
-        private void btn_Option_Click(object sender, EventArgs e)
+       
+
+     
+
+        private void frm_ReportMaster_Load(object sender, EventArgs e)
+        {
+            //if (CheckActionAuthorization(this.Name, Master.Actions.Edit))
+            //{
+            //    canEdit = 1;
+            //}
+            //else
+            //{
+            //    canEdit = 0;
+            //}
+        }
+
+        private void btn_Option_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             Option();
         }
 
-        private void btn_Report_Click(object sender, EventArgs e)
+        private void btn_preview_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             if (CheckActionAuthorization(this.Name, Master.Actions.Print))
-                Report();
+                preview();
         }
 
-        private void btn_Option_Click_1(object sender, EventArgs e)
+        private void btn_Report_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            Option();
-        }
 
-        private void btn_Report_Click_1(object sender, EventArgs e)
-        {
             if (CheckActionAuthorization(this.Name, Master.Actions.Print))
                 Report();
 

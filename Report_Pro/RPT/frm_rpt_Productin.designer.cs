@@ -61,7 +61,7 @@
             this.label11 = new System.Windows.Forms.Label();
             this.Uc_Group = new Report_Pro.MyControls.Uc_Group();
             this.label7 = new System.Windows.Forms.Label();
-            this.UC_Branch = new Report_Pro.MyControls.UC_Branch();
+            this.UC_Branch = new Report_Pro.MyControls.ذ();
             this.thick_2 = new System.Windows.Forms.NumericUpDown();
             this.thick_1 = new System.Windows.Forms.NumericUpDown();
             this.btnMonthelyReport = new DevComponents.DotNetBar.ButtonX();
@@ -459,7 +459,7 @@
         private System.Windows.Forms.NumericUpDown thick_2;
         private System.Windows.Forms.NumericUpDown thick_1;
         private System.Windows.Forms.Label label7;
-        private MyControls.UC_Branch UC_Branch;
+        private MyControls.ذ UC_Branch;
         private System.Windows.Forms.Label label11;
         private MyControls.Uc_Group Uc_Group;
         private System.Windows.Forms.Label label10;

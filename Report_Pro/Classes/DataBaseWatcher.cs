@@ -19,30 +19,30 @@ namespace Report_Pro.Classes
         public static void Products_Changed(object sender, RecordChangedEventArgs<DAL.wh_main_master> e)
         {
 
-            //Application.OpenForms[0].Invoke(new Action(() =>
-            //{
-            //    if (e.ChangeType == ChangeType.Insert)
-            //    {
-            //        Session.Products.Add(e.Entity);
-            //        Session.ProductsView.Add(Session.ProductViewClass.GetProduct(e.Entity.item_no));
-            //    }
-            //    else if (e.ChangeType == ChangeType.Update)
-            //    {
-            //        var index = Session.Products.IndexOf(Session.Products.Single(x => x.ID == e.Entity.ID));
-            //        Session.Products.Remove(Session.Products.Single(x => x.ID == e.Entity.ID));
-            //        Session.Products.Insert(index, e.Entity);
+            Application.OpenForms[0].Invoke(new Action(() =>
+            {
+                if (e.ChangeType == ChangeType.Insert)
+                {
+                    Session.Products.Add(e.Entity);
+                    Session.ProductsView.Add(Session.ProductViewClass.GetProduct(e.Entity.item_no));
+                }
+                else if (e.ChangeType == ChangeType.Update)
+                {
+                    var index = Session.Products.IndexOf(Session.Products.Single(x => x.item_no == e.Entity.item_no));
+                    Session.Products.Remove(Session.Products.Single(x => x.item_no == e.Entity.item_no));
+                    Session.Products.Insert(index, e.Entity);
 
-            //        var viewIndex = Session.ProductsView.IndexOf(Session.ProductsView.Single(x => x.ID == e.Entity.ID));
-            //        Session.ProductsView.Remove(Session.ProductsView.Single(x => x.ID == e.Entity.ID));
-            //        Session.ProductsView.Add(Session.ProductViewClass.GetProduct(e.Entity.ID));
+                    var viewIndex = Session.ProductsView.IndexOf(Session.ProductsView.Single(x => x.Code == e.Entity.item_no));
+                    Session.ProductsView.Remove(Session.ProductsView.Single(x => x.Code == e.Entity.item_no));
+                    Session.ProductsView.Add(Session.ProductViewClass.GetProduct(e.Entity.item_no));
 
-            //    }
-            //    else if (e.ChangeType == ChangeType.Delete)
-            //    {
-            //        Session.Products.Remove(Session.Products.Single(x => x.ID == e.Entity.ID));
-            //        Session.ProductsView.Remove(Session.ProductsView.Single(x => x.ID == e.Entity.ID));
-            //    }
-            //}));
+                }
+                else if (e.ChangeType == ChangeType.Delete)
+                {
+                    Session.Products.Remove(Session.Products.Single(x => x.item_no == e.Entity.item_no));
+                    Session.ProductsView.Remove(Session.ProductsView.Single(x => x.Code == e.Entity.item_no));
+                }
+            }));
         }
 
 
@@ -73,6 +73,35 @@ namespace Report_Pro.Classes
 
         //    })); 
         //}
+
+        public class SHEEK_BANKS_TYPE : DAL.SHEEK_BANKS_TYPE { }
+        public static SqlTableDependency<SHEEK_BANKS_TYPE> ChequeBanks;
+        public static void ChequeBanksChanged(object sender, RecordChangedEventArgs<SHEEK_BANKS_TYPE> e)
+        {
+            Application.OpenForms[0].Invoke(new Action(() =>
+            {
+                switch (e.ChangeType)
+                {
+                    case ChangeType.None:
+                        break;
+                    case ChangeType.Delete:
+                        Session.CheuqeBanks.Remove(Session.CheuqeBanks.Single(x => x.BANK_NO == e.Entity.BANK_NO));
+                        break;
+                    case ChangeType.Insert:
+                        Session.CheuqeBanks.Add(e.Entity);
+                        break;
+                    case ChangeType.Update:
+                        int index = Session.CheuqeBanks.IndexOf(Session.CheuqeBanks.Single(x => x.BANK_NO == e.Entity.BANK_NO));
+                        Session.CheuqeBanks.Remove(Session.CheuqeBanks.Single(x => x.BANK_NO == e.Entity.BANK_NO));
+                        Session.CheuqeBanks.Add(e.Entity);
+                        break;
+                    default:
+                        break;
+                }
+
+            }));
+        }
+
         //public class VendorsOnly : ITableDependencyFilter
         //{
         //    public string Translate()

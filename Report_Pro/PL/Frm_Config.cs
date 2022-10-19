@@ -104,7 +104,7 @@ namespace Report_Pro.PL{
             Properties.Settings.Default.Branch_txt = Branch_Name.Text;
             Properties.Settings.Default.Branch_txt_EN= Branch_Name_EN.Text;
             Properties.Settings.Default.closeAcc = txtCloseAcc.Text;
-
+            
             Properties.Settings.Default.Save();
 
 

@@ -242,6 +242,11 @@ namespace Report_Pro.PL
         {
 
         }
+
+        private void labelX7_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 
 

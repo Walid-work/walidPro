@@ -137,21 +137,29 @@
   <data name="btnOption.Text" xml:space="preserve">
     <value>خيارات</value>
   </data>
-  <assembly alias="CrystalDecisions.Windows.Forms" name="CrystalDecisions.Windows.Forms, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
-  <data name="crystalReportViewer1.ToolPanelView" type="CrystalDecisions.Windows.Forms.ToolPanelViewType, CrystalDecisions.Windows.Forms">
-    <value>None</value>
+  <data name="groupPanel3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="groupPanel3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>222, 22</value>
+  </data>
+  <data name="comb1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
   </data>
   <data name="comb1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>583, 88</value>
+    <value>543, 81</value>
+  </data>
+  <data name="comb1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>206, 20</value>
   </data>
   <data name="labelX3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
   <data name="labelX3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>734, 52</value>
+    <value>759, 56</value>
   </data>
   <data name="labelX3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>60, 17</value>
+    <value>55, 15</value>
   </data>
   <data name="labelX3.Text" xml:space="preserve">
     <value>رقم الاعتماد</value>
@@ -160,10 +168,10 @@
     <value>Top, Right</value>
   </data>
   <data name="labelX1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>731, 22</value>
+    <value>753, 30</value>
   </data>
   <data name="labelX1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>28, 17</value>
+    <value>24, 15</value>
   </data>
   <data name="labelX1.Text" xml:space="preserve">
     <value>البنك</value>
@@ -172,10 +180,10 @@
     <value>Top, Right</value>
   </data>
   <data name="labelX2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>516, 105</value>
+    <value>463, 83</value>
   </data>
   <data name="labelX2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>47, 17</value>
+    <value>42, 15</value>
   </data>
   <data name="labelX2.Text" xml:space="preserve">
     <value>الي تاريخ</value>
@@ -184,10 +192,10 @@
     <value>Top, Right</value>
   </data>
   <data name="labelX7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>517, 79</value>
+    <value>464, 57</value>
   </data>
   <data name="labelX7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 17</value>
+    <value>40, 15</value>
   </data>
   <data name="labelX7.Text" xml:space="preserve">
     <value>من تاريخ</value>
@@ -195,11 +203,69 @@
   <data name="ToDate.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="ToDate.ButtonClear.DisplayPosition" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="ToDate.ButtonClear.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="ToDate.ButtonClear.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ToDate.ButtonCustom.DisplayPosition" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="ToDate.ButtonCustom.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="ToDate.ButtonCustom.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ToDate.ButtonCustom2.DisplayPosition" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="ToDate.ButtonCustom2.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="ToDate.ButtonCustom2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ToDate.ButtonDropDown.DisplayPosition" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="ToDate.ButtonDropDown.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="ToDate.ButtonDropDown.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ToDate.ButtonFreeText.DisplayPosition" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="ToDate.ButtonFreeText.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="ToDate.ButtonFreeText.Text" xml:space="preserve">
+    <value />
+  </data>
   <data name="ToDate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>407, 103</value>
+    <value>354, 81</value>
   </data>
   <data name="ToDate.MonthCalendar.AnnuallyMarkedDates" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>AAEAAAD/////AQAAAAAAAAAPAQAAAAAAAAANCw==</value>
+  </data>
+  <data name="ToDate.MonthCalendar.Category" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ToDate.MonthCalendar.CommandParameter" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="ToDate.MonthCalendar.DayNames" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="ToDate.MonthCalendar.Description" xml:space="preserve">
+    <value />
   </data>
   <data name="ToDate.MonthCalendar.MarkedDates" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>AAEAAAD/////AQAAAAAAAAAPAQAAAAAAAAANCw==</value>
@@ -207,23 +273,98 @@
   <data name="ToDate.MonthCalendar.MonthlyMarkedDates" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>AAEAAAD/////AQAAAAAAAAAPAQAAAAAAAAANCw==</value>
   </data>
+  <data name="ToDate.MonthCalendar.Tag" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ToDate.MonthCalendar.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ToDate.MonthCalendar.Tooltip" xml:space="preserve">
+    <value />
+  </data>
   <data name="ToDate.MonthCalendar.WeeklyMarkedDays" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>AAEAAAD/////AQAAAAAAAAAHAQAAAAABAAAAAAAAAAMQU3lzdGVtLkRheU9mV2Vlaws=</value>
   </data>
   <data name="FromDate.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
+  <data name="FromDate.ButtonClear.DisplayPosition" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="FromDate.ButtonClear.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="FromDate.ButtonClear.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="FromDate.ButtonCustom.DisplayPosition" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="FromDate.ButtonCustom.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="FromDate.ButtonCustom.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="FromDate.ButtonCustom2.DisplayPosition" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="FromDate.ButtonCustom2.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="FromDate.ButtonCustom2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="FromDate.ButtonDropDown.DisplayPosition" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="FromDate.ButtonDropDown.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="FromDate.ButtonDropDown.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="FromDate.ButtonFreeText.DisplayPosition" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="FromDate.ButtonFreeText.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="FromDate.ButtonFreeText.Text" xml:space="preserve">
+    <value />
+  </data>
   <data name="FromDate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>407, 77</value>
+    <value>354, 55</value>
   </data>
   <data name="FromDate.MonthCalendar.AnnuallyMarkedDates" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>AAEAAAD/////AQAAAAAAAAAPAQAAAAAAAAANCw==</value>
+  </data>
+  <data name="FromDate.MonthCalendar.Category" xml:space="preserve">
+    <value />
+  </data>
+  <data name="FromDate.MonthCalendar.CommandParameter" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="FromDate.MonthCalendar.DayNames" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="FromDate.MonthCalendar.Description" xml:space="preserve">
+    <value />
   </data>
   <data name="FromDate.MonthCalendar.MarkedDates" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>AAEAAAD/////AQAAAAAAAAAPAQAAAAAAAAANCw==</value>
   </data>
   <data name="FromDate.MonthCalendar.MonthlyMarkedDates" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>AAEAAAD/////AQAAAAAAAAAPAQAAAAAAAAANCw==</value>
+  </data>
+  <data name="FromDate.MonthCalendar.Tag" xml:space="preserve">
+    <value />
+  </data>
+  <data name="FromDate.MonthCalendar.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="FromDate.MonthCalendar.Tooltip" xml:space="preserve">
+    <value />
   </data>
   <data name="FromDate.MonthCalendar.WeeklyMarkedDays" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>AAEAAAD/////AQAAAAAAAAAHAQAAAAABAAAAAAAAAAMQU3lzdGVtLkRheU9mV2Vlaws=</value>
@@ -232,24 +373,23 @@
     <value>Top, Right</value>
   </data>
   <data name="buttonX1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>522, 50</value>
+    <value>543, 55</value>
   </data>
   <data name="txtLcNo.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
   <data name="txtLcNo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>563, 50</value>
+    <value>584, 55</value>
   </data>
   <data name="txtBank.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
   <data name="txtBank.Location" type="System.Drawing.Point, System.Drawing">
-    <value>407, 22</value>
+    <value>354, 26</value>
   </data>
   <data name="$this.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
     <value>Yes</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="$this.RightToLeftLayout" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>

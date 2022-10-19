@@ -128,8 +128,9 @@ namespace Report_Pro.Forms
             {
                 AccordionControlElement elm = new AccordionControlElement()
                 {
-                    Text =( Properties.Settings.Default.lungh =="0") ?  s.ScreenCaption :  s.ScreenCaption_E ,
-                  //  Text = s.ScreenCaption,
+                    
+                    Text =( Properties.Settings.Default.lungh =="0") ?  s.ScreenCaption : (s.ScreenCaption_E == null || s.ScreenCaption_E == "" ? s.ScreenCaption : s.ScreenCaption_E),
+                    //  Text = s.ScreenCaption,
                     Tag = s.ScreenName,
                     Name = s.ScreenName,
                     Style = ElementStyle.Group
@@ -148,9 +149,9 @@ namespace Report_Pro.Forms
                {
                    AccordionControlElement elm = new AccordionControlElement()
                    {
-                       Text = (Properties.Settings.Default.lungh == "0") ? s.ScreenCaption : s.ScreenCaption_E,
+                       Text = (Properties.Settings.Default.lungh == "0") ? s.ScreenCaption : (s.ScreenCaption_E == null || s.ScreenCaption_E == "" ? s.ScreenCaption : s.ScreenCaption_E),
 
-                      // Text = s.ScreenCaption,
+                       // Text = s.ScreenCaption,
                        Tag = s.ScreenName,
                        Name = s.ScreenName,
                        Style = ElementStyle.Group
@@ -168,7 +169,7 @@ namespace Report_Pro.Forms
             {
                 AccordionControlElement elm = new AccordionControlElement()
                 {
-                    Text = (Properties.Settings.Default.lungh == "0") ? s.ScreenCaption : s.ScreenCaption_E,
+                    Text = (Properties.Settings.Default.lungh == "0") ? s.ScreenCaption : (s.ScreenCaption_E == null || s.ScreenCaption_E == "" ? s.ScreenCaption : s.ScreenCaption_E),
 
                  //   Text = s.ScreenCaption,
                     Tag = s.ScreenName,

@@ -40,7 +40,7 @@
             this.FromDate = new System.Windows.Forms.DateTimePicker();
             this.labelX2 = new DevComponents.DotNetBar.LabelX();
             this.labelX1 = new DevComponents.DotNetBar.LabelX();
-            this.Branch_ = new Report_Pro.MyControls.UC_Branch();
+            this.Branch_ = new Report_Pro.MyControls.ذ();
             this.groupPanel1.SuspendLayout();
             this.groupPanel2.SuspendLayout();
             this.SuspendLayout();
@@ -270,7 +270,7 @@
         private DevComponents.DotNetBar.ButtonX btnOption;
         private CrystalDecisions.Windows.Forms.CrystalReportViewer crystalReportViewer1;
         private DevComponents.DotNetBar.Controls.GroupPanel groupPanel2;
-        private MyControls.UC_Branch Branch_;
+        private MyControls.ذ Branch_;
         private DevComponents.DotNetBar.LabelX labelX3;
         private System.Windows.Forms.DateTimePicker ToDate;
         private System.Windows.Forms.DateTimePicker FromDate;

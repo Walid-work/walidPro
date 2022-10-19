@@ -255,9 +255,6 @@
   <data name="BEdit.Text" xml:space="preserve">
     <value>تعديل</value>
   </data>
-  <data name="labelX4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>53, 15</value>
-  </data>
   <data name="&gt;&gt;labelX17.Parent" xml:space="preserve">
     <value>groupPanel7</value>
   </data>
@@ -573,8 +570,8 @@
   <data name="labelX31.Location" type="System.Drawing.Point, System.Drawing">
     <value>926, 3</value>
   </data>
-  <data name="labelX51.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 22</value>
+  <data name="labelX1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 22</value>
   </data>
   <data name="ribbonBar1.Size" type="System.Drawing.Size, System.Drawing">
     <value>1096, 29</value>
@@ -654,6 +651,9 @@
   <data name="txt_serNo.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
+  <data name="&gt;&gt;TxtDesc.Name" xml:space="preserve">
+    <value>TxtDesc</value>
+  </data>
   <data name="&gt;&gt;txtSearch.Type" xml:space="preserve">
     <value>DevComponents.DotNetBar.Controls.TextBoxX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
   </data>
@@ -680,6 +680,9 @@
   </data>
   <data name="&gt;&gt;groupPanel6.Name" xml:space="preserve">
     <value>groupPanel6</value>
+  </data>
+  <data name="&gt;&gt;Uc_Branch.ZOrder" xml:space="preserve">
+    <value>19</value>
   </data>
   <data name="&gt;&gt;Doc_Name.Name" xml:space="preserve">
     <value>Doc_Name</value>
@@ -829,8 +832,8 @@
   <data name="labelX20.TabIndex" type="System.Int32, mscorlib">
     <value>59</value>
   </data>
-  <data name="labelX24.Location" type="System.Drawing.Point, System.Drawing">
-    <value>114, 8</value>
+  <data name="labelX8.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="next_.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1062,17 +1065,20 @@
   <data name="$this.Text" xml:space="preserve">
     <value>frm_R_Qutaion</value>
   </data>
-  <data name="&gt;&gt;groupPanel7.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="labelX4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 15</value>
   </data>
   <data name="&gt;&gt;Uc_Branch.Type" xml:space="preserve">
-    <value>Report_Pro.MyControls.UC_Branch, Report_Pro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Report_Pro.MyControls.ذ, Report_Pro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="last_.Size" type="System.Drawing.Size, System.Drawing">
     <value>18, 19</value>
   </data>
   <data name="&gt;&gt;BtnAttache.Name" xml:space="preserve">
     <value>BtnAttache</value>
+  </data>
+  <data name="&gt;&gt;BtnEmail.Name" xml:space="preserve">
+    <value>BtnEmail</value>
   </data>
   <data name="&gt;&gt;BEdit.Type" xml:space="preserve">
     <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
@@ -1092,9 +1098,6 @@
   <data name="&gt;&gt;ribbonBar1.Name" xml:space="preserve">
     <value>ribbonBar1</value>
   </data>
-  <data name="&gt;&gt;previous_.Name" xml:space="preserve">
-    <value>previous_</value>
-  </data>
   <data name="BtnAttache.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
@@ -1112,14 +1115,8 @@
   <data name="&gt;&gt;txt_MainNote.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;txt_InvDate.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
   <data name="btn_braws.Location" type="System.Drawing.Point, System.Drawing">
     <value>1013, 4</value>
-  </data>
-  <data name="&gt;&gt;labelX29.Parent" xml:space="preserve">
-    <value>groupPanel7</value>
   </data>
   <data name="&gt;&gt;labelX4.Name" xml:space="preserve">
     <value>labelX4</value>
@@ -1188,8 +1185,8 @@
   <data name="labelX17.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
-  <data name="txtNote.Location" type="System.Drawing.Point, System.Drawing">
-    <value>347, 19</value>
+  <data name="txtUnit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>79, 27</value>
   </data>
   <data name="totalQty.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 27</value>
@@ -1347,8 +1344,8 @@
   <data name="groupPanel5.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 496</value>
   </data>
-  <data name="&gt;&gt;BtnEmail.Name" xml:space="preserve">
-    <value>BtnEmail</value>
+  <data name="&gt;&gt;txt_transaction_code.Parent" xml:space="preserve">
+    <value>groupPanel6</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>1096, 561</value>
@@ -1382,6 +1379,9 @@
   </data>
   <data name="&gt;&gt;btnOk.Name" xml:space="preserve">
     <value>btnOk</value>
+  </data>
+  <data name="btnOk.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 5</value>
   </data>
   <data name="&gt;&gt;TxtQty.Name" xml:space="preserve">
     <value>TxtQty</value>
@@ -1446,6 +1446,9 @@
   <data name="labelX25.TabIndex" type="System.Int32, mscorlib">
     <value>44</value>
   </data>
+  <data name="groupPanel7.TabIndex" type="System.Int32, mscorlib">
+    <value>109</value>
+  </data>
   <data name="labelX52.TabIndex" type="System.Int32, mscorlib">
     <value>54</value>
   </data>
@@ -1454,9 +1457,6 @@
   </data>
   <data name="dGV_Item.RowHeadersWidth" type="System.Int32, mscorlib">
     <value>50</value>
-  </data>
-  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 240</value>
   </data>
   <data name="&gt;&gt;labelX23.Type" xml:space="preserve">
     <value>DevComponents.DotNetBar.LabelX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
@@ -1605,6 +1605,9 @@
   <data name="labelX7.Text" xml:space="preserve">
     <value>هاتف</value>
   </data>
+  <data name="txtUnit.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
   <data name="labelX17.Text" xml:space="preserve">
     <value>الوصف</value>
   </data>
@@ -1619,9 +1622,6 @@
   </data>
   <data name="&gt;&gt;labelX51.Parent" xml:space="preserve">
     <value>groupPanel6</value>
-  </data>
-  <data name="&gt;&gt;txtE_Fax.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="previous_.Location" type="System.Drawing.Point, System.Drawing">
     <value>189, 62</value>
@@ -1665,17 +1665,14 @@
   <data name="labelX25.Text" xml:space="preserve">
     <value>فاكس</value>
   </data>
-  <data name="TxtQty.ButtonCustom.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
   <data name="labelX31.TabIndex" type="System.Int32, mscorlib">
     <value>37</value>
   </data>
   <data name="Btn_DelRow.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
-  <data name="labelX23.TabIndex" type="System.Int32, mscorlib">
-    <value>48</value>
+  <data name="labelX3.TabIndex" type="System.Int32, mscorlib">
+    <value>61</value>
   </data>
   <data name="labelX23.Size" type="System.Drawing.Size, System.Drawing">
     <value>98, 22</value>
@@ -1695,9 +1692,6 @@
   <data name="txt_MainNote.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
-  <data name="labelX47.Size" type="System.Drawing.Size, System.Drawing">
-    <value>46, 22</value>
-  </data>
   <data name="labelX53.Location" type="System.Drawing.Point, System.Drawing">
     <value>22, 3</value>
   </data>
@@ -1706,9 +1700,6 @@
   </data>
   <data name="&gt;&gt;labelX1.ZOrder" xml:space="preserve">
     <value>7</value>
-  </data>
-  <data name="&gt;&gt;labelX7.ZOrder" xml:space="preserve">
-    <value>13</value>
   </data>
   <data name="txt_Email.Size" type="System.Drawing.Size, System.Drawing">
     <value>310, 27</value>
@@ -1764,8 +1755,8 @@
   <data name="&gt;&gt;labelX53.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="btnOk.Location" type="System.Drawing.Point, System.Drawing">
-    <value>19, 5</value>
+  <data name="&gt;&gt;labelX7.ZOrder" xml:space="preserve">
+    <value>13</value>
   </data>
   <data name="first_.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1781,6 +1772,9 @@
   </data>
   <data name="tabControl1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
+  </data>
+  <data name="txt_transaction_code.Text" xml:space="preserve">
+    <value>RQT</value>
   </data>
   <data name="&gt;&gt;labelX30.Parent" xml:space="preserve">
     <value>groupPanel7</value>
@@ -1826,6 +1820,9 @@
   </data>
   <data name="txtMobile.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
+  </data>
+  <data name="&gt;&gt;labelX52.Parent" xml:space="preserve">
+    <value>groupPanel7</value>
   </data>
   <data name="labelX2.Location" type="System.Drawing.Point, System.Drawing">
     <value>191, 88</value>
@@ -1887,11 +1884,17 @@
   <data name="&gt;&gt;txtUnit.Parent" xml:space="preserve">
     <value>groupPanel7</value>
   </data>
+  <data name="txtNote.Location" type="System.Drawing.Point, System.Drawing">
+    <value>347, 19</value>
+  </data>
   <data name="&gt;&gt;labelX24.Name" xml:space="preserve">
     <value>labelX24</value>
   </data>
   <data name="txt_transaction_code.Location" type="System.Drawing.Point, System.Drawing">
     <value>115, 113</value>
+  </data>
+  <data name="labelX31.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 15</value>
   </data>
   <data name="labelX29.Location" type="System.Drawing.Point, System.Drawing">
     <value>164, 3</value>
@@ -1938,8 +1941,8 @@
   <data name="TxtQty.ButtonFreeText.Text" xml:space="preserve">
     <value />
   </data>
-  <data name="groupPanel5.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Bottom</value>
+  <data name="labelX24.Location" type="System.Drawing.Point, System.Drawing">
+    <value>114, 8</value>
   </data>
   <data name="txtBalance.TabIndex" type="System.Int32, mscorlib">
     <value>53</value>
@@ -1998,8 +2001,11 @@
   <data name="&gt;&gt;labelX9.ZOrder" xml:space="preserve">
     <value>9</value>
   </data>
-  <data name="&gt;&gt;last_.Name" xml:space="preserve">
-    <value>last_</value>
+  <data name="txtSearch.ButtonCustom.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;txt_TotWeight.Name" xml:space="preserve">
+    <value>txt_TotWeight</value>
   </data>
   <data name="txt_MainNote.TabIndex" type="System.Int32, mscorlib">
     <value>58</value>
@@ -2009,9 +2015,6 @@
   </data>
   <data name="&gt;&gt;panel2.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="TxtQty.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
   </data>
   <data name="labelX3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2031,8 +2034,8 @@
   <data name="&gt;&gt;tabControlPanel2.Type" xml:space="preserve">
     <value>DevComponents.DotNetBar.TabControlPanel, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
   </data>
-  <data name="labelX1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 22</value>
+  <data name="groupPanel5.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
   </data>
   <data name="labelX52.Size" type="System.Drawing.Size, System.Drawing">
     <value>58, 15</value>
@@ -2058,11 +2061,8 @@
   <data name="labelX30.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
-  <data name="&gt;&gt;txt_MainNote.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="groupPanel7.TabIndex" type="System.Int32, mscorlib">
-    <value>109</value>
+  <data name="labelX20.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="&gt;&gt;txtE_Fax.Name" xml:space="preserve">
     <value>txtE_Fax</value>
@@ -2099,9 +2099,6 @@
   </data>
   <data name="labelX9.Location" type="System.Drawing.Point, System.Drawing">
     <value>686, 51</value>
-  </data>
-  <data name="labelX20.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="labelX5.Text" xml:space="preserve">
     <value>وزن الوحدة</value>
@@ -2214,8 +2211,8 @@
   <data name="TxtDesc.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8.25pt</value>
   </data>
-  <data name="&gt;&gt;TxtDesc.Name" xml:space="preserve">
-    <value>TxtDesc</value>
+  <data name="&gt;&gt;txt_InvDate.ZOrder" xml:space="preserve">
+    <value>11</value>
   </data>
   <data name="labelX4.Text" xml:space="preserve">
     <value>الوحدة</value>
@@ -2274,9 +2271,6 @@
   <data name="$this.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
     <value>Yes</value>
   </data>
-  <data name="&gt;&gt;txt_transaction_code.Parent" xml:space="preserve">
-    <value>groupPanel6</value>
-  </data>
   <data name="labelX47.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -2334,9 +2328,6 @@
   <data name="btn_braws.Size" type="System.Drawing.Size, System.Drawing">
     <value>40, 35</value>
   </data>
-  <data name="txtUnit.Size" type="System.Drawing.Size, System.Drawing">
-    <value>79, 27</value>
-  </data>
   <data name="&gt;&gt;ribbonBar1.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
@@ -2367,8 +2358,8 @@
   <data name="&gt;&gt;txtUnitWeight.Parent" xml:space="preserve">
     <value>groupPanel7</value>
   </data>
-  <data name="txtUnit.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
+  <data name="&gt;&gt;txt_MainNote.ZOrder" xml:space="preserve">
+    <value>6</value>
   </data>
   <data name="groupPanel7.Size" type="System.Drawing.Size, System.Drawing">
     <value>1090, 50</value>
@@ -2397,8 +2388,8 @@
   <data name="&gt;&gt;tabControl1.Name" xml:space="preserve">
     <value>tabControl1</value>
   </data>
-  <data name="&gt;&gt;labelX52.Parent" xml:space="preserve">
-    <value>groupPanel7</value>
+  <data name="&gt;&gt;txtE_Fax.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;totalWeight.Name" xml:space="preserve">
     <value>totalWeight</value>
@@ -2411,6 +2402,9 @@
   </data>
   <data name="ribbonBar1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
+  </data>
+  <data name="TxtQty.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 27</value>
   </data>
   <data name="&gt;&gt;tabControlPanel2.Name" xml:space="preserve">
     <value>tabControlPanel2</value>
@@ -2432,8 +2426,8 @@
         th8Sn3zWygdB5YtNAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="labelX8.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;labelX29.Parent" xml:space="preserve">
+    <value>groupPanel7</value>
   </data>
   <data name="labelX1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2443,9 +2437,6 @@
   </data>
   <data name="txtUnitWeight.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8.25pt</value>
-  </data>
-  <data name="labelX3.TabIndex" type="System.Int32, mscorlib">
-    <value>61</value>
   </data>
   <data name="labelX2.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -2459,17 +2450,14 @@
   <data name="&gt;&gt;BNew.Type" xml:space="preserve">
     <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
   </data>
-  <data name="labelX8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>38, 22</value>
+  <data name="labelX23.TabIndex" type="System.Int32, mscorlib">
+    <value>48</value>
   </data>
   <data name="&gt;&gt;labelX6.Name" xml:space="preserve">
     <value>labelX6</value>
   </data>
   <data name="&gt;&gt;tabControl1.Type" xml:space="preserve">
     <value>DevComponents.DotNetBar.TabControl, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="&gt;&gt;txt_TotWeight.Name" xml:space="preserve">
-    <value>txt_TotWeight</value>
   </data>
   <data name="&gt;&gt;labelX17.ZOrder" xml:space="preserve">
     <value>9</value>
@@ -2480,8 +2468,14 @@
   <data name="txt_address.Location" type="System.Drawing.Point, System.Drawing">
     <value>40, 4</value>
   </data>
+  <data name="&gt;&gt;groupPanel7.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
   <data name="&gt;&gt;labelX20.ZOrder" xml:space="preserve">
     <value>5</value>
+  </data>
+  <data name="labelX51.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 22</value>
   </data>
   <data name="&gt;&gt;dGV_Item.Name" xml:space="preserve">
     <value>dGV_Item</value>
@@ -2491,6 +2485,9 @@
   </data>
   <data name="&gt;&gt;txt_serNo.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;last_.Name" xml:space="preserve">
+    <value>last_</value>
   </data>
   <data name="Uc_Branch.TabIndex" type="System.Int32, mscorlib">
     <value>60</value>
@@ -2531,8 +2528,11 @@
   <data name="labelX30.Text" xml:space="preserve">
     <value>اسم الصنف</value>
   </data>
-  <data name="TxtQty.Size" type="System.Drawing.Size, System.Drawing">
-    <value>67, 27</value>
+  <data name="TxtQty.ButtonCustom.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="labelX8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>38, 22</value>
   </data>
   <data name="txtSearch.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -2540,8 +2540,8 @@
   <data name="deliveryTearms.Location" type="System.Drawing.Point, System.Drawing">
     <value>44, 3</value>
   </data>
-  <data name="&gt;&gt;Uc_Branch.ZOrder" xml:space="preserve">
-    <value>19</value>
+  <data name="labelX47.Size" type="System.Drawing.Size, System.Drawing">
+    <value>46, 22</value>
   </data>
   <data name="last_.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2569,8 +2569,8 @@
   <data name="tabControlPanel2.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
   </data>
-  <data name="labelX31.Size" type="System.Drawing.Size, System.Drawing">
-    <value>82, 15</value>
+  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 240</value>
   </data>
   <data name="&gt;&gt;totalWeight.ZOrder" xml:space="preserve">
     <value>3</value>
@@ -2606,8 +2606,8 @@
         xS8DnlvG9l2bWvSfb8CniUEaLhauF31ZQd4h/EL3D5xHmRkvr38BBkYKo8dFBXkAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="txt_transaction_code.Text" xml:space="preserve">
-    <value>RQT</value>
+  <data name="&gt;&gt;previous_.Name" xml:space="preserve">
+    <value>previous_</value>
   </data>
   <data name="&gt;&gt;Doc_Name.ZOrder" xml:space="preserve">
     <value>5</value>
@@ -2621,8 +2621,8 @@
   <data name="&gt;&gt;txt_address.ZOrder" xml:space="preserve">
     <value>12</value>
   </data>
-  <data name="txtSearch.ButtonCustom.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+  <data name="TxtQty.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
   </data>
   <data name="&gt;&gt;labelX10.Type" xml:space="preserve">
     <value>DevComponents.DotNetBar.LabelX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>

@@ -33,7 +33,7 @@
             this.buttonX6 = new DevComponents.DotNetBar.ButtonX();
             this.crystalReportViewer1 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
             this.groupPanel1 = new DevComponents.DotNetBar.Controls.GroupPanel();
-            this.UC_Branch = new Report_Pro.MyControls.UC_Branch();
+            this.UC_Branch = new Report_Pro.MyControls.ذ();
             this.labelX2 = new DevComponents.DotNetBar.LabelX();
             this.labelX7 = new DevComponents.DotNetBar.LabelX();
             this.ToDate = new DevComponents.Editors.DateTimeAdv.DateTimeInput();
@@ -299,7 +299,7 @@
         private DevComponents.DotNetBar.ButtonX buttonX6;
         private CrystalDecisions.Windows.Forms.CrystalReportViewer crystalReportViewer1;
         private DevComponents.DotNetBar.Controls.GroupPanel groupPanel1;
-        private MyControls.UC_Branch UC_Branch;
+        private MyControls.ذ UC_Branch;
         private DevComponents.DotNetBar.LabelX labelX2;
         private DevComponents.DotNetBar.LabelX labelX7;
         private DevComponents.Editors.DateTimeAdv.DateTimeInput ToDate;

@@ -134,6 +134,10 @@
   <data name="&gt;&gt;Column11.Name" xml:space="preserve">
     <value>Column11</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="txtCost.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="&gt;&gt;groupControl1.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
@@ -149,7 +153,6 @@
   <data name="&gt;&gt;Uc_Items.Type" xml:space="preserve">
     <value>Report_Pro.MyControls.UC_Items, Report_Pro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="_GIT.Width" type="System.Int32, mscorlib">
     <value>70</value>
   </data>
@@ -177,6 +180,9 @@
   <data name="piBox1.TabIndex" type="System.Int32, mscorlib">
     <value>308</value>
   </data>
+  <data name="txtBalance.ButtonFreeText.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
   <data name="&gt;&gt;totalSales_weight.ZOrder" xml:space="preserve">
     <value>37</value>
   </data>
@@ -184,7 +190,7 @@
     <value>Ton Cost With Profit Margin</value>
   </data>
   <data name="btnReport.Location" type="System.Drawing.Point, System.Drawing">
-    <value>487, 9</value>
+    <value>486, 9</value>
   </data>
   <data name="&gt;&gt;Column11.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -198,8 +204,8 @@
   <data name="Column26.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="&gt;&gt;Column20.Name" xml:space="preserve">
-    <value>Column20</value>
+  <data name="&gt;&gt;_GIT.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="label18.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
@@ -217,7 +223,7 @@
     <value />
   </data>
   <data name="toDate_1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>361, 30</value>
+    <value>360, 30</value>
   </data>
   <data name="txtBalance_weight.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -252,6 +258,9 @@
   <data name="FromDate.TabIndex" type="System.Int32, mscorlib">
     <value>295</value>
   </data>
+  <data name="&gt;&gt;labelX14.Name" xml:space="preserve">
+    <value>labelX14</value>
+  </data>
   <data name="txtBalance.ButtonCustom.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
@@ -264,8 +273,8 @@
   <data name="&gt;&gt;Column28.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;labelX17.Parent" xml:space="preserve">
-    <value>groupControl1</value>
+  <data name="txtTotalBalance.ButtonCustom.Text" xml:space="preserve">
+    <value />
   </data>
   <data name="totalSales.ButtonFreeText.DisplayPosition" type="System.Int32, mscorlib">
     <value>0</value>
@@ -339,17 +348,14 @@
   <data name="txtCost_1.Size" type="System.Drawing.Size, System.Drawing">
     <value>93, 21</value>
   </data>
-  <data name="Column17.Width" type="System.Int32, mscorlib">
-    <value>70</value>
-  </data>
   <data name="Column10.HeaderText" xml:space="preserve">
     <value>Unit Price</value>
   </data>
   <data name="&gt;&gt;Uc_Items.Name" xml:space="preserve">
     <value>Uc_Items</value>
   </data>
-  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 125</value>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 44</value>
   </data>
   <data name="txtGIT.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 9pt, style=Bold</value>
@@ -469,7 +475,7 @@
     <value />
   </data>
   <data name="dgv_LP.Size" type="System.Drawing.Size, System.Drawing">
-    <value>697, 172</value>
+    <value>696, 172</value>
   </data>
   <data name="&gt;&gt;Column19.Name" xml:space="preserve">
     <value>Column19</value>
@@ -491,9 +497,6 @@
   </data>
   <data name="&gt;&gt;Column12.Name" xml:space="preserve">
     <value>Column12</value>
-  </data>
-  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 44</value>
   </data>
   <data name="&gt;&gt;labelX18.Name" xml:space="preserve">
     <value>labelX18</value>
@@ -524,6 +527,9 @@
   </data>
   <data name="&gt;&gt;totalSales.Type" xml:space="preserve">
     <value>DevComponents.Editors.DoubleInput, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;labelX13.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.LabelX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
   </data>
   <data name="nRow.ButtonDropDown.Text" xml:space="preserve">
     <value />
@@ -711,14 +717,17 @@
   <data name="Column27.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
+  <data name="txtTonCost.TabIndex" type="System.Int32, mscorlib">
+    <value>321</value>
+  </data>
   <data name="txtUnit.TabIndex" type="System.Int32, mscorlib">
     <value>310</value>
   </data>
   <data name="&gt;&gt;label17.Name" xml:space="preserve">
     <value>label17</value>
   </data>
-  <data name="&gt;&gt;labelX13.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.LabelX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  <data name="txtTonCost_1.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="&gt;&gt;Monthely_Sales_weight.Parent" xml:space="preserve">
     <value>$this</value>
@@ -742,7 +751,7 @@
     <value>1472, 681</value>
   </data>
   <data name="fromDate_1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>165, 30</value>
+    <value>164, 30</value>
   </data>
   <data name="btnReport.Size" type="System.Drawing.Size, System.Drawing">
     <value>98, 38</value>
@@ -799,7 +808,7 @@
     <value />
   </data>
   <data name="label12.Location" type="System.Drawing.Point, System.Drawing">
-    <value>235, 164</value>
+    <value>234, 164</value>
   </data>
   <data name="&gt;&gt;label12.ZOrder" xml:space="preserve">
     <value>9</value>
@@ -900,8 +909,8 @@
   <data name="&gt;&gt;txtThickness.Type" xml:space="preserve">
     <value>Report_Pro.MyControls.decimalText, Report_Pro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="&gt;&gt;toDate_1.Name" xml:space="preserve">
-    <value>toDate_1</value>
+  <data name="Monthely_Sales_weight.TabIndex" type="System.Int32, mscorlib">
+    <value>61</value>
   </data>
   <data name="&gt;&gt;txtBalance.Parent" xml:space="preserve">
     <value>$this</value>
@@ -933,8 +942,8 @@
   <data name="&gt;&gt;labelX16.Parent" xml:space="preserve">
     <value>groupControl1</value>
   </data>
-  <data name="Monthely_Sales_weight.ButtonCustom.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+  <data name="Column17.Width" type="System.Int32, mscorlib">
+    <value>70</value>
   </data>
   <data name="txtTonCost.Location" type="System.Drawing.Point, System.Drawing">
     <value>406, 125</value>
@@ -968,9 +977,6 @@
   </data>
   <data name="&gt;&gt;fromDate_1.Parent" xml:space="preserve">
     <value>groupControl1</value>
-  </data>
-  <data name="txtTotalBalance.ButtonCustom.Text" xml:space="preserve">
-    <value />
   </data>
   <data name="&gt;&gt;labelX14.ZOrder" xml:space="preserve">
     <value>40</value>
@@ -1012,7 +1018,7 @@
     <value>70</value>
   </data>
   <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 21</value>
+    <value>75, 21</value>
   </data>
   <data name="txtCost_1.Text" xml:space="preserve">
     <value>0.000</value>
@@ -1071,6 +1077,9 @@
   <data name="nRow.ButtonCustom2.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
+  <data name="&gt;&gt;txtUnit.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
   <data name="toDate_1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>5, 5, 5, 5</value>
   </data>
@@ -1111,13 +1120,13 @@
     <value>$this</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1760, 732</value>
+    <value>1771, 732</value>
   </data>
   <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
     <value>17, 174</value>
   </data>
   <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>55, 21</value>
+    <value>54, 21</value>
   </data>
   <data name="&gt;&gt;txtTotalBalance.Parent" xml:space="preserve">
     <value>$this</value>
@@ -1146,8 +1155,11 @@
   <data name="DGV_b.TabIndex" type="System.Int32, mscorlib">
     <value>30</value>
   </data>
-  <data name="txtTonCost.TabIndex" type="System.Int32, mscorlib">
-    <value>321</value>
+  <data name="nRow.ButtonCustom2.DisplayPosition" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="Monthely_Sales_weight.ButtonCustom.DisplayPosition" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
   <data name="label16.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
@@ -1213,13 +1225,13 @@
     <value>44</value>
   </data>
   <data name="label16.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 29</value>
-  </data>
-  <data name="&gt;&gt;ton_price.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>10, 29</value>
   </data>
   <data name="&gt;&gt;Column2.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label5.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
   </data>
   <data name="txtLong.TabIndex" type="System.Int32, mscorlib">
     <value>319</value>
@@ -1264,7 +1276,7 @@
     <value>331</value>
   </data>
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 21</value>
+    <value>75, 21</value>
   </data>
   <data name="label18.TabIndex" type="System.Int32, mscorlib">
     <value>330</value>
@@ -1289,9 +1301,6 @@
   </data>
   <data name="label18.Size" type="System.Drawing.Size, System.Drawing">
     <value>70, 21</value>
-  </data>
-  <data name="balance_period.ButtonFreeText.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
   </data>
   <data name="&gt;&gt;totalSales.Parent" xml:space="preserve">
     <value>$this</value>
@@ -1359,8 +1368,8 @@
   <data name="Uc_Items.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 9pt, style=Bold</value>
   </data>
-  <data name="&gt;&gt;txtGIT.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="Column21.HeaderText" xml:space="preserve">
+    <value>Branch Code</value>
   </data>
   <data name="txtTonCost.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -1386,6 +1395,9 @@
   <data name="piBox1.Location" type="System.Drawing.Point, System.Drawing">
     <value>575, 66</value>
   </data>
+  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 125</value>
+  </data>
   <data name="fromDate_1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>5, 5, 5, 5</value>
   </data>
@@ -1401,8 +1413,11 @@
   <data name="&gt;&gt;balance_period.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
+  <data name="Monthely_Sales_weight.ButtonCustom.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
   <data name="Uc_Items.Size" type="System.Drawing.Size, System.Drawing">
-    <value>377, 24</value>
+    <value>376, 24</value>
   </data>
   <data name="&gt;&gt;txtBalance.Type" xml:space="preserve">
     <value>DevComponents.Editors.DoubleInput, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
@@ -1436,9 +1451,6 @@
   </data>
   <data name="ToDate.Size" type="System.Drawing.Size, System.Drawing">
     <value>110, 21</value>
-  </data>
-  <data name="&gt;&gt;DGV_b.Parent" xml:space="preserve">
-    <value>$this</value>
   </data>
   <data name="&gt;&gt;Uc_Branch.Parent" xml:space="preserve">
     <value>$this</value>
@@ -1491,6 +1503,9 @@
   <data name="txtBalance.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
+  <data name="&gt;&gt;Column20.Name" xml:space="preserve">
+    <value>Column20</value>
+  </data>
   <data name="txtTotalBalance.ButtonFreeText.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
@@ -1508,6 +1523,9 @@
   </data>
   <data name="txtWidth.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
     <value>Center</value>
+  </data>
+  <data name="&gt;&gt;label10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="Column19.Width" type="System.Int32, mscorlib">
     <value>70</value>
@@ -1533,8 +1551,8 @@
   <data name="&gt;&gt;fromDate_1.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="&gt;&gt;labelX14.Name" xml:space="preserve">
-    <value>labelX14</value>
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="totalSales.ButtonDropDown.DisplayPosition" type="System.Int32, mscorlib">
     <value>0</value>
@@ -1546,7 +1564,7 @@
     <value>2</value>
   </data>
   <data name="dgv_LS.Size" type="System.Drawing.Size, System.Drawing">
-    <value>697, 172</value>
+    <value>696, 172</value>
   </data>
   <data name="&gt;&gt;totalSales_weight.Type" xml:space="preserve">
     <value>DevComponents.Editors.DoubleInput, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
@@ -1558,13 +1576,13 @@
     <value>Column25</value>
   </data>
   <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 21</value>
+    <value>75, 21</value>
   </data>
   <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
     <value>10</value>
   </data>
-  <data name="txtGIT.ButtonFreeText.Text" xml:space="preserve">
-    <value />
+  <data name="label2.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
   </data>
   <data name="$this.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1605,6 +1623,9 @@
   <data name="&gt;&gt;piBox1.Name" xml:space="preserve">
     <value>piBox1</value>
   </data>
+  <data name="ton_price.TabIndex" type="System.Int32, mscorlib">
+    <value>314</value>
+  </data>
   <data name="totalSales.TabIndex" type="System.Int32, mscorlib">
     <value>57</value>
   </data>
@@ -1618,7 +1639,7 @@
     <value>False</value>
   </data>
   <data name="labelX17.Location" type="System.Drawing.Point, System.Drawing">
-    <value>501, 34</value>
+    <value>500, 34</value>
   </data>
   <data name="&gt;&gt;Column4.Name" xml:space="preserve">
     <value>Column4</value>
@@ -1677,17 +1698,11 @@
   <data name="&gt;&gt;dgv_LP.Name" xml:space="preserve">
     <value>dgv_LP</value>
   </data>
-  <data name="label2.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
   <data name="Column8.HeaderText" xml:space="preserve">
     <value>Date</value>
   </data>
   <data name="Column9.Width" type="System.Int32, mscorlib">
     <value>70</value>
-  </data>
-  <data name="&gt;&gt;_GIT.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;label6.Parent" xml:space="preserve">
     <value>$this</value>
@@ -1707,17 +1722,14 @@
   <data name="&gt;&gt;Column6.Name" xml:space="preserve">
     <value>Column6</value>
   </data>
-  <data name="Monthely_Sales_weight.ButtonCustom.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="&gt;&gt;DGV_b.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="labelX17.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="Uc_Branch.Size" type="System.Drawing.Size, System.Drawing">
     <value>377, 24</value>
-  </data>
-  <data name="nRow.ButtonCustom2.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
   </data>
   <data name="txtGIT.ButtonDropDown.DisplayPosition" type="System.Int32, mscorlib">
     <value>0</value>
@@ -1729,7 +1741,7 @@
     <value>322</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 24</value>
+    <value>75, 24</value>
   </data>
   <data name="Column15.Width" type="System.Int32, mscorlib">
     <value>60</value>
@@ -1739,9 +1751,6 @@
   </data>
   <data name="txtGIT.ButtonCustom.Text" xml:space="preserve">
     <value />
-  </data>
-  <data name="txtTonCost_1.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
   </data>
   <data name="txtCost_1.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
     <value>Center</value>
@@ -1758,14 +1767,14 @@
   <data name="totalSales.ButtonFreeText.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
-  <data name="&gt;&gt;txtUnit.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="dgv_LS.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 282</value>
   </data>
   <data name="Column22.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="Monthely_Sales_weight.TabIndex" type="System.Int32, mscorlib">
-    <value>61</value>
+  <data name="txtLong.Size" type="System.Drawing.Size, System.Drawing">
+    <value>78, 21</value>
   </data>
   <data name="&gt;&gt;labelX18.Parent" xml:space="preserve">
     <value>$this</value>
@@ -1803,6 +1812,9 @@
   <data name="&gt;&gt;_totalBalance.Name" xml:space="preserve">
     <value>_totalBalance</value>
   </data>
+  <data name="&gt;&gt;labelX17.Parent" xml:space="preserve">
+    <value>groupControl1</value>
+  </data>
   <data name="&gt;&gt;Monthely_Sales_weight.ZOrder" xml:space="preserve">
     <value>35</value>
   </data>
@@ -1811,9 +1823,6 @@
   </data>
   <data name="&gt;&gt;Column1.Name" xml:space="preserve">
     <value>Column1</value>
-  </data>
-  <data name="&gt;&gt;unit_price.Name" xml:space="preserve">
-    <value>unit_price</value>
   </data>
   <data name="totalSales_weight.ButtonCustom.DisplayPosition" type="System.Int32, mscorlib">
     <value>0</value>
@@ -1879,7 +1888,7 @@
     <value>Report_Pro.MyControls.decimalText, Report_Pro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="label11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>235, 190</value>
+    <value>234, 190</value>
   </data>
   <data name="&gt;&gt;Column21.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1930,7 +1939,7 @@
     <value>False</value>
   </data>
   <data name="Monthely_Sales_weight.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1572, 681</value>
+    <value>1571, 681</value>
   </data>
   <data name="txtTotalBalance.Location" type="System.Drawing.Point, System.Drawing">
     <value>1072, 681</value>
@@ -1971,6 +1980,9 @@
   <data name="&gt;&gt;txtTonCost_1.Name" xml:space="preserve">
     <value>txtTonCost_1</value>
   </data>
+  <data name="Column26.HeaderText" xml:space="preserve">
+    <value>Transaction Code</value>
+  </data>
   <data name="txtCost.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
     <value>Center</value>
   </data>
@@ -1985,48 +1997,6 @@
   </data>
   <data name="txtBalance.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 22</value>
-  </data>
-  <data name="btnReport.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        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
-</value>
   </data>
   <data name="&gt;&gt;label5.Name" xml:space="preserve">
     <value>label5</value>
@@ -2091,7 +2061,7 @@
   <data name="labelX16.TabIndex" type="System.Int32, mscorlib">
     <value>34</value>
   </data>
-  <data name="txtBalance.ButtonFreeText.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+  <data name="balance_period.ButtonFreeText.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
   <data name="Column1.HeaderText" xml:space="preserve">
@@ -2124,17 +2094,14 @@
   <data name="&gt;&gt;totalSales.Name" xml:space="preserve">
     <value>totalSales</value>
   </data>
-  <data name="txtLong.Size" type="System.Drawing.Size, System.Drawing">
-    <value>78, 21</value>
-  </data>
   <data name="&gt;&gt;Column13.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;txtThickness.Name" xml:space="preserve">
     <value>txtThickness</value>
   </data>
-  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 100</value>
+  <data name="label13.Location" type="System.Drawing.Point, System.Drawing">
+    <value>527, 190</value>
   </data>
   <data name="txtGIT.ButtonFreeText.DisplayPosition" type="System.Int32, mscorlib">
     <value>0</value>
@@ -2142,8 +2109,50 @@
   <data name="FromDate.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>5, 5, 5, 5</value>
   </data>
-  <data name="Column21.HeaderText" xml:space="preserve">
-    <value>Branch Code</value>
+  <data name="&gt;&gt;txtGIT.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="btnReport.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+</value>
   </data>
   <data name="balance_period.ButtonCustom.Text" xml:space="preserve">
     <value />
@@ -2173,7 +2182,7 @@
     <value>0</value>
   </data>
   <data name="label18.Location" type="System.Drawing.Point, System.Drawing">
-    <value>95, 30</value>
+    <value>94, 30</value>
   </data>
   <data name="&gt;&gt;Column23.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -2209,7 +2218,7 @@
     <value />
   </data>
   <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>55, 21</value>
+    <value>54, 21</value>
   </data>
   <data name="label14.Size" type="System.Drawing.Size, System.Drawing">
     <value>72, 21</value>
@@ -2277,8 +2286,8 @@
   <data name="&gt;&gt;label14.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="label5.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
+  <data name="&gt;&gt;txtLong.Type" xml:space="preserve">
+    <value>Report_Pro.MyControls.decimalText, Report_Pro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="label15.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8.25pt, style=Bold</value>
@@ -2302,7 +2311,7 @@
     <value>0</value>
   </data>
   <data name="labelX21.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 260</value>
+    <value>10, 260</value>
   </data>
   <data name="labelX14.Location" type="System.Drawing.Point, System.Drawing">
     <value>735, 62</value>
@@ -2337,9 +2346,6 @@
   <data name="txtBalance_weight.ButtonCustom2.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
-  <data name="&gt;&gt;txtLong.Type" xml:space="preserve">
-    <value>Report_Pro.MyControls.decimalText, Report_Pro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
   <data name="label13.Size" type="System.Drawing.Size, System.Drawing">
     <value>72, 21</value>
   </data>
@@ -2373,11 +2379,8 @@
   <data name="totalSales.ButtonFreeText.Text" xml:space="preserve">
     <value />
   </data>
-  <data name="dgv_LS.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 282</value>
-  </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 21</value>
+    <value>75, 21</value>
   </data>
   <data name="totalSales_weight.TabIndex" type="System.Int32, mscorlib">
     <value>58</value>
@@ -2391,11 +2394,14 @@
   <data name="balance_period.ButtonCustom.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
-  <data name="ton_price.TabIndex" type="System.Int32, mscorlib">
-    <value>314</value>
+  <data name="&gt;&gt;ton_price.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="nRow.ButtonCustom2.Text" xml:space="preserve">
     <value />
+  </data>
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 100</value>
   </data>
   <data name="labelX16.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2419,7 +2425,7 @@
     <value>DevExpress.XtraEditors.GroupControl, DevExpress.Utils.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="labelX16.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 58</value>
+    <value>10, 58</value>
   </data>
   <data name="&gt;&gt;toDate_1.ZOrder" xml:space="preserve">
     <value>3</value>
@@ -2463,8 +2469,8 @@
   <data name="&gt;&gt;labelX17.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="txtCost.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
+  <data name="btnReport.TabIndex" type="System.Int32, mscorlib">
+    <value>341</value>
   </data>
   <data name="&gt;&gt;Column20.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -2478,8 +2484,8 @@
   <data name="dgv_LP.TabIndex" type="System.Int32, mscorlib">
     <value>50</value>
   </data>
-  <data name="&gt;&gt;label10.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;toDate_1.Name" xml:space="preserve">
+    <value>toDate_1</value>
   </data>
   <data name="FromDate.Size" type="System.Drawing.Size, System.Drawing">
     <value>110, 21</value>
@@ -2499,8 +2505,8 @@
   <data name="Uc_Branch.TabIndex" type="System.Int32, mscorlib">
     <value>305</value>
   </data>
-  <data name="label13.Location" type="System.Drawing.Point, System.Drawing">
-    <value>527, 190</value>
+  <data name="&gt;&gt;unit_price.Name" xml:space="preserve">
+    <value>unit_price</value>
   </data>
   <data name="txtThickness.Location" type="System.Drawing.Point, System.Drawing">
     <value>92, 125</value>
@@ -2574,8 +2580,8 @@
   <data name="$this.Text" xml:space="preserve">
     <value>Item Check</value>
   </data>
-  <data name="Column26.HeaderText" xml:space="preserve">
-    <value>Transaction Code</value>
+  <data name="txtGIT.ButtonFreeText.Text" xml:space="preserve">
+    <value />
   </data>
   <data name="txtTonCost.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
     <value>Center</value>
@@ -2585,9 +2591,6 @@
   </data>
   <data name="unit_price.Size" type="System.Drawing.Size, System.Drawing">
     <value>109, 21</value>
-  </data>
-  <data name="btnReport.TabIndex" type="System.Int32, mscorlib">
-    <value>341</value>
   </data>
   <data name="label12.Text" xml:space="preserve">
     <value>Unit Cost With Profit Margin</value>
@@ -2650,7 +2653,7 @@
     <value>285, 29</value>
   </data>
   <data name="FromDate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>81, 29</value>
+    <value>80, 29</value>
   </data>
   <metadata name="txtThickness.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -2673,9 +2676,6 @@
   <metadata name="Column11.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="btnPrin.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <metadata name="txtUnit.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -2695,9 +2695,6 @@
     <value>True</value>
   </metadata>
   <metadata name="label7.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="label1.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="Column22.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -2830,9 +2827,6 @@
     <value>True</value>
   </metadata>
   <metadata name="label14.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="btnReport.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="txtWeight.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">

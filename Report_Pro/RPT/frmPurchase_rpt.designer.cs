@@ -38,7 +38,7 @@
             this.groupPanel1 = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.UC_PayType = new Report_Pro.MyControls.UC_PayType();
             this.UC_Acc = new Report_Pro.MyControls.UC_Acc();
-            this.UC_Branch = new Report_Pro.MyControls.UC_Branch();
+            this.UC_Branch = new Report_Pro.MyControls.ذ();
             this.labelX6 = new DevComponents.DotNetBar.LabelX();
             this.labelX5 = new DevComponents.DotNetBar.LabelX();
             this.labelX4 = new DevComponents.DotNetBar.LabelX();
@@ -148,21 +148,18 @@
             // UC_PayType
             // 
             resources.ApplyResources(this.UC_PayType, "UC_PayType");
-            this.UC_PayType.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.UC_PayType.Name = "UC_PayType";
             // 
             // UC_Acc
             // 
             resources.ApplyResources(this.UC_Acc, "UC_Acc");
             this.UC_Acc.BackColor = System.Drawing.Color.Transparent;
-            this.UC_Acc.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.UC_Acc.Name = "UC_Acc";
             // 
             // UC_Branch
             // 
             resources.ApplyResources(this.UC_Branch, "UC_Branch");
             this.UC_Branch.BackColor = System.Drawing.Color.Transparent;
-            this.UC_Branch.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.UC_Branch.Cursor = System.Windows.Forms.Cursors.Default;
             this.UC_Branch.Name = "UC_Branch";
             this.UC_Branch.Load += new System.EventHandler(this.UC_Branch_Load);
@@ -265,7 +262,7 @@
         private DevComponents.DotNetBar.LabelX labelX1;
         private DevComponents.DotNetBar.LabelX labelX3;
         private System.Windows.Forms.ComboBox comboBox1;
-        private MyControls.UC_Branch UC_Branch1;
+        private MyControls.ذ UC_Branch1;
         private DevComponents.DotNetBar.LabelX labelX4;
         private DevComponents.DotNetBar.LabelX labelX5;
         private MyControls.UC_Acc UC_Acc1;
@@ -275,7 +272,7 @@
         private DevComponents.DotNetBar.ButtonX buttonX1;
         private MyControls.UC_PayType UC_PayType;
         private MyControls.UC_Acc UC_Acc;
-        private MyControls.UC_Branch UC_Branch;
+        private MyControls.ذ UC_Branch;
         private DevComponents.DotNetBar.ButtonX buttonX3;
         private DevComponents.DotNetBar.ButtonX buttonX2;
     }

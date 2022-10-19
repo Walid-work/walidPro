@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.groupPanel1 = new DevComponents.DotNetBar.Controls.GroupPanel();
+            this.label4 = new System.Windows.Forms.Label();
             this.btn_ReportFundDetials = new DevComponents.DotNetBar.ButtonX();
             this.btn_Balance_Deatials = new DevComponents.DotNetBar.ButtonX();
             this.buttonX5 = new DevComponents.DotNetBar.ButtonX();
@@ -54,7 +55,6 @@
             this.btnCopy = new DevComponents.DotNetBar.ButtonX();
             this.btnSaveDetials = new DevComponents.DotNetBar.ButtonX();
             this.tabItem2 = new DevComponents.DotNetBar.TabItem(this.components);
-            this.label4 = new System.Windows.Forms.Label();
             this.feesGrid1 = new Report_Pro.CTR.FeesGrid();
             this.txtAcc = new Report_Pro.MyControls.UC_Acc();
             this.Branch = new Report_Pro.MyControls.UC_AccBranch();
@@ -116,6 +116,17 @@
             this.groupPanel1.TabIndex = 2;
             this.groupPanel1.Click += new System.EventHandler(this.groupPanel1_Click);
             // 
+            // label4
+            // 
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Location = new System.Drawing.Point(772, 33);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(81, 13);
+            this.label4.TabIndex = 312;
+            this.label4.Text = "حساب الصندوق";
+            // 
             // btn_ReportFundDetials
             // 
             this.btn_ReportFundDetials.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
@@ -160,7 +171,7 @@
             // textBox1
             // 
             this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Location = new System.Drawing.Point(311, 6);
+            this.textBox1.Location = new System.Drawing.Point(275, 6);
             this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox1.Name = "textBox1";
             this.textBox1.PasswordChar = '*';
@@ -445,17 +456,6 @@
             this.tabItem2.Name = "tabItem2";
             this.tabItem2.Text = "تفاصيل الرصيد";
             // 
-            // label4
-            // 
-            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Location = new System.Drawing.Point(772, 33);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(81, 13);
-            this.label4.TabIndex = 312;
-            this.label4.Text = "حساب الصندوق";
-            // 
             // feesGrid1
             // 
             this.feesGrid1.Dock = System.Windows.Forms.DockStyle.Right;
@@ -469,22 +469,20 @@
             // 
             this.txtAcc.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtAcc.BackColor = System.Drawing.Color.Transparent;
-            this.txtAcc.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtAcc.Location = new System.Drawing.Point(445, 29);
+            this.txtAcc.Location = new System.Drawing.Point(381, 29);
             this.txtAcc.Margin = new System.Windows.Forms.Padding(0);
             this.txtAcc.Name = "txtAcc";
             this.txtAcc.Padding = new System.Windows.Forms.Padding(1);
-            this.txtAcc.Size = new System.Drawing.Size(321, 21);
+            this.txtAcc.Size = new System.Drawing.Size(385, 21);
             this.txtAcc.TabIndex = 311;
             // 
             // Branch
             // 
             this.Branch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Branch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Branch.Location = new System.Drawing.Point(445, 5);
+            this.Branch.Location = new System.Drawing.Point(381, 5);
             this.Branch.Margin = new System.Windows.Forms.Padding(0);
             this.Branch.Name = "Branch";
-            this.Branch.Size = new System.Drawing.Size(321, 21);
+            this.Branch.Size = new System.Drawing.Size(385, 21);
             this.Branch.TabIndex = 308;
             this.Branch.Load += new System.EventHandler(this.Branch_Load);
             this.Branch.DoubleClick += new System.EventHandler(this.Branch_DoubleClick);

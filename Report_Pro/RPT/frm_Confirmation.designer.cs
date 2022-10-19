@@ -41,7 +41,7 @@
             this.RB3 = new System.Windows.Forms.RadioButton();
             this.RB2 = new System.Windows.Forms.RadioButton();
             this.RB1 = new System.Windows.Forms.RadioButton();
-            this.UC_Branch = new Report_Pro.MyControls.UC_Branch();
+            this.UC_Branch = new Report_Pro.MyControls.ذ();
             this.labelX5 = new DevComponents.DotNetBar.LabelX();
             this.labelX6 = new DevComponents.DotNetBar.LabelX();
             this.ToDate = new System.Windows.Forms.DateTimePicker();
@@ -360,7 +360,7 @@
         private DevComponents.DotNetBar.ButtonX buttonX6;
         private DevComponents.DotNetBar.Controls.GroupPanel groupPanel1;
         private MyControls.UC_Acc UC_Acc;
-        private MyControls.UC_Branch UC_Branch;
+        private MyControls.ذ UC_Branch;
         private DevComponents.DotNetBar.LabelX labelX5;
         private DevComponents.DotNetBar.LabelX labelX6;
         private System.Windows.Forms.DateTimePicker ToDate;

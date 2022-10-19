@@ -38,7 +38,7 @@ namespace Report_Pro
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
            // Application.Run(new Forms.frm_Main());
-            //Application.Run(new Reports.Form1());
+           // Application.Run(new Form3());
             Application.Run(new RPT.login_frm());
 
         }

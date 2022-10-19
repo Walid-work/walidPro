@@ -981,6 +981,21 @@ namespace Report_Pro.PL
         {
 
         }
+
+        private void btnAddPayment_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAddDelevery_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void frmQuotation_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

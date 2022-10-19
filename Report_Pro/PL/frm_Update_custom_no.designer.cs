@@ -48,7 +48,7 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
             this.txtTransaction = new Report_Pro.MyControls.UC_Transaction();
-            this.txtBranch = new Report_Pro.MyControls.UC_Branch();
+            this.txtBranch = new Report_Pro.MyControls.ذ();
             ((System.ComponentModel.ISupportInitialize)(this.inv_date)).BeginInit();
             this.SuspendLayout();
             // 
@@ -321,6 +321,6 @@
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label9;
         private MyControls.UC_Transaction txtTransaction;
-        private MyControls.UC_Branch txtBranch;
+        private MyControls.ذ txtBranch;
     }
 }

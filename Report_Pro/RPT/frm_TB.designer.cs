@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_TB));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -56,10 +57,6 @@
             this.T_Cr = new System.Windows.Forms.TextBox();
             this.T_Bb = new System.Windows.Forms.TextBox();
             this.T_Db = new System.Windows.Forms.TextBox();
-            this.labelX6 = new DevComponents.DotNetBar.LabelX();
-            this.labelX1 = new DevComponents.DotNetBar.LabelX();
-            this.labelX9 = new DevComponents.DotNetBar.LabelX();
-            this.labelX8 = new DevComponents.DotNetBar.LabelX();
             this.FromDate = new DevComponents.Editors.DateTimeAdv.DateTimeInput();
             this.UserName = new System.Windows.Forms.TextBox();
             this.GroupBox1 = new System.Windows.Forms.GroupBox();
@@ -69,16 +66,21 @@
             this.RBtn3 = new System.Windows.Forms.RadioButton();
             this.RBtn2 = new System.Windows.Forms.RadioButton();
             this.ToDate = new DevComponents.Editors.DateTimeAdv.DateTimeInput();
-            this.labelX7 = new DevComponents.DotNetBar.LabelX();
             this.UnZero_B = new System.Windows.Forms.RadioButton();
             this.T_B = new System.Windows.Forms.RadioButton();
-            this.labelX2 = new DevComponents.DotNetBar.LabelX();
             this.DGV3 = new System.Windows.Forms.DataGridView();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.RB_S_Acc = new System.Windows.Forms.RadioButton();
             this.RB_M_Acc = new System.Windows.Forms.RadioButton();
             this.RB_All_Acc = new System.Windows.Forms.RadioButton();
             this.groupPanel1 = new DevComponents.DotNetBar.Controls.GroupPanel();
+            this.UC_Branch = new Report_Pro.MyControls.UC_AccBranch();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.Zero_B = new System.Windows.Forms.RadioButton();
             this.Credit_B = new System.Windows.Forms.RadioButton();
@@ -86,7 +88,6 @@
             this.All_B = new System.Windows.Forms.RadioButton();
             this.UC_Catogry = new Report_Pro.MyControls.UC_Catogry();
             this.UC_cost = new Report_Pro.MyControls.UC_cost();
-            this.UC_Branch = new Report_Pro.MyControls.UC_Branch();
             this.UC_Acc = new Report_Pro.MyControls.UC_Acc();
             this.cachedCrystalReport21 = new Report_Pro.RPT.CachedCrystalReport2();
             this.panel1.SuspendLayout();
@@ -104,105 +105,70 @@
             // 
             // panel1
             // 
+            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.Controls.Add(this.button4);
             this.panel1.Controls.Add(this.buttonX6);
             this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.Button2);
             this.panel1.Controls.Add(this.Button1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1172, 49);
-            this.panel1.TabIndex = 51;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // button4
             // 
-            this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button4.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(545, 9);
+            resources.ApplyResources(this.button4, "button4");
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(83, 31);
-            this.button4.TabIndex = 291;
-            this.button4.Text = "الميزان المجمع";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click_1);
             // 
             // buttonX6
             // 
+            resources.ApplyResources(this.buttonX6, "buttonX6");
             this.buttonX6.AccessibleRole = System.Windows.Forms.AccessibleRole.CheckButton;
-            this.buttonX6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonX6.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.buttonX6.Location = new System.Drawing.Point(1083, 12);
             this.buttonX6.Name = "buttonX6";
-            this.buttonX6.Size = new System.Drawing.Size(83, 31);
-            this.buttonX6.TabIndex = 290;
-            this.buttonX6.Text = "خيارات";
             this.buttonX6.Click += new System.EventHandler(this.buttonX6_Click);
             // 
             // button3
             // 
-            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button3.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(803, 12);
+            resources.ApplyResources(this.button3, "button3");
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(83, 31);
-            this.button3.TabIndex = 51;
-            this.button3.Text = "الميزان عربي";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // Button2
             // 
-            this.Button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Button2.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Button2.Location = new System.Drawing.Point(892, 12);
+            resources.ApplyResources(this.Button2, "Button2");
             this.Button2.Name = "Button2";
-            this.Button2.Size = new System.Drawing.Size(98, 31);
-            this.Button2.TabIndex = 41;
-            this.Button2.Text = "الميزان انجليزي";
             this.Button2.UseVisualStyleBackColor = true;
             this.Button2.Click += new System.EventHandler(this.Button2_Click);
             // 
             // Button1
             // 
-            this.Button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Button1.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Button1.Location = new System.Drawing.Point(670, 12);
+            resources.ApplyResources(this.Button1, "Button1");
             this.Button1.Name = "Button1";
-            this.Button1.Size = new System.Drawing.Size(83, 31);
-            this.Button1.TabIndex = 37;
-            this.Button1.Text = "التقرير";
             this.Button1.UseVisualStyleBackColor = true;
-            this.Button1.Visible = false;
             this.Button1.Click += new System.EventHandler(this.Button1_Click);
             // 
             // crystalReportViewer1
             // 
+            resources.ApplyResources(this.crystalReportViewer1, "crystalReportViewer1");
             this.crystalReportViewer1.ActiveViewIndex = -1;
             this.crystalReportViewer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.crystalReportViewer1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.crystalReportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.crystalReportViewer1.Location = new System.Drawing.Point(0, 49);
             this.crystalReportViewer1.Name = "crystalReportViewer1";
-            this.crystalReportViewer1.Size = new System.Drawing.Size(1172, 652);
-            this.crystalReportViewer1.TabIndex = 54;
-            this.crystalReportViewer1.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None;
-            this.crystalReportViewer1.ToolPanelWidth = 300;
             // 
             // panel3
             // 
+            resources.ApplyResources(this.panel3, "panel3");
             this.panel3.Controls.Add(this.DataGridView1);
             this.panel3.Controls.Add(this.groupPanel2);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(0, 241);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1172, 460);
-            this.panel3.TabIndex = 56;
             // 
             // DataGridView1
             // 
+            resources.ApplyResources(this.DataGridView1, "DataGridView1");
             this.DataGridView1.AllowUserToAddRows = false;
             this.DataGridView1.AllowUserToDeleteRows = false;
             this.DataGridView1.BackgroundColor = System.Drawing.SystemColors.Window;
@@ -216,98 +182,84 @@
             this.Column5,
             this.Column6,
             this.Column7});
-            this.DataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.DataGridView1.Location = new System.Drawing.Point(0, 0);
             this.DataGridView1.Name = "DataGridView1";
             this.DataGridView1.ReadOnly = true;
-            this.DataGridView1.RowHeadersWidth = 43;
             dataGridViewCellStyle5.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle5;
             this.DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DataGridView1.Size = new System.Drawing.Size(1172, 430);
-            this.DataGridView1.TabIndex = 42;
             this.DataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridView1_CellContentClick);
             // 
             // Column1
             // 
-            this.Column1.HeaderText = "رقم الحساب";
+            resources.ApplyResources(this.Column1, "Column1");
             this.Column1.Name = "Column1";
             this.Column1.ReadOnly = true;
-            this.Column1.Width = 120;
             // 
             // Column2
             // 
             this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column2.HeaderText = "اسم الحساب";
+            resources.ApplyResources(this.Column2, "Column2");
             this.Column2.Name = "Column2";
             this.Column2.ReadOnly = true;
             // 
             // Column3
             // 
-            this.Column3.HeaderText = "مستوي الحساب";
+            resources.ApplyResources(this.Column3, "Column3");
             this.Column3.Name = "Column3";
             this.Column3.ReadOnly = true;
-            this.Column3.Visible = false;
             // 
             // Column8
             // 
-            this.Column8.HeaderText = "نوع الحساب";
+            resources.ApplyResources(this.Column8, "Column8");
             this.Column8.Name = "Column8";
             this.Column8.ReadOnly = true;
-            this.Column8.Visible = false;
             // 
             // Column4
             // 
             dataGridViewCellStyle1.Format = "N2";
             dataGridViewCellStyle1.NullValue = "0.00";
             this.Column4.DefaultCellStyle = dataGridViewCellStyle1;
-            this.Column4.HeaderText = "الرصيد السابق";
+            resources.ApplyResources(this.Column4, "Column4");
             this.Column4.Name = "Column4";
             this.Column4.ReadOnly = true;
-            this.Column4.Width = 160;
             // 
             // Column5
             // 
             dataGridViewCellStyle2.Format = "N2";
             dataGridViewCellStyle2.NullValue = "0.00";
             this.Column5.DefaultCellStyle = dataGridViewCellStyle2;
-            this.Column5.HeaderText = "مدين";
+            resources.ApplyResources(this.Column5, "Column5");
             this.Column5.Name = "Column5";
             this.Column5.ReadOnly = true;
-            this.Column5.Width = 160;
             // 
             // Column6
             // 
             dataGridViewCellStyle3.Format = "N2";
             dataGridViewCellStyle3.NullValue = "0.00";
             this.Column6.DefaultCellStyle = dataGridViewCellStyle3;
-            this.Column6.HeaderText = "دائن";
+            resources.ApplyResources(this.Column6, "Column6");
             this.Column6.Name = "Column6";
             this.Column6.ReadOnly = true;
-            this.Column6.Width = 160;
             // 
             // Column7
             // 
             dataGridViewCellStyle4.Format = "N2";
             dataGridViewCellStyle4.NullValue = "0.00";
             this.Column7.DefaultCellStyle = dataGridViewCellStyle4;
-            this.Column7.HeaderText = "الرصيد الحالي";
+            resources.ApplyResources(this.Column7, "Column7");
             this.Column7.Name = "Column7";
             this.Column7.ReadOnly = true;
-            this.Column7.Width = 160;
             // 
             // groupPanel2
             // 
+            resources.ApplyResources(this.groupPanel2, "groupPanel2");
             this.groupPanel2.CanvasColor = System.Drawing.SystemColors.Control;
             this.groupPanel2.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
             this.groupPanel2.Controls.Add(this.T_Eb);
             this.groupPanel2.Controls.Add(this.T_Cr);
             this.groupPanel2.Controls.Add(this.T_Bb);
             this.groupPanel2.Controls.Add(this.T_Db);
-            this.groupPanel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.groupPanel2.Location = new System.Drawing.Point(0, 430);
             this.groupPanel2.Name = "groupPanel2";
-            this.groupPanel2.Size = new System.Drawing.Size(1172, 30);
             // 
             // 
             // 
@@ -328,103 +280,66 @@
             this.groupPanel2.Style.TextAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Center;
             this.groupPanel2.Style.TextColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
             this.groupPanel2.Style.TextLineAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Near;
-            this.groupPanel2.TabIndex = 41;
             // 
             // T_Eb
             // 
+            resources.ApplyResources(this.T_Eb, "T_Eb");
             this.T_Eb.BackColor = System.Drawing.Color.White;
-            this.T_Eb.Location = new System.Drawing.Point(3, 1);
             this.T_Eb.Name = "T_Eb";
-            this.T_Eb.Size = new System.Drawing.Size(157, 20);
-            this.T_Eb.TabIndex = 46;
             // 
             // T_Cr
             // 
+            resources.ApplyResources(this.T_Cr, "T_Cr");
             this.T_Cr.BackColor = System.Drawing.Color.White;
-            this.T_Cr.Location = new System.Drawing.Point(162, 1);
             this.T_Cr.Name = "T_Cr";
-            this.T_Cr.Size = new System.Drawing.Size(157, 20);
-            this.T_Cr.TabIndex = 45;
             // 
             // T_Bb
             // 
+            resources.ApplyResources(this.T_Bb, "T_Bb");
             this.T_Bb.BackColor = System.Drawing.Color.White;
-            this.T_Bb.Location = new System.Drawing.Point(480, 1);
             this.T_Bb.Name = "T_Bb";
-            this.T_Bb.Size = new System.Drawing.Size(157, 20);
-            this.T_Bb.TabIndex = 43;
             // 
             // T_Db
             // 
+            resources.ApplyResources(this.T_Db, "T_Db");
             this.T_Db.BackColor = System.Drawing.Color.White;
-            this.T_Db.Location = new System.Drawing.Point(321, 1);
             this.T_Db.Name = "T_Db";
-            this.T_Db.Size = new System.Drawing.Size(157, 20);
-            this.T_Db.TabIndex = 44;
-            // 
-            // labelX6
-            // 
-            this.labelX6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelX6.AutoSize = true;
-            this.labelX6.BackColor = System.Drawing.Color.Transparent;
-            this.labelX6.Location = new System.Drawing.Point(1068, 35);
-            this.labelX6.Name = "labelX6";
-            this.labelX6.Size = new System.Drawing.Size(38, 15);
-            this.labelX6.TabIndex = 281;
-            this.labelX6.Text = "الحساب";
-            // 
-            // labelX1
-            // 
-            this.labelX1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelX1.AutoSize = true;
-            this.labelX1.BackColor = System.Drawing.Color.Transparent;
-            this.labelX1.Location = new System.Drawing.Point(1069, 11);
-            this.labelX1.Name = "labelX1";
-            this.labelX1.Size = new System.Drawing.Size(24, 15);
-            this.labelX1.TabIndex = 289;
-            this.labelX1.Text = "الفرع";
-            // 
-            // labelX9
-            // 
-            this.labelX9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelX9.AutoSize = true;
-            this.labelX9.BackColor = System.Drawing.Color.Transparent;
-            this.labelX9.Location = new System.Drawing.Point(1067, 61);
-            this.labelX9.Name = "labelX9";
-            this.labelX9.Size = new System.Drawing.Size(56, 15);
-            this.labelX9.TabIndex = 299;
-            this.labelX9.Text = "مركز التكلفة";
-            // 
-            // labelX8
-            // 
-            this.labelX8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelX8.AutoSize = true;
-            this.labelX8.BackColor = System.Drawing.Color.Transparent;
-            this.labelX8.Location = new System.Drawing.Point(1067, 85);
-            this.labelX8.Name = "labelX8";
-            this.labelX8.Size = new System.Drawing.Size(37, 15);
-            this.labelX8.TabIndex = 300;
-            this.labelX8.Text = "التصنيف";
             // 
             // FromDate
             // 
-            this.FromDate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            resources.ApplyResources(this.FromDate, "FromDate");
             // 
             // 
             // 
             this.FromDate.BackgroundStyle.Class = "DateTimeInputBackground";
+            this.FromDate.ButtonClear.DisplayPosition = ((int)(resources.GetObject("FromDate.ButtonClear.DisplayPosition")));
+            this.FromDate.ButtonClear.Image = ((System.Drawing.Image)(resources.GetObject("FromDate.ButtonClear.Image")));
+            this.FromDate.ButtonClear.Text = resources.GetString("FromDate.ButtonClear.Text");
+            this.FromDate.ButtonCustom.DisplayPosition = ((int)(resources.GetObject("FromDate.ButtonCustom.DisplayPosition")));
+            this.FromDate.ButtonCustom.Image = ((System.Drawing.Image)(resources.GetObject("FromDate.ButtonCustom.Image")));
+            this.FromDate.ButtonCustom.Text = resources.GetString("FromDate.ButtonCustom.Text");
+            this.FromDate.ButtonCustom2.DisplayPosition = ((int)(resources.GetObject("FromDate.ButtonCustom2.DisplayPosition")));
+            this.FromDate.ButtonCustom2.Image = ((System.Drawing.Image)(resources.GetObject("FromDate.ButtonCustom2.Image")));
+            this.FromDate.ButtonCustom2.Text = resources.GetString("FromDate.ButtonCustom2.Text");
+            this.FromDate.ButtonDropDown.DisplayPosition = ((int)(resources.GetObject("FromDate.ButtonDropDown.DisplayPosition")));
+            this.FromDate.ButtonDropDown.Image = ((System.Drawing.Image)(resources.GetObject("FromDate.ButtonDropDown.Image")));
             this.FromDate.ButtonDropDown.Shortcut = DevComponents.DotNetBar.eShortcut.AltDown;
+            this.FromDate.ButtonDropDown.Text = resources.GetString("FromDate.ButtonDropDown.Text");
             this.FromDate.ButtonDropDown.Visible = true;
-            this.FromDate.Location = new System.Drawing.Point(964, 108);
+            this.FromDate.ButtonFreeText.DisplayPosition = ((int)(resources.GetObject("FromDate.ButtonFreeText.DisplayPosition")));
+            this.FromDate.ButtonFreeText.Image = ((System.Drawing.Image)(resources.GetObject("FromDate.ButtonFreeText.Image")));
+            this.FromDate.ButtonFreeText.Text = resources.GetString("FromDate.ButtonFreeText.Text");
             // 
             // 
             // 
-            this.FromDate.MonthCalendar.AnnuallyMarkedDates = new System.DateTime[0];
+            this.FromDate.MonthCalendar.AnnuallyMarkedDates = ((System.DateTime[])(resources.GetObject("FromDate.MonthCalendar.AnnuallyMarkedDates")));
             // 
             // 
             // 
             this.FromDate.MonthCalendar.BackgroundStyle.BackColor = System.Drawing.SystemColors.Window;
+            this.FromDate.MonthCalendar.Category = resources.GetString("FromDate.MonthCalendar.Category");
             this.FromDate.MonthCalendar.ClearButtonVisible = true;
+            this.FromDate.MonthCalendar.CommandParameter = ((object)(resources.GetObject("FromDate.MonthCalendar.CommandParameter")));
             // 
             // 
             // 
@@ -434,122 +349,113 @@
             this.FromDate.MonthCalendar.CommandsBackgroundStyle.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
             this.FromDate.MonthCalendar.CommandsBackgroundStyle.BorderTopColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.BarDockedBorder;
             this.FromDate.MonthCalendar.CommandsBackgroundStyle.BorderTopWidth = 1;
+            this.FromDate.MonthCalendar.DayNames = ((string[])(resources.GetObject("FromDate.MonthCalendar.DayNames")));
+            this.FromDate.MonthCalendar.Description = resources.GetString("FromDate.MonthCalendar.Description");
             this.FromDate.MonthCalendar.DisplayMonth = new System.DateTime(2018, 1, 1, 0, 0, 0, 0);
-            this.FromDate.MonthCalendar.MarkedDates = new System.DateTime[0];
-            this.FromDate.MonthCalendar.MonthlyMarkedDates = new System.DateTime[0];
+            this.FromDate.MonthCalendar.MarkedDates = ((System.DateTime[])(resources.GetObject("FromDate.MonthCalendar.MarkedDates")));
+            this.FromDate.MonthCalendar.MonthlyMarkedDates = ((System.DateTime[])(resources.GetObject("FromDate.MonthCalendar.MonthlyMarkedDates")));
             // 
             // 
             // 
             this.FromDate.MonthCalendar.NavigationBackgroundStyle.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
             this.FromDate.MonthCalendar.NavigationBackgroundStyle.BackColorGradientAngle = 90;
             this.FromDate.MonthCalendar.NavigationBackgroundStyle.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
+            this.FromDate.MonthCalendar.Tag = resources.GetString("FromDate.MonthCalendar.Tag");
+            this.FromDate.MonthCalendar.Text = resources.GetString("FromDate.MonthCalendar.Text");
             this.FromDate.MonthCalendar.TodayButtonVisible = true;
-            this.FromDate.MonthCalendar.WeeklyMarkedDays = new System.DayOfWeek[0];
+            this.FromDate.MonthCalendar.Tooltip = resources.GetString("FromDate.MonthCalendar.Tooltip");
+            this.FromDate.MonthCalendar.WeeklyMarkedDays = ((System.DayOfWeek[])(resources.GetObject("FromDate.MonthCalendar.WeeklyMarkedDays")));
             this.FromDate.Name = "FromDate";
-            this.FromDate.Size = new System.Drawing.Size(104, 20);
-            this.FromDate.TabIndex = 265;
             // 
             // UserName
             // 
-            this.UserName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            resources.ApplyResources(this.UserName, "UserName");
             this.UserName.BackColor = System.Drawing.Color.White;
-            this.UserName.Location = new System.Drawing.Point(785, 139);
             this.UserName.Name = "UserName";
-            this.UserName.Size = new System.Drawing.Size(100, 20);
-            this.UserName.TabIndex = 42;
             // 
             // GroupBox1
             // 
-            this.GroupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            resources.ApplyResources(this.GroupBox1, "GroupBox1");
             this.GroupBox1.BackColor = System.Drawing.Color.Transparent;
             this.GroupBox1.Controls.Add(this.RBtnAll);
             this.GroupBox1.Controls.Add(this.RBtn4);
             this.GroupBox1.Controls.Add(this.RBtn1);
             this.GroupBox1.Controls.Add(this.RBtn3);
             this.GroupBox1.Controls.Add(this.RBtn2);
-            this.GroupBox1.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GroupBox1.Location = new System.Drawing.Point(234, 14);
             this.GroupBox1.Name = "GroupBox1";
-            this.GroupBox1.Size = new System.Drawing.Size(516, 35);
-            this.GroupBox1.TabIndex = 48;
             this.GroupBox1.TabStop = false;
             // 
             // RBtnAll
             // 
-            this.RBtnAll.AutoSize = true;
+            resources.ApplyResources(this.RBtnAll, "RBtnAll");
             this.RBtnAll.Checked = true;
-            this.RBtnAll.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RBtnAll.Location = new System.Drawing.Point(456, 12);
             this.RBtnAll.Name = "RBtnAll";
-            this.RBtnAll.Size = new System.Drawing.Size(55, 17);
-            this.RBtnAll.TabIndex = 32;
             this.RBtnAll.TabStop = true;
-            this.RBtnAll.Text = "الجميع";
             this.RBtnAll.UseVisualStyleBackColor = true;
             // 
             // RBtn4
             // 
-            this.RBtn4.AutoSize = true;
-            this.RBtn4.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RBtn4.Location = new System.Drawing.Point(47, 11);
+            resources.ApplyResources(this.RBtn4, "RBtn4");
             this.RBtn4.Name = "RBtn4";
-            this.RBtn4.Size = new System.Drawing.Size(95, 17);
-            this.RBtn4.TabIndex = 30;
-            this.RBtn4.Text = "المستوي الرابع";
             this.RBtn4.UseVisualStyleBackColor = true;
             // 
             // RBtn1
             // 
-            this.RBtn1.AutoSize = true;
-            this.RBtn1.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RBtn1.Location = new System.Drawing.Point(356, 12);
+            resources.ApplyResources(this.RBtn1, "RBtn1");
             this.RBtn1.Name = "RBtn1";
-            this.RBtn1.Size = new System.Drawing.Size(94, 17);
-            this.RBtn1.TabIndex = 27;
-            this.RBtn1.Text = "المستوي الاول";
             this.RBtn1.UseVisualStyleBackColor = true;
             // 
             // RBtn3
             // 
-            this.RBtn3.AutoSize = true;
-            this.RBtn3.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RBtn3.Location = new System.Drawing.Point(147, 12);
+            resources.ApplyResources(this.RBtn3, "RBtn3");
             this.RBtn3.Name = "RBtn3";
-            this.RBtn3.Size = new System.Drawing.Size(98, 17);
-            this.RBtn3.TabIndex = 29;
-            this.RBtn3.Text = "المستوي الثالث";
             this.RBtn3.UseVisualStyleBackColor = true;
             // 
             // RBtn2
             // 
-            this.RBtn2.AutoSize = true;
-            this.RBtn2.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RBtn2.Location = new System.Drawing.Point(251, 12);
+            resources.ApplyResources(this.RBtn2, "RBtn2");
             this.RBtn2.Name = "RBtn2";
-            this.RBtn2.Size = new System.Drawing.Size(99, 17);
-            this.RBtn2.TabIndex = 28;
-            this.RBtn2.Text = "المستوي الثاني";
             this.RBtn2.UseVisualStyleBackColor = true;
             // 
             // ToDate
             // 
-            this.ToDate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            resources.ApplyResources(this.ToDate, "ToDate");
             // 
             // 
             // 
+            this.ToDate.BackgroundStyle.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.ToDate.BackgroundStyle.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.ToDate.BackgroundStyle.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.ToDate.BackgroundStyle.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
             this.ToDate.BackgroundStyle.Class = "DateTimeInputBackground";
+            this.ToDate.ButtonClear.DisplayPosition = ((int)(resources.GetObject("ToDate.ButtonClear.DisplayPosition")));
+            this.ToDate.ButtonClear.Image = ((System.Drawing.Image)(resources.GetObject("ToDate.ButtonClear.Image")));
+            this.ToDate.ButtonClear.Text = resources.GetString("ToDate.ButtonClear.Text");
+            this.ToDate.ButtonCustom.DisplayPosition = ((int)(resources.GetObject("ToDate.ButtonCustom.DisplayPosition")));
+            this.ToDate.ButtonCustom.Image = ((System.Drawing.Image)(resources.GetObject("ToDate.ButtonCustom.Image")));
+            this.ToDate.ButtonCustom.Text = resources.GetString("ToDate.ButtonCustom.Text");
+            this.ToDate.ButtonCustom2.DisplayPosition = ((int)(resources.GetObject("ToDate.ButtonCustom2.DisplayPosition")));
+            this.ToDate.ButtonCustom2.Image = ((System.Drawing.Image)(resources.GetObject("ToDate.ButtonCustom2.Image")));
+            this.ToDate.ButtonCustom2.Text = resources.GetString("ToDate.ButtonCustom2.Text");
+            this.ToDate.ButtonDropDown.DisplayPosition = ((int)(resources.GetObject("ToDate.ButtonDropDown.DisplayPosition")));
+            this.ToDate.ButtonDropDown.Image = ((System.Drawing.Image)(resources.GetObject("ToDate.ButtonDropDown.Image")));
             this.ToDate.ButtonDropDown.Shortcut = DevComponents.DotNetBar.eShortcut.AltDown;
+            this.ToDate.ButtonDropDown.Text = resources.GetString("ToDate.ButtonDropDown.Text");
             this.ToDate.ButtonDropDown.Visible = true;
-            this.ToDate.Location = new System.Drawing.Point(769, 108);
+            this.ToDate.ButtonFreeText.DisplayPosition = ((int)(resources.GetObject("ToDate.ButtonFreeText.DisplayPosition")));
+            this.ToDate.ButtonFreeText.Image = ((System.Drawing.Image)(resources.GetObject("ToDate.ButtonFreeText.Image")));
+            this.ToDate.ButtonFreeText.Text = resources.GetString("ToDate.ButtonFreeText.Text");
             // 
             // 
             // 
-            this.ToDate.MonthCalendar.AnnuallyMarkedDates = new System.DateTime[0];
+            this.ToDate.MonthCalendar.AnnuallyMarkedDates = ((System.DateTime[])(resources.GetObject("ToDate.MonthCalendar.AnnuallyMarkedDates")));
             // 
             // 
             // 
             this.ToDate.MonthCalendar.BackgroundStyle.BackColor = System.Drawing.SystemColors.Window;
+            this.ToDate.MonthCalendar.Category = resources.GetString("ToDate.MonthCalendar.Category");
             this.ToDate.MonthCalendar.ClearButtonVisible = true;
+            this.ToDate.MonthCalendar.CommandParameter = ((object)(resources.GetObject("ToDate.MonthCalendar.CommandParameter")));
             // 
             // 
             // 
@@ -559,77 +465,47 @@
             this.ToDate.MonthCalendar.CommandsBackgroundStyle.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
             this.ToDate.MonthCalendar.CommandsBackgroundStyle.BorderTopColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.BarDockedBorder;
             this.ToDate.MonthCalendar.CommandsBackgroundStyle.BorderTopWidth = 1;
+            this.ToDate.MonthCalendar.DayNames = ((string[])(resources.GetObject("ToDate.MonthCalendar.DayNames")));
+            this.ToDate.MonthCalendar.Description = resources.GetString("ToDate.MonthCalendar.Description");
             this.ToDate.MonthCalendar.DisplayMonth = new System.DateTime(2018, 1, 1, 0, 0, 0, 0);
-            this.ToDate.MonthCalendar.MarkedDates = new System.DateTime[0];
-            this.ToDate.MonthCalendar.MonthlyMarkedDates = new System.DateTime[0];
+            this.ToDate.MonthCalendar.MarkedDates = ((System.DateTime[])(resources.GetObject("ToDate.MonthCalendar.MarkedDates")));
+            this.ToDate.MonthCalendar.MonthlyMarkedDates = ((System.DateTime[])(resources.GetObject("ToDate.MonthCalendar.MonthlyMarkedDates")));
             // 
             // 
             // 
             this.ToDate.MonthCalendar.NavigationBackgroundStyle.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
             this.ToDate.MonthCalendar.NavigationBackgroundStyle.BackColorGradientAngle = 90;
             this.ToDate.MonthCalendar.NavigationBackgroundStyle.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
+            this.ToDate.MonthCalendar.Tag = resources.GetString("ToDate.MonthCalendar.Tag");
+            this.ToDate.MonthCalendar.Text = resources.GetString("ToDate.MonthCalendar.Text");
             this.ToDate.MonthCalendar.TodayButtonVisible = true;
-            this.ToDate.MonthCalendar.WeeklyMarkedDays = new System.DayOfWeek[0];
+            this.ToDate.MonthCalendar.Tooltip = resources.GetString("ToDate.MonthCalendar.Tooltip");
+            this.ToDate.MonthCalendar.WeeklyMarkedDays = ((System.DayOfWeek[])(resources.GetObject("ToDate.MonthCalendar.WeeklyMarkedDays")));
             this.ToDate.Name = "ToDate";
-            this.ToDate.Size = new System.Drawing.Size(104, 20);
-            this.ToDate.TabIndex = 266;
-            // 
-            // labelX7
-            // 
-            this.labelX7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelX7.AutoSize = true;
-            this.labelX7.BackColor = System.Drawing.Color.Transparent;
-            this.labelX7.Location = new System.Drawing.Point(1069, 111);
-            this.labelX7.Name = "labelX7";
-            this.labelX7.Size = new System.Drawing.Size(40, 15);
-            this.labelX7.TabIndex = 267;
-            this.labelX7.Text = "من تاريخ";
             // 
             // UnZero_B
             // 
-            this.UnZero_B.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.UnZero_B.AutoSize = true;
-            this.UnZero_B.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UnZero_B.Location = new System.Drawing.Point(66, 44);
+            resources.ApplyResources(this.UnZero_B, "UnZero_B");
             this.UnZero_B.Name = "UnZero_B";
-            this.UnZero_B.Size = new System.Drawing.Size(116, 17);
-            this.UnZero_B.TabIndex = 36;
-            this.UnZero_B.Text = "الارصدة غير الصفرية";
             this.UnZero_B.UseVisualStyleBackColor = true;
             // 
             // T_B
             // 
-            this.T_B.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.T_B.AutoSize = true;
+            resources.ApplyResources(this.T_B, "T_B");
             this.T_B.Checked = true;
-            this.T_B.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.T_B.Location = new System.Drawing.Point(337, 17);
             this.T_B.Name = "T_B";
-            this.T_B.Size = new System.Drawing.Size(111, 17);
-            this.T_B.TabIndex = 34;
-            this.T_B.Text = "الحسابات المتحركة";
+            this.T_B.TabStop = true;
             this.T_B.UseVisualStyleBackColor = true;
-            // 
-            // labelX2
-            // 
-            this.labelX2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelX2.AutoSize = true;
-            this.labelX2.BackColor = System.Drawing.Color.Transparent;
-            this.labelX2.Location = new System.Drawing.Point(878, 111);
-            this.labelX2.Name = "labelX2";
-            this.labelX2.Size = new System.Drawing.Size(42, 15);
-            this.labelX2.TabIndex = 268;
-            this.labelX2.Text = "الي تاريخ";
             // 
             // DGV3
             // 
+            resources.ApplyResources(this.DGV3, "DGV3");
             this.DGV3.AllowUserToAddRows = false;
             this.DGV3.AllowUserToDeleteRows = false;
             this.DGV3.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.DGV3.BackgroundColor = System.Drawing.SystemColors.Window;
             this.DGV3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DGV3.ColumnHeadersVisible = false;
-            this.DGV3.Location = new System.Drawing.Point(-3, 14);
             this.DGV3.Name = "DGV3";
             this.DGV3.ReadOnly = true;
             dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -642,87 +518,61 @@
             this.DGV3.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.DGV3.RowHeadersVisible = false;
             this.DGV3.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DGV3.Size = new System.Drawing.Size(205, 150);
-            this.DGV3.TabIndex = 288;
-            this.DGV3.Visible = false;
             this.DGV3.DoubleClick += new System.EventHandler(this.DGV3_DoubleClick);
             // 
             // groupBox3
             // 
-            this.groupBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            resources.ApplyResources(this.groupBox3, "groupBox3");
             this.groupBox3.BackColor = System.Drawing.Color.Transparent;
             this.groupBox3.Controls.Add(this.RB_S_Acc);
             this.groupBox3.Controls.Add(this.RB_M_Acc);
             this.groupBox3.Controls.Add(this.RB_All_Acc);
-            this.groupBox3.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(234, 53);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(516, 35);
-            this.groupBox3.TabIndex = 49;
             this.groupBox3.TabStop = false;
             // 
             // RB_S_Acc
             // 
-            this.RB_S_Acc.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.RB_S_Acc.AutoSize = true;
-            this.RB_S_Acc.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RB_S_Acc.Location = new System.Drawing.Point(228, 14);
+            resources.ApplyResources(this.RB_S_Acc, "RB_S_Acc");
             this.RB_S_Acc.Name = "RB_S_Acc";
-            this.RB_S_Acc.Size = new System.Drawing.Size(105, 17);
-            this.RB_S_Acc.TabIndex = 44;
-            this.RB_S_Acc.Text = "الحسابات الفرعية";
             this.RB_S_Acc.UseVisualStyleBackColor = true;
             // 
             // RB_M_Acc
             // 
-            this.RB_M_Acc.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.RB_M_Acc.AutoSize = true;
-            this.RB_M_Acc.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RB_M_Acc.Location = new System.Drawing.Point(338, 14);
+            resources.ApplyResources(this.RB_M_Acc, "RB_M_Acc");
             this.RB_M_Acc.Name = "RB_M_Acc";
-            this.RB_M_Acc.Size = new System.Drawing.Size(111, 17);
-            this.RB_M_Acc.TabIndex = 43;
-            this.RB_M_Acc.Text = "الحسابات الرئيسية";
             this.RB_M_Acc.UseVisualStyleBackColor = true;
             // 
             // RB_All_Acc
             // 
-            this.RB_All_Acc.AutoSize = true;
+            resources.ApplyResources(this.RB_All_Acc, "RB_All_Acc");
             this.RB_All_Acc.Checked = true;
-            this.RB_All_Acc.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RB_All_Acc.Location = new System.Drawing.Point(457, 12);
             this.RB_All_Acc.Name = "RB_All_Acc";
-            this.RB_All_Acc.Size = new System.Drawing.Size(55, 17);
-            this.RB_All_Acc.TabIndex = 32;
             this.RB_All_Acc.TabStop = true;
-            this.RB_All_Acc.Text = "الجميع";
             this.RB_All_Acc.UseVisualStyleBackColor = true;
             // 
             // groupPanel1
             // 
+            resources.ApplyResources(this.groupPanel1, "groupPanel1");
             this.groupPanel1.CanvasColor = System.Drawing.SystemColors.Control;
             this.groupPanel1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
+            this.groupPanel1.Controls.Add(this.UC_Branch);
+            this.groupPanel1.Controls.Add(this.label6);
+            this.groupPanel1.Controls.Add(this.label5);
+            this.groupPanel1.Controls.Add(this.label4);
+            this.groupPanel1.Controls.Add(this.label3);
+            this.groupPanel1.Controls.Add(this.label2);
+            this.groupPanel1.Controls.Add(this.label1);
             this.groupPanel1.Controls.Add(this.groupBox4);
             this.groupPanel1.Controls.Add(this.UC_Catogry);
             this.groupPanel1.Controls.Add(this.UC_cost);
-            this.groupPanel1.Controls.Add(this.UC_Branch);
             this.groupPanel1.Controls.Add(this.UC_Acc);
             this.groupPanel1.Controls.Add(this.groupBox3);
             this.groupPanel1.Controls.Add(this.DGV3);
-            this.groupPanel1.Controls.Add(this.labelX2);
-            this.groupPanel1.Controls.Add(this.labelX7);
             this.groupPanel1.Controls.Add(this.ToDate);
             this.groupPanel1.Controls.Add(this.GroupBox1);
             this.groupPanel1.Controls.Add(this.UserName);
             this.groupPanel1.Controls.Add(this.FromDate);
-            this.groupPanel1.Controls.Add(this.labelX8);
-            this.groupPanel1.Controls.Add(this.labelX9);
-            this.groupPanel1.Controls.Add(this.labelX1);
-            this.groupPanel1.Controls.Add(this.labelX6);
-            this.groupPanel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.groupPanel1.Location = new System.Drawing.Point(0, 49);
             this.groupPanel1.Name = "groupPanel1";
-            this.groupPanel1.Size = new System.Drawing.Size(1172, 192);
             // 
             // 
             // 
@@ -743,12 +593,53 @@
             this.groupPanel1.Style.TextAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Center;
             this.groupPanel1.Style.TextColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
             this.groupPanel1.Style.TextLineAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Near;
-            this.groupPanel1.TabIndex = 55;
             this.groupPanel1.Click += new System.EventHandler(this.groupPanel1_Click);
+            // 
+            // UC_Branch
+            // 
+            resources.ApplyResources(this.UC_Branch, "UC_Branch");
+            this.UC_Branch.Name = "UC_Branch";
+            this.UC_Branch.Load += new System.EventHandler(this.UC_Branch_Load);
+            // 
+            // label6
+            // 
+            resources.ApplyResources(this.label6, "label6");
+            this.label6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label6.Name = "label6";
+            // 
+            // label5
+            // 
+            resources.ApplyResources(this.label5, "label5");
+            this.label5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label5.Name = "label5";
+            // 
+            // label4
+            // 
+            resources.ApplyResources(this.label4, "label4");
+            this.label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label4.Name = "label4";
+            // 
+            // label3
+            // 
+            resources.ApplyResources(this.label3, "label3");
+            this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label3.Name = "label3";
+            // 
+            // label2
+            // 
+            resources.ApplyResources(this.label2, "label2");
+            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label2.Name = "label2";
+            // 
+            // label1
+            // 
+            resources.ApplyResources(this.label1, "label1");
+            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label1.Name = "label1";
             // 
             // groupBox4
             // 
-            this.groupBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            resources.ApplyResources(this.groupBox4, "groupBox4");
             this.groupBox4.BackColor = System.Drawing.Color.Transparent;
             this.groupBox4.Controls.Add(this.T_B);
             this.groupBox4.Controls.Add(this.Zero_B);
@@ -756,121 +647,67 @@
             this.groupBox4.Controls.Add(this.Credit_B);
             this.groupBox4.Controls.Add(this.debit_B);
             this.groupBox4.Controls.Add(this.All_B);
-            this.groupBox4.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox4.Location = new System.Drawing.Point(234, 94);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(516, 75);
-            this.groupBox4.TabIndex = 306;
             this.groupBox4.TabStop = false;
             this.groupBox4.Enter += new System.EventHandler(this.groupBox4_Enter);
             // 
             // Zero_B
             // 
-            this.Zero_B.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Zero_B.AutoSize = true;
-            this.Zero_B.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Zero_B.Location = new System.Drawing.Point(192, 46);
+            resources.ApplyResources(this.Zero_B, "Zero_B");
             this.Zero_B.Name = "Zero_B";
-            this.Zero_B.Size = new System.Drawing.Size(97, 17);
-            this.Zero_B.TabIndex = 45;
-            this.Zero_B.Text = "الارصدة الصفرية";
             this.Zero_B.UseVisualStyleBackColor = true;
             // 
             // Credit_B
             // 
-            this.Credit_B.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Credit_B.AutoSize = true;
-            this.Credit_B.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Credit_B.Location = new System.Drawing.Point(307, 46);
+            resources.ApplyResources(this.Credit_B, "Credit_B");
             this.Credit_B.Name = "Credit_B";
-            this.Credit_B.Size = new System.Drawing.Size(90, 17);
-            this.Credit_B.TabIndex = 44;
-            this.Credit_B.Text = "الارصدة الدائنة";
             this.Credit_B.UseVisualStyleBackColor = true;
             // 
             // debit_B
             // 
-            this.debit_B.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.debit_B.AutoSize = true;
-            this.debit_B.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.debit_B.Location = new System.Drawing.Point(411, 46);
+            resources.ApplyResources(this.debit_B, "debit_B");
             this.debit_B.Name = "debit_B";
-            this.debit_B.Size = new System.Drawing.Size(94, 17);
-            this.debit_B.TabIndex = 43;
-            this.debit_B.Text = "الارصدة المدينة";
             this.debit_B.UseVisualStyleBackColor = true;
             // 
             // All_B
             // 
-            this.All_B.AutoSize = true;
-            this.All_B.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.All_B.Location = new System.Drawing.Point(454, 17);
+            resources.ApplyResources(this.All_B, "All_B");
             this.All_B.Name = "All_B";
-            this.All_B.Size = new System.Drawing.Size(55, 17);
-            this.All_B.TabIndex = 32;
-            this.All_B.Text = "الجميع";
             this.All_B.UseVisualStyleBackColor = true;
             // 
             // UC_Catogry
             // 
-            this.UC_Catogry.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.UC_Catogry.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.UC_Catogry.Location = new System.Drawing.Point(755, 81);
-            this.UC_Catogry.Margin = new System.Windows.Forms.Padding(0);
+            resources.ApplyResources(this.UC_Catogry, "UC_Catogry");
             this.UC_Catogry.Name = "UC_Catogry";
-            this.UC_Catogry.Size = new System.Drawing.Size(310, 23);
-            this.UC_Catogry.TabIndex = 305;
             // 
             // UC_cost
             // 
-            this.UC_cost.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.UC_cost.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.UC_cost.Location = new System.Drawing.Point(755, 56);
-            this.UC_cost.Margin = new System.Windows.Forms.Padding(0);
+            resources.ApplyResources(this.UC_cost, "UC_cost");
             this.UC_cost.Name = "UC_cost";
-            this.UC_cost.Size = new System.Drawing.Size(310, 23);
-            this.UC_cost.TabIndex = 304;
             this.UC_cost.Load += new System.EventHandler(this.uC_cost1_Load);
-            // 
-            // UC_Branch
-            // 
-            this.UC_Branch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.UC_Branch.BackColor = System.Drawing.Color.Transparent;
-            this.UC_Branch.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.UC_Branch.Cursor = System.Windows.Forms.Cursors.Default;
-            this.UC_Branch.Location = new System.Drawing.Point(755, 7);
-            this.UC_Branch.Margin = new System.Windows.Forms.Padding(0);
-            this.UC_Branch.Name = "UC_Branch";
-            this.UC_Branch.Size = new System.Drawing.Size(310, 23);
-            this.UC_Branch.TabIndex = 303;
-            this.UC_Branch.Load += new System.EventHandler(this.UC_Branch_Load);
             // 
             // UC_Acc
             // 
-            this.UC_Acc.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            resources.ApplyResources(this.UC_Acc, "UC_Acc");
             this.UC_Acc.BackColor = System.Drawing.Color.Transparent;
-            this.UC_Acc.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.UC_Acc.Location = new System.Drawing.Point(755, 32);
-            this.UC_Acc.Margin = new System.Windows.Forms.Padding(0);
             this.UC_Acc.Name = "UC_Acc";
-            this.UC_Acc.Padding = new System.Windows.Forms.Padding(1);
-            this.UC_Acc.Size = new System.Drawing.Size(310, 23);
-            this.UC_Acc.TabIndex = 302;
             // 
             // frm_TB
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
+            this.Appearance.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.Appearance.Options.UseBackColor = true;
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1172, 701);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.groupPanel1);
             this.Controls.Add(this.crystalReportViewer1);
             this.Controls.Add(this.panel1);
             this.Name = "frm_TB";
-            this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.RightToLeftLayout = true;
-            this.Text = "frm_TB";
             this.Load += new System.EventHandler(this.frm_TB_Load);
+            this.Controls.SetChildIndex(this.panel1, 0);
+            this.Controls.SetChildIndex(this.crystalReportViewer1, 0);
+            this.Controls.SetChildIndex(this.groupPanel1, 0);
+            this.Controls.SetChildIndex(this.panel3, 0);
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.DataGridView1)).EndInit();
@@ -888,6 +725,7 @@
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -914,10 +752,6 @@
         internal System.Windows.Forms.TextBox T_Cr;
         internal System.Windows.Forms.TextBox T_Bb;
         internal System.Windows.Forms.TextBox T_Db;
-        private DevComponents.DotNetBar.LabelX labelX6;
-        private DevComponents.DotNetBar.LabelX labelX1;
-        private DevComponents.DotNetBar.LabelX labelX9;
-        private DevComponents.DotNetBar.LabelX labelX8;
         private DevComponents.Editors.DateTimeAdv.DateTimeInput FromDate;
         internal System.Windows.Forms.TextBox UserName;
         internal System.Windows.Forms.GroupBox GroupBox1;
@@ -927,10 +761,8 @@
         internal System.Windows.Forms.RadioButton RBtn3;
         internal System.Windows.Forms.RadioButton RBtn2;
         private DevComponents.Editors.DateTimeAdv.DateTimeInput ToDate;
-        private DevComponents.DotNetBar.LabelX labelX7;
         internal System.Windows.Forms.RadioButton UnZero_B;
         internal System.Windows.Forms.RadioButton T_B;
-        private DevComponents.DotNetBar.LabelX labelX2;
         private System.Windows.Forms.DataGridView DGV3;
         internal System.Windows.Forms.GroupBox groupBox3;
         internal System.Windows.Forms.RadioButton RB_S_Acc;
@@ -938,7 +770,6 @@
         private DevComponents.DotNetBar.Controls.GroupPanel groupPanel1;
         internal System.Windows.Forms.RadioButton RB_All_Acc;
         private MyControls.UC_Acc UC_Acc;
-        private MyControls.UC_Branch UC_Branch;
         private MyControls.UC_cost UC_cost;
         private CachedCrystalReport2 cachedCrystalReport21;
         private MyControls.UC_Catogry UC_Catogry;
@@ -948,5 +779,12 @@
         internal System.Windows.Forms.RadioButton Credit_B;
         internal System.Windows.Forms.RadioButton debit_B;
         internal System.Windows.Forms.RadioButton All_B;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
+        private MyControls.UC_AccBranch UC_Branch;
     }
 }

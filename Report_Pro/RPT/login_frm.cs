@@ -809,5 +809,24 @@ namespace Report_Pro.RPT
                 textBox2.PasswordChar = '*';
             }
         }
+
+        private void chEnglish_CheckedChanged(object sender, EventArgs e)
+        {
+
+            if (chArabic.Checked == true)
+            {
+                Properties.Settings.Default.lungh = "0";
+                Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("ar");
+            }
+            else
+            {
+
+                Properties.Settings.Default.lungh = "1";
+                Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("en");
+                //lang("en");
+            }
+            Properties.Settings.Default.Save();
+
+        }
     }
 }

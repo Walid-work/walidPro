@@ -39,7 +39,7 @@
             this.UC_Acc1 = new Report_Pro.MyControls.UC_Acc();
             this.UC_Catogry1 = new Report_Pro.MyControls.UC_Catogry();
             this.UC_cost1 = new Report_Pro.MyControls.UC_cost();
-            this.UC_Branch = new Report_Pro.MyControls.UC_Branch();
+            this.UC_Branch = new Report_Pro.MyControls.ذ();
             this.labelX5 = new DevComponents.DotNetBar.LabelX();
             this.labelX4 = new DevComponents.DotNetBar.LabelX();
             this.labelX3 = new DevComponents.DotNetBar.LabelX();
@@ -238,12 +238,12 @@
         private System.Windows.Forms.DateTimePicker ToDate;
         private MyControls.UC_cost uC_cost;
         public MyControls.UC_Acc UC_Acc;
-        private MyControls.UC_Branch uC_Branch1;
+        private MyControls.ذ uC_Branch1;
         private DevComponents.DotNetBar.LabelX labelX5;
         private MyControls.UC_Catogry uC_Catogry;
         private MyControls.UC_Catogry UC_Catogry1;
         private MyControls.UC_cost UC_cost1;
-        private MyControls.UC_Branch UC_Branch;
+        private MyControls.ذ UC_Branch;
         public MyControls.UC_Acc UC_Acc1;
         public DevComponents.DotNetBar.ButtonX buttonX9;
         private DevComponents.DotNetBar.LabelX labelX6;

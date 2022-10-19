@@ -28,19 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_AccBranch));
+            this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_AccBranch));
             this.dgv1 = new DevComponents.DotNetBar.Controls.DataGridViewX();
-            this.Desc = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.btn1 = new DevComponents.DotNetBar.ButtonX();
-            this.ID = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.txtFinal = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.ID = new System.Windows.Forms.TextBox();
+            this.Desc = new System.Windows.Forms.TextBox();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dgv1)).BeginInit();
+            this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // dgv1
             // 
-            resources.ApplyResources(this.dgv1, "dgv1");
             this.dgv1.AllowUserToAddRows = false;
             this.dgv1.AllowUserToDeleteRows = false;
             this.dgv1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
@@ -56,6 +59,7 @@
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.ControlText;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgv1.DefaultCellStyle = dataGridViewCellStyle1;
+            resources.ApplyResources(this.dgv1, "dgv1");
             this.dgv1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
             this.dgv1.Name = "dgv1";
             this.dgv1.ReadOnly = true;
@@ -63,80 +67,69 @@
             this.dgv1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgv1.DoubleClick += new System.EventHandler(this.dgv1_DoubleClick);
             // 
-            // Desc
-            // 
-            resources.ApplyResources(this.Desc, "Desc");
-            // 
-            // 
-            // 
-            this.Desc.Border.Class = "TextBoxBorder";
-            this.Desc.ButtonCustom.DisplayPosition = ((int)(resources.GetObject("Desc.ButtonCustom.DisplayPosition")));
-            this.Desc.ButtonCustom.Image = ((System.Drawing.Image)(resources.GetObject("Desc.ButtonCustom.Image")));
-            this.Desc.ButtonCustom.Text = resources.GetString("Desc.ButtonCustom.Text");
-            this.Desc.ButtonCustom2.DisplayPosition = ((int)(resources.GetObject("Desc.ButtonCustom2.DisplayPosition")));
-            this.Desc.ButtonCustom2.Image = ((System.Drawing.Image)(resources.GetObject("Desc.ButtonCustom2.Image")));
-            this.Desc.ButtonCustom2.Text = resources.GetString("Desc.ButtonCustom2.Text");
-            this.Desc.Name = "Desc";
-            this.Desc.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Desc_KeyUp);
-            this.Desc.Leave += new System.EventHandler(this.Desc_Leave);
-            // 
             // btn1
             // 
-            resources.ApplyResources(this.btn1, "btn1");
             this.btn1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btn1.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            resources.ApplyResources(this.btn1, "btn1");
             this.btn1.Image = global::Report_Pro.Properties.Resources.search_16;
             this.btn1.Name = "btn1";
             this.btn1.Click += new System.EventHandler(this.btn1_Click);
             // 
+            // txtFinal
+            // 
+            // 
+            // 
+            // 
+            this.txtFinal.Border.Class = "TextBoxBorder";
+            resources.ApplyResources(this.txtFinal, "txtFinal");
+            this.txtFinal.Name = "txtFinal";
+            // 
+            // tableLayoutPanel1
+            // 
+            resources.ApplyResources(this.tableLayoutPanel1, "tableLayoutPanel1");
+            this.tableLayoutPanel1.Controls.Add(this.btn1, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.ID, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.Desc, 2, 0);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            // 
             // ID
             // 
+            this.ID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             resources.ApplyResources(this.ID, "ID");
-            // 
-            // 
-            // 
-            this.ID.Border.Class = "TextBoxBorder";
-            this.ID.ButtonCustom.DisplayPosition = ((int)(resources.GetObject("ID.ButtonCustom.DisplayPosition")));
-            this.ID.ButtonCustom.Image = ((System.Drawing.Image)(resources.GetObject("ID.ButtonCustom.Image")));
-            this.ID.ButtonCustom.Text = resources.GetString("ID.ButtonCustom.Text");
-            this.ID.ButtonCustom2.DisplayPosition = ((int)(resources.GetObject("ID.ButtonCustom2.DisplayPosition")));
-            this.ID.ButtonCustom2.Image = ((System.Drawing.Image)(resources.GetObject("ID.ButtonCustom2.Image")));
-            this.ID.ButtonCustom2.Text = resources.GetString("ID.ButtonCustom2.Text");
             this.ID.Name = "ID";
             this.ID.TextChanged += new System.EventHandler(this.ID_TextChanged);
             this.ID.Enter += new System.EventHandler(this.ID_Enter);
             this.ID.KeyUp += new System.Windows.Forms.KeyEventHandler(this.ID_KeyUp);
             this.ID.Leave += new System.EventHandler(this.ID_Leave);
             // 
-            // txtFinal
+            // Desc
             // 
-            resources.ApplyResources(this.txtFinal, "txtFinal");
+            this.Desc.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.Desc, "Desc");
+            this.Desc.Name = "Desc";
+            this.Desc.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Desc_KeyUp);
+            this.Desc.Leave += new System.EventHandler(this.Desc_Leave);
             // 
+            // contextMenuStrip1
             // 
-            // 
-            this.txtFinal.Border.Class = "TextBoxBorder";
-            this.txtFinal.ButtonCustom.DisplayPosition = ((int)(resources.GetObject("txtFinal.ButtonCustom.DisplayPosition")));
-            this.txtFinal.ButtonCustom.Image = ((System.Drawing.Image)(resources.GetObject("txtFinal.ButtonCustom.Image")));
-            this.txtFinal.ButtonCustom.Text = resources.GetString("txtFinal.ButtonCustom.Text");
-            this.txtFinal.ButtonCustom2.DisplayPosition = ((int)(resources.GetObject("txtFinal.ButtonCustom2.DisplayPosition")));
-            this.txtFinal.ButtonCustom2.Image = ((System.Drawing.Image)(resources.GetObject("txtFinal.ButtonCustom2.Image")));
-            this.txtFinal.ButtonCustom2.Text = resources.GetString("txtFinal.ButtonCustom2.Text");
-            this.txtFinal.Name = "txtFinal";
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            resources.ApplyResources(this.contextMenuStrip1, "contextMenuStrip1");
             // 
             // UC_AccBranch
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Controls.Add(this.txtFinal);
             this.Controls.Add(this.dgv1);
-            this.Controls.Add(this.Desc);
-            this.Controls.Add(this.btn1);
-            this.Controls.Add(this.ID);
+            this.Controls.Add(this.tableLayoutPanel1);
+            this.Controls.Add(this.txtFinal);
             this.Name = "UC_AccBranch";
+            this.Load += new System.EventHandler(this.UC_AccBranch_Load);
             this.DoubleClick += new System.EventHandler(this.UC_AccBranch_DoubleClick);
             this.Leave += new System.EventHandler(this.UC_AccBranch_Leave);
             ((System.ComponentModel.ISupportInitialize)(this.dgv1)).EndInit();
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -144,9 +137,11 @@
         #endregion
 
         private DevComponents.DotNetBar.Controls.DataGridViewX dgv1;
-        public DevComponents.DotNetBar.Controls.TextBoxX Desc;
         private DevComponents.DotNetBar.ButtonX btn1;
-        public DevComponents.DotNetBar.Controls.TextBoxX ID;
         public DevComponents.DotNetBar.Controls.TextBoxX txtFinal;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        public System.Windows.Forms.TextBox Desc;
+        public System.Windows.Forms.TextBox ID;
     }
 }

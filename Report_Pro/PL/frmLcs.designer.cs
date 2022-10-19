@@ -84,7 +84,7 @@
             this.label17 = new System.Windows.Forms.Label();
             this.txtLcAcc = new Report_Pro.MyControls.UC_Acc();
             this.label16 = new System.Windows.Forms.Label();
-            this.txtBranch = new Report_Pro.MyControls.UC_Branch();
+            this.txtBranch = new Report_Pro.MyControls.ذ();
             this.txtMainLcAccNo = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.txtArivePort = new System.Windows.Forms.ComboBox();
@@ -1981,7 +1981,7 @@
         private DevComponents.DotNetBar.ButtonX btnAddLcAcc;
         private System.Windows.Forms.TextBox txtMainLcAccNo;
         private System.Windows.Forms.Label label16;
-        private MyControls.UC_Branch txtBranch;
+        private MyControls.ذ txtBranch;
         private MyControls.UC_Acc txtLcAcc;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label19;

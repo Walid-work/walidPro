@@ -230,6 +230,13 @@ namespace Report_Pro.Classes
             ScreenCaption = "الحسابات",ScreenCaption_E ="Accounting"
         };
 
+        public static ScreensAccessProfile Prepaid = new ScreensAccessProfile("elm_Prepaid")
+        {
+            Actions = new List<Master.Actions>() { Master.Actions.Show, Master.Actions.Edit, Master.Actions.Open },
+            ScreenCaption = "المقدمات",
+            ScreenCaption_E = "Prepaid"
+        };
+
         public static ScreensAccessProfile LetterOfCredit = new ScreensAccessProfile("elm_LetterOfCredit")
         {
             Actions = new List<Master.Actions>() { Master.Actions.Show, Master.Actions.Edit, Master.Actions.Open },
@@ -300,14 +307,14 @@ namespace Report_Pro.Classes
         public static ScreensAccessProfile SalesQutation = new ScreensAccessProfile(nameof(PL.frmQuotation), Sales)
         { ScreenCaption = "عرض سعر مبيعات", ScreenCaption_E ="Sales Qutation" };
 
-        public static ScreensAccessProfile SalesInvoice = new ScreensAccessProfile(nameof(PL.frm_Sales_Invoice), Sales)
+        public static ScreensAccessProfile SalesInvoice = new ScreensAccessProfile(nameof(PL.invoice_frm), Sales)
         { ScreenCaption = "فاتورة مبيعات", ScreenCaption_E = "Sales Invoce" };
    
 
         public static ScreensAccessProfile SalesDelevary = new ScreensAccessProfile(nameof(PL.frmDelivryNote), Sales)
         { ScreenCaption = "اشعار شحن", ScreenCaption_E = "Delevary Note" };
 
-        public static ScreensAccessProfile ItemQuery = new ScreensAccessProfile(nameof(PL.frm_check_item_Price), Sales)
+        public static ScreensAccessProfile ItemQuery = new ScreensAccessProfile(nameof(PL.frm_check_item_Price_Copy), Sales)
         { ScreenCaption ="استعلام صنف", ScreenCaption_E = "Item Query" };
 
         public static ScreensAccessProfile SalesReports = new ScreensAccessProfile(nameof(RPT.frm_rpt_Sales_by_Br), Sales)
@@ -381,11 +388,12 @@ namespace Report_Pro.Classes
         public static ScreensAccessProfile Cash_Receipt = new ScreensAccessProfile(nameof(CTR.frm_Cash_Receipt), CashTransaction)
         { ScreenCaption ="سند قبض" , ScreenCaption_E = "Cash Receipt" };
 
-        public static ScreensAccessProfile CloseCustomerPayment = new ScreensAccessProfile(nameof(CTR.frm_CloseCustomerPayment), CashTransaction)
+        public static ScreensAccessProfile CloseCustomerPayment = new ScreensAccessProfile(nameof(CTR.frm_CloseCustomerPayment_Copy), CashTransaction)
         { ScreenCaption = "تعريف سداد فواتير عميل" ,ScreenCaption_E = "Definition of paying customer invoices" };
 
         public static ScreensAccessProfile InventoryReport = new ScreensAccessProfile(nameof(RPT.frm_Inventory_Report), Inventory)
         { ScreenCaption = " تقرير المخزون" , ScreenCaption_E ="Inventory Reports"};
+
 
         public static ScreensAccessProfile InventoryReportNew = new ScreensAccessProfile(nameof(RPT.frm_rpt_inventory), Inventory)
         { ScreenCaption = " تقارير المخزون المعدلة" ,ScreenCaption_E = "Adjusted inventory reports" };
@@ -397,12 +405,12 @@ namespace Report_Pro.Classes
         public static ScreensAccessProfile ElementsGroup = new ScreensAccessProfile(nameof(PL.frm_BS_elements_Group), GroupReports)
         { ScreenCaption = "قيد اعادة تصنيف"};
 
-        public static ScreensAccessProfile TbGroup = new ScreensAccessProfile(nameof(Group.frm_BS_TB_Group), GroupReports)
+        public static ScreensAccessProfile TbGroup = new ScreensAccessProfile(nameof(Group.frm_Group_TB), GroupReports)
         { ScreenCaption = "ميزان المراجعة المجمع" };
 
 
         public static ScreensAccessProfile AccountStatment = new ScreensAccessProfile(nameof(RPT.frm_statment_Rpt), Accounting)
-        { ScreenCaption = "كشف حساب" };
+        { ScreenCaption = "كشف حساب" ,ScreenCaption_E=""};
 
         public static ScreensAccessProfile TB = new ScreensAccessProfile(nameof(RPT.frm_TB), Accounting)
         { ScreenCaption = "ميزان المراجعة" }; 
@@ -419,7 +427,7 @@ namespace Report_Pro.Classes
         public static ScreensAccessProfile FeesReport = new ScreensAccessProfile(nameof(RPT.frm_rep_Fees), Accounting)
         { ScreenCaption = "تقرير المصاريف" };
 
-        public static ScreensAccessProfile FeesReportTotal= new ScreensAccessProfile(nameof(RPT.frm_rep_Fees_Consolidated), Accounting)
+        public static ScreensAccessProfile FeesReportTotal= new ScreensAccessProfile(nameof(Group.frm_rep_Fees_Consolidated), GroupReports)
         { ScreenCaption = "تقرير المصاريف المجمع" };
 
         public static ScreensAccessProfile SalaryRepot = new ScreensAccessProfile(nameof(RPT.frm_rpt_salary), Accounting)
@@ -441,7 +449,68 @@ namespace Report_Pro.Classes
         public static ScreensAccessProfile ChoseStore = new ScreensAccessProfile(nameof(PL.frm_ChoseStore), mainSettings)
         { ScreenCaption = "اختيار المستودع", ScreenCaption_E = "Chose Store" };
 
+        public static ScreensAccessProfile Products = new ScreensAccessProfile(nameof(PL.frmProducts), Inventory)
+        { ScreenCaption = "الاصناف", ScreenCaption_E = "Products" };
 
+        public static ScreensAccessProfile PurchasesReportsGroup = new ScreensAccessProfile(nameof(Group.frm_rpt_Purchases_Group), GroupReports)
+        { ScreenCaption = "تقارير المشتريات", ScreenCaption_E = "Purchases Reports" };
+
+        public static ScreensAccessProfile AgeReportGroup = new ScreensAccessProfile(nameof(Group.frmAgeReport_Group), GroupReports)
+        { ScreenCaption = "تقرير اعمار ديون العملاء", ScreenCaption_E = "Customers Aging Report" };
+
+        public static ScreensAccessProfile CustomersTB = new ScreensAccessProfile(nameof(RPT.frm_Customers_TB),Sales)
+        { ScreenCaption = "ميزان العملاء", ScreenCaption_E = "Customers TB" };
+
+        public static ScreensAccessProfile UserSettingsProfile = new ScreensAccessProfile(nameof(Forms.frm_UserSettingsProfile), Permissions)
+        { ScreenCaption = "اضافه نموذج اعدادات", ScreenCaption_E = "Permission Forms" };
+
+        public static ScreensAccessProfile UserSettingsProfileList = new ScreensAccessProfile(nameof(Forms.frm_UserSettingsProfileList), Permissions)
+        { ScreenCaption = "عرض نماذج الاعدادات", ScreenCaption_E = "Show Permission forms" };
+
+        public static ScreensAccessProfile ItemTransaction = new ScreensAccessProfile(nameof(RPT.frm_Item_Transaction), Inventory)
+        { ScreenCaption = "تقرير حركة الاصناف", ScreenCaption_E = "Item Transaction" };
+
+        public static ScreensAccessProfile LcReport = new ScreensAccessProfile(nameof(RPT.frm_lcsRep), LetterOfCredit)
+        { ScreenCaption = "تقرير الاعتمادات", ScreenCaption_E = "LC Report" };
+
+        public static ScreensAccessProfile LcInvReport = new ScreensAccessProfile(nameof(RPT.frm_LcInvRep), LetterOfCredit)
+        { ScreenCaption = "تقرير فواتير الاعتمادات", ScreenCaption_E = "LC Invoice Report" };
+
+        public static ScreensAccessProfile InventoryBranchesGroup = new ScreensAccessProfile(nameof(RPT.frm_rpt_InventoryBranches), Inventory)
+        { ScreenCaption = "تقرير رصيد مجموعة بالفروع", ScreenCaption_E = "Group Stock By Branches Report" };
+
+        public static ScreensAccessProfile rpt_InventoryGroups = new ScreensAccessProfile(nameof(RPT.frm_rpt_InventoryGroups), Inventory)
+        { ScreenCaption = "تقرير رصيد فرع بالمجموعات", ScreenCaption_E = "Branche Stock By Groups Report" };
+
+        public static ScreensAccessProfile InventoryItems = new ScreensAccessProfile(nameof(RPT.frm_rpt_InventoryItems), Inventory)
+        { ScreenCaption = "تقرير رصيد فرع بالاصناف", ScreenCaption_E = "Branche Stock By Items Report" };
+
+        public static ScreensAccessProfile Lcs = new ScreensAccessProfile(nameof(PL.frmLcs), LetterOfCredit)
+        { ScreenCaption = "الاعتمادات المستندية", ScreenCaption_E = "Letter Of Credit" };
+
+        public static ScreensAccessProfile LcsInvoices = new ScreensAccessProfile(nameof(PL.FrmLcInv), LetterOfCredit)
+        { ScreenCaption = "فواتير الاعتمادات المستندية", ScreenCaption_E = "Letter Of Credit Invoices" };
+
+        public static ScreensAccessProfile UpdateAccData = new ScreensAccessProfile(nameof(PL.UpdateAccData), Accounting)
+        { ScreenCaption = "تحديث بيانات حساب", ScreenCaption_E = "Update Account Data" };
+
+        public static ScreensAccessProfile PrepaidExpenses = new ScreensAccessProfile(nameof(PL.Prepaid_expenses), Prepaid)
+        { ScreenCaption = "احتساب الاستحقاق", ScreenCaption_E = "Prepaid Expenses Calculate" };
+
+        public static ScreensAccessProfile PrepaidExpensesReport = new ScreensAccessProfile(nameof(RPT.frm_PE_rpt), Prepaid)
+        { ScreenCaption = "تقرير الاستحقاق", ScreenCaption_E = "Prepaid Expenses Report" };
+
+        public static ScreensAccessProfile PrepaidExpensesJor = new ScreensAccessProfile(nameof(PL.frm_PE_Jor), Prepaid)
+        { ScreenCaption = "اقفال استحقاق المقدم", ScreenCaption_E = "Prepaid Expenses Close" };
+
+        public static ScreensAccessProfile frmCashTransaction = new ScreensAccessProfile(nameof(CTR.frm_cash_transaction), CashTransaction)
+        { ScreenCaption = "حركة الصندوق", ScreenCaption_E = "Cash Transaction" };
+
+        public static ScreensAccessProfile FundsDetialsReport = new ScreensAccessProfile(nameof(CTR.frm_Funds_Detials_Report), CashTransaction)
+        { ScreenCaption = "تقارير حركة الصندوق", ScreenCaption_E = "Cash Transaction Report" };
+
+        public static ScreensAccessProfile TransactionBetweenBranches = new ScreensAccessProfile(nameof(RPT.frm_rpt_Transaction_Between_Branches), Inventory)
+        { ScreenCaption = "تقرير الحركة بين الفروع", ScreenCaption_E = "Transaction Between Branches Report" };
 
         public static List<ScreensAccessProfile> GetScreens
         {
